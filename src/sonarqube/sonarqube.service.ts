@@ -33,7 +33,7 @@ export class SonarqubeService {
 
   async findIssues(issueType: string) {
     const res = await this.sonarqubeFetch(
-      `api/issues/search?rules=${IssueTypes[issueType]}&ps=500&languages=js&additionalFields=ruleDescriptionContextKey&facets=rules`
+      `/api/issues/search?componentKeys=Test&s=FILE_LINE&resolved=false&rules=${IssueTypes[issueType]}&inNewCodePeriod=true&types=CODE_SMELL&ps=100&facets=cleanCodeAttributeCategories%2CimpactSoftwareQualities%2CcodeVariants&additionalFields=_all`
     );
 
     const issues = res.issues;
@@ -41,6 +41,6 @@ export class SonarqubeService {
       this.extractAfterLastSlash(issue.component)
     );
 
-    return issueSources;
+    return Array.from(new Set(issueSources));
   }
 }

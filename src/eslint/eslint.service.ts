@@ -20,6 +20,12 @@ export class EslintService {
     const results = await eslint.lintFiles(["scanner/functions/*.js"]);
     const filesWithError = results
       .filter((res) => res.errorCount > 0)
+      .filter(
+        (res) =>
+          res.messages.findIndex(
+            (message) => message.ruleId === "complexity"
+          ) !== -1
+      )
       .map((res) => this.extractAfterLastSlash(res.filePath));
 
     return filesWithError;

@@ -2,5 +2,5 @@ projectKey=Test
 serverUrl=http://sonarqube:9000
 serverVersion=10.3.0.82913
 dashboardUrl=http://sonarqube:9000/dashboard?id=Test
-ceTaskId=AYzD9YsCLqSv0yiImryK
-ceTaskUrl=http://sonarqube:9000/api/ce/task?id=AYzD9YsCLqSv0yiImryK
+ceTaskId=AYzFJmdHb6m7x7p1vNyS
+ceTaskUrl=http://sonarqube:9000/api/ce/task?id=AYzFJmdHb6m7x7p1vNyS

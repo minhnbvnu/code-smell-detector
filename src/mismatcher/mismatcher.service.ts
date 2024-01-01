@@ -26,7 +26,7 @@ export class MismatcherService {
     );
 
     const eslintRes = await this.eslintService.findComplexMethod();
-    // return this.findMismatchedElements(sonarqubeRes, eslintRes);
-    return { sonarqubeRes, eslintRes };
+    return this.findMismatchedElements(sonarqubeRes, eslintRes);
+    // return { sonarqubeRes, eslintRes };
   }
 }
