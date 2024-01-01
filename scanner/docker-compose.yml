@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  sonar-scanner:
+    image: sonarsource/sonar-scanner-cli
+    env_file:
+      - .env
+    volumes:
+      - .:/usr/src
+    networks:
+      - deepsmelljs_sonarnet
+networks:
+  deepsmelljs_sonarnet:
+    external: true

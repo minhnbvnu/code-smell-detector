@@ -1,0 +1,1 @@
+function onError () { onResult(false); }

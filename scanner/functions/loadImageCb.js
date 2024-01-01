@@ -1,0 +1,1 @@
+function loadImageCb (src) { self.loadImage(src, data, cb); }

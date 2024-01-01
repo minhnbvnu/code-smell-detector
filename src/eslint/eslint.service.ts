@@ -3,21 +3,25 @@ import { ESLint } from "eslint";
 
 @Injectable()
 export class EslintService {
+  extractAfterLastSlash(inputString) {
+    const lastSlashIndex = inputString.lastIndexOf("/");
+
+    if (lastSlashIndex === -1) {
+      // No slash found, return the original string
+      return inputString;
+    }
+
+    return inputString.substring(lastSlashIndex + 1);
+  }
+
   async findComplexMethod() {
     const eslint = new ESLint();
 
-    // 2. Lint files.
-    const results = await eslint.lintFiles(["aframe-master/*.js"]);
-    console.log({
-      results: results
-        .filter((res) => res.errorCount > 0)
-        .map((res) => res.filePath),
-    });
+    const results = await eslint.lintFiles(["scanner/functions/*.js"]);
+    const filesWithError = results
+      .filter((res) => res.errorCount > 0)
+      .map((res) => this.extractAfterLastSlash(res.filePath));
 
-    // 3. Format the results.
-    const formatter = await eslint.loadFormatter("stylish");
-    const resultText = formatter.format(results);
-    // return results.map((res) => res.errorCount > 0);
-    return resultText;
+    return filesWithError;
   }
 }

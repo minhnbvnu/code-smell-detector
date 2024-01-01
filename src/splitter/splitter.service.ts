@@ -10,14 +10,12 @@ export class SplitterService {
     const projectFiles = fs.readdirSync(projectPath);
     for (const file of projectFiles) {
       const filePath = path.join(projectPath, file);
-      console.log({ filePath });
       const stat = fs.statSync(filePath);
       if (stat.isDirectory()) {
         this.readDir(filePath);
       } else if (filePath.endsWith(".js")) {
         this.splitFunctionFromFile(filePath);
       }
-      // this.splitFunctionFromFile(file);
     }
   }
   splitFunctionFromFile(filePath: string) {
@@ -37,7 +35,7 @@ export class SplitterService {
                 ? path.node.id.name
                 : new Date().getTime();
               fs.writeFileSync(
-                `output/${functionName}.js`,
+                `scanner/functions/${functionName}.js`,
                 functionCode,
                 "utf-8"
               );

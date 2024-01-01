@@ -1,0 +1,1 @@
+function loadVideoCb (src) { self.loadVideo(src, data, cb); }

@@ -1,0 +1,1 @@
+function disableGrabCursor () { sceneEl.canvas.classList.remove('a-grab-cursor'); }

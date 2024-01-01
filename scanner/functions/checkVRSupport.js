@@ -1,0 +1,1 @@
+function checkVRSupport () { return supportsVRSession; }

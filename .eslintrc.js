@@ -19,6 +19,16 @@ module.exports = {
   //     sourceType: "module",
   //   },
   rules: {
-    complexity: ["error", { max: 2 }],
+    complexity: ["error", { max: 15 }],
+  },
+  parser: "@babel/eslint-parser",
+  parserOptions: {
+    requireConfigFile: false,
+    babelOptions: {
+      babelrc: false,
+      configFile: false,
+      // your babel options
+      presets: ["@babel/preset-env"],
+    },
   },
 };

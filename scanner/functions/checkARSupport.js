@@ -1,0 +1,1 @@
+function checkARSupport () { return supportsARSession; }
