@@ -1,0 +1,1 @@
+function DracoUInt8Array(){this.ptr=_emscripten_bind_DracoUInt8Array_DracoUInt8Array_0();getCache(DracoUInt8Array)[this.ptr]=this}

@@ -1,0 +1,3 @@
+function stubArray() {
+	  return [];
+	}

@@ -1,0 +1,3 @@
+function Library () {
+    this.tests = {};
+  }

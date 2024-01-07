@@ -1,0 +1,3 @@
+constructor(vertexBuffer, format) {
+        super();
+    }

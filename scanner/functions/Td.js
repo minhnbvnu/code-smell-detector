@@ -1,0 +1,1 @@
+function Td(a){a=a|0}

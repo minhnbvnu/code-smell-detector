@@ -1,0 +1,1 @@
+function $(t){return Vt+Jt+t}

@@ -1,0 +1,1 @@
+function lowbits(n) { return n & (width - 1); }

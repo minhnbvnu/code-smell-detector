@@ -1,0 +1,1 @@
+function Ob(a){a=a|0;return 6}

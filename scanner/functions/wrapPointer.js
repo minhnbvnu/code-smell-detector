@@ -1,0 +1,1 @@
+function wrapPointer(ptr,__class__){var cache=getCache(__class__);var ret=cache[ptr];if(ret)return ret;ret=Object.create((__class__||WrapperObject).prototype);ret.ptr=ptr;return cache[ptr]=ret}

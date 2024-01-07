@@ -1,0 +1,1 @@
+function Os(t){return t.currentUser}

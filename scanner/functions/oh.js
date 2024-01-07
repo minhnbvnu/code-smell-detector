@@ -1,0 +1,1 @@
+function oh(a){a=a|0;return H[a+40>>2]}

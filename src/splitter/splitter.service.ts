@@ -14,6 +14,7 @@ export class SplitterService {
       if (stat.isDirectory()) {
         this.readDir(filePath);
       } else if (filePath.endsWith(".js")) {
+        console.log({ filePath });
         this.splitFunctionFromFile(filePath);
       }
     }
@@ -22,7 +23,7 @@ export class SplitterService {
     const code = fs.readFileSync(filePath, "utf-8");
 
     const result = babel.transformSync(code, {
-      presets: ["@babel/preset-env"],
+      presets: ["@babel/preset-env", "@babel/preset-react"],
       plugins: [
         {
           visitor: {
@@ -47,10 +48,15 @@ export class SplitterService {
   }
 
   split() {
-    const projectName = "aframe-master";
-    const dirPath = `${this.BASE_URL}${projectName}`;
+    const projects = fs.readdirSync(this.BASE_URL);
 
-    this.readDir(dirPath);
+    for (const folder of projects) {
+      const filePath = path.join(this.BASE_URL, folder);
+      const stat = fs.statSync(filePath);
+      if (stat.isDirectory()) {
+        this.readDir(filePath);
+      }
+    }
 
     return true;
   }

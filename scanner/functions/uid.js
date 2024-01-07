@@ -1,0 +1,3 @@
+function UID() {
+    return uid++;
+}

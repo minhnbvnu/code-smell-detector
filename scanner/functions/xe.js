@@ -1,0 +1,1 @@
+function xe(e){for(var t=0,n=e.length,r="";t<n;t++)r+=e[t].value;return r}

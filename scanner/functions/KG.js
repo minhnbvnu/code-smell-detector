@@ -1,0 +1,1 @@
+function kg(){return 5}

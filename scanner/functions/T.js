@@ -1,0 +1,1 @@
+function t(t,e,n,o,r){this.pipeline=new E(t,e,192,192,n,r),this.detectionConfidence=o}

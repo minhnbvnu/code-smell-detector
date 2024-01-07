@@ -1,0 +1,1 @@
+function ig(){return 6}

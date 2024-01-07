@@ -1,0 +1,1 @@
+function Qe(){var t=uu.window;try{return!(!t||t==t.top)}catch(t){return!1}}

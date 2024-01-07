@@ -1,0 +1,1 @@
+function mt(e){return(e.match(R)||[]).join(" ")}

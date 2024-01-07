@@ -1,0 +1,1 @@
+function nx(a){a=a|0;var b=0;b=fa-16|0;L[b+12>>2]=a;return L[b+12>>2]+44|0}

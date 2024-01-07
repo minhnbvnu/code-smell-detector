@@ -1,0 +1,1 @@
+function kb(a){a=a|0;var b=0;if(a){b=H[a>>2];if(b){H[a+4>>2]=b;oa(b)}oa(a)}}

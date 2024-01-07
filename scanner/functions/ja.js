@@ -1,0 +1,1 @@
+function ja(){var a=b.preRun.shift();ea.unshift(a);}

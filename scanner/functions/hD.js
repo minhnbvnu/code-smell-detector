@@ -1,0 +1,1 @@
+function Hd(a,b){var c=0,d=0,e=0,f=0;H[a>>2]=15260;H[a>>2]=15372;c=Ma(b);d=pa(c+13|0);H[d+8>>2]=0;H[d+4>>2]=c;H[d>>2]=c;e=a,f=qa(d+12|0,b,c+1|0),H[e+4>>2]=f;return a}

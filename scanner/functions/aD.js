@@ -1,0 +1,1 @@
+function Ad(a){a=a|0;var b=0,c=0;H[a>>2]=15372;b=H[a+4>>2]-12|0;c=H[b+8>>2]-1|0;H[b+8>>2]=c;if((c|0)<0){oa(b)}return a|0}

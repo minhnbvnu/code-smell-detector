@@ -1,0 +1,1 @@
+function vw(){var a=0;a=oa(172);Kg(a,1,1);return a|0}

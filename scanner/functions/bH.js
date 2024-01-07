@@ -1,0 +1,1 @@
+function bh(a){a=a|0;return!H[a>>2]|0}

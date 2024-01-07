@@ -1,0 +1,1 @@
+function fb(a){a=a|0;v()}

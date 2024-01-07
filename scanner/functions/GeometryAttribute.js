@@ -1,0 +1,1 @@
+function GeometryAttribute(){this.ptr=_emscripten_bind_GeometryAttribute_GeometryAttribute_0();getCache(GeometryAttribute)[this.ptr]=this}

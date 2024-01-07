@@ -1,0 +1,1 @@
+function _f(a,b){a=a|0;b=b|0;return H[H[a+4>>2]+(b<<2)>>2]}

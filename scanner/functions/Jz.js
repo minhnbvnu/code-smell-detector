@@ -1,0 +1,1 @@
+function jz(a,b){a=a|0;b=S(b);Nk(a,b);wa(2370);a=L[a+452>>2];ha[L[L[a>>2]+24>>2]](a,b);va()}

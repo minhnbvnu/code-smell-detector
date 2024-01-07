@@ -1,0 +1,3 @@
+function spaceSeparator() {
+	  this.space();
+	}

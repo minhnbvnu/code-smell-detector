@@ -1,0 +1,1 @@
+function Mw(a){a=a|0;var b=0;b=fa-16|0;fa=b;L[b+12>>2]=a;a=L[b+12>>2];a=ha[L[L[a>>2]+96>>2]](a)|0;fa=b+16|0;return a|0}

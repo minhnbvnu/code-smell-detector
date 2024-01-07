@@ -1,0 +1,1 @@
+function cl_hash(hsize){for(var i=0;i<hsize;++i)htab[i]=-1}

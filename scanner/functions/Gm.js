@@ -1,0 +1,1 @@
+function gm(a){a=Jm(a);L[a>>2]=15460;return a}

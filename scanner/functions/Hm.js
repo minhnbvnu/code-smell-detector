@@ -1,0 +1,1 @@
+function hm(a){a=a|0;return 64}

@@ -1,0 +1,1 @@
+function Un(t){return ku(t.g,function(t){return u(t[1])})}

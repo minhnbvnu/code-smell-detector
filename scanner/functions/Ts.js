@@ -1,0 +1,1 @@
+function Ts(t,n){Os(t)&&(_a(Os(t),t.Ga),en(Os(t),"tokenChanged",t.pa),en(Os(t),"userDeleted",t.qa),en(Os(t),"userInvalidated",t.ra),Ca(Os(t))),n&&(n.N.push(t.Ga),Zt(n,"tokenChanged",t.pa),Zt(n,"userDeleted",t.qa),Zt(n,"userInvalidated",t.ra),0<t.o&&Pa(n)),Ti(t,"currentUser",n),n&&(n.na(t.$()),ka(n,t),Ea(n,t.A),Na(n,t))}

@@ -1,0 +1,1 @@
+function Lp(a,b){a=a|0;b=b|0;var c=0;c=fa-16|0;fa=c;L[c+12>>2]=a;L[c+8>>2]=b;a=fa-16|0;fa=a;L[a+8>>2]=L[c+8>>2];b=fa-16|0;L[b+12>>2]=L[a+8>>2];a:{if(L[L[b+12>>2]+236>>2]==8){L[a+12>>2]=L[a+8>>2];break a}L[a+12>>2]=0}fa=a+16|0;fa=c+16|0;return L[a+12>>2]}

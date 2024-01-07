@@ -1,0 +1,1 @@
+function Wg(a,b){a=a|0;b=b|0;return J[H[a>>2]+(b<<1)>>1]}

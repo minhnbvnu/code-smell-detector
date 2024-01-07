@@ -1,0 +1,1 @@
+function kv(){var a=0;a=sa(24);og(a);return a|0}

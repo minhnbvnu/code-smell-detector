@@ -1,0 +1,1 @@
+function Ew(){var a=0;a=oa(92);wm(a,1);return a|0}

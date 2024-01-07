@@ -1,0 +1,1 @@
+function Vs(){return{name:"",K:"an HTML element",optional:!1,M:function(t){return!!(t&&t instanceof Element)}}}

@@ -1,0 +1,1 @@
+function Km(a){a=a|0;return 6}

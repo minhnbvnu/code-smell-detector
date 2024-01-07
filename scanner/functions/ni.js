@@ -1,0 +1,1 @@
+function Ni(t,n){if(!n||!n.length)return!0;if(!t)return!1;for(var e=0;e<n.length;e++){var i=t[n[e]];if(void 0===i||null===i||""===i)return!1}return!0}

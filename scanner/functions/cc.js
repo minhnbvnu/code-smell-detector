@@ -1,0 +1,1 @@
+function cc(a){a=a|0;if(a){ea[H[H[a>>2]+4>>2]](a)}}

@@ -1,0 +1,1 @@
+function Xx(a,b){a=a|0;b=b|0;var c=0;c=fa-16|0;fa=c;L[c+12>>2]=a;L[c+8>>2]=b;b=L[c+8>>2];a=fa-16|0;fa=a;L[a+12>>2]=L[c+12>>2];L[a+8>>2]=b;yj(L[a+12>>2],L[a+8>>2]);fa=a+16|0;fa=c+16|0}

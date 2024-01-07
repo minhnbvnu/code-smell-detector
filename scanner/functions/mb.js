@@ -1,0 +1,1 @@
+function Mb(a,b){a=a|0;b=b|0;if(b>>>0<=1){H[a+28>>2]=b}return b>>>0<2|0}

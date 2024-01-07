@@ -1,0 +1,1 @@
+function exitJS(status,implicit){EXITSTATUS=status;_proc_exit(status)}

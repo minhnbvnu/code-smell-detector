@@ -1,0 +1,1 @@
+function Do(){this.a=To()}

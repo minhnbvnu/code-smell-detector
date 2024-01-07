@@ -1,0 +1,1 @@
+function Se(){return!1}

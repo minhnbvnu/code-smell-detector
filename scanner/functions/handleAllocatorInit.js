@@ -1,0 +1,1 @@
+function handleAllocatorInit(){Object.assign(HandleAllocator.prototype,{get(id){return this.allocated[id]},has(id){return this.allocated[id]!==undefined},allocate(handle){var id=this.freelist.pop()||this.allocated.length;this.allocated[id]=handle;return id},free(id){this.allocated[id]=undefined;this.freelist.push(id)}})}

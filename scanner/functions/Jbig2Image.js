@@ -1,0 +1,1 @@
+function Jbig2Image() {}

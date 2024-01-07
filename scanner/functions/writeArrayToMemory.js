@@ -1,0 +1,1 @@
+function writeArrayToMemory(array,buffer){HEAP8.set(array,buffer)}

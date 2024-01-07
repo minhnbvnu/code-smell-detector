@@ -1,0 +1,1 @@
+function Nr(t){return jr(t,Gh,{}).then(function(t){return t.authorizedDomains||[]})}

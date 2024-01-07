@@ -1,0 +1,1 @@
+function Uj(a){var b=0;while(1){if(a){a=a-1&a;b=b+1|0;continue}break}return b}

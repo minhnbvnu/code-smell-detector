@@ -1,0 +1,1 @@
+function Ku(a,b){a=a|0;b=S(b);var c=0;c=fa-16|0;L[c+12>>2]=a;P[c+8>>2]=b;P[L[c+12>>2]+112>>2]=P[c+8>>2]}

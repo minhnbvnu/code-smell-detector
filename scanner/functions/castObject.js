@@ -1,0 +1,1 @@
+function castObject(obj,__class__){return wrapPointer(obj.ptr,__class__)}

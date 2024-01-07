@@ -1,0 +1,1 @@
+function AttributeQuantizationTransform(){this.ptr=_emscripten_bind_AttributeQuantizationTransform_AttributeQuantizationTransform_0();getCache(AttributeQuantizationTransform)[this.ptr]=this}

@@ -1,0 +1,1 @@
+function ra(){function a(k){return(k=k.toTimeString().match(/\(([A-Za-z ]+)\)$/))?k[1]:"GMT";}if(!sa){sa=!0;var c=new Date().getFullYear(),d=new Date(c,0,1),e=new Date(c,6,1);c=d.getTimezoneOffset();var f=e.getTimezoneOffset(),g=Math.max(c,f);M[ta()>>2]=60*g;M[ua()>>2]=Number(c!=f);d=a(d);e=a(e);d=da(d);e=da(e);f<c?(M[X()>>2]=d,M[X()+4>>2]=e):(M[X()>>2]=e,M[X()+4>>2]=d);}}

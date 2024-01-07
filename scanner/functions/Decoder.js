@@ -1,0 +1,1 @@
+function Decoder(){this.ptr=_emscripten_bind_Decoder_Decoder_0();getCache(Decoder)[this.ptr]=this}

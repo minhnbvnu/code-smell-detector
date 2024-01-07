@@ -1,0 +1,3 @@
+function disposeVariables() {
+	  ENGINE.disposeVariables();
+	}

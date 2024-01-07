@@ -1,0 +1,1 @@
+function Rk(a,b){a=a|0;b=b|0;ha[L[L[a>>2]+64>>2]](a,b)}

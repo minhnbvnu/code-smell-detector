@@ -1,7 +1,10 @@
-function copyArray (a, b) {
-  var i;
-  a.length = b.length;
-  for (i = 0; i < b.length; i++) {
-    a[i] = b[i];
-  }
-}
+function copyArray(source, array) {
+	  var index = -1,
+	      length = source.length;
+
+	  array || (array = Array(length));
+	  while (++index < length) {
+	    array[index] = source[index];
+	  }
+	  return array;
+	}

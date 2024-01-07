@@ -1,0 +1,1 @@
+function g(h){this.next=null;this.data=new jsfeat.data_t(h);this.size=this.data.size;this.buffer=this.data.buffer;this.u8=this.data.u8;this.i32=this.data.i32;this.f32=this.data.f32;this.f64=this.data.f64}

@@ -1,0 +1,1 @@
+function Ms(t,n){return{name:t||"",K:"null",optional:!!n,M:o}}

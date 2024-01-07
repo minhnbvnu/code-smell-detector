@@ -1,0 +1,1 @@
+function Ei(t){var n,e={};for(n in t)t.hasOwnProperty(n)&&(e[n]=t[n]);return e}

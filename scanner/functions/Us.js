@@ -1,0 +1,1 @@
+function Us(t,n){return{name:t||"",K:"a valid object",optional:!!n,M:c}}

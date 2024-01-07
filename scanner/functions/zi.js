@@ -1,0 +1,1 @@
+function Zi(){Gi.call(this,"google.com"),this.sa("profile")}

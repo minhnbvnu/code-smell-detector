@@ -1,0 +1,1 @@
+function Gt(t,e){null!==e&&e.length>0&&(t.Authorization="Firebase "+e)}

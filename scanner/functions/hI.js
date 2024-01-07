@@ -1,0 +1,1 @@
+function Hi(t){var n={};return t.idToken&&(n.id_token=t.idToken),t.accessToken&&(n.access_token=t.accessToken),t.secret&&(n.oauth_token_secret=t.secret),n.providerId=t.providerId,{postBody:""+ce(n),requestUri:"http://localhost"}}

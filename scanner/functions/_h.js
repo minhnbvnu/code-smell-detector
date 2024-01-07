@@ -1,6 +1,1 @@
-function _h ( f, c ) {
-        return function () {
-            c.apply( this, arguments );
-            f.apply( this, arguments );
-        };
-    }
+function _h(a){a=a|0;var b=0;H[a>>2]=12384;b=H[a+88>>2];if(b){H[a+92>>2]=b;oa(b)}b=H[a+72>>2];if(b){H[a+76>>2]=b;oa(b)}b=H[a+60>>2];if(b){H[a- -64>>2]=b;oa(b)}b=H[a+48>>2];if(b){H[a+52>>2]=b;oa(b)}H[a>>2]=12620;b=H[a+36>>2];if(b){oa(b)}b=H[a+24>>2];if(b){oa(b)}return a|0}

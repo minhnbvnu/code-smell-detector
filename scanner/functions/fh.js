@@ -1,0 +1,1 @@
+function fh(a){a=a|0;return(H[a+100>>2]-H[a+96>>2]|0)/12|0}

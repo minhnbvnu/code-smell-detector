@@ -1,0 +1,1 @@
+function _return_string(data,length){Module._return_string_callback(data,length)}

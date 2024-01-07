@@ -1,0 +1,1 @@
+function Xo(t){this.a=t,this.b=To()}

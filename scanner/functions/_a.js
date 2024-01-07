@@ -1,0 +1,1 @@
+function _a(t,n){N(t.N,function(t){return t==n})}

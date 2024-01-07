@@ -1,0 +1,1 @@
+function lb(){var a=0;a=pa(12);H[a>>2]=0;H[a+4>>2]=0;H[a+8>>2]=0;return a|0}

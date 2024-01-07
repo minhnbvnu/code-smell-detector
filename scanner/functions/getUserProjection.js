@@ -1,0 +1,3 @@
+function getUserProjection() {
+  return userProjection;
+}

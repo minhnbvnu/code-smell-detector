@@ -1,0 +1,1 @@
+function Bi(t,n){if(n.idToken||n.accessToken)n.idToken&&Ti(this,"idToken",n.idToken),n.accessToken&&Ti(this,"accessToken",n.accessToken);else{if(!n.oauthToken||!n.oauthTokenSecret)throw new Pi("internal-error","failed to construct a credential");Ti(this,"accessToken",n.oauthToken),Ti(this,"secret",n.oauthTokenSecret)}Ti(this,"providerId",t)}

@@ -1,0 +1,1 @@
+function gb(a,b,c){var d=0,e=0,f=0,g=0;a:{if(a>>>0>10){break a}d=H[c+20>>2];f=H[c+12>>2];e=H[c+16>>2];if((d|0)>=(f|0)&e>>>0>=K[c+8>>2]|(d|0)>(f|0)){break a}f=F[e+H[c>>2]|0];e=e+1|0;d=e?d:d+1|0;H[c+16>>2]=e;H[c+20>>2]=d;d=f;b:{if((d|0)<0){if(!gb(a+1|0,b,c)){break a}a=H[b>>2];d=d&127|a<<7;a=H[b+4>>2]<<7|a>>>25;break b}d=d&255;a=0}H[b>>2]=d;H[b+4>>2]=a;g=1}return g}

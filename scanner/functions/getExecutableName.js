@@ -1,0 +1,1 @@
+function getExecutableName(){return thisProgram||"./this.program"}

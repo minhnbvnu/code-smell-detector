@@ -1,14 +1,7 @@
-function exitFullscreen () {
-  var fullscreenEl =
-    document.fullscreenElement ||
-    document.webkitFullscreenElement ||
-    document.mozFullScreenElement;
-  if (!fullscreenEl) { return; }
-  if (document.exitFullscreen) {
-    document.exitFullscreen();
-  } else if (document.mozCancelFullScreen) {
-    document.mozCancelFullScreen();
-  } else if (document.webkitExitFullscreen) {
-    document.webkitExitFullscreen();
+function exitFullScreen(doc) {
+  if (doc.exitFullscreen) {
+    doc.exitFullscreen();
+  } else if (doc['webkitExitFullscreen']) {
+    doc['webkitExitFullscreen']();
   }
 }

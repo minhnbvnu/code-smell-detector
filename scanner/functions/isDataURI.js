@@ -1,0 +1,1 @@
+function isDataURI(filename){return filename.startsWith(dataURIPrefix)}

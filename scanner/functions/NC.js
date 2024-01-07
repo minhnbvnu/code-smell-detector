@@ -1,0 +1,1 @@
+function Nc(){return 2}

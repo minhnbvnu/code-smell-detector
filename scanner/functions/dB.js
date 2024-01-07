@@ -1,0 +1,1 @@
+function db(a){a=a|0;return H[a+4>>2]}

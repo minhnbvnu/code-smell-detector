@@ -1,0 +1,1 @@
+function Gn(n){if(n.S&&"function"==typeof n.S)return n.S();if(!n.P||"function"!=typeof n.P){if(s(n)||t(n)){var e=[];n=n.length;for(var i=0;i<n;i++)e.push(i);return e}return _(n)}}

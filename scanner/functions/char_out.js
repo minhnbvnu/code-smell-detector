@@ -1,0 +1,1 @@
+function char_out(c,outs){accum[a_count++]=c;if(a_count>=254)flush_char(outs)}

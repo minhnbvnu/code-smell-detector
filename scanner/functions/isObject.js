@@ -1,3 +1,3 @@
-function isObject (value) {
-  return value && value.constructor === Object && !(value instanceof window.HTMLElement);
+function isObject(obj) {
+    return typeof obj === 'object' && !!obj;
 }

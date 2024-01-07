@@ -1,0 +1,1 @@
+function ru(t){return t=t.split("."),t[t.length-1]}

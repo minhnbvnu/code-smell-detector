@@ -1,3 +1,3 @@
-function isNode (node) {
-  return node.tagName.toLowerCase() in knownTags || node.isNode;
-}
+function isNode(node) {
+	  return !!(node && _definitions.VISITOR_KEYS[node.type]);
+	}

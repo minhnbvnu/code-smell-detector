@@ -1,0 +1,1 @@
+function iu(t,n,e){function i(){var t=Array.prototype.slice.call(arguments);return Ds(o,e,t),n.apply(this,t)}if(!e)return n;var r,o=ru(t);for(r in n)i[r]=n[r];for(r in n.prototype)i.prototype[r]=n.prototype[r];return i}

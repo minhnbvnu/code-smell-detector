@@ -1,0 +1,1 @@
+function dh(a,b,c){a=a|0;b=b|0;c=c|0;H[a+32>>2]=c;H[a+28>>2]=b;return 1}

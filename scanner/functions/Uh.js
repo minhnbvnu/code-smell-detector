@@ -1,0 +1,1 @@
+function uh(){return Eb(pa(64))|0}

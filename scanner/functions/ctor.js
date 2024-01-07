@@ -1,0 +1,1 @@
+function ctor(){this.constructor=child}

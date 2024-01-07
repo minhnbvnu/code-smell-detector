@@ -1,0 +1,3 @@
+function resetSystemFetch() {
+	  systemFetch = null;
+	}

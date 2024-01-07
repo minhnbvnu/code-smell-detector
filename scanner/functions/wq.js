@@ -1,0 +1,1 @@
+function Wq(a,b,c){a=a|0;b=b|0;c=c|0;var d=0;d=fa-16|0;fa=d;L[d+12>>2]=a;L[d+8>>2]=b;J[d+7|0]=c;lg(L[d+12>>2],L[d+8>>2],J[d+7|0]&1);fa=d+16|0}

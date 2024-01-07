@@ -1,0 +1,1 @@
+function kl(a,b){a=a|0;b=b|0;var c=0,d=0,e=0,f=0,g=0,h=0;c=L[a+32>>2];e=c+328|0;d=L[a+28>>2];f=d+328|0;g=c+312|0;h=d+312|0;c=c+4|0;d=d+4|0;if(M[a+1301|0]){il(a,b,jl(a,b,0,d,c,h,g,f,e),d,c,h,g,f,e);return}jl(a,b,il(a,b,0,d,c,h,g,f,e),d,c,h,g,f,e)}

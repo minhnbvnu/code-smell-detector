@@ -1,0 +1,1 @@
+function zl(a,b){var c=0,d=0;d=Al(a);c=L[a+288>>2];L[b+8>>2]=L[a+284>>2];L[b+12>>2]=c;c=L[a+280>>2];L[b>>2]=L[a+276>>2];L[b+4>>2]=c;return d}

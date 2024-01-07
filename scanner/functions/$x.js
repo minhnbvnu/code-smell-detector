@@ -1,0 +1,1 @@
+function $x(){var a=0;a=sa(64);Pb(a);return a|0}

@@ -1,0 +1,3 @@
+function stubFalse() {
+	  return false;
+	}

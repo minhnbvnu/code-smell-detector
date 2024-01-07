@@ -1,0 +1,1 @@
+function nt(e,t,n,r,i){return new nt.prototype.init(e,t,n,r,i)}

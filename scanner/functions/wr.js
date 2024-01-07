@@ -1,0 +1,1 @@
+function Wr(t,n,e){this.i=t,this.g=n,this.h=e,this.f=null,this.a=ie(this.i,"/__/auth/iframe"),te(this.a,"apiKey",this.g),te(this.a,"appName",this.h),this.b=null,this.c=[]}

@@ -1,0 +1,1 @@
+function Pe(e){return e.type=(null!==e.getAttribute("type"))+"/"+e.type,e}

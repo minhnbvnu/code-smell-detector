@@ -1,0 +1,1 @@
+function cosh(n) { return (Math.exp(n) + Math.exp(-n)) / 2; }

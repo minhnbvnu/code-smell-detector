@@ -1,8 +1,20 @@
-function resize (camera) {
-  var embedded = sceneEl.hasAttribute('embedded');
-  var size = getSceneCanvasSize(sceneEl.canvas, embedded, sceneEl.maxCanvasSize, sceneEl.is('vr-mode'));
-  camera.aspect = size.width / size.height;
-  camera.updateProjectionMatrix();
-   // Notify renderer of size change.
-  sceneEl.renderer.setSize(size.width, size.height, false);
+function resize(image) {
+    if (isPowerOfTwo(image.width) && isPowerOfTwo(image.height)) {
+        return image;
+    }
+    let width = image.width;
+    let height = image.height;
+    if (!isPowerOfTwo(width)) {
+        width = ceilPowerOfTwo(width);
+    }
+    if (!isPowerOfTwo(height)) {
+        height = ceilPowerOfTwo(height);
+    }
+    const canvas = document.createElement('canvas');
+    canvas.width = width;
+    canvas.height = height;
+    const ctx = canvas.getContext('2d');
+    ctx.imageSmoothingEnabled = false;
+    ctx.drawImage(image, 0, 0, width, height);
+    return canvas;
 }

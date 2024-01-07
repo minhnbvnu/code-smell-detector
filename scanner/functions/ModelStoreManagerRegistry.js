@@ -1,0 +1,3 @@
+function ModelStoreManagerRegistry() {
+	    this.managers = {};
+	  }

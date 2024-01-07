@@ -1,0 +1,1 @@
+function Qs(){return Lf||(Lf=new $s),Lf}

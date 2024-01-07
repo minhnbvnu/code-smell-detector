@@ -1,0 +1,1 @@
+function Nn(t,n){t&&t.log(kc,n,void 0)}

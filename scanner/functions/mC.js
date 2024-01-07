@@ -1,0 +1,1 @@
+function mc(a,b){var c=0,d=0,e=0;c=Ma(b);if(c>>>0<2147483632){a:{b:{if(c>>>0>=11){d=(c|15)+1|0;e=pa(d);H[a+8>>2]=d|-2147483648;H[a>>2]=e;H[a+4>>2]=c;d=c+e|0;break b}F[a+11|0]=c;d=a+c|0;e=a;if(!c){break a}}va(e,b,c)}F[d|0]=0;return a}Na();v()}

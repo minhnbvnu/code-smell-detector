@@ -1,0 +1,1 @@
+function Qc(a){a=a|0;return H[a+4>>2]-H[a>>2]>>2}

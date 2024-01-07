@@ -1,0 +1,1 @@
+function AttributeOctahedronTransform(){this.ptr=_emscripten_bind_AttributeOctahedronTransform_AttributeOctahedronTransform_0();getCache(AttributeOctahedronTransform)[this.ptr]=this}

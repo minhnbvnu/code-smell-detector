@@ -1,0 +1,3 @@
+function isRegistered() {
+  return !!registered;
+}

@@ -1,0 +1,1 @@
+function $k(a){var b=0,c=0;b=fa-16|0;fa=b;L[b+8>>2]=a;a=L[b+8>>2];L[b+12>>2]=a;c=a+48|0;while(1){L[(fa-16|0)+12>>2]=a;a=a+16|0;if((c|0)!=(a|0)){continue}break}fa=b+16|0}

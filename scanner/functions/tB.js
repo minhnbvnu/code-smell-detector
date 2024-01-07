@@ -1,0 +1,1 @@
+function Tb(a){a=a|0;return 2}

@@ -1,0 +1,1 @@
+function Ff(a){a=a|0;if(!a){return 0}return(Ed(a,15068)|0)!=0|0}

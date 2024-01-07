@@ -1,0 +1,3 @@
+function unregister() {
+  registered = null;
+}

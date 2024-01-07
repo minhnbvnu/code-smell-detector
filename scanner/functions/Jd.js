@@ -1,0 +1,1 @@
+function jd(a,b){a=a|0;b=b|0;H[a+4>>2]=b;return 1}

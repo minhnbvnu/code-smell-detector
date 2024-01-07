@@ -1,0 +1,1 @@
+function Sy(a,b){a=a|0;b=b|0;L[a+8>>2]=b}

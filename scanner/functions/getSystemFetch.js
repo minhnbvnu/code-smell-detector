@@ -1,0 +1,3 @@
+function getSystemFetch() {
+	  return systemFetch;
+	}

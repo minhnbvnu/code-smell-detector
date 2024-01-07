@@ -1,0 +1,1 @@
+function tanh(n) { return sinh(n) / cosh(n); }

@@ -1,0 +1,1 @@
+function AttributeTransformData(){this.ptr=_emscripten_bind_AttributeTransformData_AttributeTransformData_0();getCache(AttributeTransformData)[this.ptr]=this}

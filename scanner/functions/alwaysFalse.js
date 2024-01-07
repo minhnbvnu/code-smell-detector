@@ -1,0 +1,3 @@
+function alwaysFalse() {
+  return false;
+}

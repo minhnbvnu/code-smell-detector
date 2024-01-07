@@ -1,0 +1,3 @@
+function webViewerZoomOut() {
+  PDFViewerApplication.zoomOut();
+}

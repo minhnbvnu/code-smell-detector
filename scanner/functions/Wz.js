@@ -1,0 +1,1 @@
+function wz(a){a=a|0;eg(a);ra(a)}

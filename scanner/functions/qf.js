@@ -1,0 +1,1 @@
+function Qf(a,b,c,d){a=a|0;b=b|0;c=c|0;d=d|0;var e=0;e=ca-16|0;ca=e;a=_(H[a+60>>2],b|0,c|0,d&255,e+8|0)|0;if(a){H[3992]=a;a=-1}else{a=0}ca=e+16|0;da=a?-1:H[e+12>>2];return(a?-1:H[e+8>>2])|0}

@@ -1,0 +1,1 @@
+function _i(t){var n={};n.continueUrl=t.h,n.canHandleCodeInApp=t.f,(n.androidPackageName=t.a)&&(n.androidMinimumVersion=t.c,n.androidInstallApp=t.g),n.iOSBundleId=t.b;for(var e in n)null===n[e]&&delete n[e];return n}

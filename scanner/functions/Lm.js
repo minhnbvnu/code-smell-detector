@@ -1,0 +1,1 @@
+function lm(a){a=a|0;var b=S(0),c=S(0);b=P[a+28>>2];c=S(ha[L[L[a>>2]+48>>2]](a));S(ha[L[L[a>>2]+48>>2]](a));S(ha[L[L[a>>2]+48>>2]](a));return S(S(b+c))}

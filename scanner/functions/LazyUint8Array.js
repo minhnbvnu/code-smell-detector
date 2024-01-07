@@ -1,0 +1,1 @@
+function LazyUint8Array(){this.lengthKnown=false;this.chunks=[]}

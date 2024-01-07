@@ -1,0 +1,1 @@
+function ke(){return!0}

@@ -1,0 +1,1 @@
+function As(t){var n=os(t.G,Ss(t).options.authDomain).then(function(n){return(t.w=n)&&(n.ca=t.G),rs(t.G)});return _s(t,n)}

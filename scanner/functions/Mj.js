@@ -1,0 +1,1 @@
+function mj(a){a=a|0;var b=0;H[a>>2]=5816;b=H[a+76>>2];if(b){oa(b)}b=H[a+68>>2];H[a+68>>2]=0;if(b){oa(b)}H[a>>2]=3272;b=H[a+32>>2];if(b){H[a+36>>2]=b;oa(b)}oa(a)}

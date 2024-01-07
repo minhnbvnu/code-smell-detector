@@ -1,0 +1,1 @@
+function Yi(){Gi.call(this,"github.com")}

@@ -1,0 +1,1 @@
+function Zo(t){return!(!t||"auth/cordova-not-ready"!=t.code)}

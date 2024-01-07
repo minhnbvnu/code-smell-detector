@@ -1,0 +1,1 @@
+function vy(a,b,c,d){a=S(a);b=S(b);c=S(c);d=S(d);var e=0,f=0;e=fa-16|0;fa=e;P[e+12>>2]=a;P[e+8>>2]=b;P[e+4>>2]=c;P[e>>2]=d;f=sa(16);ie(f,e+12|0,e+8|0,e+4|0,e);fa=e+16|0;return f|0}

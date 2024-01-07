@@ -1,0 +1,1 @@
+function Sf(a){a=a|0;return aa(H[a+60>>2])|0}

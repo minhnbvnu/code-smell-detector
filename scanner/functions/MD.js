@@ -1,0 +1,1 @@
+function md(a,b){a=a|0;b=b|0;return-1}

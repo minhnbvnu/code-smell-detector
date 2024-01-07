@@ -1,0 +1,1 @@
+function _q(a,b){a=a|0;b=S(b);var c=0;c=fa-16|0;fa=c;L[c+12>>2]=a;P[c+8>>2]=b;a=L[c+12>>2];ha[L[L[a>>2]+16>>2]](a,P[c+8>>2]);fa=c+16|0}

@@ -1,0 +1,1 @@
+function Pl(a){a=a|0;return a+144|0}

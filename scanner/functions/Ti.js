@@ -1,0 +1,1 @@
+function Ti(t,n,e){ih?Object.defineProperty(t,n,{configurable:!0,enumerable:!0,value:e}):t[n]=e}

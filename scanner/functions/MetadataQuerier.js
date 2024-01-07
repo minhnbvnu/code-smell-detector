@@ -1,0 +1,1 @@
+function MetadataQuerier(){this.ptr=_emscripten_bind_MetadataQuerier_MetadataQuerier_0();getCache(MetadataQuerier)[this.ptr]=this}

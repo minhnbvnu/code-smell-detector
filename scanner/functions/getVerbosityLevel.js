@@ -1,0 +1,3 @@
+function getVerbosityLevel() {
+  return verbosity;
+}

@@ -1,0 +1,3 @@
+function getApplication() {
+    return currentApplication;
+}

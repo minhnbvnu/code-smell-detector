@@ -1,0 +1,1 @@
+function nl(a){a=a|0;L[a>>2]=20172;return a|0}

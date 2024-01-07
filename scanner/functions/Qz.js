@@ -1,0 +1,1 @@
+function qz(a,b,c,d){a=a|0;b=b|0;c=c|0;d=d|0;a=L[b>>2];a=ha[L[L[a>>2]+56>>2]](a,24)|0;L[a>>2]=8684;L[a+4>>2]=L[b>>2];L[a>>2]=23080;return a|0}

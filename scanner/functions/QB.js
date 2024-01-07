@@ -1,0 +1,1 @@
+function Qb(){return 0}

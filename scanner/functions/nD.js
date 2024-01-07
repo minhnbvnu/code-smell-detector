@@ -1,0 +1,1 @@
+function Nd(a){var b=0,c=0,d=0;if(F[H[a>>2]]-48>>>0>=10){return 0}while(1){d=H[a>>2];c=-1;if(b>>>0<=214748364){c=F[d|0]-48|0;b=N(b,10);c=(c|0)>(b^2147483647)?-1:c+b|0}H[a>>2]=d+1;b=c;if(F[d+1|0]-48>>>0<10){continue}break}return b}

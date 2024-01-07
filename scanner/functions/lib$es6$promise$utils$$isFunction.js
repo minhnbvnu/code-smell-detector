@@ -1,0 +1,1 @@
+function lib$es6$promise$utils$$isFunction(x){return typeof x==="function"}

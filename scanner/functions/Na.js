@@ -1,0 +1,1 @@
+function na(){return v||"function"!==typeof fetch?Promise.resolve().then(la):fetch(U,{credentials:"same-origin"}).then(function(a){if(!a.ok)throw"failed to load wasm binary file at '"+U+"'";return a.arrayBuffer();}).catch(function(){return la();});}

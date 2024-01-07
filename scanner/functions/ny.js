@@ -1,0 +1,1 @@
+function Ny(a){a=a|0;a=L[8515];if(a){ra(a)}}

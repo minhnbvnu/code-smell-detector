@@ -1,0 +1,1 @@
+function addOnPreRun(cb){__ATPRERUN__.unshift(cb)}

@@ -1,0 +1,1 @@
+function Ng(a){a=a|0;var b=0,c=0,d=0;if(a){if(F[a+27|0]<0){oa(H[a+16>>2])}b=H[a>>2];if(b){c=b;d=H[a+4>>2];if((b|0)!=(d|0)){while(1){c=d-12|0;if(F[d-1|0]<0){oa(H[c>>2])}d=c;if((d|0)!=(b|0)){continue}break}c=H[a>>2]}H[a+4>>2]=b;oa(c)}oa(a)}}

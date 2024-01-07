@@ -1,0 +1,3 @@
+constructor(uniformBuffer) {
+        super();
+    }

@@ -1,0 +1,1 @@
+function minExtentB(element, size) { return -size[b.size] * element.pivot[b.axis]; }

@@ -1,0 +1,1 @@
+function hh(){return _d(pa(84))|0}

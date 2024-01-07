@@ -1,0 +1,1 @@
+function jh(a){a=a|0;return O(L[a+20>>2])}

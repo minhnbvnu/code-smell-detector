@@ -1,0 +1,1 @@
+function $l(a,b){a=a|0;b=S(b);P[a+44>>2]=b}

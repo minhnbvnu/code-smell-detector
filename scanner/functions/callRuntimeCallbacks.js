@@ -1,0 +1,1 @@
+function callRuntimeCallbacks(callbacks){while(callbacks.length>0){callbacks.shift()(Module)}}

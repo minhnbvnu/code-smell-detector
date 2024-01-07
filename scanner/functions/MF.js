@@ -1,0 +1,1 @@
+function Mf(a,b,c){a=a|0;b=b|0;c=c|0;var d=0,e=0;e=ca+-64|0;ca=e;d=1;a:{if(Ya(a,b,0)){break a}d=0;if(!b){break a}b=Ed(b,14972);d=0;if(!b){break a}d=e+8|0;ra(d|4,0,52);H[e+56>>2]=1;H[e+20>>2]=-1;H[e+16>>2]=a;H[e+8>>2]=b;ea[H[H[b>>2]+28>>2]](b,d,H[c>>2],1);a=H[e+32>>2];if((a|0)==1){H[c>>2]=H[e+24>>2]}d=(a|0)==1}ca=e- -64|0;return d|0}

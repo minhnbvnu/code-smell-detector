@@ -1,0 +1,3 @@
+function webViewerZoomReset() {
+  PDFViewerApplication.zoomReset();
+}

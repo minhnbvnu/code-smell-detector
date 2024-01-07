@@ -1,0 +1,1 @@
+function Fr(t){for(var n in cf)if(cf[n].id===t)return t=cf[n],{firebaseEndpoint:t.Va,secureTokenEndpoint:t.ab};return null}

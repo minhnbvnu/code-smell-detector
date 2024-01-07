@@ -1,0 +1,1 @@
+function Ki(t){if(Mi.call(this,t),"google.com"!=this.providerId)throw Error("Invalid provider ID!")}

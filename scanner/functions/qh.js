@@ -1,0 +1,1 @@
+function qh(a){a=a|0;return F[a+24|0]}

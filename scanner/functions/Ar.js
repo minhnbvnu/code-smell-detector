@@ -1,0 +1,1 @@
+function Ar(t){if(!Yc.test(t.email))throw new Pi("invalid-email")}

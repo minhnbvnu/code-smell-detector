@@ -1,0 +1,1 @@
+function sgn(value){return value<0?-1:value>0?1:0}

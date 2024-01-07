@@ -1,1 +1,3 @@
-function onError () { onResult(false); }
+function onError(event) {
+      reject(new ClientError(event.target));
+    }

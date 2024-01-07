@@ -1,0 +1,1 @@
+function Sj(a,b,c,d){var e=0,f=0,g=0,h=0;f=b^d;g=f>>31;e=b>>31;a=a^e;h=a-e|0;e=(b^e)-((a>>>0<e>>>0)+e|0)|0;a=d>>31;b=c^a;f=f>>31;a=Tj(h,e,b-a|0,(a^d)-((a>>>0>b>>>0)+a|0)|0)^f;b=a-f|0;da=(g^da)-((a>>>0<f>>>0)+g|0)|0;return b}

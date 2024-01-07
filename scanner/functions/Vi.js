@@ -1,0 +1,1 @@
+function Vi(t){if(Mi.call(this,t),"facebook.com"!=this.providerId)throw Error("Invalid provider ID!")}

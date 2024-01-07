@@ -1,0 +1,1 @@
+function yf(a){a=a|0;oa(rd(a))}

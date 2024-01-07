@@ -1,0 +1,1 @@
+function HandleAllocator(){this.allocated=[undefined];this.freelist=[]}

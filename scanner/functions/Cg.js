@@ -1,0 +1,1 @@
+function cg(){return 12}

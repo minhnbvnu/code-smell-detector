@@ -1,0 +1,1 @@
+function v(){var e=D.elements;return"string"==typeof e?e.split(" "):e}

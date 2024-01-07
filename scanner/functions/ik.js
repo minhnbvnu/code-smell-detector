@@ -1,0 +1,1 @@
+function Ik(a,b){a=a|0;b=b|0;var c=0;c=fa-16|0;fa=c;L[c+12>>2]=a;L[c+8>>2]=b;a=L[c+12>>2];a=ha[L[L[a>>2]+40>>2]](a,L[c+8>>2])|0;fa=c+16|0;return a|0}

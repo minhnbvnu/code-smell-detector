@@ -1,0 +1,3 @@
+function isSpecial(c) {
+    return c === 0x2f || c === 0x5b || c === 0x5d || c === 0x7b || c === 0x7d || c === 0x28 || c === 0x29;
+  }

@@ -1,0 +1,3 @@
+function getCurrentId() {
+    return id;
+  }

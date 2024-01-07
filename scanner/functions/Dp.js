@@ -1,0 +1,1 @@
+function dp(a,b,c,d){a=a|0;b=b|0;c=S(c);d=d|0;var e=0;e=fa-80|0;fa=e;L[e+76>>2]=a;L[e+72>>2]=b;P[e+68>>2]=c;L[e+64>>2]=d;a=L[e+76>>2];Pb(e);ee(e);Rf(e,L[e+72>>2]);ha[L[L[a>>2]+16>>2]](a,P[e+68>>2],e,L[e+64>>2]);fa=e+80|0}

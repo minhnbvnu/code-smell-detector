@@ -1,0 +1,1 @@
+function Sk(a,b){a=a|0;b=b|0;if(!(!b|!(L[b+236>>2]&2))){ha[L[L[a>>2]+92>>2]](a,b);return}Bd(a,b)}

@@ -1,0 +1,1 @@
+function Uo(){for(var t=20,n=[];0<t;)n.push("1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ".charAt(Math.floor(62*Math.random()))),t--;return n.join("")}

@@ -1,0 +1,1 @@
+function Tf(a){a=a|0;oa(_b(a))}

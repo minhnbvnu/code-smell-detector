@@ -1,0 +1,3 @@
+function newObject() {
+  return {};
+}

@@ -1,0 +1,1 @@
+function ph(a){a=a|0;return I[a+32|0]}

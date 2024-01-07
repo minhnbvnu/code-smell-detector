@@ -1,0 +1,1 @@
+function Sc(a){a=a|0;if(a){oa(a)}}

@@ -1,0 +1,1 @@
+function eg(){return 10}

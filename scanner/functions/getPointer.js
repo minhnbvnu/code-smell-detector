@@ -1,0 +1,1 @@
+function getPointer(obj){return obj.ptr}

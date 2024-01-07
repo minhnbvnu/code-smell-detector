@@ -1,0 +1,1 @@
+function of(a,b){a=a|0;b=b|0;var c=0,d=0,e=0,f=0,g=0;f=ea[H[H[a>>2]+24>>2]](a)|0;c=1;a:{if((f|0)<=0){break a}d=H[H[a+36>>2]>>2];g=a+48|0;c=0;if(!(ea[H[H[d>>2]+16>>2]](d,g,b)|0)){break a}while(1){e=e+1|0;if((f|0)!=(e|0)){d=H[H[a+36>>2]+(e<<2)>>2];if(ea[H[H[d>>2]+16>>2]](d,g,b)|0){continue}}break}c=(e|0)>=(f|0)}return c|0}

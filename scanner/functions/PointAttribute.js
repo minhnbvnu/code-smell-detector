@@ -1,0 +1,1 @@
+function PointAttribute(){this.ptr=_emscripten_bind_PointAttribute_PointAttribute_0();getCache(PointAttribute)[this.ptr]=this}

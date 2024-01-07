@@ -1,0 +1,1 @@
+function Ez(a){a=a|0;return 4289}

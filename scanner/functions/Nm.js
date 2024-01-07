@@ -1,0 +1,1 @@
+function nm(a){a=a|0;var b=0;b=fa-16|0;L[b+12>>2]=a;return N[L[b+12>>2]+8>>1]<<16>>16}

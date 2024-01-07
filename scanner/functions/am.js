@@ -1,0 +1,1 @@
+function am(p,t){return(p[t]<<24|p[t+1]<<16|p[t+2]<<8|p[t+3])>>>0}

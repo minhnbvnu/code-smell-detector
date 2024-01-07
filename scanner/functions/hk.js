@@ -1,0 +1,1 @@
+function Hk(a,b){Gk(a,b)}

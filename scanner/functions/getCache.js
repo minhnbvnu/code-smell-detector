@@ -1,0 +1,1 @@
+function getCache(__class__){return(__class__||WrapperObject).__cache__}

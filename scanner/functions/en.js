@@ -1,0 +1,1 @@
+function En(t,n){return Object.prototype.hasOwnProperty.call(t,n)}

@@ -1,0 +1,1 @@
+function Ty(a,b){a=a|0;b=b|0;L[a+4>>2]=b}

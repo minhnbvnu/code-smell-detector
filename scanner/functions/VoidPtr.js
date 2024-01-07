@@ -1,0 +1,1 @@
+function VoidPtr(){throw"cannot construct a VoidPtr, no constructor in IDL"}

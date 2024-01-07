@@ -1,0 +1,1 @@
+function Ga(a){return a.e[a.d[1]]}

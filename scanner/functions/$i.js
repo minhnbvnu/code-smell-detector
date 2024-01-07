@@ -1,0 +1,1 @@
+function $i(t){if(!t)throw new Pi("argument-error","credential failed: expected 1 argument (the OAuth access token).");var n=t;return c(t)&&(n=t.accessToken),(new Yi).credential(null,n)}

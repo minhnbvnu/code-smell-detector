@@ -1,0 +1,3 @@
+function returnThis() {
+    return this;
+}

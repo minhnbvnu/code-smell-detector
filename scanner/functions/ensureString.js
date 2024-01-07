@@ -1,0 +1,1 @@
+function ensureString(value){if(typeof value==="string"){var intArray=intArrayFromString(value);var offset=ensureCache.alloc(intArray,HEAP8);ensureCache.copy(intArray,HEAP8,offset);return offset}return value}

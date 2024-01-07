@@ -1,0 +1,1 @@
+function Cr(t,n,e){return jr(t,Xh,{idToken:n,deleteProvider:e})}

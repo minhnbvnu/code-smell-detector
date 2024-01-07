@@ -1,0 +1,1 @@
+function Zd(a,b){var c=0;c=-1;a:{if((b|0)==-1|(b|0)>4){break a}b=N(b,12)+a|0;a=H[b+20>>2];if((H[b+24>>2]-a|0)<=0){break a}c=H[a>>2]}return c}

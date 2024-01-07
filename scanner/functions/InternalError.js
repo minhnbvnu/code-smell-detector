@@ -1,0 +1,1 @@
+constructor(message){super(message);this.name="InternalError"}

@@ -1,0 +1,1 @@
+function yy(){var a=0;a=oa(16);Ka(a);return a|0}

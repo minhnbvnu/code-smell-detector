@@ -1,7 +1,6 @@
-function getFileNameFromURL (url) {
-  var parser = document.createElement('a');
-  parser.href = url;
-  var query = parser.search.replace(/^\?/, '');
-  var filePath = url.replace(query, '').replace('?', '');
-  return filePath.substring(filePath.lastIndexOf('/') + 1);
+function getFilenameFromUrl(url) {
+  const anchor = url.indexOf("#");
+  const query = url.indexOf("?");
+  const end = Math.min(anchor > 0 ? anchor : url.length, query > 0 ? query : url.length);
+  return url.substring(url.lastIndexOf("/", end) + 1, end);
 }

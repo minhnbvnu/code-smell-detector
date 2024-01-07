@@ -1,0 +1,1 @@
+function maxExtentA(element, size) { return  size[a.size] * (1 - element.pivot[a.axis]); }

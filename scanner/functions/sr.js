@@ -1,0 +1,1 @@
+function Sr(t){if(!t[Ph])throw new Pi("internal-error")}

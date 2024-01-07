@@ -1,0 +1,1 @@
+function xp(){var a=0,b=0,c=0;a=fa-32|0;fa=a;b=sa(112);c=a+8|0;og(c);ik(b,c);fa=a+32|0;return b|0}

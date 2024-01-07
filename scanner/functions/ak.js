@@ -1,0 +1,1 @@
+function ak(Q){if(Q==null)Q={};if(Q.w==null)Q.w=-1;this.V=Q.n;this.N=Q.w}

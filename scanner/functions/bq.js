@@ -1,0 +1,1 @@
+function Bq(a,b){a=a|0;b=b|0;var c=0;c=fa-16|0;fa=c;L[c+12>>2]=a;L[c+8>>2]=b;b=L[c+8>>2];a=fa-16|0;L[a+12>>2]=L[c+12>>2];L[a+8>>2]=b;fa=c+16|0;return L[L[a+12>>2]+12>>2]+R(L[a+8>>2],44)|0}

@@ -1,0 +1,1 @@
+function Kn(){this.b=-1}

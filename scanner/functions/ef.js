@@ -1,0 +1,1 @@
+function Ef(a){a=a|0;return 1171}

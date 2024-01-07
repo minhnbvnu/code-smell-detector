@@ -1,0 +1,1 @@
+function kk(a){a=a|0;L[a>>2]=21960;eg(a+12|0);return a|0}

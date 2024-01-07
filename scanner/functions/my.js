@@ -1,0 +1,1 @@
+function My(a){a=a|0;_f(34064)}

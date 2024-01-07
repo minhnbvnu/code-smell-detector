@@ -1,0 +1,1 @@
+function isVersionSupported(versionString){if(typeof versionString!=="string")return false;const version=versionString.split(".");if(version.length<2||version.length>3)return false;if(version[0]==1&&version[1]>=0&&version[1]<=5)return true;if(version[0]!=0||version[1]>10)return false;return true}

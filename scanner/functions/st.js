@@ -1,0 +1,1 @@
+function St(t,e){return t&&t.contentType||e&&e.type()||"application/octet-stream"}

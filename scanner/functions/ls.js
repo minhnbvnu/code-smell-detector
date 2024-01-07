@@ -1,0 +1,1 @@
+function Ls(n,e){return{name:n||"",K:"a valid string",optional:!!e,M:t}}

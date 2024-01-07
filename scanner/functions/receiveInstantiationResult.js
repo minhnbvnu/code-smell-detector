@@ -1,0 +1,1 @@
+function receiveInstantiationResult(result){receiveInstance(result["instance"])}

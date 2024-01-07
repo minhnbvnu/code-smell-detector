@@ -1,0 +1,1 @@
+function In(t){return t.c?t.c:t.a?In(t.a):(I("Root logger has no level set."),null)}

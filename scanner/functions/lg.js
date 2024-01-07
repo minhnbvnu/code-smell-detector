@@ -1,0 +1,1 @@
+function lg(a){a=a|0;if(a){if(F[a+39|0]<0){oa(H[a+28>>2])}Oc(a+12|0,H[a+16>>2]);Kb(a,H[a+4>>2]);oa(a)}}

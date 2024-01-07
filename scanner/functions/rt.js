@@ -1,0 +1,1 @@
+function Rt(t){return Array.prototype.slice.call(t)}

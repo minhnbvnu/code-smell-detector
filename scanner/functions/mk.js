@@ -1,0 +1,1 @@
+function Mk(a,b){a=a|0;b=b|0;return L[L[a+220>>2]+(b<<2)>>2]}

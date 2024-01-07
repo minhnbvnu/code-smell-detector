@@ -1,0 +1,1 @@
+function xt(e){return e.getAttribute&&e.getAttribute("class")||""}

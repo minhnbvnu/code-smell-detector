@@ -1,0 +1,1 @@
+function Xi(t,n){return t.then(function(t){if(t[Ph]){var e=Li(t[Ph]);if(!e||n!=e.b)throw new Pi("user-mismatch");return t}throw new Pi("user-mismatch")}).s(function(t){throw t&&t.code&&t.code==dh+"user-not-found"?new Pi("user-mismatch"):t})}

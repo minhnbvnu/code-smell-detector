@@ -1,0 +1,3 @@
+function RestElement() {
+	  return ArrayExpression();
+	}

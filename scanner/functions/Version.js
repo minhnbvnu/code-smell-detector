@@ -1,0 +1,3 @@
+constructor(attributes) {
+    super(CONFIG_NS_ID, "version", ["1.7", "1.6", "1.5", "1.4", "1.3", "1.2"]);
+  }

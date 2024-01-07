@@ -1,0 +1,1 @@
+function Wp(){var a=0;a=oa(16);L[(fa-16|0)+12>>2]=a;return a|0}

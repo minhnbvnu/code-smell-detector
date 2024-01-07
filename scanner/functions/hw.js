@@ -1,0 +1,1 @@
+function Hw(a){a=a|0;var b=0;b=fa-16|0;fa=b;L[b+12>>2]=a;fa=b+16|0;return L[L[b+12>>2]+4>>2]}

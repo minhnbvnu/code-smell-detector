@@ -1,0 +1,1 @@
+function yh(){return Ha(pa(40))|0}

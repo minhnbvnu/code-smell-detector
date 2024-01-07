@@ -1,0 +1,1 @@
+function sw(a,b,c,d){a=a|0;b=b|0;c=c|0;d=d|0;var e=0;e=fa-16|0;fa=e;L[e+12>>2]=a;L[e+8>>2]=b;L[e+4>>2]=c;L[e>>2]=d;Yl(L[e+12>>2],L[e+8>>2],L[e+4>>2],L[e>>2],0);fa=e+16|0}

@@ -1,0 +1,3 @@
+function imageDataFormat() {
+	  return 'channelsLast';
+	}

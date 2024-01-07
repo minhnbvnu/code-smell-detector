@@ -1,0 +1,1 @@
+function Status(){throw"cannot construct a Status, no constructor in IDL"}

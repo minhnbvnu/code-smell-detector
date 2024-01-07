@@ -1,0 +1,1 @@
+function Hn(){qn.call(this,8,jc)}

@@ -1,0 +1,1 @@
+function xz(a){a=a|0;kk(a);ra(a)}

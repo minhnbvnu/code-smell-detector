@@ -1,0 +1,1 @@
+function _emscripten_memcpy_big(dest,src,num){HEAPU8.copyWithin(dest,src,src+num)}

@@ -1,0 +1,1 @@
+function ld(a){a=a|0;return 3}

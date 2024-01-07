@@ -1,0 +1,1 @@
+function Uf(a){a=a|0;return H[a+8>>2]-H[a+4>>2]>>2}

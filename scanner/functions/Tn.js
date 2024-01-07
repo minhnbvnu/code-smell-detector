@@ -1,0 +1,1 @@
+function Tn(t){Nc||(Nc=new wn(""),Ec[""]=Nc,Nc.c=Ac);var n;if(!(n=Ec[t])){n=new wn(t);var e=t.lastIndexOf("."),i=t.substr(e+1);e=Tn(t.substr(0,e)),e.b||(e.b={}),e.b[i]=n,n.a=e,Ec[t]=n}return n}

@@ -1,0 +1,1 @@
+function Yd(a,b){var c=0,d=0;c=H[a+8>>2];a=H[a+12>>2];if((c|0)!=(a|0)){a=a-c>>2;d=a>>>0<=1?1:a;a=0;while(1){if(H[H[(a<<2)+c>>2]+60>>2]==(b|0)){return a}a=a+1|0;if((d|0)!=(a|0)){continue}break}}return-1}

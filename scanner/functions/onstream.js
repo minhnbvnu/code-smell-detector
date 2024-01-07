@@ -1,0 +1,3 @@
+function onstream() {
+    streaming = true;
+  }

@@ -1,0 +1,1 @@
+function Qi(t,n){var e=t;return c(t)&&(e=t.idToken,n=t.accessToken),(new Zi).credential(e,n)}

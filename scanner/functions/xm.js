@@ -1,0 +1,1 @@
+function Xm(a){a=a|0;var b=0,c=0;L[a>>2]=10252;a:{if(!M[a+8|0]){break a}b=L[a+12>>2];if(!b){break a}c=L[a+4>>2];ha[L[L[c>>2]+16>>2]](c,b)}return a|0}

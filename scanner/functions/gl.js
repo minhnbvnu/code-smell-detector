@@ -1,0 +1,1 @@
+function Gl(a,b,c,d,e){if(Hl(a,30024,b,c,d,e)){a=1}else{a=Bg(a,30024,b,c,d,e,0)}return a}

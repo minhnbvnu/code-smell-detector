@@ -1,0 +1,1 @@
+function zc(a){a=a|0;Ad(a);oa(a)}

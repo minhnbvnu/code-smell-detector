@@ -1,0 +1,1 @@
+function Qj(a){if(a){return 31-Q(a-1^a)|0}return 32}

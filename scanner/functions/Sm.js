@@ -1,0 +1,1 @@
+function sm(a){a=a|0;return L[a+96>>2]}

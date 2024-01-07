@@ -1,0 +1,1 @@
+function Is(t,n){var e={};return e.apiKey=Ss(t).options.apiKey,e.authDomain=Ss(t).options.authDomain,e.appName=Ss(t).name,t.U.then(function(){return es(e,n,t.G,t.Ka())}).then(function(n){return Os(t)&&n.uid==Os(t).uid?(qa(Os(t),n),t.ka(n)):(Ts(t,n),La(n),t.ka(n))}).then(function(){Cs(t)})}

@@ -1,0 +1,1 @@
+function Qw(a){a=a|0;var b=0;b=fa-16|0;fa=b;L[b+12>>2]=a;a=oa(112);We(a,L[b+12>>2],0);fa=b+16|0;return a|0}

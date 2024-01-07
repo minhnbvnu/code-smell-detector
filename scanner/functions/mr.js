@@ -1,0 +1,1 @@
+function Mr(t){return Vr({error:{errors:[{message:t}],code:400,message:t}})}

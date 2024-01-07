@@ -1,0 +1,1 @@
+function Fi(t){if(Mi.call(this,t),"github.com"!=this.providerId)throw Error("Invalid provider ID!");Ti(this,"username",this.profile&&this.profile.login||null)}

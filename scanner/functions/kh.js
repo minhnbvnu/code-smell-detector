@@ -1,0 +1,1 @@
+function kh(a,b){a=a|0;b=b|0;return O(L[H[a+8>>2]+(b<<2)>>2])}

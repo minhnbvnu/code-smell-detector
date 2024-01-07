@@ -1,0 +1,1 @@
+function Ss(t){return t.app}

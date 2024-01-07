@@ -1,0 +1,1 @@
+function Rw(){var a=0;a=oa(112);We(a,0,0);return a|0}

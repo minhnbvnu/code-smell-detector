@@ -1,0 +1,1 @@
+function la(){try{if(v)return new Uint8Array(v);var a=U;if(T(a))try{var c=ma(a.slice(37)),d=new Uint8Array(c.length);for(a=0;a<c.length;++a)d[a]=c.charCodeAt(a);var e=d;}catch(g){throw Error("Converting base64 string to bytes failed.");}else e=void 0;var f=e;if(f)return f;throw"both async and sync fetching of the wasm failed";}catch(g){w(g);}}

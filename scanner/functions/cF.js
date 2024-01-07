@@ -1,0 +1,1 @@
+function Cf(a){a=a|0;return 1211}

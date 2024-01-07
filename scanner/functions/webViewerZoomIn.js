@@ -1,0 +1,3 @@
+function webViewerZoomIn() {
+  PDFViewerApplication.zoomIn();
+}

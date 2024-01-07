@@ -1,0 +1,1 @@
+function createNamedFunction(name,body){name=makeLegalFunctionName(name);return{[name]:function(){return body.apply(this,arguments)}}[name]}
