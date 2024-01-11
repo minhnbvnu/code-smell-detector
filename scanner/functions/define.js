@@ -1,12 +1,8 @@
-export const waitForData = async doc => {
-  return new Promise((resolve, reject) => {
-    const buffers = [];
-    doc.on('data', buffers.push.bind(buffers));
-    doc.on('end', async () => {
-      const pdfBuffer = Buffer.concat(buffers);
-      const pdfBase64 = pdfBuffer.toString('base64');
-      resolve(`data:application/pdf;base64,${pdfBase64}`);
-    });
-    doc.on('error', reject);
-  });
-};
+function define(t, e, r) {
+	    return Object.defineProperty(t, e, {
+	      value: r,
+	      enumerable: !0,
+	      configurable: !0,
+	      writable: !0
+	    }), t[e];
+	  }

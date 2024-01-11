@@ -1,1 +1,0 @@
-constructor(message){super(message);this.name="BindingError"}

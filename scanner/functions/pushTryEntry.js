@@ -1,12 +1,16 @@
-export const waitForData = async doc => {
-  return new Promise((resolve, reject) => {
-    const buffers = [];
-    doc.on('data', buffers.push.bind(buffers));
-    doc.on('end', async () => {
-      const pdfBuffer = Buffer.concat(buffers);
-      const pdfBase64 = pdfBuffer.toString('base64');
-      resolve(`data:application/pdf;base64,${pdfBase64}`);
-    });
-    doc.on('error', reject);
-  });
-};
+function pushTryEntry(locs) {
+	      var entry = {
+	        tryLoc: locs[0]
+	      };
+
+	      if (1 in locs) {
+	        entry.catchLoc = locs[1];
+	      }
+
+	      if (2 in locs) {
+	        entry.finallyLoc = locs[2];
+	        entry.afterLoc = locs[3];
+	      }
+
+	      this.tryEntries.push(entry);
+	    }

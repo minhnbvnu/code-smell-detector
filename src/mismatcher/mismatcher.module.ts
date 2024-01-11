@@ -4,8 +4,8 @@ import { MismatcherController } from "./mismatcher.controller";
 import { EslintService } from "src/eslint/eslint.service";
 import { SonarqubeService } from "src/sonarqube/sonarqube.service";
 import { ConfigService } from "@nestjs/config";
-import { EslintModule } from "src/eslint/eslint.module";
-import { SonarqubeModule } from "src/sonarqube/sonarqube.module";
+
+import { JshintService } from "src/jshint/jshint.service";
 
 @Module({
   controllers: [MismatcherController],
@@ -14,6 +14,7 @@ import { SonarqubeModule } from "src/sonarqube/sonarqube.module";
     EslintService,
     SonarqubeService,
     ConfigService,
+    JshintService,
   ],
 })
 export class MismatcherModule {}

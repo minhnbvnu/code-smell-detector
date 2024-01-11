@@ -1,12 +1,12 @@
 import { Injectable } from "@nestjs/common";
 import { EslintService } from "src/eslint/eslint.service";
-import { SonarqubeService } from "src/sonarqube/sonarqube.service";
+import { JshintService } from "src/jshint/jshint.service";
 
 @Injectable()
 export class MismatcherService {
   constructor(
-    private readonly sonarqubeService: SonarqubeService,
-    private readonly eslintService: EslintService
+    private readonly eslintService: EslintService,
+    private readonly jshintService: JshintService
   ) {}
 
   findMismatchedElements(arr1, arr2) {
@@ -21,12 +21,10 @@ export class MismatcherService {
     return mismatchedElements;
   }
   async findMismatch() {
-    const sonarqubeRes = await this.sonarqubeService.findIssues(
-      "complex-method"
-    );
+    const jshintRes = await this.jshintService.findComplexMethod();
 
     const eslintRes = await this.eslintService.findComplexMethod();
-    return this.findMismatchedElements(sonarqubeRes, eslintRes);
+    return this.findMismatchedElements(jshintRes, eslintRes);
     // return { sonarqubeRes, eslintRes };
   }
 }

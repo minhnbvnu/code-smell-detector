@@ -1,50 +1,12 @@
-class VirtualFileSystem {
-  constructor() {
-    this.fileData = {};
-  }
+function _toPrimitive(input, hint) {
+	  if (typeof input !== "object" || input === null) return input;
+	  var prim = input[Symbol.toPrimitive];
 
-  readFileSync(fileName, options = {}) {
-    const encoding = typeof options === 'string' ? options : options.encoding;
-    const virtualFileName = normalizeFilename(fileName);
+	  if (prim !== undefined) {
+	    var res = prim.call(input, hint || "default");
+	    if (typeof res !== "object") return res;
+	    throw new TypeError("@@toPrimitive must return a primitive value.");
+	  }
 
-    const data = this.fileData[virtualFileName];
-    if (data == null) {
-      throw new Error(
-        `File '${virtualFileName}' not found in virtual file system`
-      );
-    }
-
-    if (encoding) {
-      // return a string
-      return typeof data === 'string' ? data : data.toString(encoding);
-    }
-
-    return Buffer.from(data, typeof data === 'string' ? 'base64' : undefined);
-  }
-
-  writeFileSync(fileName, content) {
-    this.fileData[normalizeFilename(fileName)] = content;
-  }
-
-  bindFileData(data = {}, options = {}) {
-    if (options.reset) {
-      this.fileData = data;
-    } else {
-      Object.assign(this.fileData, data);
-    }
-  }
-}
-
-function normalizeFilename(fileName) {
-  if (fileName.indexOf(__dirname) === 0) {
-    fileName = fileName.substring(__dirname.length);
-  }
-
-  if (fileName.indexOf('/') === 0) {
-    fileName = fileName.substring(1);
-  }
-
-  return fileName;
-}
-
-export default new VirtualFileSystem();
+	  return (hint === "string" ? String : Number)(input);
+	}

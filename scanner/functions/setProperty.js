@@ -1,6 +1,7 @@
-constructor(attributes) {
-    super(TEMPLATE_NS_ID, "setProperty");
-    this.connection = attributes.connection || "";
-    this.ref = attributes.ref || "";
-    this.target = attributes.target || "";
-  }
+function setProperty(pName, defaultVal) {
+    if (setPropertyOptions[pName] !== undefined && setPropertyOptions[pName] !== null) {
+        setPropertyTarget[pName] = setPropertyOptions[pName];
+    } else {
+        setPropertyTarget[pName] = defaultVal;
+    }
+}

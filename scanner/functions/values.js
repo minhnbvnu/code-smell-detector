@@ -1,12 +1,37 @@
-export const waitForData = async doc => {
-  return new Promise((resolve, reject) => {
-    const buffers = [];
-    doc.on('data', buffers.push.bind(buffers));
-    doc.on('end', async () => {
-      const pdfBuffer = Buffer.concat(buffers);
-      const pdfBase64 = pdfBuffer.toString('base64');
-      resolve(`data:application/pdf;base64,${pdfBase64}`);
-    });
-    doc.on('error', reject);
-  });
-};
+function values(iterable) {
+	      if (iterable) {
+	        var iteratorMethod = iterable[iteratorSymbol];
+
+	        if (iteratorMethod) {
+	          return iteratorMethod.call(iterable);
+	        }
+
+	        if (typeof iterable.next === "function") {
+	          return iterable;
+	        }
+
+	        if (!isNaN(iterable.length)) {
+	          var i = -1,
+	              next = function next() {
+	            while (++i < iterable.length) {
+	              if (hasOwn.call(iterable, i)) {
+	                next.value = iterable[i];
+	                next.done = false;
+	                return next;
+	              }
+	            }
+
+	            next.value = undefined$1;
+	            next.done = true;
+	            return next;
+	          };
+
+	          return next.next = next;
+	        }
+	      } // Return an iterator with no values.
+
+
+	      return {
+	        next: doneResult
+	      };
+	    }

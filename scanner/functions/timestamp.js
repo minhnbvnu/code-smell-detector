@@ -1,8 +1,8 @@
-constructor(attributes) {
-    super(TEMPLATE_NS_ID, "timeStamp");
-    this.id = attributes.id || "";
-    this.server = attributes.server || "";
-    this.type = (0, _utils.getStringOption)(attributes.type, ["optional", "required"]);
-    this.use = attributes.use || "";
-    this.usehref = attributes.usehref || "";
-  }
+function timestamp() {
+    return {
+        name: 'timestamp',
+        writeBundle() {
+            console.log("\x1b[32m", "Finished at: " + date.format(new Date(), 'HH:mm:ss'));
+        }
+    };
+}

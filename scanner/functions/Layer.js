@@ -1,76 +1,89 @@
-constructor(options) {
-    const baseOptions = Object.assign({}, options);
-    delete baseOptions.source;
+function Layer(args) {
+	    var _this;
 
-    super(baseOptions);
+	    if (args === void 0) {
+	      args = {};
+	    }
 
-    /***
-     * @type {LayerOnSignature<import("../events").EventsKey>}
-     */
-    this.on;
+	    _this = _serialization$Serial.call(this) || this;
+	    _this._callHook = null;
+	    _this._addedWeightNames = []; // Porting Notes: PyKeras does not have this property in this base Layer
+	    //   class. Instead lets Layer subclass set it dynamically and checks the
+	    //   value with `hasattr`. In tfjs-layers, we let this be a member of this
+	    //   base class.
 
-    /***
-     * @type {LayerOnSignature<import("../events").EventsKey>}
-     */
-    this.once;
+	    _this._stateful = false;
+	    _this.id = _nextLayerID++;
+	    _this.activityRegularizer = null;
+	    _this.inputSpec = null;
+	    _this.supportsMasking = false; // These properties will be set upon call of this.build()
 
-    /***
-     * @type {LayerOnSignature<void>}
-     */
-    this.un;
+	    _this._trainableWeights = [];
+	    _this._nonTrainableWeights = [];
+	    _this._losses = [];
+	    _this._updates = [];
+	    _this._built = false;
+	    /*
+	      These lists will be filled via successive calls
+	      to this.addInboundNode().
+	     */
 
-    /**
-     * @private
-     * @type {?import("../events.js").EventsKey}
-     */
-    this.mapPrecomposeKey_ = null;
+	    _this.inboundNodes = [];
+	    _this.outboundNodes = [];
+	    var name = args.name;
 
-    /**
-     * @private
-     * @type {?import("../events.js").EventsKey}
-     */
-    this.mapRenderKey_ = null;
+	    if (!name) {
+	      var prefix = _this.getClassName();
 
-    /**
-     * @private
-     * @type {?import("../events.js").EventsKey}
-     */
-    this.sourceChangeKey_ = null;
+	      name = toSnakeCase(prefix) + '_' + getUid(prefix);
+	    }
 
-    /**
-     * @private
-     * @type {RendererType}
-     */
-    this.renderer_ = null;
+	    _this.name = name;
+	    _this.trainable_ = args.trainable == null ? true : args.trainable;
 
-    /**
-     * @private
-     * @type {boolean}
-     */
-    this.sourceReady_ = false;
+	    if (args.inputShape != null || args.batchInputShape != null) {
+	      /*
+	        In this case we will later create an input layer
+	        to insert before the current layer
+	       */
+	      var batchInputShape;
 
-    /**
-     * @protected
-     * @type {boolean}
-     */
-    this.rendered = false;
+	      if (args.batchInputShape != null) {
+	        batchInputShape = args.batchInputShape;
+	      } else if (args.inputShape != null) {
+	        var batchSize = null;
 
-    // Overwrite default render method with a custom one
-    if (options.render) {
-      this.render = options.render;
-    }
+	        if (args.batchSize != null) {
+	          batchSize = args.batchSize;
+	        }
 
-    if (options.map) {
-      this.setMap(options.map);
-    }
+	        batchInputShape = [batchSize].concat(args.inputShape);
+	      }
 
-    this.addChangeListener(
-      LayerProperty.SOURCE,
-      this.handleSourcePropertyChange_,
-    );
+	      _this.batchInputShape = batchInputShape; // Set dtype.
 
-    const source = options.source
-      ? /** @type {SourceType} */ (options.source)
-      : null;
-    this.setSource(source);
-  }
+	      var dtype = args.dtype;
+
+	      if (dtype == null) {
+	        dtype = args.inputDType;
+	      }
+
+	      if (dtype == null) {
+	        dtype = 'float32';
+	      }
+
+	      _this.dtype = dtype;
+	    }
+
+	    if (args.weights != null) {
+	      _this.initialWeights = args.weights;
+	    } else {
+	      _this.initialWeights = null;
+	    } // The value of `_refCount` is initialized to null. When the layer is used
+	    // in a symbolic way for the first time, it will be set to 1.
+
+
+	    _this._refCount = null;
+	    _this.fastWeightInitDuringBuild = false;
+	    return _this;
+	  }

@@ -1,3 +1,6 @@
-constructor(attributes) {
-    super(CONFIG_NS_ID, "whitespace", ["preserve", "ltrim", "normalize", "rtrim", "trim"]);
-  }
+function Whitespace(tokens) {
+	    (0, _classCallCheck3.default)(this, Whitespace);
+
+	    this.tokens = tokens;
+	    this.used = {};
+	  }

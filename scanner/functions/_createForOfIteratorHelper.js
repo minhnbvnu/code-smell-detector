@@ -1,63 +1,54 @@
-/*
-PDFTree - abstract base class for name and number tree objects
-*/
+function _createForOfIteratorHelper(o) {
+	  if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) {
+	    if (Array.isArray(o) || (o = _unsupportedIterableToArray(o))) {
+	      var i = 0;
 
-import PDFObject from './object';
+	      var F = function () {};
 
-class PDFTree {
-  constructor(options = {}) {
-    this._items = {};
-    // disable /Limits output for this tree
-    this.limits =
-      typeof options.limits === 'boolean' ? options.limits : true;
-  }
+	      return {
+	        s: F,
+	        n: function () {
+	          if (i >= o.length) return {
+	            done: true
+	          };
+	          return {
+	            done: false,
+	            value: o[i++]
+	          };
+	        },
+	        e: function (e) {
+	          throw e;
+	        },
+	        f: F
+	      };
+	    }
 
-  add(key, val) {
-    return (this._items[key] = val);
-  }
+	    throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+	  }
 
-  get(key) {
-    return this._items[key];
-  }
-
-  toString() {
-    // Needs to be sorted by key
-    const sortedKeys = Object.keys(this._items).sort((a, b) =>
-      this._compareKeys(a, b)
-    );
-
-    const out = ['<<'];
-    if (this.limits && sortedKeys.length > 1) {
-      const first = sortedKeys[0],
-        last = sortedKeys[sortedKeys.length - 1];
-      out.push(
-        `  /Limits ${PDFObject.convert([this._dataForKey(first), this._dataForKey(last)])}`
-      );
-    }
-    out.push(`  /${this._keysName()} [`);
-    for (let key of sortedKeys) {
-      out.push(
-        `    ${PDFObject.convert(this._dataForKey(key))} ${PDFObject.convert(
-          this._items[key]
-        )}`
-      );
-    }
-    out.push(']');
-    out.push('>>');
-    return out.join('\n');
-  }
-
-  _compareKeys(/*a, b*/) {
-    throw new Error('Must be implemented by subclasses');
-  }
-
-  _keysName() {
-    throw new Error('Must be implemented by subclasses');
-  }
-
-  _dataForKey(/*k*/) {
-    throw new Error('Must be implemented by subclasses');
-  }
-}
-
-export default PDFTree;
+	  var it,
+	      normalCompletion = true,
+	      didErr = false,
+	      err;
+	  return {
+	    s: function () {
+	      it = o[Symbol.iterator]();
+	    },
+	    n: function () {
+	      var step = it.next();
+	      normalCompletion = step.done;
+	      return step;
+	    },
+	    e: function (e) {
+	      didErr = true;
+	      err = e;
+	    },
+	    f: function () {
+	      try {
+	        if (!normalCompletion && it.return != null) it.return();
+	      } finally {
+	        if (didErr) throw err;
+	      }
+	    }
+	  };
+	}

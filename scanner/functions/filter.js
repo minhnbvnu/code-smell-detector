@@ -1,7 +1,6 @@
-constructor(tagName) {
-    /**
-     * @private
-     * @type {!string}
-     */
-    this.tagName_ = tagName;
-  }
+function filter(pattern, options) {
+	  options = options || {};
+	  return function (p, i, list) {
+	    return minimatch(p, pattern, options);
+	  };
+	}

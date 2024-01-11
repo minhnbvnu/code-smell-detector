@@ -1,7 +1,11 @@
-constructor(attributes) {
-    super(CONFIG_NS_ID, "config", true);
-    this.acrobat = null;
-    this.present = null;
-    this.trace = null;
-    this.agent = new _xfa_object.XFAObjectArray();
+function config (name) {
+  // accessing global.localStorage can trigger a DOMException in sandboxed iframes
+  try {
+    if (!global.localStorage) return false;
+  } catch (_) {
+    return false;
   }
+  var val = global.localStorage[name];
+  if (null == val) return false;
+  return String(val).toLowerCase() === 'true';
+}

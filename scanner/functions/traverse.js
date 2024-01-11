@@ -1,10 +1,14 @@
-constructor(attributes) {
-    super(TEMPLATE_NS_ID, "traverse", true);
-    this.id = attributes.id || "";
-    this.operation = (0, _utils.getStringOption)(attributes.operation, ["next", "back", "down", "first", "left", "right", "up"]);
-    this.ref = attributes.ref || "";
-    this.use = attributes.use || "";
-    this.usehref = attributes.usehref || "";
-    this.extras = null;
-    this.script = null;
-  }
+function traverse(parent, opts, scope, state, parentPath) {
+	  if (!parent) return;
+	  if (!opts) opts = {};
+
+	  if (!opts.noScope && !scope) {
+	    if (parent.type !== "Program" && parent.type !== "File") {
+	      throw new Error(messages.get("traverseNeedsParent", parent.type));
+	    }
+	  }
+
+	  visitors.explode(opts);
+
+	  traverse.node(parent, opts, scope, state, parentPath);
+	}

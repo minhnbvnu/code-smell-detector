@@ -1,12 +1,10 @@
-export const waitForData = async doc => {
-  return new Promise((resolve, reject) => {
-    const buffers = [];
-    doc.on('data', buffers.push.bind(buffers));
-    doc.on('end', async () => {
-      const pdfBuffer = Buffer.concat(buffers);
-      const pdfBase64 = pdfBuffer.toString('base64');
-      resolve(`data:application/pdf;base64,${pdfBase64}`);
-    });
-    doc.on('error', reject);
-  });
-};
+function Context(tryLocsList) {
+	      // The root entry object (effectively a try statement without a catch
+	      // or a finally block) gives us a place to store values thrown from
+	      // locations where there is no enclosing try statement.
+	      this.tryEntries = [{
+	        tryLoc: "root"
+	      }];
+	      tryLocsList.forEach(pushTryEntry, this);
+	      this.reset(true);
+	    }

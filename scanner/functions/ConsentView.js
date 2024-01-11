@@ -1,3 +1,0 @@
-constructor() {
-    etch.initialize(this);
-  }

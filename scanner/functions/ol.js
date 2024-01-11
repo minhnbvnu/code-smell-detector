@@ -1,4 +1,1 @@
-constructor(attributes) {
-    super(XHTML_NS_ID, "ol");
-    this.style = checkStyle(attributes.style);
-  }
+function Ol(a,b){a=a|0;b=b|0;return L[L[a+184>>2]+(b<<2)>>2]}

@@ -1,4 +1,1 @@
-constructor(attributes) {
-    super(XHTML_NS_ID, "ul");
-    this.style = checkStyle(attributes.style);
-  }
+function Ul(a){a=a|0;var b=0,c=0;L[a>>2]=17248;b=L[a+12>>2];if(b){c=L[a+4>>2];ha[L[L[c>>2]+16>>2]](c,b);L[a+12>>2]=0}b=L[a+8>>2];if(b){ha[L[L[b>>2]>>2]](b)|0;b=L[a+4>>2];ha[L[L[b>>2]+60>>2]](b,L[a+8>>2]);L[a+8>>2]=0}L[a+24>>2]=-1;L[a+28>>2]=-1;L[a+32>>2]=-1;L[a+36>>2]=-1;return a|0}

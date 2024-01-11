@@ -1,3 +1,0 @@
-constructor() {
-        this.bbox = getDefaultBBOX();
-    }

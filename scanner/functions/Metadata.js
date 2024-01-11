@@ -1,7 +1,1 @@
-constructor({
-    parsedData,
-    rawData
-  }) {
-    this._metadataMap = parsedData;
-    this._data = rawData;
-  }
+function Metadata(){this.ptr=_emscripten_bind_Metadata_Metadata_0();getCache(Metadata)[this.ptr]=this}

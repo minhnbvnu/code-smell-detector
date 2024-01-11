@@ -1,9 +1,18 @@
-constructor(attributes) {
-    super(TEMPLATE_NS_ID, "color", true);
-    this.cSpace = (0, _utils.getStringOption)(attributes.cSpace, ["SRGB"]);
-    this.id = attributes.id || "";
-    this.use = attributes.use || "";
-    this.usehref = attributes.usehref || "";
-    this.value = (0, _utils.getColor)(attributes.value);
-    this.extras = null;
-  }
+function Color(r, g, b, a) {
+	      if (r === void 0) {
+	        r = 0;
+	      }
+	      if (g === void 0) {
+	        g = 0;
+	      }
+	      if (b === void 0) {
+	        b = 0;
+	      }
+	      if (a === void 0) {
+	        a = 0;
+	      }
+	      this.r = r;
+	      this.g = g;
+	      this.b = b;
+	      this.a = a;
+	    }

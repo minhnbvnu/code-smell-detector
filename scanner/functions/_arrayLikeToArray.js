@@ -1,63 +1,7 @@
-/*
-PDFTree - abstract base class for name and number tree objects
-*/
+function _arrayLikeToArray(arr, len) {
+	  if (len == null || len > arr.length) len = arr.length;
 
-import PDFObject from './object';
+	  for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i];
 
-class PDFTree {
-  constructor(options = {}) {
-    this._items = {};
-    // disable /Limits output for this tree
-    this.limits =
-      typeof options.limits === 'boolean' ? options.limits : true;
-  }
-
-  add(key, val) {
-    return (this._items[key] = val);
-  }
-
-  get(key) {
-    return this._items[key];
-  }
-
-  toString() {
-    // Needs to be sorted by key
-    const sortedKeys = Object.keys(this._items).sort((a, b) =>
-      this._compareKeys(a, b)
-    );
-
-    const out = ['<<'];
-    if (this.limits && sortedKeys.length > 1) {
-      const first = sortedKeys[0],
-        last = sortedKeys[sortedKeys.length - 1];
-      out.push(
-        `  /Limits ${PDFObject.convert([this._dataForKey(first), this._dataForKey(last)])}`
-      );
-    }
-    out.push(`  /${this._keysName()} [`);
-    for (let key of sortedKeys) {
-      out.push(
-        `    ${PDFObject.convert(this._dataForKey(key))} ${PDFObject.convert(
-          this._items[key]
-        )}`
-      );
-    }
-    out.push(']');
-    out.push('>>');
-    return out.join('\n');
-  }
-
-  _compareKeys(/*a, b*/) {
-    throw new Error('Must be implemented by subclasses');
-  }
-
-  _keysName() {
-    throw new Error('Must be implemented by subclasses');
-  }
-
-  _dataForKey(/*k*/) {
-    throw new Error('Must be implemented by subclasses');
-  }
-}
-
-export default PDFTree;
+	  return arr2;
+	}

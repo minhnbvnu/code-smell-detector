@@ -1,3 +1,1 @@
-constructor(attributes) {
-    super(CONFIG_NS_ID, "to", ["null", "memory", "stderr", "stdout", "system", "uri"]);
-  }
+function To(){return mf||(mf=new Io("firebase",":",!(vi(ri())||!Qe()),hi(),ai())),mf}

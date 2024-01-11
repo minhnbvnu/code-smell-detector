@@ -1,3 +1,0 @@
-constructor(target) {
-        super(target);
-    }

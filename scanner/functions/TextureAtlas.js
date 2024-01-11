@@ -1,14 +1,5 @@
-constructor() {
-        super();
-
-        /**
-         * @type {import('../platform/graphics/texture.js').Texture}
-         * @private
-         */
-        this._texture = null;
-        /**
-         * @type {object}
-         * @private
-         */
-        this._frames = null;
-    }
+function TextureAtlas(atlasText, textureLoader) {
+	      this.pages = new Array();
+	      this.regions = new Array();
+	      this.load(atlasText, textureLoader);
+	    }

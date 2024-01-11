@@ -1,13 +1,3 @@
-constructor(propertyName, lowerBoundary, upperBoundary) {
-    super('PropertyIsBetween', propertyName);
-
-    /**
-     * @type {!number}
-     */
-    this.lowerBoundary = lowerBoundary;
-
-    /**
-     * @type {!number}
-     */
-    this.upperBoundary = upperBoundary;
-  }
+function isBetween(n, start, end) {
+      return start <= n && n <= end;
+    }

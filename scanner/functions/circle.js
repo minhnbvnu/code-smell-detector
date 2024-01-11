@@ -1,9 +1,5 @@
-constructor(center, radius, layout) {
-    super();
-    if (layout !== undefined && radius === undefined) {
-      this.setFlatCoordinates(layout, center);
-    } else {
-      radius = radius ? radius : 0;
-      this.setCenterAndRadius(center, radius, layout);
-    }
-  }
+function circle(ctx, x, y, r) {
+		ctx.beginPath();
+		ctx.arc(x, y, r, 0, Math.PI * 2);
+		ctx.fill();
+	}

@@ -1,3 +1,13 @@
-constructor(attributes) {
-    super(CONFIG_NS_ID, "type", ["none", "ascii85", "asciiHex", "ccittfax", "flate", "lzw", "runLength", "native", "xdp", "mergedXDP"]);
-  }
+function type(obj) {
+    if (obj === null) {
+        return 'null';
+    }
+
+    const type = typeof obj;
+
+    if (type === 'undefined' || type === 'number' || type === 'string' || type === 'boolean') {
+        return type;
+    }
+
+    return _typeLookup[Object.prototype.toString.call(obj)];
+}

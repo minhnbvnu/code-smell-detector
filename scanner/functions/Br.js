@@ -1,4 +1,1 @@
-constructor(attributes) {
-    super(XHTML_NS_ID, "br");
-    this.style = checkStyle(attributes.style);
-  }
+function Br(t,n){t.Ya.then(function(){t.a.register("authEvent",n,oi("gapi.iframes.CROSS_ORIGIN_IFRAMES_FILTER"))})}

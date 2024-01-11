@@ -1,12 +1,14 @@
-export const waitForData = async doc => {
-  return new Promise((resolve, reject) => {
-    const buffers = [];
-    doc.on('data', buffers.push.bind(buffers));
-    doc.on('end', async () => {
-      const pdfBuffer = Buffer.concat(buffers);
-      const pdfBase64 = pdfBuffer.toString('base64');
-      resolve(`data:application/pdf;base64,${pdfBase64}`);
-    });
-    doc.on('error', reject);
-  });
-};
+function handle(loc, caught) {
+	          record.type = "throw";
+	          record.arg = exception;
+	          context.next = loc;
+
+	          if (caught) {
+	            // If the dispatched exception was caught by a catch block,
+	            // then let that catch block handle the exception normally.
+	            context.method = "next";
+	            context.arg = undefined$1;
+	          }
+
+	          return !!caught;
+	        }

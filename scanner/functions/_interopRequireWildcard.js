@@ -1,34 +1,40 @@
-import esMain from 'es-main';
-import fse from 'fs-extra';
-import path, {dirname} from 'path';
-import {fileURLToPath} from 'url';
+function _interopRequireWildcard(obj) {
+	  if (obj && obj.__esModule) {
+	    return obj;
+	  }
 
-const baseDir = dirname(fileURLToPath(import.meta.url));
-const buildDir = path.resolve(baseDir, '../build/ol');
+	  if (obj === null || typeof obj !== "object" && typeof obj !== "function") {
+	    return {
+	      default: obj
+	    };
+	  }
 
-async function main() {
-  const pkg = await fse.readJSON(path.resolve(baseDir, '../package.json'));
+	  var cache = _getRequireWildcardCache();
 
-  // update the version number in util.js
-  const utilPath = path.join(buildDir, 'util.js');
-  let utilSrc = await fse.readFile(utilPath, 'utf-8');
-  let replaced = 0;
-  utilSrc = utilSrc.replace(/(?<=const VERSION = ')(?:[^']*)(?=';)/g, () => {
-    replaced++;
-    return pkg.version;
-  });
-  if (replaced !== 1) {
-    throw new Error('Failed to replace version');
-  }
-  await fse.writeFile(utilPath, utilSrc, 'utf-8');
-}
+	  if (cache && cache.has(obj)) {
+	    return cache.get(obj);
+	  }
 
-/**
- * If running this module directly, read the config file, call the main
- * function, and write the output file.
- */
-if (esMain(import.meta)) {
-  main().catch((err) => {
-    process.stderr.write(`${err.message}\n`, () => process.exit(1));
-  });
-}
+	  var newObj = {};
+	  var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor;
+
+	  for (var key in obj) {
+	    if (Object.prototype.hasOwnProperty.call(obj, key)) {
+	      var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null;
+
+	      if (desc && (desc.get || desc.set)) {
+	        Object.defineProperty(newObj, key, desc);
+	      } else {
+	        newObj[key] = obj[key];
+	      }
+	    }
+	  }
+
+	  newObj.default = obj;
+
+	  if (cache) {
+	    cache.set(obj, newObj);
+	  }
+
+	  return newObj;
+	}

@@ -1,12 +1,19 @@
-export const waitForData = async doc => {
-  return new Promise((resolve, reject) => {
-    const buffers = [];
-    doc.on('data', buffers.push.bind(buffers));
-    doc.on('end', async () => {
-      const pdfBuffer = Buffer.concat(buffers);
-      const pdfBase64 = pdfBuffer.toString('base64');
-      resolve(`data:application/pdf;base64,${pdfBase64}`);
-    });
-    doc.on('error', reject);
-  });
-};
+function _asyncToGenerator(fn) {
+	  return function () {
+	    var self = this,
+	        args = arguments;
+	    return new Promise(function (resolve, reject) {
+	      var gen = fn.apply(self, args);
+
+	      function _next(value) {
+	        asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);
+	      }
+
+	      function _throw(err) {
+	        asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);
+	      }
+
+	      _next(undefined);
+	    });
+	  };
+	}
