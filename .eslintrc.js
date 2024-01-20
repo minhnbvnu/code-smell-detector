@@ -1,25 +1,9 @@
 module.exports = {
-  //   env: {
-  //     browser: true,
-  //     es2021: true,
-  //   },
-  //   overrides: [
-  //     {
-  //       env: {
-  //         node: true,
-  //       },
-  //       files: [".eslintrc.{js,cjs}"],
-  //       parserOptions: {
-  //         sourceType: "script",
-  //       },
-  //     },
-  //   ],
-  //   parserOptions: {
-  //     ecmaVersion: "latest",
-  //     sourceType: "module",
-  //   },
   rules: {
-    complexity: ["error", { max: 15 }],
+    complexity: ["error", { max: 20 }],
+    "max-nested-callbacks": ["error", {max: 5}],
+    "max-depth": ["error", {max: 10}],
+    "max-params": ["error", {max: 5}]
   },
   parser: "@babel/eslint-parser",
   parserOptions: {

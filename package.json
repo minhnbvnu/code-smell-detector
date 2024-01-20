@@ -17,7 +17,9 @@
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
-    "test:e2e": "jest --config ./test/jest-e2e.json"
+    "test:e2e": "jest --config ./test/jest-e2e.json",
+    "complexity-report": "cr -C --maxcyc=20",
+    "plato": "plato -d . ./scanner/functions/ImageTracer.js"
   },
   "dependencies": {
     "@babel/parser": "^7.23.6",
@@ -29,7 +31,10 @@
     "@nestjs/core": "^9.0.0",
     "@nestjs/mapped-types": "*",
     "@nestjs/platform-express": "^9.0.0",
+    "complexity-report": "^2.0.0-alpha",
     "fs": "^0.0.1-security",
+    "lodash": "^4.17.21",
+    "plato": "^1.7.0",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.2.0"
   },

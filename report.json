@@ -1,0 +1,46 @@
+{
+  "summary": {
+    "total": { "jshint": 6, "sloc": 1153, "maintainability": 46.904 },
+    "average": { "sloc": 1153, "maintainability": "46.90", "jshint": "6.00" }
+  },
+  "reports": [
+    {
+      "info": {
+        "file": "./scanner/functions/ImageTracer.js",
+        "fileShort": "./scanner/functions/ImageTracer.js",
+        "fileSafe": "__scanner_functions_ImageTracer_js",
+        "link": "files/__scanner_functions_ImageTracer_js/index.html"
+      },
+      "jshint": { "messages": 6 },
+      "complexity": {
+        "methodAggregate": {
+          "cyclomatic": 187,
+          "cyclomaticDensity": 21.226,
+          "halstead": {
+            "bugs": 22.97,
+            "difficulty": 235.253,
+            "effort": 16210933.025,
+            "length": 7982,
+            "time": 900607.39,
+            "vocabulary": 397,
+            "volume": 68908.568,
+            "operands": {
+              "distinct": 358,
+              "total": 4319,
+              "identifiers": ["__stripped__"]
+            },
+            "operators": {
+              "distinct": 39,
+              "total": 3663,
+              "identifiers": ["__stripped__"]
+            }
+          },
+          "params": 83,
+          "sloc": { "logical": 881, "physical": 1153 }
+        },
+        "module": "./scanner/functions/ImageTracer.js",
+        "maintainability": 46.904
+      }
+    }
+  ]
+}

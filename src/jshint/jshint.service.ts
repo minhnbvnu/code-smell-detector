@@ -31,26 +31,22 @@ export class JshintService {
       const source = files[i].fileContent;
       // console.log("anaylyzing ", i, files[i].fileName);
       const options = {
-        maxcomplexity: 15,
+        maxcomplexity: 20,
         asi: true,
         unused: false,
       };
       JSHINT(source, options);
       const analyzeRes = JSHINT.data();
       const functions = analyzeRes.functions;
-      const functionsWithComplexity = functions
-        .filter((f) => {
-          console.log(f.name, f.metrics.complexity);
-          return (
-            f.metrics.complexity > 15 &&
-            typeof f.name === "string" &&
-            f.name + ".js" === files[i].fileName
-          );
-        })
-        .forEach((f) => {
-          // console.log("pushing", f.name);
-          res.push(f.name + ".js");
-        });
+      let maxcomplexity = 0;
+      functions.forEach((f) => {
+        if (f.metrics.complexity > maxcomplexity) {
+          maxcomplexity = f.metrics.complexity;
+        }
+      });
+      if (maxcomplexity > 20) {
+        res.push({ file: files[i].fileName, complexity: maxcomplexity });
+      }
 
       console.log("anaylyzing done", i);
     }

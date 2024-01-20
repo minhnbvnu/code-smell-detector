@@ -6,7 +6,7 @@ export class MismatcherController {
   constructor(private readonly mismatcherService: MismatcherService) {}
 
   @Post("/")
-  findMismatch() {
+  findMismatch(): Promise<any> {
     return this.mismatcherService.findMismatch();
   }
 }

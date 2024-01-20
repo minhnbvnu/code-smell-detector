@@ -3,31 +3,35 @@ import { ESLint } from "eslint";
 
 @Injectable()
 export class EslintService {
-  extractAfterLastSlash(inputString) {
+  extractAfterLastSlash(inputString: string) {
     const lastSlashIndex = inputString.lastIndexOf("/");
 
     if (lastSlashIndex === -1) {
-      // No slash found, return the original string
       return inputString;
     }
 
     return inputString.substring(lastSlashIndex + 1);
   }
 
+  extractComplexity(message: string) {
+    const match =
+      /(?:Function(?: '([^']+)'|)|Method(?: '([^']+)'|)|Arrow function) has a complexity of (\d+). Maximum allowed is (\d+)/.exec(
+        message
+      );
+    return match ? parseInt(match[3]) : null;
+  }
+
   async findComplexMethod() {
     const eslint = new ESLint();
 
-    const results = await eslint.lintFiles(["scanner/functions/*.js"]);
-    const filesWithError = results
-      .filter((res) => res.errorCount > 0)
-      .filter(
-        (res) =>
-          res.messages.findIndex(
-            (message) => message.ruleId === "complexity"
-          ) !== -1
-      )
-      .map((res) => this.extractAfterLastSlash(res.filePath));
+    const lintResult = await eslint.lintFiles(["scanner/functions/*.js"]);
 
-    return filesWithError;
+    const detectionResult = {};
+    lintResult.forEach((res) => {
+      const fileName = this.extractAfterLastSlash(res.filePath);
+      detectionResult[fileName] = res.errorCount > 0;
+    });
+
+    return detectionResult;
   }
 }
