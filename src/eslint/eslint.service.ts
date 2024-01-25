@@ -26,12 +26,20 @@ export class EslintService {
 
     const lintResult = await eslint.lintFiles(["scanner/functions/*.js"]);
 
-    const detectionResult = {};
+    // const detectionResult = {};
+    const positive = [];
+    const negative = [];
     lintResult.forEach((res) => {
       const fileName = this.extractAfterLastSlash(res.filePath);
-      detectionResult[fileName] = res.errorCount > 0;
+      const hasError = res.errorCount > 0;
+      if (hasError) {
+        positive.push(fileName);
+      } else {
+        negative.push(fileName);
+      }
+      // detectionResult[fileName] = res.errorCount > 0;
     });
 
-    return detectionResult;
+    return { positive, negative };
   }
 }

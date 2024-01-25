@@ -1,4 +1,4 @@
-import { Controller, Post } from "@nestjs/common";
+import { Controller, Post, Query } from "@nestjs/common";
 import { TokenizerService } from "./tokenizer.service";
 
 @Controller("tokenizer")
@@ -6,7 +6,7 @@ export class TokenizerController {
   constructor(private readonly tokenizerService: TokenizerService) {}
 
   @Post()
-  tokenize() {
-    return this.tokenizerService.tokenize();
+  tokenize(@Query("type") type: "1d" | "2d") {
+    return this.tokenizerService.tokenize(type);
   }
 }

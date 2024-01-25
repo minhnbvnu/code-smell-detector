@@ -8,9 +8,10 @@ import { EslintModule } from './eslint/eslint.module';
 import { MismatcherModule } from './mismatcher/mismatcher.module';
 import { JshintModule } from './jshint/jshint.module';
 import { TokenizerModule } from './tokenizer/tokenizer.module';
+import { FileModule } from './file/file.module';
 
 @Module({
-  imports: [SonarqubeModule, ConfigModule.forRoot(), SplitterModule, EslintModule, MismatcherModule, JshintModule, TokenizerModule],
+  imports: [SonarqubeModule, ConfigModule.forRoot(), SplitterModule, EslintModule, MismatcherModule, JshintModule, TokenizerModule, FileModule],
   controllers: [AppController],
   providers: [AppService],
 })
