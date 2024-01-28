@@ -17,7 +17,7 @@ export class TokenizerService {
     // const functionFiles = this.fileService.getFunctions();
     const positiveTokenizedFiles = [];
     // const tokenized2DFiles = [];
-    for (const file of detectionResult.positive) {
+    for (const file of detectionResult.positive.slice(0, 5)) {
       const tokenizeRes = this.runSingleTokenization(file, type);
       // const tokenize2dRes = this.runSingleTokenization(file, "2d");
       positiveTokenizedFiles.push(tokenizeRes);
@@ -27,11 +27,11 @@ export class TokenizerService {
     const negativeTokenizedFiles = [];
     const positiveFileContent = positiveTokenizedFiles.join("");
     fs.writeFileSync(
-      `data/${type}/positive/${type}.tok.cld`,
+      `data/${type}/Positive/tokenized1.tok.cld`,
       positiveFileContent
     );
 
-    for (const file of detectionResult.negative) {
+    for (const file of detectionResult.negative.slice(0, 5)) {
       const tokenizeRes = this.runSingleTokenization(file, type);
       // const tokenize2dRes = this.runSingleTokenization(file, "2d");
       negativeTokenizedFiles.push(tokenizeRes);
@@ -40,7 +40,7 @@ export class TokenizerService {
 
     const negativeFileContent = negativeTokenizedFiles.join("");
     fs.writeFileSync(
-      `data/${type}/negative/${type}.tok.cld`,
+      `data/${type}/Negative/tokenized1.tok.cld`,
       negativeFileContent
     );
     return true;
@@ -48,13 +48,20 @@ export class TokenizerService {
   runSingleTokenization(fileName: string, type: "1d" | "2d" = "1d") {
     const cmd =
       type === "1d"
-        ? `tokenizer -l JavaScript scanner/functions/${this.fileService.escapeSpecialCharacter(
+        ? `tokenizer -o method -l JavaScript scanner/functions/${this.fileService.escapeSpecialCharacter(
             fileName
           )}`
-        : `tokenizer -o line -l JavaScript scanner/functions/${this.fileService.escapeSpecialCharacter(
+        : `tokenizer -o statement -l JavaScript scanner/functions/${this.fileService.escapeSpecialCharacter(
             fileName
           )}`;
-    const exeRes = execSync(cmd).toString();
+    let exeRes = execSync(cmd, {
+      encoding: "utf8",
+    }).toString();
+
+    if (type === "1d") {
+      exeRes = exeRes.replace(/\n{2,}/g, "\n");
+    }
+    console.log({ exeRes });
     return exeRes;
   }
 }
