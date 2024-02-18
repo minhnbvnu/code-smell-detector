@@ -14,14 +14,11 @@ export class TokenizerService {
   ) {}
   async tokenize(type: "1d" | "2d") {
     const detectionResult = await this.eslintService.findComplexMethod();
-    // const functionFiles = this.fileService.getFunctions();
     const positiveTokenizedFiles = [];
-    // const tokenized2DFiles = [];
-    for (const file of detectionResult.positive.slice(0, 5)) {
+    for (const file of detectionResult.positive) {
+      console.log({ file });
       const tokenizeRes = this.runSingleTokenization(file, type);
-      // const tokenize2dRes = this.runSingleTokenization(file, "2d");
       positiveTokenizedFiles.push(tokenizeRes);
-      // tokenized2DFiles.push(tokenize2dRes);
     }
 
     const negativeTokenizedFiles = [];
@@ -31,11 +28,9 @@ export class TokenizerService {
       positiveFileContent
     );
 
-    for (const file of detectionResult.negative.slice(0, 5)) {
+    for (const file of detectionResult.negative) {
       const tokenizeRes = this.runSingleTokenization(file, type);
-      // const tokenize2dRes = this.runSingleTokenization(file, "2d");
       negativeTokenizedFiles.push(tokenizeRes);
-      // tokenized2DFiles.push(tokenize2dRes);
     }
 
     const negativeFileContent = negativeTokenizedFiles.join("");
@@ -59,6 +54,7 @@ export class TokenizerService {
     }).toString();
 
     if (type === "1d") {
+      console.log("replaced");
       exeRes = exeRes.replace(/\n{2,}/g, "\n");
     }
     console.log({ exeRes });
