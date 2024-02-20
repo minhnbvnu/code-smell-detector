@@ -1,0 +1,1 @@
+function bitXor(A, B) { return A ^ B; }

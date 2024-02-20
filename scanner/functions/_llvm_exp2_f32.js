@@ -1,0 +1,1 @@
+function _llvm_exp2_f32(x){return Math.pow(2,x)}

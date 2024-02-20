@@ -1,0 +1,1 @@
+function lSe(e,t){var r,i,a,n,s,o,u;if(t===null)return{};for(r={},i=Object.keys(t),a=0,n=i.length;a<n;a+=1)s=i[a],o=String(t[s]),s.slice(0,2)==="!!"&&(s="tag:yaml.org,2002:"+s.slice(2)),u=e.compiledTypeMap.fallback[s],u&&vG.call(u.styleAliases,o)&&(o=u.styleAliases[o]),r[s]=o;return r}

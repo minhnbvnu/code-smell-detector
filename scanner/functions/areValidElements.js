@@ -1,0 +1,1 @@
+function areValidElements(){for(var i=arguments.length,o=new Array(i),s=0;s<i;s++)o[s]=arguments[s];return!o.some((function(i){return!(i&&"function"==typeof i.getBoundingClientRect)}))}

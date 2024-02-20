@@ -1,0 +1,1 @@
+function stopMethod() {e_stop(this);}

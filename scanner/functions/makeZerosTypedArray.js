@@ -1,11 +1,1 @@
-function makeZerosTypedArray(size, dtype) {
-	  if (dtype == null || dtype === 'float32' || dtype === 'complex64') {
-	    return new Float32Array(size);
-	  } else if (dtype === 'int32') {
-	    return new Int32Array(size);
-	  } else if (dtype === 'bool') {
-	    return new Uint8Array(size);
-	  } else {
-	    throw new Error("Unknown data type " + dtype);
-	  }
-	}
+function makeZerosTypedArray(e,t){if(null==t||"float32"===t||"complex64"===t)return new Float32Array(e);if("int32"===t)return new Int32Array(e);if("bool"===t)return new Uint8Array(e);throw new Error("Unknown data type "+t)}

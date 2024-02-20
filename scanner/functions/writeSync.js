@@ -1,0 +1,1 @@
+function writeSync(wb,opts){var o=opts||{};switch(o.bookType){case"xml":return write_xlml(wb,o);default:return write_zip_type(wb,o)}}

@@ -1,0 +1,1 @@
+function nPe(){return new Promise(e=>{process.nextTick(()=>{Nte.stat("/sys/firmware/efi",function(t){e(!t)})})})}

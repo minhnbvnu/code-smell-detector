@@ -1,0 +1,1 @@
+function yFe(e,t,r){const n=e.schema;let i=n;t.tagName.toLowerCase()==="svg"&&n.space==="html"&&(i=YI,e.schema=i),e.ancestors.push(t);const a=Cse(e,t.tagName,!1),l=EFe(e,t);let s=JI(e,t);return gFe.has(t.tagName)&&(s=s.filter(function(u){return typeof u=="string"?!_Ae(u):!0})),kse(e,l,a,t),XI(l,s),e.ancestors.pop(),e.schema=n,e.create(t,a,l,r)}

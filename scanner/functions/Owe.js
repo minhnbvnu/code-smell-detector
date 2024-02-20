@@ -1,0 +1,1 @@
+function Owe(e,t,r){for(let n of e){if(n.from>=r)break;if(n.to>t)return n.from<=t&&n.to>=r?2:1}return 0}

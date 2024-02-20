@@ -1,0 +1,1 @@
+function $I(t,e,n,i){var r=t.target,o=t.zoomLimit,a=t.zoom=t.zoom||1;if(a*=e,o){var s=o.min||0,l=o.max||1/0;a=Math.max(Math.min(l,a),s)}var u=a/t.zoom;t.zoom=a,r.x-=(n-r.x)*(u-1),r.y-=(i-r.y)*(u-1),r.scaleX*=u,r.scaleY*=u,r.dirty()}

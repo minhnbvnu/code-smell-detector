@@ -1,0 +1,1 @@
+function testMicrodata (results) { this.initialize(results); }

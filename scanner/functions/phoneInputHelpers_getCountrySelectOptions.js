@@ -1,0 +1,1 @@
+function phoneInputHelpers_getCountrySelectOptions(i){var o=i.countries,s=i.countryNames,u=i.addInternationalOption,C=i.compareStringsLocales,_=i.compareStrings;_||(_=compareStrings);var w=o.map((function(i){return{value:i,label:s[i]||i}}));return w.sort((function(i,o){return _(i.label,o.label,C)})),u&&w.unshift({label:s.ZZ}),w}

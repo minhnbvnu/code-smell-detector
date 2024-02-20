@@ -1,4 +1,4 @@
-function image_flip_and_rotate() {
+function image_flip_and_rotate(){
 	const $w = new $DialogWindow(localize("Flip and Rotate"));
 	$w.addClass("flip-and-rotate");
 
@@ -76,17 +76,17 @@ function image_flip_and_rotate() {
 			<label for="custom-degrees">${localize("Degrees")}</label>
 		</div>
 	`);
-	$rotate_by_angle.find("#rotate-90").attr({ checked: true });
+	$rotate_by_angle.find("#rotate-90").attr({checked: true});
 	// Disabling inputs makes them not even receive mouse events,
 	// and so pointer-events: none is needed to respond to events on the parent.
-	$rotate_by_angle.find("input").attr({ disabled: true });
+	$rotate_by_angle.find("input").attr({disabled: true});
 	$fieldset.find("input").on("change", () => {
 		const action = $fieldset.find("input[name='flip-or-rotate']:checked").val();
 		$rotate_by_angle.find("input").attr({
 			disabled: action !== "rotate-by-angle"
 		});
 	});
-	$rotate_by_angle.find(".radio-wrapper").on("click", (e) => {
+	$rotate_by_angle.find(".radio-wrapper").on("click", (e)=> {
 		// Select "Rotate by angle" and enable subfields
 		$fieldset.find("input[value='rotate-by-angle']").prop("checked", true);
 		$fieldset.find("input").triggerHandler("change");
@@ -101,14 +101,14 @@ function image_flip_and_rotate() {
 		$wrapper.find("input[type='radio']").prop("checked", true);
 	});
 
-	$fieldset.find("input[name='rotate-by-arbitrary-angle']").on("input", () => {
+	$fieldset.find("input[name='rotate-by-arbitrary-angle']").on("input", ()=> {
 		$fieldset.find("input[value='rotate-by-angle']").prop("checked", true);
 		$fieldset.find("input[value='arbitrary']").prop("checked", true);
 	});
 
 	$w.$Button(localize("OK"), () => {
 		const action = $fieldset.find("input[name='flip-or-rotate']:checked").val();
-		switch (action) {
+		switch(action){
 			case "flip-horizontal":
 				flip_horizontal();
 				break;
@@ -117,13 +117,13 @@ function image_flip_and_rotate() {
 				break;
 			case "rotate-by-angle": {
 				let angle_val = $fieldset.find("input[name='rotate-by-angle']:checked").val();
-				if (angle_val === "arbitrary") {
+				if(angle_val === "arbitrary"){
 					angle_val = $fieldset.find("input[name='rotate-by-arbitrary-angle']").val();
 				}
 				const angle_deg = parseFloat(angle_val);
 				const angle = angle_deg / 360 * TAU;
-
-				if (isNaN(angle)) {
+		
+				if(isNaN(angle)){
 					please_enter_a_number();
 					return;
 				}
@@ -135,14 +135,12 @@ function image_flip_and_rotate() {
 		$canvas_area.trigger("resize");
 
 		$w.close();
-	}, { type: "submit" });
+	})[0].focus();
 	$w.$Button(localize("Cancel"), () => {
 		$w.close();
 	});
 
-	$fieldset.find("input[type='radio']").first().focus();
-
 	$w.center();
 
-	handle_keyshortcuts($w);
+	handle_keyshortcuts_alt_only($w);
 }

@@ -1,0 +1,3 @@
+function getResolvedProjectReferences() {
+                return resolvedProjectReferences;
+            }

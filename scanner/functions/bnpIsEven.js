@@ -1,0 +1,1 @@
+function bnpIsEven(){return(this.t>0?this[0]&1:this.s)==0}

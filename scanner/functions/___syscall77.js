@@ -1,0 +1,1 @@
+function ___syscall77(which,varargs){SYSCALLS.varargs=varargs;try{var who=SYSCALLS.get(),usage=SYSCALLS.get();_memset(usage,0,136);HEAP32[usage>>2]=1;HEAP32[usage+4>>2]=2;HEAP32[usage+8>>2]=3;HEAP32[usage+12>>2]=4;return 0}catch(e){if(typeof FS==="undefined"||!(e instanceof FS.ErrnoError))abort(e);return-e.errno}}

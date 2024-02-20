@@ -1,17 +1,1 @@
-function getSourceCoords(rank, dims) {
-	  if (rank === 1) {
-	    return 'rc';
-	  }
-
-	  var coords = '';
-
-	  for (var i = 0; i < rank; i++) {
-	    coords += dims[i];
-
-	    if (i < rank - 1) {
-	      coords += ',';
-	    }
-	  }
-
-	  return coords;
-	}
+function getSourceCoords(e,t){var n=e.length;if(n>4)throw Error("Gather for rank "+n+" is not yet supported");if(1===n)return "int(getIndices(resRC))";for(var r=["resRC.x","resRC.y","resRC.z","resRC.w"],o=[],a=0;a<e.length;a++)a===t?o.push("int(getIndices("+r[a]+"))"):o.push(""+r[a]);return o.join()}

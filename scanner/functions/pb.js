@@ -1,1 +1,1 @@
-function Pb(a){a=a|0;var b=0;if(!(!H[a+52>>2]|(!H[a+44>>2]|!H[a+48>>2]))){b=H[a+56>>2]!=0}return b|0}
+function pb(a){a.effectTag|=4}

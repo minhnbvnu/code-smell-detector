@@ -1,0 +1,1 @@
+function getActiveCanvasNode(e){return setActiveCanvasNode(e),$activeCanvasNode[0]}

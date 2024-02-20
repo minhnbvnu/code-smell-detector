@@ -1,1 +1,1 @@
-function qz(a,b,c,d){a=a|0;b=b|0;c=c|0;d=d|0;a=L[b>>2];a=ha[L[L[a>>2]+56>>2]](a,24)|0;L[a>>2]=8684;L[a+4>>2]=L[b>>2];L[a>>2]=23080;return a|0}
+function Qz(t){switch(t.type){case Wz:return t.elements;case Xz:case Jz:return[t.left,t.right];case Hz:return[t.callee].concat(t.arguments);case Yz:return[t.test,t.consequent,t.alternate];case Vz:return[t.object,t.property];case Gz:return t.properties;case Lz:return[t.key,t.value];case Kz:return[t.argument];case jz:case Pz:case qz:default:return[]}}

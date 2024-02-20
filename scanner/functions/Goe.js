@@ -1,0 +1,1 @@
+function Goe(e,t,r,i,a,n){return t?t&&!t.isDirectory()?n(new Error(`Cannot overwrite non-directory '${i}' with directory '${r}'.`)):Kk(r,i,a,n):Xoe(e.mode,r,i,a,n)}

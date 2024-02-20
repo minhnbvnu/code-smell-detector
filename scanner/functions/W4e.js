@@ -1,0 +1,1 @@
+function W4e(e){return bc&&bc.isBuffer(e)}

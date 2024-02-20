@@ -1,0 +1,1 @@
+function isRealDir(p){return p!=="."&&p!==".."}

@@ -1,0 +1,1 @@
+function _JS_WebCam_IsSupported(){return!!navigator.mediaDevices}

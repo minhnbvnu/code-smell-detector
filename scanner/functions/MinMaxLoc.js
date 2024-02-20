@@ -1,0 +1,1 @@
+function MinMaxLoc(){switch(arguments.length){case 0:{this.minVal=0;this.maxVal=0;this.minLoc=new Point;this.maxLoc=new Point;break}case 4:{this.minVal=arguments[0];this.maxVal=arguments[1];this.minLoc=arguments[2];this.maxLoc=arguments[3];break}default:{throw new Error("Invalid arguments")}}}

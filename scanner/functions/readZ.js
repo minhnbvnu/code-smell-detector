@@ -1,0 +1,1 @@
+function readZ(){return readBits('reg_z', 8);}

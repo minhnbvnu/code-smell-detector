@@ -1,0 +1,1 @@
+function Wye(e){if(Array.isArray(e))return VF(e)}

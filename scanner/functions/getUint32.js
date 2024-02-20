@@ -1,0 +1,1 @@
+function getUint32(t,r){return(t[r]<<24|t[r+1]<<16|t[r+2]<<8|t[r+3])>>>0}

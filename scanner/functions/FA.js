@@ -1,0 +1,1 @@
+function FA(t){return"_EC_"+t}

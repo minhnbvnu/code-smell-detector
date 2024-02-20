@@ -1,0 +1,1 @@
+function Frt(n,t){n.uniform3uiv(this.addr,t)}

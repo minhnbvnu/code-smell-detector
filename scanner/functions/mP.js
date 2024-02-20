@@ -1,0 +1,1 @@
+function mP(t,e){for(var n=!0,i=0;i<e.ends.length;i++)if(t.contain(e.ends[i][0],e.ends[i][1])){n=!1;break}return n}

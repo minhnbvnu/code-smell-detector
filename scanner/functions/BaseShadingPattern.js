@@ -1,0 +1,1 @@
+function BaseShadingPattern(){_classCallCheck(this,BaseShadingPattern);this.constructor===BaseShadingPattern&&(0,i.unreachable)("Cannot initialize BaseShadingPattern.")}

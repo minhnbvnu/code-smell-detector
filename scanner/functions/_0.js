@@ -1,0 +1,1 @@
+function _0(h,m){if(1&h){const n=t.EpF();t.TgZ(0,"div"),t._uU(1),t.ALo(2,"capitalize"),t.TgZ(3,"a",44),t.NdJ("click",function(_){t.CHM(n);const S=t.oxw(2).$implicit;return t.oxw(4).showCertificateDetails(_,S.subject)}),t._uU(4,"Details"),t.qZA(),t.qZA()}if(2&h){const n=m.$implicit;t.ekj("text-warning",!0),t.xp6(1),t.hij(" ",t.lcZ(2,3,n.text),". ")}}

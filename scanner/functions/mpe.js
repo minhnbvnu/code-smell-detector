@@ -1,0 +1,1 @@
+function mpe(){gu=!1,h2=!0}

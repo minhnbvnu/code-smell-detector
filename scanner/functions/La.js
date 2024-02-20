@@ -1,0 +1,1 @@
+function La(a){var b={};a&&(a.to||a.from)&&(b.to=a.to,b.from=a.from);return b}

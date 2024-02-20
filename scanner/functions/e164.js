@@ -1,0 +1,1 @@
+function e164(i,o,s){if(i){if("+"===i[0]){if("+"===i)return;var u=new va(o,s);return u.input(i),u.getNumberValue()}if(o){var C=getNationalSignificantNumberDigits(i,o,s);return"+".concat(getCountryCallingCode(o,s)).concat(C||"")}}}

@@ -1,0 +1,1 @@
+function sce(e){switch(e.tag){case 5:return af(e.type);case 16:return af("Lazy");case 13:return af("Suspense");case 19:return af("SuspenseList");case 0:case 2:case 15:return e=jb(e.type,!1),e;case 11:return e=jb(e.type.render,!1),e;case 1:return e=jb(e.type,!0),e;default:return""}}

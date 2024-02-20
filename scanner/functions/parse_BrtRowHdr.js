@@ -1,0 +1,1 @@
+function parse_BrtRowHdr(data,length){var z=[];z.r=data.read_shift(4);data.l+=length-4;return z}

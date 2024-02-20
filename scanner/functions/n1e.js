@@ -1,0 +1,1 @@
+function n1e(e){var t=typeof setImmediate=="function"?setImmediate:typeof process=="object"&&typeof process.nextTick=="function"?process.nextTick:null;t?t(e):setTimeout(e,0)}

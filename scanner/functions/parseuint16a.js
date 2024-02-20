@@ -1,0 +1,1 @@
+function parseuint16a(blob,length){return parslurp(blob,length,parseuint16)}

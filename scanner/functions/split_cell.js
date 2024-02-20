@@ -1,0 +1,1 @@
+function split_cell(cstr){return cstr.replace(/(\$?[A-Z]*)(\$?\d*)/,"$1,$2").split(",")}

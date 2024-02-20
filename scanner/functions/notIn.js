@@ -1,0 +1,1 @@
+function notIn(array) { return function (elem) { return array.indexOf(elem) === -1; }; }

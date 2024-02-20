@@ -1,0 +1,1 @@
+function xl(t,e,i){if(i&&!Array.isArray(i))return xl(t,e,[i]);if(e.hiddenDates=[],i&&1==Array.isArray(i)){for(var n=0;n<i.length;n++)if(void 0===i[n].repeat){var r={};r.start=t(i[n].start).toDate().valueOf(),r.end=t(i[n].end).toDate().valueOf(),e.hiddenDates.push(r)}e.hiddenDates.sort((function(t,e){return t.start-e.start}))}}

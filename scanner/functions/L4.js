@@ -1,0 +1,1 @@
+function L4(n,t,e){n.movefn=t,n.upfn=e,document.addEventListener("mousemove",t),document.addEventListener("mouseup",e)}

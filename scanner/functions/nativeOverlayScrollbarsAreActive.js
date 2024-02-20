@@ -1,0 +1,1 @@
+function nativeOverlayScrollbarsAreActive(){return _ignoreOverlayScrollbarHidingCache&&_nativeScrollbarIsOverlaid.x&&_nativeScrollbarIsOverlaid.y}

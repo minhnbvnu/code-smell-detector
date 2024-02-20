@@ -1,18 +1,20 @@
-function generateConfig(name) {
-  var compress = name.indexOf('min') > -1;
-  var config = {
-    entry: './index.js',
-    output: {
-      path: __dirname + '/dist/',
-      filename: name + '.js',
-      sourceMapFilename: name + '.map',
-      library: 'axios',
-      libraryTarget: 'umd',
-      globalObject: 'this'
-    },
-    node: false,
-    devtool: 'source-map',
-    mode: compress ? 'production' : 'development'
-  };
-  return config;
+function generateConfig(scaledCharWidth, scaledCharHeight, terminal, colors) {
+    var clonedColors = {
+        foreground: colors.foreground,
+        background: colors.background,
+        cursor: null,
+        cursorAccent: null,
+        selection: null,
+        ansi: colors.ansi.slice(0, 16)
+    };
+    return {
+        scaledCharWidth: scaledCharWidth,
+        scaledCharHeight: scaledCharHeight,
+        fontFamily: terminal.options.fontFamily,
+        fontSize: terminal.options.fontSize,
+        fontWeight: terminal.options.fontWeight,
+        fontWeightBold: terminal.options.fontWeightBold,
+        allowTransparency: terminal.options.allowTransparency,
+        colors: clonedColors
+    };
 }

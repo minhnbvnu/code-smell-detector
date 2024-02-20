@@ -1,0 +1,1 @@
+function cloneSymbol$1(symbol){return symbolValueOf?Object(symbolValueOf.call(symbol)):{}}

@@ -1,0 +1,3 @@
+function getCommonSourceDirectoryOfConfig({ options, fileNames }, ignoreCase) {
+            return getCommonSourceDirectory(options, () => filter(fileNames, (file) => !(options.noEmitForJsFiles && fileExtensionIsOneOf(file, supportedJSExtensionsFlat)) && !isDeclarationFileName(file)), getDirectoryPath(normalizeSlashes(Debug.checkDefined(options.configFilePath))), createGetCanonicalFileName(!ignoreCase));
+        }

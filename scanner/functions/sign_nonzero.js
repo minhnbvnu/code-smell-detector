@@ -1,0 +1,1 @@
+function sign_nonzero(x) { return (x < 0) ? -1 : 1; }

@@ -1,0 +1,1 @@
+function PDFFunctionFactory(t){var r=t.xref,o=t.isEvalSupported,c=void 0===o||o;_classCallCheck(this,PDFFunctionFactory);this.xref=r;this.isEvalSupported=!1!==c}

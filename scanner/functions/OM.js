@@ -1,0 +1,1 @@
+function OM(t){vt(t.nodes(),function(e){d0(t.node(e))}),vt(t.edges(),function(e){var r=t.edge(e);vt(r.points,d0),me(r,"y")&&d0(r)})}

@@ -1,0 +1,1 @@
+function getXAxisLabel(el){return el.find('[data-role="date"]').attr("data-value")}

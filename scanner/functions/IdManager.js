@@ -1,0 +1,1 @@
+function IdManager(){_classCallCheck(this,IdManager);_classPrivateFieldInitSpec(this,l,{writable:!0,value:0})}

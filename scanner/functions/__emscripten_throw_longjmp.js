@@ -1,0 +1,1 @@
+function __emscripten_throw_longjmp(){throw Infinity}

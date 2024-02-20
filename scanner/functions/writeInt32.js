@@ -1,6 +1,1 @@
-function writeInt32(dest, offset, num) {
-    dest[offset] = num >> 24 & 0xff;
-    dest[offset + 1] = num >> 16 & 0xff;
-    dest[offset + 2] = num >> 8 & 0xff;
-    dest[offset + 3] = num & 0xff;
-  }
+function writeInt32(t,r,o){t[r]=o>>24&255;t[r+1]=o>>16&255;t[r+2]=o>>8&255;t[r+3]=255&o}

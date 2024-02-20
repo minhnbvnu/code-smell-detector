@@ -1,0 +1,1 @@
+function formatNationalNumberUsingFormat(i,o,s){var u=s.useInternationalFormat,C=s.withNationalPrefix,_=(s.carrierCode,s.metadata,i.replace(new RegExp(o.pattern()),u?o.internationalFormat():C&&o.nationalPrefixFormattingRule()?o.format().replace(ye,o.nationalPrefixFormattingRule()):o.format()));return u?applyInternationalSeparatorStyle(_):_}

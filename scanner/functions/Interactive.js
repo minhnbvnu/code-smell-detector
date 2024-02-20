@@ -1,0 +1,1 @@
+function Interactive(t){_classCallCheck(this,Interactive);return r.call(this,d,"interactive")}

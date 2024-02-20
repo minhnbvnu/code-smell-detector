@@ -1,0 +1,1 @@
+function rG(t){t.registerComponentModel(tG),t.registerComponentView(iG),JF(t)}

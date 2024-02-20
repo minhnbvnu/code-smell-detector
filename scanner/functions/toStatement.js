@@ -1,34 +1,33 @@
 function toStatement(node, ignore) {
-	  if (t.isStatement(node)) {
-	    return node;
-	  }
+  if ((0, _generated.isStatement)(node)) {
+    return node;
+  }
 
-	  var mustHaveId = false;
-	  var newType = void 0;
+  let mustHaveId = false;
+  let newType;
 
-	  if (t.isClass(node)) {
-	    mustHaveId = true;
-	    newType = "ClassDeclaration";
-	  } else if (t.isFunction(node)) {
-	    mustHaveId = true;
-	    newType = "FunctionDeclaration";
-	  } else if (t.isAssignmentExpression(node)) {
-	    return t.expressionStatement(node);
-	  }
+  if ((0, _generated.isClass)(node)) {
+    mustHaveId = true;
+    newType = "ClassDeclaration";
+  } else if ((0, _generated.isFunction)(node)) {
+    mustHaveId = true;
+    newType = "FunctionDeclaration";
+  } else if ((0, _generated.isAssignmentExpression)(node)) {
+    return (0, _generated2.expressionStatement)(node);
+  }
 
-	  if (mustHaveId && !node.id) {
-	    newType = false;
-	  }
+  if (mustHaveId && !node.id) {
+    newType = false;
+  }
 
-	  if (!newType) {
-	    if (ignore) {
-	      return false;
-	    } else {
-	      throw new Error("cannot turn " + node.type + " to a statement");
-	    }
-	  }
+  if (!newType) {
+    if (ignore) {
+      return false;
+    } else {
+      throw new Error(`cannot turn ${node.type} to a statement`);
+    }
+  }
 
-	  node.type = newType;
-
-	  return node;
-	}
+  node.type = newType;
+  return node;
+}

@@ -1,0 +1,1 @@
+function kU(n,t){return ot().platform.fetch(n,t)}

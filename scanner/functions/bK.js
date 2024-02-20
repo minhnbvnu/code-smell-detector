@@ -1,0 +1,1 @@
+function bK(a){var b=Math.sqrt(bJ(a,a));return b&&(a[0]/=b,a[1]/=b),b}

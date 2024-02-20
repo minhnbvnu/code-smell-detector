@@ -1,0 +1,3 @@
+function toggleFooter() {
+	$('#footer').toggle()
+}

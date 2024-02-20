@@ -1,0 +1,1 @@
+function parseFieldType(){var o,s,C=P;return s=z,o=B===u.NAME||B===u.STRING?(next(),s):B===u.NUMBER?(consume(u.NUMBER),String(s)):void V.throwError("unexpected token"),B===u.COLON?(consume(u.COLON),maybeAddRange({type:i.FieldType,key:o,value:parseTypeExpression()},[C,P])):maybeAddRange({type:i.FieldType,key:o,value:null},[C,P])}

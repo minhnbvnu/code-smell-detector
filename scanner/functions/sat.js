@@ -1,0 +1,1 @@
+function sat(){return null}

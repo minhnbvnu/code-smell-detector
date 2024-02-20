@@ -1,0 +1,1 @@
+function UV(n,t,e){let i=n._noAccessors,r=Object.getOwnPropertyNames(n);for(let o=0;o<r.length;o++){let s=r[o];if(!(s in e))if(i)t[s]=n[s];else{let a=Object.getOwnPropertyDescriptor(n,s);a&&(a.configurable=!0,Object.defineProperty(t,s,a))}}}

@@ -1,0 +1,1 @@
+function bce(e){if(!e||!e.hashAlgo||e.hashAlgo==="sha1")return"5 (RSASHA1)";if(e.hashAlgo==="sha256")return"8 (RSASHA256)";if(e.hashAlgo==="sha512")return"10 (RSASHA512)";throw new Error("Unknown or unsupported hash: "+e.hashAlgo)}

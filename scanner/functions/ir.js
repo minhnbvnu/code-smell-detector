@@ -1,1 +1,1 @@
-function Ir(t,n){return new Z(function(e,i){"refresh_token"==n.grant_type&&n.refresh_token||"authorization_code"==n.grant_type&&n.code?wr(t,t.i+"?key="+encodeURIComponent(t.b),function(t){t?t.error?i(Vr(t)):t.access_token&&t.refresh_token?e(t):i(new Pi("internal-error")):i(new Pi("network-request-failed"))},"POST",""+ce(n),t.c,t.l.get()):i(new Pi("internal-error"))})}
+function ir(e,t){var r=-1,n=e.length;for(t=t||E(n);++r<n;)t[r]=e[r];return t}

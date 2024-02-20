@@ -1,0 +1,1 @@
+function parse_sst(data,name,opts){return(name.substr(-4)===".bin"?parse_sst_bin:parse_sst_xml)(data,opts)}

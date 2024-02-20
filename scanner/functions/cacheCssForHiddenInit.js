@@ -1,0 +1,1 @@
+function cacheCssForHiddenInit(){($hiddenParents=$container.parents().addBack().not(":visible")).each((function(){var e={};for(var o in cssShow)e[o]=this.style[o],this.style[o]=cssShow[o];oldProps.push(e)}))}

@@ -1,0 +1,1 @@
+function xTexelName(e,t){return "xTexelR"+e+"C"+(t<0?"minus"+Math.abs(t).toString():t)}

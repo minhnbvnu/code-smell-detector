@@ -1,0 +1,1 @@
+function demodulator_analog_replace_last() { demodulator_analog_replace(last_analog_demodulator_subtype); }

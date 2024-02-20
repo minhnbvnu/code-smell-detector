@@ -1,9 +1,1 @@
-function VariableDeclarator() {
-	  var id = this.get("id");
-
-	  if (id.isIdentifier()) {
-	    return this.get("init").getTypeAnnotation();
-	  } else {
-	    return;
-	  }
-	}
+function VariableDeclarator(){i.apply(this,arguments)}

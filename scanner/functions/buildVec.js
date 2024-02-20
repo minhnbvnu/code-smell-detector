@@ -1,7 +1,1 @@
-function buildVec(x) {
-	  if (x.length === 1) {
-	    return "" + x[0];
-	  }
-
-	  return "vec" + x.length + "(" + x.join(',') + ")";
-	}
+function buildVec(e){return 1===e.length?""+e[0]:"vec"+e.length+"("+e.join(",")+")"}

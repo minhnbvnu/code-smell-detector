@@ -1,0 +1,1 @@
+function _te(e,t){e=cC(e),t=t||{};var r=mPe.exec(e),i=r[1]?r[1].toLowerCase():"",a=!!r[2],n=!!r[3],s=0,o;return a?n?(o=r[2]+r[3]+r[4],s=r[2].length+r[3].length):(o=r[2]+r[4],s=r[2].length):n?(o=r[3]+r[4],s=r[3].length):o=r[4],i==="file:"?s>=2&&(o=o.slice(2)):rl(i)?o=r[4]:i?a&&(o=o.slice(2)):s>=2&&rl(t.protocol)&&(o=r[4]),{protocol:i,slashes:a||rl(i),slashesCount:s,rest:o}}

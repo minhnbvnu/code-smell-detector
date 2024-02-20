@@ -1,0 +1,1 @@
+function copyPos(x) {return Pos(x.line, x.ch)}

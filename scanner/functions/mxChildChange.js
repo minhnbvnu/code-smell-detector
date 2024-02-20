@@ -1,0 +1,1 @@
+function mxChildChange(a,b,c,d){this.model=a;this.previous=this.parent=b;this.child=c;this.previousIndex=this.index=d}

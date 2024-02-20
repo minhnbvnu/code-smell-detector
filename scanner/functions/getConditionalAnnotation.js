@@ -1,31 +1,44 @@
-function getConditionalAnnotation(path, name) {
-	  var ifStatement = getParentConditionalPath(path);
-	  if (!ifStatement) return;
+function getConditionalAnnotation(binding, path, name) {
+  const ifStatement = getParentConditionalPath(binding, path, name);
+  if (!ifStatement) return;
+  const test = ifStatement.get("test");
+  const paths = [test];
+  const types = [];
 
-	  var test = ifStatement.get("test");
-	  var paths = [test];
-	  var types = [];
+  for (let i = 0; i < paths.length; i++) {
+    const path = paths[i];
 
-	  do {
-	    var _path = paths.shift().resolve();
+    if (path.isLogicalExpression()) {
+      if (path.node.operator === "&&") {
+        paths.push(path.get("left"));
+        paths.push(path.get("right"));
+      }
+    } else if (path.isBinaryExpression()) {
+      const type = inferAnnotationFromBinaryExpression(name, path);
+      if (type) types.push(type);
+    }
+  }
 
-	    if (_path.isLogicalExpression()) {
-	      paths.push(_path.get("left"));
-	      paths.push(_path.get("right"));
-	    }
+  if (types.length) {
+    if (t.isTSTypeAnnotation(types[0]) && t.createTSUnionType) {
+      return {
+        typeAnnotation: t.createTSUnionType(types),
+        ifStatement
+      };
+    }
 
-	    if (_path.isBinaryExpression()) {
-	      var type = inferAnnotationFromBinaryExpression(name, _path);
-	      if (type) types.push(type);
-	    }
-	  } while (paths.length);
+    if (t.createFlowUnionType) {
+      return {
+        typeAnnotation: t.createFlowUnionType(types),
+        ifStatement
+      };
+    }
 
-	  if (types.length) {
-	    return {
-	      typeAnnotation: t.createUnionTypeAnnotation(types),
-	      ifStatement: ifStatement
-	    };
-	  } else {
-	    return getConditionalAnnotation(ifStatement, name);
-	  }
-	}
+    return {
+      typeAnnotation: t.createUnionTypeAnnotation(types),
+      ifStatement
+    };
+  }
+
+  return getConditionalAnnotation(ifStatement, name);
+}

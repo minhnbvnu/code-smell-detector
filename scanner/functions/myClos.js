@@ -1,0 +1,4 @@
+function myClos()
+    {
+        return ++n;
+    }

@@ -1,0 +1,1 @@
+function baseGetTag$5(value){return null==value?void 0===value?undefinedTag:nullTag:symToStringTag&&symToStringTag in Object(value)?getRawTag(value):objectToString(value)}

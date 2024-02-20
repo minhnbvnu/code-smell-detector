@@ -1,0 +1,1 @@
+function _emscripten_glBindTexture(target,texture){GLctx.bindTexture(target,GL.textures[texture])}

@@ -1,0 +1,1 @@
+function _JS_WebRequest_SetRequestHeader(requestId,header,value){var requestOptions=wr.requests[requestId];if(!requestOptions){return}var _header=UTF8ToString(header);var _value=UTF8ToString(value);requestOptions.init.headers[_header]=_value}

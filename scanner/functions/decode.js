@@ -1,16 +1,8 @@
-function decode(image, src) {
-  if (src) {
-    image.src = src;
+function decode(s) {
+  if (s) {
+    s = s.replace(/\+/g, '%20');
+    s = decodeURIComponent(s);
   }
-  return image.src && IMAGE_DECODE && CREATE_IMAGE_BITMAP
-    ? image
-        .decode()
-        .then(() => createImageBitmap(image))
-        .catch((e) => {
-          if (image.complete && image.width) {
-            return image;
-          }
-          throw e;
-        })
-    : decodeFallback(image);
+
+  return s;
 }

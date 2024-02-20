@@ -1,0 +1,1 @@
+function SelectPage(b,c,e){this.ui=b;this.previousPage=this.page=c;this.neverShown=!0;null!=c&&(this.neverShown=null==c.viewState,this.ui.updatePageRoot(c),null!=e&&(c.viewState=e,this.neverShown=!1))}

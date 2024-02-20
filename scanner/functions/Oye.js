@@ -1,0 +1,1 @@
+function Oye(e,t){let{selectionStyle:r,dragAndDropHooks:n}=e,[i,a]=O.useState(r!=="highlight"),l=!!(n!=null&&n.useDraggableCollectionState),s=Lbe({...e,showSelectionCheckboxes:i,showDragButtons:l,selectionBehavior:e.selectionStyle==="highlight"?"replace":"toggle"}),u=s.selectionManager.selectionBehavior!=="replace";return u!==i&&a(u),S.createElement(Gne,{...e,state:s,ref:t})}

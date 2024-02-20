@@ -1,0 +1,1 @@
+function NP(t,e){var n=e.rippleEffectColor||e.color;t.eachChild((function(t){t.attr({z:e.z,zlevel:e.zlevel,style:{stroke:"stroke"===e.brushType?n:null,fill:"fill"===e.brushType?n:null}})}))}

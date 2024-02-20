@@ -1,0 +1,1 @@
+function M6e(e,t){return e.nodeType!=1?0:(t&&e.childNodes[t-1].contentEditable=="false"?1:0)|(t<e.childNodes.length&&e.childNodes[t].contentEditable=="false"?2:0)}

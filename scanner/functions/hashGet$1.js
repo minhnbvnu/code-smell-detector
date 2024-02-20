@@ -1,0 +1,1 @@
+function hashGet$1(key){var data=this.__data__;if(nativeCreate$2){var result=data[key];return result===HASH_UNDEFINED$2?void 0:result}return hasOwnProperty$9.call(data,key)?data[key]:void 0}

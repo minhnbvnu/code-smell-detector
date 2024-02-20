@@ -1,0 +1,1 @@
+function _glStencilMask(x0){GLctx["stencilMask"](x0)}

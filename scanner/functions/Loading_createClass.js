@@ -1,0 +1,1 @@
+function Loading_createClass(Constructor, protoProps, staticProps) { if (protoProps) Loading_defineProperties(Constructor.prototype, protoProps); if (staticProps) Loading_defineProperties(Constructor, staticProps); return Constructor; }

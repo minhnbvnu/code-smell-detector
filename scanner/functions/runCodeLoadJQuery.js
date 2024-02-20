@@ -1,0 +1,4 @@
+function runCodeLoadJQuery() {
+  runJQuery();
+  salt++;
+}

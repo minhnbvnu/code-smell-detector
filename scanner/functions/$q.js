@@ -1,1 +1,2 @@
-function $q(a,b){a=a|0;b=b|0;var c=0,d=S(0);c=fa-16|0;fa=c;L[c+12>>2]=a;L[c+8>>2]=b;d=Ck(L[c+12>>2],L[c+8>>2]);fa=c+16|0;return S(d)}
+function $q(a,d){return a.groupOrder!==d.groupOrder?a.groupOrder-d.groupOrder:a.renderOrder!==d.renderOrder?a.renderOrder-d.renderOrder:a.program!==d.program?a.program.id-d.program.id:a.material.id!==d.material.id?a.material.id-d.material.id:a.z!==d.z?a.z-
+d.z:a.id-d.id}

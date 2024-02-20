@@ -1,0 +1,1 @@
+function YG(t){return t.__isCombineMorphing}

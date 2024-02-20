@@ -1,0 +1,3 @@
+function TokenFactory() {
+	return this;
+}

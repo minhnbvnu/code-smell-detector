@@ -1,3 +1,1 @@
-function a6($,z){var v=new Array(z.v),i=16+4*z.v;
-for(var y=0,A=16;y<z.v;A+=4){var B=UTIF._binBE.readUint($,A);v[y]=$.slice(i,i+B);v[y].l=0;v[y].s=0;i+=B;
-y++}if(i!=$.length)throw"Invalid data";return v}
+function a6(t,e,r){var n=(t+="")=="transform"?ox:Uf;return e==null?this.styleTween(t,r6(t,n)).on("end.style."+t,zf(t)):typeof e=="function"?this.styleTween(t,i6(t,n,Ah(this,"style."+t,e))).each(s6(this._id,t)):this.styleTween(t,n6(t,n,e),r).on("end.style."+t,null)}

@@ -1,0 +1,1 @@
+function AstVariableDefinition(t,o){var c;_classCallCheck(this,AstVariableDefinition);(c=r.call(this,"definition")).variable=t;c.arg=o;return c}

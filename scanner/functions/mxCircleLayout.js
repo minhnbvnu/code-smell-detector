@@ -1,0 +1,1 @@
+function mxCircleLayout(a,b){mxGraphLayout.call(this,a);this.radius=null!=b?b:100}

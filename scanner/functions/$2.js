@@ -1,0 +1,1 @@
+function $2(a){a=a|0;return (a+-48|0)>>>0<10|0}

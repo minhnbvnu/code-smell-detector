@@ -1,0 +1,1 @@
+function sampleCurveY(t) {return ((ay * t + by) * t + cy) * t;}

@@ -1,0 +1,1 @@
+function PostScriptToken(t,r){_classCallCheck(this,PostScriptToken);this.type=t;this.value=r}

@@ -1,0 +1,1 @@
+function _JS_WebRequest_Release(requestId){if(wr.timer[requestId]){clearTimeout(wr.timer[requestId])}delete wr.requests[requestId];delete wr.responses[requestId];delete wr.abortControllers[requestId];delete wr.timer[requestId]}

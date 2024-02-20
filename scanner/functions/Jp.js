@@ -1,0 +1,1 @@
+function Jp(a){a=a|0;return gq(a+4|0)|0}

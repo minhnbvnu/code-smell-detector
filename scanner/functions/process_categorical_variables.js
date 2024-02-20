@@ -1,0 +1,5 @@
+function process_categorical_variables(args){'use strict';var extracted_data,processed_data={},pd=[];var our_data=args.data[0];args.categorical_variables=[];if(args.binned==false){if(typeof(our_data[0])=='object'){extracted_data=our_data.map(function(d){return d[args.y_accessor];});}else{extracted_data=our_data;}
+var this_dp;for(var i=0;i<extracted_data.length;i++){this_dp=extracted_data[i];if(args.categorical_variables.indexOf(this_dp)==-1)args.categorical_variables.push(this_dp)
+if(!processed_data.hasOwnProperty(this_dp))processed_data[this_dp]=0;processed_data[this_dp]+=1;}
+processed_data=Object.keys(processed_data).map(function(d){var obj={};obj[args.x_accessor]=processed_data[d];obj[args.y_accessor]=d;return obj;})}else{processed_data=our_data;args.categorical_variables=d3.set(processed_data.map(function(d){return d[args.y_accessor];})).values();args.categorical_variables.reverse();}
+args.data=[processed_data];return this;}

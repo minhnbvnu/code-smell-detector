@@ -1,0 +1,3 @@
+function ParseTreeListener() {
+	return this;
+}

@@ -1,0 +1,1 @@
+function wme(e){return e.isPending&&(e.onPress=void 0,e.onPressStart=void 0,e.onPressEnd=void 0,e.onPressChange=void 0,e.onPressUp=void 0,e.onKeyDown=void 0,e.onKeyUp=void 0,e.onClick=void 0,e.href=void 0),e}

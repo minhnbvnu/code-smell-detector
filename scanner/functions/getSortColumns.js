@@ -1,0 +1,1 @@
+function getSortColumns(){return sortColumns}

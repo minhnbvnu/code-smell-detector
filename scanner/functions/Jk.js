@@ -1,0 +1,1 @@
+function Jk(a){a=a|0;var b=0,c=0;f[a>>2]=1768;b=f[a+76>>2]|0;if(b|0)Oq(b);b=a+68|0;c=f[b>>2]|0;f[b>>2]=0;if(c|0)Mq(c);f[a>>2]=1544;c=f[a+32>>2]|0;if(!c)return;b=a+36|0;a=f[b>>2]|0;if((a|0)!=(c|0))f[b>>2]=a+(~((a+-4-c|0)>>>2)<<2);Oq(c);return}

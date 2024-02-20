@@ -1,0 +1,1 @@
+function Bwe(e){return e.pos==e.options.simulateBreak&&e.options.simulateDoubleBreak}

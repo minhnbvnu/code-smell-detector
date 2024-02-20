@@ -1,0 +1,1 @@
+function ADBE_JSConsole(t){_classCallCheck(this,ADBE_JSConsole);return r.call(this,d,"ADBE_JSConsole",["delegate","Enable","Disable"])}

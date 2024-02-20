@@ -1,17 +1,1 @@
-function JpegStream(stream, maybeLength, dict, params) {
-    let ch;
-
-    while ((ch = stream.getByte()) !== -1) {
-      if (ch === 0xff) {
-        stream.skip(-1);
-        break;
-      }
-    }
-
-    this.stream = stream;
-    this.maybeLength = maybeLength;
-    this.dict = dict;
-    this.params = params;
-
-    _stream.DecodeStream.call(this, maybeLength);
-  }
+function JpegStream(t,o,c){var l,u;!function _classCallCheck(t,r){if(!(t instanceof r))throw new TypeError("Cannot call a class as a function")}(this,JpegStream);for(;-1!==(u=t.getByte());)if(255===u){t.skip(-1);break}(l=r.call(this,o)).stream=t;l.dict=t.dict;l.maybeLength=o;l.params=c;return l}

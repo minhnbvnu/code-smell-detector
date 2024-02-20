@@ -1,1 +1,1 @@
-function Uf(a){a=a|0;return H[a+8>>2]-H[a+4>>2]>>2}
+function uf(){this.$get=["$browser","$exceptionHandler",function(a,b){return td(function(b){a.defer(b)},b)}]}

@@ -1,7 +1,9 @@
-function formatLocation([lon, lat]) {
-  const NS = lat < 0 ? 'S' : 'N';
-  const EW = lon < 0 ? 'W' : 'E';
-  return `${Math.abs(lat).toFixed(1)}° ${NS}, ${Math.abs(lon).toFixed(
-    1,
-  )}° ${EW}`;
+function formatLocation(longitude, latitude) {
+  longitude = longitude.toFixed(2)
+  latitude = latitude.toFixed(2)
+
+  return {
+    longitude: longitude.toString().split('.'),
+    latitude: latitude.toString().split('.')
+  }
 }

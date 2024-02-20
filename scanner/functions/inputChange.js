@@ -1,9 +1,3 @@
-function inputChange() {
-    if (timerId) {
-      window.clearTimeout(timerId);
-    }
-    const text = this.value;
-    timerId = window.setTimeout(function () {
-      filterList(text);
-    }, 500);
-  }
+function inputChange(e) {
+            processFileList(e, input.files, instanceOptions);
+        }

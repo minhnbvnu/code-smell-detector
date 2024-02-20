@@ -1,0 +1,1 @@
+function assignValue$3(object,key,value){var objValue=object[key];hasOwnProperty$2.call(object,key)&&eq(objValue,value)&&(void 0!==value||key in object)||baseAssignValue$1(object,key,value)}

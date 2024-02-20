@@ -1,0 +1,1 @@
+function ko(){var t=this;return[t.year(),t.month(),t.date(),t.hour(),t.minute(),t.second(),t.millisecond()]}

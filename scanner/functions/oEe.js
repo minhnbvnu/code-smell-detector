@@ -1,0 +1,1 @@
+function oEe(e,t){return function(r,i=!1){if(sEe("<array|function> [boolean]",[r,i],arguments.length),Array.isArray(r)){for(let a=0;a<r.length;a++){if(typeof r[a]!="function")throw Error("middleware must be a function");r[a].applyBeforeValidation=i}Array.prototype.push.apply(e,r)}else typeof r=="function"&&(r.applyBeforeValidation=i,e.push(r));return t}}

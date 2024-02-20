@@ -1,0 +1,1 @@
+function Xn(t,e){var i,n=D(t)?t:qi(t);return!(!this.isValid()||!n.isValid())&&("millisecond"===(e=ot(e)||"millisecond")?this.valueOf()===n.valueOf():(i=n.valueOf(),this.clone().startOf(e).valueOf()<=i&&i<=this.clone().endOf(e).valueOf()))}

@@ -1,0 +1,1 @@
+function _glDisable(x0){GLctx["disable"](x0)}

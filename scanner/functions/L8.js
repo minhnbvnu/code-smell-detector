@@ -1,0 +1,1 @@
+function L8(n,t){var e=this._id;if(n+="",arguments.length<2){for(var i=Sn(this.node(),e).tween,r=0,o=i.length,s;r<o;++r)if((s=i[r]).name===n)return s.value;return null}return this.each((t==null?Oat:Bat)(e,n,t))}

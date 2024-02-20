@@ -1,0 +1,1 @@
+function rgb2Hex(rgb){for(var i=0,o=1;i!=3;++i)o=o*256+(rgb[i]>255?255:rgb[i]<0?0:rgb[i]);return o.toString(16).toUpperCase().substr(1)}

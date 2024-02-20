@@ -1,1 +1,1 @@
-function Gs(t,n){for(var e=0;e<t.i.length;e++)try{t.i[e](n)}catch(t){}}
+function Gs(e,t,r,n){var i=-1,a=null==e?0:e.length;for(n&&a&&(r=e[++i]);++i<a;)r=t(r,e[i],i,e);return r}

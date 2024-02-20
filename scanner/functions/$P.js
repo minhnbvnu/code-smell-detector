@@ -1,0 +1,1 @@
+function $P(t){return t instanceof Array||(t=[t,t]),t}

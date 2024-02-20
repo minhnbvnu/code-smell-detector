@@ -1,3 +1,1 @@
-function RE(s, f) {
-	  return RegExp(s, f);
-	}
+function rE(t,e,r,n){switch(t.type){case zT:case Up:return t.return=t.return||t.value;case Yp:return"";case WT:return t.return=t.value+"{"+T1(t.children,n)+"}";case Vp:t.value=t.props.join(",")}return Ui(r=T1(t.children,n))?t.return=t.value+"{"+r+"}":""}

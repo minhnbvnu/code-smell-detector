@@ -1,0 +1,1 @@
+function onStateRegistered(callback) { stateRegisteredCallbacks.push(callback); }

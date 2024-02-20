@@ -1,0 +1,1 @@
+function _wgpu_canvas_get_webgpu_context(canvasSelector){return wgpuStore(debugDir(debugDir(document.querySelector(UTF8ToString(canvasSelector)),"canvas").getContext("webgpu"),'canvas.getContext("webgpu")'))}

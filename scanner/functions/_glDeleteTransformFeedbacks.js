@@ -1,0 +1,1 @@
+function _glDeleteTransformFeedbacks(n,ids){for(var i=0;i<n;i++){var id=HEAP32[ids+i*4>>2];var transformFeedback=GL.transformFeedbacks[id];if(!transformFeedback)continue;GLctx["deleteTransformFeedback"](transformFeedback);transformFeedback.name=0;GL.transformFeedbacks[id]=null}}

@@ -1,15 +1,1 @@
-function flushTextContentItem() {
-      if (!textContentItem.initialized) {
-        return;
-      }
-
-      if (!textContentItem.vertical) {
-        textContentItem.width *= textContentItem.textAdvanceScale;
-      } else {
-        textContentItem.height *= textContentItem.textAdvanceScale;
-      }
-
-      textContent.items.push(runBidiTransform(textContentItem));
-      textContentItem.initialized = false;
-      textContentItem.str.length = 0;
-    }
+function flushTextContentItem(){if(L.initialized&&L.str){L.vertical?L.totalHeight+=L.height*L.textAdvanceScale:L.totalWidth+=L.width*L.textAdvanceScale;R.items.push(function runBidiTransform(t){var r=t.str.join(""),o=(0,T.bidi)(r,-1,t.vertical);return{str:o.str,dir:o.dir,width:Math.abs(t.totalWidth),height:Math.abs(t.totalHeight),transform:t.transform,fontName:t.fontName,hasEOL:t.hasEOL}}(L));L.initialized=!1;L.str.length=0}}

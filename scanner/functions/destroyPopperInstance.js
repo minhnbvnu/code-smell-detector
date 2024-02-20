@@ -1,0 +1,1 @@
+function destroyPopperInstance(){ie.popperInstance&&(ie.popperInstance.destroy(),ie.popperInstance=null)}

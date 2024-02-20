@@ -1,0 +1,1 @@
+function tme(){return vo(gc(document.documentElement,"paddingRight",`${window.innerWidth-document.documentElement.clientWidth}px`),gc(document.documentElement,"overflow","hidden"))}

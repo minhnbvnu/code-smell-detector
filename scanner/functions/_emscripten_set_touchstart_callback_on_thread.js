@@ -1,0 +1,1 @@
+function _emscripten_set_touchstart_callback_on_thread(target,userData,useCapture,callbackfunc,targetThread){registerTouchEventCallback(target,userData,useCapture,callbackfunc,22,"touchstart",targetThread);return 0}

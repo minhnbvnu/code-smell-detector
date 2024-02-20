@@ -1,22 +1,15 @@
 function closeTo(expected, delta, msg) {
-      if (msg) flag(this, 'message', msg);
-      var obj = flag(this, 'object')
-        , flagMsg = flag(this, 'message')
-        , ssfi = flag(this, 'ssfi');
+    if (msg) flag(this, 'message', msg);
+    var obj = flag(this, 'object');
 
-      new Assertion(obj, flagMsg, ssfi, true).is.a('number');
-      if (typeof expected !== 'number' || typeof delta !== 'number') {
-        flagMsg = flagMsg ? flagMsg + ': ' : '';
-        throw new AssertionError(
-            flagMsg + 'the arguments to closeTo or approximately must be numbers',
-            undefined,
-            ssfi
-        );
-      }
-
-      this.assert(
-          Math.abs(obj - expected) <= delta
-        , 'expected #{this} to be close to ' + expected + ' +/- ' + delta
-        , 'expected #{this} not to be close to ' + expected + ' +/- ' + delta
-      );
+    new Assertion(obj, msg).is.a('number');
+    if (_.type(expected) !== 'number' || _.type(delta) !== 'number') {
+      throw new Error('the arguments to closeTo or approximately must be numbers');
     }
+
+    this.assert(
+        Math.abs(obj - expected) <= delta
+      , 'expected #{this} to be close to ' + expected + ' +/- ' + delta
+      , 'expected #{this} not to be close to ' + expected + ' +/- ' + delta
+    );
+  }

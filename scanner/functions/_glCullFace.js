@@ -1,0 +1,1 @@
+function _glCullFace(x0){GLctx["cullFace"](x0)}

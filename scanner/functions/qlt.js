@@ -1,0 +1,1 @@
+function qlt(n,t,e){return(n[0]-e[0])*(t[1]-n[1])-(n[0]-t[0])*(e[1]-n[1])}

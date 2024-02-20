@@ -1,1 +1,1 @@
-function Ay(){var a=0,b=0;b=oa(284);a=Cd(b);L[a>>2]=11364;L[a+236>>2]=4;J[a+280|0]=1;L[a+276>>2]=0;L[a+268>>2]=0;L[a+272>>2]=0;return b|0}
+function ay(t){return function(e,n){var i=n.data,r=n.resetDefines[t];if(r&&r.dataEach)for(var o=e.start;o<e.end;o++)r.dataEach(i,o);else r&&r.progress&&r.progress(e,i)}}

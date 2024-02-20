@@ -1,0 +1,1 @@
+function c2(n,e,r){return e===0||n.lineNumber>r[e-1].lineNumber}

@@ -1,0 +1,1 @@
+function Noe(e){return Gk.every(function(t,r){return e[r]===t})}

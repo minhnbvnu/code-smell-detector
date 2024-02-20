@@ -1,3 +1,3 @@
 function Pending(message) {
-  this.message = message;
+    this.message = message;
 }

@@ -1,0 +1,1 @@
+function StyleRule(o,s,u){var C;C=i.call(this,o,s,u)||this;var _=u.selector,w=u.scoped,P=u.sheet,B=u.generateId;return _?C.selectorText=_:!1!==w&&(C.id=B(_assertThisInitialized(_assertThisInitialized(C)),P),C.selectorText="."+jss_esm_escape(C.id)),C}

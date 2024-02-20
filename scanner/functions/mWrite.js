@@ -1,0 +1,1 @@
+function mWrite(a, d){memory[a]=d;}

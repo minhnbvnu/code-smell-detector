@@ -1,0 +1,1 @@
+function initRandomFill(){if(typeof crypto=="object"&&typeof crypto["getRandomValues"]=="function"){return view=>crypto.getRandomValues(view)}else abort("initRandomDevice")}

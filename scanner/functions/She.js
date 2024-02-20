@@ -1,0 +1,1 @@
+function She(e){return!Zc()&&e.width===0&&e.height===0||e.width===1&&e.height===1&&e.pressure===0&&e.detail===0&&e.pointerType==="mouse"}

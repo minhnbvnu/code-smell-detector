@@ -1,0 +1,1 @@
+function skipWhiteSpace(i){for(;C<i&&(_.code.isWhiteSpace(z.charCodeAt(C))||_.code.isLineTerminator(z.charCodeAt(C)));)advance()}

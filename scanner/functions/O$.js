@@ -1,0 +1,1 @@
+function O$(n,t){if(typeof t!="object")throw new TypeError("unexpected type for row indices");if(t.some(i=>i<0||i>=n.rows))throw new RangeError("row indices are out of range");return Array.isArray(t)||(t=Array.from(t)),t}

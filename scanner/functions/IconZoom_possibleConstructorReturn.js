@@ -1,0 +1,1 @@
+function IconZoom_possibleConstructorReturn(self, call) { if (call && (IconZoom_typeof(call) === "object" || typeof call === "function")) { return call; } return IconZoom_assertThisInitialized(self); }

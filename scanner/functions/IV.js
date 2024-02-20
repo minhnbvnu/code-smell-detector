@@ -1,0 +1,1 @@
+function IV(t,e){return e[0]<=t&&t<=e[1]}

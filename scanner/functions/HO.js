@@ -1,0 +1,1 @@
+function HO(t){t({question:o3}),t({hexagon:l3}),t({stadium:g3}),t({subroutine:y3}),t({cylinder:m3}),t({rect_left_inv_arrow:c3}),t({lean_right:u3}),t({lean_left:h3}),t({trapezoid:d3}),t({inv_trapezoid:f3}),t({rect_right_inv_arrow:p3})}

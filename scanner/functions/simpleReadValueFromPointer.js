@@ -1,1 +1,3 @@
-function simpleReadValueFromPointer(pointer){return this["fromWireType"](HEAP32[pointer>>2])}
+function simpleReadValueFromPointer(pointer) {
+          return this["fromWireType"](HEAP32[pointer >>> 2]);
+        }

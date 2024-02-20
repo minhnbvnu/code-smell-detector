@@ -1,0 +1,1 @@
+function wgpuReadGpuBlendComponent(idx){return{"operation":GPUBlendOperations[HEAPU32[idx]],"srcFactor":GPUBlendFactors[HEAPU32[idx+1]],"dstFactor":GPUBlendFactors[HEAPU32[idx+2]]}}

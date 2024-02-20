@@ -1,3 +1,3 @@
-function iterator() {
-	      return _iterator.apply(this, arguments);
-	    }
+function iterator(value, filter) {
+    return filter(value);
+  }

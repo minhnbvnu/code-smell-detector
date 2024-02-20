@@ -1,0 +1,1 @@
+function $le(e,t){let r=Object.create(null);for(let a of e)if(!Array.isArray(a.tag))r[a.tag.id]=a.class;else for(let l of a.tag)r[l.id]=a.class;let{scope:n,all:i=null}=t||{};return{style:a=>{let l=i;for(let s of a)for(let u of s.set){let c=r[u.id];if(c){l=l?l+" "+c:c;break}}return l},scope:n}}

@@ -1,1 +1,1 @@
-function Sc(a){a=a|0;if(a){oa(a)}}
+function SC(t){var e=t.children;return e.length&&t.isExpand?e[0]:t.hierNode.thread}

@@ -1,0 +1,4 @@
+function createCompletionDetailsForSymbol(symbol, name, checker, sourceFile, location, cancellationToken, codeActions, sourceDisplay) {
+            const { displayParts, documentation, symbolKind, tags } = checker.runWithCancellationToken(cancellationToken, (checker2) => ts_SymbolDisplay_exports.getSymbolDisplayPartsDocumentationAndSymbolKind(checker2, symbol, sourceFile, location, location, 7 /* All */));
+            return createCompletionDetails(name, ts_SymbolDisplay_exports.getSymbolModifiers(checker, symbol), symbolKind, displayParts, documentation, tags, codeActions, sourceDisplay);
+        }

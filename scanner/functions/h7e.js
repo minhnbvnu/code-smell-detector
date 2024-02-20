@@ -1,0 +1,1 @@
+function h7e(e){var t=e,r=/\/([gim]*)$/.exec(e),i="";return t[0]==="/"&&(r&&(i=r[1]),t=t.slice(1,t.length-i.length-1)),new RegExp(t,i)}

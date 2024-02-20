@@ -1,0 +1,3 @@
+function PipelinePrimaryTopicReference() {
+  this.token("#");
+}

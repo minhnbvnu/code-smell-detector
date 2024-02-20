@@ -1,0 +1,1 @@
+function Os(e){return _s(e,1)}

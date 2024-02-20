@@ -1,0 +1,1 @@
+function navigatePrev(){return navigate("prev")}

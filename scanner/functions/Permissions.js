@@ -1,0 +1,1 @@
+function Permissions(t){var o;_classCallCheck(this,Permissions);(o=r.call(this,d,"permissions",!0)).accessibleContent=null;o.change=null;o.contentCopy=null;o.documentAssembly=null;o.formFieldFilling=null;o.modifyAnnots=null;o.plaintextMetadata=null;o.print=null;o.printHighQuality=null;return o}

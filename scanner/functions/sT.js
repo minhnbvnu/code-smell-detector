@@ -1,0 +1,1 @@
+function sT(e){return e===null}

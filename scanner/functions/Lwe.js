@@ -1,0 +1,1 @@
+function Lwe(e,t){for(let r=t;r;r=r.parent)if(e==r)return!0;return!1}

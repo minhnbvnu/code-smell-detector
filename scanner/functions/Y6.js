@@ -1,0 +1,1 @@
+function Y6(t){return function(){return t}}

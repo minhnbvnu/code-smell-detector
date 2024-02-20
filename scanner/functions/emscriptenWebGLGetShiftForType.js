@@ -1,0 +1,1 @@
+function emscriptenWebGLGetShiftForType(type){switch(type){case 5120:case 5121:return 0;case 5122:case 5123:case 33635:case 32819:case 32820:case 36193:case 5131:return 1;case 5124:case 5126:case 5125:case 34042:case 35902:case 33640:case 35899:case 34042:return 2;default:return 0}}

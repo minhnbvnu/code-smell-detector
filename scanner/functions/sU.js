@@ -1,0 +1,1 @@
+function sU(n){let t=0;for(let e=0;e<n.length;e++)t+=n[e];return t}

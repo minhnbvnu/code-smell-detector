@@ -1,3 +1,3 @@
-function GridLayout( options ){
-  this.options = util.extend( {}, defaults, options );
+function GridLayout(colCount, tiles) {
+  return calculateGridfor(colCount, tiles);
 }

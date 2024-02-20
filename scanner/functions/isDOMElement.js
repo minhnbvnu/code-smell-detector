@@ -1,0 +1,1 @@
+function isDOMElement(element){return"string"==typeof element.type}

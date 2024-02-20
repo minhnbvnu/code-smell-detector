@@ -1,0 +1,1 @@
+function addAlias(token,alias){var aliases=token.alias;aliases?Array.isArray(aliases)||(token.alias=aliases=[aliases]):token.alias=aliases=[],aliases.push(alias)}

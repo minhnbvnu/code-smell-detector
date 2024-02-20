@@ -1,0 +1,1 @@
+function bpe(e,t,r){jg(),O.useEffect(()=>{let n=(i,a)=>{vpe(!!(r!=null&&r.isTextInput),i,a)&&e(yo())};return sh.add(n),()=>{sh.delete(n)}},t)}

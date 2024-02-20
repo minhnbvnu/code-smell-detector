@@ -1,0 +1,1 @@
+function C6(t){return(e,r)=>E6(e,r).then(n=>new DOMParser().parseFromString(n,t))}

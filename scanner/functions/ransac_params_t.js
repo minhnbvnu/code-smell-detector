@@ -1,11 +1,1 @@
-function ransac_params_t(size, thresh, eps, prob) {
-            if (typeof size === "undefined") { size=0; }
-            if (typeof thresh === "undefined") { thresh=0.5; }
-            if (typeof eps === "undefined") { eps=0.5; }
-            if (typeof prob === "undefined") { prob=0.99; }
-
-            this.size = size;
-            this.thresh = thresh;
-            this.eps = eps;
-            this.prob = prob;
-        }
+function ransac_params_t(size,thresh,eps,prob){void 0===size&&(size=0),void 0===thresh&&(thresh=.5),void 0===eps&&(eps=.5),void 0===prob&&(prob=.99),this.size=size,this.thresh=thresh,this.eps=eps,this.prob=prob}

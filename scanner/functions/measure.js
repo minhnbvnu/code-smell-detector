@@ -1,85 +1,98 @@
-function measure(tool, noDblClick) {
-        var center = map.getCenter();
-
-        var domPosition = GET_PAGE_POSITION(container);
-        var point = map.coordinateToContainerPoint(center).add(domPosition);
-
-        var measure = 0;
-        happen.mousedown(eventContainer, {
-            'clientX':point.x,
-            'clientY':point.y
-        });
-        happen.click(eventContainer, {
-            'clientX':point.x,
-            'clientY':point.y
-        });
-        var i;
-        for (i = 1; i < 10; i++) {
-            happen.mousemove(eventContainer, {
-                'clientX':point.x + i,
-                'clientY':point.y
-            });
-        }
-
-        happen.mousedown(eventContainer, {
-            'clientX':point.x + 10,
-            'clientY':point.y
-        });
-        happen.click(eventContainer, {
-            'clientX':point.x + 10,
-            'clientY':point.y
-        });
-
-        happen.mousedown(eventContainer, {
-            'clientX':point.x + 10,
-            'clientY':point.y + 10
-        });
-        happen.click(eventContainer, {
-            'clientX':point.x + 10,
-            'clientY':point.y + 10
-        });
-
-        if (tool.isEnabled()) {
-            expect(tool.getLastMeasure()).to.be.above(measure);
-            measure = tool.getLastMeasure();
-            tool.undo();
-            tool.undo();
-            tool.undo();
-            tool.undo();
-            tool.undo();
-            tool.redo();
-            tool.redo();
-            tool.redo();
-            tool.redo();
-            tool.redo();
-            expect(tool.getLastMeasure()).to.be.above(0);
-        }
-        for (i = 1; i < 5; i++) {
-            happen.mousemove(eventContainer, {
-                'clientX':point.x,
-                'clientY':point.y + i
-            });
-            if (tool.isEnabled()) {
-                expect(tool.getLastMeasure()).to.be.above(0);
-            }
-        }
-        happen.mousedown(eventContainer, {
-            'clientX':point.x - 1,
-            'clientY':point.y + 5
-        });
-        happen.click(eventContainer, {
-            'clientX':point.x - 1,
-            'clientY':point.y + 5
-        });
-        if (!noDblClick) {
-            happen.dblclick(eventContainer, {
-                'clientX':point.x - 1,
-                'clientY':point.y + 5
-            });
-        }
-
-        if (tool.isEnabled()) {
-            expect(tool.getLastMeasure()).to.be.above(measure);
-            measure = tool.getLastMeasure();
-        }
+function measure(text, fontSize) {
+    if (fontSize < 1) {
+      // take only first three digits:
+      fontSize = (Math.round(fontSize * 1000)) / 1000;
     }
+
+    var cacheKey = text + fontSize;
+    var cachedResult = cachedSizes[cacheKey];
+    if (cachedResult) return cachedResult;
+    var result = {};
+
+    cachedSizes[cacheKey] = result;
+
+    var textContainer = window.document.createElementNS(svgns, 'text');
+    // set the font size that is requested.
+    textContainer.setAttributeNS(null, 'font-size', fontSize);
+    // we need this to measure words separators.
+    textContainer.setAttributeNS(xmlns, 'xml:space', 'preserve');
+
+    svgContainer.appendChild(textContainer);
+
+    result.words = text.split(/\s/).map(toWordWidths);
+    result.spaceWidth = measureSpaceWidth();
+    result.totalWidth = sumUpWordsLengthInPixels(result.words, result.spaceWidth);
+
+    svgContainer.removeChild(textContainer);
+
+    return result;
+
+    function sumUpWordsLengthInPixels(words, spaceWidth) {
+      var width = 0;
+
+      words.forEach(function(word) { width += word.width; });
+      width += (words.length - 1) * spaceWidth;
+
+      return width;
+    }
+
+    function measureSpaceWidth() {
+      var spaceWidthKey = 'space' + fontSize;
+      var spaceWidth = avgLetterWidthByFontSize[spaceWidthKey];
+      if (!spaceWidth) {
+        textContainer.textContent = ' ';
+        spaceWidth = measureTextWidth(textContainer);
+        avgLetterWidthByFontSize[spaceWidthKey] = spaceWidth;
+      }
+
+      return spaceWidth;
+    }
+
+    function toWordWidths(text) {
+      return {
+        text: text,
+        width: measureText(text)
+      };
+    }
+
+    function measureText(text) {
+      return options.useFastTextMeasure ? measureAvgWidth(text) : preciseMeasure(text);
+    }
+
+    function preciseMeasure(text) {
+      var cachedWordsKey = text + fontSize;
+      var size = cachedWords[cachedWordsKey];
+      if (size === undefined) {
+        textContainer.textContent = text;
+        size = measureTextWidth(textContainer);
+        if (size === 0 && text.length > 0) {
+          // safari :(.
+          var avgWidthAtFontSize = safariGuess[fontSize];
+          if (avgWidthAtFontSize === undefined) throw new Error('Font size is not overriden for safari ' + fontSize);
+          size = avgWidthAtFontSize * text.length;
+        }
+        cachedWords[cachedWordsKey] = size;
+      }
+
+      return size;
+    }
+
+    function measureAvgWidth(text) {
+      var avgWidthAtFontSize = avgLetterWidthByFontSize[fontSize];
+      if (!avgWidthAtFontSize) {
+        textContainer.textContent = abc;
+        var abcWidth = measureTextWidth(textContainer);
+        avgWidthAtFontSize = abcWidth/abc.length;
+
+        if (avgWidthAtFontSize === 0) {
+          // safari at small fonts :(. Not super proud of this, but not sure how
+          // to fix this better.
+          avgWidthAtFontSize = safariGuess[fontSize]
+        }
+
+        avgLetterWidthByFontSize[fontSize] = avgWidthAtFontSize;
+      }
+
+      return avgWidthAtFontSize * text.length;
+    }
+  }

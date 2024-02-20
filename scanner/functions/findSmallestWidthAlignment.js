@@ -1,0 +1,1 @@
+function findSmallestWidthAlignment(g,xss){return _.minBy(_.values(xss),function(xs){var max=Number.NEGATIVE_INFINITY;var min=Number.POSITIVE_INFINITY;_.forIn(xs,function(x,v){var halfWidth=width(g,v)/2;max=Math.max(x+halfWidth,max);min=Math.min(x-halfWidth,min)});return max-min})}

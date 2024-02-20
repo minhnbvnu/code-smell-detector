@@ -1,0 +1,1 @@
+function oc(a){return null!==a&&"object"===typeof a&&!sc(a)}

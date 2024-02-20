@@ -1,0 +1,1 @@
+function rW(t){if(!t)return[];if(Y(t)){for(var e=[],n=0;n<t.length;n++)e.push(rW(t[n]));return e}var i=[];return t.traverse((function(t){t instanceof Is&&!t.disableMorphing&&!t.invisible&&!t.ignore&&i.push(t)})),i}

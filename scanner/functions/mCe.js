@@ -1,0 +1,1 @@
+function mCe(e){var t=this.s-e.s;if(t!=0)return t;var r=this.t;if(t=r-e.t,t!=0)return this.s<0?-t:t;for(;--r>=0;)if((t=this.data[r]-e.data[r])!=0)return t;return 0}

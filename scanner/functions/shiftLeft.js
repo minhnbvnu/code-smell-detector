@@ -1,0 +1,20 @@
+function shiftLeft(t, e) {
+    return t %= 64,
+        t >= 48 ? (this._a48 = this._a00 << t - 48,
+            this._a32 = 0,
+            this._a16 = 0,
+            this._a00 = 0) : t >= 32 ? (t -= 32,
+            this._a48 = this._a16 << t | this._a00 >> 16 - t,
+            this._a32 = this._a00 << t & 65535,
+            this._a16 = 0,
+            this._a00 = 0) : t >= 16 ? (t -= 16,
+            this._a48 = this._a32 << t | this._a16 >> 16 - t,
+            this._a32 = 65535 & (this._a16 << t | this._a00 >> 16 - t),
+            this._a16 = this._a00 << t & 65535,
+            this._a00 = 0) : (this._a48 = this._a48 << t | this._a32 >> 16 - t,
+            this._a32 = 65535 & (this._a32 << t | this._a16 >> 16 - t),
+            this._a16 = 65535 & (this._a16 << t | this._a00 >> 16 - t),
+            this._a00 = this._a00 << t & 65535),
+    e || (this._a48 &= 65535),
+        this
+}

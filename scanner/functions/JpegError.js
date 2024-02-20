@@ -1,0 +1,1 @@
+function JpegError(t){_classCallCheck(this,JpegError);return r.call(this,"JPEG error: ".concat(t),"JpegError")}

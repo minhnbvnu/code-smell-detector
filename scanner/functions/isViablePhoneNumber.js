@@ -1,0 +1,1 @@
+function isViablePhoneNumber(i){return i.length>=2&&Pe.test(i)}

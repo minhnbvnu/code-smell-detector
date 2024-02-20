@@ -1,0 +1,1 @@
+function tsip_header_P_Associated_URI(o_uri){ tsip_header_NameAddr.call(this, tsip_header_type_e.P_Associated_URI, o_uri); }

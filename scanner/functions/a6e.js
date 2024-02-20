@@ -1,0 +1,1 @@
+function a6e(e,t,r,n){for(let i=0,a=0;;){if(a>=t)return i;if(i==e.length)break;a+=e.charCodeAt(i)==9?r-a%r:1,i=bi(e,i)}return n===!0?-1:e.length}

@@ -1,3 +1,10 @@
 function getPrefixed(name) {
-        return window['webkit' + name] || window['moz' + name] || window['ms' + name];
+    var i, fn,
+        prefixes = ['webkit', 'moz', 'o', 'ms'];
+
+    for (i = 0; i < prefixes.length && !fn; i++) {
+      fn = window[prefixes[i] + name];
     }
+
+    return fn;
+  }

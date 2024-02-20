@@ -1,9 +1,1 @@
-function getMainThreadWorkerMessageHandler() {
-    let mainWorkerMessageHandler;
-
-    try {
-      mainWorkerMessageHandler = globalThis.pdfjsWorker?.WorkerMessageHandler;
-    } catch (ex) {}
-
-    return mainWorkerMessageHandler || null;
-  }
+function getMainThreadWorkerMessageHandler(){let t;try{t=globalThis.pdfjsWorker&&globalThis.pdfjsWorker.WorkerMessageHandler}catch(t){}return t||null}

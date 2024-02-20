@@ -1,0 +1,1 @@
+function parse_LongRGB(blob,length){var x=parse_LongRGBA(blob,length);x[3]=0;return x}

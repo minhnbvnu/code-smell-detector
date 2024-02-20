@@ -1,0 +1,1 @@
+function setFocus(){-1==tabbingDirection?$focusSink[0].focus():$focusSink2[0].focus()}

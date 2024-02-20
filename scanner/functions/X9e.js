@@ -1,0 +1,1 @@
+function X9e(e,t,r){var i;e.bitLength()>r.bitLength()?i=e.bitLength()-1:i=r.bitLength()-1;for(var a=this.curve.getInfinity(),n=this.add(t);i>=0;)a=a.twice(),e.testBit(i)?r.testBit(i)?a=a.add(n):a=a.add(this):r.testBit(i)&&(a=a.add(t)),--i;return a}

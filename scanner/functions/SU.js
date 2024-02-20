@@ -1,0 +1,1 @@
+function SU(n){let t={};return n.replace(/[?&]([^=?&]+)(?:=([^&]*))?/g,(e,...i)=>(CU(t,i[0],i[1]),i.join("="))),t}

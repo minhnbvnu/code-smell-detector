@@ -1,0 +1,1 @@
+function appendEOL(){resetLastChars();if(L.initialized){L.hasEOL=!0;flushTextContentItem()}else R.items.push({str:"",dir:"ltr",width:0,height:0,transform:getCurrentTextTransform(),fontName:N.font.loadedName,hasEOL:!0})}

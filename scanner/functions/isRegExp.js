@@ -1,3 +1,3 @@
-function isRegExp(re) {
-  return isObject(re) && objectToString(re) === '[object RegExp]';
+function isRegExp(value) {
+  return toString.call(value) === '[object RegExp]';
 }

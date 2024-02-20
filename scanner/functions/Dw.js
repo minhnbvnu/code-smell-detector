@@ -1,1 +1,1 @@
-function dw(){var a=0;a=sa(72);ej(a);return a|0}
+function Dw(e){return!e.match(/[^\x00-\x7F]/)?e:bt(e)}

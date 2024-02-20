@@ -1,0 +1,1 @@
+function WS(t,e,n,i,r){const a=(r<<1)+1;for(let o=0;o<e;++o){for(let e=0,s=0;e<t+r;++e){if(e<t){s+=n[e+o*t]}if(e>=r){if(e>=a){s-=n[e-a+o*t]}i[e-r+o*t]=s/Math.min(e+1,t-1+a-e,a)}}}}

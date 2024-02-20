@@ -1,0 +1,1 @@
+function StartPage(t){_classCallCheck(this,StartPage);return r.call(this,d,"startPage",0,(function(t){return!0}))}

@@ -1,0 +1,1 @@
+function incrementOrInitEntry(map,k){if(map[k]){map[k]++}else{map[k]=1}}

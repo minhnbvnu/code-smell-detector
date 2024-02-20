@@ -1,0 +1,1 @@
+function rtn($,_){return $==null?_:$}

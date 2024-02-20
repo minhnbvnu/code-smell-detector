@@ -1,0 +1,1 @@
+function parse_BoundSheet8(blob,length,opts){var pos=blob.read_shift(4);var hidden=blob.read_shift(1)>>6;var dt=blob.read_shift(1);switch(dt){case 0:dt="Worksheet";break;case 1:dt="Macrosheet";break;case 2:dt="Chartsheet";break;case 6:dt="VBAModule";break}var name=parse_ShortXLUnicodeString(blob,0,opts);if(name.length===0)name="Sheet1";return{pos:pos,hs:hidden,dt:dt,name:name}}

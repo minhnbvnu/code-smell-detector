@@ -1,9 +1,1 @@
-function getUndoAxesPermutation(axes) {
-	  return axes.map(function (axis, i) {
-	    return [i, axis];
-	  }).sort(function (a, b) {
-	    return a[1] - b[1];
-	  }).map(function (x) {
-	    return x[0];
-	  });
-	}
+function getUndoAxesPermutation(e){return e.map(function(e,t){return [t,e]}).sort(function(e,t){return e[1]-t[1]}).map(function(e){return e[0]})}

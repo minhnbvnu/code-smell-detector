@@ -1,0 +1,1 @@
+function parse_SerAr(blob){var val=[];switch(val[0]=blob.read_shift(1)){case 4:val[1]=parsebool(blob,1)?"TRUE":"FALSE";blob.l+=7;break;case 16:val[1]=BErr[blob[blob.l]];blob.l+=8;break;case 0:blob.l+=8;break;case 1:val[1]=parse_Xnum(blob,8);break;case 2:val[1]=parse_XLUnicodeString(blob);break}return val}

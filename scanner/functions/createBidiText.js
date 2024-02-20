@@ -1,14 +1,1 @@
-function createBidiText(str, isLTR, vertical = false) {
-  let dir = "ltr";
-
-  if (vertical) {
-    dir = "ttb";
-  } else if (!isLTR) {
-    dir = "rtl";
-  }
-
-  return {
-    str,
-    dir
-  };
-}
+function createBidiText(t,r){var o=arguments.length>2&&void 0!==arguments[2]&&arguments[2],c="ltr";o?c="ttb":r||(c="rtl");return{str:t,dir:c}}

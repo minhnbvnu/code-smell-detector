@@ -1,0 +1,1 @@
+function gle(e){if(!e.length)return null;let t=0,r=e[0];for(let a=1;a<e.length;a++){let l=e[a];(l.from>r.from||l.to<r.to)&&(r=l,t=a)}let n=r instanceof si&&r.index<0?null:r.parent,i=e.slice();return n?i[t]=n:i.splice(t,1),new pwe(i,r)}

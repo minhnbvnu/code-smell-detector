@@ -1,0 +1,1 @@
+function dde(e,t){if(e==="click")return u1(t)}

@@ -1,0 +1,1 @@
+function WG(t,e,n,i){for(var r=(t.length-2)/6,o=1/0,a=0,s=t.length,l=s-2,u=0;u<r;u++){for(var h=6*u,c=0,p=0;p<s;p+=2){var d=0===p?h:(h+p-2)%l+2,f=t[d]-n[0],g=t[d+1]-n[1],y=e[p]-i[0]-f,v=e[p+1]-i[1]-g;c+=y*y+v*v}c<o&&(o=c,a=u)}return a}

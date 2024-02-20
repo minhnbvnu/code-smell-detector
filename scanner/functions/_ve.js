@@ -1,0 +1,1 @@
+function _ve(e){return e.then(t=>t==null||t.length===0?null:JSON.parse(t))}

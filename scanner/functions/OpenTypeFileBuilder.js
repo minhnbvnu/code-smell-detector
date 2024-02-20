@@ -1,4 +1,1 @@
-function OpenTypeFileBuilder(sfnt) {
-    this.sfnt = sfnt;
-    this.tables = Object.create(null);
-  }
+function OpenTypeFileBuilder(t){!function _classCallCheck(t,r){if(!(t instanceof r))throw new TypeError("Cannot call a class as a function")}(this,OpenTypeFileBuilder);this.sfnt=t;this.tables=Object.create(null)}

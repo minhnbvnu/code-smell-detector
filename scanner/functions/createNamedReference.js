@@ -1,0 +1,1 @@
+function createNamedReference(i){return addRaw({type:"reference",name:i,range:[i.range[0]-3,B]})}

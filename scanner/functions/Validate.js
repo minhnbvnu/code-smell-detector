@@ -1,0 +1,1 @@
+function Validate(t){_classCallCheck(this,Validate);return r.call(this,d,"validate",["preSubmit","prePrint","preExecute","preSave"])}

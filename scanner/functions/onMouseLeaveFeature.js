@@ -1,0 +1,3 @@
+function onMouseLeaveFeature() {
+    setHoverFeature(null);
+  }

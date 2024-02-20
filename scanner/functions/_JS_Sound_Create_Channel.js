@@ -1,0 +1,1 @@
+function _JS_Sound_Create_Channel(callback,userData){if(WEBAudio.audioWebEnabled==0)return;WEBAudio.audioInstances[++WEBAudio.audioInstanceIdCounter]=jsAudioCreateChannel(callback,userData);return WEBAudio.audioInstanceIdCounter}

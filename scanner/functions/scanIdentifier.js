@@ -1,0 +1,1 @@
+function scanIdentifier(i){var o;if(!_.code.isIdentifierStartES5(z.charCodeAt(C))&&!z[C].match(/[0-9]/))return null;for(o=advance();C<i&&_.code.isIdentifierPartES5(z.charCodeAt(C));)o+=advance();return o}

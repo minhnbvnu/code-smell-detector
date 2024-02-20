@@ -1,0 +1,1 @@
+function ClearTimeout(){if(wr.timer[requestId]){clearTimeout(wr.timer[requestId]);delete wr.timer[requestId]}}

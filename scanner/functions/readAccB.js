@@ -1,0 +1,1 @@
+function readAccB(){return readBits('accb', 8);}

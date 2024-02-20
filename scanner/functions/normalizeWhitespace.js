@@ -1,0 +1,1 @@
+function normalizeWhitespace(i){return i.replace(Pe,"\n").replace(We,"").replace(_a,"    ")}

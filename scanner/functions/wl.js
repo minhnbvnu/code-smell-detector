@@ -1,1 +1,1 @@
-function Wl(a,b){a=a|0;b=b|0;var c=0,d=0;c=fa-16|0;fa=c;L[c+12>>2]=a;L[c+8>>2]=b;b=L[c+8>>2];a=fa-16|0;L[a+12>>2]=L[c+12>>2];L[a+8>>2]=b;b=L[a+12>>2];a=L[a+8>>2];d=L[a+4>>2];L[b+4>>2]=L[a>>2];L[b+8>>2]=d;d=L[a+12>>2];L[b+12>>2]=L[a+8>>2];L[b+16>>2]=d;fa=c+16|0}
+function wl(t,e){if(!e.has(t))throw new TypeError("attempted to get private field on non-instance");return e.get(t)}

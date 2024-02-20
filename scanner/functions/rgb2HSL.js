@@ -1,0 +1,1 @@
+function rgb2HSL(rgb){var R=rgb[0]/255,G=rgb[1]/255,B=rgb[2]/255;var M=Math.max(R,G,B),m=Math.min(R,G,B),C=M-m;if(C===0)return[0,0,R];var H6=0,S=0,L2=M+m;S=C/(L2>1?2-L2:L2);switch(M){case R:H6=((G-B)/C+6)%6;break;case G:H6=(B-R)/C+2;break;case B:H6=(R-G)/C+4;break}return[H6/6,S,L2/2]}

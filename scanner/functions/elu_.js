@@ -1,7 +1,1 @@
-function elu_(x) {
-	  var $x = convertToTensor(x, 'x', 'elu');
-	  var inputs = {
-	    x: $x
-	  };
-	  return ENGINE.runKernel(Elu, inputs);
-	}
+function elu_(e){var t=convertToTensor(e,"x","elu");return ENV.engine.runKernel(function(e,n){return n(e.elu(t))},{$x:t},function(e,t){var n=t[0];return {$x:function(){return ENV.engine.runKernel(function(t){return t.eluDer(e,n)},{dy:e,y:n})}}})}

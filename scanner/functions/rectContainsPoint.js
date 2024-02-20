@@ -1,8 +1,7 @@
-function rectContainsPoint(rect, point) {
-  return (
-    point.x >= rect.left &&
-    point.y >= rect.top &&
-    point.x <= rect.right &&
-    point.y <= rect.bottom
-  );
+function rectContainsPoint({
+  x,
+  y
+}, rect) {
+  const [top, right, bottom, left] = rectToBox(rect);
+  return left <= x && x <= right && top <= y && y <= bottom;
 }

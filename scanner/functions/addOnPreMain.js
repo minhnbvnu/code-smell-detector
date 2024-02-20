@@ -1,0 +1,1 @@
+function addOnPreMain(cb){__ATMAIN__.unshift(cb)}

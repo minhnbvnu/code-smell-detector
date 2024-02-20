@@ -1,0 +1,1 @@
+function P1e(e){return S.createElement(_n,e,S.createElement(w1e,null))}

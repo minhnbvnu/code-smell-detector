@@ -1,0 +1,1 @@
+function wX(t){return t.c?bX("hcl",t.h,t.c,t.l):t.h||t.s?bX("hsl",t.h,t.s,t.l):t.l||t.a?bX("lab",t.l,t.a,t.b):t.r||t.g||t.b?bX("rgb",t.r,t.g,t.b):null}

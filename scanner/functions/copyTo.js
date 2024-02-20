@@ -1,0 +1,1 @@
+function copyTo(a, b) { for(var i = 0; i < a.length; i++) b[i] = a[i] }

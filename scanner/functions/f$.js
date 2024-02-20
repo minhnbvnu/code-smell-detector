@@ -1,0 +1,1 @@
+function f$(n){var t=[];n.forEach(function(h,p,d){t.push({value:h,row:p,col:d})}),t.sort(function(h,p){return h.row===p.row?h.col-p.col:h.row-p.row});for(var e=[],i=[],r=[],o=-1,s=0;s<t.length;s++){var a=t[s],l=a.row,c=a.col,u=a.value;l!==o&&(o=l,r.push(s)),e.push(c),i.push(u)}return{indices:e,values:i,indptr:r}}

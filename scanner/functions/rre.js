@@ -1,0 +1,1 @@
+function rre(e){if(!e||e.substr(0,1)!=="/")return"/";if(e==="/")return e;let t=e.lastIndexOf("/");return t===0?"/":e.slice(0,t)}

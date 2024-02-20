@@ -1,0 +1,1 @@
+function _ord(e){return e.charCodeAt(0)}

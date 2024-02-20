@@ -1,3 +1,3 @@
-function writeComment(comment, options) {
-  return options.ignoreComment ? '' : '<!--' + ('commentFn' in options ? options.commentFn(comment, currentElementName, currentElement) : comment) + '-->';
-}
+function writeComment(s) {
+                writer.writeComment(s);
+            }

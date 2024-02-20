@@ -1,0 +1,1 @@
+function kX(t){const e=[t.start,t.stop,t.count].map((t=>t==null?null:(0,g.m8)(t)));while(e.length&&(0,g.fj)(e)==null)e.pop();e.unshift(xX(t.gradient));return`gradient(${e.join(",")})`}

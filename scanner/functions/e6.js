@@ -1,0 +1,1 @@
+function e6(){return new t6(this._groups,this._parents)}

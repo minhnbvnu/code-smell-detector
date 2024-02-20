@@ -1,0 +1,1 @@
+function mxHexagon(){mxActor.call(this)}

@@ -1,0 +1,1 @@
+function JI(e,t){var n=new ZI.Decoder,r=n.GetAttribute(e,t),i=r.num_components(),o=e.num_points(),a=new ZI.DracoFloat32Array;n.GetAttributeFloatForAllPoints(e,r,a);for(var s=o*i,l=new Float32Array(s);s--;)l[s]=a.GetValue(s);return l}

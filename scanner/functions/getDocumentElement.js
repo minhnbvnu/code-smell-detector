@@ -1,0 +1,1 @@
+function getDocumentElement(i){return((isElement(i)?i.ownerDocument:i.document)||window.document).documentElement}

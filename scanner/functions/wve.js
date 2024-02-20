@@ -1,0 +1,1 @@
+function wve(e){return S.createElement(_n,e,S.createElement($ve,null))}

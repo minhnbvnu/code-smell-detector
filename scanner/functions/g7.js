@@ -1,0 +1,1 @@
+function g7(){let e=f6();return g7=function(){return e},e}

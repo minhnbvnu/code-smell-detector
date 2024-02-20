@@ -1,0 +1,1 @@
+function DigestMethods(t){var o;_classCallCheck(this,DigestMethods);(o=r.call(this,_,"digestMethods",!0)).id=t.id||"";o.type=(0,d.getStringOption)(t.type,["optional","required"]);o.use=t.use||"";o.usehref=t.usehref||"";o.digestMethod=new c.XFAObjectArray;return o}

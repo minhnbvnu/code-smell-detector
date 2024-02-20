@@ -1,0 +1,1 @@
+function NB(n,t){return t.args=n.map(function(e){let i=QM(e);return i.literal||(t.static=!1),i},this),t}

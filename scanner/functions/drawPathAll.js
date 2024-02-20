@@ -1,0 +1,1 @@
+function drawPathAll(path,g,scene,bounds){var i,len,item;for(i=0,len=scene.items.length;i<len;++i){item=scene.items[i];if(bounds&&!bounds.intersects(item.bounds))continue;drawPathOne(path,g,item,item)}}

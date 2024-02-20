@@ -1,0 +1,1 @@
+function _getHrefEditor () { return editor.find('.sc-external-link-editor .se-href') }

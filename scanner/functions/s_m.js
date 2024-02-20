@@ -1,0 +1,1 @@
+function s_m($){$dt.m=$d.mI.value=$}

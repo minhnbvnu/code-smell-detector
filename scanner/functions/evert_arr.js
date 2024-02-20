@@ -1,0 +1,1 @@
+function evert_arr(obj){var o=[],K=keys(obj);for(var i=0;i!==K.length;++i){if(o[obj[K[i]]]==null)o[obj[K[i]]]=[];o[obj[K[i]]].push(K[i])}return o}

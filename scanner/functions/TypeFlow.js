@@ -1,0 +1,34 @@
+function TypeFlow(logger, initScope, parser, checker) {
+            this.logger = logger;
+            this.initScope = initScope;
+            this.parser = parser;
+            this.checker = checker;
+            this.thisFnc = null;
+            this.thisClassNode = null;
+            this.enclosingFncIsMethod = false;
+            this.arrayInterfaceType = null;
+            this.stringInterfaceType = null;
+            this.objectInterfaceType = null;
+            this.functionInterfaceType = null;
+            this.numberInterfaceType = null;
+            this.booleanInterfaceType = null;
+            this.iargumentsInterfaceType = null;
+            this.currentScript = null;
+            this.inImportTypeCheck = false;
+            this.inTypeRefTypeCheck = false;
+            this.inArrayElementTypeCheck = false;
+            this.resolutionDataCache = new ResolutionDataCache();
+            this.nestingLevel = 0;
+            this.inSuperCall = false;
+            this.checker.typeFlow = this;
+            this.scope = this.initScope;
+            this.globalScope = this.initScope;
+            this.doubleType = this.checker.numberType;
+            this.booleanType = this.checker.booleanType;
+            this.stringType = this.checker.stringType;
+            this.anyType = this.checker.anyType;
+            this.regexType = this.anyType;
+            this.nullType = this.checker.nullType;
+            this.voidType = this.checker.voidType;
+            this.arrayAnyType = this.checker.makeArrayType(this.anyType);
+        }

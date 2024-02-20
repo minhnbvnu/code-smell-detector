@@ -1,1 +1,1 @@
-function Ss(t){return t.app}
+function ss(t,e){if(!this.isValid())return this.localeData().invalidDate();var i,n,o=!1,r=es;return"object"==typeof t&&(e=t,t=!1),"boolean"==typeof t&&(o=t),"object"==typeof e&&(r=Object.assign({},es,e),null!=e.s&&null==e.ss&&(r.ss=e.s-1)),n=ns(this,!o,r,i=this.localeData()),o&&(n=i.pastFuture(+this,n)),i.postformat(n)}

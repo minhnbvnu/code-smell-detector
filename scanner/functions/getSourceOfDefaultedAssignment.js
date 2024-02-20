@@ -1,0 +1,3 @@
+function getSourceOfDefaultedAssignment(node) {
+            return isExpressionStatement(node) && isBinaryExpression(node.expression) && getAssignmentDeclarationKind(node.expression) !== 0 /* None */ && isBinaryExpression(node.expression.right) && (node.expression.right.operatorToken.kind === 56 /* BarBarToken */ || node.expression.right.operatorToken.kind === 60 /* QuestionQuestionToken */) ? node.expression.right.right : void 0;
+        }

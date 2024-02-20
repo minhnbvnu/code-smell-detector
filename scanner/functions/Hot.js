@@ -1,0 +1,1 @@
+function Hot(n,t,e,i,r,o){let s=n;do{let a=s.next.next;for(;a!==s.prev;){if(s.i!==a.i&&Yot(s,a)){let l=iF(s,a);s=ms(s,s.next),l=ms(l,l.next),od(s,t,e,i,r,o),od(l,t,e,i,r,o);return}a=a.next}s=s.next}while(s!==n)}

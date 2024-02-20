@@ -1,0 +1,1 @@
+function parseread1(blob,length){blob.l+=1;return}

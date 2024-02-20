@@ -1,1 +1,1 @@
-function Ko(t){var n=null;return _o(t.g).then(function(e){return n=e,e=t.g,Eo(e.b,If,e.a)}).then(function(){return n})}
+function Ko(t,e,i,n,o){var r;return null==t?xe(this,n,o).year:(e>(r=De(t,n,o))&&(e=r),Jo.call(this,t,e,i,n,o))}

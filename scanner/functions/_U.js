@@ -1,0 +1,1 @@
+function _U(n,t,e){if(t===0)return[];if(t===1)return[n];let i=new Array(t);for(let r=0;r<i.length-1;++r)i[r]=Math.floor(n/e[r]),n-=i[r]*e[r];return i[i.length-1]=n,i}

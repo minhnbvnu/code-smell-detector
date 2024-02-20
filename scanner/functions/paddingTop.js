@@ -1,0 +1,1 @@
+function paddingTop(display) {return display.lineSpace.offsetTop}

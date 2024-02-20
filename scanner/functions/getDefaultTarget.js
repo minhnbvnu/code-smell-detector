@@ -1,0 +1,3 @@
+function getDefaultTarget() {
+	    return window;
+	}

@@ -1,9 +1,1 @@
-function _tryBlock(block) {
-	  var error;
-	  try {
-	    block();
-	  } catch (e) {
-	    error = e;
-	  }
-	  return error;
-	}
+function _tryBlock(i){var o;try{i()}catch(i){o=i}return o}

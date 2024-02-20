@@ -1,0 +1,1 @@
+function convertUnwrappedCommentIndex(i,o){for(var s,u=i.replace(/^\/\*\*?/,""),C=0,_=new RegExp(z,"g");s=_.exec(u);)if(C+=s[1].length,s.index+s[0].length>o+C)return o+C+i.length-u.length;return i.replace(/\*\/$/,"").replace(/\s*$/,"").length}

@@ -1,0 +1,1 @@
+function createUserTooltips(d){d.forEach(function(b){var c=[];if(b.targetSelector)c=getElementsBySelector(b.targetSelector);c.forEach(function(a){createTooltip(a,b,m)})})}

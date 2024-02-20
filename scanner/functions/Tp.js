@@ -1,0 +1,1 @@
+function Tp(a){a=a|0;return b[a+24>>0]|0}

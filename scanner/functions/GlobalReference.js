@@ -1,0 +1,1 @@
+function GlobalReference(name, property) { this.identifier = name; this.property = property; }

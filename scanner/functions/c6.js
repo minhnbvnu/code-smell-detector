@@ -1,0 +1,1 @@
+function c6(t,e,r){var n="style."+(t+="");if(arguments.length<2)return(n=this.tween(n))&&n._value;if(e==null)return this.tween(n,null);if(typeof e!="function")throw new Error;return this.tween(n,l6(t,e,r==null?"":r))}

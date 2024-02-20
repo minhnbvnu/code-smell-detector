@@ -1,0 +1,1 @@
+function w1(t){for(;_n();)switch(er){case t:return rn;case 34:case 39:t!==34&&t!==39&&w1(er);break;case 40:t===41&&w1(t);break;case 92:_n();break}return rn}

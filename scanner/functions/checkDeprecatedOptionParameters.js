@@ -1,0 +1,1 @@
+function checkDeprecatedOptionParameters(options){options&&Object.keys(options).forEach((function(option){deprecatedOptionsParameterWarnings[option]&&deprecatedOptionsParameterWarnings[option]()}))}

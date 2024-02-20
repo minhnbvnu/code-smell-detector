@@ -1,4 +1,4 @@
-function resize_canvas_without_saving_dimensions(unclamped_width, unclamped_height, undoable_meta = {}) {
+function resize_canvas_without_saving_dimensions(unclamped_width, unclamped_height, undoable_meta={}) {
 	const new_width = Math.max(1, unclamped_width);
 	const new_height = Math.max(1, unclamped_height);
 	if (main_canvas.width !== new_width || main_canvas.height !== new_height) {
@@ -11,8 +11,8 @@ function resize_canvas_without_saving_dimensions(unclamped_width, unclamped_heig
 				main_canvas.width = new_width;
 				main_canvas.height = new_height;
 				main_ctx.disable_image_smoothing();
-
-				if (!transparency) {
+				
+				if(!transparency){
 					main_ctx.fillStyle = selected_colors.background;
 					main_ctx.fillRect(0, 0, main_canvas.width, main_canvas.height);
 				}

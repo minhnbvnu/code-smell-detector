@@ -1,0 +1,1 @@
+function parse_VtVecHeadingPairValue(blob){var cElements=blob.read_shift(4);var out=[];for(var i=0;i!=cElements/2;++i)out.push(parse_VtHeadingPair(blob));return out}

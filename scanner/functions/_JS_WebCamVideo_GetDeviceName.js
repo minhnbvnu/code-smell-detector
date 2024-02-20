@@ -1,0 +1,1 @@
+function _JS_WebCamVideo_GetDeviceName(deviceId,buffer,bufferSize){var webcam=videoInputDevices[deviceId];var name=webcam?webcam.name:"(disconnected input #"+(deviceId+1)+")";if(buffer)stringToUTF8(name,buffer,bufferSize);return lengthBytesUTF8(name)}

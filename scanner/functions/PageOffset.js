@@ -1,0 +1,1 @@
+function PageOffset(t){var o;_classCallCheck(this,PageOffset);(o=r.call(this,d,"pageOffset")).x=(0,u.getInteger)({data:t.x,defaultValue:"useXDCSetting",validate:function validate(t){return!0}});o.y=(0,u.getInteger)({data:t.y,defaultValue:"useXDCSetting",validate:function validate(t){return!0}});return o}

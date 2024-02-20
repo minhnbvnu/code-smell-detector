@@ -1,1 +1,1 @@
-function nx(a){a=a|0;var b=0;b=fa-16|0;L[b+12>>2]=a;return L[b+12>>2]+44|0}
+function Nx(t,e){var r,n;function i(){var s=e.apply(this,arguments);return s!==n&&(r=(n=s)&&Mx(t,s)),r}return i._value=e,i}

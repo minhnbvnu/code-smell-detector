@@ -1,0 +1,1 @@
+function get_fs() { return fs || (fs = require('fs')); }

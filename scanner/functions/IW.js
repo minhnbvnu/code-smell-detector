@@ -1,0 +1,1 @@
+function IW(n,t,e,i,r,o){r==null&&(r=t_(n,t,i));let s=n[0],a=n[1],l=n[2],c=ea((s-t+2*r)/i+1,o),u=ea((a-t+2*r)/i+1,o),h=ea((l-t+2*r)/i+1,o);return[c,u,h,e]}

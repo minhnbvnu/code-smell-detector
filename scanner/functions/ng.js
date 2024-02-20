@@ -1,0 +1,1 @@
+function ng(){return function(a,b){z(b)&&(b=2);return db(a,b)}}

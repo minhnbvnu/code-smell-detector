@@ -1,0 +1,1 @@
+function shiftRanks(t,g,delta){_.forEach(t.nodes(),function(v){g.node(v).rank+=delta})}

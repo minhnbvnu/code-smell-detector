@@ -1,0 +1,3 @@
+function stopDrawing() {
+  drawing = false;
+}

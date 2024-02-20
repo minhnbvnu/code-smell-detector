@@ -1,0 +1,1 @@
+function ahe(){return!1}

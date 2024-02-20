@@ -1,0 +1,1 @@
+function B7(n){let t="",e=Hy(n);for(let i=0;i<e.length;i++)t+=e[i].textContent;return t}

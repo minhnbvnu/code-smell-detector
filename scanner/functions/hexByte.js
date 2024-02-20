@@ -1,0 +1,1 @@
+function hexByte(n){return (0x100+n).toString(16).substring(1)}

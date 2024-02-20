@@ -1,15 +1,1 @@
-function initializeTile(context, tileIndex) {
-    var siz = context.SIZ;
-    var componentsCount = siz.Csiz;
-    var tile = context.tiles[tileIndex];
-
-    for (var c = 0; c < componentsCount; c++) {
-      var component = tile.components[c];
-      var qcdOrQcc = context.currentTile.QCC[c] !== undefined ? context.currentTile.QCC[c] : context.currentTile.QCD;
-      component.quantizationParameters = qcdOrQcc;
-      var codOrCoc = context.currentTile.COC[c] !== undefined ? context.currentTile.COC[c] : context.currentTile.COD;
-      component.codingStyleParameters = codOrCoc;
-    }
-
-    tile.codingStyleDefaultParameters = context.currentTile.COD;
-  }
+function initializeTile(t,r){for(var o=t.SIZ.Csiz,c=t.tiles[r],l=0;l<o;l++){var u=c.components[l],h=void 0!==t.currentTile.QCC[l]?t.currentTile.QCC[l]:t.currentTile.QCD;u.quantizationParameters=h;var d=void 0!==t.currentTile.COC[l]?t.currentTile.COC[l]:t.currentTile.COD;u.codingStyleParameters=d}c.codingStyleDefaultParameters=t.currentTile.COD}

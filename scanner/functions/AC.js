@@ -1,0 +1,1 @@
+function AC(e,t){var n=arguments.length>2&&void 0!==arguments[2]?arguments[2]:{};Object.assign(t,CC,n),$x.extend(e,t,n),Se.setGet(e,t,["activeHandleIndex"]),Se.setGetArray(e,t,["edgeColor"],3),Se.setGetArray(e,t,["handlePositions"],bC),Se.setGetArray(e,t,["handleSizes"],bC),Se.setGetArray(e,t,["bboxCorners"],8),SC(e,t)}

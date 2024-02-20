@@ -1,0 +1,1 @@
+function STEP(e){return void 0===e&&(e=0),CHECK_NAN_SNIPPET$1+"\n    return x > 0.0 ? 1.0 : float("+e+");\n  "}

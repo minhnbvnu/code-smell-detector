@@ -1,0 +1,1 @@
+function mapCacheClear$1(){this.size=0,this.__data__={hash:new Hash,map:new(Map$3||ListCache$2),string:new Hash}}

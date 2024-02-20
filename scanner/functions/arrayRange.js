@@ -1,9 +1,1 @@
-function arrayRange(start, stop) {
-	  var result = [];
-
-	  for (var i = start; i < stop; ++i) {
-	    result.push(i);
-	  }
-
-	  return result;
-	}
+function arrayRange(e,t){for(var n=[],r=e;r<t;++r)n.push(r);return n}

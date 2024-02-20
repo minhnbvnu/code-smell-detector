@@ -1,0 +1,1 @@
+function zeroMemory(address,size){HEAPU8.fill(0,address,address+size)}

@@ -1,0 +1,1 @@
+function kC(e,t){return t?Number(t):PC(e)?0:1}

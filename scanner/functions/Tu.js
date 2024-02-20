@@ -1,0 +1,1 @@
+function Tu(t){return Array.prototype.slice.call(t,0)}

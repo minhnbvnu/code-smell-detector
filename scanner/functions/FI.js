@@ -1,0 +1,1 @@
+function FI(t,e,n,i,r){t.pointerChecker&&t.pointerChecker(i,r.originX,r.originY)&&(pe(i.event),GI(t,e,n,i,r))}

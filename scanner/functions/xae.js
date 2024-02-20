@@ -1,0 +1,1 @@
+function xae(e){return e.scrollTop>Math.max(1,e.scrollHeight-e.clientHeight-4)}

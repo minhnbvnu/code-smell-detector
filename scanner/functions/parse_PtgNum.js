@@ -1,0 +1,1 @@
+function parse_PtgNum(blob,length){blob.l++;return parse_Xnum(blob,8)}

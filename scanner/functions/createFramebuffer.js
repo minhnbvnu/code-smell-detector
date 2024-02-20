@@ -1,5 +1,1 @@
-function createFramebuffer(gl) {
-	  return throwIfNull(gl, function () {
-	    return gl.createFramebuffer();
-	  }, 'Unable to create WebGLFramebuffer.');
-	}
+function createFramebuffer(e){return throwIfNull(e,function(){return e.createFramebuffer()},"Unable to create WebGLFramebuffer.")}

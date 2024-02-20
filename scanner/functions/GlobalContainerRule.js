@@ -1,0 +1,1 @@
+function GlobalContainerRule(i,o,s){for(var u in this.type="global",this.at=ka,this.isProcessed=!1,this.key=i,this.options=s,this.rules=new Xe(_extends({},s,{parent:this})),o)this.rules.add(u,o[u]);this.rules.process()}

@@ -1,0 +1,1 @@
+function getVisibleRange(e,o){return null==e&&(e=scrollTop),null==o&&(o=scrollLeft),{top:getRowFromPosition(e),bottom:getRowFromPosition(e+viewportH)+1,leftPx:o,rightPx:o+viewportW}}

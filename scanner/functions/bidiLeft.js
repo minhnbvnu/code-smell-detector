@@ -1,0 +1,1 @@
+function bidiLeft(part) { return part.level % 2 ? part.to : part.from; }

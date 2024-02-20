@@ -1,1 +1,1 @@
-function Zi(){Gi.call(this,"google.com"),this.sa("profile")}
+function zi(t){return function(){return this.isValid()?this._data[t]:NaN}}

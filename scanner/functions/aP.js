@@ -1,0 +1,1 @@
+function aP(t,e,r){let n=gd(t.id),i=yd(t.id,t.type),s=gd(e.id),a=yd(e.id,e.type);Ms(n,i,t.doc,t.description,t.note,t.classes,t.styles,t.textStyles),Ms(s,a,e.doc,e.description,e.note,e.classes,e.styles,e.textStyles),Cr.relations.push({id1:n,id2:s,relationTitle:he.sanitizeText(r,$())})}

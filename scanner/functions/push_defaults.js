@@ -1,0 +1,1 @@
+function push_defaults(target,defaults){for(var i=0;i!=defaults.length;++i){var z=defaults[i];if(target[z[0]]==null)target[z[0]]=z[1]}}

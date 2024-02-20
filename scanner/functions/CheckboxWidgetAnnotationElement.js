@@ -1,0 +1,1 @@
+function CheckboxWidgetAnnotationElement(t){_classCallCheck(this,CheckboxWidgetAnnotationElement);return r.call(this,t,{isRenderable:t.renderForms})}

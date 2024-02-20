@@ -1,0 +1,1 @@
+function z0e(e){let t=e.indexOf("?");return t<0?e:e.substring(0,t)}

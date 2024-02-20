@@ -1,0 +1,1 @@
+function isLeftClick(event)   { return _isButton(event, 0) }

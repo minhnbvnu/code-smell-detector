@@ -1,0 +1,1 @@
+function getBQ(e){return dom.getParent(e,function(n){return n.nodeName==='BLOCKQUOTE';});}

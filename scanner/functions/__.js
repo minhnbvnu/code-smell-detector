@@ -1,3 +1,3 @@
 function __() {
-	      this.constructor = d;
-	    }
+    this.constructor = d;
+  }

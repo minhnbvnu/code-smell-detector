@@ -1,0 +1,32 @@
+function QwenApi(opts) {
+        var apiKey = opts.apiKey, _a = opts.apiBaseUrl, apiBaseUrl = _a === void 0 ? 'https://dashscope.aliyuncs.com/api/v1' : _a, _b = opts.debug, debug = _b === void 0 ? false : _b, messageStore = opts.messageStore, completionParams = opts.completionParams, parameters = opts.parameters, systemMessage = opts.systemMessage, getMessageById = opts.getMessageById, upsertMessage = opts.upsertMessage, _c = opts.fetch, fetch = _c === void 0 ? globalFetch : _c;
+        this._apiKey = apiKey;
+        this._apiBaseUrl = apiBaseUrl;
+        this._debug = !!debug;
+        this._fetch = fetch;
+        this._completionParams = __assign({ model: CHATGPT_MODEL, parameters: __assign({ top_p: 0.5, top_k: 50, temperature: 1.0, seed: 114514, enable_search: true, result_format: "text", incremental_output: false }, parameters) }, completionParams);
+        this._systemMessage = systemMessage;
+        if (this._systemMessage === undefined) {
+            var currentDate = new Date().toISOString().split('T')[0];
+            this._systemMessage = "You are ChatGPT, a large language model trained by Qwen. Answer as concisely as possible.\nKnowledge cutoff: 2021-09-01\nCurrent date: ".concat(currentDate);
+        }
+        this._getMessageById = getMessageById !== null && getMessageById !== void 0 ? getMessageById : this._defaultGetMessageById;
+        this._upsertMessage = upsertMessage !== null && upsertMessage !== void 0 ? upsertMessage : this._defaultUpsertMessage;
+        if (messageStore) {
+            this._messageStore = messageStore;
+        }
+        else {
+            this._messageStore = new Keyv({
+                store: new QuickLRU({ maxSize: 10000 })
+            });
+        }
+        if (!this._apiKey) {
+            throw new Error('Qwen missing required apiKey');
+        }
+        if (!this._fetch) {
+            throw new Error('Invalid environment; fetch is not defined');
+        }
+        if (typeof this._fetch !== 'function') {
+            throw new Error('Invalid "fetch" is not a function');
+        }
+    }

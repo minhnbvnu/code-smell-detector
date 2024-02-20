@@ -1,0 +1,1 @@
+function W5(t){return function(){this.style.removeProperty(t)}}

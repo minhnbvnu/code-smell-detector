@@ -1,0 +1,1 @@
+function sC(e,t){let n=e&&e.exec(t);return n&&n.index===0}

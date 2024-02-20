@@ -1,0 +1,1 @@
+function needsParentheses(i){switch(i.type){case"ArrayExpression":case"CallExpression":case"Identifier":case"ParenthesizedExpression":case"ThisExpression":return!1;default:return!0}}

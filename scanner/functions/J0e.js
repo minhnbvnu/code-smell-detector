@@ -1,0 +1,1 @@
+function J0e(){let e=hj().release();return e.startsWith("6.")&&!e.startsWith("6.3")}

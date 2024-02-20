@@ -1,0 +1,1 @@
+function nK(n,t,e){rK(n,e),Gt(n,()=>n.activeTexture(n.TEXTURE0+e)),Gt(n,()=>n.bindTexture(n.TEXTURE_2D,t))}

@@ -1,0 +1,1 @@
+function v3(n){var t=n(Zn,Zn),e=1;function i(){return e===1?n(Zn,Zn):e===.5?n(Nlt,Llt):n(vO(e),vO(1/e))}return t.exponent=function(r){return arguments.length?(e=+r,i()):e},Cs(t)}

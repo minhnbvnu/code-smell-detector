@@ -1,10 +1,12 @@
 function ensureEntranceObjects(obj) {
-	  for (var key in obj) {
-	    if (shouldIgnoreKey(key)) continue;
+  for (const key of Object.keys(obj)) {
+    if (shouldIgnoreKey(key)) continue;
+    const fns = obj[key];
 
-	    var fns = obj[key];
-	    if (typeof fns === "function") {
-	      obj[key] = { enter: fns };
-	    }
-	  }
-	}
+    if (typeof fns === "function") {
+      obj[key] = {
+        enter: fns
+      };
+    }
+  }
+}

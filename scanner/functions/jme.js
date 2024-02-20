@@ -1,0 +1,1 @@
+function jme(e){return Object.prototype.toString.call(e)==="[object Number]"&&e%1==0&&!Tme.isNegativeZero(e)}

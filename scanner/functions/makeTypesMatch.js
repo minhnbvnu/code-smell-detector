@@ -1,8 +1,1 @@
-function makeTypesMatch(a, b) {
-	  if (a.dtype === b.dtype) {
-	    return [a, b];
-	  }
-
-	  var dtype = upcastType(a.dtype, b.dtype);
-	  return [a.cast(dtype), b.cast(dtype)];
-	}
+function makeTypesMatch(e,t){if(e.dtype===t.dtype)return [e,t];var n=upcastType(e.dtype,t.dtype);return [e.cast(n),t.cast(n)]}

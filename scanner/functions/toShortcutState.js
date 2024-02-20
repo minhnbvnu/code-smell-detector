@@ -1,0 +1,1 @@
+function toShortcutState(shortcutKeys){return Object.entries(shortcutKeys).reduce((function(acc,_ref224){var _ref225=_slicedToArray2(_ref224,2),feature=_ref225[0],shortcut=_ref225[1];return fixedShortcuts.includes(feature)?acc:Object.assign(Object.assign({},acc),_defineProperty2({},feature,{shortcut:shortcut,error:!1}))}),{})}

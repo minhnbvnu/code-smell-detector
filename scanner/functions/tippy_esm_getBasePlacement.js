@@ -1,0 +1,1 @@
+function tippy_esm_getBasePlacement(i){return i.split("-")[0]}

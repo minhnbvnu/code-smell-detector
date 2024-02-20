@@ -1,14 +1,1 @@
-function DecodeStream(maybeMinBufferLength) {
-    this._rawMinBufferLength = maybeMinBufferLength || 0;
-    this.pos = 0;
-    this.bufferLength = 0;
-    this.eof = false;
-    this.buffer = emptyBuffer;
-    this.minBufferLength = 512;
-
-    if (maybeMinBufferLength) {
-      while (this.minBufferLength < maybeMinBufferLength) {
-        this.minBufferLength *= 2;
-      }
-    }
-  }
+function DecodeStream(t){var o;_classCallCheck(this,DecodeStream);(o=r.call(this))._rawMinBufferLength=t||0;o.pos=0;o.bufferLength=0;o.eof=!1;o.buffer=u;o.minBufferLength=512;if(t)for(;o.minBufferLength<t;)o.minBufferLength*=2;return o}

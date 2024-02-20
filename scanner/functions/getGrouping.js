@@ -1,0 +1,3 @@
+function getGrouping() {
+            return groupingInfos;
+        }

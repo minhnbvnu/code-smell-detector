@@ -1,0 +1,1 @@
+function ChoiceWidgetAnnotationElement(t){_classCallCheck(this,ChoiceWidgetAnnotationElement);return r.call(this,t,{isRenderable:t.renderForms})}

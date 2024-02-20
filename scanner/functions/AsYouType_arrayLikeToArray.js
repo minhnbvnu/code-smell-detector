@@ -1,0 +1,1 @@
+function AsYouType_arrayLikeToArray(i,o){(null==o||o>i.length)&&(o=i.length);for(var s=0,u=new Array(o);s<o;s++)u[s]=i[s];return u}

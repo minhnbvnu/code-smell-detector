@@ -1,0 +1,1 @@
+function Brt(n,t,e){let i=t.length,r=Sv(e,i);n.uniform1iv(this.addr,r);for(let o=0;o!==i;++o)e.safeSetTexture2D(t[o]||Gz,r[o])}

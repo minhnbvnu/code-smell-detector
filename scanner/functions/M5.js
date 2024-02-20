@@ -1,0 +1,1 @@
+function M5(){return Array.from(this)}

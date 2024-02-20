@@ -1,4 +1,4 @@
-function getLabel() {
-        var label = new maptalks.Label('I am a Text', map.getCenter()).addTo(layer);
-        return label;
-    }
+function getLabel(xdNode) {
+	// this works fine for now.
+	return getType(xdNode);
+}

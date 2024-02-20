@@ -1,0 +1,1 @@
+function sbe(e){return e!=null&&tH(e.length)&&!eH(e)}

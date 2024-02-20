@@ -1,10 +1,1 @@
-function isValidFetchUrl(url, baseUrl) {
-  try {
-    const {
-      protocol
-    } = baseUrl ? new URL(url, baseUrl) : new URL(url);
-    return protocol === "http:" || protocol === "https:";
-  } catch (ex) {
-    return false;
-  }
-}
+function isValidFetchUrl(t,r){try{var a=(r?new URL(t,r):new URL(t)).protocol;return"http:"===a||"https:"===a}catch(t){return!1}}

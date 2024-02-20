@@ -1,0 +1,1 @@
+function dse(e){if(e[0]=(this.useColors?"%c":"")+this.namespace+(this.useColors?" %c":" ")+e[0]+(this.useColors?"%c ":" ")+"+"+Kg.exports.humanize(this.diff),!this.useColors)return;let t="color: "+this.color;e.splice(1,0,t,"color: inherit");let r=0,i=0;e[0].replace(/%[a-zA-Z%]/g,a=>{a!=="%%"&&(r++,a==="%c"&&(i=r))}),e.splice(i,0,t)}

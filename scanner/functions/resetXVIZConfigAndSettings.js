@@ -1,0 +1,3 @@
+function resetXVIZConfigAndSettings() {
+  setXVIZConfig(defaultXVIZConfig);
+}

@@ -1,6 +1,1 @@
-function squeezeInputInfo(inInfo, squeezedShape) {
-	  // Deep copy.
-	  var newInputInfo = JSON.parse(JSON.stringify(inInfo));
-	  newInputInfo.shapeInfo.logicalShape = squeezedShape;
-	  return newInputInfo;
-	}
+function squeezeInputInfo(e,t){var n=JSON.parse(JSON.stringify(e));return n.shapeInfo.logicalShape=t,n}

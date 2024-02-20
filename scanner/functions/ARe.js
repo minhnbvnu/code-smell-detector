@@ -1,0 +1,1 @@
+function ARe(e,t,r,n){let i,a,l;typeof t=="function"&&typeof r!="function"?(a=void 0,l=t,i=r):(a=t,l=r,i=n),ERe(e,a,s,i);function s(u,c){const d=c[c.length-1],f=d?d.children.indexOf(u):void 0;return l(u,f,d)}}

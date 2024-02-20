@@ -1,0 +1,1 @@
+function BJ(t,e,n){if(!(0,g.HD)(e.from)){(0,g.vU)('Lookup "from" parameter must be a string literal.')}return n.getData(e.from).lookupRef(n,e.key)}

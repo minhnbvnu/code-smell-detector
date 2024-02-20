@@ -1,0 +1,1 @@
+function parse_BrtBeginSst(data,length){return[data.read_shift(4),data.read_shift(4)]}

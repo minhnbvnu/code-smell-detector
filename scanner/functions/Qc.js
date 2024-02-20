@@ -1,0 +1,1 @@
+function Qc(a){for(xb(a,!0);a.firstChild;)a.removeChild(a.firstChild)}

@@ -1,3 +1,3 @@
-function round(n, decimals) {
-  return Math.round(toFixed(n, decimals));
-}
+function round(a) {
+            return Math.floor(a);
+        }

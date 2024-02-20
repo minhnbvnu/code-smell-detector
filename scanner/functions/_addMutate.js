@@ -1,0 +1,1 @@
+function _addMutate(e,t){return"object"===_typeof(e)&&null!==e?(Object.isFrozen(e)?_objectAdd:_objectAddMutate)(e,t):e+=t}

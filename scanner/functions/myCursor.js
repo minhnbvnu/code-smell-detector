@@ -1,0 +1,1 @@
+function myCursor(type){if(type!=lastcurs){Tracker.setCursor(type);lastcurs=type}}

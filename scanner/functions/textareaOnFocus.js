@@ -1,0 +1,1 @@
+function textareaOnFocus(){_textareaHasFocus=!0,addClass(_hostElement,strFocus)}

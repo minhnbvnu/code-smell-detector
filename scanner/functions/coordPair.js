@@ -1,0 +1,1 @@
+function coordPair(x) { return [attrf(x, 'lon'), attrf(x, 'lat')]; }

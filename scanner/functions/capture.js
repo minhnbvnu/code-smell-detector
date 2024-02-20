@@ -1,3 +1,4 @@
 function capture() {
-	      return _capture.apply(this, arguments);
-	    }
+    capturer.start();
+    startTime = performance.now();
+  }

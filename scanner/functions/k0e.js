@@ -1,0 +1,1 @@
+function k0e(e,t,r){if(e.length===0)throw(0,wu().newError)("No files provided","ERR_UPDATER_NO_FILES_PROVIDED");let i=e.find(a=>a.url.pathname.toLowerCase().endsWith(`.${t}`));return i??(r==null?e[0]:e.find(a=>!r.some(n=>a.url.pathname.toLowerCase().endsWith(`.${n}`))))}

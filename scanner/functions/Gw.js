@@ -1,1 +1,1 @@
-function gw(a){a=a|0;var b=0;b=fa-16|0;fa=b;L[b+12>>2]=a;fj(L[b+12>>2]);fa=b+16|0}
+function Gw(e,r,t){if(!t)t="";var a=t+e;switch(r.type){case"base64":return k(bt(a));case"binary":return bt(a);case"string":return e;case"file":return nr(r.file,a,"utf8");case"buffer":{if(y)return S(a,"utf8");else if(typeof TextEncoder!=="undefined")return(new TextEncoder).encode(a);else return Gw(a,{type:"binary"}).split("").map(function(e){return e.charCodeAt(0)})};}throw new Error("Unrecognized type "+r.type)}

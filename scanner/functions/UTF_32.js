@@ -1,0 +1,1 @@
+function UTF_32() {}

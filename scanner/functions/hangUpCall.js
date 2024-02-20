@@ -1,0 +1,9 @@
+function hangUpCall() {
+  closeVideoCall();
+
+  sendToServer({
+    name: myUsername,
+    target: targetUsername,
+    type: "hang-up"
+  });
+}

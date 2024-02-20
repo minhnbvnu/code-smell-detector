@@ -1,0 +1,1 @@
+function g6e(e,t){let r=t.focusNode,n=t.focusOffset;if(!r||t.anchorNode!=r||t.anchorOffset!=n)return!1;for(n=Math.min(n,wo(r));;)if(n){if(r.nodeType!=1)return!1;let i=r.childNodes[n-1];i.contentEditable=="false"?n--:(r=i,n=wo(r))}else{if(r==e)return!0;n=yh(r),r=r.parentNode}}

@@ -1,0 +1,1 @@
+function guessIndent(i){var o=i.split("\n"),s=o.filter((function(i){return/^\t+/.test(i)})),u=o.filter((function(i){return/^ {2,}/.test(i)}));if(0===s.length&&0===u.length)return null;if(s.length>=u.length)return"\t";var C=u.reduce((function(i,o){var s=/^ +/.exec(o)[0].length;return Math.min(s,i)}),1/0);return new Array(C+1).join(" ")}

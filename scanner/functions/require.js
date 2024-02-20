@@ -1,12 +1,10 @@
-function require(name) {
-    var module = require.modules[name];
-    if (!module) throw new Error('failed to require "' + name + '"');
-
-    if (!('exports' in module) && typeof module.definition === 'function') {
-      module.client = module.component = true;
-      module.definition.call(this, module.exports = {}, module);
-      delete module.definition;
+function require(p){
+    var path = require.resolve(p)
+      , mod = require.modules[path];
+    if (!mod) throw new Error('failed to require "' + p + '"');
+    if (!mod.exports) {
+      mod.exports = {};
+      mod.call(mod.exports, mod, mod.exports, require.relative(path));
     }
-
-    return module.exports;
+    return mod.exports;
   }

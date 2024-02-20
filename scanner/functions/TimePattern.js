@@ -1,0 +1,1 @@
+function TimePattern(t){var o;_classCallCheck(this,TimePattern);(o=r.call(this,h,"timePattern")).name=(0,u.getStringOption)(t.name,["full","long","med","short"]);return o}

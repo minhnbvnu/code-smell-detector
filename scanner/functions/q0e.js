@@ -1,0 +1,1 @@
+function q0e(e){return"var customRule"+e+" = customRules["+e+"];"}

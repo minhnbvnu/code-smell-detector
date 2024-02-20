@@ -1,0 +1,3 @@
+function onInputBoxBlur(e) {
+            hideAutoComplete();
+        }

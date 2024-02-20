@@ -1,0 +1,1 @@
+function Yn(t){return"string"==typeof t||t instanceof String}

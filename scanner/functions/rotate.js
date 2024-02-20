@@ -1,5 +1,12 @@
-function rotate(transform, angle) {
-  const cos = Math.cos(angle);
-  const sin = Math.sin(angle);
-  return multiply(transform, set(tmp_, cos, sin, -sin, cos, 0, 0));
-}
+function rotate(center, point, alpha) {
+    var x = point.x - center.x;
+    var y = point.y - center.y;
+
+    var nx = Math.cos(alpha) * x - Math.sin(alpha) * y;
+    var ny = Math.sin(alpha) * x + Math.cos(alpha) * y;
+
+    return {
+      x: nx + center.x,
+      y: ny + center.y
+    }
+  }

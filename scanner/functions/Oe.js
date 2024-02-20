@@ -1,0 +1,1 @@
+function Oe(t){var e=parseInt(t,10);return e<=49?2e3+e:e<=999?1900+e:e}

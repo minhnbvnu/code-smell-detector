@@ -1,0 +1,1 @@
+function asNonCompoundGraph(g){var simplified=new Graph({multigraph:g.isMultigraph()}).setGraph(g.graph());_.forEach(g.nodes(),function(v){if(!g.children(v).length){simplified.setNode(v,g.node(v))}});_.forEach(g.edges(),function(e){simplified.setEdge(e,g.edge(e))});return simplified}

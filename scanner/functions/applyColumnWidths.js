@@ -1,0 +1,1 @@
+function applyColumnWidths(){for(var e,o,t=0,n=0;n<columns.length;n++)e=columns[n].width,(o=getColumnCssRules(n)).left.style.left=t+"px",o.right.style.right=(-1!=options.frozenColumn&&n>options.frozenColumn?canvasWidthR:canvasWidthL)-t-e+"px",options.frozenColumn==n?t=0:t+=columns[n].width}

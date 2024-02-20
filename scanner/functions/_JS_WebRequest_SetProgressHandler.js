@@ -1,0 +1,1 @@
+function _JS_WebRequest_SetProgressHandler(request,arg,onprogress){var http=wr.requestInstances[request];http.onprogress=function http_onprogress(e){if(onprogress){if(e.lengthComputable)dynCall("viii",onprogress,[arg,e.loaded,e.total])}}}

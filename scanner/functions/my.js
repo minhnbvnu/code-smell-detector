@@ -1,1 +1,1 @@
-function My(a){a=a|0;_f(34064)}
+function my(t,e,r){var n=e(t);return nr(t)?n:q1(n,r(t))}

@@ -1,0 +1,1 @@
+function s_y($){$dt.y=$d.yI.value=$}

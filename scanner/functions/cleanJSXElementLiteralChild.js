@@ -1,41 +1,38 @@
 function cleanJSXElementLiteralChild(child, args) {
-	  var lines = child.value.split(/\r\n|\n|\r/);
+  const lines = child.value.split(/\r\n|\n|\r/);
+  let lastNonEmptyLine = 0;
 
-	  var lastNonEmptyLine = 0;
+  for (let i = 0; i < lines.length; i++) {
+    if (lines[i].match(/[^ \t]/)) {
+      lastNonEmptyLine = i;
+    }
+  }
 
-	  for (var i = 0; i < lines.length; i++) {
-	    if (lines[i].match(/[^ \t]/)) {
-	      lastNonEmptyLine = i;
-	    }
-	  }
+  let str = "";
 
-	  var str = "";
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+    const isFirstLine = i === 0;
+    const isLastLine = i === lines.length - 1;
+    const isLastNonEmptyLine = i === lastNonEmptyLine;
+    let trimmedLine = line.replace(/\t/g, " ");
 
-	  for (var _i = 0; _i < lines.length; _i++) {
-	    var line = lines[_i];
+    if (!isFirstLine) {
+      trimmedLine = trimmedLine.replace(/^[ ]+/, "");
+    }
 
-	    var isFirstLine = _i === 0;
-	    var isLastLine = _i === lines.length - 1;
-	    var isLastNonEmptyLine = _i === lastNonEmptyLine;
+    if (!isLastLine) {
+      trimmedLine = trimmedLine.replace(/[ ]+$/, "");
+    }
 
-	    var trimmedLine = line.replace(/\t/g, " ");
+    if (trimmedLine) {
+      if (!isLastNonEmptyLine) {
+        trimmedLine += " ";
+      }
 
-	    if (!isFirstLine) {
-	      trimmedLine = trimmedLine.replace(/^[ ]+/, "");
-	    }
+      str += trimmedLine;
+    }
+  }
 
-	    if (!isLastLine) {
-	      trimmedLine = trimmedLine.replace(/[ ]+$/, "");
-	    }
-
-	    if (trimmedLine) {
-	      if (!isLastNonEmptyLine) {
-	        trimmedLine += " ";
-	      }
-
-	      str += trimmedLine;
-	    }
-	  }
-
-	  if (str) args.push(t.stringLiteral(str));
-	}
+  if (str) args.push((0, _generated.stringLiteral)(str));
+}

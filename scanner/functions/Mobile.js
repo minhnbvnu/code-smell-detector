@@ -1,0 +1,1 @@
+function Mobile(props){var _this8;_classCallCheck2(this,Mobile),_this8=_super3.call(this,props);var options=props.options;return _this8.state={active:options.isFullscreen?CANVAS:options.initialActive||SIDEBAR},_this8}

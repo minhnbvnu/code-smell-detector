@@ -1,0 +1,1 @@
+function fN(t,e){return l0(gi(e),function(r){var n=Number.NEGATIVE_INFINITY,i=Number.POSITIVE_INFINITY;return BD(r,function(s,a){var o=bN(t,a)/2;n=Math.max(s+o,n),i=Math.min(s-o,i)}),n-i})}

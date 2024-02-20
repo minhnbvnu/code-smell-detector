@@ -1,0 +1,1 @@
+function iD(e){return document.querySelector('.webResource[data-url="'.concat(e,'"]'))}

@@ -1,0 +1,1 @@
+function zOe(e){let t={r:0,w:0};return e&&e.io_service_bytes_recursive&&Object.prototype.toString.call(e.io_service_bytes_recursive)==="[object Array]"&&e.io_service_bytes_recursive.length>0&&e.io_service_bytes_recursive.forEach(function(r){r.op&&r.op.toLowerCase()==="read"&&r.value&&(t.r+=r.value),r.op&&r.op.toLowerCase()==="write"&&r.value&&(t.w+=r.value)}),t}

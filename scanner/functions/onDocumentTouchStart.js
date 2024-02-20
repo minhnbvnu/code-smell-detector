@@ -1,0 +1,1 @@
+function onDocumentTouchStart(){Xt.isTouch||(Xt.isTouch=!0,window.performance&&document.addEventListener("mousemove",onDocumentMouseMove))}

@@ -1,0 +1,1 @@
+function TO(t){var e=t.getBBox(),r=t.ownerSVGElement.getScreenCTM().inverse().multiply(t.getScreenCTM()).translate(e.width/2,e.height/2);return{x:r.e,y:r.f}}

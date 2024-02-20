@@ -1,0 +1,3 @@
+function updateJSDocParameterTag(node, tagName = getDefaultTagName(node), name, isBracketed, typeExpression, isNameFirst, comment) {
+                return node.tagName !== tagName || node.name !== name || node.isBracketed !== isBracketed || node.typeExpression !== typeExpression || node.isNameFirst !== isNameFirst || node.comment !== comment ? update(createJSDocParameterTag(tagName, name, isBracketed, typeExpression, isNameFirst, comment), node) : node;
+            }

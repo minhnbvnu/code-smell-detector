@@ -1,4 +1,4 @@
-function hookErr(_, errSuite, after) {
+function hookErr(err, errSuite, after) {
     // before/after Each hook for errSuite failed:
     var orig = self.suite;
 
@@ -11,9 +11,7 @@ function hookErr(_, errSuite, after) {
       self.hookUp('afterEach', function(err2, errSuite2) {
         self.suite = orig;
         // some hooks may fail even now
-        if (err2) {
-          return hookErr(err2, errSuite2, true);
-        }
+        if (err2) return hookErr(err2, errSuite2, true);
         // report error suite
         fn(errSuite);
       });

@@ -1,0 +1,1 @@
+function Cfe(e){return e.filter((t,r)=>r===0||t.route.path&&t.route.path.length>0)}

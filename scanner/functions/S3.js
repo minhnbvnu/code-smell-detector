@@ -1,0 +1,1 @@
+function S3(n,t){return t[+(t.left!==n.site)]}

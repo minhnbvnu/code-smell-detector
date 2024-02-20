@@ -1,0 +1,1 @@
+function getPluginByName(e){for(var o=plugins.length-1;o>=0;o--)if(plugins[o].pluginName===e)return plugins[o]}

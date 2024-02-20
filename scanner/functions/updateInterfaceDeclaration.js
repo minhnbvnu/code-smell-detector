@@ -1,0 +1,3 @@
+function updateInterfaceDeclaration(node, modifiers, name, typeParameters, heritageClauses, members) {
+                return node.modifiers !== modifiers || node.name !== name || node.typeParameters !== typeParameters || node.heritageClauses !== heritageClauses || node.members !== members ? update(createInterfaceDeclaration(modifiers, name, typeParameters, heritageClauses, members), node) : node;
+            }

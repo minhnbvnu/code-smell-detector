@@ -1,0 +1,1 @@
+function _glFrontFace(x0){GLctx["frontFace"](x0)}

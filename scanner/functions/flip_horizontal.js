@@ -1,4 +1,4 @@
-function flip_horizontal() {
+function flip_horizontal(){
 	apply_image_transformation({
 		name: localize("Flip horizontal"),
 		icon: get_help_folder_icon("p_fliph.png"),

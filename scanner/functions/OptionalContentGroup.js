@@ -1,0 +1,1 @@
+function OptionalContentGroup(t,r){_classCallCheck(this,OptionalContentGroup);_classPrivateFieldInitSpec(this,l,{writable:!0,value:!0});this.name=t;this.intent=r}

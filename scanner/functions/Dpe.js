@@ -1,0 +1,1 @@
+function Dpe(e,t,r){St(()=>{if(t||r)return;let n=e.current;const i=rn(n?n[0]:void 0);let a=l=>{let s=l.target;ai(s,e.current)?br=e:lU(s)||(br=null)};return i.addEventListener("focusin",a,!1),n==null||n.forEach(l=>l.addEventListener("focusin",a,!1)),()=>{i.removeEventListener("focusin",a,!1),n==null||n.forEach(l=>l.removeEventListener("focusin",a,!1))}},[e,t,r])}

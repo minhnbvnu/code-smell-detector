@@ -1,1 +1,1 @@
-function Ik(a,b){a=a|0;b=b|0;var c=0;c=fa-16|0;fa=c;L[c+12>>2]=a;L[c+8>>2]=b;a=L[c+12>>2];a=ha[L[L[a>>2]+40>>2]](a,L[c+8>>2])|0;fa=c+16|0;return a|0}
+function ik(a,c){a=a|0;c=c|0;var d=0,e=0,g=0,h=0;d=f[a+176>>2]|0;e=f[a+172>>2]|0;a=e;if((d|0)==(e|0))return 0;g=(d-e|0)/136|0;e=0;while(1){if((f[a+(e*136|0)>>2]|0)==(c|0)){h=4;break}d=e+1|0;if(d>>>0<g>>>0)e=d;else{h=6;break}}if((h|0)==4)return ((b[a+(e*136|0)+100>>0]|0)==0?0:a+(e*136|0)+4|0)|0;else if((h|0)==6)return 0;return 0}

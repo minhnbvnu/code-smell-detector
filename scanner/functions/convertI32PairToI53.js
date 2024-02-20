@@ -1,0 +1,1 @@
+function convertI32PairToI53(lo,hi){return(lo>>>0)+hi*4294967296}

@@ -1,0 +1,1 @@
+function _emscripten_glStencilFunc(x0,x1,x2){GLctx["stencilFunc"](x0,x1,x2)}

@@ -1,0 +1,1 @@
+function Gue(e){return new ci(this.q,this.x.subtract(e.toBigInteger()).mod(this.q))}

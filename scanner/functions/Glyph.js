@@ -1,10 +1,1 @@
-function Glyph(fontChar, unicode, accent, width, vmetric, operatorListId, isSpace, isInFont) {
-    this.fontChar = fontChar;
-    this.unicode = unicode;
-    this.accent = accent;
-    this.width = width;
-    this.vmetric = vmetric;
-    this.operatorListId = operatorListId;
-    this.isSpace = isSpace;
-    this.isInFont = isInFont;
-  }
+function Glyph(t){var r=t.header,o=void 0===r?null:r,c=t.simple,l=void 0===c?null:c,u=t.composites,h=void 0===u?null:u;_classCallCheck(this,Glyph);this.header=o;this.simple=l;this.composites=h}

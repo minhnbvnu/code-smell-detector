@@ -1,0 +1,1 @@
+function _emscripten_get_canvas_element_size(target,width,height){var canvas=findCanvasEventTarget(target);if(!canvas)return-4;HEAP32[width>>2]=canvas.width;HEAP32[height>>2]=canvas.height}

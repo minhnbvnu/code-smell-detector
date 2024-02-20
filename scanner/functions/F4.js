@@ -1,0 +1,1 @@
+function F4(e,t){if(!e.length)return e;let r=e.length,n=wa;for(;r;){let i=q8e(e[r-1],t,n);if(i.changes&&!i.changes.empty||i.effects.length){let a=e.slice(0,r);return a[r-1]=i,a}else t=i.mapped,r--,n=i.selectionsAfter}return n.length?[_i.selection(n)]:wa}

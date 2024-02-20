@@ -1,0 +1,3 @@
+function updateExportDeclaration(node, modifiers, isTypeOnly, exportClause, moduleSpecifier, assertClause) {
+                return node.modifiers !== modifiers || node.isTypeOnly !== isTypeOnly || node.exportClause !== exportClause || node.moduleSpecifier !== moduleSpecifier || node.assertClause !== assertClause ? finishUpdateExportDeclaration(createExportDeclaration(modifiers, isTypeOnly, exportClause, moduleSpecifier, assertClause), node) : node;
+            }

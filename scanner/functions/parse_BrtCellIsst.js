@@ -1,0 +1,1 @@
+function parse_BrtCellIsst(data,length){var cell=parse_XLSBCell(data);var isst=data.read_shift(4);return[cell,isst,"s"]}

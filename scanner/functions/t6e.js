@@ -1,0 +1,1 @@
+function t6e(e,t){if(gc.existsSync(t))return;try{gc.lstatSync(e)}catch(n){throw n.message=n.message.replace("lstat","ensureLink"),n}let i=qq.dirname(t);return gc.existsSync(i)||Uq.mkdirsSync(i),gc.linkSync(e,t)}

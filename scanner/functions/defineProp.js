@@ -1,0 +1,1 @@
+function defineProp(name,value){delete module.exports[name];module.exports[name]=value;return value}

@@ -1,0 +1,1 @@
+function setTransitionDuration(i,o){i.forEach((function(i){i&&(i.style.transitionDuration=o+"ms")}))}

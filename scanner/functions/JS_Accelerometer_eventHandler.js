@@ -1,0 +1,1 @@
+function JS_Accelerometer_eventHandler(){JS_Accelerometer_lastValue={x:JS_Accelerometer.x*JS_Accelerometer_multiplier,y:JS_Accelerometer.y*JS_Accelerometer_multiplier,z:JS_Accelerometer.z*JS_Accelerometer_multiplier};if(JS_Accelerometer_callback!=0)dynCall_vfff(JS_Accelerometer_callback,JS_Accelerometer_lastValue.x,JS_Accelerometer_lastValue.y,JS_Accelerometer_lastValue.z)}

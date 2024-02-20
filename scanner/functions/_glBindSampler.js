@@ -1,0 +1,1 @@
+function _glBindSampler(unit,sampler){GLctx["bindSampler"](unit,GL.samplers[sampler])}

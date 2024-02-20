@@ -1,0 +1,1 @@
+function disHMS(_,$){if($)_.disabled="";else{_.disabled="disabled";_.value="00"}}

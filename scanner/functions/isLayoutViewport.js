@@ -1,0 +1,1 @@
+function isLayoutViewport(){return!/^((?!chrome|android).)*safari/i.test(getUAString())}

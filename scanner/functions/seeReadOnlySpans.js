@@ -1,0 +1,3 @@
+function seeReadOnlySpans() {
+  sawReadOnlySpans = true;
+}

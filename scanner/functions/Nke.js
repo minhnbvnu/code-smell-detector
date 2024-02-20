@@ -1,0 +1,1 @@
+function Nke(e){let t=Bn(e.state).resolveInner(e.pos,-1);if(Boe.indexOf(t.name)>-1)return null;let r=t.name=="VariableName"||t.to-t.from<20&&ZQ.test(e.state.sliceDoc(t.from,t.to));if(!r&&!e.explicit)return null;let n=[];for(let i=t;i;i=i.parent)Ioe.has(i.name)&&(n=n.concat(Moe(e.state.doc,i)));return{options:n,from:r?t.from:e.pos,validFor:ZQ}}

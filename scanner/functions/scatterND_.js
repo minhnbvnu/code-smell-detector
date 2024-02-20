@@ -1,14 +1,1 @@
-function scatterND_(indices, updates, shape) {
-	  var $indices = convertToTensor(indices, 'indices', 'scatterND', 'int32');
-	  var $updates = convertToTensor(updates, 'updates', 'scatterND');
-	  validateInput($updates, $indices, shape);
-	  var inputs = {
-	    indices: $indices,
-	    updates: $updates
-	  };
-	  var attrs = {
-	    shape: shape
-	  }; // tslint:disable-next-line: no-unnecessary-type-assertion
-
-	  return ENGINE.runKernel(ScatterNd, inputs, attrs);
-	}
+function scatterND_(e,t,n){var r=convertToTensor(e,"indices","scatterND","int32"),o=convertToTensor(t,"updates","scatterND");return validateInput(o,r,n),ENV.engine.runKernel(function(e){return e.scatterND(r,o,n)},{$indices:r,$updates:o})}

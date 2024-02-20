@@ -1,0 +1,1 @@
+function exactMatch(state, params) { return $state.is(state.name, params); }

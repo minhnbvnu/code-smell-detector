@@ -1,0 +1,1 @@
+function _difftime(time1,time0){return time1-time0}

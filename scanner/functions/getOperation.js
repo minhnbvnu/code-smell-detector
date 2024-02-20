@@ -1,0 +1,1 @@
+function getOperation(i){switch(i.keyCode){case B:return"Backspace";case z:return"Delete"}}

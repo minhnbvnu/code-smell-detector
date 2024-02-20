@@ -1,0 +1,3 @@
+function hasFailed() {
+            return !codeActionSucceeded;
+        }

@@ -1,0 +1,1 @@
+function textHit(g,o,x,y,gx,gy){if(!o.fontSize)return false;if(!o.angle)return true;var b=vg.scene.bounds.text(o,tmpBounds,true),a=-o.angle*Math.PI/180,cos=Math.cos(a),sin=Math.sin(a),x=o.x,y=o.y,px=cos*gx-sin*gy+(x-x*cos+y*sin),py=sin*gx+cos*gy+(y-x*sin-y*cos);return b.contains(px,py)}

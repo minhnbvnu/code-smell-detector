@@ -1,0 +1,112 @@
+function ArrayToWebM(frames) {
+	            var info = checkFrames(frames);
+	            if (!info) {
+	                return [];
+	            }
+
+	            var clusterMaxDuration = 30000;
+
+	            var EBML = [{
+	                'id': 0x1a45dfa3, // EBML
+	                'data': [{
+	                    'data': 1,
+	                    'id': 0x4286 // EBMLVersion
+	                }, {
+	                    'data': 1,
+	                    'id': 0x42f7 // EBMLReadVersion
+	                }, {
+	                    'data': 4,
+	                    'id': 0x42f2 // EBMLMaxIDLength
+	                }, {
+	                    'data': 8,
+	                    'id': 0x42f3 // EBMLMaxSizeLength
+	                }, {
+	                    'data': 'webm',
+	                    'id': 0x4282 // DocType
+	                }, {
+	                    'data': 2,
+	                    'id': 0x4287 // DocTypeVersion
+	                }, {
+	                    'data': 2,
+	                    'id': 0x4285 // DocTypeReadVersion
+	                }]
+	            }, {
+	                'id': 0x18538067, // Segment
+	                'data': [{
+	                    'id': 0x1549a966, // Info
+	                    'data': [{
+	                        'data': 1e6, //do things in millisecs (num of nanosecs for duration scale)
+	                        'id': 0x2ad7b1 // TimecodeScale
+	                    }, {
+	                        'data': 'whammy',
+	                        'id': 0x4d80 // MuxingApp
+	                    }, {
+	                        'data': 'whammy',
+	                        'id': 0x5741 // WritingApp
+	                    }, {
+	                        'data': doubleToString(info.duration),
+	                        'id': 0x4489 // Duration
+	                    }]
+	                }, {
+	                    'id': 0x1654ae6b, // Tracks
+	                    'data': [{
+	                        'id': 0xae, // TrackEntry
+	                        'data': [{
+	                            'data': 1,
+	                            'id': 0xd7 // TrackNumber
+	                        }, {
+	                            'data': 1,
+	                            'id': 0x73c5 // TrackUID
+	                        }, {
+	                            'data': 0,
+	                            'id': 0x9c // FlagLacing
+	                        }, {
+	                            'data': 'und',
+	                            'id': 0x22b59c // Language
+	                        }, {
+	                            'data': 'V_VP8',
+	                            'id': 0x86 // CodecID
+	                        }, {
+	                            'data': 'VP8',
+	                            'id': 0x258688 // CodecName
+	                        }, {
+	                            'data': 1,
+	                            'id': 0x83 // TrackType
+	                        }, {
+	                            'id': 0xe0, // Video
+	                            'data': [{
+	                                'data': info.width,
+	                                'id': 0xb0 // PixelWidth
+	                            }, {
+	                                'data': info.height,
+	                                'id': 0xba // PixelHeight
+	                            }]
+	                        }]
+	                    }]
+	                }]
+	            }];
+
+	            //Generate clusters (max duration)
+	            var frameNumber = 0;
+	            var clusterTimecode = 0;
+	            while (frameNumber < frames.length) {
+
+	                var clusterFrames = [];
+	                var clusterDuration = 0;
+	                do {
+	                    clusterFrames.push(frames[frameNumber]);
+	                    clusterDuration += frames[frameNumber].duration;
+	                    frameNumber++;
+	                } while (frameNumber < frames.length && clusterDuration < clusterMaxDuration);
+
+	                var clusterCounter = 0;
+	                var cluster = {
+	                    'id': 0x1f43b675, // Cluster
+	                    'data': getClusterData(clusterTimecode, clusterCounter, clusterFrames)
+	                }; //Add cluster to segment
+	                EBML[1].data.push(cluster);
+	                clusterTimecode += clusterDuration;
+	            }
+
+	            return generateEBML(EBML);
+	        }

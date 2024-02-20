@@ -1,1 +1,1 @@
-function Tm(a,b,c,d,e){a=a|0;b=b|0;c=c|0;d=d|0;e=e|0}
+function tm(a){a=a|0;var b=0;f[a>>2]=2840;b=f[a+56>>2]|0;if(!b){Oq(a);return}Oq(b);Oq(a);return}

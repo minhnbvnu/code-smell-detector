@@ -1,0 +1,1 @@
+function z8(n,t){var e="attr."+n;if(arguments.length<2)return(e=this.tween(e))&&e._value;if(t==null)return this.tween(e,null);if(typeof t!="function")throw new Error;var i=vo(n);return this.tween(e,(i.local?Xat:Kat)(i,t))}

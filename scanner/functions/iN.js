@@ -1,0 +1,1 @@
+function iN(t,e,r,n){var i=[],s=[],a=Math.min(e[r].low,e[n].low),o=Math.max(e[r].lim,e[n].lim),l,u;l=r;do l=t.parent(l),i.push(l);while(l&&(e[l].low>a||o>e[l].lim));for(u=l,l=n;(l=t.parent(l))!==u;)s.push(l);return{path:i.concat(s.reverse()),lca:u}}

@@ -1,3 +1,1 @@
-function setdiff1dAsync_(_x, _x2) {
-	  return _setdiff1dAsync_.apply(this, arguments);
-	}
+function setdiff1dAsync_(e,t){return __awaiter(this,void 0,void 0,function(){var n,r,o,a,i,s,u,l,c,p;return __generator(this,function(d){switch(d.label){case 0:return n=convertToTensor(e,"x","setdiff1d"),r=convertToTensor(t,"y","setdiff1d"),assert(n.dtype===r.dtype,"x and y should have the same dtype, but got x ("+n.dtype+") and y ("+r.dtype+")."),assert(1===n.rank,"x should be 1D tensor, but got x ("+n.shape+")."),assert(1===r.rank,"y should be 1D tensor, but got y ("+r.shape+")."),[4,n.data()];case 1:return o=d.sent(),[4,r.data()];case 2:for(a=d.sent(),i=new Set(a),s=0,c=0;c<o.length;c++)i.has(o[c])||s++;for(u=new TensorBuffer([s],n.dtype),l=new TensorBuffer([s],"int32"),c=0,p=0;c<o.length;c++)i.has(o[c])||(u.values[p]=o[c],l.values[p]=c,p++);return [2,[u.toTensor(),l.toTensor()]]}})})}

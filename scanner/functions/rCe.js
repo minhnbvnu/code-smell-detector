@@ -1,0 +1,1 @@
+function rCe(e){for(var t=0,r=0;r<e.length;r++)e[t].length<=e[r].length&&(t=r);return t}

@@ -1,0 +1,1 @@
+function _emscripten_glBlendEquationSeparate(x0,x1){GLctx["blendEquationSeparate"](x0,x1)}

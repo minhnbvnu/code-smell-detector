@@ -1,0 +1,1 @@
+function tightTreeRanker(g){longestPath(g);feasibleTree(g)}

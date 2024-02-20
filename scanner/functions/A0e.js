@@ -1,0 +1,1 @@
+function A0e(e,t,r){if(t==="rtl")switch(pG()){case"negative":r=-r;break;case"positive-ascending":break;default:{const{clientWidth:n,scrollWidth:i}=e;r=i-n-r;break}}e.scrollLeft=r}

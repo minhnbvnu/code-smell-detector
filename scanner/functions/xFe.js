@@ -1,0 +1,1 @@
+function xFe(e,t,r){const n=e.schema;let i=n;t.name==="svg"&&n.space==="html"&&(i=YI,e.schema=i),e.ancestors.push(t);const a=t.name===null?e.Fragment:Cse(e,t.name,!0),l=PFe(e,t),s=JI(e,t);return kse(e,l,a,t),XI(l,s),e.ancestors.pop(),e.schema=n,e.create(t,a,l,r)}

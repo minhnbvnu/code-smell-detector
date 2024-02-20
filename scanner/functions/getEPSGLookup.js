@@ -1,3 +1,0 @@
-function getEPSGLookup() {
-  return epsgLookup;
-}

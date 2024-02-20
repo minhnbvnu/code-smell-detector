@@ -1,0 +1,1 @@
+function _longjmp(env,value){Module["setThrew"](env,value||1);throw"longjmp"}

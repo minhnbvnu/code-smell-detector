@@ -1,0 +1,1 @@
+function pS(t){return Hn(t)&&W1(t.length)&&!!Fe[ps(t)]}

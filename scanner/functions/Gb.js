@@ -1,0 +1,1 @@
+function Gb(a){return function(){return this[a]}}

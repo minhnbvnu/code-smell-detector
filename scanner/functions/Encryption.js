@@ -1,0 +1,1 @@
+function Encryption(t){var o;_classCallCheck(this,Encryption);(o=r.call(this,d,"encryption",!0)).encrypt=null;o.encryptionLevel=null;o.permissions=null;return o}

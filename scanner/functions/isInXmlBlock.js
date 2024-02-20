@@ -1,0 +1,1 @@
+function isInXmlBlock(state) { return isIn(state, "tag"); }

@@ -1,0 +1,1 @@
+function createArrowElement(i){var o=div();return!0===i?o.className=Gt:(o.className=$t,tippy_esm_isElement(i)?o.appendChild(i):dangerouslySetInnerHTML(o,i)),o}

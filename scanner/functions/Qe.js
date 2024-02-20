@@ -1,1 +1,1 @@
-function Qe(){var t=uu.window;try{return!(!t||t==t.top)}catch(t){return!1}}
+function Qe(t,e){return function(i,n){var r;return null===n||isNaN(+n)||(C(e,"moment()."+e+"(period, number) is deprecated. Please use moment()."+e+"(number, period). See http://momentjs.com/guides/#/warnings/add-inverted-param/ for more info."),r=i,i=n,n=r),ti(this,$e(i="string"==typeof i?+i:i,n),t),this}}

@@ -1,0 +1,1 @@
+function parse_wb_defaults(wb){push_defaults(wb.WBProps,WBPropsDef);push_defaults(wb.CalcPr,CalcPrDef);push_defaults_array(wb.WBView,WBViewDef);push_defaults_array(wb.Sheets,SheetDef);_ssfopts.date1904=parsexmlbool(wb.WBProps.date1904,"date1904")}

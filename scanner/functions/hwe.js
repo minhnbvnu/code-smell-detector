@@ -1,0 +1,1 @@
+function hwe(e){return e===null}

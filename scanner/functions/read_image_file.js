@@ -6,7 +6,7 @@ function read_image_file(blob, callback) {
 	let palette;
 	let monochrome = false;
 
-	blob.arrayBuffer().then((arrayBuffer) => {
+	blob.arrayBuffer().then((arrayBuffer)=> {
 		// Helpers:
 		// "GIF".split("").map(c=>"0x"+c.charCodeAt(0).toString("16")).join(", ")
 		// [0x47, 0x49, 0x46].map(c=>String.fromCharCode(c)).join("")
@@ -25,7 +25,7 @@ function read_image_file(blob, callback) {
 		const file_bytes = new Uint8Array(arrayBuffer);
 		let detected_type_id;
 		for (const [type_id, magic_bytes] of Object.entries(magics)) {
-			const magic_found = magic_bytes.every((byte, index) => byte === file_bytes[index]);
+			const magic_found = magic_bytes.every((byte, index)=> byte === file_bytes[index]);
 			if (magic_found) {
 				detected_type_id = type_id;
 			}
@@ -36,14 +36,14 @@ function read_image_file(blob, callback) {
 			}
 		}
 		if (detected_type_id === "bmp") {
-			const { colorTable, bitsPerPixel, imageData } = decodeBMP(arrayBuffer);
+			const {colorTable, bitsPerPixel, imageData} = decodeBMP(arrayBuffer);
 			file_format = bitsPerPixel === 24 ? "image/bmp" : `image/bmp;bpp=${bitsPerPixel}`;
 			if (colorTable.length >= 2) {
 				if (colorTable.length === 2) {
-					palette = make_monochrome_palette(...colorTable.map((color) => [color.r, color.g, color.b, 255]));
+					palette = make_monochrome_palette(...colorTable.map((color)=> [color.r, color.g, color.b, 255]));
 					monochrome = true;
 				} else {
-					palette = colorTable.map((color) => `rgb(${color.r}, ${color.g}, ${color.b})`);
+					palette = colorTable.map((color)=> `rgb(${color.r}, ${color.g}, ${color.b})`);
 					monochrome = false;
 				}
 			}
@@ -52,9 +52,9 @@ function read_image_file(blob, callback) {
 			// 		imageData.data[i] = 255;
 			// 	}
 			// }
-			callback(null, { file_format, monochrome, palette, image_data: imageData, source_blob: blob });
+			callback(null, {file_format, monochrome, palette, image_data: imageData, source_blob: blob});
 		} else if (detected_type_id === "png") {
-			const decoded = UPNG.decode(arrayBuffer);
+			const decoded  = UPNG.decode(arrayBuffer);
 			const rgba = UPNG.toRGBA8(decoded)[0];
 			const { width, height, tabs, ctype } = decoded;
 			// If it's a palettized PNG, load the palette for the Colors box.
@@ -107,12 +107,12 @@ function read_image_file(blob, callback) {
 			var image_data = new ImageData(new Uint8ClampedArray(rgba.buffer), page.width, page.height);
 
 			file_format = "image/tiff";
-			callback(null, { file_format, monochrome, palette, image_data, source_blob: blob });
+			callback(null, {file_format, monochrome, palette, image_data, source_blob: blob});
 		} else if (detected_type_id === "pdf") {
 			file_format = "application/pdf";
 
 			const pdfjs = window['pdfjs-dist/build/pdf'];
-
+			
 			pdfjs.GlobalWorkerOptions.workerSrc = 'lib/pdf.js/build/pdf.worker.js';
 
 			const file_bytes = new Uint8Array(arrayBuffer);
@@ -123,13 +123,13 @@ function read_image_file(blob, callback) {
 				cMapPacked: true,
 			});
 
-			loadingTask.promise.then((pdf) => {
+			loadingTask.promise.then((pdf)=>  {
 				console.log('PDF loaded');
 
 				// Fetch the first page
 				// TODO: maybe concatenate all pages into one image?
 				var pageNumber = 1;
-				pdf.getPage(pageNumber).then((page) => {
+				pdf.getPage(pageNumber).then((page)=>  {
 					console.log('Page loaded');
 
 					var scale = 1.5;
@@ -147,7 +147,7 @@ function read_image_file(blob, callback) {
 					renderTask.promise.then(() => {
 						console.log('Page rendered');
 						const image_data = canvas.ctx.getImageData(0, 0, canvas.width, canvas.height);
-						callback(null, { file_format, monochrome, palette, image_data, source_blob: blob });
+						callback(null, {file_format, monochrome, palette, image_data, source_blob: blob});
 					});
 				});
 			}, (reason) => {
@@ -171,30 +171,30 @@ function read_image_file(blob, callback) {
 			const blob_uri = URL.createObjectURL(blob);
 			const img = new Image();
 			// img.crossOrigin = "Anonymous";
-			const handle_decode_fail = () => {
+			const handle_decode_fail = ()=> {
 				URL.revokeObjectURL(blob_uri);
-				blob.text().then((file_text) => {
+				blob.text().then((file_text)=> {
 					const error = new Error("failed to decode blob as an image");
 					error.code = file_text.match(/^\s*<!doctype\s+html/i) ? "html-not-image" : "decoding-failure";
 					callback(error);
-				}, (err) => {
+				}, (err)=> {
 					const error = new Error("failed to decode blob as image or text");
 					error.code = "decoding-failure";
 					callback(error);
 				});
 			};
-			img.onload = () => {
+			img.onload = ()=> {
 				URL.revokeObjectURL(blob_uri);
 				if (!img.complete || typeof img.naturalWidth == "undefined" || img.naturalWidth === 0) {
 					handle_decode_fail();
 					return;
 				}
-				callback(null, { file_format, monochrome, palette, image: img, source_blob: blob });
+				callback(null, {file_format, monochrome, palette, image: img, source_blob: blob});
 			};
 			img.onerror = handle_decode_fail;
 			img.src = blob_uri;
 		}
-	}, (error) => {
+	}, (error)=> {
 		callback(error);
 	});
 }

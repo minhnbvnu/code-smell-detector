@@ -1,0 +1,1 @@
+function rv(e,r){if(!e)return;var t=[.7,.7,.75,.75,.3,.3];if(r=="xlml")t=[1,1,1,1,.5,.5];if(e.left==null)e.left=t[0];if(e.right==null)e.right=t[1];if(e.top==null)e.top=t[2];if(e.bottom==null)e.bottom=t[3];if(e.header==null)e.header=t[4];if(e.footer==null)e.footer=t[5]}

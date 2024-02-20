@@ -1,0 +1,1 @@
+function xN(t){var e=lu(t),r=t.graph().ranksep,n=0;vt(e,function(i){var s=Cs(ir(i,function(a){return t.node(a).height}));vt(i,function(a){t.node(a).y=n+s/2}),n+=s+r})}

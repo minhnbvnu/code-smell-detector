@@ -1,0 +1,1 @@
+function MTOBJC(name) { test.mode(name, mode_objc, Array.prototype.slice.call(arguments, 1)); }

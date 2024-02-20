@@ -1,0 +1,1 @@
+function updateViewportAttrsFromTarget(attrs){each(attrs=attrs||_viewportAttrsFromTarget,(function(index,attr){if(COMPATIBILITY.inA(attr,_viewportAttrsFromTarget)>-1){var targetAttr=_targetElement.attr(attr);type(targetAttr)==TYPES.s?_viewportElement.attr(attr,targetAttr):_viewportElement.removeAttr(attr)}}))}

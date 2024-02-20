@@ -1,0 +1,1 @@
+function jZ(){let e=Ds(),[t,r]=O.useState(()=>e?{width:0,height:0}:jB());return O.useEffect(()=>{let n=()=>{r(i=>{let a=jB();return a.width===i.width&&a.height===i.height?i:a})};return bl?bl.addEventListener("resize",n):window.addEventListener("resize",n),()=>{bl?bl.removeEventListener("resize",n):window.removeEventListener("resize",n)}},[]),t}

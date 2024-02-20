@@ -1,0 +1,1 @@
+function _emscripten_glIsTexture(id){var texture=GL.textures[id];if(!texture)return 0;return GLctx.isTexture(texture)}

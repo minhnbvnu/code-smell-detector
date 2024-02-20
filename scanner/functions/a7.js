@@ -1,1 +1,7 @@
-function a7($,z){for(var v=-z[4],i=0;v<=z[4];i++,v++){$[i]=v<=-z[3]?-4:v<=-z[2]?-3:v<=-z[1]?-2:v<-z[0]?-1:v<=z[0]?0:v<z[1]?1:v<z[2]?2:v<z[3]?3:4}}
+function a7(t,e){var r,n,i=l1,s=!1,a=!1,o=e,l=0,u=!1,d,f;if(f=t.input.charCodeAt(t.position),f===124)n=!1;else if(f===62)n=!0;else return!1;for(t.kind="scalar",t.result="";f!==0;)if(f=t.input.charCodeAt(++t.position),f===43||f===45)l1===i?i=f===43?yp:jw:Qt(t,"repeat of a chomping mode identifier");else if((d=Jw(f))>=0)d===0?Qt(t,"bad explicit indentation width of a block scalar; it cannot be less than one"):a?Qt(t,"repeat of an indentation width identifier"):(o=e+d-1,a=!0);else break;if(fs(f)){do f=t.input.charCodeAt(++t.position);while(fs(f));if(f===35)do f=t.input.charCodeAt(++t.position);while(!Vn(f)&&f!==0)}for(;f!==0;){for(c1(t),t.lineIndent=0,f=t.input.charCodeAt(t.position);(!a||t.lineIndent<o)&&f===32;)t.lineIndent++,f=t.input.charCodeAt(++t.position);if(!a&&t.lineIndent>o&&(o=t.lineIndent),Vn(f)){l++;continue}if(t.lineIndent<o){i===yp?t.result+=Nr.repeat(`
+`,s?1+l:l):i===l1&&s&&(t.result+=`
+`);break}for(n?fs(f)?(u=!0,t.result+=Nr.repeat(`
+`,s?1+l:l)):u?(u=!1,t.result+=Nr.repeat(`
+`,l+1)):l===0?s&&(t.result+=" "):t.result+=Nr.repeat(`
+`,l):t.result+=Nr.repeat(`
+`,s?1+l:l),s=!0,a=!0,l=0,r=t.position;!Vn(f)&&f!==0;)f=t.input.charCodeAt(++t.position);Yi(t,r,t.position,!1)}return!0}

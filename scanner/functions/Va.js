@@ -1,0 +1,1 @@
+function Va(e,a){var t=e&&parseFloat(e.replace(",","."));return(isNaN(t)?0:t)*a}

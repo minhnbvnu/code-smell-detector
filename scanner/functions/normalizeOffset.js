@@ -1,3 +1,4 @@
-function normalizeOffset(offset, byteLength) {
-                return 0 > offset ? offset + byteLength : offset;
-            }
+function normalizeOffset(offset, el) {
+  offset[0] = convertOffset(offset[0], el.width);
+  offset[1] = convertOffset(offset[1], el.height);
+}

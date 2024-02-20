@@ -1,10 +1,1 @@
-function validateProgram(gl, program) {
-	  callAndCheck(gl, function () {
-	    return gl.validateProgram(program);
-	  });
-
-	  if (gl.getProgramParameter(program, gl.VALIDATE_STATUS) === false) {
-	    console.log(gl.getProgramInfoLog(program));
-	    throw new Error('Shader program validation failed.');
-	  }
-	}
+function validateProgram(e,t){if(callAndCheck(e,function(){return e.validateProgram(t)}),!1===e.getProgramParameter(t,e.VALIDATE_STATUS))throw console.log(e.getProgramInfoLog(t)),new Error("Shader program validation failed.")}

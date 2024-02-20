@@ -1,0 +1,1 @@
+function toHyphenLower(i){return"-"+i.toLowerCase()}

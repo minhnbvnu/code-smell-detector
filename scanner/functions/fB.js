@@ -1,1 +1,1 @@
-function fb(a){a=a|0;v()}
+function fB(t){return ir(t.nodes(),function(e){var r=t.node(e),n=t.parent(e),i={v:e};return Ze(r)||(i.value=r),Ze(n)||(i.parent=n),i})}

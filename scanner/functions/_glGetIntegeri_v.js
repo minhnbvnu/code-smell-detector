@@ -1,0 +1,1 @@
+function _glGetIntegeri_v(target,index,data){emscriptenWebGLGetIndexed(target,index,data,0)}

@@ -1,0 +1,1 @@
+function repaint(a,o){if(!o||!o.initial)t.execCommand('mceRepaint');}

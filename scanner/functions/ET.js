@@ -1,0 +1,1 @@
+function ET(e){return 48<=e&&e<=57}

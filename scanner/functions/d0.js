@@ -1,0 +1,1 @@
+function d0(t){t.y=-t.y}

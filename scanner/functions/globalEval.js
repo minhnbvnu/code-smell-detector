@@ -1,0 +1,1 @@
+function globalEval(x){eval.call(null,x)}

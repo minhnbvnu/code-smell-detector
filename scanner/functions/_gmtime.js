@@ -1,0 +1,1 @@
+function _gmtime(time){return _gmtime_r(time,___tm_current)}

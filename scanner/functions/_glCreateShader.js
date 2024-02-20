@@ -1,0 +1,1 @@
+function _glCreateShader(shaderType){var id=GL.getNewId(GL.shaders);GL.shaders[id]=GLctx.createShader(shaderType);GL.shaders[id].shaderType=shaderType&1?"vs":"fs";return id}

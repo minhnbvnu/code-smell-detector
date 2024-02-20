@@ -1,0 +1,1 @@
+function _emscripten_set_element_css_size(target,width,height){target=findEventTarget(target);if(!target)return-4;target.style.width=width+"px";target.style.height=height+"px";return 0}

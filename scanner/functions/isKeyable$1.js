@@ -1,0 +1,1 @@
+function isKeyable$1(value){var type=_typeof(value);return"string"==type||"number"==type||"symbol"==type||"boolean"==type?"__proto__"!==value:null===value}

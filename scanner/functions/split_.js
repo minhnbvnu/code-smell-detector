@@ -1,15 +1,1 @@
-function split_(x, numOrSizeSplits, axis) {
-	  if (axis === void 0) {
-	    axis = 0;
-	  }
-
-	  var $x = convertToTensor(x, 'x', 'split');
-	  var inputs = {
-	    x: $x
-	  };
-	  var attr = {
-	    numOrSizeSplits: numOrSizeSplits,
-	    axis: axis
-	  };
-	  return ENGINE.runKernel(SplitV, inputs, attr);
-	}
+function split_(e,t,n){void 0===n&&(n=0);var r,o=convertToTensor(e,"x","split");n=parseAxisParam(n,o.shape)[0],"number"==typeof t?(assert(o.shape[n]%t==0,"Number of splits must evenly divide the axis."),r=Array(t).fill(o.shape[n]/t)):(assert(o.shape[n]===t.reduce(function(e,t){return e+t}),"The sum of sizes must match the size of the axis dimension."),r=t);return ENV.engine.runKernel(function(e){return e.split(o,r,n)},{$x:o},function(e){return {$x:function(){return concat(e,n)}}})}

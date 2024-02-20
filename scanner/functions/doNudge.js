@@ -1,0 +1,1 @@
+function doNudge(e,x,y){if(options.allowMove){Coords.moveOffset([x,y]);Selection.updateVisible()}e.preventDefault();e.stopPropagation()}

@@ -1,9 +1,1 @@
-function expectArraysClose(actual, expected, epsilon) {
-	  if (epsilon == null) {
-	    epsilon = testEpsilon();
-	  }
-
-	  return expectArraysPredicate(actual, expected, function (a, b) {
-	    return areClose(a, b, epsilon);
-	  });
-	}
+function expectArraysClose(e,t,n){return null==n&&(n=ENV.get("TEST_EPSILON")),expectArraysPredicate(e,t,function(e,t){return areClose(e,Number(t),n)})}

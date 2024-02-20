@@ -1,0 +1,3 @@
+function WalkontableClassNameCache() {
+  this.cache = [];
+}

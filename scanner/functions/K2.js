@@ -1,0 +1,1 @@
+function K2(n,t){return sm(n).map(function(){return t})}

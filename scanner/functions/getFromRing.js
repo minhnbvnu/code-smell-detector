@@ -1,0 +1,1 @@
+function getFromRing() { return killRing[killRing.length - 1] || ""; }

@@ -1,0 +1,1 @@
+function _emscripten_glCheckFramebufferStatus(x0){return GLctx["checkFramebufferStatus"](x0)}

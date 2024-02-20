@@ -1,0 +1,1 @@
+function wH(a,b){a=a|0;b=b|0;var d=0,e=0.0,f=0;f=l;l=l+16|0;d=f;e=+s5(a,d);d=c[d>>2]|0;if((d|0)==(a|0))d=0;else h[b>>3]=e;l=f;return d|0}

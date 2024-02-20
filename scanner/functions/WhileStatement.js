@@ -1,8 +1,5 @@
-function WhileStatement(node) {
-	  this.word("while");
-	  this.space();
-	  this.token("(");
-	  this.print(node.test, node);
-	  this.token(")");
-	  this.printBlock(node);
-	}
+function WhileStatement(test, body) {
+	        this.type = syntax_1.Syntax.WhileStatement;
+	        this.test = test;
+	        this.body = body;
+	    }

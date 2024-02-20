@@ -1,0 +1,1 @@
+function useStorybookState(){return Object(react.useContext)(ManagerContext).state}

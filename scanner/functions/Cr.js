@@ -1,0 +1,1 @@
+function Cr(){var t,e,i,n,o,r=this._milliseconds,s=this._days,a=this._months,l=this._data;return r>=0&&s>=0&&a>=0||r<=0&&s<=0&&a<=0||(r+=864e5*Tr(Er(a)+s),s=0,a=0),l.milliseconds=r%1e3,t=ut(r/1e3),l.seconds=t%60,e=ut(t/60),l.minutes=e%60,i=ut(e/60),l.hours=i%24,s+=ut(i/24),a+=o=ut(Or(s)),s-=Tr(Er(o)),n=ut(a/12),a%=12,l.days=s,l.months=a,l.years=n,this}

@@ -1,0 +1,3 @@
+function foreground() {
+			component.foreground();
+		}

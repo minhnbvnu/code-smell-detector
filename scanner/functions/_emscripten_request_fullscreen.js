@@ -1,0 +1,1 @@
+function _emscripten_request_fullscreen(target,deferUntilInEventHandler){var strategy={scaleMode:0,canvasResolutionScaleMode:0,filteringMode:0,deferUntilInEventHandler:deferUntilInEventHandler,canvasResizedCallbackTargetThread:2};return doRequestFullscreen(target,strategy)}

@@ -1,16 +1,1 @@
-function squaredDifference_(a, b) {
-	  var $a = convertToTensor(a, 'a', 'squaredDifference');
-	  var $b = convertToTensor(b, 'b', 'squaredDifference');
-
-	  var _makeTypesMatch = makeTypesMatch($a, $b);
-
-	  $a = _makeTypesMatch[0];
-	  $b = _makeTypesMatch[1];
-	  assertAndGetBroadcastShape($a.shape, $b.shape);
-	  var inputs = {
-	    a: $a,
-	    b: $b
-	  };
-	  var attrs = {};
-	  return ENGINE.runKernel(SquaredDifference, inputs, attrs);
-	}
+function squaredDifference_(e,t){var n,r=convertToTensor(e,"a","squaredDifference"),o=convertToTensor(t,"b","squaredDifference");n=makeTypesMatch(r,o),r=n[0],o=n[1],assertAndGetBroadcastShape(r.shape,o.shape);return ENV.engine.runKernel(function(e){return e.squaredDifference(r,o)},{$a:r,$b:o},function(e){var t=scalar(2);return {$a:function(){return e.mul(r.sub(o).mul(t))},$b:function(){return e.mul(o.sub(r).mul(t))}}})}

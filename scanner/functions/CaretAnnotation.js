@@ -1,0 +1,1 @@
+function CaretAnnotation(t){var o;_classCallCheck(this,CaretAnnotation);(o=r.call(this,t)).data.annotationType=c.AnnotationType.CARET;return o}

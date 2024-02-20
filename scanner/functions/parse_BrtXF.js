@@ -1,0 +1,1 @@
+function parse_BrtXF(data,length){var ixfeParent=data.read_shift(2);var ifmt=data.read_shift(2);parsenoop(data,length-4);return{ixfe:ixfeParent,ifmt:ifmt}}

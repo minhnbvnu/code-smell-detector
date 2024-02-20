@@ -1,0 +1,1 @@
+function S$(n,t,e,i){for(var r=t,o=0;o<e.length;o++)r+=n[o]*e[o];if(r===0){var s=Gn.tauRandInt(2,i);return s}else return r>0?0:1}

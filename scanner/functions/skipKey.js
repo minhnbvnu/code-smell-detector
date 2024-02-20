@@ -1,3 +1,7 @@
 function skipKey(key) {
-	  this.skipKeys[key] = true;
-	}
+  if (this.skipKeys == null) {
+    this.skipKeys = {};
+  }
+
+  this.skipKeys[key] = true;
+}

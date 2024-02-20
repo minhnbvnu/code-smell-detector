@@ -1,0 +1,1 @@
+function HW(n,t){let e=[],i=n.length;for(let o=0;o<i;o++)t.indexOf(o)===-1&&e.push(n[o]);let r=t.map(o=>n[o]);return[e,r]}

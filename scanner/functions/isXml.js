@@ -1,0 +1,1 @@
+function isXml(e,t){var r=t.headers?t.headers["content-type"]:t.getResponseHeader("Content-Type");if(null===r)return!1;var n=r.replace(/;.*$/,"").toLowerCase();if("string"==typeof n){if("application/xml"===n||"text/xml"===n)return!0;if("text/html"===n&&/^<\?xml /.test(e))return!0}return!1}

@@ -1,4 +1,6 @@
 function onclose() {
-    dest.removeListener('finish', onfinish);
-    unpipe();
+    if (didOnEnd) return;
+    didOnEnd = true;
+
+    if (typeof dest.destroy === 'function') dest.destroy();
   }

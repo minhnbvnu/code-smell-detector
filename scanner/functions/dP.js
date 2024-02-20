@@ -1,0 +1,1 @@
+function dP(n,t){let e=ot().getNumber("WEBGL_MAX_TEXTURE_SIZE");if(n<=0||t<=0){let i=`[${n}x${t}]`;throw new Error("Requested texture size "+i+" is invalid.")}if(n>e||t>e){let i=`[${n}x${t}]`,r=`[${e}x${e}]`;throw new Error("Requested texture size "+i+" greater than WebGL maximum on this browser / GPU "+r+".")}}

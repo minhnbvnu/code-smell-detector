@@ -1,0 +1,1 @@
+function F7(n){let t=Vy(n);if(t&&t._cssText===void 0){let e=B7(t),i=t.querySelector("template");i&&(e+=O7(i,t.assetpath)),t._cssText=e||null}return t||console.warn("Could not find style data in module named",n),t&&t._cssText||""}

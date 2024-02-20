@@ -1,0 +1,3 @@
+function exitFunction() {
+                scopeInfoStack.pop();
+            }

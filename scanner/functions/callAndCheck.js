@@ -1,9 +1,1 @@
-function callAndCheck(gl, func) {
-	  var returnValue = func();
-
-	  if (env().getBool('DEBUG')) {
-	    checkWebGLError(gl);
-	  }
-
-	  return returnValue;
-	}
+function callAndCheck(e,t){var n=t();return checkWebGLError(e),n}

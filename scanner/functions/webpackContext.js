@@ -1,3 +1,1 @@
-function webpackContext(req) {
-		return __webpack_require__(webpackContextResolve(req));
-	}
+function webpackContext(i){var o=webpackContextResolve(i);return s(o)}

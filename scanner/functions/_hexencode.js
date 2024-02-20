@@ -1,0 +1,1 @@
+function _hexencode(e){for(var r=[],t=e.length-1;t>=0;t--){var n=e[t];r.push(_HEXCHARS.substr(n>>>12&15,1)),r.push(_HEXCHARS.substr(n>>>8&15,1)),r.push(_HEXCHARS.substr(n>>>4&15,1)),r.push(_HEXCHARS.substr(15&n,1))}return r.join("")}

@@ -1,0 +1,1 @@
+function VQ(e,t){this.name=e,this.parent=t,this.hash=t?t.hash:0;for(let r=0;r<e.length;r++)this.hash+=(this.hash<<4)+e.charCodeAt(r)+(e.charCodeAt(r)<<8)}

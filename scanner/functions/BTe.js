@@ -1,0 +1,1 @@
+function BTe(e,t,r){return typeof t!="string"&&(r=t,t=void 0),_Te(r)(DTe(FTe(r).document().write(TTe()(e,t,!0))))}

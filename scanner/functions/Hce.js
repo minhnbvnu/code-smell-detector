@@ -1,0 +1,1 @@
+function Hce(e,t){if(e==="**"||t==="**")return!0;var r=e.split("."),i=t.split(".");if(r.length!==i.length)return!1;for(var a=0;a<r.length;++a)if(!(r[a]==="*"||i[a]==="*")&&r[a]!==i[a])return!1;return!0}

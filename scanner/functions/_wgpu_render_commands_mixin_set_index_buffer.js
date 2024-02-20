@@ -1,0 +1,1 @@
+function _wgpu_render_commands_mixin_set_index_buffer(passEncoder,buffer,indexFormat,offset,size){size<0?wgpu[passEncoder]["setIndexBuffer"](wgpu[buffer],GPUIndexFormats[indexFormat],offset):wgpu[passEncoder]["setIndexBuffer"](wgpu[buffer],GPUIndexFormats[indexFormat],offset,size)}

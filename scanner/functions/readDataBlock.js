@@ -1,15 +1,1 @@
-function readDataBlock() {
-        const length = (0, _core_utils.readUint16)(data, offset);
-        offset += 2;
-        let endOffset = offset + length - 2;
-        var fileMarker = findNextFileMarker(data, endOffset, offset);
-
-        if (fileMarker && fileMarker.invalid) {
-          (0, _util.warn)("readDataBlock - incorrect length, current marker is: " + fileMarker.invalid);
-          endOffset = fileMarker.offset;
-        }
-
-        var array = data.subarray(offset, endOffset);
-        offset += array.length;
-        return array;
-      }
+function readDataBlock(){var r=(0,l.readUint16)(t,w),o=(w+=2)+r-2,u=findNextFileMarker(t,o,w);if(u&&u.invalid){(0,c.warn)("readDataBlock - incorrect length, current marker is: "+u.invalid);o=u.offset}var h=t.subarray(w,o);w+=h.length;return h}

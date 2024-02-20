@@ -1,0 +1,1 @@
+function Ji(){return Ki("isBefore",[].slice.call(arguments,0))}

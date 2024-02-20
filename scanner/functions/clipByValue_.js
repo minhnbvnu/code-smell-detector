@@ -1,14 +1,1 @@
-function clipByValue_(x, clipValueMin, clipValueMax) {
-	  var $x = convertToTensor(x, 'x', 'clipByValue');
-	  assert(clipValueMin <= clipValueMax, function () {
-	    return "Error in clip: min (" + clipValueMin + ") must be " + ("less than or equal to max (" + clipValueMax + ").");
-	  });
-	  var inputs = {
-	    x: $x
-	  };
-	  var attrs = {
-	    clipValueMin: clipValueMin,
-	    clipValueMax: clipValueMax
-	  };
-	  return ENGINE.runKernel(ClipByValue, inputs, attrs);
-	}
+function clipByValue_(e,t,n){var r=convertToTensor(e,"x","clipByValue");assert(t<=n,"Error in clip: min ("+t+") must be less than or equal to max ("+n+").");return ENV.engine.runKernel(function(e){return e.clip(r,t,n)},{$x:r},function(e){return {$x:function(){return e.where(r.greaterEqual(t).logicalAnd(r.lessEqual(n)),zerosLike(e))}}})}

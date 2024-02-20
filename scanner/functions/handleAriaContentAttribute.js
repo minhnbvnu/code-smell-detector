@@ -1,0 +1,1 @@
+function handleAriaContentAttribute(){var o=ie.props.aria;if(o.content){var s="aria-"+o.content,u=ce.id;normalizeToArray(ie.props.triggerTarget||i).forEach((function(i){var o=i.getAttribute(s);if(ie.state.isVisible)i.setAttribute(s,o?o+" "+u:u);else{var C=o&&o.replace(u,"").trim();C?i.setAttribute(s,C):i.removeAttribute(s)}}))}}

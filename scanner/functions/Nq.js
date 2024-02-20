@@ -1,0 +1,1 @@
+function Nq(a){a=a|0;u=a}

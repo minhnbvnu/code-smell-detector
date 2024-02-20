@@ -1,0 +1,1 @@
+function _emscripten_glClear(x0){GLctx["clear"](x0)}

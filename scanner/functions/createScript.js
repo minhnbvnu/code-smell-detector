@@ -1,23 +1,32 @@
-function createScript(name, app) {
-    if (script.legacy) {
-        Debug.error('This project is using the legacy script system. You cannot call pc.createScript().');
-        return null;
+function createScript(url, onerror) {
+        if (url in scriptsMap) return;
+        scriptsMap[url] = true;
+
+        var script = document.createElement('script');
+        if (onerror) {
+            var tid = setTimeout(onerror, require.timeout);
+
+            script.onerror = function() {
+                clearTimeout(tid);
+                onerror();
+            };
+
+            function onload() {
+                clearTimeout(tid);
+            }
+
+            if ('onload' in script) {
+                script.onload = onload;
+            } else {
+                script.onreadystatechange = function() {
+                    if (this.readyState == 'loaded' || this.readyState == 'complete') {
+                        onload();
+                    }
+                }
+            }
+        }
+        script.type = 'text/javascript';
+        script.src = url;
+        head.appendChild(script);
+        return script;
     }
-
-    if (reservedScriptNames.has(name))
-        throw new Error(`Script name '${name}' is reserved, please rename the script`);
-
-    const scriptType = function (args) {
-        EventHandler.prototype.initEventHandler.call(this);
-        ScriptType.prototype.initScriptType.call(this, args);
-    };
-
-    scriptType.prototype = Object.create(ScriptType.prototype);
-    scriptType.prototype.constructor = scriptType;
-
-    scriptType.extend = ScriptType.extend;
-    scriptType.attributes = new ScriptAttributes(scriptType);
-
-    registerScript(scriptType, name, app);
-    return scriptType;
-}

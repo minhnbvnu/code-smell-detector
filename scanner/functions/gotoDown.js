@@ -1,0 +1,1 @@
+function gotoDown(e,o,t){for(var n,l=getDataLengthIncludingAddNew();;){if(++e>=l)return null;for(n=o=0;o<=t;)n=o,o+=getColspan(e,o);if(canCellBeActive(e,n))return{row:e,cell:n,posX:t}}}

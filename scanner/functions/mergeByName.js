@@ -1,0 +1,1 @@
+function mergeByName(i){var o=i.reduce((function(i,o){var s=i[o.name];return i[o.name]=s?Object.assign({},s,o,{options:Object.assign({},s.options,o.options),data:Object.assign({},s.data,o.data)}):o,i}),{});return Object.keys(o).map((function(i){return o[i]}))}

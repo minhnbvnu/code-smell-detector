@@ -1,0 +1,1 @@
+function FontFaceRule(i,o,s){this.type="font-face",this.at="@font-face",this.isProcessed=!1,this.key=i,this.style=o,this.options=s}

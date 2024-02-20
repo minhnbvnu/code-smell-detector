@@ -1,0 +1,1 @@
+function _I(t,e=0){return(_r[t[e+0]]+_r[t[e+1]]+_r[t[e+2]]+_r[t[e+3]]+"-"+_r[t[e+4]]+_r[t[e+5]]+"-"+_r[t[e+6]]+_r[t[e+7]]+"-"+_r[t[e+8]]+_r[t[e+9]]+"-"+_r[t[e+10]]+_r[t[e+11]]+_r[t[e+12]]+_r[t[e+13]]+_r[t[e+14]]+_r[t[e+15]]).toLowerCase()}

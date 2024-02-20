@@ -1,8 +1,1 @@
-function calculateComponentDimensions(component, siz) {
-    component.x0 = Math.ceil(siz.XOsiz / component.XRsiz);
-    component.x1 = Math.ceil(siz.Xsiz / component.XRsiz);
-    component.y0 = Math.ceil(siz.YOsiz / component.YRsiz);
-    component.y1 = Math.ceil(siz.Ysiz / component.YRsiz);
-    component.width = component.x1 - component.x0;
-    component.height = component.y1 - component.y0;
-  }
+function calculateComponentDimensions(t,r){t.x0=Math.ceil(r.XOsiz/t.XRsiz);t.x1=Math.ceil(r.Xsiz/t.XRsiz);t.y0=Math.ceil(r.YOsiz/t.YRsiz);t.y1=Math.ceil(r.Ysiz/t.YRsiz);t.width=t.x1-t.x0;t.height=t.y1-t.y0}

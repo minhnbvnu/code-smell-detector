@@ -1,0 +1,1 @@
+function setColumnHeaderVisibility(e,o){options.showColumnHeader!=e&&(options.showColumnHeader=e,e?o?$headerScroller.slideDown("fast",resizeCanvas):($headerScroller.show(),resizeCanvas()):o?$headerScroller.slideUp("fast",resizeCanvas):($headerScroller.hide(),resizeCanvas()))}

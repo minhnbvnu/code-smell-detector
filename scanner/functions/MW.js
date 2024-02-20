@@ -1,0 +1,1 @@
+function MW(n,t,e,i,r="NHWC",o){let s=n[3],a=[...t,s],l=MA(r);return Qb(n,a,e,o,i,null,null,l)}

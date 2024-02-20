@@ -1,0 +1,1 @@
+function vg_axisTicks(){return{type:"rule",interactive:false,key:"data",properties:{enter:{stroke:{value:vg.config.axis.tickColor},strokeWidth:{value:vg.config.axis.tickWidth},opacity:{value:1e-6}},exit:{opacity:{value:1e-6}},update:{opacity:{value:1}}}}}

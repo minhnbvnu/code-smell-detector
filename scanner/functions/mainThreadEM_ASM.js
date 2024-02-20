@@ -1,0 +1,1 @@
+function mainThreadEM_ASM(code,sigPtr,argbuf,sync){var args=readAsmConstArgs(sigPtr,argbuf);return ASM_CONSTS[code].apply(null,args)}

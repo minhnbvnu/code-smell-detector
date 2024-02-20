@@ -1,0 +1,11 @@
+function makeUnlinkFn(vm, dirs, context, contextDirs) {
+    function unlink(destroying) {
+      teardownDirs(vm, dirs, destroying);
+      if (context && contextDirs) {
+        teardownDirs(context, contextDirs);
+      }
+    }
+    // expose linked directives
+    unlink.dirs = dirs;
+    return unlink;
+  }

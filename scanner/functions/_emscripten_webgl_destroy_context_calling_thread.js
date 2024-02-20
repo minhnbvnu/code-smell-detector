@@ -1,0 +1,1 @@
+function _emscripten_webgl_destroy_context_calling_thread(contextHandle){GL.deleteContext(contextHandle)}

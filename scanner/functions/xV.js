@@ -1,0 +1,1 @@
+function xV(n,t){let e=document.elementFromPoint(n,t),i=e;for(;i&&i.shadowRoot&&!window.ShadyDOM;){let r=i;if(i=i.shadowRoot.elementFromPoint(n,t),r===i)break;i&&(e=i)}return e}

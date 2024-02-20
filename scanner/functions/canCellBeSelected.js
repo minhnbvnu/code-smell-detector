@@ -1,0 +1,1 @@
+function canCellBeSelected(e,o){if(e>=getDataLength()||e<0||o>=columns.length||o<0)return!1;var t=data.getItemMetadata&&data.getItemMetadata(e);if(t&&void 0!==t.selectable)return!!t.selectable;var n=t&&t.columns&&(t.columns[columns[o].id]||t.columns[o]);return n&&void 0!==n.selectable?!!n.selectable:!!columns[o].selectable}

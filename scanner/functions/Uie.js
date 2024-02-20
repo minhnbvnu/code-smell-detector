@@ -1,0 +1,1 @@
+function Uie(e){return jie.from(e.toString(),"ascii").toString("hex")}

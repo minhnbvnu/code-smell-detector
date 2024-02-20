@@ -1,0 +1,1 @@
+function _JS_SystemInfo_IsMobile(){return Module.SystemInfo.mobile}

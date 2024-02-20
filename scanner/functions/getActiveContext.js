@@ -1,0 +1,3 @@
+function getActiveContext() {
+              return currentActiveSnapshot;
+            }

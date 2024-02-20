@@ -1,0 +1,1 @@
+function hashDelete$1(key){var result=this.has(key)&&delete this.__data__[key];return this.size-=result?1:0,result}

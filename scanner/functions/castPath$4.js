@@ -1,0 +1,1 @@
+function castPath$4(value,object){return isArray$3(value)?value:isKey$2(value,object)?[value]:stringToPath(toString(value))}

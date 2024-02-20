@@ -1,0 +1,1 @@
+function Qi(t,e,i,n,r){return r.relativeTime(e||1,!!i,t,n)}

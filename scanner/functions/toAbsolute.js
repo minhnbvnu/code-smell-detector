@@ -1,0 +1,1 @@
+function toAbsolute(root){return p=>{return PATH.join2(root,p)}}

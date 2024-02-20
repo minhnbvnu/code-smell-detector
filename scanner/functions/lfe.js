@@ -1,0 +1,1 @@
+function lfe(e){e===void 0&&(e={});function t(n,i){let{pathname:a,search:l,hash:s}=n.location;return i2("",{pathname:a,search:l,hash:s},i.state&&i.state.usr||null,i.state&&i.state.key||"default")}function r(n,i){return typeof i=="string"?i:_W(i)}return sfe(t,r,null,e)}

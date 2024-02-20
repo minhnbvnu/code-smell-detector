@@ -1,3 +1,1 @@
-function packI8(it) {
-  return [it & 0xff];
-}
+function packI8(t){return[255&t]}

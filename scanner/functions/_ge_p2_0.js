@@ -1,0 +1,1 @@
+function _ge_p2_0($0){$0=$0|0;var $1=0,$2=0,label=0,sp=0;sp=STACKTOP;_fe_0($0);$1=$0+40|0;_fe_1($1);$2=$0+80|0;_fe_1($2);return}

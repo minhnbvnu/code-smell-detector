@@ -1,6 +1,1 @@
-function Whitespace(tokens) {
-	    (0, _classCallCheck3.default)(this, Whitespace);
-
-	    this.tokens = tokens;
-	    this.used = {};
-	  }
+function Whitespace(t){_classCallCheck(this,Whitespace);return r.call(this,d,"whitespace",["preserve","ltrim","normalize","rtrim","trim"])}

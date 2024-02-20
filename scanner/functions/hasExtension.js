@@ -1,4 +1,1 @@
-function hasExtension(gl, extensionName) {
-	  var ext = gl.getExtension(extensionName);
-	  return ext != null;
-	}
+function hasExtension(e,t){return null!=e.getExtension(t)}

@@ -1,0 +1,1 @@
+function P5(t,e){return function(){this.setAttribute(t,e)}}

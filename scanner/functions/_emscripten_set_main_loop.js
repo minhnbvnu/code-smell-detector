@@ -1,0 +1,1 @@
+function _emscripten_set_main_loop(func,fps,simulateInfiniteLoop){var browserIterationFunc=function(){dynCall_v.call(null,func)};setMainLoop(browserIterationFunc,fps,simulateInfiniteLoop)}

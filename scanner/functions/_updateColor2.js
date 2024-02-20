@@ -1,0 +1,1 @@
+function _updateColor2(t){var r=this,a=this.color;this.parent.addCommands({cmd:function cmd(){r.color=t;_classPrivateMethodGet(r,D,_redraw2).call(r)},undo:function undo(){r.color=a;_classPrivateMethodGet(r,D,_redraw2).call(r)},mustExec:!0,type:i.AnnotationEditorParamsType.INK_COLOR,overwriteIfSameType:!0,keepUndo:!0})}

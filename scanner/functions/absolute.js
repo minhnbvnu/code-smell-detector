@@ -1,6 +1,3 @@
-function absolute(...parts) {
-  const candidate = path.join(...parts);
-  return path.isAbsolute(candidate)
-    ? candidate
-    : path.join(path.sep, candidate);
-}
+function absolute(v1, v2) {
+            return relative ? v1 + v2 : v2;
+        }

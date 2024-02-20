@@ -1,0 +1,3 @@
+function GridCache() {
+        this.cache = [];
+    }

@@ -1,0 +1,1 @@
+function clearUnicodeCaches(){g.clear()}

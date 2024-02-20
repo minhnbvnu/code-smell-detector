@@ -1,0 +1,1 @@
+function yP(n){if(Z_==null){let t=gi(n);Z_=t.getParameter(t.MAX_TEXTURE_SIZE)}return Z_}

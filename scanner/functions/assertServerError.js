@@ -1,0 +1,1 @@
+function assertServerError(e){if(e&&e.error){var t=new Error(e.message);throw ___extends_85(t,e.error),t}return e}

@@ -1,0 +1,1 @@
+function Q0(e,t){let r="",n=e.tabSize,i=e.facet(pb)[0];if(i=="	"){for(;t>=n;)r+="	",t-=n;i=" "}for(let a=0;a<t;a++)r+=i;return r}

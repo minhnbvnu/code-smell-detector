@@ -1,0 +1,1 @@
+function eAe(e){if(e){let t=`nmcli connection show "${e}" 2>/dev/null | grep 802-1x.eap;`;try{let a=qi(t).toString().replace(/\s+/g," ").trim().split(" ").slice(1).toString();return a=="--"?"":a}catch{return"Not defined"}}else return"Not defined"}

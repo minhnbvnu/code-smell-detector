@@ -1,0 +1,1 @@
+function indentStr(i,o){for(var s="",u=0;u<o;u++)s+="  ";return s+i}

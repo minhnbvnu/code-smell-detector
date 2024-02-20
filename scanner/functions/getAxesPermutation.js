@@ -1,18 +1,1 @@
-function getAxesPermutation(axes, rank) {
-	  if (axesAreInnerMostDims(axes, rank)) {
-	    return null;
-	  }
-
-	  var result = [];
-
-	  for (var i = 0; i < rank; ++i) {
-	    if (axes.indexOf(i) === -1) {
-	      result.push(i);
-	    }
-	  }
-
-	  axes.forEach(function (axis) {
-	    return result.push(axis);
-	  });
-	  return result;
-	}
+function getAxesPermutation(e,t){if(axesAreInnerMostDims(e,t))return null;for(var n=[],r=0;r<t;++r)-1===e.indexOf(r)&&n.push(r);return e.forEach(function(e){return n.push(e)}),n}

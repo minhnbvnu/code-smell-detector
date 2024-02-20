@@ -1,0 +1,1 @@
+function GK(n,t){let e=[];for(let i=0;i<=1;i++)for(let r=0;r<=1;r++){let o=`${i===0?"r":"rp1"}, ${r===0?"c":"cp1"}`;for(let s=2;s<n;s++)o=`${t[t.length-1-s]},`+o;e.push(o)}return e}

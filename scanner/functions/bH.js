@@ -1,1 +1,1 @@
-function bh(a){a=a|0;return!H[a>>2]|0}
+function bH(n){return n.length===1?{combo:n,key:n,event:"keydown"}:n.split("+").reduce(function(t,e){var i=e.split(":"),r=i[0],o=i[1];return r in x5?(t[x5[r]]=!0,t.hasModifiers=!0):(t.key=r,t.event=o||"keydown"),t},{combo:n.split(":").shift()})}

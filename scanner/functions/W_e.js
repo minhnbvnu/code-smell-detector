@@ -1,0 +1,1 @@
+function W_e(e,t,r){O.useEffect(()=>{function n(i){const a=t.current&&!t.current.contains(i.target),l=r&&!r.contains(i.target);a&&(!r||l)&&e()}return document.addEventListener("mousedown",n),()=>{document.removeEventListener("mousedown",n)}},[t,r])}

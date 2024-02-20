@@ -1,8 +1,5 @@
-function Assertion (obj, msg, ssfi, lockSsfi) {
-      flag(this, 'ssfi', ssfi || Assertion);
-      flag(this, 'lockSsfi', lockSsfi);
+function Assertion (obj, msg, stack) {
+      flag(this, 'ssfi', stack || arguments.callee);
       flag(this, 'object', obj);
       flag(this, 'message', msg);
-
-      return util.proxify(this);
     }

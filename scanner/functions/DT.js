@@ -1,0 +1,1 @@
+function DT(e){return e.toISOString()}

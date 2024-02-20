@@ -1,0 +1,1 @@
+function AX(n){let{inputs:t,backend:e,attrs:i}=n,{sparseIndices:r,sparseValues:o,defaultValue:s}=t,{outputShape:a}=i,{sliceRank:l,numUpdates:c,sliceSize:u,strides:h,outputSize:p}=F.calculateShapes(o,r,a),d=!1,f=e.bufferSync(r),m=e.bufferSync(o),x=e.data.get(s.dataId).values[0],g=A1(f,m,a,p,u,c,l,h,x,d);return e.makeTensorInfo(a,g.dtype,g.values)}

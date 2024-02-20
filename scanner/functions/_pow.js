@@ -1,0 +1,1 @@
+function _pow(t,n){for(var e=core.ONE(),i=0;256>i;i++)1===core.getbit(n,i)&&(e=core.mulmodp(e,t)),t=core.sqrmodp(t);return e}

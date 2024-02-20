@@ -1,0 +1,1 @@
+function Wat(n,t,e){var i,r,o;return function(){var s,a=e(this),l;return a==null?void this.removeAttribute(n):(s=this.getAttribute(n),l=a+"",s===l?null:s===i&&l===r?o:(r=l,o=t(i=s,a)))}}

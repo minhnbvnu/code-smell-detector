@@ -1,0 +1,1 @@
+function s_e(e,t){if(e=e||this.errors,!e)return"No errors";t=t||{};for(var r=t.separator===void 0?", ":t.separator,n=t.dataVar===void 0?"data":t.dataVar,i="",a=0;a<e.length;a++){var l=e[a];l&&(i+=n+l.dataPath+" "+l.message+r)}return i.slice(0,-r.length)}

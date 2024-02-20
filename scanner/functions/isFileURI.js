@@ -1,1 +1,3 @@
-function isFileURI(filename){return filename.startsWith("file://")}
+function isFileURI(filename) {
+          return filename.startsWith("file://");
+        }

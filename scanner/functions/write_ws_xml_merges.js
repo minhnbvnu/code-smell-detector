@@ -1,0 +1,1 @@
+function write_ws_xml_merges(merges){if(merges.length==0)return"";var o='<mergeCells count="'+merges.length+'">';for(var i=0;i!=merges.length;++i)o+='<mergeCell ref="'+encode_range(merges[i])+'"/>';return o+"</mergeCells>"}

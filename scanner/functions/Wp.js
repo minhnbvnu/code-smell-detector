@@ -1,0 +1,1 @@
+function Wp(a){a=a|0;return f[a+48>>2]|0}

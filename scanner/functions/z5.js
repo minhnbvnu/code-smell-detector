@@ -1,0 +1,1 @@
+function z5(t,e){var r=pl(t);if(arguments.length<2){var n=this.node();return r.local?n.getAttributeNS(r.space,r.local):n.getAttribute(r)}return this.each((e==null?r.local?F5:R5:typeof e=="function"?r.local?U5:V5:r.local?Y5:P5)(r,e))}

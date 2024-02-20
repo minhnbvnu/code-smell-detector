@@ -1,0 +1,1 @@
+function _emscripten_has_asyncify(){return 0}

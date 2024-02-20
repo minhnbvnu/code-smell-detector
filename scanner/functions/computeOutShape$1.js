@@ -1,9 +1,1 @@
-function computeOutShape$1(shapes, axis) {
-	  var outputShape = shapes[0].slice();
-
-	  for (var i = 1; i < shapes.length; i++) {
-	    outputShape[axis] += shapes[i][axis];
-	  }
-
-	  return outputShape;
-	}
+function computeOutShape$1(e,t,n){for(var r=[],o=e.length,a=0;a<o;a++)a!==t?r.push(e[a]):r.push(n);return r}

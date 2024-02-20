@@ -1,20 +1,26 @@
 function initFiguresGL() {
+    var canvas, gl;
+
     generateGL();
-    const canvas = currentCanvas;
+    canvas = currentCanvas;
     currentCanvas = null;
-    const gl = currentGL;
+    gl = currentGL;
     currentGL = null;
-    const vertexShader = createVertexShader(gl, figuresVertexShaderCode);
-    const fragmentShader = createFragmentShader(gl, figuresFragmentShaderCode);
-    const program = createProgram(gl, [vertexShader, fragmentShader]);
+
+    // setup a GLSL program
+    var vertexShader = createVertexShader(gl, figuresVertexShaderCode);
+    var fragmentShader = createFragmentShader(gl, figuresFragmentShaderCode);
+    var program = createProgram(gl, [vertexShader, fragmentShader]);
     gl.useProgram(program);
-    const cache = {};
+
+    var cache = {};
     cache.gl = gl;
     cache.canvas = canvas;
-    cache.resolutionLocation = gl.getUniformLocation(program, "u_resolution");
-    cache.scaleLocation = gl.getUniformLocation(program, "u_scale");
-    cache.offsetLocation = gl.getUniformLocation(program, "u_offset");
-    cache.positionLocation = gl.getAttribLocation(program, "a_position");
-    cache.colorLocation = gl.getAttribLocation(program, "a_color");
+    cache.resolutionLocation = gl.getUniformLocation(program, 'u_resolution');
+    cache.scaleLocation = gl.getUniformLocation(program, 'u_scale');
+    cache.offsetLocation = gl.getUniformLocation(program, 'u_offset');
+    cache.positionLocation = gl.getAttribLocation(program, 'a_position');
+    cache.colorLocation = gl.getAttribLocation(program, 'a_color');
+
     figuresCache = cache;
   }

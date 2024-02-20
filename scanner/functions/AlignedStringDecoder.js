@@ -1,0 +1,1 @@
+function AlignedStringDecoder(t){switch(StringDecoder.call(this,t),this.encoding){case"base64":this.write=alignedWrite,this.alignedBuffer=new Buffer(3),this.alignedBytes=0}}

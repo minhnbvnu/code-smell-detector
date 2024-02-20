@@ -1,0 +1,1 @@
+function ya(a,b,c){if(!a)throw Ka("areq",b||"?",c||"required");return a}

@@ -1,0 +1,1 @@
+function DQ(e){return AQ({defaultScale:1,faceCamera:null,orientation:[1,0,0],shape:PQ.SPHERE,viewMatrix:Go(new Float64Array(16))},e)}

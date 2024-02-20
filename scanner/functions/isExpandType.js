@@ -1,0 +1,1 @@
+function isExpandType(x){return!(!x||!x.showAll)}

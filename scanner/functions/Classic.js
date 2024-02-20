@@ -1,0 +1,1 @@
+function Classic(m){this.m=m}

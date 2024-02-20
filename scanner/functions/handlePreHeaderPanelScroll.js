@@ -1,0 +1,1 @@
+function handlePreHeaderPanelScroll(){handleElementScroll($preHeaderPanelScroller[0])}

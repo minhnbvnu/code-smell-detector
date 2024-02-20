@@ -1,0 +1,1 @@
+function errTransport(q, success, error) { error(); }

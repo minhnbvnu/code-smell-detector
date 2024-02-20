@@ -1,0 +1,1 @@
+function _getContainerElement(e,o,t){if(e){o||(o=0),t||(t=0);var n="number"==typeof o?o:getColumnIndex(o);return e[(hasFrozenRows&&t>=actualFrozenRow+(options.frozenBottom?0:1)?2:0)+(hasFrozenColumns()&&n>options.frozenColumn?1:0)]}}

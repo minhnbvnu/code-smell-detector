@@ -1,0 +1,1 @@
+function mxSelectionChange(a,b,c){this.selectionModel=a;this.added=null!=b?b.slice():null;this.removed=null!=c?c.slice():null}

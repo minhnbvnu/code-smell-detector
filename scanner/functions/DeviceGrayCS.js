@@ -1,0 +1,1 @@
+function DeviceGrayCS(){_classCallCheck(this,DeviceGrayCS);return r.call(this,"DeviceGray",1)}

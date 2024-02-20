@@ -1,0 +1,1 @@
+function Rle(e){return({state:t,dispatch:r})=>{let n=t.field(Sh,!1);if(!n||e<0&&n.active==0)return!1;let i=n.active+e,a=e>0&&!n.ranges.some(l=>l.field==i+e);return r(t.update({selection:DI(n.ranges,i),effects:lp.of(a?null:new Od(n.ranges,i)),scrollIntoView:!0})),!0}}

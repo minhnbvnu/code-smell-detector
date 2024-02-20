@@ -1,0 +1,1 @@
+function pushCountDigit(digit) { return function(cm) {count += digit;}; }

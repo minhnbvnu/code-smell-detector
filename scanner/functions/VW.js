@@ -1,0 +1,1 @@
+function VW(n,t=null,e=!1){let i=pe(n,"x","sum");i.dtype==="bool"&&(i=l1(i,"int32"));let r={x:i},o={axis:t,keepDims:e};return Kt.runKernel(Ll,r,o)}

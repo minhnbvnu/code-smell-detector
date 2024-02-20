@@ -1,0 +1,1 @@
+function mxCellOverlay(a,b,c,d,e,f){this.image=a;this.tooltip=b;this.align=null!=c?c:this.align;this.verticalAlign=null!=d?d:this.verticalAlign;this.offset=null!=e?e:new mxPoint;this.cursor=null!=f?f:"help"}

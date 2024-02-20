@@ -1,0 +1,1 @@
+function hW(t,e,n){var i=ph("update",n,e);i&&t.traverse((function(t){if(t instanceof Sa){var e=function(t){return ch(t).oldStyle}(t);e&&t.animateFrom({style:e},i)}}))}

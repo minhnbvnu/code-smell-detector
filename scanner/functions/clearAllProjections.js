@@ -1,4 +1,0 @@
-function clearAllProjections() {
-  clearProj();
-  clearTransformFuncs();
-}

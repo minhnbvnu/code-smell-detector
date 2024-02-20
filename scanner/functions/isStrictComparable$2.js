@@ -1,0 +1,1 @@
+function isStrictComparable$2(value){return value==value&&!isObject$4(value)}

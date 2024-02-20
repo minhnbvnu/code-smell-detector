@@ -1,0 +1,1 @@
+function $ue(e){if(qMe.test(e))return!1;try{return new RegExp(e),!0}catch{return!1}}

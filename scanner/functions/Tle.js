@@ -1,0 +1,1 @@
+function Tle(e,t,r){r===void 0&&(r=lA.Ber.BitString);var i=In.alloc(t.length+1);i[0]=0,t.copy(i,1),e.writeBuffer(i,r)}

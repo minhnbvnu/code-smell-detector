@@ -1,0 +1,1 @@
+function Z_(t,e){e||(e=[]);var r=t?Math.min(e.length,t.length):0,n=e.slice(),i;return function(s){for(i=0;i<r;++i)n[i]=t[i]*(1-s)+e[i]*s;return n}}

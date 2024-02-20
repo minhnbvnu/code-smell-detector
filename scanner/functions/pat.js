@@ -1,0 +1,1 @@
+function pat(n){return function(){var t=this.__on;if(!!t){for(var e=0,i=-1,r=t.length,o;e<r;++e)o=t[e],(!n.type||o.type===n.type)&&o.name===n.name?this.removeEventListener(o.type,o.listener,o.capture):t[++i]=o;++i?t.length=i:delete this.__on}}}

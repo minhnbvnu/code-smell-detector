@@ -1,0 +1,1 @@
+function zrt(n,t){n.uniform2uiv(this.addr,t)}

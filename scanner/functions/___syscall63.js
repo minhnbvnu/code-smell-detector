@@ -1,0 +1,1 @@
+function ___syscall63(which,varargs){SYSCALLS.varargs=varargs;try{var old=SYSCALLS.getStreamFromFD(),suggestFD=SYSCALLS.get();if(old.fd===suggestFD)return suggestFD;return SYSCALLS.doDup(old.path,old.flags,suggestFD)}catch(e){if(typeof FS==="undefined"||!(e instanceof FS.ErrnoError))abort(e);return-e.errno}}

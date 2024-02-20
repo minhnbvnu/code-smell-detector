@@ -1,0 +1,1 @@
+function LocalImageCache(){_classCallCheck(this,LocalImageCache);return r.apply(this,arguments)}

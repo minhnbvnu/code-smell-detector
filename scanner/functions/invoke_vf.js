@@ -1,0 +1,1 @@
+function invoke_vf(index,a1){var sp=stackSave();try{Module["dynCall_vf"](index,a1)}catch(e){stackRestore(sp);if(typeof e!=="number"&&e!=="longjmp")throw e;Module["setThrew"](1,0)}}

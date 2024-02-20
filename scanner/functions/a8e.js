@@ -1,0 +1,1 @@
+function a8e(e){let t=e.map(i=>typeof i=="string"?{label:i}:i),[r,n]=t.every(i=>/^\w+$/.test(i.label))?[/\w*$/,/\w+$/]:i8e(t);return i=>{let a=i.matchBefore(n);return a||i.explicit?{from:a?a.from:i.pos,options:t,validFor:r}:null}}

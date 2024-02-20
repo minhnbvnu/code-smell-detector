@@ -1,0 +1,1 @@
+function jne(e,t){return[...e.collection.rowHeaderColumnKeys].map(r=>zne(e,t,r)).join(" ")}

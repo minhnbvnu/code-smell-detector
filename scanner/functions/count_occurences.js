@@ -1,0 +1,1 @@
+function count_occurences(i,o){for(var s,u=0,C=_createForOfIteratorHelperLoose(o.split(""));!(s=C()).done;){s.value===i&&u++}return u}

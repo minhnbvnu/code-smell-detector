@@ -1,0 +1,1 @@
+function isElementScaled(i){var o=i.getBoundingClientRect(),s=yt(o.width)/i.offsetWidth||1,u=yt(o.height)/i.offsetHeight||1;return 1!==s||1!==u}

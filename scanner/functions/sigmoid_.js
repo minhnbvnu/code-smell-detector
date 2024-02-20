@@ -1,7 +1,1 @@
-function sigmoid_(x) {
-	  var $x = convertToTensor(x, 'x', 'sigmoid');
-	  var inputs = {
-	    x: $x
-	  };
-	  return ENGINE.runKernel(Sigmoid, inputs);
-	}
+function sigmoid_(e){var t=convertToTensor(e,"x","sigmoid");return ENV.engine.runKernel(function(e,n){return n(e.sigmoid(t))},{$x:t},function(e,t){var n=t[0];return {$x:function(){return e.mul(n.mul(scalar(1).sub(n)))}}})}

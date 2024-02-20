@@ -1,0 +1,1 @@
+function Lo(){var t,e,i,n=this.localeData().eras();for(t=0,e=n.length;t<e;++t){if(i=this.clone().startOf("day").valueOf(),n[t].since<=i&&i<=n[t].until)return n[t].name;if(n[t].until<=i&&i<=n[t].since)return n[t].name}return""}

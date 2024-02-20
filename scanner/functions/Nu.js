@@ -1,0 +1,1 @@
+function Nu(t){for(var e=[],i=0;i<t.pointers.length;)e[i]={clientX:Kl(t.pointers[i].clientX),clientY:Kl(t.pointers[i].clientY)},i++;return{timeStamp:tu(),pointers:e,center:Lu(e),deltaX:t.deltaX,deltaY:t.deltaY}}

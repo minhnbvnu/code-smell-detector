@@ -1,0 +1,1 @@
+function X2e(e){let t=process.platform;return new Promise((r,i)=>{if(!(t in xb))return i(new Error(`platform ${t} is unsupported`));let a=xb[t];typeof a=="string"&&(a=xb[a]),a(e).then(r,i)})}

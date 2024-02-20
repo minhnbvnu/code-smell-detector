@@ -1,1 +1,1 @@
-function vh(a){a=a|0;var b=0;if(a){b=H[a+8>>2];if(b){H[a+12>>2]=b;oa(b)}oa(a)}}
+function VH(n){return n()}

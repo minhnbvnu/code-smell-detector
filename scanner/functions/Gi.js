@@ -1,0 +1,1 @@
+function Gi(t){var e,i,n,o,r,s,a=!1;if(0===t._f.length)return g(t).invalidFormat=!0,void(t._d=new Date(NaN));for(o=0;o<t._f.length;o++)r=0,s=!1,e=k({},t),null!=t._useUTC&&(e._useUTC=t._useUTC),e._f=t._f[o],zi(e),y(e)&&(s=!0),r+=g(e).charsLeftOver,r+=10*g(e).unusedTokens.length,g(e).score=r,a?r<n&&(n=r,i=e):(null==n||r<n||s)&&(n=r,i=e,s&&(a=!0));f(t,i||e)}

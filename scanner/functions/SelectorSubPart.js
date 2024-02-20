@@ -1,0 +1,1 @@
+function SelectorSubPart(e,t,n,r){SyntaxUnit.call(this,e,n,r,Parser.SELECTOR_SUB_PART_TYPE),this.type=t,this.args=[]}

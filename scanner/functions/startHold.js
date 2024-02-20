@@ -1,0 +1,1 @@
+function startHold(t){if(!rightClickPending){rightClickPending=true;rightClickEvent=t.changedTouches[0];holdTimeout=window.setTimeout("doRightClick();",800)}}

@@ -1,0 +1,1 @@
+function $he(e){return{"data-href":e.href,"data-target":e.target,"data-rel":e.rel,"data-download":e.download,"data-ping":e.ping,"data-referrer-policy":e.referrerPolicy}}

@@ -1,0 +1,4 @@
+function tearDownNavierStokes()
+{
+    solver = null;
+}

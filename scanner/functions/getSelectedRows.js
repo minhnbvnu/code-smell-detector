@@ -1,0 +1,1 @@
+function getSelectedRows(){if(!selectionModel)throw new Error("SlickGrid Selection model is not set");return selectedRows.slice(0)}

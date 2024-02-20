@@ -1,0 +1,1 @@
+function _bytes2bi255(t){for(var n=_ZERO,e=0;32>e;e++)n.shiftLeft(8),n=n.plus(_bi255(t[e]));return n}

@@ -1,0 +1,1 @@
+function LW(n,t){let e=n.length,i=[];for(let r=0;r<e;r++){let o=e-1-r,s=n[o]||1;(t[t.length-1-r]||1)>1&&s===1&&i.unshift(o)}return i}

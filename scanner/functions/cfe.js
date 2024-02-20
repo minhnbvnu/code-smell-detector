@@ -1,0 +1,1 @@
+function cfe(e){e.sort((t,r)=>t.score!==r.score?r.score-t.score:bfe(t.routesMeta.map(n=>n.childrenIndex),r.routesMeta.map(n=>n.childrenIndex)))}

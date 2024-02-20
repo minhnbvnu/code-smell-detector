@@ -1,0 +1,1 @@
+function mxMorphing(a,b,c,d){mxAnimation.call(this,d);this.graph=a;this.steps=null!=b?b:6;this.ease=null!=c?c:1.5}

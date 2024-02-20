@@ -1,10 +1,1 @@
-function createFetchOptions(headers, withCredentials, abortController) {
-  return {
-    method: "GET",
-    headers,
-    signal: abortController?.signal,
-    mode: "cors",
-    credentials: withCredentials ? "include" : "same-origin",
-    redirect: "follow"
-  };
-}
+function createFetchOptions(t,r,a){return{method:"GET",headers:t,signal:null==a?void 0:a.signal,mode:"cors",credentials:r?"include":"same-origin",redirect:"follow"}}

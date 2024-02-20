@@ -1,0 +1,1 @@
+function _emscripten_get_heap_size(){return HEAP8.length}

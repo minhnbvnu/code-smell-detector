@@ -1,0 +1,1 @@
+function getClippingParents(i){var o=listScrollParents(getParentNode(i)),s=["absolute","fixed"].indexOf(getComputedStyle(i).position)>=0&&isHTMLElement(i)?getOffsetParent(i):i;return isElement(s)?o.filter((function(i){return isElement(i)&&contains(i,s)&&"body"!==getNodeName(i)})):[]}

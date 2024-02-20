@@ -1,0 +1,3 @@
+function updateMappedTypeNode(node, readonlyToken, typeParameter, nameType, questionToken, type, members) {
+                return node.readonlyToken !== readonlyToken || node.typeParameter !== typeParameter || node.nameType !== nameType || node.questionToken !== questionToken || node.type !== type || node.members !== members ? update(createMappedTypeNode(readonlyToken, typeParameter, nameType, questionToken, type, members), node) : node;
+            }

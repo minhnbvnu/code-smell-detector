@@ -1,0 +1,1 @@
+function updownEvent($){if($c.currFocus==undefined)$c.currFocus=$d.HI;switch($c.currFocus){case $d.HI:c_H($dt.H+$);break;case $d.mI:c_m($dt.m+$);break;case $d.sI:c_s($dt.s+$);break}}

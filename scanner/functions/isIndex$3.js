@@ -1,0 +1,1 @@
+function isIndex$3(value,length){var type=_typeof(value);return!!(length=null==length?MAX_SAFE_INTEGER$1:length)&&("number"==type||"symbol"!=type&&reIsUint.test(value))&&value>-1&&value%1==0&&value<length}

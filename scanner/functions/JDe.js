@@ -1,0 +1,1 @@
+function JDe(e,t,r){const n=this;return i;function i(l){return e.enter("labelLink"),e.enter("labelMarker"),e.consume(l),e.exit("labelMarker"),e.exit("labelLink"),a}function a(l){return l===94&&"_hiddenFootnoteSupport"in n.parser.constructs?r(l):t(l)}}

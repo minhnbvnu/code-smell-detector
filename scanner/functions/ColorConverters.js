@@ -1,0 +1,1 @@
+function ColorConverters(){!function _classCallCheck(t,r){if(!(t instanceof r))throw new TypeError("Cannot call a class as a function")}(this,ColorConverters)}

@@ -1,0 +1,1 @@
+function Be(t){return 15*-Math.round(t._d.getTimezoneOffset()/15)}

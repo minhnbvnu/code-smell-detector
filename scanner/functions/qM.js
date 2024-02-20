@@ -1,0 +1,1 @@
+function qM(t){var e={},r=pi(t.nodes(),function(o){return!t.children(o).length}),n=Cs(ir(r,function(o){return t.node(o).rank})),i=ir(Ss(n+1),function(){return[]});function s(o){if(!me(e,o)){e[o]=!0;var l=t.node(o);i[l.rank].push(o),vt(t.successors(o),s)}}var a=Io(r,function(o){return t.node(o).rank});return vt(a,s),i}

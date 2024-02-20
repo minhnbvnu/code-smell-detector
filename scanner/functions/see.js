@@ -1,0 +1,1 @@
+function see(e){var t=e.split("-");if(t.length===2){var r=t[0],i=t[1].split("+");if(!!r&&!!i.length&&!!i.every(Boolean))return{name:e,platform:r,architectures:i}}}

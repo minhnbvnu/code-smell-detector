@@ -1,0 +1,1 @@
+function textareaOnScroll(event){return _targetElement[_strScrollLeft](_rtlScrollBehavior.i&&_normalizeRTLCache?9999999:0),_targetElement[_strScrollTop](0),COMPATIBILITY.prvD(event),COMPATIBILITY.stpP(event),!1}

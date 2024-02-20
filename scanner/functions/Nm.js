@@ -1,1 +1,1 @@
-function nm(a){a=a|0;var b=0;b=fa-16|0;L[b+12>>2]=a;return N[L[b+12>>2]+8>>1]<<16>>16}
+function Nm(a,b,c){a=a|0;b=b|0;c=c|0;var d=0,e=0,g=0;d=a+20|0;e=f[d>>2]|0;g=(f[a+16>>2]|0)-e|0;a=g>>>0>c>>>0?c:g;kh(e|0,b|0,a|0)|0;f[d>>2]=(f[d>>2]|0)+a;return c|0}

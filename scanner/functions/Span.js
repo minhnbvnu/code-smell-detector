@@ -1,0 +1,1 @@
+function Span(t){_classCallCheck(this,Span);return r.call(this,t,"span")}

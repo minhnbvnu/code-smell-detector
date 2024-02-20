@@ -1,0 +1,1 @@
+function _wgpu_render_pass_encoder_set_scissor_rect(encoder,x,y,width,height){wgpu[encoder]["setScissorRect"](x,y,width,height)}

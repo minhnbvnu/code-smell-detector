@@ -1,0 +1,1 @@
+function typedArrayToFloat32(e){return e instanceof Float32Array?e:new Float32Array(e)}

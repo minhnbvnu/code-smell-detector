@@ -1,0 +1,1 @@
+function mxHandle(a,b,c,d){this.graph=a.view.graph;this.state=a;this.cursor=null!=b?b:this.cursor;this.image=null!=c?c:this.image;this.shape=null!=d?d:null;this.init()}

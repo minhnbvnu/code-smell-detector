@@ -1,1 +1,1 @@
-function ig(){return 6}
+function ig(a,b){return"undefined"!==typeof a?a:b}

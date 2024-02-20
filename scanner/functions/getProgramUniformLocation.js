@@ -1,3 +1,1 @@
-function getProgramUniformLocation(gl, program, uniformName) {
-	  return gl.getUniformLocation(program, uniformName);
-	}
+function getProgramUniformLocation(e,t,n){return e.getUniformLocation(t,n)}

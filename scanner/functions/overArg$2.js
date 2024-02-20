@@ -1,0 +1,1 @@
+function overArg$2(func,transform){return function(arg){return func(transform(arg))}}

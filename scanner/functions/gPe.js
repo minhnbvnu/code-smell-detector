@@ -1,0 +1,1 @@
+function gPe(){return new Promise(e=>{process.nextTick(()=>{let t=eu.cpus(),r=0,i=0,a=0,n=0,s=0;for(let l=0,p=t.length;l<p;l++){let c=t[l].times;r+=c.user,i+=c.sys,a+=c.nice,n+=c.irq,s+=c.idle}let o=s+n+a+i+r,u=(o-s)/o*100;e(u)})})}

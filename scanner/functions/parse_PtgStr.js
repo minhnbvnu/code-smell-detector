@@ -1,0 +1,1 @@
+function parse_PtgStr(blob,length){blob.l++;return parse_ShortXLUnicodeString(blob)}

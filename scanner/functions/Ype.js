@@ -1,0 +1,1 @@
+function Ype(e){let t=e.offsetParent;if(t&&t===document.body&&window.getComputedStyle(t).position==="static"&&!g_(t)&&(t=document.documentElement),t==null)for(t=e.parentElement;t&&!g_(t);)t=t.parentElement;return t||document.documentElement}

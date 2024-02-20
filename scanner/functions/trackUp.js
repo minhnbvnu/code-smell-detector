@@ -1,0 +1,1 @@
+function trackUp(e){e.preventDefault();e.stopPropagation();if(btndown){btndown=false;onDone(mouseAbs(e));options.onSelect(unscale(Coords.getFixed()));toBack();onMove=function(){};onDone=function(){}}return false}

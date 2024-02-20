@@ -1,0 +1,1 @@
+function JS_GravitySensor_eventHandler(){if(JS_GravitySensor_callback!=0)dynCall_vfff(JS_GravitySensor_callback,JS_GravitySensor.x*JS_Accelerometer_multiplier,JS_GravitySensor.y*JS_Accelerometer_multiplier,JS_GravitySensor.z*JS_Accelerometer_multiplier)}

@@ -1,0 +1,1 @@
+function stripNonPairedParens(i){for(var o=[],s=0;s<i.length;)"("===i[s]?o.push(s):")"===i[s]&&o.pop(),s++;var u=0,C="";o.push(i.length);for(var _=0,w=o;_<w.length;_++){var P=w[_];C+=i.slice(u,P),u=P+1}return C}

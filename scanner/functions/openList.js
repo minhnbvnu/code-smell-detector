@@ -1,0 +1,3 @@
+function openList() {
+	$.listWin.open();
+}

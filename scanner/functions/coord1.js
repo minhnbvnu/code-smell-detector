@@ -1,0 +1,1 @@
+function coord1(v) { return numarray(v.replace(removeSpace, '').split(',')); }

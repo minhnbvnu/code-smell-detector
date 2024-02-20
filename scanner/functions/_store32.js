@@ -1,0 +1,1 @@
+function _store32($0,$1){$0=$0|0;$1=$1|0;var label=0,sp=0;sp=STACKTOP;HEAP8[$0>>0]=$1&255;HEAP8[$0+1>>0]=$1>>8&255;HEAP8[$0+2>>0]=$1>>16&255;HEAP8[$0+3>>0]=$1>>24;return}

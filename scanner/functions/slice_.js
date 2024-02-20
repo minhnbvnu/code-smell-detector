@@ -1,16 +1,1 @@
-function slice_(x, begin, size) {
-	  var $x = convertToTensor(x, 'x', 'slice', 'string_or_numeric');
-
-	  if ($x.rank === 0) {
-	    throw new Error('Slicing scalar is not possible');
-	  }
-
-	  var inputs = {
-	    x: $x
-	  };
-	  var attrs = {
-	    begin: begin,
-	    size: size
-	  };
-	  return ENGINE.runKernel(Slice, inputs, attrs);
-	}
+function slice_(e,t,n){var r,o,a=convertToTensor(e,"x","slice");if(0===a.rank)throw new Error("Slicing scalar is not possible");r="number"==typeof t?[t].concat(new Array(a.rank-1).fill(0)):t.length<a.rank?t.concat(new Array(a.rank-t.length).fill(0)):t.slice(),o=(o=null==n?new Array(a.rank).fill(-1):"number"==typeof n?[n].concat(new Array(a.rank-1).fill(-1)):n.length<a.rank?n.concat(new Array(a.rank-n.length).fill(-1)):n).map(function(e,t){return e>=0?e:(assert(-1===e,"Bad value in size"),a.shape[t]-r[t])}),assertParamsValid(a,r,o);var i=a.shape;return ENV.engine.runKernel(function(e){return e.slice(a,r,o)},{$x:a},function(e){for(var t=[],n=0;n<e.rank;n++)t.push([r[n],i[n]-r[n]-o[n]]);return {$x:function(){return e.pad(t)}}})}

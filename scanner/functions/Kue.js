@@ -1,0 +1,1 @@
+function Kue(){return new ci(this.q,this.x.negate().mod(this.q))}

@@ -1,0 +1,1 @@
+function gae(e,t,r){let n=cD(e,t.length?t[0]:{},e.doc.length);t.length&&t[0].filter===!1&&(r=!1);for(let a=1;a<t.length;a++){t[a].filter===!1&&(r=!1);let l=!!t[a].sequential;n=mae(n,cD(e,t[a],l?n.changes.newLength:e.doc.length),l)}let i=hn.create(e,n.changes,n.selection,n.effects,n.annotations,n.scrollIntoView);return Jxe(r?Xxe(i):i)}

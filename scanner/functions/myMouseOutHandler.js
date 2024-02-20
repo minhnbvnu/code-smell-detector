@@ -1,0 +1,3 @@
+function myMouseOutHandler(){ 
+    isOutside=true;
+}

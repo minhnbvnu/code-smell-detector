@@ -1,1 +1,1 @@
-function Mu(a,b){a=a|0;b=S(b);var c=0;c=fa-16|0;L[c+12>>2]=a;P[c+8>>2]=b;P[L[c+12>>2]+108>>2]=P[c+8>>2]}
+function mu(t,e,i){var n=i.pointers.length,o=i.changedPointers.length,r=1&e&&n-o==0,s=12&e&&n-o==0;i.isFirst=!!r,i.isFinal=!!s,r&&(t.session={}),i.eventType=e,fu(t,i),t.emit("hammer.input",i),t.recognize(i),t.session.prevInput=i}

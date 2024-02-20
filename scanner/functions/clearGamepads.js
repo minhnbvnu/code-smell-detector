@@ -1,0 +1,3 @@
+function clearGamepads() {
+  gamepads = null;
+}

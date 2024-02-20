@@ -1,0 +1,85 @@
+function _ZN34btPolyhedralConvexAabbCachingShape15recalcLocalAabbEv(sp)
+{
+	var i7;
+	var fp = sp>>2;
+	var r0;
+	var r1;
+	var r2;
+	var r3;
+	var r4;
+	var f0;
+	var f1;
+var __label__ = 0;
+	i7 = sp + -112;var g0 = i7>>2; // save stack
+	r0 = heap32[(fp)];
+	r1 = 1;
+	r2 = _ZGVZN34btPolyhedralConvexAabbCachingShape15recalcLocalAabbEvE11_directions;
+	heap8[r0+84] = r1;
+	r3 = heapU8[r2];
+if(!(r3 !=0)) //_LBB475_2
+{
+	r3 = _ZZN34btPolyhedralConvexAabbCachingShape15recalcLocalAabbEvE11_directions;
+	r3 = r3 >> 2;
+	heap32[(r3)] = 1065353216;
+	heap32[(r3+1)] = 0;
+	heap32[(r3+2)] = 0;
+	heap32[(r3+3)] = 0;
+	heap32[(r3+4)] = 0;
+	heap32[(r3+5)] = 1065353216;
+	heap32[(r3+6)] = 0;
+	heap32[(r3+7)] = 0;
+	heap32[(r3+8)] = 0;
+	heap32[(r3+9)] = 0;
+	heap32[(r3+10)] = 1065353216;
+	heap32[(r3+11)] = 0;
+	heap32[(r3+12)] = -1082130432;
+	heap32[(r3+13)] = 0;
+	heap32[(r3+14)] = 0;
+	heap32[(r3+15)] = 0;
+	heap32[(r3+16)] = 0;
+	heap32[(r3+17)] = -1082130432;
+	heap32[(r3+18)] = 0;
+	heap32[(r3+19)] = 0;
+	heap32[(r3+20)] = 0;
+	heap32[(r3+21)] = 0;
+	heap32[(r3+22)] = -1082130432;
+	heap32[(r3+23)] = 0;
+	heap8[r2] = r1;
+}
+	r1 = sp + -96;
+	heap32[(g0)] = r1;
+	heap32[(g0+1)] = 0;
+	heap32[(g0+2)] = 96;
+	r2 = r0 >> 2;
+	memset(i7);
+	r3 = heap32[(r2)];
+	r3 = r3 >> 2;
+	r3 = heap32[(r3+17)];
+	r4 = _ZZN34btPolyhedralConvexAabbCachingShape15recalcLocalAabbEvE11_directions;
+	heap32[(g0)] = r0;
+	heap32[(g0+1)] = r4;
+	heap32[(g0+2)] = r1;
+	heap32[(g0+3)] = 6;
+	__FUNCTION_TABLE__[(r3)>>2](i7);
+	f0 = heapFloat[(fp+-24)];
+	f1 = heapFloat[(r2+11)];
+	f0 = f0+f1;
+	r0 = r1 >> 2;
+	heapFloat[(r2+17)] = f0;
+	f0 = heapFloat[(r0+12)];
+	f0 = f0-f1;
+	heapFloat[(r2+13)] = f0;
+	f0 = heapFloat[(r0+5)];
+	f0 = f0+f1;
+	heapFloat[(r2+18)] = f0;
+	f0 = heapFloat[(r0+17)];
+	f0 = f0-f1;
+	heapFloat[(r2+14)] = f0;
+	f0 = heapFloat[(r0+10)];
+	f0 = f0+f1;
+	heapFloat[(r2+19)] = f0;
+	f0 = heapFloat[(r0+22)];
+	f0 = f0-f1;
+	heapFloat[(r2+15)] = f0;
+	return;
+}

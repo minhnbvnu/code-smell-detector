@@ -1,0 +1,1 @@
+function _emscripten_glBindAttribLocation(program,index,name){GLctx.bindAttribLocation(GL.programs[program],index,UTF8ToString(name))}

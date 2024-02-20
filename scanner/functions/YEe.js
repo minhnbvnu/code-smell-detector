@@ -1,0 +1,1 @@
+function YEe(e){let t=e.padding||[],r=1+(t[i4]||0)+(t[r4]||0);return e.border?r+4:r}

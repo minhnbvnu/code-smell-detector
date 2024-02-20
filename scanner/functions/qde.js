@@ -1,0 +1,1 @@
+function qde(){for(;dn!==null&&!bce();)PW(dn)}

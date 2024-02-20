@@ -1,3 +1,0 @@
-function clearUserProjection() {
-  userProjection = null;
-}

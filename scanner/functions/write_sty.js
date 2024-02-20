@@ -1,0 +1,1 @@
+function write_sty(data,name,opts){return(name.substr(-4)===".bin"?write_sty_bin:write_sty_xml)(data,opts)}

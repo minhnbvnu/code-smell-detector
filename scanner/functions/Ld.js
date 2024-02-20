@@ -1,1 +1,1 @@
-function ld(a){a=a|0;return 3}
+function Ld(a,b,d,c,e){if(A(c)){a=a(c);if(!a.constant)throw ob("constexpr",d,c);return a(b)}return e}

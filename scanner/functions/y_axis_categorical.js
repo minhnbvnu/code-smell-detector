@@ -1,0 +1,5 @@
+function y_axis_categorical(args){var svg_height=args.height;if(args.chart_type=='bar'&&svg_height==null){}
+args.scales.Y=d3.scale.ordinal().domain(args.categorical_variables).rangeRoundBands([args.height-args.bottom-args.buffer,args.top],args.padding_percentage,args.outer_padding_percentage);args.scalefns.yf=function(di){return args.scales.Y(di[args.y_accessor]);}
+var svg=d3.select($(args.target).find('svg').get(0));var $svg=$($(args.target).find('svg').get(0));$svg.find('.y-axis').remove();var g=svg.append('g').classed('y-axis',true).classed('y-axis-small',args.use_small_class);if(!args.y_axis)return this;g.selectAll('text').data(args.categorical_variables).enter().append('svg:text').attr('x',args.left).attr('y',function(d){return args.scales.Y(d)+args.scales.Y.rangeBand()/2
++(args.buffer)*args.outer_padding_percentage;}).attr('dy','.35em').attr('text-anchor','end').text(String)
+return this;}

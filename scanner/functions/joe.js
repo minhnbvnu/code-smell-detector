@@ -1,0 +1,1 @@
+function joe(e,t){Object.defineProperty(this,"type",{writable:!1,value:e,enumerable:!0});for(var r in t)t.hasOwnProperty(r)&&Object.defineProperty(this,r,{writable:!1,value:t[r],enumerable:!0})}

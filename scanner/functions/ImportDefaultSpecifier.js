@@ -1,3 +1,1 @@
-function ImportDefaultSpecifier(node) {
-	  this.print(node.local, node);
-	}
+function ImportDefaultSpecifier(){i.apply(this,arguments)}

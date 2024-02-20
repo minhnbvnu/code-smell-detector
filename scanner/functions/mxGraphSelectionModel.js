@@ -1,0 +1,1 @@
+function mxGraphSelectionModel(a){this.graph=a;this.cells=[]}

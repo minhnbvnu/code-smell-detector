@@ -1,0 +1,1 @@
+function iPe(){let e=new Date().toString().split(" ");return{current:Date.now(),uptime:vg.uptime(),timezone:e.length>=7?e[5]:"",timezoneName:e.length>=7?e.slice(6).join(" ").replace(/\(/g,"").replace(/\)/g,""):""}}

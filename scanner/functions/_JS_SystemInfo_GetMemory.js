@@ -1,0 +1,1 @@
+function _JS_SystemInfo_GetMemory(){return HEAPU8.length/(1024*1024)}

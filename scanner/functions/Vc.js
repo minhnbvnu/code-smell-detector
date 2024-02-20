@@ -1,0 +1,1 @@
+function Vc(a){a=a.toString().replace(Uf,"");return a.match(Vf)||a.match(Wf)}

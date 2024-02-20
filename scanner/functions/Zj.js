@@ -1,1 +1,1 @@
-function zj(a){a=a|0;var b=0;H[a>>2]=4040;b=H[a+76>>2];if(b){oa(b)}H[a>>2]=3272;b=H[a+32>>2];if(b){H[a+36>>2]=b;oa(b)}return a|0}
+function Zj(a,c){a=a|0;c=c|0;var d=0,e=0,g=0,h=0,i=0,j=0,k=0;d=u;u=u+16|0;e=d;if(c>>>0>10){g=0;u=d;return g|0}h=ln(48)|0;f[e>>2]=h;f[e+8>>2]=-2147483600;f[e+4>>2]=33;i=h;j=15987;k=i+33|0;do{b[i>>0]=b[j>>0]|0;i=i+1|0;j=j+1|0}while((i|0)<(k|0));b[h+33>>0]=0;Xj(a,e,c);if((b[e+11>>0]|0)<0)Oq(f[e>>2]|0);g=1;u=d;return g|0}

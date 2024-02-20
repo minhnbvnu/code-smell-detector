@@ -1,0 +1,1 @@
+function convertAllToFastObject(a){for(var u=0;u<a.length;++u)convertToFastObject(a[u])}

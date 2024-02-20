@@ -1,0 +1,1 @@
+function l_e(e){return e.id&&this.logger.warn("schema id ignored",e.id),e.$id}

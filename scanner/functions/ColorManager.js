@@ -1,0 +1,1 @@
+function ColorManager(){_classCallCheck(this,ColorManager)}

@@ -1,0 +1,1 @@
+function normalizeAttributeKey(i){return-1!==i.indexOf("-")&&null===i.match(ea)&&(i=i.replace(ga,(function(i,o){return o.toUpperCase()}))),i}

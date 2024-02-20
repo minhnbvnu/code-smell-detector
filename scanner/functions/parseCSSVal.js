@@ -1,0 +1,1 @@
+function parseCSSVal(prop,val){return _cssNumber[prop.toLowerCase()]||_type(val)!=TYPES.n||(val+="px"),val}

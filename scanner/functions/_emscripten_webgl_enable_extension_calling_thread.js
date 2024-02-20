@@ -1,0 +1,1 @@
+function _emscripten_webgl_enable_extension_calling_thread(contextHandle,extension){var context=GL.getContext(contextHandle);var extString=Pointer_stringify(extension);if(extString.indexOf("GL_")==0)extString=extString.substr(3);var ext=context.GLctx.getExtension(extString);return ext?1:0}

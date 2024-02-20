@@ -1,0 +1,1 @@
+function StampAnnotation(t){var o;_classCallCheck(this,StampAnnotation);(o=r.call(this,t)).data.annotationType=c.AnnotationType.STAMP;return o}

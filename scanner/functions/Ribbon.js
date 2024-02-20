@@ -1,0 +1,1 @@
+function Ribbon(){var i=(0,Br.E)().config.ribbon;return i?s.createElement(dd,i):null}

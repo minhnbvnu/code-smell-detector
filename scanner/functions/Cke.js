@@ -1,0 +1,1 @@
+function Cke(){return HE===0&&(HE=n3.cpus().length),HE}

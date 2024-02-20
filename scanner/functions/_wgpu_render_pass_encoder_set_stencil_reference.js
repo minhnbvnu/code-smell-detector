@@ -1,0 +1,1 @@
+function _wgpu_render_pass_encoder_set_stencil_reference(encoder,stencilValue){wgpu[encoder]["setStencilReference"](stencilValue)}

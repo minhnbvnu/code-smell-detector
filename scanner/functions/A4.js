@@ -1,0 +1,1 @@
+function A4(n){let t=N4?["click"]:R4;for(let e=0,i;e<t.length;e++)i=t[e],n?(c2.length=0,document.addEventListener(i,T4,!0)):document.removeEventListener(i,T4,!0)}

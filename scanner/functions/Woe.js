@@ -1,0 +1,1 @@
+function Woe(e,t,r){An.stat(e,(i,a)=>i?r(i):Uoe(t,a.atime,a.mtime,r))}

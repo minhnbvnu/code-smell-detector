@@ -1,0 +1,1 @@
+function FreeTextAnnotation(t){var r;_classCallCheck(this,FreeTextAnnotation);(r=o.call(this,t)).data.annotationType=c.AnnotationType.FREETEXT;return r}

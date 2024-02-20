@@ -1,0 +1,1 @@
+function mp(){var a=0;a=ln(84)|0;eo(a);return a|0}

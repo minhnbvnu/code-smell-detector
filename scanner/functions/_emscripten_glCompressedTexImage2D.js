@@ -1,0 +1,1 @@
+function _emscripten_glCompressedTexImage2D(target,level,internalFormat,width,height,border,imageSize,data){GLctx["compressedTexImage2D"](target,level,internalFormat,width,height,border,data?HEAPU8.subarray(data,data+imageSize):null)}

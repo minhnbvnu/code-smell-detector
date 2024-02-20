@@ -1,0 +1,1 @@
+function NodeCanvasFactory(){_classCallCheck(this,NodeCanvasFactory);return r.apply(this,arguments)}

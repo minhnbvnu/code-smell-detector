@@ -1,11 +1,9 @@
-function colors() {
-  const stops = [];
-  for (let i = 0; i <= segments; ++i) {
-    stops[i * 2] = ['var', `value${i}`];
-    const red = ['var', `red${i}`];
-    const green = ['var', `green${i}`];
-    const blue = ['var', `blue${i}`];
-    stops[i * 2 + 1] = ['color', red, green, blue];
-  }
-  return stops;
+function colors(color) {
+  //La función recibe un color. Devolver el string correspondiente:
+  //En caso que el color recibido sea "blue", devuleve --> "This is blue"
+  //En caso que el color recibido sea "red", devuleve --> "This is red"
+  //En caso que el color recibido sea "green", devuleve --> "This is green"
+  //En caso que el color recibido sea "orange", devuleve --> "This is orange"
+  //Caso default: devuelve --> "Color not found"
+  //Usar el statement Switch.
 }

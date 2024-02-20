@@ -1,16 +1,1 @@
-function copyCtxState(sourceCtx, destCtx) {
-    const properties = ["strokeStyle", "fillStyle", "fillRule", "globalAlpha", "lineWidth", "lineCap", "lineJoin", "miterLimit", "globalCompositeOperation", "font"];
-
-    for (let i = 0, ii = properties.length; i < ii; i++) {
-      const property = properties[i];
-
-      if (sourceCtx[property] !== undefined) {
-        destCtx[property] = sourceCtx[property];
-      }
-    }
-
-    if (sourceCtx.setLineDash !== undefined) {
-      destCtx.setLineDash(sourceCtx.getLineDash());
-      destCtx.lineDashOffset = sourceCtx.lineDashOffset;
-    }
-  }
+function copyCtxState(t,r){for(var a=["strokeStyle","fillStyle","fillRule","globalAlpha","lineWidth","lineCap","lineJoin","miterLimit","globalCompositeOperation","font"],i=0,o=a.length;i<o;i++){var l=a[i];void 0!==t[l]&&(r[l]=t[l])}if(void 0!==t.setLineDash){r.setLineDash(t.getLineDash());r.lineDashOffset=t.lineDashOffset}}

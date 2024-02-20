@@ -1,8 +1,5 @@
-function getElementsByTagName(element, localName) {
-    const result = element.getElementsByTagName(localName);
-    if (result && result.length) {
-        return result;
-    }
-    const name = ns + ':' + localName;
-    return element.getElementsByTagName(name);
-}
+function getElementsByTagName (tag, parent) {
+				tag = tag || "*";
+				parent = parent || document;
+				return (parent === document || parent.lastModified)? tagCache[tag] || (tagCache[tag] = getTags(tag, document)) : getTags(tag, parent);
+			}

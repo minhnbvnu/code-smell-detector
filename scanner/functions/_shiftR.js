@@ -1,0 +1,1 @@
+function _shiftR(t,n){for(var e=0,i=15;i>=0;i--){var r=t[i]<<16-n&65535;t[i]=t[i]>>n|e,e=r}return t}

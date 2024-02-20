@@ -1,0 +1,162 @@
+function spoofCSS$1(source, selectors, cssPropertyName, cssPropertyValue) {
+      if (!selectors) {
+        return;
+      }
+      var uboAliases = ['spoof-css.js', 'ubo-spoof-css.js', 'ubo-spoof-css'];
+
+      /**
+       * getComputedStyle uses camelCase version of CSS properties
+       * for example, "clip-path" is displayed as "clipPath"
+       * so it's needed to convert CSS property to camelCase
+       *
+       * @param {string} cssProperty
+       * @returns {string} camelCase version of CSS property
+       */
+      function convertToCamelCase(cssProperty) {
+        if (!cssProperty.includes('-')) {
+          return cssProperty;
+        }
+        var splittedProperty = cssProperty.split('-');
+        var firstPart = splittedProperty[0];
+        var secondPart = splittedProperty[1];
+        return "".concat(firstPart).concat(secondPart[0].toUpperCase()).concat(secondPart.slice(1));
+      }
+      var shouldDebug = !!(cssPropertyName === 'debug' && cssPropertyValue);
+      var propToValueMap = new Map();
+
+      /**
+       * UBO spoof-css analog has it's own args sequence:
+       * (selectors, ...arguments)
+       * arguments contains property-name/property-value pairs, all separated by commas
+       *
+       * example.com##+js(spoof-css, a[href="x.com"]\, .ads\, .bottom, clip-path, none)
+       * example.com##+js(spoof-css, .ad, clip-path, none, display, block)
+       * example.com##+js(spoof-css, .ad, debug, 1)
+       */
+      if (uboAliases.includes(source.name)) {
+        var args = source.args;
+        var arrayOfProperties = [];
+        // Check if one before last argument is 'debug'
+        var isDebug = args.at(-2);
+        if (isDebug === 'debug') {
+          // If it's debug, then we need to skip first (selectors) and last two arguments
+          arrayOfProperties = args.slice(1, -2);
+        } else {
+          // If it's not debug, then we need to skip only first (selectors) argument
+          arrayOfProperties = args.slice(1);
+        }
+        for (var i = 0; i < arrayOfProperties.length; i += 2) {
+          if (arrayOfProperties[i] === '') {
+            break;
+          }
+          propToValueMap.set(convertToCamelCase(arrayOfProperties[i]), arrayOfProperties[i + 1]);
+        }
+      } else if (cssPropertyName && cssPropertyValue && !shouldDebug) {
+        propToValueMap.set(convertToCamelCase(cssPropertyName), cssPropertyValue);
+      }
+      var spoofStyle = function spoofStyle(cssProperty, realCssValue) {
+        return propToValueMap.has(cssProperty) ? propToValueMap.get(cssProperty) : realCssValue;
+      };
+      var setRectValue = function setRectValue(rect, prop, value) {
+        Object.defineProperty(rect, prop, {
+          value: parseFloat(value)
+        });
+      };
+      var getter = function getter(target, prop, receiver) {
+        hit(source);
+        if (prop === 'toString') {
+          return target.toString.bind(target);
+        }
+        return Reflect.get(target, prop, receiver);
+      };
+      var getComputedStyleWrapper = function getComputedStyleWrapper(target, thisArg, args) {
+        if (shouldDebug) {
+          debugger; // eslint-disable-line no-debugger
+        }
+
+        var style = Reflect.apply(target, thisArg, args);
+        if (!args[0].matches(selectors)) {
+          return style;
+        }
+        var proxiedStyle = new Proxy(style, {
+          get(target, prop) {
+            var CSSStyleProp = target[prop];
+            if (typeof CSSStyleProp !== 'function') {
+              return spoofStyle(prop, CSSStyleProp || '');
+            }
+            if (prop !== 'getPropertyValue') {
+              return CSSStyleProp.bind(target);
+            }
+            var getPropertyValueFunc = new Proxy(CSSStyleProp, {
+              apply(target, thisArg, args) {
+                var cssName = args[0];
+                var cssValue = thisArg[cssName];
+                return spoofStyle(cssName, cssValue);
+              },
+              get: getter
+            });
+            return getPropertyValueFunc;
+          },
+          getOwnPropertyDescriptor(target, prop) {
+            if (propToValueMap.has(prop)) {
+              return {
+                configurable: true,
+                enumerable: true,
+                value: propToValueMap.get(prop),
+                writable: true
+              };
+            }
+            return Reflect.getOwnPropertyDescriptor(target, prop);
+          }
+        });
+        hit(source);
+        return proxiedStyle;
+      };
+      var getComputedStyleHandler = {
+        apply: getComputedStyleWrapper,
+        get: getter
+      };
+      window.getComputedStyle = new Proxy(window.getComputedStyle, getComputedStyleHandler);
+      var getBoundingClientRectWrapper = function getBoundingClientRectWrapper(target, thisArg, args) {
+        if (shouldDebug) {
+          debugger; // eslint-disable-line no-debugger
+        }
+
+        var rect = Reflect.apply(target, thisArg, args);
+        if (!thisArg.matches(selectors)) {
+          return rect;
+        }
+        var top = rect.top,
+          bottom = rect.bottom,
+          height = rect.height,
+          width = rect.width,
+          left = rect.left,
+          right = rect.right;
+        var newDOMRect = new window.DOMRect(rect.x, rect.y, top, bottom, width, height, left, right);
+        if (propToValueMap.has('top')) {
+          setRectValue(newDOMRect, 'top', propToValueMap.get('top'));
+        }
+        if (propToValueMap.has('bottom')) {
+          setRectValue(newDOMRect, 'bottom', propToValueMap.get('bottom'));
+        }
+        if (propToValueMap.has('left')) {
+          setRectValue(newDOMRect, 'left', propToValueMap.get('left'));
+        }
+        if (propToValueMap.has('right')) {
+          setRectValue(newDOMRect, 'right', propToValueMap.get('right'));
+        }
+        if (propToValueMap.has('height')) {
+          setRectValue(newDOMRect, 'height', propToValueMap.get('height'));
+        }
+        if (propToValueMap.has('width')) {
+          setRectValue(newDOMRect, 'width', propToValueMap.get('width'));
+        }
+        hit(source);
+        return newDOMRect;
+      };
+      var getBoundingClientRectHandler = {
+        apply: getBoundingClientRectWrapper,
+        get: getter
+      };
+      window.Element.prototype.getBoundingClientRect = new Proxy(window.Element.prototype.getBoundingClientRect, getBoundingClientRectHandler);
+    }

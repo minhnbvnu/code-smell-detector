@@ -1,0 +1,1 @@
+function voe(e,t){let r,i=c8(e);try{r=c8(t)}catch(a){if(a.code==="ENOENT")return{srcStat:i,destStat:null};throw a}return{srcStat:i,destStat:r}}

@@ -1,0 +1,1 @@
+function em(a){a=a|0;Yi(a);Oq(a);return}

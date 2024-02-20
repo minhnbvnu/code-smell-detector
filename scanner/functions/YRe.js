@@ -1,0 +1,1 @@
+function YRe(e){return!!(e&&typeof e=="object"&&"byteLength"in e&&"byteOffset"in e)}

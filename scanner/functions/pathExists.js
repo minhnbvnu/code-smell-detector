@@ -1,0 +1,1 @@
+function pathExists(path) { return shell.test('-e', path); }

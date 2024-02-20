@@ -1,0 +1,1 @@
+function vg_axisScaleRange(scale){return scale.rangeExtent?scale.rangeExtent():vg_axisScaleExtent(scale.range())}

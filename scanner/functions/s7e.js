@@ -1,0 +1,1 @@
+function s7e(e){return e!==null?e:{}}

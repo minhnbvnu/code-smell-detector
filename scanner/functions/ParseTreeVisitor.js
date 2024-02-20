@@ -1,0 +1,3 @@
+function ParseTreeVisitor() {
+	return this;
+}

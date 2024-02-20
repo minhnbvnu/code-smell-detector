@@ -1,0 +1,1 @@
+function Cz(n,t,e,i,r){let o=(i-t)*.5,s=(r-e)*.5,a=n*n,l=n*a;return(2*e-2*i+o+s)*l+(-3*e+3*i-2*o-s)*a+o*n+e}

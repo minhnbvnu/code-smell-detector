@@ -1,0 +1,1 @@
+function _serialize2(t){t.altKey&&this.buffer.push("alt");t.ctrlKey&&this.buffer.push("ctrl");t.metaKey&&this.buffer.push("meta");t.shiftKey&&this.buffer.push("shift");this.buffer.push(t.key);var r=this.buffer.join("+");this.buffer.length=0;return r}

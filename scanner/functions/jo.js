@@ -1,1 +1,1 @@
-function Jo(t){t.f||(t.f=!0,t.a.ua(t.i));var n=t.a;return t.a.ba().s(function(e){throw t.a==n&&t.reset(),e})}
+function jo(t){return l(this,"_erasNarrowRegex")||Wo.call(this),t?this._erasNarrowRegex:this._erasRegex}

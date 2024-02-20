@@ -1,0 +1,1 @@
+function zq(){return 4}

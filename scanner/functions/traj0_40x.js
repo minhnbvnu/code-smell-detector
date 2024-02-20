@@ -1,0 +1,1 @@
+function traj0_40x(u){return 2*center_xPhys-traj1_21x(u);}

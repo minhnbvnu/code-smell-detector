@@ -1,0 +1,1 @@
+function fk(a,b){a=a|0;b=b|0;var c=0,d=0,e=0,g=0,h=0;f[a>>2]=0;c=a+4|0;f[c>>2]=0;f[a+8>>2]=0;d=b+4|0;e=(f[d>>2]|0)-(f[b>>2]|0)|0;g=e>>2;if(!g)return;if(g>>>0>1073741823)aq(a);h=ln(e)|0;f[c>>2]=h;f[a>>2]=h;f[a+8>>2]=h+(g<<2);g=f[b>>2]|0;b=(f[d>>2]|0)-g|0;if((b|0)<=0)return;kh(h|0,g|0,b|0)|0;f[c>>2]=h+(b>>>2<<2);return}

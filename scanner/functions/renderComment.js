@@ -1,0 +1,1 @@
+function renderComment(elem){return"<!--"+elem.data+"-->"}

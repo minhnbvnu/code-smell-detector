@@ -1,0 +1,1 @@
+function n$(t){let e="0"+eU[nU++];while(nU<iU){if(!LU(eU[nU])){break}e+=eU[nU++]}if(XU(eU.charCodeAt(nU))||qU(eU.charCodeAt(nU))){k$({},AU,RU)}return{type:fU,value:parseInt(e,8),octal:true,start:t,end:nU}}

@@ -1,0 +1,1 @@
+function Prt(n,t){n.uniform2iv(this.addr,t)}

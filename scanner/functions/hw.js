@@ -1,1 +1,1 @@
-function Hw(a){a=a|0;var b=0;b=fa-16|0;fa=b;L[b+12>>2]=a;fa=b+16|0;return L[L[b+12>>2]+4>>2]}
+function hw(e,r,t,a){var n=er.find(e,r[t].location);if(!n)throw"Could not find ".concat(r[t].location," in Numbers template");var i=Bg(zg(n.content));var s=i.find(function(e){return e.id==t});a(s,i);n.content=Vg(Wg(i));n.size=n.content.length}

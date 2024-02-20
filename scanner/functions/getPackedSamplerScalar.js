@@ -1,6 +1,1 @@
-function getPackedSamplerScalar(inputInfo) {
-	  var texName = inputInfo.name;
-	  var funcName = 'get' + texName.charAt(0).toUpperCase() + texName.slice(1);
-	  var glsl = getGlslDifferences();
-	  return "\n    vec4 " + funcName + "() {\n      return " + glsl.texture2D + "(" + texName + ", halfCR);\n    }\n  ";
-	}
+function getPackedSamplerScalar(e){var t=e.name;return "\n    vec4 "+("get"+t.charAt(0).toUpperCase()+t.slice(1))+"() {\n      return texture2D("+t+", halfCR);\n    }\n  "}

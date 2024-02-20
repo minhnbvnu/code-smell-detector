@@ -1,8 +1,1 @@
-function writeInt(number, size, offset, buffer) {
-  for (let i = size + offset - 1; i > offset - 1; i--) {
-    buffer[i] = number & 0xff;
-    number >>= 8;
-  }
-
-  return offset + size;
-}
+function writeInt(t,r,o,c){for(var l=r+o-1;l>o-1;l--){c[l]=255&t;t>>=8}return o+r}

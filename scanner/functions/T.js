@@ -1,1 +1,1 @@
-function t(t,e,n,o,r){this.pipeline=new E(t,e,192,192,n,r),this.detectionConfidence=o}
+function T(e){if(e&&"LABEL"===e.tagName){if(e.control)return e.control;if(e.querySelector){var t=e.querySelector("input,textarea,select");if(t)return t}}return e}

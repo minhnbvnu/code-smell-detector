@@ -1,0 +1,1 @@
+function QF(t){t.registerComponentModel(kF),t.registerComponentView(FF),JF(t)}

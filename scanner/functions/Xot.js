@@ -1,0 +1,1 @@
+function Xot(n){let t,e,i,r,o,s,a,l,c=1;do{for(e=n,n=null,o=null,s=0;e;){for(s++,i=e,a=0,t=0;t<c&&(a++,i=i.nextZ,!!i);t++);for(l=c;a>0||l>0&&i;)a!==0&&(l===0||!i||e.z<=i.z)?(r=e,e=e.nextZ,a--):(r=i,i=i.nextZ,l--),o?o.nextZ=r:n=r,r.prevZ=o,o=r;e=i}o.nextZ=null,c*=2}while(s>1);return n}

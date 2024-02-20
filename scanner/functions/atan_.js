@@ -1,7 +1,1 @@
-function atan_(x) {
-	  var $x = convertToTensor(x, 'x', 'atan');
-	  var inputs = {
-	    x: $x
-	  };
-	  return ENGINE.runKernel(Atan, inputs);
-	}
+function atan_(e){var t=convertToTensor(e,"x","atan");return ENV.engine.runKernel(function(e){return e.atan(t)},{$x:t},function(e){return {$x:function(){return e.div(t.toFloat().square().add(1))}}})}

@@ -1,0 +1,1 @@
+function initCloneArray$1(array){var length=array.length,result=new array.constructor(length);return length&&"string"==typeof array[0]&&hasOwnProperty.call(array,"index")&&(result.index=array.index,result.input=array.input),result}

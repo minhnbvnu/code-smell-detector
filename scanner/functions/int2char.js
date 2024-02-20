@@ -1,0 +1,1 @@
+function int2char(n){return BI_RM.charAt(n)}

@@ -1,0 +1,1 @@
+function ck(a){a=a|0;var b=0,c=0,d=0,e=0,g=0,h=0;if(!(f[a+80>>2]|0)){b=0;return b|0}c=a+8|0;d=a+12|0;a=f[c>>2]|0;if(((f[d>>2]|0)-a|0)>0){e=0;g=a}else{b=1;return b|0}while(1){a=f[g+(e<<2)>>2]|0;e=e+1|0;if(!(Gl(a,a)|0)){b=0;h=5;break}g=f[c>>2]|0;if((e|0)>=((f[d>>2]|0)-g>>2|0)){b=1;h=5;break}}if((h|0)==5)return b|0;return 0}

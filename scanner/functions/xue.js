@@ -1,0 +1,1 @@
+function xue(e){return due.from(e||"","utf8").toString("base64")}

@@ -1,0 +1,1 @@
+function UU(a,b){a=a|0;b=b|0;var d=0,e=0;d=l;l=l+16|0;e=d;c[e>>2]=b;b=(nb[c[a>>2]&63](a,e,512)|0)!=0&1;l=d;return b|0}

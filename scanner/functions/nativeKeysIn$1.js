@@ -1,0 +1,1 @@
+function nativeKeysIn$1(object){var result=[];if(null!=object)for(var key in Object(object))result.push(key);return result}

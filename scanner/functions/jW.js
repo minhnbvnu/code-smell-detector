@@ -1,0 +1,1 @@
+function jW(n,t){let e=[];for(let i=t-n;i<t;++i)e.push(i);return e}

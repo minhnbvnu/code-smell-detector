@@ -1,18 +1,1 @@
-function createFragmentShader(gl, fragmentShaderSource) {
-	  var fragmentShader = throwIfNull(gl, function () {
-	    return gl.createShader(gl.FRAGMENT_SHADER);
-	  }, 'Unable to create fragment WebGLShader.');
-	  callAndCheck(gl, function () {
-	    return gl.shaderSource(fragmentShader, fragmentShaderSource);
-	  });
-	  callAndCheck(gl, function () {
-	    return gl.compileShader(fragmentShader);
-	  });
-
-	  if (gl.getShaderParameter(fragmentShader, gl.COMPILE_STATUS) === false) {
-	    logShaderSourceAndInfoLog(fragmentShaderSource, gl.getShaderInfoLog(fragmentShader));
-	    throw new Error('Failed to compile fragment shader.');
-	  }
-
-	  return fragmentShader;
-	}
+function createFragmentShader(e,t){var n=throwIfNull(e,function(){return e.createShader(e.FRAGMENT_SHADER)},"Unable to create fragment WebGLShader.");if(callAndCheck(e,function(){return e.shaderSource(n,t)}),callAndCheck(e,function(){return e.compileShader(n)}),!1===e.getShaderParameter(n,e.COMPILE_STATUS))throw logShaderSourceAndInfoLog(t,e.getShaderInfoLog(n)),new Error("Failed to compile fragment shader.");return n}

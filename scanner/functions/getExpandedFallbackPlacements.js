@@ -1,0 +1,1 @@
+function getExpandedFallbackPlacements(i){if(getBasePlacement(i)===_t)return[];var o=getOppositePlacement(i);return[getOppositeVariationPlacement(i),o,getOppositeVariationPlacement(o)]}

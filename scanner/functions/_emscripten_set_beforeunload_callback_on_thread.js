@@ -1,0 +1,1 @@
+function _emscripten_set_beforeunload_callback_on_thread(userData,callbackfunc,targetThread){if(typeof onbeforeunload==="undefined")return-1;if(targetThread!==1)return-5;registerBeforeUnloadEventCallback(2,userData,true,callbackfunc,28,"beforeunload");return 0}

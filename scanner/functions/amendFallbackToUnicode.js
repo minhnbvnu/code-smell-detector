@@ -1,0 +1,1 @@
+function amendFallbackToUnicode(t){if(t.fallbackToUnicode&&!(t.toUnicode instanceof m.IdentityToUnicodeMap)){var r=[];for(var o in t.fallbackToUnicode)t.toUnicode.has(o)||(r[o]=t.fallbackToUnicode[o]);r.length>0&&t.toUnicode.amend(r)}}

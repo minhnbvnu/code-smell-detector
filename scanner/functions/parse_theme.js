@@ -1,0 +1,1 @@
+function parse_theme(data,name,opts){return parse_theme_xml(data,opts)}

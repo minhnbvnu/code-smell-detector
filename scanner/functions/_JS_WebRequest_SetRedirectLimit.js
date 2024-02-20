@@ -1,0 +1,1 @@
+function _JS_WebRequest_SetRedirectLimit(request,redirectLimit){var requestOptions=wr.requests[request];if(!requestOptions){return}requestOptions.init.redirect=redirectLimit===0?"error":"follow"}

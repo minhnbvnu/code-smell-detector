@@ -1,0 +1,1 @@
+function b6e(e,t,r){let n=e.nodeValue.length;t>n&&(t=n);let i=t,a=t,l=0;t==0&&r<0||t==n&&r>=0?je.chrome||je.gecko||(t?(i--,l=1):a<n&&(a++,l=-1)):r<0?i--:a<n&&a++;let s=xu(e,i,a).getClientRects();if(!s.length)return null;let u=s[(l?l<0:r>=0)?0:s.length-1];return je.safari&&!l&&u.width==0&&(u=Array.prototype.find.call(s,c=>c.width)||u),l?pI(u,l<0):u||null}

@@ -1,0 +1,1 @@
+function internalScrollColumnIntoView(e,o){var t=scrollLeft+$viewportScrollContainerX.width();e<scrollLeft?($viewportScrollContainerX.scrollLeft(e),handleScroll(),render()):o>t&&($viewportScrollContainerX.scrollLeft(Math.min(e,o-$viewportScrollContainerX[0].clientWidth)),handleScroll(),render())}

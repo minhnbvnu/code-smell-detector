@@ -1,1 +1,1 @@
-function Du(a){a=a|0;var b=0;b=fa-16|0;L[b+12>>2]=a;return S(P[L[b+12>>2]+128>>2])}
+function du(t,e,i){i||(i=eu);var n=e[i[0]]-t[i[0]],o=e[i[1]]-t[i[1]];return 180*Math.atan2(o,n)/Math.PI}

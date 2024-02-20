@@ -1,0 +1,1 @@
+function fY(n){let{inputs:t,backend:e}=n,{x:i}=t;if(e.shouldExecuteOnCPU([i])&&i.dtype!=="complex64"){let o=e.texData.get(i.dataId),s=U1(o.values);return e.makeTensorInfo(i.shape,i.dtype,s)}let r;return ot().getBool("WEBGL_PACK_UNARY_OPERATIONS")?r=new Fi(i.shape,X6):r=new jn(i.shape,X6),e.runWebGLProgram(r,[i],i.dtype)}

@@ -1,0 +1,1 @@
+function tL(t,e){var n=rL(e);return n.endCreating&&(n.endCreating(t,e),nL(e,e.__brushOption)),e}

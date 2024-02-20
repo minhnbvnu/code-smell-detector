@@ -1,0 +1,1 @@
+function PostScriptLexer(t){_classCallCheck(this,PostScriptLexer);this.stream=t;this.nextChar();this.strBuf=[]}

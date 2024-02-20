@@ -1,0 +1,1 @@
+function Gpe(e){let{triggerRef:t,isOpen:r,onClose:n}=e;O.useEffect(()=>{if(!r||n===null)return;let i=a=>{let l=a.target;if(!t.current||l instanceof Node&&!l.contains(t.current))return;let s=n||zU.get(t.current);s&&s()};return window.addEventListener("scroll",i,!0),()=>{window.removeEventListener("scroll",i,!0)}},[r,n,t])}

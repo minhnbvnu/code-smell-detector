@@ -1,0 +1,1 @@
+function U_e(e){return q_e.test(e)&&N_e.test(e)}

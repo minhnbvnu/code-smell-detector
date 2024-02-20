@@ -1,0 +1,1 @@
+function gX(n){let{inputs:t,backend:e,attrs:i}=n,{indices:r,updates:o}=t,{shape:s}=i,{sliceRank:a,numUpdates:l,sliceSize:c,strides:u,outputSize:h}=F.calculateShapes(o,r,s),p=!0,d=e.bufferSync(r),f=e.bufferSync(o),m=A1(d,f,s,h,c,l,a,u,0,p);return e.makeTensorInfo(s,m.dtype,m.values)}

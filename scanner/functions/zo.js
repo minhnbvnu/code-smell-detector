@@ -1,1 +1,1 @@
-function Zo(t){return!(!t||"auth/cordova-not-ready"!=t.code)}
+function zo(t,e){return e.erasNameRegex(t)}

@@ -1,0 +1,1 @@
+function parenAfter(){return/^(\s|\/\/.*|\/\*[^]*?\*\/)*\(/.test(this.input.slice(this.pos))}

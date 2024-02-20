@@ -1,7 +1,1 @@
-function checkWebGLError(gl) {
-	  var error = gl.getError();
-
-	  if (error !== gl.NO_ERROR) {
-	    throw new Error('WebGL Error: ' + getWebGLErrorMessage(gl, error));
-	  }
-	}
+function checkWebGLError(e){if(webGLDebugErrorCheckingEnabled){var t=e.getError();if(t!==e.NO_ERROR)throw new Error("WebGL Error: "+getWebGLErrorMessage(e,t))}}

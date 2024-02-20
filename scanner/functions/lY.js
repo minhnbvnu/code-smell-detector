@@ -1,0 +1,1 @@
+function lY(n){let{inputs:t,backend:e,attrs:i}=n,{x:r}=t,{alpha:o}=i,s=e.makeTensorInfo([],"float32",R.createScalarValue(o,"float32")),a=ot().getBool("WEBGL_PACK_BINARY_OPERATIONS")?new Oi(hw,r.shape,s.shape):new vi(uw,r.shape,s.shape),l=e.runWebGLProgram(a,[r,s],r.dtype);return e.disposeIntermediateTensorInfo(s),l}

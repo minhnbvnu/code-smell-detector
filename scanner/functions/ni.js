@@ -1,1 +1,1 @@
-function Ni(t,n){if(!n||!n.length)return!0;if(!t)return!1;for(var e=0;e<n.length;e++){var i=t[n[e]];if(void 0===i||null===i||""===i)return!1}return!0}
+function ni(t,e){var i=12*(e.year()-t.year())+(e.month()-t.month()),n=t.clone().add(i,"months");return-(i+(e-n<0?(e-n)/(n-t.clone().add(i-1,"months")):(e-n)/(t.clone().add(i+1,"months")-n)))||0}

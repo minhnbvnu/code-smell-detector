@@ -1,0 +1,1 @@
+function L(e,t){clearInterval(ie);var n,i=0,r=G(),a=r;return n=ionic.Platform.isAndroid()&&ionic.Platform.version()<4.4?30:ionic.Platform.isAndroid()?10:1,ie=setInterval(function(){a=G(),(!(++i<n)||(N(a)||z(a))&&ionic.keyboard.height)&&(V()||(ionic.keyboard.height=Math.abs(r-window.innerHeight)),ionic.keyboard.isOpen=t,clearInterval(ie),e())},50),n}

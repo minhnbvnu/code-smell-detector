@@ -1,0 +1,1 @@
+function getNode(viewBox){var paths=[];for(var _i=1;_i<arguments.length;_i++){paths[_i-1]=arguments[_i];}return{tag:'svg',attrs:{viewBox:viewBox,focusable:false},children:paths.map(function(path){if(Array.isArray(path)){return{tag:'path',attrs:{fill:path[0],d:path[1]}};}return{tag:'path',attrs:{d:path}};})};}

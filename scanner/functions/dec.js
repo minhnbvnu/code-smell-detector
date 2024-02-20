@@ -1,0 +1,1 @@
+function dec(s){return s.replace(/\\[\\rn]/g,function(c){if(c==='\\n')return'\n';else if(c==='\\\\')return'\\';return'\r';});}

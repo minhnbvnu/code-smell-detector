@@ -1,0 +1,1 @@
+function Severity(t){_classCallCheck(this,Severity);return r.call(this,d,"severity",["ignore","error","information","trace","warning"])}

@@ -1,4 +1,4 @@
-function draw_polygon_or_line_strip(ctx, points, stroke, fill, close_path) {
+function draw_polygon_or_line_strip(ctx, points, stroke, fill, close_path){
 		if (!gl) {
 			show_error_message("Failed to get WebGL context. You may need to refresh the web page, or restart your computer.");
 			return; // @TODO: don't pollute brush cache with empty brushes (also maybe fallback to 2D canvas rendering)
@@ -8,7 +8,7 @@ function draw_polygon_or_line_strip(ctx, points, stroke, fill, close_path) {
 		// otherwise update_brush_for_drawing_lines calls render_brush calls draw_ellipse calls draw_polygon calls draw_polygon_or_line_strip
 		// trying to use the same op_canvas
 		// (also, avoiding infinite recursion by checking for stroke; assuming brushes will never have outlines)
-		if (stroke && stroke_size > 1) {
+		if(stroke && stroke_size > 1){
 			update_brush_for_drawing_lines(stroke_size);
 		}
 
@@ -18,7 +18,7 @@ function draw_polygon_or_line_strip(ctx, points, stroke, fill, close_path) {
 		const numPoints = points.length;
 		const numCoords = numPoints * 2;
 
-		if (numPoints === 0) {
+		if(numPoints === 0){
 			return;
 		}
 
@@ -26,7 +26,7 @@ function draw_polygon_or_line_strip(ctx, points, stroke, fill, close_path) {
 		let x_max = -Infinity;
 		let y_min = +Infinity;
 		let y_max = -Infinity;
-		for (const { x, y } of points) {
+		for (const {x, y} of points) {
 			x_min = Math.min(x, x_min);
 			x_max = Math.max(x, x_max);
 			y_min = Math.min(y, y_min);
@@ -43,12 +43,12 @@ function draw_polygon_or_line_strip(ctx, points, stroke, fill, close_path) {
 
 		const coords = new Float32Array(numCoords);
 		for (let i = 0; i < numPoints; i++) {
-			coords[i * 2 + 0] = (points[i].x - x_min) / op_canvas_webgl.width * 2 - 1;
-			coords[i * 2 + 1] = 1 - (points[i].y - y_min) / op_canvas_webgl.height * 2;
+			coords[i*2+0] = (points[i].x - x_min) / op_canvas_webgl.width * 2 - 1;
+			coords[i*2+1] = 1 - (points[i].y - y_min) / op_canvas_webgl.height * 2;
 			// @TODO: investigate: does this cause resolution/information loss? can we change the coordinate system?
 		}
 
-		if (fill) {
+		if(fill){
 			const contours = [coords];
 			const polyTriangles = triangulate(contours);
 			let numVertices = initArrayBuffer(polyTriangles);
@@ -62,8 +62,8 @@ function draw_polygon_or_line_strip(ctx, points, stroke, fill, close_path) {
 			replace_colors_with_swatch(op_ctx_2d, fill_color, x_min, y_min);
 			ctx.drawImage(op_canvas_2d, x_min, y_min);
 		}
-		if (stroke) {
-			if (stroke_size > 1) {
+		if(stroke){
+			if(stroke_size > 1){
 				const stroke_margin = ~~(stroke_size * 1.1);
 
 				const op_canvas_x = x_min - stroke_margin;
@@ -87,7 +87,7 @@ function draw_polygon_or_line_strip(ctx, points, stroke, fill, close_path) {
 
 				replace_colors_with_swatch(op_ctx_2d, stroke_color, op_canvas_x, op_canvas_y);
 				ctx.drawImage(op_canvas_2d, op_canvas_x, op_canvas_y);
-			} else {
+			}else{
 				let numVertices = initArrayBuffer(coords);
 				gl.clear(gl.COLOR_BUFFER_BIT);
 				gl.drawArrays(close_path ? gl.LINE_LOOP : gl.LINE_STRIP, 0, numVertices);

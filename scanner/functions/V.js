@@ -1,0 +1,1 @@
+function V(){return!!(window.cordova&&cordova.plugins&&cordova.plugins.Keyboard)}

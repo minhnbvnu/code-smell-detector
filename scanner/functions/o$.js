@@ -1,0 +1,1 @@
+function o$(n){for(var t=am(n,1),e=t[0],i=new bl([],[],[],n),r=0;r<e;r++)i.set(r,r,1);return i}

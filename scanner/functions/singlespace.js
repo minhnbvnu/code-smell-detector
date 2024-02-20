@@ -1,0 +1,3 @@
+function singlespace () {
+  console.log()
+}

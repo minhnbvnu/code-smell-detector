@@ -1,0 +1,1 @@
+function Yot(n,t){return n.next.i!==t.i&&n.prev.i!==t.i&&!Zot(n,t)&&(sd(n,t)&&sd(t,n)&&Jot(n,t)&&(We(n.prev,n,t.prev)||We(n,t.prev,t))||Cv(n,t)&&We(n.prev,n,n.next)>0&&We(t.prev,t,t.next)>0)}

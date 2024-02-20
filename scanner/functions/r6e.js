@@ -1,0 +1,1 @@
+function r6e(e){if(dD)return dD.test(e);for(let t=0;t<e.length;t++){let r=e[t];if(/\w/.test(r)||r>""&&(r.toUpperCase()!=r.toLowerCase()||t6e.test(r)))return!0}return!1}

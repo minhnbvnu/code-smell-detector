@@ -1,0 +1,1 @@
+function parse_CellXF(blob,length){return parse_CellStyleXF(blob,length,0)}

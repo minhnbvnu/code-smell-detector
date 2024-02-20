@@ -1,8 +1,1 @@
-function Program(node) {
-	  this.printInnerComments(node, false);
-
-	  this.printSequence(node.directives, node);
-	  if (node.directives && node.directives.length) this.newline();
-
-	  this.printSequence(node.body, node);
-	}
+function Program(i,o,s,u){this.type="Root",this.jsx=u.jsx||"React.createElement",this.jsxFragment=u.jsxFragment||"React.Fragment",this.options=u,this.source=i,this.magicString=new Nd(i),this.ast=o,this.depth=0,wrap(this.body=o,this),this.body.__proto__=Zd.prototype,this.templateLiteralQuasis=Object.create(null);for(var C=0;C<this.body.body.length;++C)if(!this.body.body[C].directive){this.prependAt=this.body.body[C].start;break}this.objectWithoutPropertiesHelper=null,this.indentExclusionElements=[],this.body.initialise(s),this.indentExclusions=Object.create(null);for(var _=0,w=this.indentExclusionElements;_<w.length;_+=1)for(var P=w[_],B=P.start;B<P.end;B+=1)this.indentExclusions[B]=!0;this.body.transpile(this.magicString,s)}

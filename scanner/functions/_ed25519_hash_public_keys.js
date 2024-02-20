@@ -1,0 +1,1 @@
+function _ed25519_hash_public_keys($0,$1,$2){$0=$0|0;$1=$1|0;$2=$2|0;var $3=0,label=0,sp=0;sp=STACKTOP;$3=$2<<5;_sha512($1,$3,$0)|0;return}

@@ -1,0 +1,1 @@
+function PatternCS(t){var o;_classCallCheck(this,PatternCS);(o=r.call(this,"Pattern",null)).base=t;return o}

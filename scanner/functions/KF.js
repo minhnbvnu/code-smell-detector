@@ -1,0 +1,1 @@
+function KF(t,e){return t&&t.hasOwnProperty&&t.hasOwnProperty(e)}

@@ -1,0 +1,1 @@
+function getRawTag$1(value){var isOwn=hasOwnProperty$b.call(value,symToStringTag$1),tag=value[symToStringTag$1];try{value[symToStringTag$1]=void 0;var unmasked=!0}catch(e){}var result=nativeObjectToString$1.call(value);return unmasked&&(isOwn?value[symToStringTag$1]=tag:delete value[symToStringTag$1]),result}

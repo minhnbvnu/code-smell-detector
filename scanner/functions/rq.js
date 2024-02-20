@@ -1,0 +1,1 @@
+function rq(a,b){a=+a;b=+b;return +(+Yl(a,b))}

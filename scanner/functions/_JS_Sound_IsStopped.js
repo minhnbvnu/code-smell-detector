@@ -1,0 +1,1 @@
+function _JS_Sound_IsStopped(channelInstance){if(WEBAudio.audioWebEnabled==0)return true;var channel=WEBAudio.audioInstances[channelInstance];if(!channel)return true;return channel.isStopped()}

@@ -1,0 +1,1 @@
+function T3(n){let t=zd(),e=new Float32Array(n);for(let i=0;i<n;++i)e[i]=t();return e}

@@ -1,0 +1,2 @@
+function cout(message, colorIndex) {
+}

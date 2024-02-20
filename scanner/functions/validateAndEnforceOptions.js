@@ -1,0 +1,1 @@
+function validateAndEnforceOptions(){options.autoHeight&&(options.leaveSpaceForNewRows=!1),options.forceFitColumns&&(options.autosizeColsMode=Slick.GridAutosizeColsMode.LegacyForceFit,console.log("forceFitColumns option is deprecated - use autosizeColsMode"))}

@@ -1,0 +1,1 @@
+function invalidatePostProcessingResults(e){for(var o in postProcessedRows[e])postProcessedRows[e].hasOwnProperty(o)&&(postProcessedRows[e][o]="C");postProcessFromRow=Math.min(postProcessFromRow,e),postProcessToRow=Math.max(postProcessToRow,e),startPostProcessing()}

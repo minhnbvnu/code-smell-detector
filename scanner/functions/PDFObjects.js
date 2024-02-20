@@ -1,0 +1,1 @@
+function PDFObjects(){_classCallCheck(this,PDFObjects);_classPrivateMethodInitSpec(this,_ensureObj);_classPrivateFieldInitSpec(this,_objs,{writable:!0,value:Object.create(null)})}

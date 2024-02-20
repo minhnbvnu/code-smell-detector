@@ -1,14 +1,13 @@
-function compileShader(gl, type, source) {
-    const shader = gl.createShader(type);
+function compileShader(type, source) {
+			var shader = gl.createShader(type);
+			gl.shaderSource(shader, source);
+			gl.compileShader(shader);
 
-    gl.shaderSource(shader, source);
-    gl.compileShader(shader);
+			if (!gl.getShaderParameter(shader, gl.COMPILE_STATUS)) {
+				var err = gl.getShaderInfoLog(shader);
+				gl.deleteShader(shader);
+				throw new Error('GL shader compilation for ' + type + ' failed: ' + err);
+			}
 
-    const compiled = gl.getShaderParameter(shader, gl.COMPILE_STATUS);
-    if (!compiled) {
-        const error = gl.getShaderInfoLog(shader);
-        gl.deleteShader(shader);
-        throw new Error('Failed to compile shader: ' + error);
-    }
-    return shader;
-}
+			return shader;
+		}

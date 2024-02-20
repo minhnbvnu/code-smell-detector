@@ -1,0 +1,1 @@
+function add3scalar(a,f) { return [a[0]+f, a[1]+f, a[2]+f];}

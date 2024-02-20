@@ -1,0 +1,1 @@
+function setFooterRowVisibility(e,o){var t=!1!==o;options.showFooterRow!=e&&(options.showFooterRow=e,e?t?$footerRowScroller.slideDown("fast",resizeCanvas):($footerRowScroller.show(),resizeCanvas()):t?$footerRowScroller.slideUp("fast",resizeCanvas):($footerRowScroller.hide(),resizeCanvas()))}

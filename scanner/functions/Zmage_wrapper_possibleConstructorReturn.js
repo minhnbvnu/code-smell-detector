@@ -1,0 +1,1 @@
+function Zmage_wrapper_possibleConstructorReturn(self, call) { if (call && (Zmage_wrapper_typeof(call) === "object" || typeof call === "function")) { return call; } return Zmage_wrapper_assertThisInitialized(self); }

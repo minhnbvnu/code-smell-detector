@@ -1,0 +1,1 @@
+function xM(t,e){if(t.nodeCount()<=1)return[];var r=kM(t,e||_M),n=vM(r.graph,r.buckets,r.zeroIdx);return _a(ir(n,function(i){return t.outEdges(i.v,i.w)}))}

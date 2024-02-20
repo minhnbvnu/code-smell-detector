@@ -1,0 +1,1 @@
+function tri(a, b, c) { return flip ? [a, c, b] : [a, b, c]; }

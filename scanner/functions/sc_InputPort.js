@@ -1,0 +1,2 @@
+function sc_InputPort() {
+}

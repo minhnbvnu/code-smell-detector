@@ -1,3 +1,1 @@
-function getUnpackedArraySizeFromMatrixSize(matrixSize, channelsPerTexture) {
-	  return matrixSize * channelsPerTexture;
-	}
+function getUnpackedArraySizeFromMatrixSize(e,t){return e*t}

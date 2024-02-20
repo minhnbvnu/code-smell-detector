@@ -1,0 +1,1 @@
+function write_BrtFileVersion(data,o){if(!o)o=new_buf(127);for(var i=0;i!=4;++i)o.write_shift(4,0);write_XLWideString("SheetJS",o);write_XLWideString(XLSX.version,o);write_XLWideString(XLSX.version,o);write_XLWideString("7262",o);o.length=o.l;return o}

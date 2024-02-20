@@ -1,0 +1,1 @@
+function th(t){return t instanceof Number||"number"==typeof t}

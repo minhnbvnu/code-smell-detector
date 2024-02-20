@@ -1,0 +1,1 @@
+function xh(t,e,i,n){var r;return e.hasOwnProperty(t)?e[t].redundant.length>0?(r=e[t].redundant[0],e[t].redundant.shift()):(r=document.createElement(t),void 0!==n?i.insertBefore(r,n):i.appendChild(r)):(r=document.createElement(t),e[t]={used:[],redundant:[]},void 0!==n?i.insertBefore(r,n):i.appendChild(r)),e[t].used.push(r),r}

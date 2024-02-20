@@ -1,0 +1,1 @@
+function GroupParent(t){_classCallCheck(this,GroupParent);return r.call(this,d,"groupParent")}

@@ -1,4 +1,1 @@
-function Ref(num, gen) {
-    this.num = num;
-    this.gen = gen;
-  }
+function Ref(t,r){_classCallCheck(this,Ref);this.num=t;this.gen=r}

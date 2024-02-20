@@ -1,0 +1,1 @@
+function parse_UncheckedRfX(data){var cell={s:{},e:{}};cell.s.r=data.read_shift(4);cell.e.r=data.read_shift(4);cell.s.c=data.read_shift(4);cell.e.c=data.read_shift(4);return cell}

@@ -1,0 +1,1 @@
+function p_e(e){for(var t=Cue.copy(e._opts),r=0;r<$z.length;r++)delete t[$z[r]];return t}

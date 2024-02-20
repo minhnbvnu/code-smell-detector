@@ -1,0 +1,3 @@
+function displayChoices() {
+        setHasBeenClicked(true);
+    }

@@ -1,0 +1,1 @@
+function _JS_MobileKeyboard_SetCharacterLimit(limit){if(!mobile_input)return;mobile_input.input.maxLength=limit}

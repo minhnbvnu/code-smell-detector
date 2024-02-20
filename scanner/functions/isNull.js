@@ -1,3 +1,3 @@
-function isNull(propertyName) {
-  return new IsNull(propertyName);
+function isNull(value) {
+  return value === null;
 }

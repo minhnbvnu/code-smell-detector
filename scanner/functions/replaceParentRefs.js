@@ -1,0 +1,1 @@
+function replaceParentRefs(i,o){for(var s=o.split(an),u=i.split(an),C="",_=0;_<s.length;_++)for(var w=s[_],P=0;P<u.length;P++){var B=u[P];C&&(C+=", "),C+=-1!==B.indexOf("&")?B.replace(nn,w):w+" "+B}return C}

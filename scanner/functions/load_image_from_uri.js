@@ -14,11 +14,6 @@ async function load_image_from_uri(uri) {
 	//   - The user may be just trying to paste text, not an image.
 	// - non-CORS-enabled URI
 	//   --> Use a CORS proxy! :)
-	//   - In electron, using a CORS proxy 1. is silly, 2. maybe isn't working.
-	//     --> Either proxy requests to the main process,
-	//         or configure headers in the main process to make requests work.
-	//         Probably the latter. @TODO
-	//         https://stackoverflow.com/questions/51254618/how-do-you-handle-cors-in-an-electron-app
 	// - invalid image / unsupported image format
 	// - image is no longer available on the live web
 	//   --> try loading from WayBack Machine :)
@@ -61,20 +56,20 @@ async function load_image_from_uri(uri) {
 				$status_text.text("Downloading picture...");
 			}
 
-			const show_progress = ({ loaded, total }) => {
+			const show_progress = ({loaded, total})=> {
 				if (is_download) {
-					$status_text.text(`Downloading picture... (${Math.round(loaded / total * 100)}%)`);
+					$status_text.text(`Downloading picture... (${Math.round(loaded/total*100)}%)`);
 				}
 			};
 
 			if (is_download) {
-				console.log(`Try loading image from URI (${index_to_try + 1}/${uris_to_try.length}): "${uri_to_try}"`);
+				console.log(`Try loading image from URI (${index_to_try+1}/${uris_to_try.length}): "${uri_to_try}"`);
 			}
 
 			const original_response = await fetch(uri_to_try);
 			let response_to_read = original_response;
 			if (!original_response.ok) {
-				fails.push({ status: original_response.status, statusText: original_response.statusText, url: uri_to_try });
+				fails.push({status: original_response.status, statusText: original_response.statusText, url: uri_to_try});
 				continue;
 			}
 			if (!original_response.body) {
@@ -97,21 +92,21 @@ async function load_image_from_uri(uri) {
 						new ReadableStream({
 							start(controller) {
 								const reader = original_response.body.getReader();
-
+			
 								read();
 								function read() {
-									reader.read().then(({ done, value }) => {
+									reader.read().then(({done, value}) => {
 										if (done) {
 											controller.close();
-											return;
+											return; 
 										}
 										loaded += value.byteLength;
-										show_progress({ loaded, total })
+										show_progress({loaded, total})
 										controller.enqueue(value);
 										read();
 									}).catch(error => {
 										console.error(error);
-										controller.error(error)
+										controller.error(error)									
 									})
 								}
 							}
@@ -119,7 +114,7 @@ async function load_image_from_uri(uri) {
 					);
 				}
 			}
-
+	
 			const blob = await response_to_read.blob();
 			if (is_download) {
 				console.log("Download complete.");
@@ -130,8 +125,8 @@ async function load_image_from_uri(uri) {
 			// since a website might start redirecting swathes of URLs regardless of what they originally pointed to,
 			// at which point they would likely point to a web page instead of an image.
 			// (But still show an error about it not being an image, if WayBack also fails.)
-			const info = await new Promise((resolve, reject) => {
-				read_image_file(blob, (error, info) => {
+			const info = await new Promise((resolve, reject)=> {
+				read_image_file(blob, (error, info)=> {
 					if (error) {
 						reject(error);
 					} else {
@@ -141,13 +136,13 @@ async function load_image_from_uri(uri) {
 			});
 			return info;
 		} catch (error) {
-			fails.push({ url: uri_to_try, error });
+			fails.push({url: uri_to_try, error});
 		}
 	}
 	if (is_download) {
 		$status_text.text("Failed to download picture.");
 	}
-	const error = new Error(`failed to fetch image from any of ${uris_to_try.length} URI(s):\n  ${fails.map((fail) =>
+	const error = new Error(`failed to fetch image from any of ${uris_to_try.length} URI(s):\n  ${fails.map((fail)=>
 		(fail.statusText ? `${fail.status} ${fail.statusText} ` : "") + fail.url + (fail.error ? `\n    ${fail.error}` : "")
 	).join("\n  ")}`);
 	error.code = "access-failure";

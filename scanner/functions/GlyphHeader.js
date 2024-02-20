@@ -1,0 +1,1 @@
+function GlyphHeader(t){var r=t.numberOfContours,o=t.xMin,c=t.yMin,l=t.xMax,u=t.yMax;_classCallCheck(this,GlyphHeader);this.numberOfContours=r;this.xMin=o;this.yMin=c;this.xMax=l;this.yMax=u}

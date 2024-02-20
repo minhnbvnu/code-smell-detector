@@ -1,0 +1,1 @@
+function kot(n,t){let e=1-n;return e*e*t}

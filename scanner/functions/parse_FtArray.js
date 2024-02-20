@@ -1,0 +1,1 @@
+function parse_FtArray(blob,length,ot){var s=blob.l;var fts=[];while(blob.l<s+length){var ft=blob.read_shift(2);blob.l-=2;try{fts.push(FtTab[ft](blob,s+length-blob.l))}catch(e){blob.l=s+length;return fts}}if(blob.l!=s+length)blob.l=s+length;return fts}

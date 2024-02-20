@@ -1,0 +1,1 @@
+function isPrototype$3(value){var Ctor=value&&value.constructor;return value===("function"==typeof Ctor&&Ctor.prototype||objectProto$6)}

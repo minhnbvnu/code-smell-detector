@@ -1,0 +1,1 @@
+function parseTableAlignCapture(i){return Fa.test(i)?"right":wa.test(i)?"center":ka.test(i)?"left":null}

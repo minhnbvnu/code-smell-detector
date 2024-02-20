@@ -1,1 +1,1 @@
-function Aw(a){a=a|0;var b=0,c=0;b=fa-16|0;fa=b;L[b+12>>2]=a;a=fa-16|0;fa=a;L[a+12>>2]=L[b+12>>2];c=fa-16|0;L[c+12>>2]=L[a+12>>2]+12;fa=a+16|0;fa=b+16|0;return L[L[c+12>>2]+4>>2]}
+function aw(e,r,t){var a=Lg(r.data);var n;if(!(t==null?void 0:t.dense))n={"!ref":"A1"};else n=[];n["!ref"]="A1";var i=e[Jg(a[2][0].data)];var s=Pg(i[0].meta[1][0].data);if(s!=6001)throw new Error("6000 unexpected reference to ".concat(s));tw(e,i[0],n);return n}

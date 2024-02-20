@@ -1,0 +1,1 @@
+function Fill(t){var o;_classCallCheck(this,Fill);(o=r.call(this,_,"fill",!0)).id=t.id||"";o.presence=(0,d.getStringOption)(t.presence,["visible","hidden","inactive","invisible"]);o.use=t.use||"";o.usehref=t.usehref||"";o.color=null;o.extras=null;o.linear=null;o.pattern=null;o.radial=null;o.solid=null;o.stipple=null;return o}

@@ -1,0 +1,1 @@
+function Ub(a){var b=[];n(a,function(a,c){L(a)?n(a,function(a){b.push(ha(c,!0)+(!0===a?"":"="+ha(a,!0)))}):b.push(ha(c,!0)+(!0===a?"":"="+ha(a,!0)))});return b.length?b.join("&"):""}

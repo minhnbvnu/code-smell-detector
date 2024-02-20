@@ -1,0 +1,1 @@
+function getDataLengthIncludingAddNew(){return getDataLength()+(options.enableAddRow&&(!pagingActive||pagingIsLastPage)?1:0)}

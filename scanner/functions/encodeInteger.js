@@ -1,0 +1,1 @@
+function encodeInteger(i){var o="";i=i<0?-i<<1|1:i<<1;do{var s=31&i;(i>>>=5)>0&&(s|=32),o+=Sd[s]}while(i>0);return o}

@@ -1,0 +1,1 @@
+function XBe(e){var t=e._opts.meta;return e._opts.defaultMeta=typeof t=="object"?e._getId(t)||t:e.getSchema(i1)?i1:void 0,e._opts.defaultMeta}

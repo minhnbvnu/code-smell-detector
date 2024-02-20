@@ -1,0 +1,1 @@
+function QEe(){if(typeof process=="object"&&process.stdout&&process.stdout.columns)return process.stdout.columns}

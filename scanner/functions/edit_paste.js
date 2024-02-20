@@ -1,8 +1,8 @@
-async function edit_paste(execCommandFallback) {
-	if (
+async function edit_paste(execCommandFallback){
+	if(
 		document.activeElement instanceof HTMLInputElement ||
 		document.activeElement instanceof HTMLTextAreaElement
-	) {
+	){
 		if (!navigator.clipboard || !navigator.clipboard.readText) {
 			if (execCommandFallback) {
 				return try_exec_command("paste");
@@ -27,11 +27,11 @@ async function edit_paste(execCommandFallback) {
 		const clipboardItems = await navigator.clipboard.read();
 		const blob = await clipboardItems[0].getType("image/png");
 		paste_image_from_file(blob);
-	} catch (error) {
+	} catch(error) {
 		if (error.name === "NotFoundError") {
 			try {
 				const clipboardText = await navigator.clipboard.readText();
-				if (clipboardText) {
+				if(clipboardText) {
 					const uris = get_uris(clipboardText);
 					if (uris.length > 0) {
 						load_image_from_uri(uris[0]).then((info) => {
@@ -46,7 +46,7 @@ async function edit_paste(execCommandFallback) {
 				} else {
 					show_error_message("The information on the Clipboard can't be inserted into Paint.");
 				}
-			} catch (error) {
+			} catch(error) {
 				show_error_message(localize("Error getting the Clipboard Data!"), error);
 			}
 		} else {

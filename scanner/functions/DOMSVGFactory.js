@@ -1,0 +1,1 @@
+function DOMSVGFactory(){_classCallCheck(this,DOMSVGFactory);return r.apply(this,arguments)}

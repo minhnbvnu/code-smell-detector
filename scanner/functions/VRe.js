@@ -1,0 +1,1 @@
+function VRe(e){if(up(e),e.length===0)return".";let t=-1,r=e.length,n;for(;--r;)if(e.codePointAt(r)===47){if(n){t=r;break}}else n||(n=!0);return t<0?e.codePointAt(0)===47?"/":".":t===1&&e.codePointAt(0)===47?"//":e.slice(0,t)}

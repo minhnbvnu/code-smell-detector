@@ -1,0 +1,1 @@
+function $7e(e,t,r){if(typeof t=="function")V7(e,t,Ro.extend({schema:R7},r));else return V7(e,Ro.extend({schema:R7},r))}

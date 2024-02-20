@@ -1,0 +1,1 @@
+function Xse(e){this[Tn].emit("message",e)}

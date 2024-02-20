@@ -1,0 +1,1 @@
+function parse_Dimensions(blob,length){var w=length===10?2:4;var r=blob.read_shift(w),R=blob.read_shift(w),c=blob.read_shift(2),C=blob.read_shift(2);blob.l+=2;return{s:{r:r,c:c},e:{r:R,c:C}}}

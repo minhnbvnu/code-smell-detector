@@ -1,22 +1,26 @@
 function Markdown(runner) {
   Base.call(this, runner);
 
-  var level = 0;
-  var buf = '';
+  var self = this
+    , stats = this.stats
+    , level = 0
+    , buf = '';
 
   function title(str) {
     return Array(level).join('#') + ' ' + str;
   }
 
-  function mapTOC(suite, obj) {
-    var ret = obj;
-    var key = SUITE_PREFIX + suite.title;
+  function indent() {
+    return Array(level).join('  ');
+  }
 
-    obj = obj[key] = obj[key] || {suite: suite};
-    suite.suites.forEach(function(suite) {
+  function mapTOC(suite, obj) {
+    var ret = obj,
+        key = SUITE_PREFIX + suite.title;
+    obj = obj[key] = obj[key] || { suite: suite };
+    suite.suites.forEach(function(suite){
       mapTOC(suite, obj);
     });
-
     return ret;
   }
 
@@ -25,9 +29,7 @@ function Markdown(runner) {
     var buf = '';
     var link;
     for (var key in obj) {
-      if (key === 'suite') {
-        continue;
-      }
+      if ('suite' == key) continue;
       if (key !== SUITE_PREFIX) {
         link = ' - [' + key.substring(1) + ']';
         link += '(#' + utils.slug(obj[key].suite.fullTitle()) + ')\n';
@@ -45,26 +47,26 @@ function Markdown(runner) {
 
   generateTOC(runner.suite);
 
-  runner.on('suite', function(suite) {
+  runner.on('suite', function(suite){
     ++level;
     var slug = utils.slug(suite.fullTitle());
     buf += '<a name="' + slug + '"></a>' + '\n';
     buf += title(suite.title) + '\n';
   });
 
-  runner.on('suite end', function() {
+  runner.on('suite end', function(suite){
     --level;
   });
 
-  runner.on('pass', function(test) {
-    var code = utils.clean(test.body);
+  runner.on('pass', function(test){
+    var code = utils.clean(test.fn.toString());
     buf += test.title + '.\n';
     buf += '\n```js\n';
     buf += code + '\n';
     buf += '```\n\n';
   });
 
-  runner.once('end', function() {
+  runner.on('end', function(){
     process.stdout.write('# TOC\n');
     process.stdout.write(generateTOC(runner.suite));
     process.stdout.write(buf);

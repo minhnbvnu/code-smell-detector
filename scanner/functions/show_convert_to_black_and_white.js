@@ -5,12 +5,12 @@ function show_convert_to_black_and_white() {
 	const $slider = $w.$main.find("input[type='range']");
 	const original_canvas = make_canvas(main_canvas);
 	let threshold;
-	const update_threshold = () => {
+	const update_threshold = ()=> {
 		make_or_update_undoable({
 			name: "Make Monochrome",
-			match: (history_node) => history_node.name === "Make Monochrome",
+			match: (history_node)=> history_node.name === "Make Monochrome",
 			icon: get_help_folder_icon("p_monochrome.png"),
-		}, () => {
+		}, ()=> {
 			threshold = $slider.val();
 			main_ctx.copy(original_canvas);
 			threshold_black_and_white(main_ctx, threshold);
@@ -19,17 +19,17 @@ function show_convert_to_black_and_white() {
 	update_threshold();
 	$slider.on("input", debounce(update_threshold, 100));
 
-	$w.$Button(localize("OK"), () => {
+	$w.$Button(localize("OK"), ()=> {
 		$w.close();
-	}, { type: "submit" }).focus();
-	$w.$Button(localize("Cancel"), () => {
+	}).focus();
+	$w.$Button(localize("Cancel"), ()=> {
 		if (current_history_node.name === "Make Monochrome") {
 			undo();
 		} else {
 			undoable({
 				name: "Cancel Make Monochrome",
 				icon: get_help_folder_icon("p_color.png"),
-			}, () => {
+			}, ()=> {
 				main_ctx.copy(original_canvas);
 			});
 		}

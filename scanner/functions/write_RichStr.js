@@ -1,0 +1,1 @@
+function write_RichStr(str,o){if(o==null)o=new_buf(5+2*str.t.length);o.write_shift(1,0);write_XLWideString(str.t,o);return o}

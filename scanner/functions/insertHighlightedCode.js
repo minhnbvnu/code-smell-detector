@@ -1,0 +1,1 @@
+function insertHighlightedCode(i){B.highlightedCode=i,C.hooks.run("before-insert",B),B.element.innerHTML=B.highlightedCode,C.hooks.run("after-highlight",B),C.hooks.run("complete",B),u&&u.call(B.element)}

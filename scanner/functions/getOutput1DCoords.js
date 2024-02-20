@@ -1,11 +1,1 @@
-function getOutput1DCoords(shape, texShape) {
-	  if (texShape[0] === 1) {
-	    return "\n      int getOutputCoords() {\n        return int(resultUV.x * " + texShape[1] + ".0);\n      }\n    ";
-	  }
-
-	  if (texShape[1] === 1) {
-	    return "\n      int getOutputCoords() {\n        return int(resultUV.y * " + texShape[0] + ".0);\n      }\n    ";
-	  }
-
-	  return "\n    int getOutputCoords() {\n      ivec2 resTexRC = ivec2(resultUV.yx *\n                             vec2(" + texShape[0] + ", " + texShape[1] + "));\n      return resTexRC.x * " + texShape[1] + " + resTexRC.y;\n    }\n  ";
-	}
+function getOutput1DCoords(e,t){return 1===t[0]?"\n      int getOutputCoords() {\n        return int(resultUV.x * "+t[1]+".0);\n      }\n    ":1===t[1]?"\n      int getOutputCoords() {\n        return int(resultUV.y * "+t[0]+".0);\n      }\n    ":"\n    int getOutputCoords() {\n      ivec2 resTexRC = ivec2(resultUV.yx *\n                             vec2("+t[0]+", "+t[1]+"));\n      return resTexRC.x * "+t[1]+" + resTexRC.y;\n    }\n  "}

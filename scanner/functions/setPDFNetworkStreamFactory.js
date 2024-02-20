@@ -1,3 +1,1 @@
-function setPDFNetworkStreamFactory(pdfNetworkStreamFactory) {
-  createPDFNetworkStream = pdfNetworkStreamFactory;
-}
+function setPDFNetworkStreamFactory(t){createPDFNetworkStream=t}

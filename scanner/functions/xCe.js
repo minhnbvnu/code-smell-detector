@@ -1,0 +1,1 @@
+function xCe(e,t){t.s=this.s;var r=Math.floor(e/this.DB);if(r>=this.t){t.t=0;return}var i=e%this.DB,a=this.DB-i,n=(1<<i)-1;t.data[0]=this.data[r]>>i;for(var s=r+1;s<this.t;++s)t.data[s-r-1]|=(this.data[s]&n)<<a,t.data[s-r]=this.data[s]>>i;i>0&&(t.data[this.t-r-1]|=(this.s&n)<<a),t.t=this.t-r,t.clamp()}

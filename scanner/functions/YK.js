@@ -1,0 +1,1 @@
+function YK(n,t){let e=n;if(t===e.R32F)return 4;if(t===e.R16F)return 2;if(t===e.RGBA32F)return 16;if(t===n.RGBA)return 16;if(t===e.RGBA16F)return 8;throw new Error(`Unknown internal format ${t}`)}

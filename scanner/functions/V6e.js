@@ -1,0 +1,1 @@
+function V6e(e,t){return t.left>e?t.left-e:Math.max(0,e-t.right)}

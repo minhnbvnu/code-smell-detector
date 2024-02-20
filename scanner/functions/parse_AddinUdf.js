@@ -1,0 +1,1 @@
+function parse_AddinUdf(blob,length){blob.l+=4;length-=4;var l=blob.l+length;var udfName=parse_ShortXLUnicodeString(blob,length);var cb=blob.read_shift(2);l-=blob.l;if(cb!==l)throw"Malformed AddinUdf: padding = "+l+" != "+cb;blob.l+=cb;return udfName}

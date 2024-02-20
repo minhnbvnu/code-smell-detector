@@ -1,1 +1,1 @@
-function $b(a){var b=0;H[a>>2]=0;H[a+4>>2]=0;H[a+56>>2]=0;H[a+48>>2]=0;H[a+52>>2]=0;H[a+40>>2]=0;H[a+44>>2]=0;H[a+32>>2]=0;H[a+36>>2]=0;H[a+24>>2]=0;H[a+28>>2]=0;H[a+16>>2]=0;H[a+20>>2]=0;H[a+8>>2]=0;H[a+12>>2]=0;b=a- -64|0;H[b>>2]=0;H[b+4>>2]=0;H[a+72>>2]=0;H[a+76>>2]=0;H[a+80>>2]=0;H[a+84>>2]=0;H[a+60>>2]=a;return a}
+function $B(n){return n.replace(/\\([0-9a-f]{1,6})\s/gi,function(){let t=arguments[1],e=6-t.length;for(;e--;)t="0"+t;return"\\"+t})}

@@ -1,0 +1,1 @@
+function handleFooterRowScroll(){var e=$footerRowScrollContainer[0].scrollLeft;e!=$viewportScrollContainerX[0].scrollLeft&&($viewportScrollContainerX[0].scrollLeft=e)}

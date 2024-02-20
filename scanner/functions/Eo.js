@@ -1,0 +1,1 @@
+function Eo(t,e,i){var n,o,r,s,a,l=this.eras();for(t=t.toUpperCase(),n=0,o=l.length;n<o;++n)if(r=l[n].name.toUpperCase(),s=l[n].abbr.toUpperCase(),a=l[n].narrow.toUpperCase(),i)switch(e){case"N":case"NN":case"NNN":if(s===t)return l[n];break;case"NNNN":if(r===t)return l[n];break;case"NNNNN":if(a===t)return l[n]}else if([r,s,a].indexOf(t)>=0)return l[n]}

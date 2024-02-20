@@ -1,0 +1,1 @@
+function stripIddPrefix(i,o,s,u){if(o){var C=new Y(u);C.selectNumberingPlan(o,s);var _=new RegExp(C.IDDPrefix());if(0===i.search(_)){var w=(i=i.slice(i.match(_)[0].length)).match(ua);if(!(w&&null!=w[1]&&w[1].length>0&&"0"===w[1]))return i}}}

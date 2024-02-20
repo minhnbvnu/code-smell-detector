@@ -1,0 +1,1 @@
+function get_sst_id(sst,str){for(var i=0,len=sst.length;i<len;++i)if(sst[i].t===str){sst.Count++;return i}sst[len]={t:str};sst.Count++;sst.Unique++;return len}

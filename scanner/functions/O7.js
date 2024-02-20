@@ -1,0 +1,1 @@
+function O7(n,t){let e="",i=lf(n,t);for(let r=0;r<i.length;r++){let o=i[r];o.parentNode&&o.parentNode.removeChild(o),e+=o.textContent}return e}

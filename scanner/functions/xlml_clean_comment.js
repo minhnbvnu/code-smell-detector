@@ -1,0 +1,1 @@
+function xlml_clean_comment(comment){comment.t=comment.v;comment.v=comment.w=comment.ixfe=undefined}

@@ -1,0 +1,1 @@
+function consumeSpecialNameChar(upper,NEXT_STATE){var lower=upper.toLowerCase();return function(c){if(c===lower||c===upper){this._state=NEXT_STATE}else{this._state=IN_TAG_NAME;this._index--}}}

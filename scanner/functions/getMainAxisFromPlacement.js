@@ -1,0 +1,1 @@
+function getMainAxisFromPlacement(i){return["top","bottom"].indexOf(i)>=0?"x":"y"}

@@ -1,0 +1,1 @@
+function F0(t,e){var r=t.x,n=t.y,i=e.x-r,s=e.y-n,a=t.width/2,o=t.height/2,l,u;return Math.abs(s)*a>Math.abs(i)*o?(s<0&&(o=-o),l=s===0?0:o*i/s,u=o):(i<0&&(a=-a),l=a,u=i===0?0:a*s/i),{x:r+l,y:n+u}}

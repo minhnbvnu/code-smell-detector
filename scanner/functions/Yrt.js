@@ -1,0 +1,1 @@
+function Yrt(n,t){let e;switch(t){case btt:e="Linear";break;case _tt:e="Reinhard";break;case wtt:e="OptimizedCineon";break;case Stt:e="ACESFilmic";break;case Ctt:e="Custom";break;default:console.warn("THREE.WebGLProgram: Unsupported toneMapping:",t),e="Linear"}return"vec3 "+n+"( vec3 color ) { return "+e+"ToneMapping( color ); }"}

@@ -1,0 +1,1 @@
+function removePromise(i){return new Promise((function(n,o){fs.stat(i,(function(o,r){r.isDirectory()?fs.readdir(i,(function(o,r){r=(r=r.map(n=>path.join(i,n))).map(i=>removePromise(i)),Promise.all(r).then((function(){fs.rmdir(i,n)}))})):fs.unlink(i,n)}))}))}

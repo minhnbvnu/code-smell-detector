@@ -1,0 +1,2 @@
+function modify_time_period(data,past_n_days){var data_spliced=clone(data);if(past_n_days!=''){for(var i=0;i<data_spliced.length;i++){var from=data_spliced[i].length-past_n_days;data_spliced[i].splice(0,from);}}
+return data_spliced;}

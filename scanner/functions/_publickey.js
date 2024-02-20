@@ -1,0 +1,1 @@
+function _publickey(t){return _encodepoint(_scalarmult(_bp,_get_a(t)))}

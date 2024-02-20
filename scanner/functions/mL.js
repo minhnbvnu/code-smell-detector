@@ -1,0 +1,1 @@
+function mL(t,e,n,i){var r=e.__brushOption.range,o=xL(t,n,i);E(r,(function(t){t[0]+=o[0],t[1]+=o[1]})),iL(t,e),lL(t,{isEnd:!1})}

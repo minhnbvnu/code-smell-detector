@@ -1,0 +1,1 @@
+function _emscripten_set_keypress_callback_on_thread(target,userData,useCapture,callbackfunc,targetThread){registerKeyEventCallback(target,userData,useCapture,callbackfunc,1,"keypress",targetThread);return 0}

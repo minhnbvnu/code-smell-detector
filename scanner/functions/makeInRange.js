@@ -1,0 +1,1 @@
+function makeInRange(_,$,A){if(_<$)_=$;else if(_>A)_=A;return _}

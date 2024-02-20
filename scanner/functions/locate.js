@@ -1,0 +1,1 @@
+function locate(i,o){var s,u=i.split("\n"),C=u.length,_=0;for(s=0;s<C;s+=1){var w=_+u[s].length+1;if(w>o)return{line:s+1,column:o-_,char:s};_=w}throw new Error("Could not determine location of character")}

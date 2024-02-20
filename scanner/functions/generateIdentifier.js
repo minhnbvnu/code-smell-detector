@@ -1,0 +1,1 @@
+function generateIdentifier(i){return assertType(i.type,"identifier"),i.value}

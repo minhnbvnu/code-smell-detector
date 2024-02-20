@@ -1,0 +1,1 @@
+function b(e){return/^(select|option)$/i.test(e)}

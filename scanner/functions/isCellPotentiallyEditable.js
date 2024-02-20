@@ -1,0 +1,1 @@
+function isCellPotentiallyEditable(e,o){var t=getDataLength();return!(e<t&&!getDataItem(e))&&(!(columns[o].cannotTriggerInsert&&e>=t)&&!!getEditor(e,o))}

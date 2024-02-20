@@ -1,0 +1,1 @@
+function pp(a){a=a|0;f[a>>2]=7236;Am(a+4|0);return}

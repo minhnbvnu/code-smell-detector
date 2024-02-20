@@ -1,0 +1,1 @@
+function ZB(t,e,n){var i=[1,1];i[t.getOrient().index]=0,kp(e,n,{type:"box",ignoreSize:!!i})}

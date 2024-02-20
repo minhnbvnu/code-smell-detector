@@ -1,0 +1,1 @@
+function W6e(e,t,r){if(t!=0)return!1;for(let i=e;;){let a=i.parentNode;if(!a||a.nodeType!=1||a.firstChild!=i)return!1;if(a.classList.contains("cm-line"))break;i=a}let n=e.nodeType==1?e.getBoundingClientRect():xu(e,0,Math.max(e.nodeValue.length,1)).getBoundingClientRect();return r-n.left>5}

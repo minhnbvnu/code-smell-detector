@@ -1,0 +1,1 @@
+function _glProgramParameteri(program,pname,value){GL.recordError(1280)}

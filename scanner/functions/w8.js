@@ -1,0 +1,1 @@
+function w8(e,t,r){Error.captureStackTrace&&Error.captureStackTrace(this,w8),this.name="SignatureParseError",this.type=e,this.format=t,this.innerErr=r,this.message="Failed to parse the given data as a "+e+" signature in "+t+" format: "+r.message}

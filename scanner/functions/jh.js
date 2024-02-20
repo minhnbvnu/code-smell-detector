@@ -1,1 +1,1 @@
-function jh(a){a=a|0;return O(L[a+20>>2])}
+function jh(t,e){for(var i,n,o=e[0].toUpperCase()+e.slice(1),r=0;r<Ih.length;){if((n=(i=Ih[r])?i+o:e)in t)return n;r++}}

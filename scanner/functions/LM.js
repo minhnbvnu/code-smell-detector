@@ -1,0 +1,1 @@
+function LM(t,e){var r={lhs:[],rhs:[]};return vt(t,function(n){e(n)?r.lhs.push(n):r.rhs.push(n)}),r}

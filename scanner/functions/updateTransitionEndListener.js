@@ -1,0 +1,1 @@
+function updateTransitionEndListener(i,o,s){var u=o+"EventListener";["transitionend","webkitTransitionEnd"].forEach((function(o){i[u](o,s)}))}

@@ -1,1 +1,1 @@
-function Us(t,n){return{name:t||"",K:"a valid object",optional:!!n,M:c}}
+function Us(e,t){for(var r=null==e?0:e.length;r--&&!1!==t(e[r],r,e););return e}

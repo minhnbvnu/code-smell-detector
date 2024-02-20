@@ -1,0 +1,1 @@
+function DateTimeEdit(t){var o;_classCallCheck(this,DateTimeEdit);(o=r.call(this,_,"dateTimeEdit",!0)).hScrollPolicy=(0,d.getStringOption)(t.hScrollPolicy,["auto","off","on"]);o.id=t.id||"";o.picker=(0,d.getStringOption)(t.picker,["host","none"]);o.use=t.use||"";o.usehref=t.usehref||"";o.border=null;o.comb=null;o.extras=null;o.margin=null;return o}

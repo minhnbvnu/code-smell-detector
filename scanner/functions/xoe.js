@@ -1,0 +1,1 @@
+function xoe(e,t,r){let{srcStat:i,destStat:a}=voe(e,t);if(a&&u2(i,a))throw new Error("Source and destination must not be the same.");if(i.isDirectory()&&f8(e,t))throw new Error(l2(e,t,r));return{srcStat:i,destStat:a}}

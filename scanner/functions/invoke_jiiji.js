@@ -1,0 +1,1 @@
+function invoke_jiiji(index,a1,a2,a3,a4,a5){var sp=stackSave();try{return Module["dynCall_jiiji"](index,a1,a2,a3,a4,a5)}catch(e){stackRestore(sp);if(typeof e!=="number"&&e!=="longjmp")throw e;Module["setThrew"](1,0)}}

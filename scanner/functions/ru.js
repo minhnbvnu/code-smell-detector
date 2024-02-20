@@ -1,1 +1,1 @@
-function ru(t){return t=t.split("."),t[t.length-1]}
+function ru(t,e){return t.indexOf(e)>-1}

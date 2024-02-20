@@ -1,0 +1,1 @@
+function _emscripten_cancel_main_loop(){Browser.mainLoop.pause();Browser.mainLoop.func=null}

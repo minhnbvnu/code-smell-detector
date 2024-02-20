@@ -1,0 +1,1 @@
+function rse(){return process.versions&&process.versions.electron||process.env.ELECTRON_RUN_AS_NODE?!0:typeof window!="undefined"&&window.process&&window.process.type==="renderer"}

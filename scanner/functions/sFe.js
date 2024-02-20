@@ -1,0 +1,1 @@
+function sFe(e,t){var r=t-e._offset%t;if(!(r===0||r===t)){var i=fie.alloc(r);e.put(fie.from(i)),e._offset+=r}}

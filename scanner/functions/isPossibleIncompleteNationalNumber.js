@@ -1,0 +1,1 @@
+function isPossibleIncompleteNationalNumber(i,o){switch(checkNumberLength(i,o)){case"TOO_SHORT":case"INVALID_LENGTH":return!1;default:return!0}}

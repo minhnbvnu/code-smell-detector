@@ -1,0 +1,1 @@
+function selectNumberAttrs(obj,attrs){return _.mapValues(_.pick(obj,attrs),Number)}

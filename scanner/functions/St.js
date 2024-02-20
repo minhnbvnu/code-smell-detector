@@ -1,0 +1,1 @@
+function St(e){return 146097*e/4800}

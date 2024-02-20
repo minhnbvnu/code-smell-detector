@@ -1,0 +1,1 @@
+function e5e(e,t){return!e||(t&e)!=0}

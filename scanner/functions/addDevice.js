@@ -1,0 +1,1 @@
+function addDevice(label){label=label?label:"device #"+MediaDevices.length;var device={deviceName:label,refCount:0,video:null};MediaDevices.push(device)}

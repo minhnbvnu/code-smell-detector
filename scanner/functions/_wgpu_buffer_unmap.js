@@ -1,0 +1,1 @@
+function _wgpu_buffer_unmap(gpuBuffer){gpuBuffer=wgpu[gpuBuffer];gpuBuffer["unmap"]();gpuBuffer.mappedRanges={}}

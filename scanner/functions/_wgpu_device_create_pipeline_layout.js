@@ -1,0 +1,1 @@
+function _wgpu_device_create_pipeline_layout(device,layouts,numLayouts){device=wgpu[device];return wgpuStoreAndSetParent(device["createPipelineLayout"](debugDir({"bindGroupLayouts":wgpuReadArrayOfWgpuObjects(layouts,numLayouts)},"GPUDevice.createPipelineLayout() with desc")),device)}

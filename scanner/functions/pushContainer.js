@@ -1,16 +1,16 @@
 function pushContainer(listKey, nodes) {
-	  this._assertUnremoved();
+  this._assertUnremoved();
 
-	  nodes = this._verifyNodeList(nodes);
+  nodes = this._verifyNodeList(nodes);
+  const container = this.node[listKey];
 
-	  var container = this.node[listKey];
-	  var path = _index2.default.get({
-	    parentPath: this,
-	    parent: this.node,
-	    container: container,
-	    listKey: listKey,
-	    key: container.length
-	  });
+  const path = _index.default.get({
+    parentPath: this,
+    parent: this.node,
+    container: container,
+    listKey,
+    key: container.length
+  });
 
-	  return path.replaceWithMultiple(nodes);
-	}
+  return path.replaceWithMultiple(nodes);
+}

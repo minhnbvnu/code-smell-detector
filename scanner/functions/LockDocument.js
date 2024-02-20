@@ -1,0 +1,1 @@
+function LockDocument(t){var o;_classCallCheck(this,LockDocument);(o=r.call(this,_,"lockDocument")).id=t.id||"";o.type=(0,d.getStringOption)(t.type,["optional","required"]);o.use=t.use||"";o.usehref=t.usehref||"";return o}

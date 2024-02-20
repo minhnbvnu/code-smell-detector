@@ -1,0 +1,1 @@
+function safeSetTimeout(func,timeout){return setTimeout(function(){callUserCallback(func)},timeout)}

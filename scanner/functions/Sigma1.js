@@ -1,0 +1,1 @@
+function Sigma1(t,i){return(t>>>14|i<<18)^(t>>>18|i<<14)^(i>>>9|t<<23)}

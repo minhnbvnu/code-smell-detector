@@ -1,0 +1,1 @@
+function _wgpu_buffer_read_mapped_range(gpuBuffer,startOffset,subOffset,dst,size){HEAPU8.set(new Uint8Array(wgpu[gpuBuffer].mappedRanges[startOffset],subOffset,size),dst)}

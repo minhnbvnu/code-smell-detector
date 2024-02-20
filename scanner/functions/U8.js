@@ -1,0 +1,5 @@
+function U8(t,e){if(e=Object.create(e||null),!t.buffer)return null;e.maxLength||(e.maxLength=79),typeof e.indent!="number"&&(e.indent=1),typeof e.linesBefore!="number"&&(e.linesBefore=3),typeof e.linesAfter!="number"&&(e.linesAfter=2);for(var r=/\r?\n|\r|\0/g,n=[0],i=[],s,a=-1;s=r.exec(t.buffer);)i.push(s.index),n.push(s.index+s[0].length),t.position<=s.index&&a<0&&(a=n.length-2);a<0&&(a=n.length-1);var o="",l,u,d=Math.min(t.line+e.linesAfter,i.length).toString().length,f=e.maxLength-(e.indent+d+3);for(l=1;l<=e.linesBefore&&!(a-l<0);l++)u=i1(t.buffer,n[a-l],i[a-l],t.position-(n[a]-n[a-l]),f),o=Nr.repeat(" ",e.indent)+s1((t.line-l+1).toString(),d)+" | "+u.str+`
+`+o;for(u=i1(t.buffer,n[a],i[a],t.position,f),o+=Nr.repeat(" ",e.indent)+s1((t.line+1).toString(),d)+" | "+u.str+`
+`,o+=Nr.repeat("-",e.indent+d+3+u.pos)+`^
+`,l=1;l<=e.linesAfter&&!(a+l>=i.length);l++)u=i1(t.buffer,n[a+l],i[a+l],t.position-(n[a]-n[a+l]),f),o+=Nr.repeat(" ",e.indent)+s1((t.line+l+1).toString(),d)+" | "+u.str+`
+`;return o.replace(/\n$/,"")}

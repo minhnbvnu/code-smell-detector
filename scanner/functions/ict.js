@@ -1,0 +1,1 @@
+function ict(n){return new Promise((t,e)=>{let i=new Image;i.onload=()=>t(i),i.onerror=r=>e(r),i.crossOrigin="",i.src=n})}

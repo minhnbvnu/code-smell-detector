@@ -1,0 +1,1 @@
+function _166(node){if(node.canHaveChildren){try{node.innerHTML="";return;}catch(e){}}for(var c;c=node.lastChild;){_164(c,node);}}

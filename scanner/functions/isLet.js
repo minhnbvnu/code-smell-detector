@@ -1,3 +1,3 @@
 function isLet(node) {
-	  return t.isVariableDeclaration(node) && (node.kind !== "var" || node[_constants.BLOCK_SCOPED_SYMBOL]);
-	}
+            return !!(getCombinedNodeFlags(node) & 1 /* Let */);
+        }

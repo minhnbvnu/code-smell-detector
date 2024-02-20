@@ -1,3 +1,1 @@
-function isIterable(obj) {
-	  return Array.isArray(obj) || typeof obj === 'object';
-	}
+function isIterable(e){return Array.isArray(e)||"object"==typeof e}

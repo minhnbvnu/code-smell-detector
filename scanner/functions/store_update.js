@@ -1,0 +1,1 @@
+function store_update(storage,patch){var previous=get(storage);return function set(storage,value){return storage.set(STORAGE_KEY,value)}(storage,Object.assign({},previous,patch))}

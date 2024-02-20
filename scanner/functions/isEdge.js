@@ -1,3 +1,3 @@
-function isEdge(ele){
-    return ele.isEdge();
-  }
+function isEdge () {
+  return navigator.userAgent.indexOf('Edge') >= 0
+}

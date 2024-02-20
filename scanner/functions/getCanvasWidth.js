@@ -1,0 +1,1 @@
+function getCanvasWidth(){var e=viewportHasVScroll?viewportW-scrollbarDimensions.width:viewportW,o=columns.length;for(canvasWidthL=canvasWidthR=0;o--;)hasFrozenColumns()&&o>options.frozenColumn?canvasWidthR+=columns[o].width:canvasWidthL+=columns[o].width;var t=canvasWidthL+canvasWidthR;return options.fullWidthRows?Math.max(t,e):t}

@@ -1,0 +1,5 @@
+function onWindowHashChange( event ) {
+
+		readURL();
+
+	}

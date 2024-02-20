@@ -1,10 +1,9 @@
 function tryCatcher() {
     try {
-        var target = tryCatchTarget;
-        tryCatchTarget = null;
-        return target.apply(this, arguments);
-    } catch (e) {
-        errorObj.e = e;
-        return errorObj;
+        return tryCatchTarget.apply(this, arguments);
+    }
+    catch (e) {
+        __WEBPACK_IMPORTED_MODULE_0__errorObject__["a" /* errorObject */].e = e;
+        return __WEBPACK_IMPORTED_MODULE_0__errorObject__["a" /* errorObject */];
     }
 }

@@ -1,0 +1,1 @@
+function iE(t,e){return e.dim+t.model.componentIndex}

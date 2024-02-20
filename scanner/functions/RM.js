@@ -1,0 +1,1 @@
+function RM(t){vt(t.nodes(),function(e){f0(t.node(e))}),vt(t.edges(),function(e){var r=t.edge(e);vt(r.points,f0),me(r,"x")&&f0(r)})}

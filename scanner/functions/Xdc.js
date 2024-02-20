@@ -1,0 +1,1 @@
+function Xdc(t){var o;_classCallCheck(this,Xdc);(o=r.call(this,d,"xdc",!0)).uri=new l.XFAObjectArray;o.xsl=new l.XFAObjectArray;return o}

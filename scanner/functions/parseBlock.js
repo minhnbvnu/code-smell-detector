@@ -1,0 +1,1 @@
+function parseBlock(i,o,s){return s.inline=!1,i(o+"\n\n",s)}

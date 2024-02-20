@@ -1,0 +1,1 @@
+function Nie(){return w(oe,{children:[o("h1",{children:o("code",{children:"useFormState"})}),w(de,{children:["You can gain access to anything in the forms state via"," ",o("code",{children:"useFormState"}),"hook."]}),o(Ee,{leftHeader:o("h3",{children:"Example: "}),rightHeader:o("h3",{children:"Code:"}),left:o(v2e,{}),right:o(N,{links:!0,input1:b2e})})]})}

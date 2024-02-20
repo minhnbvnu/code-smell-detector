@@ -1,3 +1,3 @@
 function StringLiteral() {
-	  return t.stringTypeAnnotation();
-	}
+  return t.stringTypeAnnotation();
+}

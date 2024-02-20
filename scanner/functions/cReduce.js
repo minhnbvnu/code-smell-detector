@@ -1,0 +1,1 @@
+function cReduce(x){x.divRemTo(this.m,null,x)}

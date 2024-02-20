@@ -1,0 +1,1 @@
+function onHandleMouseTouchDown(event){onMouseTouchDownContinue(event)&&onHandleMouseTouchDownAction(event)}

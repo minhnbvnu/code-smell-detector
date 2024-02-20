@@ -1,0 +1,1 @@
+function bufferSet(t,e){for(var s=0;s<t.length;s++)this[e+s]=t[s]}

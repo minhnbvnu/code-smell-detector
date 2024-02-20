@@ -1,0 +1,1 @@
+function TW(n,t,e,i,r,o,s="NDHWC"){let[a,l,c]=Zb(t),u,h;if(s==="NDHWC")h="channelsLast",u=[a,l,c,n[4],n[4]];else if(s==="NCDHW")h="channelsFirst",u=[a,l,c,n[1],n[1]];else throw new Error(`Unknown dataFormat ${s}`);return CA(n,u,e,i,r,!1,h,o)}

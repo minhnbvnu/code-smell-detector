@@ -1,10 +1,12 @@
 function getAllPrevSiblings() {
-	  var _key = this.key;
-	  var sibling = this.getSibling(--_key);
-	  var siblings = [];
-	  while (sibling.node) {
-	    siblings.push(sibling);
-	    sibling = this.getSibling(--_key);
-	  }
-	  return siblings;
-	}
+  let _key = this.key;
+  let sibling = this.getSibling(--_key);
+  const siblings = [];
+
+  while (sibling.node) {
+    siblings.push(sibling);
+    sibling = this.getSibling(--_key);
+  }
+
+  return siblings;
+}

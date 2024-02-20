@@ -1,0 +1,1 @@
+function trans(duration,ease){this.duration=duration||500;this.ease=ease&&d3.ease(ease)||d3.ease("cubic-in-out");this.updates={next:null}}

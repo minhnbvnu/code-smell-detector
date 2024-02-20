@@ -1,0 +1,1 @@
+function hasFrozenColumns(){return options.frozenColumn>-1}

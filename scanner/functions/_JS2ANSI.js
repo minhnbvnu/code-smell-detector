@@ -1,0 +1,1 @@
+function _JS2ANSI(str){if(typeof cptable!=="undefined")return cptable.utils.encode(1252,str);return str.split("").map(function(x){return x.charCodeAt(0)})}

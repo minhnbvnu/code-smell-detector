@@ -1,0 +1,1 @@
+function iCe(e,t){var r=this._addSchema(e,void 0,t);return r.validate||this._compile(r)}

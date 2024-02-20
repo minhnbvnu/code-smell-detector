@@ -1,0 +1,1 @@
+function _unsetenv(name){if(name===0){___setErrNo(ERRNO_CODES.EINVAL);return-1}name=Pointer_stringify(name);if(name===""||name.indexOf("=")!==-1){___setErrNo(ERRNO_CODES.EINVAL);return-1}if(ENV.hasOwnProperty(name)){delete ENV[name];___buildEnvironment(__get_environ())}return 0}

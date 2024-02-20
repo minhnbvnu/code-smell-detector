@@ -1,0 +1,1 @@
+function tM(t,e,r,n){for(var i=-1,s=JD(QD((e-t)/(r||1)),0),a=Array(s);s--;)a[n?s:++i]=t,t+=r;return a}

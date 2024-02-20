@@ -1,0 +1,1 @@
+function _modq(t){return core.reduce(t.n),t.cmp(_Q)>=0?_modq(t.minus(_Q)):-1===t.cmp(_ZERO)?_modq(t.plus(_Q)):t}

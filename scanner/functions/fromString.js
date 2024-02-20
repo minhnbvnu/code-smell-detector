@@ -1,28 +1,23 @@
-function fromString(s) {
-  if (cache.hasOwnProperty(s)) {
-    return cache[s];
-  }
-  if (cacheSize >= MAX_CACHE_SIZE) {
-    let i = 0;
-    for (const key in cache) {
-      if ((i++ & 3) === 0) {
-        delete cache[key];
-        --cacheSize;
-      }
-    }
+function fromString (string, encoding) {
+  if (typeof encoding !== 'string' || encoding === '') {
+    encoding = 'utf8'
   }
 
-  const color = parseRgba(s);
-  if (color.length !== 4) {
-    throw new Error('Failed to parse "' + s + '" as color');
+  if (!Buffer.isEncoding(encoding)) {
+    throw new TypeError('Unknown encoding: ' + encoding)
   }
-  for (const c of color) {
-    if (isNaN(c)) {
-      throw new Error('Failed to parse "' + s + '" as color');
-    }
+
+  var length = byteLength(string, encoding) | 0
+  var buf = createBuffer(length)
+
+  var actual = buf.write(string, encoding)
+
+  if (actual !== length) {
+    // Writing a hex string, for example, that contains invalid characters will
+    // cause everything after the first invalid character to be ignored. (e.g.
+    // 'abxxcd' will be treated as 'ab')
+    buf = buf.slice(0, actual)
   }
-  normalize(color);
-  cache[s] = color;
-  ++cacheSize;
-  return color;
+
+  return buf
 }

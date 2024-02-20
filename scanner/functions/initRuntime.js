@@ -1,1 +1,1 @@
-function initRuntime(){runtimeInitialized=true;if(!Module["noFSInit"]&&!FS.init.initialized)FS.init();FS.ignorePermissions=false;TTY.init();callRuntimeCallbacks(__ATINIT__)}
+function initRuntime(){runtimeInitialized=true;callRuntimeCallbacks(__ATINIT__)}

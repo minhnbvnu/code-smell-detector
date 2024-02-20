@@ -1,0 +1,1 @@
+function f7(t,e){var r=Sp(t,e);if(r.length!==0){if(r.length===1)return r[0];throw new li("expected a single document in the stream, but found more")}}

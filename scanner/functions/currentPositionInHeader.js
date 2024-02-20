@@ -1,0 +1,1 @@
+function currentPositionInHeader(e){var o=0;return $headers.find(".slick-header-column").each((function(t){if(this.id==e)return o=t,!1})),o}

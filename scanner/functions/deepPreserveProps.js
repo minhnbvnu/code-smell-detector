@@ -1,0 +1,1 @@
+function deepPreserveProps(i,o){var s,u;return Object.assign({},o,{popperOptions:Object.assign({},i.popperOptions,o.popperOptions,{modifiers:[].concat(((null==(s=i.popperOptions)?void 0:s.modifiers)||[]).filter((function(i){return i.name.indexOf("tippy")>=0})),(null==(u=o.popperOptions)?void 0:u.modifiers)||[])})})}

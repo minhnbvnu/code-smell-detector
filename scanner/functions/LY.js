@@ -1,0 +1,1 @@
+function LY(e,t,n,r,i,o,a,s){var l=n-e,u=r-t,c=a.getActiveCamera(),d=c.getViewUp(),p=c.getDirectionOfProjection(),f=a.getRenderWindow().getInteractor().getView().getSize(),h=360*l/f[0],m=360*u/f[1],g=new Float64Array([o[0],o[1],o[2]]),v=d,y=[0,0,0];dt(p,d,y);var b=Go(new Float64Array(16));return Yo(b,b,Fe(h),v),Yo(b,b,Fe(-m),y),go(g,g,b),g}

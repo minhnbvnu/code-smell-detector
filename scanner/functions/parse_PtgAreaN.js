@@ -1,0 +1,1 @@
+function parse_PtgAreaN(blob,length){var type=(blob[blob.l++]&96)>>5;var area=parse_RgceAreaRel(blob,8);return[type,area]}

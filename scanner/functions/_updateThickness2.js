@@ -1,0 +1,1 @@
+function _updateThickness2(t){var r=this,a=this.thickness;this.parent.addCommands({cmd:function cmd(){r.thickness=t;_classPrivateMethodGet(r,Y,_fitToContent2).call(r)},undo:function undo(){r.thickness=a;_classPrivateMethodGet(r,Y,_fitToContent2).call(r)},mustExec:!0,type:i.AnnotationEditorParamsType.INK_THICKNESS,overwriteIfSameType:!0,keepUndo:!0})}

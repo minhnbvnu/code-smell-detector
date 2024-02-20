@@ -1,0 +1,1 @@
+function _ge_p3_dbl($0,$1){$0=$0|0;$1=$1|0;var $2=0,label=0,sp=0;sp=STACKTOP;STACKTOP=STACKTOP+128|0;$2=sp;_ge_p3_to_p2($2,$1);_ge_p2_dbl($0,$2);STACKTOP=sp;return}

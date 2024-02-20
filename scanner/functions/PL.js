@@ -1,0 +1,1 @@
+function PL(t){var e=-1,r=Array(t.size);return t.forEach(function(n,i){r[++e]=[i,n]}),r}

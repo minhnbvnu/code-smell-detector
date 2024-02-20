@@ -1,0 +1,1 @@
+function Gye(e,t){for(var r=0,n=0;n<e.length;n++)r=(r<<5)-r+e.charCodeAt(n),r|=0;return t[Math.abs(r)%t.length]}

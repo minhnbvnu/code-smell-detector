@@ -1,0 +1,1 @@
+function WsdlConnection(t){var o;_classCallCheck(this,WsdlConnection);(o=r.call(this,u,"wsdlConnection",!0)).dataDescription=t.dataDescription||"";o.name=t.name||"";o.effectiveInputPolicy=null;o.effectiveOutputPolicy=null;o.operation=null;o.soapAction=null;o.soapAddress=null;o.wsdlAddress=null;return o}

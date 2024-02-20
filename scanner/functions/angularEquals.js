@@ -1,0 +1,1 @@
+function angularEquals(left, right) { return angular.equals(left, right); }

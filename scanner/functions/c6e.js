@@ -1,0 +1,1 @@
+function c6e(e){let t=e.activeElement;for(;t&&t.shadowRoot;)t=t.shadowRoot.activeElement;return t}

@@ -1,0 +1,1 @@
+function TSe(e,t){var r=Gc(e.trim().replace(/^[=v]+/,""),t);return r?r.version:null}

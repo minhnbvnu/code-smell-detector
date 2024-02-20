@@ -1,0 +1,1 @@
+function distanceAndSkiddingToXY(i,o,s){var u=getBasePlacement(i),C=[xt,vt].indexOf(u)>=0?-1:1,_="function"==typeof s?s(Object.assign({},o,{placement:i})):s,w=_[0],P=_[1];return w=w||0,P=(P||0)*C,[xt,Ct].indexOf(u)>=0?{x:P,y:w}:{x:w,y:P}}

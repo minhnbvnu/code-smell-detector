@@ -1,0 +1,3 @@
+function hasRequiredAPI(performance2, PerformanceObserver2) {
+            return typeof performance2 === "object" && typeof performance2.timeOrigin === "number" && typeof performance2.mark === "function" && typeof performance2.measure === "function" && typeof performance2.now === "function" && typeof performance2.clearMarks === "function" && typeof performance2.clearMeasures === "function" && typeof PerformanceObserver2 === "function";
+        }

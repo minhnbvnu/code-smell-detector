@@ -1,0 +1,1 @@
+function Lu(t){var e=t.length;if(1===e)return{x:Kl(t[0].clientX),y:Kl(t[0].clientY)};for(var i=0,n=0,r=0;r<e;)i+=t[r].clientX,n+=t[r].clientY,r++;return{x:Kl(i/e),y:Kl(n/e)}}

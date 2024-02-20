@@ -1,7 +1,1 @@
-function sign_(x) {
-	  var $x = convertToTensor(x, 'x', 'sign');
-	  var inputs = {
-	    x: $x
-	  };
-	  return ENGINE.runKernel(Sign, inputs);
-	}
+function sign_(e){var t=convertToTensor(e,"x","sign");return ENV.engine.runKernel(function(e){return e.sign(t)},{$x:t},function(e){return {$x:function(){return zerosLike(e)}}})}

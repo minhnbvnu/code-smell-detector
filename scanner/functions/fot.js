@@ -1,0 +1,1 @@
+function fot(){let n=new WeakMap;function t(i,r){let o;return n.has(i)===!1?(o=new az,n.set(i,[o])):r>=n.get(i).length?(o=new az,n.get(i).push(o)):o=n.get(i)[r],o}function e(){n=new WeakMap}return{get:t,dispose:e}}

@@ -1,0 +1,1 @@
+function write_wb(wb,name,opts){return(name.substr(-4)===".bin"?write_wb_bin:write_wb_xml)(wb,opts)}

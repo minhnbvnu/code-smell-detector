@@ -1,0 +1,1 @@
+function defaultRenderer(_ref5){var rows=_ref5.rows,stylesheet=_ref5.stylesheet,useInlineStyles=_ref5.useInlineStyles;return rows.map((function(node,i){return createElement({node:node,stylesheet:stylesheet,useInlineStyles:useInlineStyles,key:"code-segement".concat(i)})}))}

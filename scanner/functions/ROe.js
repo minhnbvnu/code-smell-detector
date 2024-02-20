@@ -1,0 +1,1 @@
+function ROe(e,t){let r=t.body;r===null?e.end():Eg(r)?r.stream().pipe(e):Buffer.isBuffer(r)?(e.write(r),e.end()):r.pipe(e)}

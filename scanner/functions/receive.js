@@ -1,10 +1,7 @@
-function receive(length) {
-      var n = 0;
-
-      while (length > 0) {
-        n = n << 1 | readBit();
-        length--;
-      }
-
-      return n;
+function receive({ data }) {
+    if (!data)
+        return;
+    if (events[data.type]) {
+        events[data.type](data.content);
     }
+}

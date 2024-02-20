@@ -1,0 +1,1 @@
+function pE(e,t){var n=arguments.length>2&&void 0!==arguments[2]?arguments[2]:{};Object.assign(t,dE,n),gv.extend(e,t,n),t.boundsMTime={},Se.obj(t.boundsMTime),Se.set(e,t,["property"]),Se.setGet(e,t,["mapper"]),Se.getArray(e,t,["bounds"],6),cE(e,t)}

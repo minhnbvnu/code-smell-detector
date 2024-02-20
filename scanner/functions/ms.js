@@ -1,1 +1,1 @@
-function Ms(t,n){return{name:t||"",K:"null",optional:!!n,M:o}}
+function ms(e){if(null==e)return 0;if(Fs(e))return sl(e)?Q(e):e.length;var t=_d(e);return t==Ke||t==Xe?e.size:Lr(e).length}

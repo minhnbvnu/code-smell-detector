@@ -1,0 +1,1 @@
+function _htonl($0){$0=$0|0;var $1=0,label=0,sp=0;sp=STACKTOP;$1=___bswap_32($0)|0;return $1|0}

@@ -1,6 +1,10 @@
-function disable(rotation) {
-  if (rotation !== undefined) {
-    return 0;
-  }
-  return undefined;
-}
+function disable( id ) {
+
+    		if ( enabledCapabilities[ id ] !== false ) {
+
+    			gl.disable( id );
+    			enabledCapabilities[ id ] = false;
+
+    		}
+
+    	}

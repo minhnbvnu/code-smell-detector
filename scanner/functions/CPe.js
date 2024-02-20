@@ -1,0 +1,1 @@
+function CPe(){return w(oe,{children:[o("h1",{children:o("code",{children:"formApiRef"})}),o(de,{children:"Sometimes you want to control the form from outside the form context."}),o(Ee,{leftHeader:o("h3",{children:"Example: "}),rightHeader:o("h3",{children:"Code:"}),left:o(wPe,{}),right:o(N,{links:!0,input1:kPe})})]})}

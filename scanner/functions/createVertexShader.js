@@ -1,18 +1,1 @@
-function createVertexShader(gl, vertexShaderSource) {
-	  var vertexShader = throwIfNull(gl, function () {
-	    return gl.createShader(gl.VERTEX_SHADER);
-	  }, 'Unable to create vertex WebGLShader.');
-	  callAndCheck(gl, function () {
-	    return gl.shaderSource(vertexShader, vertexShaderSource);
-	  });
-	  callAndCheck(gl, function () {
-	    return gl.compileShader(vertexShader);
-	  });
-
-	  if (gl.getShaderParameter(vertexShader, gl.COMPILE_STATUS) === false) {
-	    console.log(gl.getShaderInfoLog(vertexShader));
-	    throw new Error('Failed to compile vertex shader.');
-	  }
-
-	  return vertexShader;
-	}
+function createVertexShader(e,t){var n=throwIfNull(e,function(){return e.createShader(e.VERTEX_SHADER)},"Unable to create vertex WebGLShader.");if(callAndCheck(e,function(){return e.shaderSource(n,t)}),callAndCheck(e,function(){return e.compileShader(n)}),!1===e.getShaderParameter(n,e.COMPILE_STATUS))throw console.log(e.getShaderInfoLog(n)),new Error("Failed to compile vertex shader.");return n}

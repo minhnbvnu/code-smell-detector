@@ -1,0 +1,1 @@
+function okeys(T){var E=[];for(var S in T)E.push(S);return E}

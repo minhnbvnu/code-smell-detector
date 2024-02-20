@@ -1,5 +1,6 @@
-function sleep(ms) {
-    return new Promise((resolve) => {
-        setTimeout(resolve, ms);
-    });
+function sleep(duration) {
+  const t = new Date();
+  return waitsFor(`${duration}ms`, () => {
+    return new Date() - t > duration;
+  });
 }

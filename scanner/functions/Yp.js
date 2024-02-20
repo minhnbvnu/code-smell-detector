@@ -1,0 +1,1 @@
+function Yp(a){a=a|0;return f[a+60>>2]|0}

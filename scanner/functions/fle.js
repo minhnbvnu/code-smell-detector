@@ -1,0 +1,1 @@
+function fle(e){return new ci(this.q,e)}

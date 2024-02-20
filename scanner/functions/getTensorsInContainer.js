@@ -1,6 +1,1 @@
-function getTensorsInContainer(result) {
-	  var list = [];
-	  var seen = new Set();
-	  walkTensorContainer(result, list, seen);
-	  return list;
-	}
+function getTensorsInContainer(e){var t=[];return walkTensorContainer(e,t,new Set),t}

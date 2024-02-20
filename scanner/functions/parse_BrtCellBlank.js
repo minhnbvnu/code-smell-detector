@@ -1,0 +1,1 @@
+function parse_BrtCellBlank(data,length){var cell=parse_XLSBCell(data);return[cell]}

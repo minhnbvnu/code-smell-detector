@@ -1,0 +1,1 @@
+function HS(n,t,e){this.i=n,this.x=t,this.y=e,this.prev=null,this.next=null,this.z=null,this.prevZ=null,this.nextZ=null,this.steiner=!1}

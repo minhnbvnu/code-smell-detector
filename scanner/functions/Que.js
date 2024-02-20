@@ -1,0 +1,1 @@
+function Que(e){return new ci(this.q,this.x.multiply(e.toBigInteger().modInverse(this.q)).mod(this.q))}

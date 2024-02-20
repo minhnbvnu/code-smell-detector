@@ -1,1 +1,1 @@
-function Wg(a,b){a=a|0;b=b|0;return J[H[a>>2]+(b<<1)>>1]}
+function wg(a,b,c){if(Na)return a(b,c);H||Q||0===ca||(vb(ca,!1,null),ca=0);var d=Na,e=H;H=Na=!0;try{return a(b,c)}finally{Na=d,(H=e)||Q||ub()}}

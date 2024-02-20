@@ -1,0 +1,1 @@
+function getMaxSupportedCssHeight(){for(var e=1e6,o=navigator.userAgent.toLowerCase().match(/firefox/)?6e6:1e9,t=$("<div style='display:none' />").appendTo(document.body);;){var n=2*e;if(t.css("height",n),n>o||t.height()!==n)break;e=n}return t.remove(),e}

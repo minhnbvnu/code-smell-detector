@@ -1,0 +1,3 @@
+function clearFxNow() {
+	fxNow = undefined;
+}

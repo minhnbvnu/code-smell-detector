@@ -1,0 +1,1 @@
+function findHighestSheet(i,o){for(var s=i.length-1;s>=0;s--){var u=i[s];if(u.attached&&u.options.insertionPoint===o.insertionPoint)return u}return null}

@@ -1,0 +1,1 @@
+function Xe(){return!!this.isValid()&&this._isUTC&&0===this._offset}

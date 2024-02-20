@@ -1,0 +1,3 @@
+function seeCollapsedSpans() {
+  sawCollapsedSpans = true;
+}

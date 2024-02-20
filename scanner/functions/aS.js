@@ -1,0 +1,1 @@
+function aS(t,e){this.parent.drift(t,e)}

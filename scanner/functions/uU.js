@@ -1,0 +1,1 @@
+function uU(n){return n.length===0}

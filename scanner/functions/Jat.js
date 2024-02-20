@@ -1,0 +1,1 @@
+function Jat(n,t){return function(){ri(this,n).duration=+t.apply(this,arguments)}}

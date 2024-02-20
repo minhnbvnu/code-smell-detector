@@ -1,0 +1,1 @@
+function isPossibleNumber(i,o){return"IS_POSSIBLE"===checkNumberLength(i,o)}

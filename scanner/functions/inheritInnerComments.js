@@ -1,3 +1,3 @@
 function inheritInnerComments(child, parent) {
-	  _inheritComments("innerComments", child, parent);
-	}
+  (0, _inherit.default)("innerComments", child, parent);
+}

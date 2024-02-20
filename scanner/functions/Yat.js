@@ -1,0 +1,1 @@
+function Yat(n,t){return function(){Nd(this,n).delay=+t.apply(this,arguments)}}

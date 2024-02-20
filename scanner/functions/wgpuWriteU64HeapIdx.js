@@ -1,0 +1,1 @@
+function wgpuWriteU64HeapIdx(heap32Idx,number){HEAPU32[heap32Idx]=number;HEAPU32[heap32Idx+1]=number/4294967296}

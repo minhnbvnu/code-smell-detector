@@ -1,0 +1,1 @@
+function buildIsolatedOrNoChromeFragment(i){var o=i.currentHash,s=i.encodedName;return"#!/"+getCurrentHashPath(/^#\/?/,/\/$/,o)+s}

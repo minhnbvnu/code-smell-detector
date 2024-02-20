@@ -1,0 +1,1 @@
+function scrollCellIntoView(e,o,t){if(scrollRowIntoView(e,t),!(o<=options.frozenColumn)){var n=getColspan(e,o);internalScrollColumnIntoView(columnPosLeft[o],columnPosRight[o+(n>1?n-1:0)])}}

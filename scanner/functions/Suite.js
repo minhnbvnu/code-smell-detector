@@ -1,15 +1,8 @@
 function Suite(title, parentContext) {
-  if (!utils.isString(title)) {
-    throw new Error(
-      'Suite `title` should be a "string" but "' +
-        typeof title +
-        '" was given instead.'
-    );
-  }
   this.title = title;
-  function Context() {}
-  Context.prototype = parentContext;
-  this.ctx = new Context();
+  var context = function() {};
+  context.prototype = parentContext;
+  this.ctx = new context();
   this.suites = [];
   this.tests = [];
   this.pending = false;
@@ -22,8 +15,5 @@ function Suite(title, parentContext) {
   this._enableTimeouts = true;
   this._slow = 75;
   this._bail = false;
-  this._retries = -1;
-  this._onlyTests = [];
-  this._onlySuites = [];
   this.delayed = false;
 }

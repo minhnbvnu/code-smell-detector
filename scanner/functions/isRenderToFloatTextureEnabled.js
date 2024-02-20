@@ -1,0 +1,1 @@
+function isRenderToFloatTextureEnabled(e){if(0===e)return !1;var t=getWebGLContext(e);if(1===e){if(!hasExtension(t,"OES_texture_float"))return !1}else if(!hasExtension(t,"EXT_color_buffer_float"))return !1;return createFloatTextureAndBindToFramebuffer(t,e)}

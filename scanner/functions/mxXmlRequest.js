@@ -1,0 +1,1 @@
+function mxXmlRequest(a,b,c,d,e,f){this.url=a;this.params=b;this.method=c||"POST";this.async=null!=d?d:!0;this.username=e;this.password=f}

@@ -1,0 +1,1 @@
+function _glBeginQuery(target,id){GLctx["beginQuery"](target,GL.queries[id])}

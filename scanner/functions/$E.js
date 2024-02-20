@@ -1,1 +1,1 @@
-function $e(){return Ze(void 0)?Ye().then(function(){return new Z(function(t,n){var e=uu.document,i=setTimeout(function(){n(Error("Cordova framework is not ready."))},1e3);e.addEventListener("deviceready",function(){clearTimeout(i),t()},!1)})}):et(Error("Cordova must run in an Android or iOS file scheme."))}
+function $E(t){var e={};return E(["start","end","startValue","endValue","throttle"],(function(n){t.hasOwnProperty(n)&&(e[n]=t[n])})),e}

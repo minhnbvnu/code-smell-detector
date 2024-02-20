@@ -1,0 +1,1 @@
+function Epe(e,t){q8(e,t),t.endSequence(),t.startSequence(ct.Ber.OctetString),t.startSequence();var r=bl.from([1]);t.writeBuffer(r,ct.Ber.Integer),t.writeBuffer(e.part.d.data,ct.Ber.OctetString),t.startSequence(161);var i=Rr.ecNormalize(e.part.Q.data,!0);t.writeBuffer(i,ct.Ber.BitString),t.endSequence(),t.endSequence(),t.endSequence()}

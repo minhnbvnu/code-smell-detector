@@ -1,0 +1,1 @@
+function _eglWaitNative(nativeEngineId){EGL.setErrorCode(12288);return 1}

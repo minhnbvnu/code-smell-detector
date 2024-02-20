@@ -1,0 +1,1 @@
+function mxe(e,t){Zr.buffer(e),Zr.string(t);for(var r=[],i=0,a=0,n=0;n<e.length;++n)if(e[n]===t.charCodeAt(a)?++a:e[n]===t.charCodeAt(0)?a=1:a=0,a>=t.length){var s=n+1;r.push(e.slice(i,s-a)),i=s,a=0}return i<=e.length&&r.push(e.slice(i,e.length)),r}

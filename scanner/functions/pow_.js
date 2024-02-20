@@ -1,14 +1,1 @@
-function pow_(base, exp) {
-	  var $base = convertToTensor(base, 'base', 'pow');
-	  var $exp = convertToTensor(exp, 'exp', 'pow');
-
-	  var _makeTypesMatch = makeTypesMatch($base, $exp);
-
-	  $base = _makeTypesMatch[0];
-	  $exp = _makeTypesMatch[1];
-	  var inputs = {
-	    a: $base,
-	    b: $exp
-	  };
-	  return ENGINE.runKernel(Pow, inputs);
-	}
+function pow_(e,t){var n=convertToTensor(e,"base","pow"),r=convertToTensor(t,"exp","pow"),o=assertAndGetBroadcastShape(n.shape,r.shape);e=n.cast(upcastType(n.dtype,r.dtype)),t=r.cast(upcastType(n.dtype,r.dtype));return ENV.engine.runKernel(function(e,t){return t(e.pow(n,r))},{$base:n,$exp:r},function(e,t){var a=t[0];return {$base:function(){var t=r.toFloat(),a=e.mul(t.mul(n.pow(t.sub(scalar(1))))),i=getReductionAxes(n.shape,o);return i.length>0&&(a=a.sum(i)),a.reshape(n.shape)},$exp:function(){var t=e.mul(a.mul(n.log()).toFloat()),i=getReductionAxes(r.shape,o);return i.length>0&&(t=t.sum(i)),t.reshape(r.shape)}}})}

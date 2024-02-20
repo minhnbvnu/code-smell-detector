@@ -1,0 +1,1 @@
+function sc_char2string(c) { return c.val; }

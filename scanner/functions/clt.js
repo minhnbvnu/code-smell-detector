@@ -1,0 +1,1 @@
+function clt(n,t,e){return function(i){this.style.setProperty(n,t.call(this,i),e)}}

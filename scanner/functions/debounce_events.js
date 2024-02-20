@@ -1,0 +1,1 @@
+function debounce_events(self,types,fn){var type,trigger=self.trigger,event_args={};for(type in self.trigger=function(){var type=arguments[0];if(-1===types.indexOf(type))return trigger.apply(self,arguments);event_args[type]=arguments},fn.apply(self,[]),self.trigger=trigger,event_args)event_args.hasOwnProperty(type)&&trigger.apply(self,event_args[type])}

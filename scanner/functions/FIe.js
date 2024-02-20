@@ -1,0 +1,1 @@
+function FIe(e,t){return e.sort(function(r,i){let a="",n="";return t.forEach(function(s){a=a+r[s],n=n+i[s]}),a<n?-1:a>n?1:0})}

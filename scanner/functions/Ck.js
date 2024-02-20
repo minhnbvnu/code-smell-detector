@@ -1,1 +1,1 @@
-function ck(a,b){a=a|0;b=b|0;var c=0;c=fa-16|0;fa=c;L[c+12>>2]=a;L[c+8>>2]=b;a=L[c+12>>2];ha[L[L[a>>2]+72>>2]](a,L[c+8>>2]);fa=c+16|0}
+function Ck(a,c,d,e){a=a|0;c=c|0;d=d|0;e=e|0;var g=0,h=0;a=c+16|0;g=f[a>>2]|0;do if(g){if((g|0)!=(d|0)){h=c+36|0;f[h>>2]=(f[h>>2]|0)+1;f[c+24>>2]=2;b[c+54>>0]=1;break}h=c+24|0;if((f[h>>2]|0)==2)f[h>>2]=e}else{f[a>>2]=d;f[c+24>>2]=e;f[c+36>>2]=1}while(0);return}

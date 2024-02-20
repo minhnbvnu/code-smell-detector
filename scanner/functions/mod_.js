@@ -1,14 +1,1 @@
-function mod_(a, b) {
-	  var $a = convertToTensor(a, 'a', 'mod');
-	  var $b = convertToTensor(b, 'b', 'mod');
-
-	  var _makeTypesMatch = makeTypesMatch($a, $b);
-
-	  $a = _makeTypesMatch[0];
-	  $b = _makeTypesMatch[1];
-	  var inputs = {
-	    a: $a,
-	    b: $b
-	  };
-	  return ENGINE.runKernel(Mod, inputs);
-	}
+function mod_(e,t){var n,r=convertToTensor(e,"a","mod"),o=convertToTensor(t,"b","mod");n=makeTypesMatch(r,o),r=n[0],o=n[1];var a=assertAndGetBroadcastShape(r.shape,o.shape);return ENV.engine.runKernel(function(e){return e.mod(r,o)},{$a:r,$b:o},function(e){return {$a:function(){var t=getReductionAxes(r.shape,a);return t.length>0?e.sum(t).reshape(r.shape):e},$b:function(){var t=e.mul(r.div(o).floor().neg()),n=getReductionAxes(o.shape,a);return n.length>0?t.sum(n).reshape(o.shape):t}}})}

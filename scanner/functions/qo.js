@@ -1,0 +1,1 @@
+function qo(){return De(this.isoWeekYear(),1,4)}

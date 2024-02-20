@@ -1,0 +1,1 @@
+function NU(e,t){var n=arguments.length>2&&void 0!==arguments[2]?arguments[2]:{};Object.assign(t,MU,n),Se.obj(e,t),Se.get(e,t,["renderWindow","renderer","apiSpecificRenderWindow","interactor","rootContainer","container","controlContainer"]),kU(e,t)}

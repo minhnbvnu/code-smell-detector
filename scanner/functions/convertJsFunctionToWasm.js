@@ -1,0 +1,1 @@
+function convertJsFunctionToWasm(func,sig){return func}

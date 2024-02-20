@@ -1,0 +1,1 @@
+function popToContainer(stack){return pop(stack,function(element){return element.isRoot||!element.tag.isInline})}

@@ -1,0 +1,1 @@
+function Lge(){return O.useContext(UR)}

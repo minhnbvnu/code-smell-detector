@@ -1,0 +1,1 @@
+function Th(t,e,i,n,r,o,s,a){if(0!=n){n<0&&(e-=n*=-1);var h=Sh("rect",o,s);h.setAttributeNS(null,"x",t-.5*i),h.setAttributeNS(null,"y",e),h.setAttributeNS(null,"width",i),h.setAttributeNS(null,"height",n),h.setAttributeNS(null,"class",r),a&&h.setAttributeNS(null,"style",a)}}

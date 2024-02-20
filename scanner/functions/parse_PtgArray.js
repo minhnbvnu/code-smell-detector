@@ -1,0 +1,1 @@
+function parse_PtgArray(blob,length){var type=(blob[blob.l++]&96)>>5;blob.l+=7;return[type]}

@@ -1,0 +1,1 @@
+function guessCommand() { return "unknown"; }

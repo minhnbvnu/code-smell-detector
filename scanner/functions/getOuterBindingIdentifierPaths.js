@@ -1,3 +1,3 @@
 function getOuterBindingIdentifierPaths(duplicates) {
-	  return this.getBindingIdentifierPaths(duplicates, true);
-	}
+  return this.getBindingIdentifierPaths(duplicates, true);
+}

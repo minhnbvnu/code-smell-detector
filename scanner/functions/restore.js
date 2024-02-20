@@ -1,18 +1,15 @@
-function restore(fn, obj) {
-  var props = new Array(arguments.length - 2);
-  var vals = new Array(arguments.length - 2);
+function restore() {
+    var method;
 
-  for (var i = 0; i < props.length; i++) {
-    props[i] = arguments[i + 2];
-    vals[i] = obj[props[i]];
-  }
-
-  return function () {
-    // restore vals
-    for (var i = 0; i < props.length; i++) {
-      obj[props[i]] = vals[i];
+    for (var i = 0, l = this.methods.length; i < l; i++) {
+      method = this.methods[i];
+      if (global[method].hadOwnProperty) {
+        global[method] = this["_" + method];
+      } else {
+        delete global[method];
+      }
     }
 
-    return fn.apply(this, arguments);
-  };
-}
+    // Prevent multiple executions which will completely remove these props
+    this.methods = [];
+  }

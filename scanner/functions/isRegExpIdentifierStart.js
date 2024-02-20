@@ -1,0 +1,1 @@
+function isRegExpIdentifierStart(i){return isIdentifierStart(i,!0)||36===i||95===i}

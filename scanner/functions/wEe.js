@@ -1,0 +1,1 @@
+function wEe(e){return bG(e)&&wG(e)}

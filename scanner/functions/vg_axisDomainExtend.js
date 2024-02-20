@@ -1,0 +1,1 @@
+function vg_axisDomainExtend(orient,domain,range,size){var path;if(orient==="top"||orient==="left"){size=-1*size}if(orient==="bottom"||orient==="top"){path="M"+range[0]+","+size+"V0H"+range[1]+"V"+size}else{path="M"+size+","+range[0]+"H0V"+range[1]+"H"+size}domain.properties.update.path={value:path}}

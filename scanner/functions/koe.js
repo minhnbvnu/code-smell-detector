@@ -1,0 +1,1 @@
+function koe(e,t,r){return Toe(e)&&Aoe(r,e),Ioe(t,r)}

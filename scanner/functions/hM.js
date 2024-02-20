@@ -1,0 +1,1 @@
+function hM(t,e,n){if(MS(n,"cartesian2d")){var i=e,r=n.getArea();return{x:t?i.x:r.x,y:t?r.y:i.y,width:t?i.width:r.width,height:t?r.height:i.height}}var o=e;return{cx:(r=n.getArea()).cx,cy:r.cy,r0:t?r.r0:o.r0,r:t?r.r:o.r,startAngle:t?o.startAngle:0,endAngle:t?o.endAngle:2*Math.PI}}

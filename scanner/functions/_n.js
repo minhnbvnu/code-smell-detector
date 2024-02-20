@@ -1,1 +1,1 @@
-function _n(t,n,e){t.a=!0,t.c=e,t.f=!n,jn(t)}
+function _n(t){return!!this.isValid()&&(t=t?qi(t).utcOffset():0,(this.utcOffset()-t)%60==0)}

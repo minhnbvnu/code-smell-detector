@@ -1,0 +1,14 @@
+function secp160r1() {
+    // p = 2^160 - 2^31 - 1
+    var p = fromHex("FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF7FFFFFFF");
+    var a = fromHex("FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF7FFFFFFC");
+    var b = fromHex("1C97BEFC54BD7A8B65ACF89F81D4D4ADC565FA45");
+    //byte[] S = Hex.decode("1053CDE42C14D696E67687561517533BF3F83345");
+    var n = fromHex("0100000000000000000001F4C8F927AED3CA752257");
+    var h = BigInteger.ONE;
+    var curve = new ECCurveFp(p, a, b);
+    var G = curve.decodePointHex("04"
+		+ "4A96B5688EF573284664698968C38BB913CBFC82"
+		+ "23A628553168947D59DCC912042351377AC5FB32");
+    return new X9ECParameters(curve, G, n, h);
+}

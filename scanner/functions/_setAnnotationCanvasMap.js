@@ -1,0 +1,1 @@
+function _setAnnotationCanvasMap(t,r){if(r){var a,i=_createForOfIteratorHelper(r);try{for(i.s();!(a=i.n()).done;){var o=_slicedToArray(a.value,2),l=o[0],c=o[1],u=t.querySelector('[data-annotation-id="'.concat(l,'"]'));if(u){var d=u.firstChild;d?"CANVAS"===d.nodeName?d.replaceWith(c):d.before(c):u.append(c)}}}catch(t){i.e(t)}finally{i.f()}r.clear()}}

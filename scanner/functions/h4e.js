@@ -1,0 +1,1 @@
+function h4e(e){return e===null}

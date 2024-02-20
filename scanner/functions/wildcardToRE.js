@@ -1,0 +1,1 @@
+function wildcardToRE(s){return s.replace(/([?+*])/g,'.$1');}

@@ -1,0 +1,1 @@
+function isControlledProp(props,key){return void 0!==props[key]}

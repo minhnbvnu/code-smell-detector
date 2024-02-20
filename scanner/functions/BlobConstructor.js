@@ -1,0 +1,1 @@
+function BlobConstructor(e,t){return new Blob(mapArrayBufferViews(e),t||{})}

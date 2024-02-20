@@ -1,5 +1,1 @@
-function getVecChannels(name, rank) {
-	  return ['x', 'y', 'z', 'w', 'u', 'v'].slice(0, rank).map(function (d) {
-	    return name + "." + d;
-	  });
-	}
+function getVecChannels(e,t){return ["x","y","z","w","u","v"].slice(0,t).map(function(t){return e+"."+t})}

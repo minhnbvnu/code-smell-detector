@@ -1,7 +1,3 @@
-function getMessage(arg1, arg2, arg3) {
-    if (typeof message === 'string') {
-      return message;
-    } else {
-      return message(arg1, arg2, arg3);
-    }
-  }
+function getMessage(message) {
+  return (message && message()) || 'No message was specified for this matcher.'
+}

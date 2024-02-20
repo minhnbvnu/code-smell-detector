@@ -1,0 +1,1 @@
+function KP(t,e){const n=VP(t,this)[e];return n?n.ancestors().map(JP):undefined}

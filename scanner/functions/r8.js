@@ -1,0 +1,1 @@
+function r8(){return new wn([[document.documentElement]],gat)}

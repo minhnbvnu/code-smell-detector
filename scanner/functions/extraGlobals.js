@@ -1,16 +1,17 @@
 function extraGlobals() {
-  if (typeof process === 'object' && typeof process.version === 'string') {
-    var parts = process.version.split('.');
-    var nodeVersion = parts.reduce(function(a, v) {
-      return (a << 8) | v;
-    });
+ if (typeof(process) === 'object' &&
+     typeof(process.version) === 'string') {
 
-    // 'errno' was renamed to process._errno in v0.9.11.
+   var nodeVersion = process.version.split('.').reduce(function(a, v) {
+     return a << 8 | v;
+   });
 
-    if (nodeVersion < 0x00090b) {
-      return ['errno'];
-    }
-  }
+   // 'errno' was renamed to process._errno in v0.9.11.
 
-  return [];
+   if (nodeVersion < 0x00090B) {
+     return ['errno'];
+   }
+ }
+
+ return [];
 }

@@ -1,0 +1,1 @@
+function ZI(t,e,n,i,r){t.pointerChecker&&t.pointerChecker(i,r.originX,r.originY)&&(de(i.event),jI(t,e,n,i,r))}

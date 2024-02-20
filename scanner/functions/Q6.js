@@ -1,0 +1,1 @@
+function Q6(e,t,r){return(e[0][t[r+3]]+e[1][t[r+2]]^e[2][t[r+1]])+e[3][t[r]]}

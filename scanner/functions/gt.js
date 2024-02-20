@@ -1,1 +1,1 @@
-function Gt(t,e){null!==e&&e.length>0&&(t.Authorization="Firebase "+e)}
+function gt(t,e,i){null!=e&&d(ft,t)&&ft[t](e,i._a,i,t)}

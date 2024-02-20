@@ -1,0 +1,1 @@
+function BP(n,t,e,i,r,o,s,a){let l=n,c=new Float32Array(rP(o,s));return l.bindBuffer(l.PIXEL_PACK_BUFFER,t),l.getBufferSubData(l.PIXEL_PACK_BUFFER,0,c),l.bindBuffer(l.PIXEL_PACK_BUFFER,null),c}

@@ -1,7 +1,1 @@
-function tan_(x) {
-	  var $x = convertToTensor(x, 'x', 'tan');
-	  var inputs = {
-	    x: $x
-	  };
-	  return ENGINE.runKernel(Tan, inputs);
-	}
+function tan_(e){var t=convertToTensor(e,"x","tan");return ENV.engine.runKernel(function(e){return e.tan(t)},{$x:t},function(e){return {$x:function(){return e.divStrict(t.cos().square())}}})}

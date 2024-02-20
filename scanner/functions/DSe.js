@@ -1,0 +1,1 @@
+function DSe(e,t){if(e.length==0)return null;let r=e[0].pos,n=e.length==2?e[1].pos:r;return r>-1&&n>-1?ve.single(r+t,n+t):null}

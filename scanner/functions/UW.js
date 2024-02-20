@@ -1,0 +1,1 @@
+function UW(n,t,e){Ut(i_(t,e),()=>`${n} supports only inner-most axes for now. Got axes ${t} and rank-${e} input.`)}

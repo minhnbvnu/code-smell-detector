@@ -1,0 +1,1 @@
+function sDe(e,t,r){const n=this;return i;function i(l){return l===null?r(l):(e.enter("lineEnding"),e.consume(l),e.exit("lineEnding"),a)}function a(l){return n.parser.lazy[n.now().line]?r(l):t(l)}}

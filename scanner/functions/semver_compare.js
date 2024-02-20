@@ -1,0 +1,1 @@
+function semver_compare(i,o){i=i.split("-"),o=o.split("-");for(var s=i[0].split("."),u=o[0].split("."),C=0;C<3;C++){var _=Number(s[C]),w=Number(u[C]);if(_>w)return 1;if(w>_)return-1;if(!isNaN(_)&&isNaN(w))return 1;if(isNaN(_)&&!isNaN(w))return-1}return i[1]&&o[1]?i[1]>o[1]?1:i[1]<o[1]?-1:0:!i[1]&&o[1]?1:i[1]&&!o[1]?-1:0}

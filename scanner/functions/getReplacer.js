@@ -1,0 +1,2 @@
+function getReplacer(map){return function replace(str){if(str.charAt(1)==="#"){if(str.charAt(2)==="X"||str.charAt(2)==="x"){return decodeCodePoint(parseInt(str.substr(3),16))}return decodeCodePoint(parseInt(str.substr(2),10))}return map[str.slice(1,-1)];
+}}

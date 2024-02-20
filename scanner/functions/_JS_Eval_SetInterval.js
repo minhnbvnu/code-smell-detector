@@ -1,0 +1,1 @@
+function _JS_Eval_SetInterval(func,arg,millis){Module["noExitRuntime"]=true;function wrapper(){getFuncWrapper(func,"vi")(arg)}return Browser.safeSetInterval(wrapper,millis)}

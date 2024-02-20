@@ -1,0 +1,1 @@
+function ipe(e){let t=O.useContext(oh);if(t){let{register:r,...n}=t;e=$e(n,e),r()}return A1(t,e.ref),e}

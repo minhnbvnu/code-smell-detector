@@ -1,0 +1,1 @@
+function Sigma0(t,i){return(t>>>28|i<<4)^(i>>>2|t<<30)^(i>>>7|t<<25)}

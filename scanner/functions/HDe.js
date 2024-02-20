@@ -1,0 +1,1 @@
+function HDe(e,t,r){const n=this;return i;function i(s){return Ise.call(n,e,a,l,"reference","referenceMarker","referenceString")(s)}function a(s){return n.parser.defined.includes(_c(n.sliceSerialize(n.events[n.events.length-1][1]).slice(1,-1)))?t(s):r(s)}function l(s){return r(s)}}

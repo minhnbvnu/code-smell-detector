@@ -1,1 +1,1 @@
-function rq(a,b){a=a|0;b=b|0;var c=0;c=fa-16|0;fa=c;L[c+12>>2]=a;L[c+8>>2]=b;ki(L[c+12>>2],L[c+8>>2]);fa=c+16|0}
+function Rq(a){a=a|0;aa(0);return 0}

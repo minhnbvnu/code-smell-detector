@@ -1,0 +1,1 @@
+function ND(t){var e=ED(t,"color");if(e){var n=ED(t,"colorAlpha"),i=ED(t,"colorSaturation");return i&&(e=ni(e,null,null,i)),n&&(e=ii(e,n)),e}}

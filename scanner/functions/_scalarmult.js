@@ -1,0 +1,1 @@
+function _scalarmult(t,n){return _pt_unxform(_xpt_mult(_pt_xform(t),n))}

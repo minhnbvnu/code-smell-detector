@@ -1,0 +1,1 @@
+function rgbify(arr){return arr.map(function(x){return[x>>16&255,x>>8&255,x&255]})}

@@ -1,4 +1,5 @@
-function onContextMenu(event) {
-		event.preventDefault();
-		cleanup_bitmap_view(); // not needed
-	}
+function onContextMenu(cm, e) {
+  if (eventInWidget(cm.display, e) || contextMenuInGutter(cm, e)) { return }
+  if (signalDOMEvent(cm, e, "contextmenu")) { return }
+  cm.display.input.onContextMenu(e);
+}

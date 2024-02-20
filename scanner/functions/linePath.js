@@ -1,0 +1,1 @@
+function linePath(g,items){var o=items[0],m=o.mark,p=m.cache||(m.cache=parsePath(vg.canvas.path.line(items)));renderPath(g,p)}

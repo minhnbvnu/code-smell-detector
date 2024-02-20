@@ -1,0 +1,1 @@
+function sS(e,t=0){e.depth=t,e.children.forEach(n=>{sS(n,t+1)})}

@@ -1,0 +1,1 @@
+function _string2bytes(e){return _map(_ord,e)}

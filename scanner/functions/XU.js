@@ -1,0 +1,1 @@
+function XU(t){return t===36||t===95||t>=65&&t<=90||t>=97&&t<=122||t===92||t>=128&&UU.test(String.fromCharCode(t))}

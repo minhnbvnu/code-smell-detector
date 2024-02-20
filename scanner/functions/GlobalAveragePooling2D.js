@@ -1,3 +1,3 @@
-function globalAveragePooling2d(args) {
-	  return new GlobalAveragePooling2D(args);
-	}
+function GlobalAveragePooling2D() {
+	    return _GlobalPooling2D.apply(this, arguments) || this;
+	  }

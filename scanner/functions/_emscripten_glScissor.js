@@ -1,0 +1,1 @@
+function _emscripten_glScissor(x0,x1,x2,x3){GLctx["scissor"](x0,x1,x2,x3)}

@@ -1,1 +1,1 @@
-function Hz(a){a=a|0;return 2395}
+function hz(t,e){uz[t]=e}

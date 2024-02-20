@@ -1,0 +1,1 @@
+function vee(e,t,r,i,a){for(let n=0;n<a;n++)r[i+n]=e[n]^t[n&3]}

@@ -1,0 +1,1 @@
+function DoctrineError(i){this.name="DoctrineError",this.message=i}

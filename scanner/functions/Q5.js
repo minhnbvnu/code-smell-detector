@@ -1,0 +1,1 @@
+function Q5(t){return function(){cf(this,t)}}

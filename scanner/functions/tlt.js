@@ -1,0 +1,1 @@
+function tlt(n,t){if(typeof t!="function")throw new Error;return function(){ri(this,n).ease=t}}

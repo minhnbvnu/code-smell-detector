@@ -1,0 +1,1 @@
+function addClassName(el,className){el.classList?el.classList.add(className):el.className.match(new RegExp("(?:^|\\s)".concat(className,"(?!\\S)")))||(el.className+=" ".concat(className))}

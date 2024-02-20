@@ -1,1 +1,3 @@
-function leadingNulls(value,digits){return leadingSomething(value,digits,"0")}
+function leadingNulls(value, digits) {
+            return leadingSomething(value, digits, "0");
+          }

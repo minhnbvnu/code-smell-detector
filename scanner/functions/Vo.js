@@ -1,1 +1,1 @@
-function Vo(t,n){for(var e=0;e<t.b.length;e++)try{t.b[e](n)}catch(t){}}
+function Vo(t){return Ko.call(this,t,this.week(),this.weekday(),this.localeData()._week.dow,this.localeData()._week.doy)}

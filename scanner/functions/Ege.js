@@ -1,0 +1,1 @@
+function Ege(e,t){return t===e||e.indexOf(t)===0&&(t.substr(-1)==="/"||e.substr(t.length,1)==="/")}

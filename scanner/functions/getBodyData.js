@@ -1,0 +1,1 @@
+function getBodyData(e){if(typeof document==="undefined"||!document.body){return""}const t=document.body.dataset[e];if(typeof t==="undefined"){return""}return decodeURIComponent(t)}

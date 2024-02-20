@@ -1,0 +1,1 @@
+function _bigintcmp(n,r){var u,d,o,_=0;for(u=15;u>=0;u--){var m=n[u],t=r[u];_+=(m-t)*(1-_*_),o=_>>31,d=_+o^o,_=~~((_<<1)/(d+1))}return _}

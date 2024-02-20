@@ -1,0 +1,1 @@
+function r2(){return H6()(Gs,Gs)}

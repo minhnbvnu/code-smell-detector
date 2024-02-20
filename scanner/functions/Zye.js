@@ -1,0 +1,1 @@
+function Zye(e){if(Array.isArray(e))return e}

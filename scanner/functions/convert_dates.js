@@ -1,0 +1,1 @@
+function convert_dates(data,x_accessor,time_format){time_format=(typeof time_format==="undefined")?'%Y-%m-%d':time_format;data=data.map(function(d){var fff=d3.time.format(time_format);d[x_accessor]=fff.parse(d[x_accessor]);return d;});return data;}

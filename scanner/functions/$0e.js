@@ -1,0 +1,1 @@
+function $0e(e){return Math.sin(e*Math.PI/2)}

@@ -1,0 +1,1 @@
+function BinaryCMapStream(t){_classCallCheck(this,BinaryCMapStream);this.buffer=t;this.pos=0;this.end=t.length;this.tmpBuf=new Uint8Array(19)}

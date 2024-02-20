@@ -1,0 +1,1 @@
+function $Ie(){return O.useEffect(()=>{Prism.highlightAll()},[]),o(eue,{children:yIe})}

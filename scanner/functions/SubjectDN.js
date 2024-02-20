@@ -1,0 +1,1 @@
+function SubjectDN(t){var o;_classCallCheck(this,SubjectDN);(o=r.call(this,_,"subjectDN")).delimiter=t.delimiter||",";o.id=t.id||"";o.name=t.name||"";o.use=t.use||"";o.usehref=t.usehref||"";return o}

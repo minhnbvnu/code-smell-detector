@@ -1,0 +1,1 @@
+function tsip_uri_strequals(s_s1, s_s2) { return (tsip_uri_strcmp(s_s1, s_s2, true) == 0); }

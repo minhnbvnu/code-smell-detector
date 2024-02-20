@@ -1,0 +1,1 @@
+function wTe(){if(B1.isNode)switch(process.platform){case"win32":return"Windows NT";case"darwin":return"macOS";case"linux":return"Linux";default:return process.platform}else return""}

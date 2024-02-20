@@ -1,0 +1,1 @@
+function j$(n,t){for(var e=0,i=0,r=0,o=0;o<n.length;o++)e+=n[o]*t[o],i+=Math.pow(n[o],2),r+=Math.pow(t[o],2);return i===0&&r===0?0:i===0||r===0?1:1-e/Math.sqrt(i*r)}

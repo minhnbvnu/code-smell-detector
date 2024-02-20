@@ -1,0 +1,1 @@
+function removeRange(i,o,s){for(var u=o.next,C=0;C<s&&u!==i.tail;C++)u=u.next;o.next=u,u.prev=o,i.length-=C}

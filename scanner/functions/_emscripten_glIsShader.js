@@ -1,0 +1,1 @@
+function _emscripten_glIsShader(shader){var s=GL.shaders[shader];if(!s)return 0;return GLctx.isShader(s)}

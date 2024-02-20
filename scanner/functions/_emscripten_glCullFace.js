@@ -1,0 +1,1 @@
+function _emscripten_glCullFace(x0){GLctx["cullFace"](x0)}

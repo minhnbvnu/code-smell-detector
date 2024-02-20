@@ -1,0 +1,1 @@
+function S3e(e){return Object.prototype.toString.call(e)==="[object Function]"}

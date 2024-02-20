@@ -1,1 +1,1 @@
-function Jt(t,e){const a=new qt(e);if(a.push(t,!0),a.err)throw a.msg||N[a.err];return a.result}
+function jt(t,e){var i;if(!t.isValid())return t;if("string"==typeof e)if(/^\d+$/.test(e))e=D(e);else if(!h(e=t.localeData().monthsParse(e)))return t;return i=Math.min(t.date(),It(t.year(),e)),t._d["set"+(t._isUTC?"UTC":"")+"Month"](e,i),t}

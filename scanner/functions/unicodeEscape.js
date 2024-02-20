@@ -1,0 +1,1 @@
+function unicodeEscape(ch) { return '\\u' + ('0000' + ch.charCodeAt(0).toString(16)).slice(-4); }

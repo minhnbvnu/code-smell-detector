@@ -1,0 +1,1 @@
+function OX(n,t){let e=n;if(e<0)if(t<=1)e=0;else{let i=2*t;e<i&&(e=i*Math.trunc(-e/i)+e),e=e<-t?e+i:-e-1}else if(e>t-1)if(t<=1)e=0;else{let i=2*t;e-=i*Math.trunc(e/i),e>=t&&(e=i-e-1)}return R.clamp(0,e,t-1)}

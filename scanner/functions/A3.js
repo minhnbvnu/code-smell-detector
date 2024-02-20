@@ -1,0 +1,1 @@
+function A3(n,t){return 1-Ylt(n,t)}

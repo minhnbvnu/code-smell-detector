@@ -1,0 +1,1 @@
+function bnpChunkSize(r){return Math.floor(Math.LN2*this.DB/Math.log(r))}

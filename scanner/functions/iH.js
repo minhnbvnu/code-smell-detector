@@ -1,0 +1,1 @@
+function iH(e,t){var n=arguments.length>2&&void 0!==arguments[2]?arguments[2]:{};Object.assign(t,rH,n),qW.extend(e,t,n),t.tmpMat3=Ra(new Float64Array(9)),t.normalMatrix=Ra(new Float64Array(9)),t.mcpcMatrix=Go(new Float64Array(16)),t.mcvcMatrix=Go(new Float64Array(16)),t.tmpColor=[],t.glyphBOBuildTime={},te(t.glyphBOBuildTime,{mtime:0}),nH(e,t)}

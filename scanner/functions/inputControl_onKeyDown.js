@@ -1,0 +1,1 @@
+function inputControl_onKeyDown(i,o,s,u,C){if(!o.hasAttribute("readonly")){var _=getOperation(i);switch(_){case"Delete":case"Backspace":i.preventDefault();var w=dom_getSelection(o);return w?(eraseSelection(o,w),formatInputText(o,s,u,void 0,C)):formatInputText(o,s,u,_,C)}}}

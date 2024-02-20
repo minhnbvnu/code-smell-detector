@@ -1,0 +1,1 @@
+function s_(){this.innerHTML=""}

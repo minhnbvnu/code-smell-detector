@@ -1,0 +1,1 @@
+function getCellNodeBox(e,o){if(!cellExists(e,o))return null;for(var t=getFrozenRowOffset(e),n=getRowTop(e)-t,l=n+options.rowHeight-1,r=0,i=0;i<o;i++)r+=columns[i].width,options.frozenColumn==i&&(r=0);return{top:n,left:r,bottom:l,right:r+columns[o].width}}

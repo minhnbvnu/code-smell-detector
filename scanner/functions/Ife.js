@@ -1,0 +1,1 @@
+function Ife(e,t){return Mfe(e,t)}

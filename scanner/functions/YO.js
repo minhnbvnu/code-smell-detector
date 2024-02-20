@@ -1,0 +1,1 @@
+function YO(t,e){return e=e||[0,0],z([0,1],(function(n){var i=e[n],r=t[n]/2,o=[],a=[];return o[n]=i-r,a[n]=i+r,o[1-n]=a[1-n]=e[1-n],Math.abs(this.dataToPoint(o)[n]-this.dataToPoint(a)[n])}),this)}

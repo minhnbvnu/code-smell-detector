@@ -1,0 +1,1 @@
+function ua(e){var a;if(e&&e._locale&&e._locale._abbr&&(e=e._locale._abbr),!e)return ta;if(!i(e)){if(a=_a(e))return a;e=[e]}return ia(e)}

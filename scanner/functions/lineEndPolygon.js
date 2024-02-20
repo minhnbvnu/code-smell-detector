@@ -1,0 +1,3 @@
+function lineEndPolygon() {
+      context.closePath();
+    }

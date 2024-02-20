@@ -1,0 +1,1 @@
+function createHref(to){return"string"==typeof to?to:createPath(to)}

@@ -1,0 +1,1 @@
+function hashClear$1(){this.__data__=nativeCreate$3?nativeCreate$3(null):{},this.size=0}

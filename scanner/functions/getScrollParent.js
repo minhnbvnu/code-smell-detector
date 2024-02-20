@@ -1,0 +1,1 @@
+function getScrollParent(i){return["html","body","#document"].indexOf(getNodeName(i))>=0?i.ownerDocument.body:isHTMLElement(i)&&isScrollParent(i)?i:getScrollParent(getParentNode(i))}

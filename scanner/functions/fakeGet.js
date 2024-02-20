@@ -1,0 +1,1 @@
+function fakeGet(o, cb) { cb(fixtures.data.animals); }

@@ -1,1 +1,1 @@
-function tc(a){a=a|0;var b=0;a:{if(!H[a+48>>2]|!H[a+52>>2]|(!H[a+28>>2]|!H[a+32>>2])){break a}if(!H[a+36>>2]|!H[a+40>>2]){break a}b=H[a+76>>2]!=-1}return b|0}
+function Tc(a){a=a.toString().replace(Sf,"");return a.match(Tf)||a.match(Uf)}

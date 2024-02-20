@@ -1,0 +1,1 @@
+function JOe(e,t){let r=Yre(Object.getPrototypeOf(t));return new r(e,t)}

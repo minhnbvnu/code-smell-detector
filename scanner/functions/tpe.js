@@ -1,0 +1,1 @@
+function tpe(e,t){return t.get?t.get.call(e):t.value}

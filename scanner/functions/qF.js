@@ -1,0 +1,1 @@
+function qF(t){var e=t&&t.visualMap;Y(e)||(e=e?[e]:[]),jF(e,(function(t){if(t){KF(t,"splitList")&&!KF(t,"pieces")&&(t.pieces=t.splitList,delete t.splitList);var e=t.pieces;e&&Y(e)&&jF(e,(function(t){q(t)&&(KF(t,"start")&&!KF(t,"min")&&(t.min=t.start),KF(t,"end")&&!KF(t,"max")&&(t.max=t.end))}))}}))}

@@ -1,1 +1,3 @@
-function sqr(x) { return x*x; }
+function sqr(a) {
+        return a * a;
+    }

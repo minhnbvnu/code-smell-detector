@@ -1,0 +1,1 @@
+function Fv(e,r,t,a){var n={workbookViewId:"0"};if((((a||{}).Workbook||{}).Views||[])[0])n.rightToLeft=a.Workbook.Views[0].RTL?"1":"0";return xt("sheetViews",xt("sheetView",null,n),{})}

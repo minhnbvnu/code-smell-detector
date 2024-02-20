@@ -1,0 +1,1 @@
+function diagonalX(d){var s=source(d),t=target(d),m=(s.x+t.x)/2;return"M"+s.x+","+s.y+"C"+m+","+s.y+" "+m+","+t.y+" "+t.x+","+t.y}

@@ -1,0 +1,1 @@
+function DOMCanvasFactory(){var t,a=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{},i=a.ownerDocument,o=void 0===i?globalThis.document:i;_classCallCheck(this,DOMCanvasFactory);(t=r.call(this))._document=o;return t}

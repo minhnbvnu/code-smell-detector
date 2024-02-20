@@ -1,13 +1,1 @@
-function getFinalCoord(rank, name) {
-	  if (rank === 1) {
-	    return "" + name;
-	  } else if (rank === 2) {
-	    return name + ".y";
-	  } else if (rank === 3) {
-	    return name + ".z";
-	  } else if (rank === 4) {
-	    return name + ".w";
-	  } else {
-	    throw Error("Cumulative sum for rank " + rank + " is not yet supported");
-	  }
-	}
+function getFinalCoord(e,t){if(1===e)return ""+t;if(2===e)return t+".y";if(3===e)return t+".z";if(4===e)return t+".w";throw Error("Cumulative sum for rank "+e+" is not yet supported")}

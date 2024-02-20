@@ -1,0 +1,1 @@
+function _pthread_mutex_lock() {}

@@ -1,0 +1,1 @@
+function Qwe(e){let t=e.node,r=t.childAfter(t.from),n=t.lastChild;if(!r)return null;let i=e.options.simulateBreak,a=e.state.doc.lineAt(r.from),l=i==null||i<=a.from?a.to:Math.min(a.to,i);for(let s=r.to;;){let u=t.childAfter(s);if(!u||u==n)return null;if(!u.type.isSkipped)return u.from<l?r:null;s=u.to}}

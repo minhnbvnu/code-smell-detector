@@ -1,0 +1,1 @@
+function VT(e){if(e===null)return!0;var t,n,o,s,c,u=e;for(c=new Array(u.length),t=0,n=u.length;t<n;t+=1){if(o=u[t],zT.call(o)!=="[object Object]"||(s=Object.keys(o),s.length!==1))return!1;c[t]=[s[0],o[s[0]]]}return!0}

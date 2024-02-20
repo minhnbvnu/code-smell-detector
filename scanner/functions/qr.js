@@ -1,1 +1,1 @@
-function Qr(t,n,e,i,r,o,a,s,u,c){return t=new Gr(t,n,e,i,r),t.h=o,t.g=a,t.i=s,t.b=x(u||null),t.f=c,""+t}
+function qr(t){if(null===t||"object"!==er(t))return null;if(t instanceof Element)return t;var e=tn(t);for(var i in t)Object.prototype.hasOwnProperty.call(t,i)&&"object"==er(t[i])&&(e[i]=qr(t[i]));return e}

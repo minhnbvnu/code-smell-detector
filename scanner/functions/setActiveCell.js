@@ -1,0 +1,1 @@
+function setActiveCell(e,o,t,n,l){initialized&&(e>getDataLength()||e<0||o>=columns.length||o<0||options.enableCellNavigation&&(scrollCellIntoView(e,o,!1),setActiveCellInternal(getCellNode(e,o),t,n,l)))}

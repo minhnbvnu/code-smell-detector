@@ -1,0 +1,1 @@
+function get1(x, y) { var n = get(x, y); return n.length ? n[0] : null; }

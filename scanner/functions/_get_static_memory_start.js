@@ -1,0 +1,1 @@
+function _get_static_memory_start(){var label=0,sp=0;sp=STACKTOP;return 37064|0}

@@ -1,0 +1,1 @@
+function QAe(e){var t=ote(),r=t.name,i=t.version;return{appData:h3(e),appName:r,appVersion:i,electronDefaultDir:$1.getPath("logs"),home:g3(),libraryDefaultDir:nte(e,r),libraryTemplate:ste(e),temp:$1.getPath("temp")||O_.tmpdir(),userData:F_(e,r)}}

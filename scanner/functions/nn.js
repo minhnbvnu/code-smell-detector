@@ -1,1 +1,1 @@
-function Nn(t,n){t&&t.log(kc,n,void 0)}
+function nn(t){return(t>0)-(t<0)||+t}

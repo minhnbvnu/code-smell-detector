@@ -1,0 +1,1 @@
+function _emscripten_glDrawElements(mode,count,type,indices){GLctx.drawElements(mode,count,type,indices)}

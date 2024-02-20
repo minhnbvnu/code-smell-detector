@@ -1,19 +1,14 @@
-function generate(title, docs, filename, resolveLinks) {
-  resolveLinks = resolveLinks === false ? false : true;
-
-  const docData = {
-    filename: filename,
-    title: title,
-    docs: docs,
-    packageInfo: (find({kind: 'package'}) || [])[0],
-  };
-
-  const outpath = path.join(outdir, filename);
-  let html = view.render('container.tmpl', docData);
-
-  if (resolveLinks) {
-    html = helper.resolveLinks(preprocessLinks(html)); // turn {@link foo} into <a href="foodoc.html">foo</a>
+function generate(node, key, rootProps) {
+  if (!rootProps) {
+    return /*#__PURE__*/external_window_React_["createElement"](node.tag, extends_default()({
+      key: key
+    }, normalizeAttrs(node.attrs)), (node.children || []).map(function (child, index) {
+      return generate(child, key + '-' + node.tag + '-' + index);
+    }));
   }
-
-  fs.writeFileSync(outpath, html, 'utf8');
+  return /*#__PURE__*/external_window_React_["createElement"](node.tag, extends_default()({
+    key: key
+  }, normalizeAttrs(node.attrs), rootProps), (node.children || []).map(function (child, index) {
+    return generate(child, key + '-' + node.tag + '-' + index);
+  }));
 }

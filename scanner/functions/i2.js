@@ -1,0 +1,1 @@
+function i2(n,e,r){let u=Object.keys(e).filter(o=>o.toUpperCase()==="DEFAULT"),t=u.length===0||!!e[u[0]],i={};return n.forEach(o=>{let s=o.names[0].toUpperCase();i[s]=t}),Xa.forEach(o=>{i[o]=!1}),Object.keys(e).forEach(o=>{let s=e[o];s?s instanceof Object||(s={}):s=!1;let l=o.toUpperCase();(r[l]||[]).forEach(c=>{i[c]=s})}),i}

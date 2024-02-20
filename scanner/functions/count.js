@@ -1,13 +1,18 @@
-function count(array, refernce) {
-	  var counter = 0;
+function count(value) {
+    var count = 0;
+    return new stream.Transform({
+      objectMode: true,
+      transform: function (file, enc, cb) {
+        if (typeof enc === 'function') {
+          cb = enc;
+        }
 
-	  for (var _iterator = _createForOfIteratorHelperLoose(array), _step; !(_step = _iterator()).done;) {
-	    var item = _step.value;
-
-	    if (item === refernce) {
-	      counter++;
-	    }
-	  }
-
-	  return counter;
-	}
+        count++;
+        cb(null, file);
+      },
+      flush: function (cb) {
+        expect(count).toEqual(value);
+        cb();
+      },
+    });
+  }

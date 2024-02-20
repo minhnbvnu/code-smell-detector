@@ -1,3 +1,1 @@
-function ThisExpression() {
-	  this.word("this");
-	}
+function ThisExpression(){i.apply(this,arguments)}

@@ -1,0 +1,1 @@
+function eD(e){tD(e);iD(e,"width");iD(e,"height")}

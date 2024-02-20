@@ -1,0 +1,1 @@
+function testHistory (results) { this.initialize(results); }

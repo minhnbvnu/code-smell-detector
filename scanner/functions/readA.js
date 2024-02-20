@@ -1,0 +1,1 @@
+function readA(){return readBits('a', 8);}

@@ -1,0 +1,1 @@
+function FeedHandler(callback,options){this.init(callback,options)}

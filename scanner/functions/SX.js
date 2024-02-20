@@ -1,0 +1,1 @@
+function SX(t,e,n,i){const r={},a={};for(const o in t){if(t[o]!=null){r[o]=BX(TX(t[o]),i,n,a)}}return{$expr:{marktype:e,channels:r},$fields:Object.keys(a),$output:Object.keys(t)}}

@@ -1,0 +1,1 @@
+function reactFor(i){return function b(o,s){if(s=s||{},Array.isArray(o)){for(var u=s.key,C=[],_=!1,w=0;w<o.length;w++){s.key=w;var P=b(o[w],s),B="string"==typeof P;B&&_?C[C.length-1]+=P:C.push(P),_=B}return s.key=u,C}return i(o,b,s)}}

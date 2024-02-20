@@ -1,0 +1,1 @@
+function JsonTree(props){var _this21;return _classCallCheck(this,JsonTree),(_this21=_super10.call(this,props)).state={data:props.data,rootName:props.rootName},_this21.onUpdate=_this21.onUpdate.bind(_assertThisInitialized2(_this21)),_this21.removeRoot=_this21.removeRoot.bind(_assertThisInitialized2(_this21)),_this21}

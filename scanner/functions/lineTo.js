@@ -1,6 +1,1 @@
-function lineTo(x, y) {
-      cmds.push({
-        cmd: "lineTo",
-        args: [x, y]
-      });
-    }
+function lineTo(t,o){r.push({cmd:"lineTo",args:[t,o]})}

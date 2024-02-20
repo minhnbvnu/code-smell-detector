@@ -1,0 +1,1 @@
+function toSource$2(func){if(null!=func){try{return funcToString$1.call(func)}catch(e){}try{return func+""}catch(e){}}return""}

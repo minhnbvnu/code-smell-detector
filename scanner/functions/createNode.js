@@ -1,10 +1,6 @@
-function createNode(topo, coord) {
-  let node;
-  const existingEdge = topo.getEdgeByPoint(coord, 5)[0];
-  if (existingEdge) {
-    node = topo.modEdgeSplit(existingEdge, coord);
-  } else {
-    node = topo.addIsoNode(coord);
-  }
-  return node;
-}
+function createNode(kind, pos, end, parent2) {
+            const node = isNodeKind(kind) ? new NodeObject(kind, pos, end) : kind === 79 /* Identifier */ ? new IdentifierObject(79 /* Identifier */, pos, end) : kind === 80 /* PrivateIdentifier */ ? new PrivateIdentifierObject(80 /* PrivateIdentifier */, pos, end) : new TokenObject(kind, pos, end);
+            node.parent = parent2;
+            node.flags = parent2.flags & 50720768 /* ContextFlags */;
+            return node;
+        }

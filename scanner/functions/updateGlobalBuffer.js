@@ -1,0 +1,1 @@
+function updateGlobalBuffer(buf){Module["buffer"]=buffer=buf}

@@ -1,0 +1,1 @@
+function isProperty(i){return"property"===i||"prop"===i}

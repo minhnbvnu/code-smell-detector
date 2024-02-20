@@ -1,0 +1,1 @@
+function parse_PtgMemArea(blob,length){var type=blob.read_shift(1)>>>5&3;blob.l+=4;var cce=blob.read_shift(2);return[type,cce]}

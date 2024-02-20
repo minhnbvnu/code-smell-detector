@@ -1,0 +1,1 @@
+function bAe(e){if(process.type==="browser")lg().on("web-contents-created",function(t,r){var i=r.executeJavaScript('try {require("'+e+'")} catch(e){}; void 0;');i&&typeof i.catch=="function"&&i.catch(function(){})});else if(process.type==="renderer")try{hAe().require(e)}catch{}}

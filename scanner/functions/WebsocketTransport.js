@@ -1,0 +1,1 @@
+function WebsocketTransport(_ref){var url=_ref.url,onError=_ref.onError;!function esm_classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}(this,WebsocketTransport),this.socket=void 0,this.handler=void 0,this.buffer=[],this.isReady=!1,this.connect(url,onError)}

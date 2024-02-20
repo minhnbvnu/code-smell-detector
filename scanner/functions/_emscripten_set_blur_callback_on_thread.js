@@ -1,0 +1,1 @@
+function _emscripten_set_blur_callback_on_thread(target,userData,useCapture,callbackfunc,targetThread){registerFocusEventCallback(target,userData,useCapture,callbackfunc,12,"blur",targetThread);return 0}

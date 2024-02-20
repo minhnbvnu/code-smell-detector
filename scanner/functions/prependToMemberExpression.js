@@ -1,4 +1,4 @@
 function prependToMemberExpression(member, prepend) {
-	  member.object = t.memberExpression(prepend, member.object);
-	  return member;
-	}
+  member.object = (0, _generated.memberExpression)(prepend, member.object);
+  return member;
+}

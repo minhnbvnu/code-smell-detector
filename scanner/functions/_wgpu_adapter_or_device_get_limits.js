@@ -1,0 +1,1 @@
+function _wgpu_adapter_or_device_get_limits(adapterOrDevice,limits){let l=wgpu[adapterOrDevice]["limits"];limits>>=2;for(let limitName of _wgpu64BitLimitNames){wgpuWriteU64HeapIdx(limits,l[limitName]);limits+=2}for(let limitName of _wgpu32BitLimitNames){HEAPU32[limits++]=l[limitName]}}

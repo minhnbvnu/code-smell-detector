@@ -1,0 +1,1 @@
+function reparameterize(t,r,a){return a.map((function(a,i){return newtonRaphsonRootFind(t,r[i],a)}))}

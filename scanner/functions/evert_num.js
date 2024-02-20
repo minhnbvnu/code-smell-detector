@@ -1,0 +1,1 @@
+function evert_num(obj){var o=[],K=keys(obj);for(var i=0;i!==K.length;++i)o[obj[K[i]]]=parseInt(K[i],10);return o}

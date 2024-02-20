@@ -1,0 +1,1 @@
+function hL(t,e,n,i){var r=new zr;return r.add(new zs({name:"main",style:fL(n),silent:!0,draggable:!0,cursor:"move",drift:H(vL,t,e,r,["n","s","w","e"]),ondragend:H(lL,e,{isEnd:!0})})),E(i,(function(n){r.add(new zs({name:n.join(""),style:{opacity:0},draggable:!0,silent:!0,invisible:!0,drift:H(vL,t,e,r,n),ondragend:H(lL,e,{isEnd:!0})}))})),r}

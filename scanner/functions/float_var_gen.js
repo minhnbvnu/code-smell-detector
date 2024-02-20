@@ -1,0 +1,1 @@
+function float_var_gen(x,name=null) { return ()=> { return Var( float(x), name, 'float' ) } }

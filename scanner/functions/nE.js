@@ -1,0 +1,1 @@
+function nE(t){return t.get("stack")||"__ec_stack_"+t.seriesIndex}

@@ -1,0 +1,1 @@
+function Hae(e){let t=0,r=0,n=0,i=0;for(let a of e.state.facet(qae)){let l=a(e);l&&(l.left!=null&&(t=Math.max(t,l.left)),l.right!=null&&(r=Math.max(r,l.right)),l.top!=null&&(n=Math.max(n,l.top)),l.bottom!=null&&(i=Math.max(i,l.bottom)))}return{left:t,right:r,top:n,bottom:i}}

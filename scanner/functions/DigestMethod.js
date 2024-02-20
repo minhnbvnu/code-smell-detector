@@ -1,0 +1,1 @@
+function DigestMethod(t){var o;_classCallCheck(this,DigestMethod);(o=r.call(this,_,"digestMethod",["","SHA1","SHA256","SHA512","RIPEMD160"])).id=t.id||"";o.use=t.use||"";o.usehref=t.usehref||"";return o}

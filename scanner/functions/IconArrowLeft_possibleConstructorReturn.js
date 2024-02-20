@@ -1,0 +1,1 @@
+function IconArrowLeft_possibleConstructorReturn(self, call) { if (call && (IconArrowLeft_typeof(call) === "object" || typeof call === "function")) { return call; } return IconArrowLeft_assertThisInitialized(self); }

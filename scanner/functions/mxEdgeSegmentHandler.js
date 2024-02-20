@@ -1,0 +1,1 @@
+function mxEdgeSegmentHandler(a){mxEdgeHandler.call(this,a)}

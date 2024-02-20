@@ -1,0 +1,1 @@
+function WE(t,e,n,i){t&&t.parent&&("group"===t.type&&t.traverse((function(t){WE(t,e,n,i)})),oR(t,e,i),n.removeKey(VE(t).id))}

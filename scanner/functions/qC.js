@@ -1,0 +1,1 @@
+function qC(e){return e.variants&&!e.cachedVariants&&(e.cachedVariants=e.variants.map(function(t){return fr(e,{variants:null},t)})),e.cachedVariants?e.cachedVariants:fu(e)?fr(e,{starts:e.starts?fr(e.starts):null}):Object.isFrozen(e)?fr(e):e}

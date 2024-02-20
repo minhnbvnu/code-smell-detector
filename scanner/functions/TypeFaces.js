@@ -1,0 +1,1 @@
+function TypeFaces(t){var o;_classCallCheck(this,TypeFaces);(o=r.call(this,h,"typeFaces",!0)).typeFace=new l.XFAObjectArray;return o}

@@ -1,0 +1,1 @@
+function _glColorMask(red,green,blue,alpha){colorMaskValue[0]=!!red;colorMaskValue[1]=!!green;colorMaskValue[2]=!!blue;colorMaskValue[3]=!!alpha;GLctx.colorMask(colorMaskValue[0],colorMaskValue[1],colorMaskValue[2],colorMaskValue[3])}

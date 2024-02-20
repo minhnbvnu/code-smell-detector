@@ -1,0 +1,1 @@
+function ___cxa_free_exception(ptr){return _free(new ExceptionInfo(ptr).ptr)}

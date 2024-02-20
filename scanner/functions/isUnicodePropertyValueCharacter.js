@@ -1,0 +1,1 @@
+function isUnicodePropertyValueCharacter(i){return isUnicodePropertyNameCharacter(i)||isDecimalDigit(i)}

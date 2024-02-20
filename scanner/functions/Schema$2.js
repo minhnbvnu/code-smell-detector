@@ -1,0 +1,1 @@
+function Schema$2(property,normal,space){this.property=property,this.normal=normal,space&&(this.space=space)}

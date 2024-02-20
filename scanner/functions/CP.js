@@ -1,0 +1,1 @@
+function CP(n){return n!==2?!1:gi(n).fenceSync!=null}

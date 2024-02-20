@@ -1,1 +1,7 @@
-function On(t){var n="";return Pn(t,function(t){n+=String.fromCharCode(t)}),n}
+function on(el, event, fn) {
+  if (el.addEventListener) {
+    el.addEventListener(event, fn, false);
+  } else {
+    el.attachEvent('on' + event, fn);
+  }
+}

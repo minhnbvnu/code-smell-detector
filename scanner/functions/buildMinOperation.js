@@ -1,9 +1,1 @@
-function buildMinOperation(num1, max) {
-    if (num1.min >= max) {
-      return new AstLiteral(max);
-    } else if (num1.max <= max) {
-      return num1;
-    }
-
-    return new AstMin(num1, max);
-  }
+function buildMinOperation(t,r){return t.min>=r?new o(r):t.max<=r?t:new u(t,r)}

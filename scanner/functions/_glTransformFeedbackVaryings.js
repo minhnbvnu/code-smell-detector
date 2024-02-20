@@ -1,0 +1,1 @@
+function _glTransformFeedbackVaryings(program,count,varyings,bufferMode){program=GL.programs[program];var vars=[];for(var i=0;i<count;i++)vars.push(Pointer_stringify(HEAP32[varyings+i*4>>2]));GLctx["transformFeedbackVaryings"](program,vars,bufferMode)}

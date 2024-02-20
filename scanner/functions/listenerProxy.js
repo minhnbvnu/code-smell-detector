@@ -1,0 +1,3 @@
+function listenerProxy() {
+        listener(element);
+      }

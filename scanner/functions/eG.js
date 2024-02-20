@@ -1,0 +1,1 @@
+function eG(n){let e={x:pe(n,"x","relu")};return Kt.runKernel(qs,e)}

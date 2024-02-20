@@ -1,0 +1,1 @@
+function R3(a,b,c,d,e){a=a|0;b=b|0;c=c|0;d=d|0;e=e|0;var f=0,g=0;g=l;l=l+256|0;f=g;if((c|0)>(d|0)&(e&73728|0)==0){e=c-d|0;Y6(f|0,b|0,(e>>>0<256?e:256)|0)|0;if(e>>>0>255){b=c-d|0;do{L3(a,f,256);e=e+-256|0}while(e>>>0>255);e=b&255}L3(a,f,e)}l=g;return}

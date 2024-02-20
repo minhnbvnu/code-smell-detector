@@ -1,0 +1,1 @@
+function Encodings(t){var o;_classCallCheck(this,Encodings);(o=r.call(this,_,"encodings",!0)).id=t.id||"";o.type=(0,d.getStringOption)(t.type,["optional","required"]);o.use=t.use||"";o.usehref=t.usehref||"";o.encoding=new c.XFAObjectArray;return o}

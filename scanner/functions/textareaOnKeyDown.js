@@ -1,0 +1,1 @@
+function textareaOnKeyDown(event){var keyCode=event.keyCode;inArray(keyCode,textareaKeyDownRestrictedKeyCodes)<0&&(textareaKeyDownKeyCodesList[LEXICON.l]||(updateTextarea(),textareaUpdateIntervalID=setInterval(updateTextarea,1e3/60)),inArray(keyCode,textareaKeyDownKeyCodesList)<0&&textareaKeyDownKeyCodesList.push(keyCode))}

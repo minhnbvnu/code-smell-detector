@@ -1,3 +1,1 @@
-function encodeWeights(_x, _x2) {
-	  return _encodeWeights.apply(this, arguments);
-	}
+function encodeWeights(e){return __awaiter(this,void 0,void 0,function(){var t,n,r,o;return __generator(this,function(a){switch(a.label){case 0:for(r in t=[],n=[],e){if("float32"!==(o=e[r]).dtype&&"int32"!==o.dtype&&"bool"!==o.dtype)throw new Error("Unsupported dtype in weight '"+r+"': "+o.dtype);t.push({name:r,shape:o.shape,dtype:o.dtype}),n.push(o.data());}return [4,Promise.all(n)];case 1:return [2,{data:concatenateTypedArrays(a.sent()),specs:t}]}})})}

@@ -1,0 +1,1 @@
+function dRe(e,t){const r={type:"element",tagName:"hr",properties:{},children:[]};return e.patch(t,r),e.applyData(t,r)}

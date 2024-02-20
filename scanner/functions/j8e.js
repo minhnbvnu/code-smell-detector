@@ -1,0 +1,1 @@
+function j8e(e,t){let r=[],n=!1;return e.iterChangedRanges((i,a)=>r.push(i,a)),t.iterChangedRanges((i,a,l,s)=>{for(let u=0;u<r.length;){let c=r[u++],d=r[u++];s>=c&&l<=d&&(n=!0)}}),n}

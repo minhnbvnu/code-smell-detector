@@ -1,0 +1,1 @@
+function iS(t,e){var n=t.mapDimensionsAll("defaultedLabel"),i=n.length;if(1===i){var r=gf(t,e,n[0]);return null!=r?r+"":null}if(i){for(var o=[],a=0;a<n.length;a++)o.push(gf(t,e,n[a]));return o.join(" ")}}

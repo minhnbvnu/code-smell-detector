@@ -1,0 +1,1 @@
+function passThroughWrite(buffer){return buffer.toString(this.encoding)}

@@ -1,0 +1,1 @@
+function u7e(e,t){var r=t.length,i=Math.ceil(r/8),a=i*8-r,n=aS.alloc(1+i);n[0]=a;for(var s=0;s<r;++s){var o=1+Math.floor(s/8),u=7-s%8,l=1<<u,p=t[s];if(p!==void 0){var c=e.indexOf(p)!==-1;c&&(n[o]|=l)}}return n}

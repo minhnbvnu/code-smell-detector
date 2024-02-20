@@ -1,3 +1,3 @@
 function NumericLiteral() {
-	  return t.numberTypeAnnotation();
-	}
+  return t.numberTypeAnnotation();
+}

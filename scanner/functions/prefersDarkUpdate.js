@@ -1,0 +1,1 @@
+function prefersDarkUpdate(event){updateMode(event.matches?"dark":"light")}

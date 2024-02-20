@@ -1,0 +1,1 @@
+function qbe(e){let{isEmpty:t,isSelectAll:r,selectionMode:n}=e.selectionManager;return{checkboxProps:{"aria-label":ar(X1(tp),"@react-aria/table").format(n==="single"?"select":"selectAll"),isSelected:r,isDisabled:n!=="multiple"||e.collection.size===0,isIndeterminate:!t&&!r,onChange:()=>e.selectionManager.toggleSelectAll()}}}

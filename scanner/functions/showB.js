@@ -1,0 +1,1 @@
+function showB(){setDisp(arguments,"block")}

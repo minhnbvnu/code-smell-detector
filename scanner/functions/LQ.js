@@ -1,0 +1,1 @@
+function LQ(a){a=a|0;var b=0;a=Tz(a)|0;while(1){if(!a)break;b=Tz(c[a+16>>2]|0)|0;while(1){if(!b)break;c[b+32>>2]=oR(c[b+24>>2]|0)|0;b=c[b>>2]|0}a=c[a>>2]|0}return}

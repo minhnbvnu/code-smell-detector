@@ -1,5 +1,5 @@
-function show_news() {
-	if ($news_window) {
+function show_news(){
+	if($news_window){
 		$news_window.close();
 	}
 	$news_window = $Window({

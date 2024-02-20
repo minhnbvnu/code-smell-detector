@@ -1,0 +1,1 @@
+function exitRuntime(){callRuntimeCallbacks(__ATEXIT__);runtimeExited=true}

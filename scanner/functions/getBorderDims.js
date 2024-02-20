@@ -1,0 +1,1 @@
+function getBorderDims(t){if(!t||!t.border)return{w:0,h:0};var r=t.border[c.$getExtra]();return r?{w:r.widths[0]+r.widths[2]+r.insets[0]+r.insets[2],h:r.widths[1]+r.widths[3]+r.insets[1]+r.insets[3]}:{w:0,h:0}}

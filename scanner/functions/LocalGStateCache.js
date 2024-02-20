@@ -1,0 +1,1 @@
+function LocalGStateCache(){_classCallCheck(this,LocalGStateCache);return r.apply(this,arguments)}

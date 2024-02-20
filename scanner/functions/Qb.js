@@ -1,0 +1,1 @@
+function Qb(a,b){return S(Object.create(a),b)}

@@ -1,0 +1,1 @@
+function ensureInt32(value){if(typeof value==="object"){var offset=ensureCache.alloc(value,HEAP32);ensureCache.copy(value,HEAP32,offset);return offset}return value}

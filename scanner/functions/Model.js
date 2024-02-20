@@ -1,3 +1,3 @@
-function model(args) {
-	  return new LayersModel(args);
+function Model(storage) {
+		this.storage = storage;
 	}

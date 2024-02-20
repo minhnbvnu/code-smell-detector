@@ -1,0 +1,1 @@
+function TrueTypeCompiled(t,o,c){var l;_classCallCheck(this,TrueTypeCompiled);(l=r.call(this,c||[488e-6,0,0,488e-6,0,0])).glyphs=t;l.cmap=o;return l}

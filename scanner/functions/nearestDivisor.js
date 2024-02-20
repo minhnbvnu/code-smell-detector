@@ -1,9 +1,1 @@
-function nearestDivisor(size, start) {
-	  for (var i = start; i < size; ++i) {
-	    if (size % i === 0) {
-	      return i;
-	    }
-	  }
-
-	  return size;
-	}
+function nearestDivisor(e,t){for(var n=t;n<e;++n)if(e%n==0)return n;return e}

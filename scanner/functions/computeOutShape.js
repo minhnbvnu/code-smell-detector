@@ -1,9 +1,1 @@
-function computeOutShape(begin, end, strides) {
-	  var size = [];
-
-	  for (var axis = 0; axis < begin.length; axis++) {
-	    size[axis] = Math.ceil((end[axis] - begin[axis]) / strides[axis]);
-	  }
-
-	  return size;
-	}
+function computeOutShape(e,t){for(var n=e[0].slice(),r=1;r<e.length;r++)n[t]+=e[r][t];return n}

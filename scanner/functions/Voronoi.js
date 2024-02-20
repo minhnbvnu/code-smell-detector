@@ -1,0 +1,2 @@
+function Voronoi(){this.vertices=null;this.edges=null;this.cells=null;this.toRecycle=null;this.beachsectionJunkyard=[];this.circleEventJunkyard=[];
+this.vertexJunkyard=[];this.edgeJunkyard=[];this.cellJunkyard=[]}

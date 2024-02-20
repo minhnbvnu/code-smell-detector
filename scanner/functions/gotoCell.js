@@ -1,0 +1,1 @@
+function gotoCell(e,o,t,n){if(initialized&&canCellBeActive(e,o)&&getEditorLock().commitCurrentEdit()){scrollCellIntoView(e,o,!1);var l=getCellNode(e,o),r=columns[o],i=!!(options.editable&&r&&r.editor&&options.suppressActiveCellChangeOnEdit);setActiveCellInternal(l,t||e===getDataLength()||options.autoEdit,null,i,n),currentEditor||setFocus()}}

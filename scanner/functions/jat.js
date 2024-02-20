@@ -1,0 +1,1 @@
+function jat(n,t){return function(e){this.setAttribute(n,t.call(this,e))}}

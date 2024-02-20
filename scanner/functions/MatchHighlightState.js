@@ -1,0 +1,3 @@
+function MatchHighlightState() {
+	this.marked = [];
+  }

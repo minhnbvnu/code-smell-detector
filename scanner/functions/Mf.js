@@ -1,0 +1,2 @@
+function Mf(a,b,c,d,e,f){var g=a.stateNode;a=a.type;
+return"function"===typeof g.shouldComponentUpdate?g.shouldComponentUpdate(c,e,f):a.prototype&&a.prototype.isPureReactComponent?!Rc(b,c)||!Rc(d,e):!0}

@@ -1,0 +1,1 @@
+function SI(t){return!isNaN(t[0])&&!isNaN(t[1])}

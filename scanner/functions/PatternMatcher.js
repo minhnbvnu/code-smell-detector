@@ -1,0 +1,1 @@
+function PatternMatcher(i){AsYouTypeFormatter_PatternMatcher_classCallCheck(this,PatternMatcher),this.matchTree=(new Ye).parse(i)}

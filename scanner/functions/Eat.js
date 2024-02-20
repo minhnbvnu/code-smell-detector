@@ -1,0 +1,1 @@
+function Eat(n,t){return function(e){return n+e*t}}

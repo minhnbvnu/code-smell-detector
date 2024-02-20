@@ -1,0 +1,1 @@
+function useArgTypes(){var _useCurrentStory;return(null===(_useCurrentStory=function useCurrentStory(){return(0,useStorybookApi().getCurrentStoryData)()}())||void 0===_useCurrentStory?void 0:_useCurrentStory.argTypes)||{}}

@@ -1,0 +1,1 @@
+function _wgpu_queue_submit_one(queue,commandBuffer){wgpu[queue]["submit"]([wgpu[commandBuffer]])}

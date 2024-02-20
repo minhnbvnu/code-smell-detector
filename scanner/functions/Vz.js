@@ -1,0 +1,1 @@
+function Vz(n){for(let t=n.length-1;t>=0;--t)if(n[t]>65535)return!0;return!1}

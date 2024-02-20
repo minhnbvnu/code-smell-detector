@@ -1,0 +1,1 @@
+function i0(t,e){if(!(e==="constructor"&&typeof t[e]=="function")&&e!="__proto__")return t[e]}

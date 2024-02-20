@@ -1,0 +1,1 @@
+function AM(t){var e=Mo(ir(t.nodes(),function(s){return t.node(s).rank})),r=[];vt(t.nodes(),function(s){var a=t.node(s).rank-e;r[a]||(r[a]=[]),r[a].push(s)});var n=0,i=t.graph().nodeRankFactor;vt(r,function(s,a){Ze(s)&&a%i!==0?--n:n&&vt(s,function(o){t.node(o).rank+=n})})}

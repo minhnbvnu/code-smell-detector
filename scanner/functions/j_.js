@@ -1,0 +1,1 @@
+function j_(t){if(t instanceof ei)return new ei(t.h,t.c,t.l,t.opacity);if(t instanceof Fn||(t=Cf(t)),t.a===0&&t.b===0)return new ei(NaN,0<t.l&&t.l<100?0:NaN,t.l,t.opacity);var e=Math.atan2(t.b,t.a)*H_;return new ei(e<0?e+360:e,Math.sqrt(t.a*t.a+t.b*t.b),t.l,t.opacity)}

@@ -1,0 +1,1 @@
+function xSe(e,t){for(let r of e)if(t(r))return r}

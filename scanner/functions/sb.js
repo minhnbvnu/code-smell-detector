@@ -1,0 +1,1 @@
+function sb(a,b,d){if(!a)throw Da("areq",b||"?",d||"required");return a}

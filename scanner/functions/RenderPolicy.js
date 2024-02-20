@@ -1,0 +1,1 @@
+function RenderPolicy(t){_classCallCheck(this,RenderPolicy);return r.call(this,d,"renderPolicy",["server","client"])}

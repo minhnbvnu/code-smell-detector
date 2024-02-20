@@ -7,6 +7,6 @@ function load_theme_from_text(fileText) {
 	applyCSSProperties(cssProperties, { recurseIntoIframes: true });
 
 	window.themeCSSProperties = cssProperties;
-
+	
 	$G.triggerHandler("theme-load");
 }

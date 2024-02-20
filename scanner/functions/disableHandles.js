@@ -1,0 +1,1 @@
+function disableHandles(){seehandles=false;$hdl_holder.hide()}

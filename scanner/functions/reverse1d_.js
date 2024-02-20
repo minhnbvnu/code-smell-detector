@@ -1,7 +1,1 @@
-function reverse1d_(x) {
-	  var $x = convertToTensor(x, 'x', 'reverse');
-	  assert($x.rank === 1, function () {
-	    return "Error in reverse1D: x must be rank 1 but got rank " + $x.rank + ".";
-	  });
-	  return reverse($x, 0);
-	}
+function reverse1d_(e){var t=convertToTensor(e,"x","reverse");return assert(1===t.rank,"Error in reverse1D: x must be rank 1 but got\n             rank "+t.rank+"."),reverse(t,0)}

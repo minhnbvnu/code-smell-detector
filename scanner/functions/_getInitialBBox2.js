@@ -1,0 +1,1 @@
+function _getInitialBBox2(){var t=this.parent.viewport,r=t.width,a=t.height;switch(t.rotation){case 90:return[0,r,r,a];case 180:return[r,a,r,a];case 270:return[a,0,r,a];default:return[0,0,r,a]}}

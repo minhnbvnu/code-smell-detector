@@ -1,1 +1,1 @@
-function fh(a){a=a|0;return(H[a+100>>2]-H[a+96>>2]|0)/12|0}
+function fh(t,e,i){for(var n=0,o=0;o<t.length;o++){var r=t[o].start,s=t[o].end;r>=e&&s<i&&(n+=s-r)}return n}

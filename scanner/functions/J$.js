@@ -1,0 +1,1 @@
+function J$(n,t){let e=n[0]-t[0],i=n[1]-t[1],r=n[2]-t[2];return e*e+i*i+r*r}

@@ -1,1 +1,1 @@
-function Di(t){this.b=t.sub,fu(),this.a=t.provider_id||t.firebase&&t.firebase.sign_in_provider||null}
+function di(t,e){return(t%e+e)%e}

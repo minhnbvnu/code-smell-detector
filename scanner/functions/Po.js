@@ -1,1 +1,1 @@
-function Po(t){t.f&&(clearInterval(t.f),t.f=null)}
+function Po(t,e){var i=t.since<=t.until?1:-1;return void 0===e?o(t.since).year():o(t.since).year()+(e-t.offset)*i}

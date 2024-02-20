@@ -1,0 +1,3 @@
+function decreaseIndent() {
+                writer.decreaseIndent();
+            }

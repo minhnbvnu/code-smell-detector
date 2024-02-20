@@ -1,1 +1,1 @@
-function Yg(a,b){a=a|0;b=b|0;return I[H[a>>2]+b|0]}
+function yG(n,t,e=!0){let i=[];if(e){i.push(t);for(let r=t+1;r<n;++r)r<=2*t?(i.push(r),i.push(r-(t+1))):i.push(r)}else{let r=[],o=[];for(let s=1;s<n;++s)s>=t*2+1||s%2===1?o.push(s):r.push(s);i.push(...r),i.push(0),i.push(...o)}return i}

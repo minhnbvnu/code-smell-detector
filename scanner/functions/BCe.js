@@ -1,0 +1,1 @@
+function BCe(e,t){if(e>4294967295||e<1)return Ie.ONE;var r=Cr(),i=Cr(),a=t.convert(this),n=D4(e)-1;for(a.copyTo(r);--n>=0;)if(t.sqrTo(r,i),(e&1<<n)>0)t.mulTo(i,a,r);else{var s=r;r=i,i=s}return t.revert(r)}

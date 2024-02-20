@@ -1,1 +1,1 @@
-function uw(a){a=a|0;var b=0;b=fa-16|0;fa=b;J[b+15|0]=a;a=oa(172);Kg(a,J[b+15|0]&1,1);fa=b+16|0;return a|0}
+function Uw(e,r){switch(r.type){case"base64":;case"binary":break;case"buffer":;case"array":r.type="";break;case"file":return nr(r.file,er.write(e,{type:y?"buffer":""}));case"string":throw new Error("'string' output type invalid for '"+r.bookType+"' files");default:throw new Error("Unrecognized type "+r.type);}return er.write(e,r)}

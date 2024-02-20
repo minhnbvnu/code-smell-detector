@@ -1,0 +1,1 @@
+function baseIndexOf$1(array,value,fromIndex){return value==value?strictIndexOf(array,value,fromIndex):baseFindIndex(array,baseIsNaN,fromIndex)}

@@ -1,0 +1,1 @@
+function parse_ColorTheme(blob,length){return blob.read_shift(4)}

@@ -1,17 +1,1 @@
-function getKeyword({
-  data,
-  defaultValue,
-  validate
-}) {
-  if (!data) {
-    return defaultValue;
-  }
-
-  data = data.trim();
-
-  if (validate(data)) {
-    return data;
-  }
-
-  return defaultValue;
-}
+function getKeyword(t){var r=t.data,o=t.defaultValue,c=t.validate;return r&&c(r=r.trim())?r:o}

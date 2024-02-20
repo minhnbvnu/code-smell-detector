@@ -1,3 +1,1 @@
-function TemplateLiteral() {
-	  return t.stringTypeAnnotation();
-	}
+function TemplateLiteral(){i.apply(this,arguments)}

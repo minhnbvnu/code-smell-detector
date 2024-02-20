@@ -1,0 +1,1 @@
+function byTagName(tn) { return root.getElementsByTagName(tn); }

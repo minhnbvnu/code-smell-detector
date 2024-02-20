@@ -1,0 +1,1 @@
+function scales(spec,scales,db,group){return(spec||[]).reduce(function(o,def){var name=def.name,prev=name+":prev";o[name]=scale(def,o[name],db,group);o[prev]=o[prev]||o[name];return o},scales||{})}

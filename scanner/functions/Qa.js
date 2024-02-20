@@ -1,0 +1,1 @@
+function Qa(a,b,c){var d="";b&&(d=V(b,"ng-",!0));c.addClass&&(d=W(d,V(c.addClass,"-add")));c.removeClass&&(d=W(d,V(c.removeClass,"-remove")));d.length&&(c.preparationClasses=d,a.addClass(d))}

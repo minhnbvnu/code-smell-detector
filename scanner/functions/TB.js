@@ -1,0 +1,1 @@
+function TB(t,e){return t.intersect(e)}

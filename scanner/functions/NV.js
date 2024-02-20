@@ -1,0 +1,1 @@
+function NV(n){let t=n.length-1,e=n[0].length-1,i=n[t][e],r=[];for(;t>0||e>0;){if(t==0){r.push(x2),e--;continue}if(e==0){r.push(v2),t--;continue}let o=n[t-1][e-1],s=n[t-1][e],a=n[t][e-1],l;s<a?l=s<o?s:o:l=a<o?a:o,l==o?(o==i?r.push(q4):(r.push(X4),i=o),t--,e--):l==s?(r.push(v2),t--,i=s):(r.push(x2),e--,i=a)}return r.reverse(),r}

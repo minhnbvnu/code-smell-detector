@@ -1,0 +1,1 @@
+function return_true() { return true; }

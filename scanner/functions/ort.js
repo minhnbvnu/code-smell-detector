@@ -1,0 +1,1 @@
+function ort(n,t){let e=this.cache;if(t.x!==void 0)(e[0]!==t.x||e[1]!==t.y)&&(n.uniform2f(this.addr,t.x,t.y),e[0]=t.x,e[1]=t.y);else{if(ii(e,t))return;n.uniform2fv(this.addr,t),Kn(e,t)}}

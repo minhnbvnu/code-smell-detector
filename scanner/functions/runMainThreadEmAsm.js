@@ -1,0 +1,1 @@
+function runMainThreadEmAsm(code,sigPtr,argbuf,sync){var args=readEmAsmArgs(sigPtr,argbuf);return ASM_CONSTS[code].apply(null,args)}

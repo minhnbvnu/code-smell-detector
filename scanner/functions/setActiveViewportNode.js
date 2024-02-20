@@ -1,0 +1,1 @@
+function setActiveViewportNode(e){e&&($activeViewportNode=$(e.target).closest(".slick-viewport"))}

@@ -1,17 +1,1 @@
-function getOutOfBoundsCondition(rank, shape, dims) {
-	  if (rank === 1) {
-	    return "rc > " + shape[0];
-	  }
-
-	  var cond = '';
-
-	  for (var i = rank - 2; i < rank; i++) {
-	    cond += dims[i] + " >= " + shape[i];
-
-	    if (i < rank - 1) {
-	      cond += '||';
-	    }
-	  }
-
-	  return cond;
-	}
+function getOutOfBoundsCondition(e,t,n){if(1===e)return "rc > "+t[0];for(var r="",o=e-2;o<e;o++)r+=n[o]+" >= "+t[o],o<e-1&&(r+="||");return r}

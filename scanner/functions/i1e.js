@@ -1,0 +1,1 @@
+function i1e({state:e,targetRef:t,trigger:r,content:n,hideArrow:i,...a}){let l=O.useRef(null),{triggerProps:s,overlayProps:u}=RR({type:"dialog"},e,l),c={...s,ref:t?void 0:l},d=S.createElement(Q1,{...a,hideArrow:i,triggerRef:t||l,state:e},typeof n=="function"?n(e.close):n);return S.createElement($J,{type:"popover",state:e,triggerProps:c,dialogProps:u,trigger:r,overlay:d})}

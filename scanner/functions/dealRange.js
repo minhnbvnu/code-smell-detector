@@ -1,0 +1,1 @@
+function dealRange(type){var func,rv,v;func="s_"+type+"($dt."+type+")";rv=$c.checkRange();if(rv==0)eval(func);else if(rv<0)_setAll($c.minDate);else if(rv>0)_setAll($c.maxDate);function _setAll($){s_y($.y);s_M($.M);s_d($.d);if($dp.has.st){s_H($.H);s_m($.m);s_s($.s)}}}

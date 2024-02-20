@@ -1,0 +1,1 @@
+function waitForRequest(e){return new Promise(function(t,r){e.onsuccess=function(e){t(e.target.result)},e.onerror=r})}

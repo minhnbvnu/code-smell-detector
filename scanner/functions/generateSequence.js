@@ -1,0 +1,1 @@
+function generateSequence(i,o){for(var s,u=-1,C=o.length,_="";++u<C;)s=o[u],u+1<C&&"value"==o[u].type&&"null"==o[u].kind&&"value"==o[u+1].type&&"symbol"==o[u+1].kind&&o[u+1].codePoint>=48&&o[u+1].codePoint<=57?_+="\\000":_+=i(s);return _}

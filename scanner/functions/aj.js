@@ -1,3 +1,1 @@
-function aj(B,P){if(x==null){x={};
-for(var D=0;D<e.length;D+=4)x[e[D+1]]=e.slice(D,D+4)}var U=A(B),X=x[U];while(X==null){U=U<<1|A(B);X=x[U]}var y=X[3];
-if(y!=0)y=A(B)==0?y:-y;P[0]=X[2];P[1]=y}
+function aj(a,c,d,e){a=a|0;c=c|0;d=d|0;e=e|0;var g=0,h=0,i=0,j=0,k=0,l=0,m=0,n=0;a=u;u=u+16|0;g=a;if(!c){h=0;u=a;return h|0}f[g>>2]=0;f[g+4>>2]=0;f[g+8>>2]=0;i=Gj(d)|0;if(i>>>0>4294967279)aq(g);if(i>>>0<11){b[g+11>>0]=i;if(!i)j=g;else{k=g;l=7}}else{m=i+16&-16;n=ln(m)|0;f[g>>2]=n;f[g+8>>2]=m|-2147483648;f[g+4>>2]=i;k=n;l=7}if((l|0)==7){kh(k|0,d|0,i|0)|0;j=k}b[j+i>>0]=0;$l(c,g,e);if((b[g+11>>0]|0)<0)Oq(f[g>>2]|0);h=1;u=a;return h|0}

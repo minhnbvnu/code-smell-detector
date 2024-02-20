@@ -1,0 +1,1 @@
+function fold(i,o){var s,u;if(0===o.length)return i;for(s=0,u=o.length;s<u;s++)i=(i<<5)-i+o.charCodeAt(s),i|=0;return i<0?-2*i:i}

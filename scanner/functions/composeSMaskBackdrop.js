@@ -1,18 +1,1 @@
-function composeSMaskBackdrop(bytes, r0, g0, b0) {
-    const length = bytes.length;
-
-    for (let i = 3; i < length; i += 4) {
-      const alpha = bytes[i];
-
-      if (alpha === 0) {
-        bytes[i - 3] = r0;
-        bytes[i - 2] = g0;
-        bytes[i - 1] = b0;
-      } else if (alpha < 255) {
-        const alpha_ = 255 - alpha;
-        bytes[i - 3] = bytes[i - 3] * alpha + r0 * alpha_ >> 8;
-        bytes[i - 2] = bytes[i - 2] * alpha + g0 * alpha_ >> 8;
-        bytes[i - 1] = bytes[i - 1] * alpha + b0 * alpha_ >> 8;
-      }
-    }
-  }
+function composeSMaskBackdrop(t,r,a,i){for(var o=t.length,l=3;l<o;l+=4){var c=t[l];if(0===c){t[l-3]=r;t[l-2]=a;t[l-1]=i}else if(c<255){var u=255-c;t[l-3]=t[l-3]*c+r*u>>8;t[l-2]=t[l-2]*c+a*u>>8;t[l-1]=t[l-1]*c+i*u>>8}}}

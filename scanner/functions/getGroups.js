@@ -1,0 +1,3 @@
+function getGroups() {
+            return groups;
+        }

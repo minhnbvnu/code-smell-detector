@@ -1,0 +1,1 @@
+function isAndroid(){if("undefined"!=typeof navigator)return U.test(navigator.userAgent)}

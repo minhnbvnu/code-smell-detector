@@ -1,0 +1,1 @@
+function x9e(e,t){var r;if((e.name=="("||e.type.isError)&&(e=e.parent||e),e.name!="ArgList")return!1;let n=(r=e.parent)===null||r===void 0?void 0:r.firstChild;return(n==null?void 0:n.name)!="Callee"?!1:t.sliceString(n.from,n.to)=="var"}

@@ -1,0 +1,1 @@
+function _sigaction(signum,act,oldact){return 0}

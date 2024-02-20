@@ -1,1 +1,1 @@
-function Fs(){return{name:"auth",K:"an instance of Firebase Auth",optional:!0,M:function(t){return!!(t&&t instanceof vs)}}}
+function fs(e,t,n){return t=(n?Ci(e,t,n):t===oe)?1:ml(t),(lf(e)?xn:eo)(e,t)}

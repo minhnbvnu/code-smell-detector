@@ -1,0 +1,1 @@
+function _bi2bytes(t,n){void 0===n&&(n=t.bitLength()+7>>>3);for(var e=new Array(n),i=n-1;i>=0;i--)e[i]=255&t[0],t=t.shiftRight(8);return e}

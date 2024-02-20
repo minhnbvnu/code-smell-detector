@@ -1,0 +1,1 @@
+function inStatusCategory(e,t){return e>=t&&e<t+100}

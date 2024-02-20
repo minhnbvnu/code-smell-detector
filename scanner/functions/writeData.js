@@ -1,15 +1,1 @@
-function writeData(dest, offset, data) {
-    var i, ii;
-
-    if (data instanceof Uint8Array) {
-      dest.set(data, offset);
-    } else if (typeof data === "string") {
-      for (i = 0, ii = data.length; i < ii; i++) {
-        dest[offset++] = data.charCodeAt(i) & 0xff;
-      }
-    } else {
-      for (i = 0, ii = data.length; i < ii; i++) {
-        dest[offset++] = data[i] & 0xff;
-      }
-    }
-  }
+function writeData(t,r,o){if(o instanceof Uint8Array)t.set(o,r);else if("string"==typeof o)for(var c=0,l=o.length;c<l;c++)t[r++]=255&o.charCodeAt(c);else for(var u=0,h=o.length;u<h;u++)t[r++]=255&o[u]}

@@ -1,0 +1,1 @@
+function QPe(e,t){let r="",i=t+".";try{let a=e.filter(n=>i.includes(n.name+".")).map(n=>n.dnsSuffix);return a[0]&&(r=a[0]),r||(r=""),r}catch{return"Unknown"}}

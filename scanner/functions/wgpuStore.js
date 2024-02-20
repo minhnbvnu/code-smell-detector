@@ -1,0 +1,1 @@
+function wgpuStore(object){if(object){while(wgpu[++wgpuIdCounter])if(wgpuIdCounter>2147483646)wgpuIdCounter=1;wgpu[wgpuIdCounter]=object;object.wid=wgpuIdCounter;return wgpuIdCounter}}

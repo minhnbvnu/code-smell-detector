@@ -1,1 +1,1 @@
-function xt(e){return e.getAttribute&&e.getAttribute("class")||""}
+function xt(t){return Mt(t)?366:365}

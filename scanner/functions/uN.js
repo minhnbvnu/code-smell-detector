@@ -1,0 +1,1 @@
+function uN(t,e,r,n){var i={},s={},a={};return vt(e,function(o){vt(o,function(l,u){i[l]=l,s[l]=l,a[l]=u})}),vt(e,function(o){var l=-1;vt(o,function(u){var d=n(u);if(d.length){d=Io(d,function(k){return a[k]});for(var f=(d.length-1)/2,p=Math.floor(f),g=Math.ceil(f);p<=g;++p){var b=d[p];s[u]===u&&l<a[b]&&!cN(r,u,b)&&(s[b]=u,s[u]=i[u]=i[b],l=a[b])}}})}),{root:i,align:s}}

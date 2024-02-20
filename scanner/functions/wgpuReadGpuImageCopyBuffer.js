@@ -1,0 +1,1 @@
+function wgpuReadGpuImageCopyBuffer(ptr){ptr>>=2;return{"offset":wgpuReadI53FromU64HeapIdx(ptr),"bytesPerRow":HEAP32[ptr+2],"rowsPerImage":HEAP32[ptr+3],"buffer":wgpu[HEAPU32[ptr+4]]}}

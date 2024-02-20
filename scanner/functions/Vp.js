@@ -1,1 +1,1 @@
-function vp(){var a=0;a=sa(40);ek(a);return a|0}
+function Vp(a){a=a|0;return f[a+40>>2]|0}

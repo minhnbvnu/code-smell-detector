@@ -1,1 +1,1 @@
-function pk(a,b){a=a|0;b=b|0;var c=0,d=0,e=S(0);c=fa-16|0;fa=c;L[c+12>>2]=a;L[c+8>>2]=b;b=L[c+8>>2];a=fa-16|0;fa=a;L[a+12>>2]=L[c+12>>2];L[a+8>>2]=b;b=L[a+12>>2];L[a+4>>2]=0;while(1){if(L[a+4>>2]<3){d=fa-16|0;L[d+12>>2]=L[a+8>>2];e=pe(P[L[d+12>>2]+(L[a+4>>2]<<2)>>2]);P[(b+868|0)+(L[a+4>>2]<<6)>>2]=e;L[a+4>>2]=L[a+4>>2]+1;continue}break}fa=a+16|0;fa=c+16|0}
+function Pk(a){a=a|0;var b=0,c=0,d=0;f[a>>2]=2244;b=f[a+76>>2]|0;if(b|0)Oq(b);f[a>>2]=1544;b=f[a+32>>2]|0;if(!b){Oq(a);return}c=a+36|0;d=f[c>>2]|0;if((d|0)!=(b|0))f[c>>2]=d+(~((d+-4-b|0)>>>2)<<2);Oq(b);Oq(a);return}

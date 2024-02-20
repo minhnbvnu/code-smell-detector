@@ -1,25 +1,21 @@
 function opListToTree(opList) {
-    let opTree = [];
-    const tmp = [];
+    var opTree = [];
+    var tmp = [];
+    var opListLen = opList.length;
 
-    for (const opListElement of opList) {
-      if (opListElement.fn === "save") {
-        opTree.push({
-          fnId: 92,
-          fn: "group",
-          items: []
-        });
+    for (var x = 0; x < opListLen; x++) {
+      if (opList[x].fn === 'save') {
+        opTree.push({'fnId': 92, 'fn': 'group', 'items': []});
         tmp.push(opTree);
         opTree = opTree[opTree.length - 1].items;
         continue;
       }
 
-      if (opListElement.fn === "restore") {
+      if(opList[x].fn === 'restore') {
         opTree = tmp.pop();
       } else {
-        opTree.push(opListElement);
+        opTree.push(opList[x]);
       }
     }
-
     return opTree;
   }

@@ -1,0 +1,1 @@
+function arrayPush$2(array,values){for(var index=-1,length=values.length,offset=array.length;++index<length;)array[offset+index]=values[index];return array}

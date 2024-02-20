@@ -1,0 +1,1 @@
+function uxe(e){var t=-1,r=Array(e.size);return e.forEach(function(i,a){r[++t]=[a,i]}),r}

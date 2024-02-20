@@ -1,0 +1,1 @@
+function Krt(n,t){let e=Xrt(t);return"vec4 "+n+"( vec4 value ) { return LinearTo"+e[0]+e[1]+"; }"}

@@ -1,0 +1,1 @@
+function ale(e,t){let r=[];for(let n of e.facet(zae)){let i=n(e,t);i&&r.push(i)}return r?e.update({effects:r,annotations:ile.of(!0)}):null}

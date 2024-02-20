@@ -1,3 +1,3 @@
-function maxPooling3d(args) {
-	  return new MaxPooling3D(args);
-	}
+function MaxPooling3D(args) {
+	    return _Pooling3D.call(this, args) || this;
+	  }

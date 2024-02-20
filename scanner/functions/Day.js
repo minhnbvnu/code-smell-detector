@@ -1,0 +1,1 @@
+function Day(t){_classCallCheck(this,Day);return r.call(this,h,"day")}

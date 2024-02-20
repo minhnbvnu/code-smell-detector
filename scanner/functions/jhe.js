@@ -1,0 +1,1 @@
+function jhe(e,t){return t&&F1.getGlobalDictionaryForPackage(t)||zhe(e)}

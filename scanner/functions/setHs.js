@@ -1,0 +1,1 @@
+function setHs(ex,res){ window.setHistoryItem(UTF8ToString(ex), UTF8ToString(res)); }

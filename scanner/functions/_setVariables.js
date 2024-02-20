@@ -1,16 +1,1 @@
-function _setVariables() {
-		if(typeof Uint8Array !== 'undefined') {
-			_bitrev = new Uint8Array(_n);
-		} else {
-			_bitrev = new Array(_n);
-		}
-		if(typeof Float64Array !== 'undefined') {
-			_cstb = new Float64Array(_n*1.25);
-			_tre = new Float64Array(_n);
-			_tim = new Float64Array(_n);
-		} else {
-			_cstb = new Array(_n*1.25);
-			_tre = new Array(_n);
-			_tim = new Array(_n);
-		}
-	}
+function _setVariables(){_bitrev="undefined"!=typeof Uint8Array?new Uint8Array(_n):new Array(_n),"undefined"!=typeof Float64Array?(_cstb=new Float64Array(1.25*_n),_tre=new Float64Array(_n),_tim=new Float64Array(_n)):(_cstb=new Array(1.25*_n),_tre=new Array(_n),_tim=new Array(_n))}

@@ -1,0 +1,1 @@
+function Ice(e,t,r){var i="",a=e.tag,n=Object.keys(r),s,o,u,l,p;for(s=0,o=n.length;s<o;s+=1)p="",s!==0&&(p+=", "),e.condenseFlow&&(p+='"'),u=n[s],l=r[u],!!ec(e,t,u,!1,!1)&&(e.dump.length>1024&&(p+="? "),p+=e.dump+(e.condenseFlow?'"':"")+":"+(e.condenseFlow?"":" "),!!ec(e,t,l,!1,!1)&&(p+=e.dump,i+=p));e.tag=a,e.dump="{"+i+"}"}

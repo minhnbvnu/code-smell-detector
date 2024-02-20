@@ -1,0 +1,1 @@
+function IRe(e,t){const r=t.data||{},n="value"in t&&!(dT.call(r,"hProperties")||dT.call(r,"hChildren"))?{type:"text",value:t.value}:{type:"element",tagName:"div",properties:{},children:e.all(t)};return e.patch(t,n),e.applyData(t,n)}

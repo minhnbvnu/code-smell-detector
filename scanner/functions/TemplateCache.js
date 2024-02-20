@@ -1,0 +1,1 @@
+function TemplateCache(t){var o;_classCallCheck(this,TemplateCache);(o=r.call(this,d,"templateCache")).maxEntries=(0,u.getInteger)({data:t.maxEntries,defaultValue:5,validate:function validate(t){return t>=0}});return o}

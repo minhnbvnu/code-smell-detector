@@ -1,0 +1,1 @@
+function J3(n,t){Oy[n]=tM[n.toLowerCase()]=t}

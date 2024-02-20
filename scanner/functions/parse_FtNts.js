@@ -1,0 +1,1 @@
+function parse_FtNts(blob,length){var out={};blob.l+=4;blob.l+=16;out.fSharedNote=blob.read_shift(2);blob.l+=4;return out}

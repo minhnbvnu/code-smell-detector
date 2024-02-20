@@ -1,0 +1,1 @@
+function GI(t,e,n,i,r){r.isAvailableBehavior=W(WI,null,n,i),t.trigger(e,r)}

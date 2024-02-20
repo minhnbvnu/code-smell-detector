@@ -1,9 +1,1 @@
-function clone_(x) {
-	  var $x = convertToTensor(x, 'x', 'clone', 'string_or_numeric');
-	  var inputs = {
-	    x: $x
-	  }; // Note this op is called tf.identity in python. Hence the kernel name used
-	  // here.
-
-	  return ENGINE.runKernel(Identity, inputs);
-	}
+function clone_(e){var t=convertToTensor(e,"x","clone",null);return ENV.engine.runKernel(function(e){return Tensor.make(t.shape,{dataId:t.dataId},t.dtype)},{$x:t},function(e){return {$x:function(){return e.toFloat()}}})}

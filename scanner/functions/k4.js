@@ -1,0 +1,1 @@
+function k4(n,t,e){let i=Math.abs(t.clientX-n.x),r=Math.abs(t.clientY-n.y),o=Zr(e||t);!o||hV[o.localName]&&o.hasAttribute("disabled")||(isNaN(i)||isNaN(r)||i<=M4&&r<=M4||mV(t))&&(n.prevent||f2(o,"tap",{x:t.clientX,y:t.clientY,sourceEvent:t,preventer:e}))}

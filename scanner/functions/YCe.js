@@ -1,0 +1,1 @@
+function YCe(e){return this.compareTo(e)<0?this:e}

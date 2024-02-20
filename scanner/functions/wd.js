@@ -1,0 +1,1 @@
+function wd(t){var e=function(){if("undefined"==typeof Reflect||!ps)return!1;if(ps.sham)return!1;if("function"==typeof Proxy)return!0;try{return Date.prototype.toString.call(ps(Date,[],(function(){}))),!0}catch(t){return!1}}();return function(){var i,n=Us(t);if(e){var o=Us(this).constructor;i=ps(n,arguments,o)}else i=n.apply(this,arguments);return Bs(this,i)}}

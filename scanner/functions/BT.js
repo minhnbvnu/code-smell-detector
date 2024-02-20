@@ -1,0 +1,1 @@
+function BT(e){return Object.prototype.toString.call(e)==="[object Uint8Array]"}

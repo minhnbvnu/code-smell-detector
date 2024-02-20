@@ -1,0 +1,1 @@
+function SelectorPart(e,t,n,r,i){SyntaxUnit.call(this,n,r,i,Parser.SELECTOR_PART_TYPE),this.elementName=e,this.modifiers=t}

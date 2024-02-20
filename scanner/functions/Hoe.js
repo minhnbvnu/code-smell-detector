@@ -1,0 +1,1 @@
+function Hoe(e){return(e&128)==0}

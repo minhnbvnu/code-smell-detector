@@ -1,26 +1,20 @@
-function decrypt(data, key, discardNumber) {
-    if (discardNumber >= data.length) {
-      return new Uint8Array(0);
-    }
+function decrypt(data) {
+        //debug ('-->deobfuscating '+data.length+' bytes using scheme:'+loginData.obfuscationScheme);
+        var decodedVal;
+        var scheme;
+        if (data.substr(0,5) == '--Z--') {
+          //debug ('unpacking');
+          scheme = 'lzs';
+          decodedVal = LZString.decompressFromUTF16(data.substr(5));
+        } else {
+          var bytes = CryptoJS.AES.decrypt(data.toString(), zm.cipherKey);
+          decodedVal = bytes.toString(CryptoJS.enc.Utf8);
+          scheme = 'aes';
+        }
 
-    const c1 = 52845,
-          c2 = 22719;
-    let r = key | 0,
-        i,
-        j;
+        //console.log ('-->decrypted ' + decodedVal);
+        debug ('deobfuscate: before:'+data.length+' after:'+decodedVal.length+' scheme:'+scheme);
+        var decodedJSON = JSON.parse(decodedVal);
 
-    for (i = 0; i < discardNumber; i++) {
-      r = (data[i] + r) * c1 + c2 & (1 << 16) - 1;
-    }
-
-    const count = data.length - discardNumber;
-    const decrypted = new Uint8Array(count);
-
-    for (i = discardNumber, j = 0; j < count; i++, j++) {
-      const value = data[i];
-      decrypted[j] = value ^ r >> 8;
-      r = (value + r) * c1 + c2 & (1 << 16) - 1;
-    }
-
-    return decrypted;
-  }
+        return decodedJSON;
+      }

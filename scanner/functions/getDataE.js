@@ -1,0 +1,3 @@
+function getDataE() {
+    return dataE
+}

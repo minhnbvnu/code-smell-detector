@@ -1,0 +1,1 @@
+function _164(node,_165){if(node.firstChild){_166(node);}if(_165){d.isIE&&_165.canHaveChildren&&"removeNode" in node?node.removeNode(false):_165.removeChild(node);}}

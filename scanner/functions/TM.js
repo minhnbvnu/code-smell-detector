@@ -1,0 +1,1 @@
+function TM(t){var e=[],r={},n={};function i(s){me(n,s)||(n[s]=!0,r[s]=!0,vt(t.outEdges(s),function(a){me(r,a.w)?e.push(a):i(a.w)}),delete r[s])}return vt(t.nodes(),i),e}

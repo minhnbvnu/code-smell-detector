@@ -1,0 +1,1 @@
+function parse_MergeCells(blob,length){var merges=[];var cmcs=blob.read_shift(2);while(cmcs--)merges.push(parse_Ref8U(blob,length));return merges}

@@ -1,0 +1,1 @@
+function Ave(...e){let t=new Set,r=!1,n={...HR};for(let l of e){var i,a;for(let s of l.validationErrors)t.add(s);r||(r=l.isInvalid);for(let s in n)(i=n)[a=s]||(i[a]=l.validationDetails[s])}return n.valid=!r,{isInvalid:r,validationErrors:[...t],validationDetails:n}}

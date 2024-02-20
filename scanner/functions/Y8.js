@@ -1,0 +1,1 @@
+function Y8(n){return this.tween("text",typeof n=="function"?plt(au(this,"text",n)):hlt(n==null?"":n+""))}

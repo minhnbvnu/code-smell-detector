@@ -1,0 +1,3 @@
+function getAllDefinitionPaths() {
+    return allDefinitionPaths;
+}

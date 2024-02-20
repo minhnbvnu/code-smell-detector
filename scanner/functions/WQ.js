@@ -1,0 +1,1 @@
+function WQ(n){let{inputs:t,backend:e,attrs:i}=n,{image:r,transforms:o}=t,{interpolation:s,fillMode:a,fillValue:l,outputShape:c}=i,[u,h,p,d]=r.shape,[f,m]=c!=null?c:[h,p],x=[u,f,m,d],g=new ax(h,p,s,a,l,x);return e.runWebGLProgram(g,[r,o],"float32")}

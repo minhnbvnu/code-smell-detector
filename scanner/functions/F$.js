@@ -1,0 +1,1 @@
+function F$(n,t){let e=String(n);if(e.length<=t)return e.padEnd(t," ");let i=n.toPrecision(t-2);if(i.length<=t)return i;let r=n.toExponential(t-2),o=r.indexOf("e"),s=r.slice(o);return r.slice(0,t-s.length)+s}

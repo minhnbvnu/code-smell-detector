@@ -1,0 +1,1 @@
+function lue(e,t){if(Wp.existsSync(t))return;try{Wp.lstatSync(e)}catch(n){throw n.message=n.message.replace("lstat","ensureLink"),n}let i=bT.dirname(t);return Wp.existsSync(i)||wT.mkdirsSync(i),Wp.linkSync(e,t)}

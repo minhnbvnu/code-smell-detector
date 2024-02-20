@@ -1,0 +1,1 @@
+function getFooterRow(){return hasFrozenColumns()?$footerRow:$footerRow[0]}

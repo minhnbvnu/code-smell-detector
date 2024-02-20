@@ -1,7 +1,1 @@
-function Dict(xref) {
-    this._map = Object.create(null);
-    this.xref = xref;
-    this.objId = null;
-    this.suppressEncryption = false;
-    this.__nonSerializable__ = nonSerializable;
-  }
+function Dict(){var t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:null;_classCallCheck(this,Dict);this._map=Object.create(null);this.xref=t;this.objId=null;this.suppressEncryption=!1;this.__nonSerializable__=g}

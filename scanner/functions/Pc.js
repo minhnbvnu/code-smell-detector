@@ -1,0 +1,1 @@
+function Pc(a,b){return Db(a,"$"+(b||"ngController")+"Controller")}

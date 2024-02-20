@@ -1,0 +1,1 @@
+function sc_cddr(p) { return p.cdr.cdr; }

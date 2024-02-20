@@ -1,1 +1,1 @@
-function kz(a){a=a|0;fk(a);if(a){L[8514]=L[8514]+1;ha[L[6799]](a)}}
+function Kz(n,t,e){this.id=n,this.addr=e,this.cache=[],this.size=t.size,this.setValue=Urt(t.type)}

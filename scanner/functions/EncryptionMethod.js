@@ -1,0 +1,1 @@
+function EncryptionMethod(t){var o;_classCallCheck(this,EncryptionMethod);(o=r.call(this,_,"encryptionMethod",["","AES256-CBC","TRIPLEDES-CBC","AES128-CBC","AES192-CBC"])).id=t.id||"";o.use=t.use||"";o.usehref=t.usehref||"";return o}

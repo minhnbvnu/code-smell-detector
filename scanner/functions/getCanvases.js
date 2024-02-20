@@ -1,0 +1,1 @@
+function getCanvases(){return $canvas}

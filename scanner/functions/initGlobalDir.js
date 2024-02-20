@@ -1,0 +1,3 @@
+function initGlobalDir() {
+	  setGlobalDir(LTR);
+	}

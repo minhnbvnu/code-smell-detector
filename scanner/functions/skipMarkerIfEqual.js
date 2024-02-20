@@ -1,11 +1,1 @@
-function skipMarkerIfEqual(value) {
-      if (data[offset + position - 1] === 0xff && data[offset + position] === value) {
-        skipBytes(1);
-        return true;
-      } else if (data[offset + position] === 0xff && data[offset + position + 1] === value) {
-        skipBytes(2);
-        return true;
-      }
-
-      return false;
-    }
+function skipMarkerIfEqual(t){if(255===r[o+d-1]&&r[o+d]===t){skipBytes(1);return!0}if(255===r[o+d]&&r[o+d+1]===t){skipBytes(2);return!0}return!1}

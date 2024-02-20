@@ -1,0 +1,3 @@
+function tryGetNativePerformanceHooks() {
+            return nativePerformanceHooks;
+        }

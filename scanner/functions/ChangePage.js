@@ -1,0 +1,1 @@
+function ChangePage(b,c,e,f,n){SelectPage.call(this,b,e);this.relatedPage=c;this.index=f;this.previousIndex=null;this.noSelect=n}

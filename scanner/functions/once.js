@@ -1,8 +1,9 @@
-function once(callback) {
-  var called = false;
-  return function () {
-    if (called) return;
-    called = true;
-    callback.apply(void 0, arguments);
-  };
-}
+function once(fn) {
+    var called = false;
+    return function() {
+      if (!called) {
+        called = true;
+        fn();
+      }
+    };
+  }

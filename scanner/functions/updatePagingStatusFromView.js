@@ -1,0 +1,1 @@
+function updatePagingStatusFromView(e){pagingActive=0!==e.pageSize,pagingIsLastPage=e.pageNum==e.totalPages-1}

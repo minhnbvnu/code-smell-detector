@@ -1,0 +1,1 @@
+function shorH(_,$){$?show(_):hide(_)}

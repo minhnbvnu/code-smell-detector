@@ -1,1 +1,9 @@
-function sinh(n) { return (Math.exp(n) - Math.exp(-n)) / 2; }
+function sinh (arg) {
+    // Returns the hyperbolic sine of the number, defined as (exp(number) - exp(-number))/2  
+    // 
+    // version: 1004.2314
+    // discuss at: http://phpjs.org/functions/sinh    // +   original by: Onno Marsman
+    // *     example 1: sinh(-0.9834330348825909);
+    // *     returns 1: -1.1497971402636502
+    return (Math.exp(arg) - Math.exp(-arg))/2;
+}

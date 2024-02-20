@@ -1,3 +1,5 @@
-function degToRad(deg) {
-  return (deg * Math.PI * 2) / 360;
-}
+function degToRad( degrees ) {
+
+    	return degrees * DEG2RAD;
+
+    }

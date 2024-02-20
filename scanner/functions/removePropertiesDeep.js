@@ -1,4 +1,4 @@
 function removePropertiesDeep(tree, opts) {
-	  traverseFast(tree, removeProperties, opts);
-	  return tree;
-	}
+  (0, _traverseFast.default)(tree, _removeProperties.default, opts);
+  return tree;
+}

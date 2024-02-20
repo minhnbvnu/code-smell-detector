@@ -1,0 +1,1 @@
+function _WebXRGetViewsDataArray(){return Module.XRSharedArrayOffset*4}

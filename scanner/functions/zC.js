@@ -1,0 +1,1 @@
+function zC(t){var e=t.mainData,n=t.datas;n||(n={main:e},t.datasAttr={main:"data"}),t.datas=t.mainData=null,HC(e,n,t),E(n,(function(n){E(e.TRANSFERABLE_METHODS,(function(e){n.wrapMethod(e,H(VC,t))}))})),e.wrapMethod("cloneShallow",H(FC,t)),E(e.CHANGABLE_METHODS,(function(n){e.wrapMethod(n,H(BC,t))})),lt(n[e.dataType]===e)}

@@ -1,0 +1,1 @@
+function f_brokenheart(e){if(e>=3.8&&e<=3.9){return new Array(-2.2,-2.4,1.8,2,2.2)}var t=-5;var n=5;var r=new Array;var i=false;var s;for(s=t;s<n;s+=.001){var o=17*Math.pow(s,2)-16*Math.abs(s)*e+17*Math.pow(e,2)+350/Math.abs(5*s+Math.sin(5*e))<225;if(i^o){r.push(s)}i=o}return r}

@@ -1,0 +1,1 @@
+function updateClassName(i,o,s){s.split(/\s+/).forEach((function(s){s&&i.classList[o](s)}))}

@@ -1,0 +1,1 @@
+function arrayFirst(e,t){for(var n=0;n<e.length;n++)if(t(e[n],n)===!0)return e[n];return!1}

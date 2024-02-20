@@ -1,0 +1,1 @@
+function Od(t,e){var i,n=t.element;n.style&&(Eu(t.options.cssProps,(function(r,o){i=eu(n.style,o),e?(t.oldCssProps[i]=n.style[i],n.style[i]=r):n.style[i]=t.oldCssProps[i]||""})),e||(t.oldCssProps={}))}

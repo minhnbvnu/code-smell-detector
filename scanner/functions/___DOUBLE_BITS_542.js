@@ -1,0 +1,1 @@
+function ___DOUBLE_BITS_542($0){$0=+$0;var $1=0,$2=0,label=0,sp=0;sp=STACKTOP;HEAPF64[tempDoublePtr>>3]=$0;$1=HEAP32[tempDoublePtr>>2]|0;$2=HEAP32[tempDoublePtr+4>>2]|0;tempRet0=$2;return $1|0}

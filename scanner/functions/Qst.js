@@ -1,0 +1,1 @@
+function Qst(n){return function(){this.textContent=n}}

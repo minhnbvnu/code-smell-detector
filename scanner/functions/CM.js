@@ -1,0 +1,1 @@
+function CM(t){var e=new sr().setGraph(t.graph());return vt(t.nodes(),function(r){e.setNode(r,t.node(r))}),vt(t.edges(),function(r){var n=e.edge(r.v,r.w)||{weight:0,minlen:1},i=t.edge(r);e.setEdge(r.v,r.w,{weight:n.weight+i.weight,minlen:Math.max(n.minlen,i.minlen)})}),e}

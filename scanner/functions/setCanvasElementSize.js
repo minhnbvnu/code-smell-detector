@@ -1,0 +1,1 @@
+function setCanvasElementSize(target,width,height){if(!target.controlTransferredOffscreen){target.width=width;target.height=height}else{withStackSave(function(){var targetInt=stackAlloc(target.id.length+1);stringToUTF8(target.id,targetInt,target.id.length+1);_emscripten_set_canvas_element_size(targetInt,width,height)})}}

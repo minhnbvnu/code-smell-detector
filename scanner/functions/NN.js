@@ -1,0 +1,1 @@
+function NN(t){var e=t.graph();e.ranksep/=2,vt(t.edges(),function(r){var n=t.edge(r);n.minlen*=2,n.labelpos.toLowerCase()!=="c"&&(e.rankdir==="TB"||e.rankdir==="BT"?n.width+=n.labeloffset:n.height+=n.labeloffset)})}

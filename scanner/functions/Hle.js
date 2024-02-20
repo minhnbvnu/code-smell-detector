@@ -1,0 +1,1 @@
+function Hle(e,t){return nl(e,r=>{if(!r.empty)return $b(r,t);let n=e.moveVertically(r,t);return n.head!=r.head?n:e.moveToLineBoundary(r,t)})}

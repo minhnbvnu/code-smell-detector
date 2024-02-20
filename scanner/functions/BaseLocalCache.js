@@ -1,0 +1,1 @@
+function BaseLocalCache(t){_classCallCheck(this,BaseLocalCache);this.constructor===BaseLocalCache&&(0,c.unreachable)("Cannot initialize BaseLocalCache.");this._onlyRefs=!0===(t&&t.onlyRefs);if(!this._onlyRefs){this._nameRefMap=new Map;this._imageMap=new Map}this._imageCache=new l.RefSetCache}

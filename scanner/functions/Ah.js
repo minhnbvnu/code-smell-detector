@@ -1,1 +1,1 @@
-function ah(a){a=a|0;return(F[a+15|0]<0?H[a+4>>2]:a+4|0)|0}
+function Ah(t,e){return t(e={exports:{}},e.exports),e.exports}

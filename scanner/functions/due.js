@@ -1,0 +1,1 @@
+function due(e,t,r){if(r=typeof t=="function"?t:r,t=typeof t=="function"?!1:t,t)return r(null,t);kT.lstat(e,(i,a)=>{if(i)return r(null,"file");t=a&&a.isDirectory()?"dir":"file",r(null,t)})}

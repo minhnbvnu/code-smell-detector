@@ -1,0 +1,1 @@
+function tP(t,e,n){E(t,(function(t){E(t,(function(t){if(t.inEdges.length){var i=QL(t.inEdges,qL,n)/QL(t.inEdges,JL);if(isNaN(i)){var r=t.inEdges.length;i=r?QL(t.inEdges,KL,n)/r:0}if("vertical"===n){var o=t.getLayout().x+(i-$L(t,n))*e;t.setLayout({x:o},!0)}else{var a=t.getLayout().y+(i-$L(t,n))*e;t.setLayout({y:a},!0)}}}))}))}

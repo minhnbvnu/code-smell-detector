@@ -1,0 +1,1 @@
+function Ixe(e,t,r){return e===void 0&&(e={}),t===void 0&&(t={}),r===void 0&&(r="/index.js"),JSON.stringify({name:"sandpack-project",main:r,dependencies:e,devDependencies:t},null,2)}

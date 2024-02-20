@@ -1,0 +1,1 @@
+function Gzip(e){return this instanceof Gzip?void Zlib.call(this,e,binding.GZIP):new Gzip(e)}

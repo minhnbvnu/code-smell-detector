@@ -1,0 +1,1 @@
+function roundOffsetsByDPR(i){var o=i.x,s=i.y,u=window.devicePixelRatio||1;return{x:yt(o*u)/u||0,y:yt(s*u)/u||0}}

@@ -1,0 +1,1 @@
+function NCe(e,t){e.squareTo(t),this.reduce(t)}

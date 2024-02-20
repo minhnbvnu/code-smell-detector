@@ -1,5 +1,5 @@
 function orSeparator() {
-	  this.space();
-	  this.token("|");
-	  this.space();
-	}
+  this.space();
+  this.token("|");
+  this.space();
+}

@@ -1,0 +1,1 @@
+function _JS_WebCamVideo_Stop(deviceId){var webcam=activeWebCams[deviceId];if(!webcam)return;if(--webcam.refCount<=0){webcam.video.pause();webcam.video.srcObject=null;webcam.stream.getVideoTracks().forEach(function(track){track.stop()});delete activeWebCams[deviceId]}}

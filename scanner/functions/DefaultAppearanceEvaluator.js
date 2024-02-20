@@ -1,0 +1,1 @@
+function DefaultAppearanceEvaluator(t){!function _classCallCheck(t,r){if(!(t instanceof r))throw new TypeError("Cannot call a class as a function")}(this,DefaultAppearanceEvaluator);return r.call(this,new g.StringStream(t))}

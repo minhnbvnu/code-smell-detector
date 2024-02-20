@@ -1,0 +1,1 @@
+function Mat(n){return n instanceof Sd||(n=rr(n)),n?(n=n.rgb(),new Ci(n.r,n.g,n.b,n.opacity)):new Ci}

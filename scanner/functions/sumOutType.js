@@ -1,3 +1,1 @@
-function sumOutType(type) {
-	  return upcastType(type, 'int32');
-	}
+function sumOutType(e){return upcastType(e,"int32")}

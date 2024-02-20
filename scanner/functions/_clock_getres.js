@@ -1,0 +1,1 @@
+function _clock_getres(clk_id,res){var nsec;if(clk_id===0){nsec=1e3*1e3}else if(clk_id===1&&_emscripten_get_now_is_monotonic()){nsec=_emscripten_get_now_res()}else{___setErrNo(ERRNO_CODES.EINVAL);return-1}HEAP32[res>>2]=nsec/1e9|0;HEAP32[res+4>>2]=nsec;return 0}

@@ -1,0 +1,1 @@
+function MT_noXml(name) { test.mode(name, modeMT_noXml, Array.prototype.slice.call(arguments, 1)); }

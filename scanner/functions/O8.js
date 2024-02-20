@@ -1,0 +1,1 @@
+function O8(n){var t=this._id;return arguments.length?this.each((typeof n=="function"?Jat:Qat)(t,n)):Sn(this.node(),t).duration}

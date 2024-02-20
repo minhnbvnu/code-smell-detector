@@ -1,0 +1,1 @@
+function renderType(i){if(!i)return"unknown";var o=i.name;switch(o){case"arrayOf":return i.value.name+"[]";case"objectOf":return"{"+renderType(i.value)+"}";case"instanceOf":return i.value;default:return o}}

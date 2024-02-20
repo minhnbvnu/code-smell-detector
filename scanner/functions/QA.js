@@ -1,0 +1,1 @@
+function QA(t){return Hn(t)&&va(t)==ZA}

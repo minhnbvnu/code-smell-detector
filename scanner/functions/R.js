@@ -1,0 +1,1 @@
+function R(){var e;for(e=0;e<document.head.children.length;e++)if("viewport"==document.head.children[e].name){he=document.head.children[e];break}if(he){var t,n=he.content.toLowerCase().replace(/\s+/g,"").split(",");for(e=0;e<n.length;e++)n[e]&&(t=n[e].split("="),fe[t[0]]=t.length>1?t[1]:"_");H()}}

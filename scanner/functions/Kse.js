@@ -1,0 +1,1 @@
+function Kse(e,t){let r=this[Tn];r._socket.removeListener("data",Wg),r._socket.resume(),r._closeFrameReceived=!0,r._closeMessage=t,r._closeCode=e,e===1005?r.close():r.close(e,t)}

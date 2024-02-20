@@ -1,0 +1,1 @@
+function AsYouType_defineProperties(i,o){for(var s=0;s<o.length;s++){var u=o[s];u.enumerable=u.enumerable||!1,u.configurable=!0,"value"in u&&(u.writable=!0),Object.defineProperty(i,u.key,u)}}

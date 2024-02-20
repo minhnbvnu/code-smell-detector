@@ -1,0 +1,1 @@
+function parse_BOF(blob,length){var o={};o.BIFFVer=blob.read_shift(2);length-=2;switch(o.BIFFVer){case 1536:case 1280:case 2:case 7:break;default:throw"Unexpected BIFF Ver "+o.BIFFVer}blob.read_shift(length);return o}

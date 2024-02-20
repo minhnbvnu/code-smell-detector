@@ -1,3 +1,3 @@
 function isArrayLikeObject(value) {
-    return isObjectLike(value) && isArrayLike(value);
-  }
+      return isObjectLike(value) && isArrayLike(value);
+    }

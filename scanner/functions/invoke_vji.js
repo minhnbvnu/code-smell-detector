@@ -1,0 +1,1 @@
+function invoke_vji(index,a1,a2,a3){var sp=stackSave();try{dynCall_vji(index,a1,a2,a3)}catch(e){stackRestore(sp);if(e!==e+0)throw e;_setThrew(1,0)}}

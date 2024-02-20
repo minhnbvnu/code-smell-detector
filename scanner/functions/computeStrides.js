@@ -1,18 +1,1 @@
-function computeStrides(shape) {
-	  var rank = shape.length;
-
-	  if (rank < 2) {
-	    return [];
-	  } // Last dimension has implicit stride of 1, thus having D-1 (instead of D)
-	  // strides.
-
-
-	  var strides = new Array(rank - 1);
-	  strides[rank - 2] = shape[rank - 1];
-
-	  for (var i = rank - 3; i >= 0; --i) {
-	    strides[i] = strides[i + 1] * shape[i + 1];
-	  }
-
-	  return strides;
-	}
+function computeStrides(e){var t=e.length;if(t<2)return [];var n=new Array(t-1);n[t-2]=e[t-1];for(var r=t-3;r>=0;--r)n[r]=n[r+1]*e[r+1];return n}

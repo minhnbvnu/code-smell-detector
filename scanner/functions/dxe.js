@@ -1,0 +1,1 @@
+function dxe(e){for(var t=0,r=8;t<e.length;){var i=1<<r;if((e[t]&i)===i)break;r--,r<0&&(t++,r=8)}return t*8+(8-r)-1}

@@ -1,0 +1,1 @@
+function Zfe(){let{router:e}=Vfe(UW.UseNavigateStable),t=qW(Ig.UseNavigateStable),r=O.useRef(!1);return ZW(()=>{r.current=!0}),O.useCallback(function(i,a){a===void 0&&(a={}),r.current&&(typeof i=="number"?e.navigate(i):e.navigate(i,ih({fromRouteId:t},a)))},[e,t])}

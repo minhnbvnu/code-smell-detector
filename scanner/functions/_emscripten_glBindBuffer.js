@@ -1,0 +1,1 @@
+function _emscripten_glBindBuffer(target,buffer){GLctx.bindBuffer(target,GL.buffers[buffer])}

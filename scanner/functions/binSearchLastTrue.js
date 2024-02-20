@@ -1,0 +1,1 @@
+function binSearchLastTrue(e){for(var t=0,n=e.length-1,r=-1;t<=n;){var o=t+n>>1;e[o]()?(r=o,t=o+1):n=o-1;}return r}

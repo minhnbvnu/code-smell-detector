@@ -1,0 +1,1 @@
+function kz(t,e,n,i){var r=n.getAxis(["x","y"][t]),o=Mz(z([0,1],(function(t){return e?r.coordToData(r.toLocalCoord(i[t]),!0):r.toGlobalCoord(r.dataToCoord(i[t]))}))),a=[];return a[t]=o,a[1-t]=[NaN,NaN],{values:o,xyMinMax:a}}

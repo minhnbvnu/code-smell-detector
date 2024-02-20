@@ -1,0 +1,1 @@
+function Z6(e){return e?Array.isArray(e)?e:[e]:[]}

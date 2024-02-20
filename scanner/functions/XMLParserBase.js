@@ -1,0 +1,1 @@
+function XMLParserBase(){_classCallCheck(this,XMLParserBase)}

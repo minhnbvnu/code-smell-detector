@@ -1,0 +1,1 @@
+function CheckCache(hash) { return argCache[hash] || null; }

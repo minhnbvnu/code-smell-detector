@@ -1,7 +1,1 @@
-function measureToString(m) {
-  if (typeof m === "string") {
-    return "0px";
-  }
-
-  return Number.isInteger(m) ? `${m}px` : `${m.toFixed(2)}px`;
-}
+function measureToString(t){return"string"==typeof t?"0px":Number.isInteger(t)?"".concat(t,"px"):"".concat(t.toFixed(2),"px")}

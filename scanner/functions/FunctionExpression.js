@@ -1,3 +1,1 @@
-function FunctionExpression(node, parent, printStack) {
-	  return isFirstInStatement(printStack, { considerDefaultExports: true });
-	}
+function FunctionExpression(){i.apply(this,arguments)}

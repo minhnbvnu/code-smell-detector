@@ -1,0 +1,1 @@
+function U3(e,t,r,n,i,a){hW(e,t);var l=(t.flags&128)!==0;if(!n&&!l)return i&&tB(t,r,!1),go(e,t,a);n=t.stateNode,Bde.current=t;var s=l&&typeof r.getDerivedStateFromError!="function"?null:n.render();return t.flags|=1,e!==null&&l?(t.child=Vc(t,e.child,null,a),t.child=Vc(t,null,s,a)):pi(e,t,s,a),t.memoizedState=n.state,i&&tB(t,r,!0),t.child}

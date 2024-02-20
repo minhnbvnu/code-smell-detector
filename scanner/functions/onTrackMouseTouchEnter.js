@@ -1,0 +1,1 @@
+function onTrackMouseTouchEnter(event){_scrollbarsHandleHovered=!0,(_scrollbarsAutoHideScroll||_scrollbarsAutoHideMove)&&refreshScrollbarsAutoHide(!0)}

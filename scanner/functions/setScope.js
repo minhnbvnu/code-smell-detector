@@ -1,18 +1,17 @@
-function setScope() {
-	  if (this.opts && this.opts.noScope) return;
-
-	  var target = this.context && this.context.scope;
-
-	  if (!target) {
-	    var path = this.parentPath;
-	    while (path && !target) {
-	      if (path.opts && path.opts.noScope) return;
-
-	      target = path.scope;
-	      path = path.parentPath;
-	    }
-	  }
-
-	  this.scope = this.getScope(target);
-	  if (this.scope) this.scope.init();
-	}
+function setScope (vnode) {
+    var i;
+    var ancestor = vnode;
+    while (ancestor) {
+      if (isDef(i = ancestor.context) && isDef(i = i.$options._scopeId)) {
+        nodeOps.setAttribute(vnode.elm, i, '');
+      }
+      ancestor = ancestor.parent;
+    }
+    // for slot content they should also get the scopeId from the host instance.
+    if (isDef(i = activeInstance) &&
+      i !== vnode.context &&
+      isDef(i = i.$options._scopeId)
+    ) {
+      nodeOps.setAttribute(vnode.elm, i, '');
+    }
+  }

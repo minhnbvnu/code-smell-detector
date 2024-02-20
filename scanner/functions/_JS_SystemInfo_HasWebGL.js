@@ -1,0 +1,1 @@
+function _JS_SystemInfo_HasWebGL(){return Module.SystemInfo.hasWebGL}

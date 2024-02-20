@@ -1,9 +1,1 @@
-function getInt(linDict, name, allowZeroValue = false) {
-      const obj = linDict.get(name);
-
-      if (Number.isInteger(obj) && (allowZeroValue ? obj >= 0 : obj > 0)) {
-        return obj;
-      }
-
-      throw new Error(`The "${name}" parameter in the linearization ` + "dictionary is invalid.");
-    }
+function getInt(t,r){var o=arguments.length>2&&void 0!==arguments[2]&&arguments[2],c=t.get(r);if(Number.isInteger(c)&&(o?c>=0:c>0))return c;throw new Error('The "'.concat(r,'" parameter in the linearization ')+"dictionary is invalid.")}

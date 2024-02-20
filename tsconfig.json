@@ -18,5 +18,5 @@
     "forceConsistentCasingInFileNames": false,
     "noFallthroughCasesInSwitch": false
   },
-  "exclude": ["src/splitter/codes/**"]
+  "exclude": ["src/splitter/codes/**", "src/splitter/projects/**","scanner/**"]
 }

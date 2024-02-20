@@ -1,0 +1,1 @@
+function getFooterRowColumn(e){var o,t="number"==typeof e?e:getColumnIndex(e);hasFrozenColumns()?t<=options.frozenColumn?o=$footerRowL:(o=$footerRowR,t-=options.frozenColumn+1):o=$footerRowL;var n=o&&o.children().eq(t);return n&&n[0]}

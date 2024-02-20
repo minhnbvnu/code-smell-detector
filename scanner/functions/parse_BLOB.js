@@ -1,0 +1,1 @@
+function parse_BLOB(blob){var size=blob.read_shift(4);var bytes=blob.slice(blob.l,blob.l+size);if(size&3>0)blob.l+=4-(size&3)&3;return bytes}

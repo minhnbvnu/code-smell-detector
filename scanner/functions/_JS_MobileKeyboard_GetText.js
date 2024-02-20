@@ -1,0 +1,1 @@
+function _JS_MobileKeyboard_GetText(buffer,bufferSize){var text=mobile_input&&mobile_input.input?mobile_input.input.value:mobile_input_text?mobile_input_text:"";if(buffer)stringToUTF8(text,buffer,bufferSize);return lengthBytesUTF8(text)}

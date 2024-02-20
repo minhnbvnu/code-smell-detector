@@ -1,0 +1,1 @@
+function Y4(e){this.request=e,this.followRedirect=!0,this.followRedirects=!0,this.followAllRedirects=!1,this.followOriginalHttpMethod=!1,this.allowRedirect=function(){return!0},this.maxRedirects=10,this.redirects=[],this.redirectsFollowed=0,this.removeRefererHeader=!1}

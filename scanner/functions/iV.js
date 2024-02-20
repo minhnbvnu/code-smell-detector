@@ -1,0 +1,1 @@
+function iV(e,t){var n=arguments.length>2&&void 0!==arguments[2]?arguments[2]:{};Object.assign(t,rV,n),Se.obj(e,t),t.textureUnits=[],Se.get(e,t,["numberOfTextureUnits"]),Se.setGet(e,t,["context"]),nV(e,t)}

@@ -1,0 +1,1 @@
+function _glGenQueries(n,ids){__glGenObject(n,ids,"createQuery",GL.queries)}

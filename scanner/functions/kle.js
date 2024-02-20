@@ -1,0 +1,1 @@
+function kle(e,t,r){for(let n=e;n;n=n.next){let i=_we(n.node);if(i)return i(EI.create(t,r,n))}return 0}

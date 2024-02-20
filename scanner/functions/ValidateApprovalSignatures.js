@@ -1,0 +1,1 @@
+function ValidateApprovalSignatures(t){_classCallCheck(this,ValidateApprovalSignatures);return r.call(this,d,"validateApprovalSignatures")}

@@ -1,3 +1,1 @@
-function removeModel(_x4) {
-	  return _removeModel.apply(this, arguments);
-	}
+function removeModel(e){return __awaiter(this,void 0,void 0,function(){var t;return __generator(this,function(n){switch(n.label){case 0:return t=parseURL(e),[4,ModelStoreManagerRegistry.getManager(t.scheme).removeModel(t.path)];case 1:return [2,n.sent()]}})})}

@@ -1,0 +1,1 @@
+function Bde(e){return e>=xde&&e<=bde?e-Fde:e>=wde&&e<=Dde?e-Nde:e>=kde&&e<=Ode?e-jde:-1}

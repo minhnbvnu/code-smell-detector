@@ -1,7 +1,1 @@
-function softplus_(x) {
-	  var $x = convertToTensor(x, 'x', 'softplus');
-	  var inputs = {
-	    x: $x
-	  };
-	  return ENGINE.runKernel(Softplus, inputs);
-	}
+function softplus_(e){var t=convertToTensor(e,"x","softplus");return ENV.engine.runKernel(function(e){return e.softplus(t)},{$x:t},function(e){return {$x:function(){return e.mulStrict(t.sigmoid())}}})}

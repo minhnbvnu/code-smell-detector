@@ -1,0 +1,1 @@
+function parse_ShortXLUnicodeString(blob,length,opts){var cch=blob.read_shift(1);var width=1,encoding="sbcs-cont";var cp=current_codepage;if(opts&&opts.biff>=8)current_codepage=1200;if(opts===undefined||opts.biff!==5){var fHighByte=blob.read_shift(1);if(fHighByte){width=2;encoding="dbcs-cont"}}var o=cch?blob.read_shift(cch,encoding):"";current_codepage=cp;return o}

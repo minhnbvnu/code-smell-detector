@@ -1,0 +1,1 @@
+function Vve(e){return S.createElement(_n,e,S.createElement(_ve,null))}

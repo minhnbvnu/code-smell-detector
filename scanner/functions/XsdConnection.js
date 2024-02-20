@@ -1,0 +1,1 @@
+function XsdConnection(t){var o;_classCallCheck(this,XsdConnection);(o=r.call(this,u,"xsdConnection",!0)).dataDescription=t.dataDescription||"";o.name=t.name||"";o.rootElement=null;o.uri=null;return o}

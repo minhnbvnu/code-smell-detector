@@ -1,18 +1,16 @@
-function buildLabelStatement(prefix) {
-	  var key = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "label";
+function buildLabelStatement(prefix, key = "label") {
+  return function (node) {
+    this.word(prefix);
+    const label = node[key];
 
-	  return function (node) {
-	    this.word(prefix);
+    if (label) {
+      this.space();
+      const isLabel = key == "label";
+      const terminatorState = this.startTerminatorless(isLabel);
+      this.print(label, node);
+      this.endTerminatorless(terminatorState);
+    }
 
-	    var label = node[key];
-	    if (label) {
-	      this.space();
-
-	      var terminatorState = this.startTerminatorless();
-	      this.print(label, node);
-	      this.endTerminatorless(terminatorState);
-	    }
-
-	    this.semicolon();
-	  };
-	}
+    this.semicolon();
+  };
+}

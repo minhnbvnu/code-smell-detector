@@ -1,7 +1,1 @@
-function _classPrivateMethodGet(receiver, privateSet, fn) {
-	  if (!privateSet.has(receiver)) {
-	    throw new TypeError("attempted to get private field on non-instance");
-	  }
-
-	  return fn;
-	}
+function _classPrivateMethodGet(t,r,a){if(!r.has(t))throw new TypeError("attempted to get private field on non-instance");return a}

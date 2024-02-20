@@ -1,0 +1,1 @@
+function U0(f,g){for(let w=0;w<f.length;w++)g.push((0,f[w])());return g}

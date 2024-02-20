@@ -1,0 +1,1 @@
+function initOverlayScrollbarsStatics(){_pluginsGlobals||(_pluginsGlobals=new OverlayScrollbarsGlobals(_pluginsOptions._defaults)),_pluginsAutoUpdateLoop||(_pluginsAutoUpdateLoop=new OverlayScrollbarsAutoUpdateLoop(_pluginsGlobals))}

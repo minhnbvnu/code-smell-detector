@@ -1,1 +1,1 @@
-function fj(a){a=a|0;var b=0;H[a>>2]=6256;H[a>>2]=3272;b=H[a+32>>2];if(b){H[a+36>>2]=b;oa(b)}return a|0}
+function fj(a,b){a=a|0;b=b|0;var c=0,d=0,e=0,g=0,h=0;c=f[a>>2]|0;if(b){b=c+8|0;d=b;e=Vn(f[d>>2]|0,f[d+4>>2]|0,1,0)|0;d=b;f[d>>2]=e;f[d+4>>2]=I;d=a+28|0;e=f[d>>2]|0;b=a+24|0;f[b>>2]=f[b>>2]|1<<e;g=d;h=e}else{e=c;d=Vn(f[e>>2]|0,f[e+4>>2]|0,1,0)|0;e=c;f[e>>2]=d;f[e+4>>2]=I;e=a+28|0;g=e;h=f[e>>2]|0}e=h+1|0;f[g>>2]=e;if((e|0)!=32)return;e=a+24|0;h=a+16|0;d=f[h>>2]|0;if((d|0)==(f[a+20>>2]|0))Ri(a+12|0,e);else{f[d>>2]=f[e>>2];f[h>>2]=d+4}f[g>>2]=0;f[e>>2]=0;return}

@@ -1,0 +1,1 @@
+function vs(e,t){if("function"!=typeof t)throw new nc(le);return e=ml(e),function(){if(--e<1)return t.apply(this,arguments)}}

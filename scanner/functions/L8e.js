@@ -1,0 +1,1 @@
+function L8e(e,t,r){var i=t===e.head?new Dc(r,null,t,e):new Dc(r,t,t.next,e);return i.next===null&&(e.tail=i),i.prev===null&&(e.head=i),e.length++,i}

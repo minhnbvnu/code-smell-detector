@@ -1,14 +1,1 @@
-function sizeFromShape(shape) {
-	  if (shape.length === 0) {
-	    // Scalar.
-	    return 1;
-	  }
-
-	  var size = shape[0];
-
-	  for (var i = 1; i < shape.length; i++) {
-	    size *= shape[i];
-	  }
-
-	  return size;
-	}
+function sizeFromShape(e){if(0===e.length)return 1;for(var t=e[0],n=1;n<e.length;n++)t*=e[n];return t}

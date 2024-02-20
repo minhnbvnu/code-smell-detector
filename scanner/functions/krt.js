@@ -1,0 +1,1 @@
+function krt(n,t){let e=Qc(t,this.size,16);n.uniformMatrix4fv(this.addr,!1,e)}

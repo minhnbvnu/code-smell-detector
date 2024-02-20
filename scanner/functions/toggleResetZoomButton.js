@@ -1,0 +1,1 @@
+function toggleResetZoomButton(){zoomResetButton.toggleClass("hidden")}

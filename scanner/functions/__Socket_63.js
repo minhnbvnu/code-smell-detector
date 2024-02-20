@@ -1,0 +1,1 @@
+function __Socket_63(e,t,r){this.io=e,this.nsp=t,this.json=this,this.ids=0,this.acks={},this.receiveBuffer=[],this.sendBuffer=[],this.connected=!1,this.disconnected=!0,this.flags={},r&&r.query&&(this.query=r.query),this.io.autoConnect&&this.open()}

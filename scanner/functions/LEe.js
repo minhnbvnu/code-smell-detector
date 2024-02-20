@@ -1,0 +1,1 @@
+function LEe(e){let t=function(...r){let i=r[0];return i==null?i:(i.length>1&&(r=i),e(r))};return"conversion"in e&&(t.conversion=e.conversion),t}

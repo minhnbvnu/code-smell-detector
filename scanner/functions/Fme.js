@@ -1,0 +1,1 @@
+function Fme(e){for(var t=PN.copy(e._opts),r=0;r<FN.length;r++)delete t[FN[r]];return t}

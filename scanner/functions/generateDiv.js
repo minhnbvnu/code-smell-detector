@@ -1,0 +1,1 @@
+function generateDiv(classesOrAttrs,content){return"<div "+(classesOrAttrs?type(classesOrAttrs)==TYPES.s?'class="'+classesOrAttrs+'"':function(){var key,attrs=_strEmpty;if(FRAMEWORK.isPlainObject(classesOrAttrs))for(key in classesOrAttrs)attrs+=("c"===key?"class":key)+'="'+classesOrAttrs[key]+'" ';return attrs}():_strEmpty)+">"+(content||_strEmpty)+"</div>"}

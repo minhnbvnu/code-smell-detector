@@ -1,0 +1,1 @@
+function vg_data_duplicate(d){var x=d,i,n;if(vg.isArray(d)){x=[];for(i=0,n=d.length;i<n;++i){x.push(vg_data_duplicate(d[i]))}}else if(vg.isObject(d)){x={};for(i in d){x[i]=vg_data_duplicate(d[i])}}return x}

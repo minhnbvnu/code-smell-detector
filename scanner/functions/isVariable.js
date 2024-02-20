@@ -1,0 +1,1 @@
+function isVariable(name) { return name[0] !== "("; }

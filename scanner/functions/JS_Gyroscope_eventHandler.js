@@ -1,0 +1,1 @@
+function JS_Gyroscope_eventHandler(){if(JS_Gyroscope_callback!=0)dynCall_vfff(JS_Gyroscope_callback,JS_Gyroscope.x,JS_Gyroscope.y,JS_Gyroscope.z)}

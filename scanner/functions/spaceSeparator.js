@@ -1,3 +1,3 @@
 function spaceSeparator() {
-	  this.space();
-	}
+  this.space();
+}

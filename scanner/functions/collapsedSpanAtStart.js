@@ -1,0 +1,1 @@
+function collapsedSpanAtStart(line) { return collapsedSpanAtSide(line, true) }

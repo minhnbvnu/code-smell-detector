@@ -1,0 +1,1 @@
+function rot(n,t,e,i){return console.warn("WebGLProgram: #pragma unroll_loop shader syntax is deprecated. Please use #pragma unroll_loop_start syntax instead."),Zz(n,t,e,i)}

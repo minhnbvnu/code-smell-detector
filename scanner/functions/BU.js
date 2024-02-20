@@ -1,0 +1,1 @@
+function BU(){return typeof navigator!="undefined"&&navigator!=null}

@@ -1,0 +1,1 @@
+function StringObject(){_classCallCheck(this,StringObject);return r.apply(this,arguments)}

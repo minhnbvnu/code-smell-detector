@@ -1,0 +1,1 @@
+function Cre(e,t,r){let i=0,a=0;return r.all>0&&r.list[e.pid]?(i=(e.utime-r.list[e.pid].utime)/(t-r.all)*100,a=(e.stime-r.list[e.pid].stime)/(t-r.all)*100):(i=e.utime/t*100,a=e.stime/t*100),{pid:e.pid,utime:e.utime,stime:e.stime,pcpuu:i,pcpus:a}}

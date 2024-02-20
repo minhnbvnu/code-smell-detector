@@ -1,0 +1,1 @@
+function to(){if(!this.isValid())return"moment.invalid(/* "+this._i+" */)";var t,e,i,n,o="moment",r="";return this.isLocal()||(o=0===this.utcOffset()?"moment.utc":"moment.parseZone",r="Z"),t="["+o+'("]',e=0<=this.year()&&this.year()<=9999?"YYYY":"YYYYYY",i="-MM-DD[T]HH:mm:ss.SSS",n=r+'[")]',this.format(t+e+i+n)}

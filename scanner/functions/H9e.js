@@ -1,0 +1,1 @@
+function H9e(){return new Za(this.curve,this.x,this.y.negate(),this.z)}

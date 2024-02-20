@@ -1,11 +1,1 @@
-function getPrecinctIndexIfExist(pxIndex, pyIndex, sizeInImageScale, precinctIterationSizes, resolution) {
-    var posX = pxIndex * precinctIterationSizes.minWidth;
-    var posY = pyIndex * precinctIterationSizes.minHeight;
-
-    if (posX % sizeInImageScale.width !== 0 || posY % sizeInImageScale.height !== 0) {
-      return null;
-    }
-
-    var startPrecinctRowIndex = posY / sizeInImageScale.width * resolution.precinctParameters.numprecinctswide;
-    return posX / sizeInImageScale.height + startPrecinctRowIndex;
-  }
+function getPrecinctIndexIfExist(t,r,o,c,l){var u=t*c.minWidth,h=r*c.minHeight;if(u%o.width!=0||h%o.height!=0)return null;var d=h/o.width*l.precinctParameters.numprecinctswide;return u/o.height+d}

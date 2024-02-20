@@ -1,3 +1,3 @@
 function EmptyStatement() {
-	  this.semicolon(true);
-	}
+	        this.type = syntax_1.Syntax.EmptyStatement;
+	    }

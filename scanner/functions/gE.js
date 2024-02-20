@@ -1,0 +1,1 @@
+function gE(t,e){var n=t.getRect();return[n[hE[e]],n[hE[e]]+n[cE[e]]]}

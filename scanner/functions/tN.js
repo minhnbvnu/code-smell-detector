@@ -1,0 +1,1 @@
+function tN(t,e){Ze(t.barycenter)?(t.barycenter=e.barycenter,t.weight=e.weight):(t.barycenter=(t.barycenter*t.weight+e.barycenter*e.weight)/(t.weight+e.weight),t.weight+=e.weight)}

@@ -1,3 +1,1 @@
-function decodeDCSuccessive(component, blockOffset) {
-      component.blockData[blockOffset] |= readBit() << successive;
-    }
+function decodeDCSuccessive(t,r){t.blockData[r]|=readBit()<<k}

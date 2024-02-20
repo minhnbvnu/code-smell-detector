@@ -1,4 +1,11 @@
-function coerce(val) {
-  if (val instanceof Error) return val.stack || val.message;
-  return val;
+function coerce(promise) {
+    var deferred = defer();
+    Q.nextTick(function () {
+        try {
+            promise.then(deferred.resolve, deferred.reject, deferred.notify);
+        } catch (exception) {
+            deferred.reject(exception);
+        }
+    });
+    return deferred.promise;
 }

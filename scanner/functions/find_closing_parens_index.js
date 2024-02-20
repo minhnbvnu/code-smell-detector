@@ -1,0 +1,1 @@
+function find_closing_parens_index(arr,i,opening="(",closing=")"){for(var nesting=0;i<arr.length;++i){if(arr[i]==opening)++nesting;if(arr[i]==closing&&--nesting==0){return i}}}

@@ -1,0 +1,1 @@
+function extractNames(i){var o=[];return Hd[i.type](o,i),o}

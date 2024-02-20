@@ -1,0 +1,1 @@
+function jsAudioPlayBlockedAudios(){Object.keys(WEBAudio.pendingAudioSources).forEach(function(audioId){jsAudioPlayPendingBlockedAudio(audioId)})}

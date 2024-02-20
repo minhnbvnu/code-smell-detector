@@ -1,0 +1,1 @@
+function scheduleShow(i){ie.clearDelayTimeouts(),i&&invokeHook("onTrigger",[ie,i]),addDocumentPress();var o=getDelay(!0),u=getNormalizedTouchSettings(),C=u[0],_=u[1];Xt.isTouch&&"hold"===C&&_&&(o=_),o?s=setTimeout((function(){ie.show()}),o):ie.show()}

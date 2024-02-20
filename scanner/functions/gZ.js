@@ -1,0 +1,1 @@
+function gZ(b,d){b=b|0;d=d|0;var e=0,f=0;e=0;do{f=e;e=e+1|0}while((a[b+f>>0]|0)!=0);d=kb[c[d>>2]&63](e)|0;if(!d)d=0;else W6(d|0,b|0,e|0)|0;return d|0}

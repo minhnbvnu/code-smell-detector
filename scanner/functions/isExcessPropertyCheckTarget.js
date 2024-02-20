@@ -1,0 +1,3 @@
+function isExcessPropertyCheckTarget(type) {
+                return !!(type.flags & 524288 /* Object */ && !(getObjectFlags(type) & 512 /* ObjectLiteralPatternWithComputedProperties */) || type.flags & 67108864 /* NonPrimitive */ || type.flags & 1048576 /* Union */ && some(type.types, isExcessPropertyCheckTarget) || type.flags & 2097152 /* Intersection */ && every(type.types, isExcessPropertyCheckTarget));
+            }

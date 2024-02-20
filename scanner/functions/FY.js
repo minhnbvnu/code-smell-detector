@@ -1,0 +1,1 @@
+function FY(n){let{inputs:t,backend:e,attrs:i}=n,{dy:r,input:o}=t,s=o,{filterSize:a,strides:l,pad:c,dimRoundingMode:u}=i,h=[1,1,1],p=F.computePool3DInfo(s.shape,a,l,h,c,u),d=new s0(p);return e.runWebGLProgram(d,[r],s.dtype)}

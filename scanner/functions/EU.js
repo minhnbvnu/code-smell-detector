@@ -1,0 +1,1 @@
+function EU(){let n=Sb();return n._tfGlobals==null&&(n._tfGlobals=new Map),n._tfGlobals}

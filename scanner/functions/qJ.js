@@ -1,0 +1,1 @@
+function qJ(b){b=b|0;var c=0,d=0,e=0,f=0,g=0;c=b;f=b;a:while(1){e=0;while(1){d=c;c=c+1|0;d=a[d>>0]|0;if(!(d<<24>>24))break a;if(e<<24>>24){g=5;break}if(d<<24>>24!=92)break;else e=1}b:do if((g|0)==5){g=0;switch(d<<24>>24|0){case 114:{d=13;break b}case 108:case 110:{d=10;break b}default:break b}}while(0);a[f>>0]=d;f=f+1|0}a[f>>0]=0;return b|0}

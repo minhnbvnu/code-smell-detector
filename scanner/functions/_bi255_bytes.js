@@ -1,0 +1,1 @@
+function _bi255_bytes(t){t=_bi255(t);for(var n=new Array(32),e=31;e>=0;e--)n[e]=255&t.n[0],t.shiftRight(8);return n}

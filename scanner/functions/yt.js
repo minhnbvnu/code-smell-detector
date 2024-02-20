@@ -1,1 +1,1 @@
-function yt(t,e){return-1!==t.indexOf(e)}
+function yt(e,t){var r=e.length;if(r)return Zr(t+=t<0?r:0,r)?e[t]:io}

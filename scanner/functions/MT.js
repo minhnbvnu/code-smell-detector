@@ -1,0 +1,1 @@
+function MT(t){let e,r=0;t.forEach(s=>{r+=yc(s,e),e=s});let n=r/2,i;return e=void 0,t.forEach(s=>{if(e&&!i){const a=yc(s,e);if(a<n)n-=a;else{const o=n/a;o<=0&&(i=e),o>=1&&(i={x:s.x,y:s.y}),o>0&&o<1&&(i={x:(1-o)*e.x+o*s.x,y:(1-o)*e.y+o*s.y})}}e=s}),i}

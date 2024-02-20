@@ -1,0 +1,1 @@
+function defaultGetAssemblyOptions(e,t){return{params:t.params,signature:t.signature,fields:t.fields}}

@@ -1,0 +1,1 @@
+function mxCoordinateAssignment(a,b,c,d,e,f){this.layout=a;this.intraCellSpacing=b;this.interRankCellSpacing=c;this.orientation=d;this.initialX=e;this.parallelEdgeSpacing=f}

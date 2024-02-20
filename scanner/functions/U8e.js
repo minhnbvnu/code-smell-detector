@@ -1,0 +1,1 @@
+function U8e(e){let t=e[e.length-1],r=e.slice();return r[e.length-1]=t.setSelAfter(t.selectionsAfter.slice(0,t.selectionsAfter.length-1)),r}

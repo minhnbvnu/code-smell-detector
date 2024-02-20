@@ -1,1 +1,1 @@
-function Ln(t,n){xn(t,null,n,void 0)}
+function Ln(t,e){return function(i,n){var o;return null===n||isNaN(+n)||(O(e,"moment()."+e+"(period, number) is deprecated. Please use moment()."+e+"(number, period). See http://momentjs.com/guides/#/warnings/add-inverted-param/ for more info."),o=i,i=n,n=o),In(this,Cn(i,n),t),this}}

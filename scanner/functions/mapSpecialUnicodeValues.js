@@ -1,10 +1,1 @@
-function mapSpecialUnicodeValues(code) {
- if (code >= 0xfff0 && code <= 0xffff) {
-  return 0;
- } else if (code >= 0xf600 && code <= 0xf8ff) {
-  return getSpecialPUASymbols()[code] || code;
- } else if (code === 0x00ad) {
-  return 0x002d;
- }
- return code;
-}
+function mapSpecialUnicodeValues(t){return t>=65520&&t<=65535?0:t>=62976&&t<=63743?l()[t]||t:173===t?45:t}

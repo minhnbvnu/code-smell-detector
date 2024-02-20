@@ -1,0 +1,1 @@
+function YZ(e,t){let r;switch(t){case"arraybuffer":r=e.arrayBuffer();break;case"text":r=e.text();break;case"blob":case"document":case"json":throw new Error(`${t} is not supported.`);default:r=e.text();break}return r}

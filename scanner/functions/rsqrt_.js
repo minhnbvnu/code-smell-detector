@@ -1,7 +1,1 @@
-function rsqrt_(x) {
-	  var $x = convertToTensor(x, 'x', 'rsqrt');
-	  var inputs = {
-	    x: $x
-	  };
-	  return ENGINE.runKernel(Rsqrt, inputs);
-	}
+function rsqrt_(e){var t=convertToTensor(e,"x","rsqrt");return ENV.engine.runKernel(function(e){return e.rsqrt(t)},{$x:t},function(e){return {$x:function(){return e.div(t.pow(1.5).mul(2)).neg()}}})}

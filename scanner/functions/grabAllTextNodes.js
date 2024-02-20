@@ -1,0 +1,1 @@
+function grabAllTextNodes(node,allText){var childNodes=node.childNodes,length=childNodes.length,subnode,nodeType;while(length--){subnode=childNodes[length];nodeType=subnode.nodeType;if(nodeType===3){allText.push(subnode)}else if(nodeType===1&&!shouldntBeParsed.test(subnode.nodeName)){grabAllTextNodes(subnode,allText)}}return allText}

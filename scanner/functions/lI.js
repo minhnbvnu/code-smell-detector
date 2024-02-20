@@ -1,0 +1,1 @@
+function lI(t,e,n,i,r){for(var o=[],a=[],s=[],l=0;l<t.length;l++){var u=t[l].coord;a[0]=u,a[1]=0,s[0]=u,s[1]=n,e&&(Wt(a,a,e),Wt(s,s,e));var h=new Zu({shape:{x1:a[0],y1:a[1],x2:s[0],y2:s[1]},style:i,z2:2,autoBatch:!0,silent:!0});Rh(h.shape,h.style.lineWidth),h.anid=r+"_"+t[l].tickValue,o.push(h)}return o}

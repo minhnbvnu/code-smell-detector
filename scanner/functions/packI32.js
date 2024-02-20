@@ -1,3 +1,1 @@
-function packI32(it) {
-  return [it & 0xff, it >> 8 & 0xff, it >> 16 & 0xff, it >> 24 & 0xff];
-}
+function packI32(t){return[255&t,t>>8&255,t>>16&255,t>>24&255]}

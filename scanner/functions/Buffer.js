@@ -1,8 +1,12 @@
-function buffer(size, num, dest) {
-  if (dest === undefined) {
-    dest = [0, 0];
+function Buffer (arg, encodingOrOffset, length) {
+  // Common case.
+  if (typeof arg === 'number') {
+    if (typeof encodingOrOffset === 'string') {
+      throw new TypeError(
+        'The "string" argument must be of type string. Received type number'
+      )
+    }
+    return allocUnsafe(arg)
   }
-  dest[0] = size[0] + 2 * num;
-  dest[1] = size[1] + 2 * num;
-  return dest;
+  return from(arg, encodingOrOffset, length)
 }

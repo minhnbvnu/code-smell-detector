@@ -1,0 +1,1 @@
+function selectDrag(pos){Coords.setCurrent(pos);Selection.update()}

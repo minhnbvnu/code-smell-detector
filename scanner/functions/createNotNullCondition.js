@@ -1,0 +1,3 @@
+function createNotNullCondition(left, right, invert) {
+                return factory2.createBinaryExpression(factory2.createBinaryExpression(left, factory2.createToken(invert ? 36 /* EqualsEqualsEqualsToken */ : 37 /* ExclamationEqualsEqualsToken */), factory2.createNull()), factory2.createToken(invert ? 56 /* BarBarToken */ : 55 /* AmpersandAmpersandToken */), factory2.createBinaryExpression(right, factory2.createToken(invert ? 36 /* EqualsEqualsEqualsToken */ : 37 /* ExclamationEqualsEqualsToken */), factory2.createVoidZero()));
+            }

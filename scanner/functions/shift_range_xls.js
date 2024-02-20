@@ -1,0 +1,1 @@
+function shift_range_xls(cell,range){cell.s=shift_cell_xls(cell.s,range.s);cell.e=shift_cell_xls(cell.e,range.s);return cell}

@@ -1,0 +1,3 @@
+function emptyFolder() {
+      vfs.symlink('');
+    }

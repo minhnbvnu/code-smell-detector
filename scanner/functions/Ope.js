@@ -1,0 +1,1 @@
+function Ope(e,t){let{onScroll:r,isDisabled:n}=e,i=O.useCallback(a=>{a.ctrlKey||(a.preventDefault(),a.stopPropagation(),r&&r({deltaX:a.deltaX,deltaY:a.deltaY}))},[r]);WZ(t,"wheel",n?void 0:i)}

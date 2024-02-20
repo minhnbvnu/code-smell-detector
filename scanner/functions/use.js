@@ -1,10 +1,11 @@
-function use () {
-    var objToUse;
-    if (nextFreeSlot === null || nextFreeSlot === objPool.length) {
-      grow(objPool.length || 5);
+function use(v) {
+      var l = _current.variables.filter(function(elt) {
+        if (elt.value === v && !elt.undef) {
+          if (elt.unused === true) {
+            elt.unused = false;
+          }
+          return v;
+        }
+      }).length;
+      return (l === 0);
     }
-    objToUse = objPool[nextFreeSlot];
-    objPool[nextFreeSlot++] = EMPTY_SLOT;
-    clearObject(objToUse);
-    return objToUse;
-  }

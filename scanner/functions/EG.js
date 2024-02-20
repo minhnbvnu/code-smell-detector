@@ -1,1 +1,1 @@
-function eg(){return 10}
+function EG(t,e,n,i){if(1===n)i.push(e);else{var r=Math.floor(n/2),o=t(e);EG(t,o[0],r,i),EG(t,o[1],n-r,i)}return i}

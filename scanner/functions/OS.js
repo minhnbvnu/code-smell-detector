@@ -1,0 +1,1 @@
+function OS(t){if(t.get(["endLabel","show"]))return!0;for(var e=0;e<ol.length;e++)if(t.get([ol[e],"endLabel","show"]))return!0;return!1}

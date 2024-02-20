@@ -1,0 +1,1 @@
+function Toe(e){return(e&128)==0}

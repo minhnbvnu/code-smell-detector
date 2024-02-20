@@ -1,0 +1,1 @@
+function F9e(e){return e==this?!0:this.q.equals(e.q)&&this.x.equals(e.x)}

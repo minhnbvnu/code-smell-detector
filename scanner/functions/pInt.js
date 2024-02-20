@@ -1,0 +1,1 @@
+function pInt($){return parseInt($,10)}

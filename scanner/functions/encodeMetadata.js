@@ -1,0 +1,1 @@
+function encodeMetadata(e){var t=[];for(var r in e)t.push(r+" "+_$base64_44.Base64.encode(e[r]));return t.join(",")}

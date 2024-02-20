@@ -1,0 +1,1 @@
+function Ole(e,t,r,n=0,i=e.length){let a=new Fwe(n,Array.isArray(t)?t:[t],r);a.highlightRange(e.cursor(),n,i,"",a.highlighters),a.flush(i)}

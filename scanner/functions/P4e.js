@@ -1,0 +1,1 @@
+function P4e(e){var t,r,i,a;return t=e.replace(/_/g,"").toLowerCase(),r=t[0]==="-"?-1:1,a=[],"+-".indexOf(t[0])>=0&&(t=t.slice(1)),t===".inf"?r===1?Number.POSITIVE_INFINITY:Number.NEGATIVE_INFINITY:t===".nan"?NaN:t.indexOf(":")>=0?(t.split(":").forEach(function(n){a.unshift(parseFloat(n,10))}),t=0,i=1,a.forEach(function(n){t+=n*i,i*=60}),r*t):r*parseFloat(t,10)}

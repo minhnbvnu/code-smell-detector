@@ -1,0 +1,1 @@
+function Bk(a,b,c){a=a|0;b=b|0;c=c|0;var d=0,e=0,g=0,h=0,i=0.0;d=u;u=u+128|0;e=d;g=e;h=g+124|0;do{f[g>>2]=0;g=g+4|0}while((g|0)<(h|0));g=e+4|0;f[g>>2]=a;h=e+8|0;f[h>>2]=-1;f[e+44>>2]=a;f[e+76>>2]=-1;Ym(e,0);i=+Rc(e,c,1);c=(f[g>>2]|0)-(f[h>>2]|0)+(f[e+108>>2]|0)|0;if(b|0)f[b>>2]=c|0?a+c|0:a;u=d;return +i}

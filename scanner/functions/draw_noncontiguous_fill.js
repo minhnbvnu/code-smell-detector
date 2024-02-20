@@ -1,4 +1,4 @@
-function draw_noncontiguous_fill(ctx, x, y, swatch) {
+function draw_noncontiguous_fill(ctx, x, y, swatch){
 	if (typeof swatch === "string") {
 		const fill_rgba = get_rgba_from_color(swatch);
 		draw_noncontiguous_fill_without_pattern_support(ctx, x, y, fill_rgba[0], fill_rgba[1], fill_rgba[2], fill_rgba[3]);

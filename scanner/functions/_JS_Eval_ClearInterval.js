@@ -1,0 +1,1 @@
+function _JS_Eval_ClearInterval(id){window.clearInterval(id)}

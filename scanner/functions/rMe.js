@@ -1,0 +1,1 @@
+function rMe(e,t){if(typeof e=="boolean")return!e;for(var r in e)if(t[r])return!0}

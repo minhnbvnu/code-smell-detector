@@ -1,0 +1,1 @@
+function wgpuReadArrayOfWgpuObjects(ptr,numObjects){ptr>>=2;let arrayOfObjects=[];while(numObjects--){arrayOfObjects.push(wgpu[HEAPU32[ptr++]])}return arrayOfObjects}

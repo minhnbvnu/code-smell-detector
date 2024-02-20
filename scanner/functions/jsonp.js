@@ -1,27 +1,62 @@
-function jsonp(url, callback, errback, callbackParam) {
-  const script = document.createElement('script');
-  const key = 'olc_' + getUid(callback);
-  function cleanup() {
-    delete window[key];
-    script.parentNode.removeChild(script);
+function jsonp(url, opts, fn) {
+  if ('function' === typeof opts) {
+    fn = opts;
+    opts = {};
   }
-  script.async = true;
-  script.src =
-    url +
-    (url.includes('?') ? '&' : '?') +
-    (callbackParam || 'callback') +
-    '=' +
-    key;
-  const timer = setTimeout(function () {
-    cleanup();
-    if (errback) {
-      errback();
+
+  if (!opts) {
+    opts = {};
+  }
+
+  var prefix = opts.prefix || '__jp';
+  var id = opts.name || prefix + count++;
+  var param = opts.param || 'callback';
+  var timeout = null != opts.timeout ? opts.timeout : 60000;
+  var enc = encodeURIComponent;
+  var target = document.getElementsByTagName('script')[0] || document.head;
+  var script = null;
+  var timer = null;
+
+  if (timeout) {
+    timer = setTimeout(function () {
+      cleanup();
+
+      if (fn) {
+        fn(new Error('Timeout'));
+      }
+    }, timeout);
+  }
+
+  function cleanup() {
+    if (script.parentNode) {
+      script.parentNode.removeChild(script);
     }
-  }, 10000);
-  window[key] = function (data) {
-    clearTimeout(timer);
+
+    window[id] = noop;
+
+    if (timer) {
+      clearTimeout(timer);
+    }
+  }
+
+  function cancel() {
+    if (window[id]) {
+      cleanup();
+    }
+  }
+
+  window[id] = function (data) {
     cleanup();
-    callback(data);
+
+    if (fn) {
+      fn(null, data);
+    }
   };
-  document.head.appendChild(script);
+
+  url += (-1 * url.indexOf('?') - 1 ? '&' : '?') + param + '=' + enc(id);
+  url = url.replace('?&', '?');
+  script = document.createElement('script');
+  script.src = url;
+  target.parentNode && target.parentNode.insertBefore(script, target);
+  return cancel;
 }

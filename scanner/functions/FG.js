@@ -1,0 +1,1 @@
+function FG(t,e){for(var n=t.length,i=t[n-2],r=t[n-1],o=[],a=0;a<e.length;)o[a++]=i,o[a++]=r;return o}

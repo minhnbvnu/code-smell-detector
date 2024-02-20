@@ -1,17 +1,4 @@
-function getPosition( node ){
-    if( options.positions == null ){
-      return copyPosition( node.position() );
-    }
-
-    if( posIsFn ){
-      return options.positions( node );
-    }
-
-    let pos = options.positions[ node._private.data.id ];
-
-    if( pos == null ){
-      return null;
-    }
-
-    return pos;
-  }
+function getPosition() {
+  // get the current position from the server
+  ws.send(JSON.stringify({ message: 'position' }));
+}

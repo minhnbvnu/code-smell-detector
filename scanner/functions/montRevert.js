@@ -1,0 +1,1 @@
+function montRevert(x){var r=nbi();x.copyTo(r);this.reduce(r);return r}

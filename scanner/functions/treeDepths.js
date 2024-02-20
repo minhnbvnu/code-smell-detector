@@ -1,0 +1,1 @@
+function treeDepths(g){var depths={};function dfs(v,depth){var children=g.children(v);if(children&&children.length){_.forEach(children,function(child){dfs(child,depth+1)})}depths[v]=depth}_.forEach(g.children(),function(v){dfs(v,1)});return depths}

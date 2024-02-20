@@ -1,3 +1,1 @@
-function Super() {
-	  this.word("super");
-	}
+function Super(){i.apply(this,arguments)}

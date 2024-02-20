@@ -1,8 +1,1 @@
-function composeSMaskLuminosity(maskData, layerData, transferMap) {
-    const length = maskData.length;
-
-    for (let i = 3; i < length; i += 4) {
-      const y = maskData[i - 3] * 77 + maskData[i - 2] * 152 + maskData[i - 1] * 28;
-      layerData[i] = transferMap ? layerData[i] * transferMap[y >> 8] >> 8 : layerData[i] * y >> 16;
-    }
-  }
+function composeSMaskLuminosity(t,r,a){for(var i=t.length,o=3;o<i;o+=4){var l=77*t[o-3]+152*t[o-2]+28*t[o-1];r[o]=a?r[o]*a[l>>8]>>8:r[o]*l>>16}}

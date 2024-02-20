@@ -1,0 +1,10 @@
+function removeTitle(el) {
+  const title = el.getAttribute('title')
+
+  // Only set `data-original-title` attr if there is a title
+  if (title) {
+    el.setAttribute('data-original-title', title)
+  }
+
+  el.removeAttribute('title')
+}

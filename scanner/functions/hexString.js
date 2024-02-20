@@ -1,0 +1,1 @@
+function hexString(t){for(var r=[],o=0,c=t.length;o<c;o++){var l=t[o].toString(16);r.push(l.padStart(2,"0"))}return r.join("")}

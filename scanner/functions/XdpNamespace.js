@@ -1,0 +1,1 @@
+function XdpNamespace(){_classCallCheck(this,XdpNamespace)}

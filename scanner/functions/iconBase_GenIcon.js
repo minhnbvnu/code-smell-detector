@@ -1,0 +1,1 @@
+function iconBase_GenIcon(i){return function(o){return s.createElement(IconBase,__assign({attr:__assign({},i.attr)},o),Tree2Element(i.child))}}

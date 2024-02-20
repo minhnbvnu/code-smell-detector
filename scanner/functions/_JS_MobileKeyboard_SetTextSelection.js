@@ -1,0 +1,1 @@
+function _JS_MobileKeyboard_SetTextSelection(start,length){if(!mobile_input)return;mobile_input.input.setSelectionRange(start,start+length)}

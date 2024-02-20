@@ -1,0 +1,1 @@
+function Uat(n,t,e){var i,r=e+"",o;return function(){var s=this.getAttributeNS(n.space,n.local);return s===r?null:s===i?o:o=t(i=s,e)}}

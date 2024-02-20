@@ -1,0 +1,1 @@
+function tse(e){return e.runtime==="node"&&e.napi}

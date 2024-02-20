@@ -1,0 +1,1 @@
+function navigateToRow(e){var o=getDataLength();if(!o)return!0;if(e<0?e=0:e>=o&&(e=o-1),scrollCellIntoView(e,0,!0),options.enableCellNavigation&&null!=activeRow){for(var t=0,n=null,l=activePosX;t<=activePosX;)canCellBeActive(e,t)&&(n=t),t+=getColspan(e,t);null!==n?(setActiveCellInternal(getCellNode(e,n)),activePosX=l):resetActiveCell()}return!0}

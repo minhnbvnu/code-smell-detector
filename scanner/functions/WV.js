@@ -1,0 +1,1 @@
+function WV(n,t,e){for(let i=0;i<t.length;i++)n5(n,t[i],e,$V)}

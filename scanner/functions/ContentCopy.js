@@ -1,0 +1,1 @@
+function ContentCopy(t){_classCallCheck(this,ContentCopy);return r.call(this,d,"contentCopy")}

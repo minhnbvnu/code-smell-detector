@@ -1,0 +1,3 @@
+function isDeclarationWithExplicitTypeAnnotation(node) {
+                return (isVariableDeclaration(node) || isPropertyDeclaration(node) || isPropertySignature(node) || isParameter(node)) && !!(getEffectiveTypeAnnotationNode(node) || isInJSFile(node) && hasInitializer(node) && node.initializer && isFunctionExpressionOrArrowFunction(node.initializer) && getEffectiveReturnTypeNode(node.initializer));
+            }

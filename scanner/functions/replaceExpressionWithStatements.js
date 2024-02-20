@@ -1,67 +1,47 @@
 function replaceExpressionWithStatements(nodes) {
-	  this.resync();
+  this.resync();
+  const toSequenceExpression = t.toSequenceExpression(nodes, this.scope);
 
-	  var toSequenceExpression = t.toSequenceExpression(nodes, this.scope);
+  if (toSequenceExpression) {
+    return this.replaceWith(toSequenceExpression)[0].get("expressions");
+  }
 
-	  if (t.isSequenceExpression(toSequenceExpression)) {
-	    var exprs = toSequenceExpression.expressions;
+  const functionParent = this.getFunctionParent();
+  const isParentAsync = functionParent == null ? void 0 : functionParent.is("async");
+  const container = t.arrowFunctionExpression([], t.blockStatement(nodes));
+  this.replaceWith(t.callExpression(container, []));
+  this.traverse(hoistVariablesVisitor);
+  const completionRecords = this.get("callee").getCompletionRecords();
 
-	    if (exprs.length >= 2 && this.parentPath.isExpressionStatement()) {
-	      this._maybePopFromStatements(exprs);
-	    }
+  for (const path of completionRecords) {
+    if (!path.isExpressionStatement()) continue;
+    const loop = path.findParent(path => path.isLoop());
 
-	    if (exprs.length === 1) {
-	      this.replaceWith(exprs[0]);
-	    } else {
-	      this.replaceWith(toSequenceExpression);
-	    }
-	  } else if (toSequenceExpression) {
-	    this.replaceWith(toSequenceExpression);
-	  } else {
-	    var container = t.functionExpression(null, [], t.blockStatement(nodes));
-	    container.shadow = true;
+    if (loop) {
+      let uid = loop.getData("expressionReplacementReturnUid");
 
-	    this.replaceWith(t.callExpression(container, []));
-	    this.traverse(hoistVariablesVisitor);
+      if (!uid) {
+        const callee = this.get("callee");
+        uid = callee.scope.generateDeclaredUidIdentifier("ret");
+        callee.get("body").pushContainer("body", t.returnStatement(t.cloneNode(uid)));
+        loop.setData("expressionReplacementReturnUid", uid);
+      } else {
+        uid = t.identifier(uid.name);
+      }
 
-	    var completionRecords = this.get("callee").getCompletionRecords();
-	    for (var _iterator2 = completionRecords, _isArray2 = Array.isArray(_iterator2), _i2 = 0, _iterator2 = _isArray2 ? _iterator2 : (0, _getIterator3.default)(_iterator2);;) {
-	      var _ref2;
+      path.get("expression").replaceWith(t.assignmentExpression("=", t.cloneNode(uid), path.node.expression));
+    } else {
+      path.replaceWith(t.returnStatement(path.node.expression));
+    }
+  }
 
-	      if (_isArray2) {
-	        if (_i2 >= _iterator2.length) break;
-	        _ref2 = _iterator2[_i2++];
-	      } else {
-	        _i2 = _iterator2.next();
-	        if (_i2.done) break;
-	        _ref2 = _i2.value;
-	      }
+  const callee = this.get("callee");
+  callee.arrowFunctionToExpression();
 
-	      var path = _ref2;
+  if (isParentAsync && _index.default.hasType(this.get("callee.body").node, "AwaitExpression", t.FUNCTION_TYPES)) {
+    callee.set("async", true);
+    this.replaceWith(t.awaitExpression(this.node));
+  }
 
-	      if (!path.isExpressionStatement()) continue;
-
-	      var loop = path.findParent(function (path) {
-	        return path.isLoop();
-	      });
-	      if (loop) {
-	        var uid = loop.getData("expressionReplacementReturnUid");
-
-	        if (!uid) {
-	          var callee = this.get("callee");
-	          uid = callee.scope.generateDeclaredUidIdentifier("ret");
-	          callee.get("body").pushContainer("body", t.returnStatement(uid));
-	          loop.setData("expressionReplacementReturnUid", uid);
-	        } else {
-	          uid = t.identifier(uid.name);
-	        }
-
-	        path.get("expression").replaceWith(t.assignmentExpression("=", uid, path.node.expression));
-	      } else {
-	        path.replaceWith(t.returnStatement(path.node.expression));
-	      }
-	    }
-
-	    return this.node;
-	  }
-	}
+  return callee.get("body.body");
+}

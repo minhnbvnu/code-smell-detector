@@ -1,0 +1,1 @@
+function G1e(e){var t=s0({},e);return V_.default.createElement("svg",s0({viewBox:"0 0 36 36"},t,t),V_.default.createElement("rect",{fillRule:"evenodd",height:"4",rx:"1",ry:"1",width:"24",x:"6",y:"16"}))}

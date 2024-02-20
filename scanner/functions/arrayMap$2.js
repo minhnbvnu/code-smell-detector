@@ -1,0 +1,1 @@
+function arrayMap$2(array,iteratee){for(var index=-1,length=null==array?0:array.length,result=Array(length);++index<length;)result[index]=iteratee(array[index],index,array);return result}

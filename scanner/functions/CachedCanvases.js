@@ -1,4 +1,1 @@
-function CachedCanvases(canvasFactory) {
-    this.canvasFactory = canvasFactory;
-    this.cache = Object.create(null);
-  }
+function CachedCanvases(t){_classCallCheck(this,CachedCanvases);this.canvasFactory=t;this.cache=Object.create(null)}

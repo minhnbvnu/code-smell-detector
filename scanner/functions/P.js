@@ -1,1 +1,1 @@
-function p(){}
+function P(){clearTimeout(re),ionic.keyboard.isOpen=!1,ionic.keyboard.isClosing=!1,(ee||te)&&ionic.trigger("resetScrollView",{target:ee||te},!0),ionic.requestAnimationFrame(function(){document.body.classList.remove(ce)}),window.navigator.msPointerEnabled?document.removeEventListener("MSPointerMove",C):document.removeEventListener("touchmove",C),document.removeEventListener("keydown",M),ionic.Platform.isAndroid()&&(V()&&cordova.plugins.Keyboard.close(),ee&&ee.blur()),ee=null,te=null}

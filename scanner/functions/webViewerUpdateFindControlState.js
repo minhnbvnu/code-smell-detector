@@ -1,15 +1,13 @@
 function webViewerUpdateFindControlState({
   state,
   previous,
-  matchesCount,
-  rawQuery
+  matchesCount
 }) {
   if (PDFViewerApplication.supportsIntegratedFind) {
     PDFViewerApplication.externalServices.updateFindControlState({
       result: state,
       findPrevious: previous,
-      matchesCount,
-      rawQuery
+      matchesCount
     });
   } else {
     PDFViewerApplication.findBar.updateUIState(state, previous, matchesCount);

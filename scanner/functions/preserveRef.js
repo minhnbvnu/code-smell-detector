@@ -1,0 +1,1 @@
+function preserveRef(i,o){i&&("function"==typeof i&&i(o),{}.hasOwnProperty.call(i,"current")&&(i.current=o))}

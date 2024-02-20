@@ -1,1 +1,0 @@
-function upperCase (str) { return str[1].toUpperCase(); }

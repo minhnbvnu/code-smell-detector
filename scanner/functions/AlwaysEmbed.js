@@ -1,0 +1,1 @@
+function AlwaysEmbed(t){_classCallCheck(this,AlwaysEmbed);return r.call(this,d,"alwaysEmbed")}

@@ -1,0 +1,1 @@
+function getWhitespaceSymbols(i){return i&&!1===i.format?{linebreak:"",space:""}:{linebreak:"\n",space:" "}}

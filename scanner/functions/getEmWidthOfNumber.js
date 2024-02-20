@@ -1,0 +1,1 @@
+function getEmWidthOfNumber(num){return"".concat(num.toString().length,".25em")}

@@ -1,0 +1,1 @@
+function kN(t,e){vt(t.nodes(),function(r){var n=t.node(r),i=e.node(r);n&&(n.x=i.x,n.y=i.y,e.children(r).length&&(n.width=i.width,n.height=i.height))}),vt(t.edges(),function(r){var n=t.edge(r),i=e.edge(r);n.points=i.points,me(i,"x")&&(n.x=i.x,n.y=i.y)}),t.graph().width=e.graph().width,t.graph().height=e.graph().height}

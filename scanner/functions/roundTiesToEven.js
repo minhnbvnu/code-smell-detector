@@ -1,0 +1,1 @@
+function roundTiesToEven(n){return n+1/EPSILON-1/EPSILON}

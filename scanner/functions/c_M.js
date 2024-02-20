@@ -1,0 +1,1 @@
+function c_M(_,$){_=makeInRange(_,1,12);if($||_!=$dt.M){$dt.M=_;dealRange("M");$c.redraw()}else s_M(_)}

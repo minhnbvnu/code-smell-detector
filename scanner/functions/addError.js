@@ -1,8 +1,8 @@
-function addError (pagePath, str, message) {
-  if (!errors[pagePath]) { errors[pagePath] = []; }
-  errors[pagePath].push({
-    message: message,
-    str: str
-  });
-  errorCount++;
-}
+function addError(type, code, msg, row) {
+      _results.errors.push({
+        type,
+        code,
+        message: msg,
+        row
+      });
+    }

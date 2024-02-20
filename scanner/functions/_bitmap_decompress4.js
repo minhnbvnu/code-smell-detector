@@ -1,0 +1,115 @@
+function _bitmap_decompress4($output,$width,$height,$input,$size){
+ var label=0;
+ var sp=STACKTOP; (assert((STACKTOP|0) < (STACK_MAX|0))|0);
+ label = 1; 
+ while(1)switch(label){
+ case 1: 
+ var $1;
+ var $2;
+ var $3;
+ var $4;
+ var $5;
+ var $6;
+ var $code;
+ var $bytes_pro;
+ var $total_pro;
+ $2=$output;
+ $3=$width;
+ $4=$height;
+ $5=$input;
+ $6=$size;
+ var $7=$5;
+ var $8=(($7+1)|0);
+ $5=$8;
+ var $9=HEAP8[($7)];
+ var $10=($9&255);
+ $code=$10;
+ var $11=$code;
+ var $12=($11|0)!=16;
+ if($12){label=2;break;}else{label=3;break;}
+ case 2: 
+ $1=0;
+ label=4;break;
+ case 3: 
+ $total_pro=1;
+ var $15=$5;
+ var $16=$3;
+ var $17=$4;
+ var $18=$2;
+ var $19=(($18+3)|0);
+ var $20=$6;
+ var $21=$total_pro;
+ var $22=((($20)-($21))|0);
+ var $23=_process_plane($15,$16,$17,$19,$22);
+ $bytes_pro=$23;
+ var $24=$bytes_pro;
+ var $25=$total_pro;
+ var $26=((($25)+($24))|0);
+ $total_pro=$26;
+ var $27=$bytes_pro;
+ var $28=$5;
+ var $29=(($28+$27)|0);
+ $5=$29;
+ var $30=$5;
+ var $31=$3;
+ var $32=$4;
+ var $33=$2;
+ var $34=(($33+2)|0);
+ var $35=$6;
+ var $36=$total_pro;
+ var $37=((($35)-($36))|0);
+ var $38=_process_plane($30,$31,$32,$34,$37);
+ $bytes_pro=$38;
+ var $39=$bytes_pro;
+ var $40=$total_pro;
+ var $41=((($40)+($39))|0);
+ $total_pro=$41;
+ var $42=$bytes_pro;
+ var $43=$5;
+ var $44=(($43+$42)|0);
+ $5=$44;
+ var $45=$5;
+ var $46=$3;
+ var $47=$4;
+ var $48=$2;
+ var $49=(($48+1)|0);
+ var $50=$6;
+ var $51=$total_pro;
+ var $52=((($50)-($51))|0);
+ var $53=_process_plane($45,$46,$47,$49,$52);
+ $bytes_pro=$53;
+ var $54=$bytes_pro;
+ var $55=$total_pro;
+ var $56=((($55)+($54))|0);
+ $total_pro=$56;
+ var $57=$bytes_pro;
+ var $58=$5;
+ var $59=(($58+$57)|0);
+ $5=$59;
+ var $60=$5;
+ var $61=$3;
+ var $62=$4;
+ var $63=$2;
+ var $64=(($63)|0);
+ var $65=$6;
+ var $66=$total_pro;
+ var $67=((($65)-($66))|0);
+ var $68=_process_plane($60,$61,$62,$64,$67);
+ $bytes_pro=$68;
+ var $69=$bytes_pro;
+ var $70=$total_pro;
+ var $71=((($70)+($69))|0);
+ $total_pro=$71;
+ var $72=$6;
+ var $73=$total_pro;
+ var $74=($72|0)==($73|0);
+ var $75=($74&1);
+ $1=$75;
+ label=4;break;
+ case 4: 
+ var $77=$1;
+ STACKTOP=sp;return $77;
+  default: assert(0, "bad label: " + label);
+ }
+
+}

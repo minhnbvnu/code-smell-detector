@@ -1,0 +1,1 @@
+function getImpactedColumns(e){var o=[];if(e)for(var t=e.start;t<=e.end;t++)o.push(columns[t]);else o=columns;return o}

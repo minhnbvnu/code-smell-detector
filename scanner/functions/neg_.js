@@ -1,7 +1,1 @@
-function neg_(x) {
-	  var $x = convertToTensor(x, 'x', 'neg');
-	  var inputs = {
-	    x: $x
-	  };
-	  return ENGINE.runKernel(Neg, inputs);
-	}
+function neg_(e){var t=convertToTensor(e,"x","neg");return ENV.engine.runKernel(function(e){return e.neg(t)},{$x:t},function(e){return {$x:function(){return e.neg()}}})}

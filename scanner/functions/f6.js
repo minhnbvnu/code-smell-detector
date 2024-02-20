@@ -1,0 +1,1 @@
+function f6(t){return function(e){this.textContent=t.call(this,e)}}

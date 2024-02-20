@@ -1,0 +1,1 @@
+function Rename(t){_classCallCheck(this,Rename);return r.call(this,d,"rename")}

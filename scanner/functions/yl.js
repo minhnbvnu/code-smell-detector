@@ -1,1 +1,1 @@
-function Yl(a,b,c,d,e){var f=0;f=L[a+32>>2];L[f>>2]=L[f>>2]+1;Qe(a,Pe(a,b,e));Qe(a,Pe(a,c,e));Qe(a,Pe(a,d,e))}
+function yl(t){var e=function(){if("undefined"==typeof Reflect||!ps)return!1;if(ps.sham)return!1;if("function"==typeof Proxy)return!0;try{return Date.prototype.toString.call(ps(Date,[],(function(){}))),!0}catch(t){return!1}}();return function(){var i,n=Us(t);if(e){var o=Us(this).constructor;i=ps(n,arguments,o)}else i=n.apply(this,arguments);return Bs(this,i)}}

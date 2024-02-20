@@ -1,0 +1,1 @@
+function _emscripten_set_deviceorientation_callback_on_thread(userData,useCapture,callbackfunc,targetThread){JSEvents.registerDeviceOrientationEventCallback(window,userData,useCapture,callbackfunc,16,"deviceorientation",targetThread);return 0}

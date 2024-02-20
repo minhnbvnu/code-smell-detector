@@ -1,5 +1,5 @@
-function deopt(path) {
-	    if (!confident) return;
-	    deoptPath = path;
-	    confident = false;
-	  }
+function deopt(path, state) {
+  if (!state.confident) return;
+  state.deoptPath = path;
+  state.confident = false;
+}

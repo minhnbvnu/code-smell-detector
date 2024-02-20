@@ -1,0 +1,1 @@
+function Wie(e){var t=[];return e.forEach(function(r){t.push(r.type+Wie(r.child)),r.type==="{"&&t.push("}"),r.type==="("&&t.push(")")}),t.join("")}

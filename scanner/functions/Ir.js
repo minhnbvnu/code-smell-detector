@@ -1,0 +1,1 @@
+function Ir(t){return function(){return this.as(t)}}

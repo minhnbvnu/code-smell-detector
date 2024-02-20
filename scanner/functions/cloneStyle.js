@@ -1,0 +1,1 @@
+function cloneStyle(i){if(null==i||"object"!=typeof i)return i;if(Array.isArray(i))return i.map(cloneStyle);if(i.constructor!==_)return i;var o={};for(var s in i)o[s]=cloneStyle(i[s]);return o}

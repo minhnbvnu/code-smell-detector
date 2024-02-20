@@ -1,0 +1,3 @@
+function isFinished() {
+    return finished;
+  }

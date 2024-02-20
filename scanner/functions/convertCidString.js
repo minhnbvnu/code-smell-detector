@@ -1,0 +1,1 @@
+function convertCidString(t,r){var o=arguments.length>2&&void 0!==arguments[2]&&arguments[2];switch(r.length){case 1:return r.charCodeAt(0);case 2:return r.charCodeAt(0)<<8|r.charCodeAt(1)}var l="Unsupported CID string (charCode ".concat(t,'): "').concat(r,'".');if(o)throw new c.FormatError(l);(0,c.warn)(l);return r}

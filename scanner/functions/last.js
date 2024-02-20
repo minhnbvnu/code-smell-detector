@@ -1,3 +1,4 @@
-function last(stack) {
-	  return stack[stack.length - 1];
-	}
+function last(array) {
+      var length = array == null ? 0 : array.length;
+      return length ? array[length - 1] : undefined;
+    }

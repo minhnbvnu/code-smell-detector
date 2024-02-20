@@ -1,0 +1,1 @@
+function _setPrototypeOf$2(o,p){return _setPrototypeOf$2=Object.setPrototypeOf||function _setPrototypeOf(o,p){return o.__proto__=p,o},_setPrototypeOf$2(o,p)}

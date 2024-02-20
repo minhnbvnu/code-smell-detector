@@ -1,0 +1,1 @@
+function parseTableCells(i,o,s){return i.trim().split("\n").map((function(i){return parseTableRow(i,o,s)}))}

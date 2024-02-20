@@ -1,0 +1,1 @@
+function getXML(){var i=document.implementation;if(!i||!i.createDocument){try{return new ActiveXObject('MSXML2.DOMDocument');}catch(ex){}try{return new ActiveXObject('Microsoft.XmlDom');}catch(ex){}}else return i.createDocument('','',null);}

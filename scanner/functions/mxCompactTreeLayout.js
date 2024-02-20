@@ -1,0 +1,1 @@
+function mxCompactTreeLayout(a,b,c){mxGraphLayout.call(this,a);this.horizontal=null!=b?b:!0;this.invert=null!=c?c:!1}

@@ -1,0 +1,1 @@
+function IY(e,t){var n=arguments.length>2&&void 0!==arguments[2]?arguments[2]:{};Object.assign(t,EY,n),Se.obj(e,t),Se.setGetArray(e,t,["origin","normal"],3),DY(e,t)}

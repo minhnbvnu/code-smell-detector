@@ -1,0 +1,3 @@
+function InertialMouse() {
+    this.reset();
+  }

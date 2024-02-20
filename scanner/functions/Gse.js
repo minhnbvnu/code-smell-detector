@@ -1,0 +1,1 @@
+function Gse(e){let t=this[Tn];t._socket.removeListener("data",Wg),t._readyState=wr.CLOSING,t._closeCode=e[Bse],t.emit("error",e),t._socket.destroy()}

@@ -1,0 +1,1 @@
+function Zmage_wrapper_getPrototypeOf(o) { Zmage_wrapper_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return Zmage_wrapper_getPrototypeOf(o); }

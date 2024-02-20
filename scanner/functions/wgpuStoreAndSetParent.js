@@ -1,0 +1,1 @@
+function wgpuStoreAndSetParent(object,parent){object=wgpuStore(object);object&&parent.derivedObjects.push(object);return object}

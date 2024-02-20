@@ -1,7 +1,1 @@
-function JpegImage({
-    decodeTransform = null,
-    colorTransform = -1
-  } = {}) {
-    this._decodeTransform = decodeTransform;
-    this._colorTransform = colorTransform;
-  }
+function JpegImage(){var t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{},r=t.decodeTransform,o=void 0===r?null:r,c=t.colorTransform,l=void 0===c?-1:c;_classCallCheck(this,JpegImage);this._decodeTransform=o;this._colorTransform=l}

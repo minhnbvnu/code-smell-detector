@@ -1,0 +1,1 @@
+function mE(t,e){var n,i=t.cellSize;1===(n=Y(i)?i:t.cellSize=[i,i]).length&&(n[1]=n[0]);var r=z([0,1],(function(t){return function(t,e){return null!=t[Sp[e][0]]||null!=t[Sp[e][1]]&&null!=t[Sp[e][2]]}(e,t)&&(n[t]="auto"),null!=n[t]&&"auto"!==n[t]}));Ap(t,e,{type:"box",ignoreSize:r})}

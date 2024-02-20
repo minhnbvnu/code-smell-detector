@@ -1,0 +1,1 @@
+function TranslatedFont(t){var r=t.loadedName,o=t.font,c=t.dict,l=t.evaluatorOptions;_classCallCheck(this,TranslatedFont);this.loadedName=r;this.font=o;this.dict=c;this._evaluatorOptions=l||H;this.type3Loaded=null;this.type3Dependencies=o.isType3Font?new Set:null;this.sent=!1}

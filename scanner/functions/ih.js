@@ -1,0 +1,1 @@
+function ih(t){return"object"===Ga(t)&&null!==t}

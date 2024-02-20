@@ -1,30 +1,17 @@
-function serialize(
-  serializersNS,
-  nodeFactory,
-  values,
-  objectStack,
-  keys,
-  thisArg,
-) {
-  const length = (keys !== undefined ? keys : values).length;
-  let value, node;
-  for (let i = 0; i < length; ++i) {
-    value = values[i];
-    if (value !== undefined) {
-      node = nodeFactory.call(
-        thisArg !== undefined ? thisArg : this,
-        value,
-        objectStack,
-        keys !== undefined ? keys[i] : undefined,
-      );
-      if (node !== undefined) {
-        serializersNS[node.namespaceURI][node.localName].call(
-          thisArg,
-          node,
-          value,
-          objectStack,
-        );
+function serialize(toSerialize, prefix, topLevel) {
+        if (toSerialize === null || isUndefined(toSerialize)) return;
+        if (isArray(toSerialize)) {
+          forEach(toSerialize, function(value, index) {
+            serialize(value, prefix + '[' + (isObject(value) ? index : '') + ']');
+          });
+        } else if (isObject(toSerialize) && !isDate(toSerialize)) {
+          forEachSorted(toSerialize, function(value, key) {
+            serialize(value, prefix +
+                (topLevel ? '' : '[') +
+                key +
+                (topLevel ? '' : ']'));
+          });
+        } else {
+          parts.push(encodeUriQuery(prefix) + '=' + encodeUriQuery(serializeValue(toSerialize)));
+        }
       }
-    }
-  }
-}

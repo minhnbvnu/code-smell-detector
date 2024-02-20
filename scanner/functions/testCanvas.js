@@ -1,0 +1,1 @@
+function testCanvas (results) { this.initialize(results); }

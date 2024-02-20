@@ -1,0 +1,1 @@
+function wfe(e,t){t===void 0&&(t="/");let{pathname:r,search:n="",hash:i=""}=typeof e=="string"?dd(e):e;return{pathname:r?r.startsWith("/")?r:kfe(r,t):t,search:Pfe(n),hash:Afe(i)}}

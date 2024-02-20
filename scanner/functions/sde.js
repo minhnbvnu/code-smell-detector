@@ -1,0 +1,1 @@
+function sde(e,t){if(e==="change")return t}

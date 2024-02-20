@@ -1,7 +1,1 @@
-function modStrict_(a, b) {
-	  deprecationWarn('strict variants of ops have been deprecated ' + 'and will be removed in future');
-	  var $a = convertToTensor(a, 'a', 'modStrict');
-	  var $b = convertToTensor(b, 'b', 'modStrict');
-	  assertShapesMatch($a.shape, $b.shape, 'Error in modStrict: ');
-	  return mod($a, $b);
-	}
+function modStrict_(e,t){var n=convertToTensor(e,"a","modStrict"),r=convertToTensor(t,"b","modStrict");return assertShapesMatch(n.shape,r.shape,"Error in modStrict: "),n.mod(r)}

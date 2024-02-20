@@ -1,28 +1,11 @@
-function inRange(value, rangeGroup) {
-  if (value < rangeGroup[0]) return false;
-  let startRange = 0;
-  let endRange = rangeGroup.length / 2;
-  while (startRange <= endRange) {
-    const middleRange = Math.floor((startRange + endRange) / 2);
-
-    // actual array index
-    const arrayIndex = middleRange * 2;
-
-    // Check if value is in range pointed by actual index
-    if (
-      value >= rangeGroup[arrayIndex] &&
-      value <= rangeGroup[arrayIndex + 1]
-    ) {
-      return true;
+function inRange(number, start, end) {
+      start = toFinite(start);
+      if (end === undefined) {
+        end = start;
+        start = 0;
+      } else {
+        end = toFinite(end);
+      }
+      number = toNumber(number);
+      return baseInRange(number, start, end);
     }
-
-    if (value > rangeGroup[arrayIndex + 1]) {
-      // Search Right Side Of Array
-      startRange = middleRange + 1;
-    } else {
-      // Search Left Side Of Array
-      endRange = middleRange - 1;
-    }
-  }
-  return false;
-}

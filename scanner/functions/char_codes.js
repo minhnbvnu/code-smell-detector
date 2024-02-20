@@ -1,0 +1,1 @@
+function char_codes(data){var o=[];for(var i=0,len=data.length;i<len;++i)o[i]=data.charCodeAt(i);return o}

@@ -1,3 +1,3 @@
-function isVar(node) {
-	  return t.isVariableDeclaration(node, { kind: "var" }) && !node[_constants.BLOCK_SCOPED_SYMBOL];
-	}
+function isVar(keyword) {
+                return keyword === "var" || keyword === "let" || keyword === "const";
+            }

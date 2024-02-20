@@ -1,0 +1,1 @@
+function ClipboardManager(){_classCallCheck(this,ClipboardManager);_classPrivateFieldInitSpec(this,_,{writable:!0,value:null})}

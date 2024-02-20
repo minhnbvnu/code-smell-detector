@@ -1,0 +1,1 @@
+function f7e(e){return typeof e=="undefined"}

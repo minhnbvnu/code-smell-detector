@@ -1,3 +1,1 @@
-function hasGlyph(glyphId) {
-        return !missingGlyphs[glyphId];
-      }
+function hasGlyph(t){return!ee[t]}

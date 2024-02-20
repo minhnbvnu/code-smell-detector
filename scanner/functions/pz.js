@@ -1,0 +1,1 @@
+function pz(e,t,n,r){if(!t)return Promise.reject(new Error("No instance provided."));var i=iz[e];return i&&i.update?i.update(t,n,r):Promise.reject(new Error("No updater for ".concat(e)))}

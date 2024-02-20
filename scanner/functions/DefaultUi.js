@@ -1,0 +1,1 @@
+function DefaultUi(t){var o;_classCallCheck(this,DefaultUi);(o=r.call(this,_,"defaultUi",!0)).id=t.id||"";o.use=t.use||"";o.usehref=t.usehref||"";o.extras=null;return o}

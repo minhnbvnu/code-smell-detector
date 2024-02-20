@@ -1,0 +1,1 @@
+function TRe(e,t){e.position&&(t.position=aRe(e))}

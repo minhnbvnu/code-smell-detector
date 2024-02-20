@@ -1,0 +1,1 @@
+function characterState(char,SUCCESS){return function(c){if(c===char)this._state=SUCCESS}}

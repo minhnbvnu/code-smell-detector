@@ -1,0 +1,1 @@
+function c1(t){var e;e=t.input.charCodeAt(t.position),e===10?t.position++:e===13?(t.position++,t.input.charCodeAt(t.position)===10&&t.position++):Qt(t,"a line break is expected"),t.line+=1,t.lineStart=t.position,t.firstTabInLine=-1}

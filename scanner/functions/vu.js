@@ -1,0 +1,1 @@
+function vu(t){return t.trim().split(/\s+/g)}

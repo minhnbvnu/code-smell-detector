@@ -1,1 +1,1 @@
-function Is(t,n){var e={};return e.apiKey=Ss(t).options.apiKey,e.authDomain=Ss(t).options.authDomain,e.appName=Ss(t).name,t.U.then(function(){return es(e,n,t.G,t.Ka())}).then(function(n){return Os(t)&&n.uid==Os(t).uid?(qa(Os(t),n),t.ka(n)):(Ts(t,n),La(n),t.ka(n))}).then(function(){Cs(t)})}
+function is(t,e,i,n,o,r,s,a){if(0!=n){n<0&&(e-=n*=-1);var l=Qr("rect",r,s);l.setAttributeNS(null,"x",t-.5*i),l.setAttributeNS(null,"y",e),l.setAttributeNS(null,"width",i),l.setAttributeNS(null,"height",n),l.setAttributeNS(null,"class",o),a&&l.setAttributeNS(null,"style",a)}}

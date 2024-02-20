@@ -1,0 +1,4 @@
+function forwardButton()
+{
+    history.forward();
+}

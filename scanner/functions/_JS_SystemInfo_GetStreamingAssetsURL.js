@@ -1,0 +1,1 @@
+function _JS_SystemInfo_GetStreamingAssetsURL(buffer,bufferSize){if(buffer)stringToUTF8(Module.streamingAssetsUrl,buffer,bufferSize);return lengthBytesUTF8(Module.streamingAssetsUrl)}

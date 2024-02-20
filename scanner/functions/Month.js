@@ -1,0 +1,1 @@
+function Month(t){_classCallCheck(this,Month);return r.call(this,h,"month")}

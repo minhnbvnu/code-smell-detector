@@ -1,0 +1,1 @@
+function curve25519b32(e,r){return _base32encode(curve25519(_base32decode(e),_base32decode(r)))}

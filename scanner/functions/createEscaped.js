@@ -1,4 +1,1 @@
-function createEscaped(kind, codePoint, value, fromOffset) {
-	      fromOffset = fromOffset || 0;
-	      return createValue(kind, codePoint, pos - (value.length + fromOffset), pos);
-	    }
+function createEscaped(i,o,s,u){return u=u||0,createValue(i,o,B-(s.length+u),B)}

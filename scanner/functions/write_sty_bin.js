@@ -1,0 +1,1 @@
+function write_sty_bin(data,opts){var ba=buf_array();write_record(ba,"BrtBeginStyleSheet");write_record(ba,"BrtEndStyleSheet");return ba.end()}

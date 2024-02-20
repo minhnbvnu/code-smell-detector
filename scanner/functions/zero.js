@@ -1,0 +1,1 @@
+function zero(buf) { var len = buf.length; while (--len >= 0) { buf[len] = 0; } }

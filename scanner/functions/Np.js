@@ -1,0 +1,1 @@
+function Np(a,b,c,d,e){a=a|0;b=b|0;c=c|0;d=d|0;e=e|0;aa(9)}

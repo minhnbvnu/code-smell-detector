@@ -1,11 +1,1 @@
-function getTransformMatrix(rect, bbox, matrix) {
-  const [minX, minY, maxX, maxY] = _util.Util.getAxialAlignedBoundingBox(bbox, matrix);
-
-  if (minX === maxX || minY === maxY) {
-    return [1, 0, 0, 1, rect[0], rect[1]];
-  }
-
-  const xRatio = (rect[2] - rect[0]) / (maxX - minX);
-  const yRatio = (rect[3] - rect[1]) / (maxY - minY);
-  return [xRatio, 0, 0, yRatio, rect[0] - minX * xRatio, rect[1] - minY * yRatio];
-}
+function getTransformMatrix(t,r,o){var l=_slicedToArray(c.Util.getAxialAlignedBoundingBox(r,o),4),u=l[0],h=l[1],d=l[2],g=l[3];if(u===d||h===g)return[1,0,0,1,t[0],t[1]];var y=(t[2]-t[0])/(d-u),m=(t[3]-t[1])/(g-h);return[y,0,0,m,t[0]-u*y,t[1]-h*m]}

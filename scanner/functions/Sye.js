@@ -1,0 +1,1 @@
+function Sye(e,t){let{UNSTABLE_allowsExpandableRows:r,...n}=e;return Kc()&&r?S.createElement(xye,{...n,ref:t}):S.createElement($ye,{...n,ref:t})}

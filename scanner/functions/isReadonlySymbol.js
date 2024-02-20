@@ -1,0 +1,3 @@
+function isReadonlySymbol(symbol) {
+                return !!(getCheckFlags(symbol) & 8 /* Readonly */ || symbol.flags & 4 /* Property */ && getDeclarationModifierFlagsFromSymbol(symbol) & 64 /* Readonly */ || symbol.flags & 3 /* Variable */ && getDeclarationNodeFlagsFromSymbol(symbol) & 2 /* Const */ || symbol.flags & 98304 /* Accessor */ && !(symbol.flags & 65536 /* SetAccessor */) || symbol.flags & 8 /* EnumMember */ || some(symbol.declarations, isReadonlyAssignmentDeclaration));
+            }

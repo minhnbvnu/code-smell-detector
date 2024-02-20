@@ -1,0 +1,1 @@
+function day_Click(F,A,$,D,B,_){var C;if($dp.onpicking)C=$dp.onpicking.call($dp.el,$dp);if(!C){var E=$sdt.y==F&&$sdt.M==A&&$sdt.d==$;if(!E&&arguments.length!=0){$sdt.y=F;$sdt.M=A;s_y(F);s_M(A);c_d($,true)}if($c.autoPickDate||E||arguments.length==0)$c.pickDate(F,A,$,rtn(D,$d.HI.value),rtn(B,$d.mI.value),rtn(_,$d.sI.value))}}

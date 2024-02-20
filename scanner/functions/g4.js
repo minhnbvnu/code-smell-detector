@@ -1,0 +1,1 @@
+function g4(n){let t=il.test(n)||Nu.test(n);return il.lastIndex=0,Nu.lastIndex=0,t}

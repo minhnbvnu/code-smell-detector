@@ -1,3 +1,4 @@
-function pad(n) {
-  return n < 10 ? '0' + n.toString(10) : n.toString(10);
+function pad(str, len) {
+  str = String(str);
+  return Array(len - str.length + 1).join(' ') + str;
 }

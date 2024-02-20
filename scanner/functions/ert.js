@@ -1,0 +1,1 @@
+function ert(n,t){return Math.abs(t[1])-Math.abs(n[1])}

@@ -1,0 +1,1 @@
+function definedProp(key) { return rowProps[key] !== undefined; }

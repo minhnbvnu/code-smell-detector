@@ -1,0 +1,1 @@
+function ITe(e){return e.replace(RTe,MTe)}

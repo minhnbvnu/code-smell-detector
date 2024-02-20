@@ -1,0 +1,1 @@
+function formatInputText(i,o,s,u,C){var _=parse(i.value,i.selectionStart,o),w=_.value,P=_.caret;if(u){var B=edit(w,P,u);w=B.value,P=B.caret}var z=format(w,P,s),U=z.text;P=z.caret,i.value=U,setCaretPosition(i,P),C(w)}

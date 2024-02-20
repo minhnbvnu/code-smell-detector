@@ -1,0 +1,1 @@
+function dn(){if(!this.isValid())return null;var e=this.clone().utc();return e.year()<0||e.year()>9999?Z(e,"YYYYYY-MM-DD[T]HH:mm:ss.SSS[Z]"):C(Date.prototype.toISOString)?this.toDate().toISOString():Z(e,"YYYY-MM-DD[T]HH:mm:ss.SSS[Z]")}

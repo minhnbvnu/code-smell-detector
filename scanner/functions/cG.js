@@ -1,0 +1,1 @@
+function cG(a){var b,c=-1,d=a.length,e=d+4,f,g=[],h=[];while(++c<4)f=a[c%d],g.push(f[0]),h.push(f[1]);b=[cI(cL,g),",",cI(cL,h)],--c;while(++c<e)f=a[c%d],g.shift(),g.push(f[0]),h.shift(),h.push(f[1]),cM(b,g,h);return b.join("")}

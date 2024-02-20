@@ -1,0 +1,2 @@
+function gre(e){let t=[],r=`cat ${e} 2> /dev/null | grep 'iface\\|source'`;return Mi(r,{maxBuffer:1024*2e4}).toString().split(`
+`).forEach(a=>{let n=a.replace(/\s+/g," ").trim().split(" ");if(n.length>=4&&a.toLowerCase().indexOf(" inet ")>=0&&a.toLowerCase().indexOf("dhcp")>=0&&t.push(n[1]),a.toLowerCase().includes("source")){let s=a.split(" ")[1];t=t.concat(gre(s))}}),t}

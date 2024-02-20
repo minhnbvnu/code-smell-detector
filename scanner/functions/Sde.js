@@ -1,0 +1,1 @@
+function Sde(e){setTimeout(function(){throw e})}

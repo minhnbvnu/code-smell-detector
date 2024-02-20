@@ -1,0 +1,1 @@
+function IOe(e){return/^[A-Za-z]:$/.test(e)}

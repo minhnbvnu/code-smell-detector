@@ -1,0 +1,1 @@
+function WeightedCellSorter(a,b){this.cell=a;this.weightedValue=b}

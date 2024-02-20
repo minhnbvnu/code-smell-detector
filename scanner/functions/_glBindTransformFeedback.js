@@ -1,0 +1,1 @@
+function _glBindTransformFeedback(target,id){var transformFeedback=id?GL.transformFeedbacks[id]:null;if(id&&!transformFeedback){GL.recordError(1282);return}GLctx["bindTransformFeedback"](target,transformFeedback)}

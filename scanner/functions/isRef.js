@@ -1,3 +1,3 @@
-function isRef(v) {
-  return v instanceof Ref;
+function isRef(r) {
+  return Boolean(r && r.__v_isRef === true);
 }

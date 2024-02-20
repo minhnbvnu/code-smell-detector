@@ -1,0 +1,1 @@
+function _nimiq_argon2_verify($0,$1,$2,$3){$0=$0|0;$1=$1|0;$2=$2|0;$3=$3|0;var $4=0,$5=0,label=0,sp=0;sp=STACKTOP;$4=_malloc(32)|0;_nimiq_argon2($4,$1,$2,$3)|0;$5=_memcmp($0,$4,32)|0;_free($4);return $5|0}

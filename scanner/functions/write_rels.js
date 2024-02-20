@@ -1,0 +1,1 @@
+function write_rels(rels){var o=[];o[o.length]=XML_HEADER;o[o.length]=RELS_ROOT;keys(rels["!id"]).forEach(function(rid){var rel=rels["!id"][rid];o[o.length]=writextag("Relationship",null,rel)});if(o.length>2){o[o.length]="</Relationships>";o[1]=o[1].replace("/>",">")}return o.join("")}

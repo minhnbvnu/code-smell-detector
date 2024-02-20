@@ -1,0 +1,1 @@
+function XO(t,e){var n=this.getAxis(),i=e instanceof Array?e[0]:e,r=(t instanceof Array?t[0]:t)/2;return"category"===n.type?n.getBandWidth():Math.abs(n.dataToCoord(i-r)-n.dataToCoord(i+r))}

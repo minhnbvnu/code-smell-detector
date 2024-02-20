@@ -1,0 +1,4 @@
+function reportEventClear() {
+		eventElements = [];
+		eventElementsByID = {};
+	}

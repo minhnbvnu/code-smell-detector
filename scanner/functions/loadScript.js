@@ -1,20 +1,24 @@
-function loadScript(src, removeScriptElement = false) {
-  return new Promise((resolve, reject) => {
-    const script = document.createElement("script");
-    script.src = src;
+function loadScript(srcs, done, howMany) {
+		if (srcs.length === 0) { return; }
+		howMany = howMany || srcs.length;
 
-    script.onload = function (evt) {
-      if (removeScriptElement) {
-        script.remove();
-      }
+		var s = document.createElement('script'), clunky = false;
+		var almostDone = function() {
+			if ( !clunky || (clunky && (s.readyState === 'complete' || s.readyState === 'loaded') ) ) {
+				loadScript(srcs, done, --howMany);
+				done();
+			}
+		};
 
-      resolve(evt);
-    };
+		s.charset = "UTF-8";
+		s.src = srcs.shift();
 
-    script.onerror = function () {
-      reject(new Error(`Cannot load script at: ${script.src}`));
-    };
+		if (typeof s.addEventListener !== 'undefined') {
+			s.addEventListener('load', almostDone, false);
+		} else if (typeof s.attachEvent !== 'undefined') {
+			clunky = true;
+			s.attachEvent('onreadystatechange', almostDone);
+		}
 
-    (document.head || document.documentElement).appendChild(script);
-  });
-}
+		document.body.appendChild(s);
+	}

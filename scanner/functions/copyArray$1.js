@@ -1,0 +1,1 @@
+function copyArray$1(source,array){var index=-1,length=source.length;for(array||(array=Array(length));++index<length;)array[index]=source[index];return array}

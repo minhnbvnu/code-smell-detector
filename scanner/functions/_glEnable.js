@@ -1,0 +1,1 @@
+function _glEnable(x0){GLctx["enable"](x0)}

@@ -1,3 +1,3 @@
-function classString(obj) {
-    return {}.toString.call(obj);
-}
+function classString(x) {
+            return Object.prototype.toString.call(x);
+        }

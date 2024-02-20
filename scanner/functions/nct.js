@@ -1,0 +1,1 @@
+function nct(n,t){return Dr("Parsing tensors...",()=>{let e=n.length/t,i=[],r=0;for(let o=0;o<e;++o)i.push({metadata:{},vector:n.subarray(r,r+t),index:o,projections:null}),r+=t;return i},Ms).then(e=>(me(null,Ms),e))}

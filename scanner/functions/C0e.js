@@ -1,0 +1,1 @@
+function C0e(){let e=require("os").homedir(),t;return process.platform==="win32"?t=process.env.LOCALAPPDATA||i9.join(e,"AppData","Local"):process.platform==="darwin"?t=i9.join(e,"Library","Application Support","Caches"):t=process.env.XDG_CACHE_HOME||i9.join(e,".cache"),t}

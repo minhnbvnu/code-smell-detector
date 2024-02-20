@@ -1,0 +1,1 @@
+function normalizeEvent(name) { return eventPrefix ? eventPrefix + name : downcase(name) }

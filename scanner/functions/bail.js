@@ -1,15 +1,1 @@
-function bail(message, details, from, to) {
-	      from = from == null ? pos : from;
-	      to = to == null ? from : to;
-
-	      var contextStart = Math.max(0, from - 10);
-	      var contextEnd = Math.min(to + 10, str.length);
-
-	      // Output a bit of context and a line pointing to where our error is.
-	      //
-	      // We are assuming that there are no actual newlines in the content as this is a regular expression.
-	      var context = '    ' + str.substring(contextStart, contextEnd);
-	      var pointer = '    ' + new Array(from - contextStart + 1).join(' ') + '^';
-
-	      throw SyntaxError(message + ' at position ' + from + (details ? ': ' + details : '') + '\n' + context + '\n' + pointer);
-	    }
+function bail(o,s,u,C){u=null==u?B:u,C=null==C?u:C;var _=Math.max(0,u-10),w=Math.min(C+10,i.length),P="    "+i.substring(_,w),z="    "+new Array(u-_+1).join(" ")+"^";throw SyntaxError(o+" at position "+u+(s?": "+s:"")+"\n"+P+"\n"+z)}

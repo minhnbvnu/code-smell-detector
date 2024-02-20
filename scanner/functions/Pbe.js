@@ -1,0 +1,1 @@
+function Pbe(e,t){e.startSequence(),e.writeOID("1.2.840.10045.2.1");var r=t.part.curve.data.toString(),i=W6.curves[r].pkcs8oid;Js.string(i,"a known ECDSA named curve"),e.writeOID(i),e.endSequence();var a=Lu.ecNormalize(t.part.Q.data,!0);e.writeBuffer(a,Er.Ber.BitString)}

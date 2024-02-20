@@ -1,0 +1,1 @@
+function Xq(a){a=a|0;aa(5)}

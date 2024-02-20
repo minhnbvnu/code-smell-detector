@@ -1,0 +1,1 @@
+function xpe(e,t){t.writeNull(),t.endSequence(),t.startSequence(ct.Ber.BitString),t.writeByte(0),t.startSequence(),t.writeBuffer(e.part.n.data,ct.Ber.Integer),t.writeBuffer(e.part.e.data,ct.Ber.Integer),t.endSequence(),t.endSequence()}

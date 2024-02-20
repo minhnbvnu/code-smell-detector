@@ -1,0 +1,1 @@
+function si(){return this._locale}

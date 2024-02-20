@@ -1,0 +1,6 @@
+function process_histogram(args){'use strict';var our_data=args.data[0];var extracted_data;if(args.binned==false){if(typeof(our_data[0])=='object'){extracted_data=our_data.map(function(d){return d[args.x_accessor];});}else if(typeof(our_data[0])=='number'){extracted_data=our_data;}
+else{console.log('TypeError: expected an array of numbers, found '+typeof(our_data[0]));return;}
+var hist=d3.layout.histogram()
+if(args.bins){hist=hist.bins(args.bins);}
+args.processed_data=hist(extracted_data).map(function(d){return{'x':d['x'],'y':d['y'],'dx':d['dx']};})}else{args.processed_data=our_data.map(function(d){return{'x':d[args.x_accessor],'y':d[args.y_accessor]}});var this_pt;var next_pt;for(var i=0;i<args.processed_data.length;i++){this_pt=args.processed_data[i];if(i==args.processed_data.length-1){this_pt.dx=args.processed_data[i-1].dx;}else{next_pt=args.processed_data[i+1];this_pt.dx=next_pt.x-this_pt.x;}}}
+args.data=[args.processed_data];args.x_accessor=args.processed_x_accessor;args.y_accessor=args.processed_y_accessor;return this;}

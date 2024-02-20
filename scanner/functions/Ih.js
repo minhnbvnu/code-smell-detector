@@ -1,1 +1,1 @@
-function ih(){var a=0;a=pa(8);H[a+4>>2]=-1;H[a>>2]=1032;return a|0}
+function Ih(a,b,c){switch(a.tag){case 2:return bd(a),b=a.effectTag,b&1024?(a.effectTag=b&-1025|64,a):null;case 3:return La(a),cd(a),b=a.effectTag,b&1024?(a.effectTag=b&-1025|64,a):null;case 5:return od(a),null;case 16:return b=a.effectTag,b&1024?(a.effectTag=b&-1025|64,a):null;case 4:return La(a),null;case 13:return md(a),null;default:return null}}

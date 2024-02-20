@@ -1,0 +1,1 @@
+function getCurrentPara(t){var r=t[c.$getTemplateRoot]()[c.$extra].paraStack;return r.length?r.at(-1):null}

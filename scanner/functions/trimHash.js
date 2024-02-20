@@ -1,0 +1,1 @@
+function trimHash(i,o){if(!i)return"";var s=new RegExp("^"+Hr()(o||"#/"),"g");return i.replace(s,"")}

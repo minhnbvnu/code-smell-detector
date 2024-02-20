@@ -1,0 +1,1 @@
+function calSqW(d) { return min(Math.abs(d.px), 10) }

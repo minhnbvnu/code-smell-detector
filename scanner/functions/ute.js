@@ -1,0 +1,1 @@
+function ute(e){this.removeListener("error",ute),this.destroy(),this.listenerCount("error")===0&&this.emit("error",e)}

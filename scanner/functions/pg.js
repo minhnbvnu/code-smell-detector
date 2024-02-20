@@ -1,0 +1,1 @@
+function pg(){return function(a,b){x(b)&&(b=2);return eb(a,b)}}

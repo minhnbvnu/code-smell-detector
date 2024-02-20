@@ -1,0 +1,1 @@
+function parse_PtgBool(blob,length){blob.l++;return blob.read_shift(1)!==0}

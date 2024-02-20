@@ -1,0 +1,1 @@
+function _glEndQuery(x0){GLctx["endQuery"](x0)}

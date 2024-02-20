@@ -1,3 +1,1 @@
-function isDocument(object) {
-  return 'documentElement' in object;
-}
+function isDocument(obj)   { return obj != null && obj.nodeType == obj.DOCUMENT_NODE }

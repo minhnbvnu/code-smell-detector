@@ -1,0 +1,35 @@
+function exportFunctionsForTesting() {
+  [ testBoundsIntersection,
+    trim,
+    stringToLines,
+    contains,
+    arraySubtract,
+    firstBy,
+    zeroPad,
+    roundTo,
+    pathJoin,
+    pathSplit,
+    folderExists,
+    formatCss,
+    getCssColor,
+    readGitConfigFile,
+    readYamlConfigFile,
+    applyTemplate,
+    cleanHtmlText,
+    encodeHtmlEntities,
+    addEnclosingTag,
+    stripTag,
+    cleanCodeBlock,
+    findHtmlTag,
+    cleanHtmlTags,
+    parseDataAttributes,
+    parseObjectName,
+    cleanObjectName,
+    // initDocumentSettings,
+    uniqAssetName,
+    replaceSvgIds,
+    compareVersions
+  ].forEach(function(f) {
+    module.exports[f.name] = f;
+  });
+}

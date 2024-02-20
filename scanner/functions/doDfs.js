@@ -1,0 +1,1 @@
+function doDfs(g,v,postorder,visited,navigation,acc){if(!_.has(visited,v)){visited[v]=true;if(!postorder){acc.push(v)}_.each(navigation(v),function(w){doDfs(g,w,postorder,visited,navigation,acc)});if(postorder){acc.push(v)}}}

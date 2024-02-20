@@ -1,0 +1,1 @@
+function OY(n){let{inputs:t,backend:e,attrs:i}=n,{dy:r,input:o}=t,s=o;Tr([r,o],"avgPoolGrad");let{filterSize:a,strides:l,pad:c}=i,u=F.computePool2DInfo(s.shape,a,l,1,c),h=new o0(u);return e.runWebGLProgram(h,[r],s.dtype)}

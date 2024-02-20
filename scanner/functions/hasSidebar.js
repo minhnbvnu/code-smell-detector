@@ -1,0 +1,1 @@
+function hasSidebar(i,o){return i===fs.notFound||o&&i===fs.all}

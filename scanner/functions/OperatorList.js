@@ -1,16 +1,1 @@
-function OperatorList(intent, streamSink) {
-    this._streamSink = streamSink;
-    this.fnArray = [];
-    this.argsArray = [];
-
-    if (streamSink && intent !== "oplist") {
-      this.optimizer = new QueueOptimizer(this);
-    } else {
-      this.optimizer = new NullOptimizer(this);
-    }
-
-    this.dependencies = new Set();
-    this._totalLength = 0;
-    this.weight = 0;
-    this._resolved = streamSink ? null : Promise.resolve();
-  }
+function OperatorList(){var t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:0,r=arguments.length>1?arguments[1]:void 0;_classCallCheck(this,OperatorList);this._streamSink=r;this.fnArray=[];this.argsArray=[];!r||t&c.RenderingIntentFlag.OPLIST?this.optimizer=new u(this):this.optimizer=new h(this);this.dependencies=new Set;this._totalLength=0;this.weight=0;this._resolved=r?null:Promise.resolve()}

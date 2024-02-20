@@ -1,0 +1,1 @@
+function _emscripten_glGenFramebuffers(n,ids){__glGenObject(n,ids,"createFramebuffer",GL.framebuffers)}

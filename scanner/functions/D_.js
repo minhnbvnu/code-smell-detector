@@ -1,0 +1,1 @@
+function*D_(){for(var t=this._groups,e=0,r=t.length;e<r;++e)for(var n=t[e],i=0,s=n.length,a;i<s;++i)(a=n[i])&&(yield a)}

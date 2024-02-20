@@ -1,0 +1,1 @@
+function Wwe(e){return Vc&&Vc.isBuffer(e)}

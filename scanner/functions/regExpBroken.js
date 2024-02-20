@@ -1,0 +1,1 @@
+function regExpBroken(){try{var a=/a/g;if(a===new RegExp(a)){return true}return RegExp(/a/g,"i")!="/a/i"}catch(e){return true}}

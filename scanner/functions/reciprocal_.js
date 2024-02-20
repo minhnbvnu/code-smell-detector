@@ -1,7 +1,1 @@
-function reciprocal_(x) {
-	  var $x = convertToTensor(x, 'x', 'reciprocal');
-	  var inputs = {
-	    x: $x
-	  };
-	  return ENGINE.runKernel(Reciprocal, inputs);
-	}
+function reciprocal_(e){var t=convertToTensor(e,"x","reciprocal");return ENV.engine.runKernel(function(e){return e.reciprocal(t)},{$x:t},function(e){return {$x:function(){return e.divStrict(t.square().neg())}}})}

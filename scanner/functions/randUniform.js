@@ -1,4 +1,1 @@
-function randUniform(a, b) {
-	  var r = Math.random();
-	  return b * r + (1 - r) * a;
-	}
+function randUniform(e,t){var n=Math.random();return t*n+(1-n)*e}

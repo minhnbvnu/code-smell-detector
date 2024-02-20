@@ -1,1 +1,1 @@
-function Ol(a,b){a=a|0;b=b|0;return L[L[a+184>>2]+(b<<2)>>2]}
+function ol(e){return"number"==typeof e||Zs(e)&&fc.call(e)==qe}

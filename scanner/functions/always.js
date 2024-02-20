@@ -1,3 +1,5 @@
-function always(context) {
-  return true;
+function always(value) {
+  return function () {
+    return value;
+  };
 }

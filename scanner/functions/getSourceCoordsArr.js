@@ -1,17 +1,1 @@
-function getSourceCoordsArr(rank, dims) {
-	  var coords = [];
-
-	  for (var row = 0; row <= 1; row++) {
-	    for (var col = 0; col <= 1; col++) {
-	      var coord = (row === 0 ? 'r' : 'rp1') + ", " + (col === 0 ? 'c' : 'cp1');
-
-	      for (var d = 2; d < rank; d++) {
-	        coord = dims[dims.length - 1 - d] + "," + coord;
-	      }
-
-	      coords.push(coord);
-	    }
-	  }
-
-	  return coords;
-	}
+function getSourceCoordsArr(e,t){for(var n=[],r=0;r<=1;r++)for(var o=0;o<=1;o++){for(var a=(0===r?"r":"rp1")+", "+(0===o?"c":"cp1"),i=2;i<e;i++)a=t[t.length-1-i]+","+a;n.push(a);}return n}

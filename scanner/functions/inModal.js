@@ -1,0 +1,1 @@
+function inModal() { return false; }

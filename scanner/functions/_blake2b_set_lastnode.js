@@ -1,0 +1,1 @@
+function _blake2b_set_lastnode($0){$0=$0|0;var $1=0,$2=0,$3=0,$4=0,$5=0,label=0,sp=0;sp=STACKTOP;$1=$0+88|0;$2=$1;$3=$2;HEAP32[$3>>2]=-1;$4=$2+4|0;$5=$4;HEAP32[$5>>2]=-1;return}

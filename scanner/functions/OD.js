@@ -1,0 +1,1 @@
+function OD(){for(var e=arguments.length,t=new Array(e),n=0;n<e;n++)t[n]=arguments[n];return function(){for(var e=arguments.length,n=new Array(e),r=0;r<e;r++)n[r]=arguments[r];return t.reduce((function(e,t){return e.apply(void 0,n)||t.apply(void 0,n)}))}}

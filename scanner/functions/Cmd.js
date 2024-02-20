@@ -1,3 +1,1 @@
-function Cmd(cmd) {
-    this.cmd = cmd;
-  }
+function Cmd(t){_classCallCheck(this,Cmd);this.cmd=t}

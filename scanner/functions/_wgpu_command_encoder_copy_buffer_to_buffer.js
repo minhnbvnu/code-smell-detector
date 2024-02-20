@@ -1,0 +1,1 @@
+function _wgpu_command_encoder_copy_buffer_to_buffer(commandEncoder,source,sourceOffset,destination,destinationOffset,size){wgpu[commandEncoder]["copyBufferToBuffer"](wgpu[source],sourceOffset,wgpu[destination],destinationOffset,size)}

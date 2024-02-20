@@ -1,0 +1,1 @@
+function _JS_WebGPU_SetCommandEncoder(encoder){Module["WebGPU"].commandEncoder=encoder}

@@ -1,0 +1,1 @@
+function _llvm_bswap_i16(x){x=x|0;return(x&255)<<8|x>>8&255|0}

@@ -1,0 +1,1 @@
+function C2(){return"%"}

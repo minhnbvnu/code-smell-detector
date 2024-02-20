@@ -1,0 +1,1 @@
+function vM(t,e,r){for(var n=[],i=e[e.length-1],s=e[0],a;t.nodeCount();){for(;a=s.dequeue();)u0(t,e,r,a);for(;a=i.dequeue();)u0(t,e,r,a);if(t.nodeCount()){for(var o=e.length-2;o>0;--o)if(a=e[o].dequeue(),a){n=n.concat(u0(t,e,r,a,!0));break}}}return n}

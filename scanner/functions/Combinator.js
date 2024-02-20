@@ -1,0 +1,1 @@
+function Combinator(e,t,n){SyntaxUnit.call(this,e,t,n,Parser.COMBINATOR_TYPE),this.type="unknown",/^\s+$/.test(e)?this.type="descendant":e==">"?this.type="child":e=="+"?this.type="adjacent-sibling":e=="~"&&(this.type="sibling")}

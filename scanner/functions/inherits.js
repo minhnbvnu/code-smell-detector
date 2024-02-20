@@ -1,13 +1,7 @@
-function inherits(Self, Super) {
-    const Temp = function () {};
-    const Func = function (arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8) {
-        Super.call(this, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
-        Self.call(this, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
-        // this.constructor = Self;
-    };
-    Func._super = Super.prototype;
-    Temp.prototype = Super.prototype;
-    Func.prototype = new Temp();
-
-    return Func;
-}
+function inherits (ctor, superCtor) {
+    ctor.super_ = superCtor;
+    var TempCtor = function () {};
+    TempCtor.prototype = superCtor.prototype;
+    ctor.prototype = new TempCtor();
+    ctor.prototype.constructor = ctor;
+  }

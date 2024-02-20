@@ -1,16 +1,1 @@
-function _construct(Parent, args, Class) {
-	  if (_isNativeReflectConstruct()) {
-	    _construct = Reflect.construct;
-	  } else {
-	    _construct = function _construct(Parent, args, Class) {
-	      var a = [null];
-	      a.push.apply(a, args);
-	      var Constructor = Function.bind.apply(Parent, a);
-	      var instance = new Constructor();
-	      if (Class) _setPrototypeOf(instance, Class.prototype);
-	      return instance;
-	    };
-	  }
-
-	  return _construct.apply(null, arguments);
-	}
+function _construct(i,o,s){return _construct=_isNativeReflectConstruct()?Reflect.construct:function _construct(i,o,s){var u=[null];u.push.apply(u,o);var C=new(Function.bind.apply(i,u));return s&&_setPrototypeOf(C,s.prototype),C},_construct.apply(null,arguments)}

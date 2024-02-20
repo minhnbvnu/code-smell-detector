@@ -1,0 +1,1 @@
+function _llvm_lifetime_start() {}

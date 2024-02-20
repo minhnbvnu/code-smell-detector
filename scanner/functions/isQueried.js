@@ -1,0 +1,3 @@
+function isQueried() {
+  return false;
+}

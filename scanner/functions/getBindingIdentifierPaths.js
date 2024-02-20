@@ -1,56 +1,58 @@
-function getBindingIdentifierPaths() {
-	  var duplicates = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
-	  var outerOnly = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
+function getBindingIdentifierPaths(duplicates = false, outerOnly = false) {
+  const path = this;
+  let search = [].concat(path);
+  const ids = Object.create(null);
 
-	  var path = this;
-	  var search = [].concat(path);
-	  var ids = (0, _create2.default)(null);
+  while (search.length) {
+    const id = search.shift();
+    if (!id) continue;
+    if (!id.node) continue;
+    const keys = t.getBindingIdentifiers.keys[id.node.type];
 
-	  while (search.length) {
-	    var id = search.shift();
-	    if (!id) continue;
-	    if (!id.node) continue;
+    if (id.isIdentifier()) {
+      if (duplicates) {
+        const _ids = ids[id.node.name] = ids[id.node.name] || [];
 
-	    var keys = t.getBindingIdentifiers.keys[id.node.type];
+        _ids.push(id);
+      } else {
+        ids[id.node.name] = id;
+      }
 
-	    if (id.isIdentifier()) {
-	      if (duplicates) {
-	        var _ids = ids[id.node.name] = ids[id.node.name] || [];
-	        _ids.push(id);
-	      } else {
-	        ids[id.node.name] = id;
-	      }
-	      continue;
-	    }
+      continue;
+    }
 
-	    if (id.isExportDeclaration()) {
-	      var declaration = id.get("declaration");
-	      if (declaration.isDeclaration()) {
-	        search.push(declaration);
-	      }
-	      continue;
-	    }
+    if (id.isExportDeclaration()) {
+      const declaration = id.get("declaration");
 
-	    if (outerOnly) {
-	      if (id.isFunctionDeclaration()) {
-	        search.push(id.get("id"));
-	        continue;
-	      }
-	      if (id.isFunctionExpression()) {
-	        continue;
-	      }
-	    }
+      if (declaration.isDeclaration()) {
+        search.push(declaration);
+      }
 
-	    if (keys) {
-	      for (var i = 0; i < keys.length; i++) {
-	        var key = keys[i];
-	        var child = id.get(key);
-	        if (Array.isArray(child) || child.node) {
-	          search = search.concat(child);
-	        }
-	      }
-	    }
-	  }
+      continue;
+    }
 
-	  return ids;
-	}
+    if (outerOnly) {
+      if (id.isFunctionDeclaration()) {
+        search.push(id.get("id"));
+        continue;
+      }
+
+      if (id.isFunctionExpression()) {
+        continue;
+      }
+    }
+
+    if (keys) {
+      for (let i = 0; i < keys.length; i++) {
+        const key = keys[i];
+        const child = id.get(key);
+
+        if (Array.isArray(child) || child.node) {
+          search = search.concat(child);
+        }
+      }
+    }
+  }
+
+  return ids;
+}

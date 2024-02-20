@@ -1,0 +1,1 @@
+function FZ(n,t){let e=["resRC.x","resRC.y","resRC.z","resRC.w"],i=[];for(let r=0;r<n.length;r++)r===2?i.push("int(getIndices(resRC.x, resRC.z))"):i.push(`${e[r]}`);return i.join()}

@@ -1,3 +1,3 @@
-function isNullOrUndefined(arg) {
-  return arg == null;
+function isNullOrUndefined(w) {
+  return w === null || w === undefined;
 }

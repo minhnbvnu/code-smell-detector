@@ -1,0 +1,1 @@
+function aCe(e,t,r,i,a,n){for(;--n>=0;){var s=t*this.data[e++]+r.data[i]+a;a=Math.floor(s/67108864),r.data[i++]=s&67108863}return a}

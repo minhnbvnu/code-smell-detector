@@ -1,0 +1,1 @@
+function setBounds(g,bounds){var bbox=null;if(bounds){bbox=new vg.Bounds(bounds).round();g.beginPath();g.rect(bbox.x1,bbox.y1,bbox.width(),bbox.height());g.clip()}return bbox}

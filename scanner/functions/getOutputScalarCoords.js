@@ -1,3 +1,1 @@
-function getOutputScalarCoords() {
-	  return "\n    int getOutputCoords() {\n      return 0;\n    }\n  ";
-	}
+function getOutputScalarCoords(){return "\n    int getOutputCoords() {\n      return 0;\n    }\n  "}

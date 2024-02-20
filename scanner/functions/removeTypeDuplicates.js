@@ -1,65 +1,45 @@
 function removeTypeDuplicates(nodes) {
-	  var generics = {};
-	  var bases = {};
+  const generics = {};
+  const bases = {};
+  const typeGroups = [];
+  const types = [];
 
-	  var typeGroups = [];
+  for (let i = 0; i < nodes.length; i++) {
+    const node = nodes[i];
+    if (!node) continue;
 
-	  var types = [];
+    if (types.indexOf(node) >= 0) {
+      continue;
+    }
 
-	  for (var i = 0; i < nodes.length; i++) {
-	    var node = nodes[i];
-	    if (!node) continue;
+    if ((0, _generated.isTSAnyKeyword)(node)) {
+      return [node];
+    }
 
-	    if (types.indexOf(node) >= 0) {
-	      continue;
-	    }
+    if ((0, _generated.isTSBaseType)(node)) {
+      bases[node.type] = node;
+      continue;
+    }
 
-	    if (t.isAnyTypeAnnotation(node)) {
-	      return [node];
-	    }
+    if ((0, _generated.isTSUnionType)(node)) {
+      if (typeGroups.indexOf(node.types) < 0) {
+        nodes = nodes.concat(node.types);
+        typeGroups.push(node.types);
+      }
 
-	    if (t.isFlowBaseAnnotation(node)) {
-	      bases[node.type] = node;
-	      continue;
-	    }
+      continue;
+    }
 
-	    if (t.isUnionTypeAnnotation(node)) {
-	      if (typeGroups.indexOf(node.types) < 0) {
-	        nodes = nodes.concat(node.types);
-	        typeGroups.push(node.types);
-	      }
-	      continue;
-	    }
+    types.push(node);
+  }
 
-	    if (t.isGenericTypeAnnotation(node)) {
-	      var name = node.id.name;
+  for (const type of Object.keys(bases)) {
+    types.push(bases[type]);
+  }
 
-	      if (generics[name]) {
-	        var existing = generics[name];
-	        if (existing.typeParameters) {
-	          if (node.typeParameters) {
-	            existing.typeParameters.params = removeTypeDuplicates(existing.typeParameters.params.concat(node.typeParameters.params));
-	          }
-	        } else {
-	          existing = node.typeParameters;
-	        }
-	      } else {
-	        generics[name] = node;
-	      }
+  for (const name of Object.keys(generics)) {
+    types.push(generics[name]);
+  }
 
-	      continue;
-	    }
-
-	    types.push(node);
-	  }
-
-	  for (var type in bases) {
-	    types.push(bases[type]);
-	  }
-
-	  for (var _name in generics) {
-	    types.push(generics[_name]);
-	  }
-
-	  return types;
-	}
+  return types;
+}

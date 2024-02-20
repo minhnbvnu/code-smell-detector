@@ -1,0 +1,1 @@
+function wgpuReadGpuStencilFaceState(idx){return{"compare":GPUCompareFunctions[HEAPU32[idx]],"failOp":GPUStencilOperations[HEAPU32[idx+1]],"depthFailOp":GPUStencilOperations[HEAPU32[idx+2]],"passOp":GPUStencilOperations[HEAPU32[idx+3]]}}

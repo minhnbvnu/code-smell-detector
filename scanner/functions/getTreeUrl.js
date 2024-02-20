@@ -1,0 +1,1 @@
+function getTreeUrl(){return url_1.URLExt.join(getBaseUrl(),getOption("treeUrl"))}

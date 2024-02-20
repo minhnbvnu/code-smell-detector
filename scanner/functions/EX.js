@@ -1,0 +1,1 @@
+function EX(t){let e,n,i;if(t.signal){e="datum";i=t.signal}else if(t.group||t.parent){n=Math.max(1,t.level||1);e="item";while(n-- >0){e+=".mark.group"}if(t.parent){i=t.parent;e+=".datum"}else{i=t.group}}else if(t.datum){e="datum";i=t.datum}else{(0,g.vU)("Invalid field reference: "+(0,g.m8)(t))}if(!t.signal){i=(0,g.HD)(i)?(0,g._k)(i).map(g.m8).join("]["):EX(i)}return e+"["+i+"]"}

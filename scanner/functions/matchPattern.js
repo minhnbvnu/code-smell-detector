@@ -1,0 +1,1 @@
+function matchPattern(i,o,s,u){i.lastIndex=o;var C=i.exec(s);if(C&&u&&C[1]){var _=C[1].length;C.index+=_,C[0]=C[0].slice(_)}return C}

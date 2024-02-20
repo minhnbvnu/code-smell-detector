@@ -1,0 +1,1 @@
+function _emscripten_glGetUniformiv(program,location,params){emscriptenWebGLGetUniform(program,location,params,0)}

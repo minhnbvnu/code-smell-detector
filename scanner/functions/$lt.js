@@ -1,0 +1,1 @@
+function $lt(n,t){var e=n.site,i=t.left,r=t.right;return e===r&&(r=i,i=e),r?Math.atan2(r[1]-i[1],r[0]-i[0]):(e===i?(i=t[1],r=t[0]):(i=t[0],r=t[1]),Math.atan2(i[0]-r[0],r[1]-i[1]))}

@@ -1,0 +1,1 @@
+function browserPrefixToKey(prop,prefix){return prefix?"".concat(prefix).concat(function kebabToTitleCase(str){for(var out="",shouldCapitalize=!0,i=0;i<str.length;i++)shouldCapitalize?(out+=str[i].toUpperCase(),shouldCapitalize=!1):"-"===str[i]?shouldCapitalize=!0:out+=str[i];return out}(prop)):prop}

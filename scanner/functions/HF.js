@@ -1,1 +1,1 @@
-function Hf(a,b,c,d,e,f){a=a|0;b=b|0;c=c|0;d=d|0;e=e|0;f=f|0;if(Ya(a,H[b+8>>2],f)){Cd(b,c,d,e);return}a=H[a+8>>2];ea[H[H[a>>2]+20>>2]](a,b,c,d,e,f)}
+function HF(t){return"vertical"===t?"ns-resize":"ew-resize"}

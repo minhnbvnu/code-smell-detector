@@ -1,0 +1,1 @@
+function _weighted_means(wxy){var wsum=d3.sum(wxy.map(function(wxyi){return wxyi.w}));return{xbar:d3.sum(wxy.map(function(wxyi){return wxyi.w*wxyi.x}))/wsum,ybar:d3.sum(wxy.map(function(wxyi){return wxyi.w*wxyi.y}))/wsum}}

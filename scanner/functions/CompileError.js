@@ -1,0 +1,1 @@
+function CompileError(o,s){if(i.call(this,o),this.name="CompileError",s){var u=s.program.magicString.original,C=locate(u,s.start);this.message=o+" ("+C.line+":"+C.column+")",this.stack=(new i).stack.replace(new RegExp(".+new "+this.name+".+\\n","m"),""),this.loc=C,this.snippet=getSnippet(u,C,s.end-s.start)}}

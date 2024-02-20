@@ -1,0 +1,1 @@
+function __emval_lookupTypes(argCount,argTypes,argWireTypes){var a=new Array(argCount);for(var i=0;i<argCount;++i){a[i]=requireRegisteredType(HEAP32[(argTypes>>2)+i],"parameter "+i)}return a}

@@ -1,8 +1,1 @@
-function createValue(kind, codePoint, from, to) {
-	      return addRaw({
-	        type: 'value',
-	        kind: kind,
-	        codePoint: codePoint,
-	        range: [from, to]
-	      });
-	    }
+function createValue(i,o,s,u){return addRaw({type:"value",kind:i,codePoint:o,range:[s,u]})}

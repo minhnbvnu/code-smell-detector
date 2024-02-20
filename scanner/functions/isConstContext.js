@@ -1,0 +1,4 @@
+function isConstContext(node) {
+                const parent2 = node.parent;
+                return isAssertionExpression(parent2) && isConstTypeReference(parent2.type) || isJSDocTypeAssertion(parent2) && isConstTypeReference(getJSDocTypeAssertionType(parent2)) || isValidConstAssertionArgument(node) && isConstTypeParameterContext(node) || (isParenthesizedExpression(parent2) || isArrayLiteralExpression(parent2) || isSpreadElement(parent2)) && isConstContext(parent2) || (isPropertyAssignment(parent2) || isShorthandPropertyAssignment(parent2) || isTemplateSpan(parent2)) && isConstContext(parent2.parent);
+            }

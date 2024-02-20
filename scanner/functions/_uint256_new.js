@@ -1,0 +1,1 @@
+function _uint256_new(){var $0=0,label=0,sp=0;sp=STACKTOP;$0=_malloc(32)|0;HEAP32[$0>>2]=0|0;HEAP32[$0+4>>2]=0|0;HEAP32[$0+8>>2]=0|0;HEAP32[$0+12>>2]=0|0;HEAP32[$0+16>>2]=0|0;HEAP32[$0+20>>2]=0|0;HEAP32[$0+24>>2]=0|0;HEAP32[$0+28>>2]=0|0;return $0|0}

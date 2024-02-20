@@ -1,0 +1,1 @@
+function eachUpdateOnLoad(action){var updateOnLoad=_currentPreparedOptions.updateOnLoad;updateOnLoad=type(updateOnLoad)==TYPES.s?updateOnLoad.split(_strSpace):updateOnLoad,COMPATIBILITY.isA(updateOnLoad)&&!_destroyed&&each(updateOnLoad,action)}

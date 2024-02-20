@@ -1,0 +1,1 @@
+function sc_char2symbol(c) { return sc_SYMBOL_PREFIX + c.val; }

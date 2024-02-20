@@ -1,0 +1,1 @@
+function str_hmac_md5(key,data){return binl2str(core_hmac_md5(key,data))}

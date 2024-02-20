@@ -1,0 +1,1 @@
+function isLength$3(value){return"number"==typeof value&&value>-1&&value%1==0&&value<=MAX_SAFE_INTEGER}

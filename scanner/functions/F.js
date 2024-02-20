@@ -1,3 +1,1 @@
-function F() {
-	    /* empty */
-	  }
+function F() {}

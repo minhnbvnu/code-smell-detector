@@ -1,4 +1,16 @@
-function makeArray(arr) {
-    Debug.deprecated('pc.makeArray is not public API and should not be used. Use Array.prototype.slice.call instead.');
-    return Array.prototype.slice.call(arr);
+function makeArray( obj ) {
+  var ary = [];
+  if ( Array.isArray( obj ) ) {
+    // use object if already an array
+    ary = obj;
+  } else if ( typeof obj.length == 'number' ) {
+    // convert nodeList to array
+    for ( var i=0; i < obj.length; i++ ) {
+      ary.push( obj[i] );
+    }
+  } else {
+    // array of single index
+    ary.push( obj );
+  }
+  return ary;
 }

@@ -1,0 +1,1 @@
+function scrollGap(cm) { return scrollerGap - cm.display.nativeBarWidth }

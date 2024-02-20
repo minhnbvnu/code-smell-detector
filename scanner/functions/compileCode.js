@@ -1,0 +1,1 @@
+function compileCode(i,o,s){try{var u=ds(i)?os(i):i;return transpileImports(rs(u,o))}catch(i){s&&i instanceof Error&&s(i)}return""}

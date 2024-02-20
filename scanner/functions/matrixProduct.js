@@ -1,5 +1,1 @@
-function matrixProduct(a, b, result) {
-    result[0] = a[0] * b[0] + a[1] * b[1] + a[2] * b[2];
-    result[1] = a[3] * b[0] + a[4] * b[1] + a[5] * b[2];
-    result[2] = a[6] * b[0] + a[7] * b[1] + a[8] * b[2];
-  }
+function matrixProduct(t,r,o){o[0]=t[0]*r[0]+t[1]*r[1]+t[2]*r[2];o[1]=t[3]*r[0]+t[4]*r[1]+t[5]*r[2];o[2]=t[6]*r[0]+t[7]*r[1]+t[8]*r[2]}

@@ -1,0 +1,1 @@
+function w9(e){ko.call(this,e,w9)}

@@ -1,0 +1,1 @@
+function _emscripten_set_touchmove_callback_on_thread(target,userData,useCapture,callbackfunc,targetThread){registerTouchEventCallback(target,userData,useCapture,callbackfunc,24,"touchmove",targetThread);return 0}

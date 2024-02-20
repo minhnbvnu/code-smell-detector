@@ -1,0 +1,1 @@
+function parse_PtgFunc(blob,length){var ptg=blob[blob.l]&31;var type=(blob[blob.l]&96)>>5;blob.l+=1;var iftab=blob.read_shift(2);return[FtabArgc[iftab],Ftab[iftab]]}

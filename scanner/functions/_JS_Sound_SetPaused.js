@@ -1,0 +1,1 @@
+function _JS_Sound_SetPaused(channelInstance,paused){if(WEBAudio.audioWebEnabled==0)return;var channel=WEBAudio.audioInstances[channelInstance];if(paused!=channel.isPaused()){if(paused)channel.pause();else channel.resume()}}

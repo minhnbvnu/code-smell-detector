@@ -1,0 +1,1 @@
+function insertBorder(type){var jq=$("<div />").css({position:"absolute",opacity:options.borderOpacity}).addClass(cssClass(type));$img_holder.append(jq);return jq}

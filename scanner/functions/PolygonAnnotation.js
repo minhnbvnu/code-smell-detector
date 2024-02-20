@@ -1,0 +1,1 @@
+function PolygonAnnotation(t){var o;_classCallCheck(this,PolygonAnnotation);(o=r.call(this,t)).data.annotationType=c.AnnotationType.POLYGON;return o}

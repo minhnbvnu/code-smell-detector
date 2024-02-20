@@ -1,1 +1,1 @@
-function nw(){var a=0;a=oa(32);L[a+12>>2]=0;L[a+4>>2]=35;L[a+8>>2]=0;L[a>>2]=13384;L[a+4>>2]=27;L[a>>2]=15100;return a|0}
+function Nw(e,r){var t=0;e:while(t<e.length)switch(e.charCodeAt(t)){case 10:;case 13:;case 32:++t;break;case 60:return lb(e.slice(t),r);default:break e;}return Il.to_workbook(e,r)}

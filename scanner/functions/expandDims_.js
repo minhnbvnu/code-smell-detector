@@ -1,17 +1,1 @@
-function expandDims_(x, axis) {
-	  if (axis === void 0) {
-	    axis = 0;
-	  }
-
-	  var $x = convertToTensor(x, 'x', 'expandDims', 'string_or_numeric');
-	  assert(axis <= $x.rank, function () {
-	    return 'Axis must be <= rank of the tensor';
-	  });
-	  var inputs = {
-	    input: $x
-	  };
-	  var attrs = {
-	    dim: axis
-	  };
-	  return ENGINE.runKernel(ExpandDims, inputs, attrs);
-	}
+function expandDims_(e,t){void 0===t&&(t=0);var n=convertToTensor(e,"x","expandDims");assert(t<=n.rank,"Axis must be <= rank of the tensor");var r=n.shape.slice();return t<0&&(assert(-(n.rank+1)<=t,"Axis must be in the interval ["+-(n.rank+1)+", "+n.rank+"]"),t=n.rank+t+1),r.splice(t,0,1),reshape(n,r)}

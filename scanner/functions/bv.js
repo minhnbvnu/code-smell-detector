@@ -1,1 +1,1 @@
-function Bv(a,b){a=a|0;b=b|0;var c=0;c=fa-16|0;L[c+12>>2]=a;L[c+8>>2]=b;L[L[c+12>>2]+56>>2]=L[c+8>>2]}
+function bv(e){if(e.length===0)return"";var r='<mergeCells count="'+e.length+'">';for(var t=0;t!=e.length;++t)r+='<mergeCell ref="'+Ba(e[t])+'"/>';return r+"</mergeCells>"}

@@ -1,0 +1,1 @@
+function parse_StrRun(data,length){return{ich:data.read_shift(2),ifnt:data.read_shift(2)}}

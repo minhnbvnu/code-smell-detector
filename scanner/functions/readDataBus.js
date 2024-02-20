@@ -1,0 +1,1 @@
+function readDataBus(){return readBits('db', 8);}

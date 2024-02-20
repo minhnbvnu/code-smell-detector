@@ -1,4 +1,1 @@
-function sizeToSquarishShape(size) {
-	  var width = Math.ceil(Math.sqrt(size));
-	  return [width, Math.ceil(size / width)];
-	}
+function sizeToSquarishShape(e){for(var t=Math.floor(Math.sqrt(e));t>1;--t)if(e%t==0)return [t,e/t];return [1,e]}

@@ -1,0 +1,1 @@
+function EraNames(t){var o;_classCallCheck(this,EraNames);(o=r.call(this,h,"eraNames",!0)).era=new l.XFAObjectArray(2);return o}

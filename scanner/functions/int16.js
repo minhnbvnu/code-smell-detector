@@ -1,3 +1,1 @@
-function int16(b0, b1) {
-    return (b0 << 8) + b1;
-  }
+function int16(t,r){return(t<<8)+r}

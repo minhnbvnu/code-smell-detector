@@ -1,1 +1,1 @@
-function nh(a){a=a|0;return H[a+48>>2]}
+function nh(t){return Ua.isMoment(t)}

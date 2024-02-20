@@ -1,0 +1,1 @@
+function updateVisible(){if(awake){return update()}}

@@ -1,1 +1,1 @@
-function Ns(t,n){var e=null,i=null;return _s(t,n.then(function(n){return e=ur(n),i=Ui(n),Is(t,n)}).then(function(){return ki({user:Os(t),credential:e,additionalUserInfo:i,operationType:"signIn"})}))}
+function ns(){try{return navigator?navigator.languages&&navigator.languages.length?navigator.languages:navigator.userLanguage||navigator.language||navigator.browserLanguage||"en":"en"}catch(t){return"en"}}

@@ -1,0 +1,1 @@
+function Y5(t,e){return function(){this.setAttributeNS(t.space,t.local,e)}}

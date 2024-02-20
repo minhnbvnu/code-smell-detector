@@ -1,5 +1,14 @@
-function registerPlugins(newPlugins) {
-	  Object.keys(newPlugins).forEach(function (name) {
-	    return registerPlugin(name, newPlugins[name]);
-	  });
-	}
+async function registerPlugins(server, config) {
+    try {
+        await registerDefaultPlugins(server);
+
+        await registerAuthPlugins(server, config);
+
+        await registerResourcePlugins(server, config);
+
+        registerNotificationEvent(config, server);
+    } catch (err) {
+        logger.error(`Failed to register plugins: ${err.message}`);
+        throw err;
+    }
+}

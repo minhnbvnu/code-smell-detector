@@ -1,1 +1,1 @@
-function C(a,m){if(!a||!A.hasOwnProperty(a))a=/^\s*</.test(m)?"default-markup":"default-code";return A[a]}
+function C(e){"TEXTAREA"!==e.target.tagName&&e.preventDefault()}

@@ -1,0 +1,1 @@
+function V0(e,t,r,n){let i=t+1>r+20?t-r-1:0,a=e.slice(i,t);return a.push(n),a}

@@ -1,0 +1,1 @@
+function zoomOutTotal ()   { zoom_set(0); }

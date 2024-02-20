@@ -1,0 +1,1 @@
+function q2e(e){return ai(e).immediateStopped}

@@ -1,0 +1,1 @@
+function EffectiveInputPolicy(t){var o;_classCallCheck(this,EffectiveInputPolicy);(o=r.call(this,u,"effectiveInputPolicy")).id=t.id||"";o.name=t.name||"";o.use=t.use||"";o.usehref=t.usehref||"";return o}

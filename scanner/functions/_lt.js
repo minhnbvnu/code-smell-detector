@@ -1,0 +1,1 @@
+function _lt(n,t){var e=new Qv;if(n instanceof Qv)n.each(function(o){e.add(o)});else if(n){var i=-1,r=n.length;if(t==null)for(;++i<r;)e.add(n[i]);else for(;++i<r;)e.add(t(n[i],i,n))}return e}

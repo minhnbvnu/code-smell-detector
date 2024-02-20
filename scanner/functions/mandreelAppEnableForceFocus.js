@@ -1,0 +1,4 @@
+function mandreelAppEnableForceFocus()
+{
+	mandreelAppForceFocus = true;
+}

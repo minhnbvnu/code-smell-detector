@@ -1,0 +1,3 @@
+function onSlowButton() {
+    onPlayButton(true);
+}

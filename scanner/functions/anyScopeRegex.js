@@ -1,0 +1,1 @@
+function anyScopeRegex(i){return function(o){return i.exec(o)}}

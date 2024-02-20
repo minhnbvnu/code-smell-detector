@@ -1,0 +1,1 @@
+function memoizeCapped$1(func){var result=memoize(func,(function(key){return cache.size===MAX_MEMOIZE_SIZE&&cache.clear(),key})),cache=result.cache;return result}

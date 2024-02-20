@@ -1,0 +1,1 @@
+function _glBufferSubData(target,offset,size,data){if(GL.currentContext.version>=2){GLctx.bufferSubData(target,offset,HEAPU8,data,size);return}GLctx.bufferSubData(target,offset,HEAPU8.subarray(data,data+size))}

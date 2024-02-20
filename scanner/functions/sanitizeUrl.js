@@ -1,0 +1,1 @@
+function sanitizeUrl(i){try{if(decodeURIComponent(i).replace(/[^A-Za-z0-9/:]/g,"").match(/^\s*(javascript|vbscript|data):/i))return null}catch(i){return null}return i}

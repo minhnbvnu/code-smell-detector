@@ -1,0 +1,1 @@
+function _glFlush(){GLctx["flush"]()}

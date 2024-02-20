@@ -1,0 +1,1 @@
+function Wke(e,t,r,n){let i=[],a=0;for(let l of Zoe(e.doc,r,t))i.push({label:"<"+l,type:"type"});for(let l of LI(e.doc,r))i.push({label:"</"+l+">",type:"type",boost:99-a++});return{from:n,to:n,options:i,validFor:/^<\/?[:\-\.\w\u00b7-\uffff]*$/}}

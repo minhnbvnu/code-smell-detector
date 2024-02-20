@@ -1,0 +1,1 @@
+function ComponentsRenderer(i){var o=i.children;return s.createElement("div",null,o)}

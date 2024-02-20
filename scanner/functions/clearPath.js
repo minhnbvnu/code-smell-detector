@@ -1,3 +1,3 @@
 function clearPath() {
-	  exports.path = path = new _weakMap2.default();
-	}
+  exports.path = path = new WeakMap();
+}

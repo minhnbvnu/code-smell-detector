@@ -1,15 +1,6 @@
-function readPoint(node, objectStack) {
-  const properties = pushParseAndPop(
-    {},
-    EXTRUDE_AND_ALTITUDE_MODE_PARSERS,
-    node,
-    objectStack,
-  );
-  const flatCoordinates = readFlatCoordinatesFromNode(node, objectStack);
-  if (flatCoordinates) {
-    const point = new Point(flatCoordinates, 'XYZ');
-    point.setProperties(properties, true);
-    return point;
-  }
-  return undefined;
+function readPoint(pbf) {
+    var end = pbf.readVarint() + pbf.pos,
+        coords = [];
+    while (pbf.pos < end) coords.push(pbf.readSVarint() / e);
+    return coords;
 }

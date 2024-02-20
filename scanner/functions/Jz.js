@@ -1,1 +1,1 @@
-function jz(a,b){a=a|0;b=S(b);Nk(a,b);wa(2370);a=L[a+452>>2];ha[L[L[a>>2]+24>>2]](a,b);va()}
+function Jz(t){if(r.domSupported)for(var e=document.documentElement.style,n=0,i=t.length;n<i;n++)if(t[n]in e)return t[n]}

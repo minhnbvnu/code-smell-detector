@@ -1,0 +1,1 @@
+function xst(n){return function(t,e){return zr(n(t),e)}}

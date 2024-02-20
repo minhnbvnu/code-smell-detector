@@ -1,0 +1,1 @@
+function copyDir(i,n,o={}){let r=i,t=n;if(o.relative){path.resolve(process.cwd(),i),path.join(process.cwd(),n)}_copydir(r,t)}

@@ -1,0 +1,2 @@
+function z$(n,t,e,i){let{rows:r,columns:o}=n,s=Math.min(r,t),a=Math.min(o,e),l=[];for(let c=0;c<s;c++){let u=[];for(let h=0;h<a;h++)u.push(F$(n.get(c,h),i));l.push(`${u.join(" ")}`)}return a!==o&&(l[l.length-1]+=` ... ${o-e} more columns`),s!==r&&l.push(`... ${r-t} more rows`),l.join(`
+${vE}`)}

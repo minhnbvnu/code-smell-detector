@@ -1,1 +1,1 @@
-function Nr(t){return jr(t,Gh,{}).then(function(t){return t.authorizedDomains||[]})}
+function nr(e,t,r,n){for(var i=-1,a=e.length,o=-1,s=r.length,f=-1,u=t.length,c=K(a-s,0),h=E(c+u),l=!n;++i<c;)h[i]=e[i];for(var d=i;++f<u;)h[d+f]=t[f];for(;++o<s;)(l||i<a)&&(h[d+r[o]]=e[i++]);return h}

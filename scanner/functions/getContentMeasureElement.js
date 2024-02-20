@@ -1,0 +1,1 @@
+function getContentMeasureElement(){return _isTextarea?_textareaCoverElement[0]:_contentElementNative}

@@ -1,0 +1,1 @@
+function XP(n,t,e){let i="";t.concat(e).forEach(s=>{let a=s.texData!=null&&s.texData.slice!=null&&s.texData.slice.flatOffset>0,l=s.isUniform?"uniform":s.texData.texShape;i+=`${s.shape}_${l}_${a}`});let r=n.userCode,o=n.constructor.name;return o+="_"+i+"_"+r,o}

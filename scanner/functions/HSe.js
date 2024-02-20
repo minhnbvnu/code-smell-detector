@@ -1,0 +1,1 @@
+function HSe(){var e;if($4==null&&typeof document<"u"&&document.body){let t=document.body.style;$4=((e=t.tabSize)!==null&&e!==void 0?e:t.MozTabSize)!=null}return $4||!1}

@@ -1,1 +1,1 @@
-function SimpleSegmentVisitor() {}
+function SimpleSegmentVisitor(){_classCallCheck(this,SimpleSegmentVisitor)}

@@ -1,17 +1,31 @@
-function getRequestUrl(baseUrl, extent, size, projection, params) {
-  params['WIDTH'] = size[0];
-  params['HEIGHT'] = size[1];
+function getRequestUrl(provider, externalUrl) {
 
-  const axisOrientation = projection.getAxisOrientation();
-  let bbox;
-  const v13 = compareVersions(params['VERSION'], '1.3') >= 0;
-  params[v13 ? 'CRS' : 'SRS'] = projection.getCode();
-  if (v13 && axisOrientation.substr(0, 2) == 'ne') {
-    bbox = [extent[1], extent[0], extent[3], extent[2]];
-  } else {
-    bbox = extent;
-  }
-  params['BBOX'] = bbox.join(',');
+	        var url = provider.apiendpoint, qs = "", callbackparameter = provider.callbackparameter || "callback", i;
 
-  return appendParams(/** @type {string} */ (baseUrl), params);
-}
+	        if (url.indexOf("?") <= 0)
+	            url = url + "?";
+	        else
+	            url = url + "&";
+
+	        if (provider.maxWidth != null && provider.params["maxwidth"] == null)
+	            provider.params["maxwidth"] = provider.maxWidth;
+
+	        if (provider.maxHeight != null && provider.params["maxheight"] == null)
+	            provider.params["maxheight"] = provider.maxHeight;
+
+	        for (i in provider.params) {
+	            // We don't want them to jack everything up by changing the callback parameter
+	            if (i == provider.callbackparameter)
+	                continue;
+
+	            // allows the options to be set to null, don't send null values to the server as parameters
+	            if (provider.params[i] != null)
+	                qs += "&" + escape(i) + "=" + provider.params[i];
+	        }
+
+	        url += "format=json&url=" + escape(externalUrl) +
+						qs +
+						"&" + callbackparameter + "=?";
+
+			return url;
+		}

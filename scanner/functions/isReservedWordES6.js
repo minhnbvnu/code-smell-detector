@@ -1,3 +1,1 @@
-function isReservedWordES6(id, strict) {
-	        return id === 'null' || id === 'true' || id === 'false' || isKeywordES6(id, strict);
-	    }
+function isReservedWordES6(i,o){return"null"===i||"true"===i||"false"===i||isKeywordES6(i,o)}

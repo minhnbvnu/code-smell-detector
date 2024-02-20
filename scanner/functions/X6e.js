@@ -1,0 +1,1 @@
+function X6e(e,t){return Math.max(Math.abs(e.clientX-t.clientX),Math.abs(e.clientY-t.clientY))}

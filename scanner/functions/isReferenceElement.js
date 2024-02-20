@@ -1,0 +1,1 @@
+function isReferenceElement(i){return!(!i||!i._tippy||i._tippy.reference!==i)}

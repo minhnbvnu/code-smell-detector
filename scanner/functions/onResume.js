@@ -1,0 +1,3 @@
+function onResume() {
+    areStreamsStopped = false;
+  }

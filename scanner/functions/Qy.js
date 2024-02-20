@@ -1,1 +1,1 @@
-function qy(a){a=a|0;var b=0,c=S(0);b=fa-16|0;fa=b;L[b+12>>2]=a;c=Sf(L[b+12>>2]);fa=b+16|0;return S(c)}
+function Qy(t,e){--t[e]||delete t[e]}

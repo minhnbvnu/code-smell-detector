@@ -1,0 +1,1 @@
+function mF(t){return"vertical"===t?"ns-resize":"ew-resize"}

@@ -1,0 +1,1 @@
+function uFe(e,t){var r=null;if(!e||typeof e!="string")return r;var n=(0,sFe.default)(e),i=typeof t=="function";return n.forEach(function(a){if(a.type==="declaration"){var l=a.property,s=a.value;i?t(l,s,a):s&&(r=r||{},r[l]=s)}}),r}

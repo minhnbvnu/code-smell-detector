@@ -1,0 +1,1 @@
+function evalInContext(code,element,document,window){return eval(code)}

@@ -1,3 +1,3 @@
-function uncaught(err) {
+function uncaught(err){
     self.uncaught(err);
   }

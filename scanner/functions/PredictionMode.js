@@ -1,0 +1,3 @@
+function PredictionMode() {
+	return this;
+}

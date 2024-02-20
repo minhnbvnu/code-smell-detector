@@ -1,14 +1,6 @@
-function wrapX(tileGrid, tileCoord, projection) {
-  const z = tileCoord[0];
-  const center = tileGrid.getTileCoordCenter(tileCoord);
-  const projectionExtent = extentFromProjection(projection);
-  if (!containsCoordinate(projectionExtent, center)) {
-    const worldWidth = getWidth(projectionExtent);
-    const worldsAway = Math.ceil(
-      (projectionExtent[0] - center[0]) / worldWidth,
-    );
-    center[0] += worldWidth * worldsAway;
-    return tileGrid.getTileCoordForCoordAndZ(center, z);
-  }
-  return tileCoord;
-}
+function wrapX(pos, dir, side) {
+        var extent = wrappedLineExtentChar(cm, lineObj, null, pos);
+        var prop = (dir == "ltr") == (side == "after") ? "left" : "right";
+        var ch = side == "after" ? extent.begin : extent.end - (/\s/.test(lineObj.text.charAt(extent.end - 1)) ? 2 : 1);
+        return coords(ch, prop)[prop]
+      }

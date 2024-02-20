@@ -1,1 +1,1 @@
-function Dn(t){if(t.a){if(!t.u)throw new Mn;t.u=!1}}
+function Dn(){return!!this.isValid()&&this._isUTC}

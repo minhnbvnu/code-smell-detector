@@ -1,0 +1,1 @@
+async function w6e(e,t,r={}){let i=r.fs||jd,a=sU(t,r);await my.fromCallback(i.writeFile)(e,a,r)}

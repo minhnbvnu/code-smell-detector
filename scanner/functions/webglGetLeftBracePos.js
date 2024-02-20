@@ -1,0 +1,1 @@
+function webglGetLeftBracePos(name){return name.slice(-1)=="]"&&name.lastIndexOf("[")}

@@ -1,0 +1,1 @@
+function testInput (results) { this.initialize(results); }

@@ -1,0 +1,1 @@
+function DuplexOption(t){_classCallCheck(this,DuplexOption);return r.call(this,d,"duplexOption",["simplex","duplexFlipLongEdge","duplexFlipShortEdge"])}

@@ -1,0 +1,1 @@
+function rst(n){if(n.type===void 0)throw new Error("THREE.KeyframeTrack: track type undefined, can not parse");let t=ist(n.type);if(n.times===void 0){let e=[],i=[];$e.flattenJSON(n.keys,e,i,"value"),n.times=e,n.values=i}return t.parse!==void 0?t.parse(n):new t(n.name,n.times,n.values,n.interpolation)}

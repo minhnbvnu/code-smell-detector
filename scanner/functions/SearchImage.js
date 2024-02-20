@@ -1,0 +1,3 @@
+function SearchImage() {
+        this.init();
+    }

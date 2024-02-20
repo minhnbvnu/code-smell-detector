@@ -1,0 +1,1 @@
+function _emscripten_glBindFramebuffer(target,framebuffer){GLctx.bindFramebuffer(target,GL.framebuffers[framebuffer])}

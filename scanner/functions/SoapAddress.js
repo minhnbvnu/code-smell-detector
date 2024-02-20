@@ -1,0 +1,1 @@
+function SoapAddress(t){var o;_classCallCheck(this,SoapAddress);(o=r.call(this,u,"soapAddress")).id=t.id||"";o.name=t.name||"";o.use=t.use||"";o.usehref=t.usehref||"";return o}

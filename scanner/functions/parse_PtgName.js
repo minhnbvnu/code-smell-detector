@@ -1,0 +1,1 @@
+function parse_PtgName(blob,length){var type=blob.read_shift(1)>>>5&3;var nameindex=blob.read_shift(4);return[type,0,nameindex]}

@@ -1,0 +1,1 @@
+function isNameParameterRequired(i){return isParamTitle(i)||isProperty(i)||"alias"===i||"this"===i||"mixes"===i||"requires"===i}

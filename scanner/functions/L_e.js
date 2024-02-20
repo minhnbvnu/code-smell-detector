@@ -1,0 +1,1 @@
+function L_e(e){return e%4==0&&(e%100!=0||e%400==0)}

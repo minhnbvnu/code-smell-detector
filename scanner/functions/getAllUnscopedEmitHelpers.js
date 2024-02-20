@@ -1,0 +1,32 @@
+function getAllUnscopedEmitHelpers() {
+            return allUnscopedEmitHelpers || (allUnscopedEmitHelpers = arrayToMap([
+                decorateHelper,
+                metadataHelper,
+                paramHelper,
+                esDecorateHelper,
+                runInitializersHelper,
+                assignHelper,
+                awaitHelper,
+                asyncGeneratorHelper,
+                asyncDelegator,
+                asyncValues,
+                restHelper,
+                awaiterHelper,
+                extendsHelper,
+                templateObjectHelper,
+                spreadArrayHelper,
+                valuesHelper,
+                readHelper,
+                propKeyHelper,
+                setFunctionNameHelper,
+                generatorHelper,
+                importStarHelper,
+                importDefaultHelper,
+                exportStarHelper,
+                classPrivateFieldGetHelper,
+                classPrivateFieldSetHelper,
+                classPrivateFieldInHelper,
+                createBindingHelper,
+                setModuleDefaultHelper
+            ], (helper) => helper.name));
+        }

@@ -1,0 +1,1 @@
+function getInnerHTML(elem,opts){return elem.children?elem.children.map(function(elem){return getOuterHTML(elem,opts)}).join(""):""}

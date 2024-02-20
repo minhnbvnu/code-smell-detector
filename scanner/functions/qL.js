@@ -1,0 +1,1 @@
+function qL(t,e){return $L(t.node1,e)*t.getValue()}

@@ -1,0 +1,1 @@
+function getCountryByCallingCode(i,o,s){var u=s.getCountryCodesForCallingCode(i);if(u)return 1===u.length?u[0]:selectCountryFromList(u,o,s.metadata)}

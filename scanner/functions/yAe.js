@@ -1,0 +1,6 @@
+function yAe(){return O.useEffect(()=>{window.scrollTo(0,0)},[]),w(oe,{children:[o("h1",{children:"Debugging Logs"}),o(de,{children:"Sometimes you just want to see whats going on under the hood. Informed also comes with internal logging that can be enabled in following ways:"}),o("h2",{children:"When running in a browser ( development )"}),o(N,{children:"localStorage.debug = 'informed:.*';"}),o("h2",{children:"When running in React Native ( development )"}),o(N,{children:`
+// only enable this in __DEV__ environment
+if (__DEV__) {
+  global.DEBUG_INFORMED = 'informed:.*';
+}
+`}),o("h2",{children:"When running in node ( unit tests )"}),o(N,{children:"DEBUG = 'informed:.*';"}),o("hr",{}),o("h2",{children:"Testing it out"}),w(de,{type:"notice",children:["Below is an example form with a single input and submit button. Look at the browser console and enable the logs with"," ",o("code",{children:"localStorage.debug = 'informed:.*';"})]}),o(Ee,{leftHeader:o("h3",{children:"Example:"}),rightHeader:o("h3",{children:"Code:"}),left:o(vAe,{}),right:o(N,{links:!0,input1:bAe})}),w(de,{type:"notice",children:["If done correctly it should look like the following when you reload and then type ",o("code",{children:'"Hi"'})]}),o("img",{style:{paddingTop:"1rem",paddingBottom:"1rem",borderRadius:"20px"},src:"/logs-example.png",width:"100%"}),o("br",{}),o("br",{})]})}

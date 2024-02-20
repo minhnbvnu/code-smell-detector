@@ -1,0 +1,1 @@
+function Pdfa(t){var o;_classCallCheck(this,Pdfa);(o=r.call(this,d,"pdfa",!0)).amd=null;o.conformance=null;o.includeXDPContent=null;o.part=null;return o}

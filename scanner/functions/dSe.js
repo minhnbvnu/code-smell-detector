@@ -1,0 +1,1 @@
+function dSe(e){TL.has(e)||(TL.add(e),e.addEventListener("copy",()=>{}),e.addEventListener("cut",()=>{}))}

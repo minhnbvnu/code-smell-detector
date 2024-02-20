@@ -1,0 +1,1 @@
+function _emscripten_glRenderbufferStorage(x0,x1,x2,x3){GLctx["renderbufferStorage"](x0,x1,x2,x3)}

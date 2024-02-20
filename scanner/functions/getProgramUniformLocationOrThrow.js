@@ -1,5 +1,1 @@
-function getProgramUniformLocationOrThrow(gl, program, uniformName) {
-	  return throwIfNull(gl, function () {
-	    return gl.getUniformLocation(program, uniformName);
-	  }, 'uniform "' + uniformName + '" not present in program.');
-	}
+function getProgramUniformLocationOrThrow(e,t,n){return throwIfNull(e,function(){return e.getUniformLocation(t,n)},'uniform "'+n+'" not present in program.')}

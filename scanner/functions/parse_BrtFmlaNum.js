@@ -1,0 +1,1 @@
+function parse_BrtFmlaNum(data,length,opts){var cell=parse_XLSBCell(data);var value=parse_Xnum(data);var o=[cell,value,"n"];if(opts.cellFormula){var formula=parse_XLSBCellParsedFormula(data,length-16);o[3]=""}else data.l+=length-16;return o}

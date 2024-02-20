@@ -1,8 +1,1 @@
-function selectFont(fontName, show) {
-    const divs = document.querySelectorAll(
-      `span[${fontAttribute}=${fontName}]`
-    );
-    for (const div of divs) {
-      div.className = show ? "debuggerShowText" : "debuggerHideText";
-    }
-  }
+function selectFont(t,r){return"italic"===t.posture?"bold"===t.weight?r.bolditalic:r.italic:"bold"===t.weight?r.bold:r.regular}

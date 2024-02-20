@@ -1,0 +1,1 @@
+function Kat(n,t){var e,i;function r(){var o=t.apply(this,arguments);return o!==i&&(e=(i=o)&&jat(n,o)),e}return r._value=t,r}

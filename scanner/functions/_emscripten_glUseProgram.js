@@ -1,0 +1,1 @@
+function _emscripten_glUseProgram(program){program=GL.programs[program];GLctx.useProgram(program);GLctx.currentProgram=program}

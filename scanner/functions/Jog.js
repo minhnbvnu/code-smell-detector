@@ -1,0 +1,1 @@
+function Jog(t){_classCallCheck(this,Jog);return r.call(this,d,"jog",["usePrinterSetting","none","pageSet"])}

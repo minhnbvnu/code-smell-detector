@@ -1,3 +1,1 @@
-function sorter(a, b) {
-  return a - b;
-}
+function sorter(a,b){return a<b?1:-1}

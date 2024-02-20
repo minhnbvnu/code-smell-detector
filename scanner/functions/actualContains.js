@@ -1,0 +1,1 @@
+function actualContains(i,o){for(var s=o;s;){var u;if(i.contains(s))return!0;s=null==s.getRootNode||null==(u=s.getRootNode())?void 0:u.host}return!1}

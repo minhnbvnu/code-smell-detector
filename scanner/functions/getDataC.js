@@ -1,0 +1,3 @@
+function getDataC () {
+    return dataC
+}

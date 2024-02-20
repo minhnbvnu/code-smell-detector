@@ -1,0 +1,1 @@
+function _glClearDepthf(x0){GLctx["clearDepth"](x0)}

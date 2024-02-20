@@ -1,0 +1,1 @@
+function W5e(e){return typeof e=="string"?function(r,i){return Iz(i,[Lw.templateVariables,Lw.templateDate,Lw.templateText],[e].concat(r))}:typeof e=="function"?function(r,i){var a=Object.assign({},i,{data:r}),n=e(a,r);return[].concat(n)}:function(t){return t}}

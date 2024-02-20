@@ -1,0 +1,1 @@
+function _wgpu_device_set_uncapturederror_callback(device,callback,userData){wgpu[device]["onuncapturederror"]=callback?function(uncapturedError){_wgpuDispatchWebGpuErrorEvent(device,callback,uncapturedError["error"],userData)}:null}

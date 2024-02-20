@@ -1,0 +1,1 @@
+function zE(n){let t=[];for(let e=0;e<n.rows;e++){let i=0;for(let r=0;r<n.columns;r++)i+=Math.pow(n.get(e,r),2)/(n.columns-1);t.push(Math.sqrt(i))}return t}

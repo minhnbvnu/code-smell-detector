@@ -1,0 +1,1 @@
+function applyColumnHeaderWidths(){if(initialized){for(var e,o=0,t=$headers.children(),n=columns.length;o<n;o++)e=$(t[o]),jQueryNewWidthBehaviour?e.outerWidth()!==columns[o].width&&e.outerWidth(columns[o].width):e.width()!==columns[o].width-headerColumnWidthDiff&&e.width(columns[o].width-headerColumnWidthDiff);updateColumnCaches()}}

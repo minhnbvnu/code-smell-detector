@@ -1,0 +1,1 @@
+function parseTop(){var o,s;if(o=parseTypeExpression(),B!==u.PIPE)return o;for(s=[o],consume(u.PIPE);s.push(parseTypeExpression()),B===u.PIPE;)consume(u.PIPE);return maybeAddRange({type:i.UnionType,elements:s},[0,w])}

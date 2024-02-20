@@ -1,3 +1,3 @@
 function getDefaultStyle() {
-  return DEFAULT_STYLE;
-}
+		return DEFAULT_STYLE;
+	}

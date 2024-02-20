@@ -1,0 +1,1 @@
+function isIdentStart(e){return e!==null&&(isNameStart(e)||/\-\\/.test(e))}

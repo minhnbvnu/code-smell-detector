@@ -1,0 +1,1 @@
+function getTopPanel(){return $topPanel[0]}

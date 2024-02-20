@@ -1,0 +1,1 @@
+function valueFn(value) {return function valueRef() {return value;};}

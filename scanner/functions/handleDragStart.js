@@ -1,0 +1,1 @@
+function handleDragStart(e,o){var t=getCellFromEvent(e);if(!t||!cellExists(t.row,t.cell))return!1;var n=trigger(self.onDragStart,o,e);return!!e.isImmediatePropagationStopped()&&n}

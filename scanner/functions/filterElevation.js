@@ -1,0 +1,1 @@
+function filterElevation(l) { return l.isElevationLayer; }

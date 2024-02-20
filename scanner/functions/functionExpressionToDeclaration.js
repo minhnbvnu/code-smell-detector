@@ -1,0 +1,3 @@
+function functionExpressionToDeclaration(name, additionalModifiers, fn, useSitesToUnqualify) {
+            return factory.createFunctionDeclaration(concatenate(additionalModifiers, getSynthesizedDeepClones(fn.modifiers)), getSynthesizedDeepClone(fn.asteriskToken), name, getSynthesizedDeepClones(fn.typeParameters), getSynthesizedDeepClones(fn.parameters), getSynthesizedDeepClone(fn.type), factory.converters.convertToFunctionBlock(replaceImportUseSites(fn.body, useSitesToUnqualify)));
+        }

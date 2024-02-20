@@ -1,0 +1,1 @@
+function i7e(e){var t="";return t+=Ss(e.getUTCFullYear(),4),t+=Ss(e.getUTCMonth()+1),t+=Ss(e.getUTCDate()),t+=Ss(e.getUTCHours()),t+=Ss(e.getUTCMinutes()),t+=Ss(e.getUTCSeconds()),t+="Z",t}

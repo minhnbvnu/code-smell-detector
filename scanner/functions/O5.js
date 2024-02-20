@@ -1,0 +1,1 @@
+function O5(t){for(var e=this._groups,r=0,n=e.length;r<n;++r)for(var i=e[r],s=0,a=i.length,o;s<a;++s)(o=i[s])&&t.call(o,o.__data__,s,i);return this}

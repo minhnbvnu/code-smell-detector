@@ -1,1 +1,1 @@
-function Sr(t){if(!t[Ph])throw new Pi("internal-error")}
+function sr(t,e){e[$t]=dt(1e3*("0."+t))}

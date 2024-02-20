@@ -1,0 +1,1 @@
+function parse_BrtWsProp(data,length){var z={};data.l+=19;z.name=parse_XLSBCodeName(data,length-19);return z}

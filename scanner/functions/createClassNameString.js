@@ -1,0 +1,1 @@
+function createClassNameString(classNames){return classNames.join(" ")}

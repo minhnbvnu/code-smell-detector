@@ -1,8 +1,1 @@
-function getWebGLMaxTextureSize(webGLVersion) {
-	  if (MAX_TEXTURE_SIZE == null) {
-	    var gl = getWebGLContext(webGLVersion);
-	    MAX_TEXTURE_SIZE = gl.getParameter(gl.MAX_TEXTURE_SIZE);
-	  }
-
-	  return MAX_TEXTURE_SIZE;
-	}
+function getWebGLMaxTextureSize(e){if(null==MAX_TEXTURE_SIZE){var t=getWebGLContext(e);MAX_TEXTURE_SIZE=t.getParameter(t.MAX_TEXTURE_SIZE);}return MAX_TEXTURE_SIZE}

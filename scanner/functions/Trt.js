@@ -1,0 +1,1 @@
+function Trt(n,t){let e=Qc(t,this.size,4);n.uniform4fv(this.addr,e)}

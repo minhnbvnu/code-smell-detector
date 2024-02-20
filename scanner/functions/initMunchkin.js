@@ -1,0 +1,1 @@
+function initMunchkin(){if(didInit===false){didInit=true;Munchkin.init(tarteaucitron.user.marketomunchkinkey)}}

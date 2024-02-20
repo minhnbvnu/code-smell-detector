@@ -1,0 +1,1 @@
+function getValueAtIndexOrReturn(i,o,s){if(Array.isArray(i)){var u=i[o];return null==u?Array.isArray(s)?s[o]:s:u}return i}

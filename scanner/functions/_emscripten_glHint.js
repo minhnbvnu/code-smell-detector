@@ -1,0 +1,1 @@
+function _emscripten_glHint(x0,x1){GLctx["hint"](x0,x1)}

@@ -1,0 +1,1 @@
+function scanHexEscape(i){var o,s,u,P=0;for(s="u"===i?4:2,o=0;o<s;++o){if(!(w<_&&U.code.isHexDigit(C.charCodeAt(w))))return"";u=advance(),P=16*P+"0123456789abcdef".indexOf(u.toLowerCase())}return String.fromCharCode(P)}

@@ -1,0 +1,3 @@
+function stepRe() {
+  return /\?|>|\||\+|\~/g;
+}

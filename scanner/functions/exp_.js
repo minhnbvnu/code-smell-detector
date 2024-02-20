@@ -1,7 +1,1 @@
-function exp_(x) {
-	  var $x = convertToTensor(x, 'x', 'exp');
-	  var inputs = {
-	    x: $x
-	  };
-	  return ENGINE.runKernel(Exp, inputs);
-	}
+function exp_(e){var t=convertToTensor(e,"x","exp");return ENV.engine.runKernel(function(e,n){return n(e.exp(t))},{$x:t},function(e,t){var n=t[0];return {$x:function(){return e.mulStrict(n)}}})}

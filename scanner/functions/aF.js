@@ -1,0 +1,1 @@
+function aF(n,t,e,i){let r=window.devicePixelRatio,o=new j().copy(i).project(n);return[(o.x+1)/2*t*r,-((o.y-1)/2*e)*r]}

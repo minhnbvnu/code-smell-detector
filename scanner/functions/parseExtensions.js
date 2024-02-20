@@ -1,4 +1,7 @@
-function parseExtensions(node, objectStack) {
-  const values = /** @type {Object} */ (objectStack[objectStack.length - 1]);
-  values['extensionsNode_'] = node;
-}
+function parseExtensions(input) {
+            if (typeof input === 'string') {
+                return input.split();
+            }
+            check$1(Array.isArray(input), 'invalid extension array');
+            return input;
+        }

@@ -1,9 +1,1 @@
-function strToInt(str) {
-    var a = 0;
-
-    for (var i = 0; i < str.length; i++) {
-      a = a << 8 | str.charCodeAt(i);
-    }
-
-    return a >>> 0;
-  }
+function strToInt(t){for(var r=0,o=0;o<t.length;o++)r=r<<8|t.charCodeAt(o);return r>>>0}

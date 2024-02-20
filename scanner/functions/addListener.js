@@ -1,3 +1,7 @@
-function addListener(node, type, listener) {
-  node.addEventListener(type, listener, eventListenerOptions);
-}
+function addListener(callOnAdd, element, listener) {
+        eventListenerHandler.add(element, listener);
+
+        if (callOnAdd) {
+          listener(element);
+        }
+      }

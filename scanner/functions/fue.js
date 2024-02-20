@@ -1,0 +1,1 @@
+function fue(e,t){let r;if(xl.isAbsolute(e)){if(r=k0.existsSync(e),!r)throw new Error("absolute srcpath does not exist");return{toCwd:e,toDst:e}}else{let i=xl.dirname(t),a=xl.join(i,e);if(r=k0.existsSync(a),r)return{toCwd:a,toDst:e};if(r=k0.existsSync(e),!r)throw new Error("relative srcpath does not exist");return{toCwd:e,toDst:xl.relative(i,e)}}}

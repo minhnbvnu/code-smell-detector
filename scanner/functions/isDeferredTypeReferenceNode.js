@@ -1,0 +1,3 @@
+function isDeferredTypeReferenceNode(node, hasDefaultTypeArguments) {
+                return !!getAliasSymbolForTypeNode(node) || isResolvedByTypeAlias(node) && (node.kind === 185 /* ArrayType */ ? mayResolveTypeAlias(node.elementType) : node.kind === 186 /* TupleType */ ? some(node.elements, mayResolveTypeAlias) : hasDefaultTypeArguments || some(node.typeArguments, mayResolveTypeAlias));
+            }

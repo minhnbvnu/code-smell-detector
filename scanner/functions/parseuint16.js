@@ -1,0 +1,1 @@
+function parseuint16(blob){return blob.read_shift(2,"u")}

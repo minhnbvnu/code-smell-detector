@@ -1,0 +1,1 @@
+function yve(){return process.env.DEBUG}

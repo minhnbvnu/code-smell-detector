@@ -1,0 +1,1 @@
+function N5(){for(var t=this._groups,e=0,r=t.length;e<r;++e)for(var n=t[e],i=0,s=n.length;i<s;++i){var a=n[i];if(a)return a}return null}

@@ -1,0 +1,1 @@
+function getState$1(element){return element[prop]}

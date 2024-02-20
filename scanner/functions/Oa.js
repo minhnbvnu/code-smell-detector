@@ -1,0 +1,1 @@
+function Oa(a,b,c){q(b,function(b){a.removeClass(b,c)})}

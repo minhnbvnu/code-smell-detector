@@ -1,0 +1,1 @@
+function isObject$7(value){var type=_typeof(value);return null!=value&&("object"==type||"function"==type)}

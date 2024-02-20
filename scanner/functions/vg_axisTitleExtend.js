@@ -1,0 +1,1 @@
+function vg_axisTitleExtend(orient,title,range,offset){var mid=~~((range[1]-range[0])/2),sign=orient==="top"||orient==="left"?-1:1;if(orient==="bottom"||orient==="top"){vg.extend(title.properties.update,{x:{value:mid},y:{value:sign*offset},angle:{value:0}})}else{vg.extend(title.properties.update,{x:{value:sign*offset},y:{value:mid},angle:{value:-90}})}}

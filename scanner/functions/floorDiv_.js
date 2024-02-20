@@ -1,14 +1,1 @@
-function floorDiv_(a, b) {
-	  var $a = convertToTensor(a, 'a', 'floorDiv');
-	  var $b = convertToTensor(b, 'b', 'floorDiv');
-
-	  var _makeTypesMatch = makeTypesMatch($a, $b);
-
-	  $a = _makeTypesMatch[0];
-	  $b = _makeTypesMatch[1];
-	  var inputs = {
-	    a: $a,
-	    b: $b
-	  };
-	  return ENGINE.runKernel(FloorDiv, inputs);
-	}
+function floorDiv_(e,t){var n,r=convertToTensor(e,"a","floorDiv"),o=convertToTensor(t,"b","floorDiv");n=makeTypesMatch(r,o),r=n[0],o=n[1];var a=assertAndGetBroadcastShape(r.shape,o.shape);return ENV.engine.runKernel(function(e){return e.floorDiv(r,o)},{$a:r,$b:o},function(e){return {$a:function(){var t=e.div(o.toFloat()),n=getReductionAxes(r.shape,a);return n.length>0?t.sum(n).reshape(r.shape):t},$b:function(){var t=e.mul(r.toFloat()),n=getReductionAxes(o.shape,a);n.length>0&&(t=t.sum(n).reshape(o.shape));var i=o.square();return t.div(i.toFloat()).neg()}}})}

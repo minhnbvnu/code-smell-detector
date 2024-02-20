@@ -1,0 +1,1 @@
+function _fe_isnegative($0){$0=$0|0;var $1=0,$2=0,$3=0,$4=0,label=0,sp=0;sp=STACKTOP;STACKTOP=STACKTOP+32|0;$1=sp;_fe_tobytes($1,$0);$2=HEAP8[$1>>0]|0;$3=$2&1;$4=$3&255;STACKTOP=sp;return $4|0}

@@ -1,0 +1,1 @@
+function getSelect2Header(){var t=$("body").data().selectAjaxHeader,e=window.getSelect2HeaderFunction,i={};return t&&e&&$.isFunction(e)?(i[t]=e(),i):{}}

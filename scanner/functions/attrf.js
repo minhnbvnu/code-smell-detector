@@ -1,0 +1,1 @@
+function attrf(x, y) { return parseFloat(attr(x, y)); }

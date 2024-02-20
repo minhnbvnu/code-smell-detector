@@ -1,0 +1,1 @@
+function parse_FtCmo(blob,length){blob.l+=4;var ot=blob.read_shift(2);var id=blob.read_shift(2);var flags=blob.read_shift(2);blob.l+=12;return[id,ot,flags]}

@@ -1,0 +1,1 @@
+function AW(n,t,e,i,r){i==null&&(i=t_(n,t,e));let o=n[0],s=n[1],a=ea((o-t+2*i)/e+1,r),l=ea((s-t+2*i)/e+1,r);return[a,l]}

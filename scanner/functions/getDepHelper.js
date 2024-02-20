@@ -1,0 +1,82 @@
+function getDepHelper(tree) {
+        if(visited.indexOf(tree.id) != -1){
+            return '';
+        }
+        visited.push(tree.id);
+        var sofar = '', addition;
+
+        if (tree.hasOwnProperty('rhs')) {
+            sofar += getDepHelper(tree.rhs);
+        }
+        if (tree.hasOwnProperty('return')){
+            sofar += getDepHelper(tree.return);
+        }
+        var line_num = tree.line ? tree.line : 'return';
+        if (tree.hasOwnProperty('fallback')) {
+            var fallback = tree.fallback;
+            if (fallback.dependsOn && fallback.dependsOn.length > 0){
+                addition = _.reduce(fallback.dependsOn, function(newgraph,fallbackDepend){
+                    var tmp = '['+line_num+']->[note:'+fallbackDepend.line+'],';
+                    newgraph = newgraph.concat(tmp);
+                    return newgraph.concat(getDepHelper(fallbackDepend));
+                },'');
+                sofar = sofar.concat(addition);
+                /*for (var j = 0; j < fallback.dependsOn.length; j++) {
+                    addition = '['+line_num+']->[note:'+fallback.dependsOn[j].line+'],';
+                    sofar += addition;
+                    sofar += getDepHelper(fallback.dependsOn[j]);
+                } */
+            }
+        }
+        if (tree.type != 'try' && tree.dependsOn && tree.dependsOn.length > 0) {
+            for (var j = 0; j < tree.dependsOn.length; j++) {
+                var dep = tree.dependsOn[j];
+                addition = '['+line_num+']->['+dep.line+'],'
+                sofar += addition;
+                sofar += getDepHelper(dep);
+            }
+        }
+        if(tree.scope){
+            sofar += getDepHelper(tree.scope);
+        }
+        //special scope relationships
+        if(tree.type === 'if'){
+            var mycolor = getColor();
+            _.each(tree.if, function(ifline){
+                addition = ['[', ifline.line, mycolor, ']-if>[', line_num, mycolor, '],'].join('');
+                sofar += addition;
+                sofar += getDepHelper(ifline);
+            })
+            _.each(tree.else, function(elseline){
+                addition = ['[', elseline.line, mycolor, ']-else>[', line_num, mycolor, '],'].join('');
+                sofar += addition;
+                sofar += getDepHelper(elseline);
+            })
+        }else if(tree.type === 'try'){
+            var mycolor = getColor();
+            _.each(tree.dependsOn, function(tryline){
+                addition = ['[',tryline.line, mycolor, ']-try>[',line_num, mycolor, '],'].join('');
+                sofar += addition;
+                sofar += getDepHelper(tryline);
+            })
+            _.each(tree.catchClause, function(mycatch){
+                var cond = mycatch.condition;
+                addition = ['[', cond.line, mycolor, ']-catch_cond>[', line_num, mycolor, '],'].join('');
+                sofar += addition;
+                sofar += getDepHelper(cond);
+                _.each(mycatch.lines, function(catchline){
+                    addition = ['[',catchline.line, mycolor, ']-catch>[', cond.line, mycolor, '],'].join('');
+                    sofar += addition;
+                    sofar += getDepHelper(catchline);
+                })
+            })
+
+            _.each(tree.finally, function(finallyline){
+                addition = ['[',finallyline.line, mycolor, ']-finally>[', line_num, mycolor, '],'].join('');
+                sofar += addition;
+                sofar += getDepHelper(finallyline);
+            })
+        }
+
+        return sofar;
+    }

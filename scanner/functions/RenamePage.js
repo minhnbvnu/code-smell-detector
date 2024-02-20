@@ -1,0 +1,1 @@
+function RenamePage(b,c,e){this.ui=b;this.page=c;this.previous=this.name=e}

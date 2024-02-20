@@ -1,0 +1,1 @@
+function functionFlags(i,o){return 2|(i?4:0)|(o?8:0)}

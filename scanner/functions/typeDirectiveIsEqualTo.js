@@ -1,0 +1,3 @@
+function typeDirectiveIsEqualTo(oldResolution, newResolution) {
+            return oldResolution === newResolution || oldResolution.resolvedTypeReferenceDirective === newResolution.resolvedTypeReferenceDirective || !!oldResolution.resolvedTypeReferenceDirective && !!newResolution.resolvedTypeReferenceDirective && oldResolution.resolvedTypeReferenceDirective.resolvedFileName === newResolution.resolvedTypeReferenceDirective.resolvedFileName && !!oldResolution.resolvedTypeReferenceDirective.primary === !!newResolution.resolvedTypeReferenceDirective.primary && oldResolution.resolvedTypeReferenceDirective.originalPath === newResolution.resolvedTypeReferenceDirective.originalPath;
+        }

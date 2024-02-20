@@ -1,0 +1,1 @@
+function Qk(a,b,c,d,e){a=a|0;b=b|0;c=c|0;d=d|0;e=e|0;var f=0,g=0,h=0;f=u;u=u+256|0;g=f;if((c|0)>(d|0)&(e&73728|0)==0){e=c-d|0;sj(g|0,b<<24>>24|0,(e>>>0<256?e:256)|0)|0;if(e>>>0>255){b=c-d|0;d=e;do{Xo(a,g,256);d=d+-256|0}while(d>>>0>255);h=b&255}else h=e;Xo(a,g,h)}u=f;return}

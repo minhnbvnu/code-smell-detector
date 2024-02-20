@@ -1,0 +1,1 @@
+function legends(spec,legends,scales){(spec||[]).forEach(function(def,index){legends[index]=legends[index]||vg.scene.legend();legend(def,index,legends[index],scales)})}

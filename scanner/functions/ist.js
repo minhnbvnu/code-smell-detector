@@ -1,0 +1,1 @@
+function ist(n){switch(n.toLowerCase()){case"scalar":case"double":case"float":case"number":case"integer":return Kc;case"vector":case"vector2":case"vector3":case"vector4":return Yc;case"color":return pv;case"quaternion":return Ia;case"bool":case"boolean":return xs;case"string":return vs}throw new Error("THREE.KeyframeTrack: Unsupported typeName: "+n)}

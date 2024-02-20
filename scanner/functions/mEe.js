@@ -1,0 +1,1 @@
+function mEe(){return vEe}

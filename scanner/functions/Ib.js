@@ -1,0 +1,1 @@
+function Ib(a){return"constructor"==a}

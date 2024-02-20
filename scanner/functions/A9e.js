@@ -1,0 +1,1 @@
+function A9e(e,t){np.ok(e),np.equal(typeof e,"object"),np.ok(t),np.equal(typeof t,"object");var r=Object.getOwnPropertyNames(e);return r.forEach(function(i){if(!t[i]){var a=Object.getOwnPropertyDescriptor(e,i);Object.defineProperty(t,i,a)}}),t}

@@ -1,0 +1,1 @@
+function QO(e,n,t,i){const r=e.getSizeSignalRef(n).signal;return{signal:`clamp(${r}, ${t}, ${i})`}}

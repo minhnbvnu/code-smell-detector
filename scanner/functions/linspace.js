@@ -1,9 +1,1 @@
-function linSpace(args) {
-	  var backend = args.backend,
-	      attrs = args.attrs;
-	  var start = attrs.start,
-	      stop = attrs.stop,
-	      num = attrs.num;
-	  var outVals = linSpaceImpl(start, stop, num);
-	  return backend.makeTensorInfo([outVals.length], 'float32', outVals);
-	}
+function linspace(e,t,n){if(0===n)throw new Error("Cannot request zero samples");var r=(t-e)/(n-1),o=makeZerosTypedArray(n,"float32");o[0]=e;for(var a=1;a<o.length;a++)o[a]=o[a-1]+r;return tensor1d(o,"float32")}

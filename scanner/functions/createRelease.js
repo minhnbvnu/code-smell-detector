@@ -1,27 +1,15 @@
-async function createRelease(options) {
-  const client = new Octokit({
-    auth: options.token,
-  });
+function createRelease(tagName, repoOwner, repoName) {
+    const owner = repoOwner || 'screwdriver-cd-test';
+    const repo = repoName || 'functional-git';
 
-  const response = await client.rest.repos.createRelease({
-    owner,
-    repo,
-    tag_name: options.tag,
-    generate_release_notes: options.notes,
-    draft: options.draft,
-  });
-
-  await uploadAsset(
-    client,
-    response.data,
-    options.site,
-    'Examples and docs (zip)',
-  );
-
-  await uploadAsset(
-    client,
-    response.data,
-    options.package,
-    'Package archive (zip)',
-  );
+    return octokit.repos
+        .createRelease({
+            owner,
+            repo,
+            tag_name: tagName,
+            name: tagName
+        })
+        .catch(() => {
+            Assert.fail('failed to create release');
+        });
 }

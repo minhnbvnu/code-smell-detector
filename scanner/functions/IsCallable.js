@@ -1,0 +1,1 @@
+function IsCallable(o){return typeof o==="function"}

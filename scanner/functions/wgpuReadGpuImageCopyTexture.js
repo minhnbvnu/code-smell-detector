@@ -1,0 +1,1 @@
+function wgpuReadGpuImageCopyTexture(ptr){ptr>>=2;return{"texture":wgpu[HEAPU32[ptr]],"mipLevel":HEAP32[ptr+1],"origin":[HEAP32[ptr+2],HEAP32[ptr+3],HEAP32[ptr+4]],"aspect":GPUTextureAspects[HEAPU32[ptr+5]]}}

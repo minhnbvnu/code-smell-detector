@@ -1,0 +1,1 @@
+function D(){ionic.keyboard.isLandscape=!ionic.keyboard.isLandscape,ionic.Platform.isIOS()&&O(),ionic.Platform.isAndroid()&&(ionic.keyboard.isOpen&&V()?le=!0:L(O,!1))}

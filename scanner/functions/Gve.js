@@ -1,0 +1,1 @@
+function Gve(e){return S.createElement(_n,e,S.createElement(qve,null))}

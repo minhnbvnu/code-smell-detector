@@ -1,0 +1,1 @@
+function IconZoom_getPrototypeOf(o) { IconZoom_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return IconZoom_getPrototypeOf(o); }

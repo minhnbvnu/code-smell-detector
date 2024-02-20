@@ -1,3 +1,1 @@
-function pToString(obj) {
-	  return Object.prototype.toString.call(obj);
-	}
+function pToString(i){return Object.prototype.toString.call(i)}

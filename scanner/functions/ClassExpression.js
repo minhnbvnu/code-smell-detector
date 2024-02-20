@@ -1,3 +1,1 @@
-function ClassExpression(node, parent, printStack) {
-	  return isFirstInStatement(printStack, { considerDefaultExports: true });
-	}
+function ClassExpression(){i.apply(this,arguments)}

@@ -1,0 +1,1 @@
+function AstBinaryOperation(t,o,c,l,u){var h;_classCallCheck(this,AstBinaryOperation);(h=r.call(this,"binary")).op=t;h.arg1=o;h.arg2=c;h.min=l;h.max=u;return h}

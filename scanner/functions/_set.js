@@ -1,9 +1,16 @@
-function _set(target, property, value, receiver, isStrict) {
-	  var s = set$4(target, property, value, receiver || target);
+function _set(n) {
+        if (!started) {
+          return;
+        }
+        var pct = (n * 100) + '%';
+        loadingBar.css('width', pct);
+        status = n;
 
-	  if (!s && isStrict) {
-	    throw new Error('failed to set property');
-	  }
-
-	  return value;
-	}
+        // increment loadingbar to give the illusion that there is always
+        // progress but make sure to cancel the previous timeouts so we don't
+        // have multiple incs running at the same time.
+        $timeout.cancel(incTimeout);
+        incTimeout = $timeout(function() {
+          _inc();
+        }, 250);
+      }

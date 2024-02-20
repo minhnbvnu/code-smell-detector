@@ -1,0 +1,1 @@
+function JpxError(t){_classCallCheck(this,JpxError);return r.call(this,"JPX error: ".concat(t),"JpxError")}

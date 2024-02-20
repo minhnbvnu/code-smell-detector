@@ -1,7 +1,1 @@
-function getChannels(name, rank) {
-	  if (rank === 1) {
-	    return [name];
-	  }
-
-	  return getVecChannels(name, rank);
-	}
+function getChannels(e,t){return 1===t?[e]:getVecChannels(e,t)}

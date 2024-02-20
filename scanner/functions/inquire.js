@@ -1,0 +1,8 @@
+function inquire(moduleName) {
+            try {
+                var mod = eval("quire".replace(/^/, "re"))(moduleName);
+                if (mod && (mod.length || Object.keys(mod).length))
+                    return mod
+            } catch (e) {}
+            return null
+        }

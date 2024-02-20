@@ -1,0 +1,1 @@
+function pV(n){return uV[n.localName]||!1}

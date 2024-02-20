@@ -1,11 +1,5 @@
-function normalizeFilename(fileName) {
-  if (fileName.indexOf(__dirname) === 0) {
-    fileName = fileName.substring(__dirname.length);
-  }
-
-  if (fileName.indexOf('/') === 0) {
-    fileName = fileName.substring(1);
-  }
-
-  return fileName;
-}
+function normalizeFilename(filename) {
+        const parts = filename.split(path.sep);
+        const index = parts.lastIndexOf("<text>");
+        return index === -1 ? filename : parts.slice(index).join(path.sep);
+    }

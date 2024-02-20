@@ -1,0 +1,1 @@
+function _inthash(t){return _bi([0].concat(_bytehash(t)))}

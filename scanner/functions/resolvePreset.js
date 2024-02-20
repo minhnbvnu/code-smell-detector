@@ -1,5 +1,11 @@
-function resolvePreset(presetName) {
-	  var dirname = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : process.cwd();
-
-	  return (0, _resolveFromPossibleNames2.default)((0, _getPossiblePresetNames2.default)(presetName), dirname);
+function resolvePreset(preset) {
+		if (typeof preset === 'string') {
+			preset = tryRequire('babel-preset-', preset);
+		}
+		if (preset && preset.plugins) {
+			preset.plugins = preset.plugins.map(resolvePlugin);
+			return preset;
+		} else {
+			throw new Error('invalid preset: ' + preset);
+		}
 	}

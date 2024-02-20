@@ -1,0 +1,1 @@
+function VL(t,e){return WL(t.node2,e)*t.getValue()}

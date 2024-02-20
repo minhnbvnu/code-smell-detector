@@ -1,0 +1,1 @@
+function YT(e){if(e===null)return!0;var t=[],n,o,s,c,u,d=e;for(n=0,o=d.length;n<o;n+=1){if(s=d[n],u=!1,GT.call(s)!=="[object Object]")return!1;for(c in s)if(UT.call(s,c))if(!u)u=!0;else return!1;if(!u)return!1;if(t.indexOf(c)===-1)t.push(c);else return!1}return!0}

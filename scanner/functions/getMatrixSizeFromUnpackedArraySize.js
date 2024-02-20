@@ -1,7 +1,1 @@
-function getMatrixSizeFromUnpackedArraySize(unpackedSize, channelsPerTexture) {
-	  if (unpackedSize % channelsPerTexture !== 0) {
-	    throw new Error("unpackedSize (" + unpackedSize + ") must be a multiple of " + ("" + channelsPerTexture));
-	  }
-
-	  return unpackedSize / channelsPerTexture;
-	}
+function getMatrixSizeFromUnpackedArraySize(e,t){if(e%t!=0)throw new Error("unpackedSize ("+e+") must be a multiple of "+t);return e/t}

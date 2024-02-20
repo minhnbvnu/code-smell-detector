@@ -1,0 +1,1 @@
+function zG(t,e){e.setStyle(t.style),e.z=t.z,e.z2=t.z2,e.zlevel=t.zlevel}

@@ -1,0 +1,1 @@
+function iIe(e){const t=e;return Ab(r);function r(n){const i=n;let a;for(a in e)if(i[a]!==t[a])return!1;return!0}}

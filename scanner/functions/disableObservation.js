@@ -1,0 +1,3 @@
+function disableObservation() {
+    disabled = true;
+  }

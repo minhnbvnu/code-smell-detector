@@ -1,0 +1,1 @@
+function ZU(n){return n.startsWith(Cr.URL_SCHEME)?n.slice(Cr.URL_SCHEME.length):n}

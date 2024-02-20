@@ -1,0 +1,3 @@
+function pce(e,t,r){Ks.object(e);var i={ecdsa:"EC",rsa:"RSA",dsa:"DSA",ed25519:"EdDSA"}[e.type],a,n=new td.BerWriter;if(rce.isPrivateKey(e))r&&r==="pkcs8"?(a="PRIVATE KEY",G8.writePkcs8(n,e)):(r&&Ks.strictEqual(r,"pkcs1"),a=i+" PRIVATE KEY",W8.writePkcs1(n,e));else if(tce.isKey(e))r&&r==="pkcs1"?(a=i+" PUBLIC KEY",W8.writePkcs1(n,e)):(r&&Ks.strictEqual(r,"pkcs8"),a="PUBLIC KEY",G8.writePkcs8(n,e));else throw new Error("key is not a Key or PrivateKey");var s=n.buffer.toString("base64"),o=s.length+s.length/64+18+16+a.length*2+10,u=Sl.alloc(o),l=0;l+=u.write("-----BEGIN "+a+`-----
+`,l);for(var p=0;p<s.length;){var c=p+64;c>s.length&&(c=s.length),l+=u.write(s.slice(p,c),l),u[l++]=10,p=c}return l+=u.write("-----END "+a+`-----
+`,l),u.slice(0,l)}

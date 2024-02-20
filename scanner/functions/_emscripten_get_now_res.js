@@ -1,0 +1,1 @@
+function _emscripten_get_now_res(){if(ENVIRONMENT_IS_NODE){return 1}else return 1e3}

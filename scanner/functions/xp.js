@@ -1,0 +1,1 @@
+function xp(a){a=a|0;return (f[a+4>>2]|0)-(f[a>>2]|0)|0}

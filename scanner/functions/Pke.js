@@ -1,0 +1,1 @@
+function Pke(e,t){return t=t||KE,new Promise(r=>{process.nextTick(()=>{try{bJ(SJ()+" "+e,t,function(i,a){r(a,i)}).stdin.end()}catch(i){r("",i)}})})}

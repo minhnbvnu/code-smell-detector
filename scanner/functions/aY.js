@@ -1,0 +1,1 @@
+function aY(n,t){if(t==="float32"||t==="complex64")return n;if(t==="int32"||t==="bool"){let e=t==="int32"?new Int32Array(n.length):new Uint8Array(n.length);for(let i=0;i<e.length;++i)e[i]=Math.round(n[i]);return e}else throw new Error(`Unknown dtype ${t}`)}

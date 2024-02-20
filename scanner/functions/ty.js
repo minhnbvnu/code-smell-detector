@@ -1,1 +1,1 @@
-function Ty(a,b){a=a|0;b=b|0;L[a+4>>2]=b}
+function ty(t){if(0<=t.y&&t.y<100){var n=new Date(Date.UTC(-1,t.m,t.d,t.H,t.M,t.S,t.L));return n.setUTCFullYear(t.y),n}return new Date(Date.UTC(t.y,t.m,t.d,t.H,t.M,t.S,t.L))}

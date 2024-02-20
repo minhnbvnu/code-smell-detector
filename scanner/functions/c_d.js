@@ -1,0 +1,1 @@
+function c_d($,_){if(_||$!=$dt.d){$dt.d=$;dealRange("d");$c.redraw()}}

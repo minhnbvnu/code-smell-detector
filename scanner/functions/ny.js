@@ -1,1 +1,1 @@
-function Ny(a){a=a|0;a=L[8515];if(a){ra(a)}}
+function ny(t){if(!Kc(t))return vS(t);var e=[];for(var r in Object(t))wS.call(t,r)&&r!="constructor"&&e.push(r);return e}

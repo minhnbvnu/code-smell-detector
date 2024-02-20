@@ -1,0 +1,1 @@
+function unregisterPlugin(e){for(var o=plugins.length;o>=0;o--)if(plugins[o]===e){plugins[o].destroy&&plugins[o].destroy(),plugins.splice(o,1);break}}

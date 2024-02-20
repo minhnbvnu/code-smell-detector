@@ -1,3 +1,1 @@
-function isName(v, name) {
-  return v instanceof Name && (name === undefined || v.name === name);
-}
+function isName(t,r){return t instanceof h&&(void 0===r||t.name===r)}

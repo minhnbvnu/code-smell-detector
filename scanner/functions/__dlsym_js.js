@@ -1,0 +1,1 @@
+function __dlsym_js(handle,symbol){return 0}

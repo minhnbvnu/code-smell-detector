@@ -1,0 +1,1 @@
+function addCamelCasedVersion(i){var o=/(-[a-z])/g,s=function replace(i){return i[1].toUpperCase()},u={};for(var C in i)u[C]=i[C],u[C.replace(o,s)]=i[C];return u}

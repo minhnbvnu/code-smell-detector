@@ -1,17 +1,1 @@
-function parseClassRanges() {
-	      // ClassRanges ::
-	      //      [empty]
-	      //      NonemptyClassRanges
-
-	      var res;
-	      if (current(']')) {
-	        // Empty array means nothing insinde of the ClassRange.
-	        return [];
-	      } else {
-	        res = parseNonemptyClassRanges();
-	        if (!res) {
-	          bail('nonEmptyClassRanges');
-	        }
-	        return res;
-	      }
-	    }
+function parseClassRanges(){var i,o;return current("]")?[]:((o=parseClassAtom())||bail("classAtom"),(i=current("]")?[o]:parseHelperClassRanges(o))||bail("nonEmptyClassRanges"),i)}

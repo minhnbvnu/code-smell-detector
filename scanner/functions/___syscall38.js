@@ -1,0 +1,1 @@
+function ___syscall38(which,varargs){SYSCALLS.varargs=varargs;try{var old_path=SYSCALLS.getStr(),new_path=SYSCALLS.getStr();FS.rename(old_path,new_path);return 0}catch(e){if(typeof FS==="undefined"||!(e instanceof FS.ErrnoError))abort(e);return-e.errno}}

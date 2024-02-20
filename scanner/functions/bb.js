@@ -1,0 +1,1 @@
+function bb(a,b){var d=a.indexOf(b);0<=d&&a.splice(d,1);return d}

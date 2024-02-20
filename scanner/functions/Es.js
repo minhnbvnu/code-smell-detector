@@ -1,1 +1,1 @@
-function Es(t){return t.U.then(function(){return t.aa()}).s(function(){}).then(function(){if(!t.l)return t.ha()}).s(function(){}).then(function(){if(!t.l){t.W=!0;var n=t.h;No(n.b,cs("local"),n.a,t.ha)}})}
+function Es(e,a,t,s){var n={m:["eine Minute","einer Minute"],h:["eine Stunde","einer Stunde"],d:["ein Tag","einem Tag"],dd:[e+" Tage",e+" Tagen"],w:["eine Woche","einer Woche"],M:["ein Monat","einem Monat"],MM:[e+" Monate",e+" Monaten"],y:["ein Jahr","einem Jahr"],yy:[e+" Jahre",e+" Jahren"]};return a?n[t][0]:n[t][1]}

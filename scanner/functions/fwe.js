@@ -1,0 +1,1 @@
+function fwe(e,t){if(G7.isPrivateKey(e)){if(e.type==="rsa")return pwe(e,t);if(e.type==="ecdsa")return cwe(e,t);throw new Error("Unsupported algorithm: "+e.type)}else throw W7.isKey(e)?new Error('Format "dnssec" only supports writing private keys'):new Error("key is not a Key or PrivateKey")}

@@ -1,0 +1,1 @@
+function Qrt(n,t){let e={},i=n.getProgramParameter(t,35721);for(let r=0;r<i;r++){let o=n.getActiveAttrib(t,r),s=o.name,a=1;o.type===35674&&(a=2),o.type===35675&&(a=3),o.type===35676&&(a=4),e[s]={type:o.type,location:n.getAttribLocation(t,s),locationSize:a}}return e}

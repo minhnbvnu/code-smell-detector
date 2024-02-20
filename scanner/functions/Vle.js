@@ -1,0 +1,1 @@
+function Vle(){return this.g}

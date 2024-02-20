@@ -1,0 +1,1 @@
+function L3(e){return(e.mode&1)!==0&&(e.flags&128)===0}

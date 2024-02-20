@@ -1,0 +1,1 @@
+function DomHandler(callback,options,elementCB){if(typeof callback==="object"){elementCB=options;options=callback;callback=null}else if(typeof options==="function"){elementCB=options;options=defaultOpts}this._callback=callback;this._options=options||defaultOpts;this._elementCB=elementCB;this.dom=[];this._done=false;this._tagStack=[];this._parser=this._parser||null}

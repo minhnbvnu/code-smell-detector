@@ -1,0 +1,1 @@
+function getDelay(i){return ie.state.isMounted&&!ie.state.isVisible||Xt.isTouch||_&&"focus"===_.type?0:getValueAtIndexOrReturn(ie.props.delay,i?0:1,er.delay)}

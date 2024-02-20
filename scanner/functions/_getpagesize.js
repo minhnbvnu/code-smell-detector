@@ -1,0 +1,1 @@
+function _getpagesize(){return PAGE_SIZE}

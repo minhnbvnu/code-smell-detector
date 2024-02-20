@@ -1,0 +1,1 @@
+function markBounds(mark,bounds,opt){bounds=bounds||mark.bounds&&mark.bounds.clear()||new vg.Bounds;var type=mark.marktype,func=methods[type],items=mark.items,item,i,len;if(type==="area"||type==="line"){items[0].bounds=func(items[0],bounds)}else{for(i=0,len=items.length;i<len;++i){bounds.union(itemBounds(items[i],func,opt))}}mark.bounds=bounds}

@@ -1,0 +1,1 @@
+function testRegExp(re,string){return regExpTest.call(re,string)}

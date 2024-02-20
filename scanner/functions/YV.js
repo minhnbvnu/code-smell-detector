@@ -1,0 +1,1 @@
+function YV(n,t,e){let i=e.mutableData?KV:pr;ko.mixin&&(i=ko.mixin(i));let r=class extends i{};return r.prototype.__templatizeOptions=e,r.prototype._bindTemplate(n),QV(r,n,t,e),r}

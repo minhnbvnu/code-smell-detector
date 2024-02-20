@@ -1,0 +1,1 @@
+function getActiveCell(){return activeCellNode?{row:activeRow,cell:activeCell}:null}

@@ -1,0 +1,1 @@
+function DefinedInfo$2(property,attribute,mask,space){var check,index=-1;for(mark(this,"space",space),Info$1.call(this,property,attribute);++index<checksLength;)mark(this,check=checks[index],(mask&types$2[check])===types$2[check])}

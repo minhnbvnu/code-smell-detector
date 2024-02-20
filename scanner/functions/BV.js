@@ -1,0 +1,1 @@
+function BV(n,t){for(let e=0;e<t.length;e++){let i=t[e];Object.defineProperty(n,i,{get:function(){return this.node[i]},set:function(r){this.node[i]=r},configurable:!0})}}

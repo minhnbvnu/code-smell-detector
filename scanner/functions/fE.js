@@ -1,0 +1,1 @@
+function fE(e,t){const n=e.split(".").slice(0,3).map((e=>parseInt(e,10))),r=t.split(".").slice(0,3).map((e=>parseInt(e,10)));return hE(n,3),hE(r,3),n[0]>r[0]?1:n[0]<r[0]?-1:n[1]>r[1]?1:n[1]<r[1]?-1:n[2]>r[2]?1:n[2]<r[2]?-1:0}

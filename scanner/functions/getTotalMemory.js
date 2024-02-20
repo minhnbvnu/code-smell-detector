@@ -1,0 +1,1 @@
+function getTotalMemory(){return TOTAL_MEMORY}

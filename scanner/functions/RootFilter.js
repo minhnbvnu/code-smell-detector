@@ -1,0 +1,1 @@
+function RootFilter(g,k,d){var b=core.PositionFilter.FilterResult.FILTER_ACCEPT,f=core.PositionFilter.FilterResult.FILTER_REJECT;this.acceptPosition=function(n){n=n.container();var p;p="string"===typeof g?k[g].getNode():g;return d(n)===d(p)?b:f}}

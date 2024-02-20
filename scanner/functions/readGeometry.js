@@ -1,4 +1,4 @@
-function readGeometry(object, options) {
-  const geometryObject = readGeometryInternal(object, options);
-  return createGeometry(geometryObject, options);
+function readGeometry(pbf, geom) {
+    geom.type = 'Point';
+    return pbf.readMessage(readGeometryField, geom);
 }

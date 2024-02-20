@@ -1,0 +1,1 @@
+function Nrt(n,t){n.uniform3iv(this.addr,t)}

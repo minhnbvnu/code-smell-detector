@@ -1,0 +1,1 @@
+function parseIdentifierAtom(o){var s=lookahead(),C=B;if("\\"===s){incr();var _=parseRegExpUnicodeEscapeSequence();return _&&o(_.codePoint)||bail("Invalid escape sequence",null,C,B),u(_.codePoint)}var w=s.charCodeAt(0);if(w>=55296&&w<=56319){var P=(s+=i[B+1]).charCodeAt(1);P>=56320&&P<=57343&&(w=1024*(w-55296)+P-56320+65536)}if(o(w))return incr(),w>65535&&incr(),s}

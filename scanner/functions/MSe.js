@@ -1,0 +1,1 @@
+function MSe(e,t){return jr("comp",e,t),e=$Se(e,t),jr("caret",e),e=VSe(e,t),jr("tildes",e),e=KSe(e,t),jr("xrange",e),e=GSe(e,t),jr("stars",e),e}

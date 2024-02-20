@@ -1,0 +1,1 @@
+function ariaLabel(t){if(!t.assist)return null;var r=t.assist;return r.speak&&""!==r.speak[c.$content]?r.speak[c.$content]:r.toolTip?r.toolTip[c.$content]:null}

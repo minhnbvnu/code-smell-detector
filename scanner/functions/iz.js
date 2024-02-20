@@ -1,1 +1,1 @@
-function Iz(a){a=a|0;if(!(J[33804]&1)){L[8449]=1065353216;L[8450]=0;L[8447]=1065353216;L[8448]=1065353216;J[33804]=1}return 33788}
+function iz(n,t){return n.replace(/NUM_CLIPPING_PLANES/g,t.numClippingPlanes).replace(/UNION_CLIPPING_PLANES/g,t.numClippingPlanes-t.numClipIntersection)}

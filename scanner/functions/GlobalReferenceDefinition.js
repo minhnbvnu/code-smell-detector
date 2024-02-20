@@ -1,0 +1,1 @@
+function GlobalReferenceDefinition(name, definition) { this.identifier = name; this.definition = definition; }

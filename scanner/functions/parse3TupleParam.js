@@ -1,3 +1,1 @@
-function parse3TupleParam(param) {
-	  return typeof param === 'number' ? [param, param, param] : param;
-	}
+function parse3TupleParam(e){return "number"==typeof e?[e,e,e]:e}

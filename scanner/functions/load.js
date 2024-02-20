@@ -1,21 +1,11 @@
-function load(image, src) {
-  return new Promise((resolve, reject) => {
-    function handleLoad() {
-      unlisten();
-      resolve(image);
-    }
-    function handleError() {
-      unlisten();
-      reject(new Error('Image load error'));
-    }
-    function unlisten() {
-      image.removeEventListener('load', handleLoad);
-      image.removeEventListener('error', handleError);
-    }
-    image.addEventListener('load', handleLoad);
-    image.addEventListener('error', handleError);
-    if (src) {
-      image.src = src;
-    }
-  });
+function load(input, options) {
+  var documents = loadDocuments(input, options);
+
+  if (documents.length === 0) {
+    /*eslint-disable no-undefined*/
+    return undefined;
+  } else if (documents.length === 1) {
+    return documents[0];
+  }
+  throw new exception('expected a single document in the stream, but found more');
 }

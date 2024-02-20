@@ -1,0 +1,1 @@
+function parse_BIFF2STR(blob,length,opts){var cell=parse_XLSCell(blob,6);++blob.l;var str=parse_XLUnicodeString2(blob,length-7,opts);cell.val=str;return cell}

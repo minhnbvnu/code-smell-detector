@@ -1,0 +1,1 @@
+function EffectiveOutputPolicy(t){var o;_classCallCheck(this,EffectiveOutputPolicy);(o=r.call(this,u,"effectiveOutputPolicy")).id=t.id||"";o.name=t.name||"";o.use=t.use||"";o.usehref=t.usehref||"";return o}

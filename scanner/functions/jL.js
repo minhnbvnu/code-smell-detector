@@ -1,0 +1,1 @@
+function jL(t,e){return $L(t.node2,e)}

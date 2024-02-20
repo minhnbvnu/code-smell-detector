@@ -1,0 +1,1 @@
+function zY(n){let{inputs:t,backend:e,attrs:i}=n,{x:r}=t,{filterSize:o,strides:s,pad:a,dimRoundingMode:l,dataFormat:c}=i,u=[1,1,1],h=F.computePool3DInfo(r.shape,o,s,u,a,l,c),p=new Xo(h,"avg",!1);return e.runWebGLProgram(p,[r],"float32")}

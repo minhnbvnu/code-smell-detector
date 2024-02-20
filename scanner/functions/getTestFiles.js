@@ -1,0 +1,3 @@
+function getTestFiles() {
+  return previousTestFiles
+}

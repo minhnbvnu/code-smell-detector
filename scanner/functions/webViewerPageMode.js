@@ -5,24 +5,20 @@ function webViewerPageMode({
 
   switch (mode) {
     case "thumbs":
-      view = _ui_utils.SidebarView.THUMBS;
+      view = _pdf_sidebar.SidebarView.THUMBS;
       break;
 
     case "bookmarks":
     case "outline":
-      view = _ui_utils.SidebarView.OUTLINE;
+      view = _pdf_sidebar.SidebarView.OUTLINE;
       break;
 
     case "attachments":
-      view = _ui_utils.SidebarView.ATTACHMENTS;
-      break;
-
-    case "layers":
-      view = _ui_utils.SidebarView.LAYERS;
+      view = _pdf_sidebar.SidebarView.ATTACHMENTS;
       break;
 
     case "none":
-      view = _ui_utils.SidebarView.NONE;
+      view = _pdf_sidebar.SidebarView.NONE;
       break;
 
     default:

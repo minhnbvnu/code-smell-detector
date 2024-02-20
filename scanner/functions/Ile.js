@@ -1,0 +1,1 @@
+function Ile(e,t){for(Jr.buffer(e),Jr.number(t);e.length>t;)Jr.equal(e[0],0),e=e.slice(1);for(;e.length<t;){var r=In.alloc(e.length+1);r[0]=0,e.copy(r,1),e=r}return e}

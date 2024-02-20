@@ -1,0 +1,1 @@
+function rectToClientRect(i){return Object.assign({},i,{left:i.x,top:i.y,right:i.x+i.width,bottom:i.y+i.height})}

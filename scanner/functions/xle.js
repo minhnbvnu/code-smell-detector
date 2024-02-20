@@ -1,0 +1,1 @@
+function xle(e){return tt.define({combine:e?t=>t.concat(e):void 0})}

@@ -1,0 +1,1 @@
+function gfe(e,t,r){e.signatures.x509===void 0&&(e.signatures.x509={});var i=e.signatures.x509,a=new fr.BerWriter;j2(e,a);var n=a.buffer;i.cache=n,t(n,function(s,o){if(s){r(s);return}if(i.algo=o.type+"-"+o.hashAlgorithm,Gs[i.algo]===void 0){r(new Error('Invalid signing algorithm "'+i.algo+'"'));return}i.signature=o,r()})}

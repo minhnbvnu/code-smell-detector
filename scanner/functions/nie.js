@@ -1,0 +1,1 @@
+function nie(e){e.on("maximize",t=>{var i;let r=t==null?void 0:t.sender;(i=r==null?void 0:r.webContents)==null||i.send(MC,new Us(zr.ApplicationWindowStatus,Vp.Maximized))}),e.on("unmaximize",t=>{var i;let r=t==null?void 0:t.sender;(i=r==null?void 0:r.webContents)==null||i.send(MC,new Us(zr.ApplicationWindowStatus,Vp.Normal))})}

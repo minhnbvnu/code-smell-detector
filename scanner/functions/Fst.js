@@ -1,0 +1,1 @@
+function Fst(n){return function(){this.removeAttribute(n)}}

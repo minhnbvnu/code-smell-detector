@@ -1,0 +1,1 @@
+function parseOneOfSet(i){for(var o=[],s=0;s<i.length;){if("-"===i[s]){if(0===s||s===i.length-1)throw new Error("Couldn't parse a one-of set pattern: ".concat(i));for(var u=i[s-1].charCodeAt(0)+1,C=i[s+1].charCodeAt(0)-1,_=u;_<=C;)o.push(String.fromCharCode(_)),_++}else o.push(i[s]);s++}return o}

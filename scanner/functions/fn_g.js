@@ -1,11 +1,1 @@
-function fn_g(x) {
-    let result;
-
-    if (x >= 6 / 29) {
-      result = x ** 3;
-    } else {
-      result = 108 / 841 * (x - 4 / 29);
-    }
-
-    return result;
-  }
+function fn_g(t){return t>=6/29?Math.pow(t,3):108/841*(t-4/29)}

@@ -1,0 +1,1 @@
+function _setStroke2(){this.ctx.lineWidth=this.thickness*this.parent.scaleFactor/this.scaleFactor;this.ctx.lineCap="round";this.ctx.lineJoin="round";this.ctx.miterLimit=10;this.ctx.strokeStyle="".concat(this.color).concat((0,c.opacityToHex)(this.opacity))}

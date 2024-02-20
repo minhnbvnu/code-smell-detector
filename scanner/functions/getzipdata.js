@@ -1,0 +1,1 @@
+function getzipdata(zip,file,safe){if(!safe)return getdata(getzipfile(zip,file));if(!file)return null;try{return getzipdata(zip,file)}catch(e){return null}}

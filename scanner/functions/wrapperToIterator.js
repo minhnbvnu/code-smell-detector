@@ -1,0 +1,3 @@
+function wrapperToIterator() {
+      return this;
+    }

@@ -1,0 +1,1 @@
+function testWebRTC (results) { this.initialize(results); }

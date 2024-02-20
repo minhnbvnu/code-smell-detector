@@ -1,0 +1,1 @@
+function setVisibilityState(i,o){i.forEach((function(i){i&&i.setAttribute("data-state",o)}))}

@@ -17,7 +17,7 @@ function set_magnification(new_scale, anchor_point) {
 		return_to_magnification = new_scale;
 	}
 	update_magnified_canvas_size(); // also updates canvas_bounding_client_rect used by from_canvas_coords()
-
+	
 	const anchor_after_zoom = from_canvas_coords(anchor_point);
 	// Note: scrollBy() not scrollTo()
 	$canvas_area[0].scrollBy({
@@ -28,5 +28,4 @@ function set_magnification(new_scale, anchor_point) {
 
 	$G.triggerHandler("resize"); // updates handles & grid
 	$G.trigger("option-changed"); // updates options area
-	$G.trigger("magnification-changed"); // updates custom zoom window
 }

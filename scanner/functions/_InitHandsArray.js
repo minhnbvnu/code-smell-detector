@@ -1,0 +1,1 @@
+function _InitHandsArray(byteOffset){Module.HandsArrayOffset=byteOffset/4}

@@ -1,1 +1,1 @@
-function Ao(t,n){switch(n){case"session":return t.o;case"none":return t.w;default:return t.l}}
+function Ao(){var t,e,i,n,r=this.localeData().eras();for(t=0,e=r.length;t<e;++t)if(i=r[t].since<=r[t].until?1:-1,n=this.clone().startOf("day").valueOf(),r[t].since<=n&&n<=r[t].until||r[t].until<=n&&n<=r[t].since)return(this.year()-o(r[t].since).year())*i+r[t].offset;return this.year()}

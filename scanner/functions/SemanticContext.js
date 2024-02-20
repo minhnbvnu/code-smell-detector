@@ -1,0 +1,3 @@
+function SemanticContext() {
+	return this;
+}

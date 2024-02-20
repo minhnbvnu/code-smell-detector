@@ -1,0 +1,1 @@
+function WO(t){t.shapes().question=o3,t.shapes().hexagon=l3,t.shapes().stadium=g3,t.shapes().subroutine=y3,t.shapes().cylinder=m3,t.shapes().rect_left_inv_arrow=c3,t.shapes().lean_right=u3,t.shapes().lean_left=h3,t.shapes().trapezoid=d3,t.shapes().inv_trapezoid=f3,t.shapes().rect_right_inv_arrow=p3}

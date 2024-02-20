@@ -1,0 +1,2 @@
+function Mandreel_CanvasDiv() {
+}

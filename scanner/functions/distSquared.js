@@ -1,10 +1,1 @@
-function distSquared(a, b) {
-	  var result = 0;
-
-	  for (var i = 0; i < a.length; i++) {
-	    var diff = Number(a[i]) - Number(b[i]);
-	    result += diff * diff;
-	  }
-
-	  return result;
-	}
+function distSquared(e,t){for(var n=0,r=0;r<e.length;r++){var o=Number(e[r])-Number(t[r]);n+=o*o;}return n}

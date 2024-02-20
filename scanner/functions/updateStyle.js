@@ -1,54 +1,99 @@
-function updateStyle() {
-  iconStyle
-    .getImage()
-    .setRotation(parseFloat(controls['rotation'].value) * Math.PI);
+function updateStyle (oldVnode, vnode) {
+  if (vnode.data.staticClass !== oldVnode.data.staticClass ||
+    vnode.data.staticStyle !== oldVnode.data.staticStyle) {
+    setStaticStyles(oldVnode, vnode);
+  }
 
-  iconStyle.getImage().setRotateWithView(controls['rotateWithView'].checked);
+    /**
+   * @baseStyle: static staticStyle & staticClass cache
+   * @preStyles: current style & class collection
+   * @bindClassStyle: -> :class
+   * @bindStyle: -> :style
+   */
 
-  iconStyle
-    .getImage()
-    .setScale([
-      parseFloat(controls['scaleX'].value),
-      parseFloat(controls['scaleY'].value),
-    ]);
+  var elm = vnode.elm;
+  var oldStyle = oldVnode.data.style;
+  var baseStyle = oldVnode.data.baseStyle || vnode.data.baseStyle;
 
-  iconStyle
-    .getImage()
-    .setAnchor([
-      parseFloat(controls['anchorX'].value),
-      parseFloat(controls['anchorY'].value),
-    ]);
+  // get default tag styles
 
-  iconStyle
-    .getImage()
-    .setDisplacement([
-      parseFloat(controls['displacementX'].value),
-      parseFloat(controls['displacementY'].value),
-    ]);
+  var preStyles = {};
+  if (oldStyle) {
+    for (var name in oldStyle) {
+      // new style wait to del
+      var norName = normalize(name);
+      if (norName) {
+        preStyles[norName] = baseStyle && baseStyle[name] || '';
+      }
+    }
+  }
 
-  iconStyle
-    .getText()
-    .setRotation(parseFloat(controls['textRotation'].value) * Math.PI);
+  // process v-bind:style v-bind:class
+  var bindStyle = {};
+  var attrs = vnode.data;
+  var styleMap = vnode.context._data.style;
+  var bindClassStyle = {};
+  if (attrs) {
+    // [style1,style2] style1:{color:'#ff3355'},style2:{fontSize:80}
+    if (Array.isArray(attrs.style)) {
+      for (var i = 0; i < attrs.style.length; i++) {
+        bindStyle = extend(bindStyle, attrs.style[i]);
+      }
+    } else if (typeof attrs.style === 'object') {
+      // {color:'#ff3355',fontSize:80}
+      bindStyle = attrs.style;
+    }
+    // [class1,class2] .class1{height:200} .active{width:400}
+    if (Array.isArray(attrs.class)) {
+      for (var i$1 = 0; i$1 < attrs.class.length; i$1++) {
+        var klass = attrs.class[i$1];
+        bindClassStyle = extend(bindClassStyle, styleMap[klass]);
+      }
+    } else if (typeof attrs.class === 'object') {
+      // {class1:true|false,class2:true|false}
+      var truebindStyle = {};
+      var falsebindStyle = {};
+      for (var klass$1 in attrs.class) {
+        if (attrs.class[klass$1]) {
+          truebindStyle = extend(truebindStyle, styleMap[klass$1]);
+        } else {
+          // class[klass] is false
+          var tmpFalsebindStyle = {};
+          for (var styleKey in styleMap[klass$1]) {
+            if (baseStyle && baseStyle[styleKey]) {
+              tmpFalsebindStyle[styleKey] = baseStyle[styleKey];
+            } else {
+              tmpFalsebindStyle[styleKey] = '';
+            }
+          }
+          falsebindStyle = extend(falsebindStyle, tmpFalsebindStyle);
+        }
+      }
+      bindClassStyle = extend(bindClassStyle, falsebindStyle);
+      bindClassStyle = extend(bindClassStyle, truebindStyle);
+    }
+  }
 
-  iconStyle.getText().setRotateWithView(controls['textRotateWithView'].checked);
+  // clone the style for future updates,
+  // in case the user mutates the style object in-place.
+  var curStyles = extend(bindClassStyle, bindStyle);
+  var normalizedCurStyles = {};
+  if (!isEmptyObject(curStyles)) {
+    for (var key in curStyles) {
+      normalizedCurStyles[normalize(key)] = curStyles[key];
+    }
+    vnode.data.style = normalizedCurStyles;
+  }
 
-  iconStyle
-    .getText()
-    .setScale([
-      parseFloat(controls['textScaleX'].value),
-      parseFloat(controls['textScaleY'].value),
-    ]);
+  if (baseStyle) {
+    vnode.data.baseStyle = extend({}, baseStyle);
+  }
 
-  iconStyle
-    .getText()
-    .setTextAlign(textAlignments[parseFloat(controls['textAlign'].value)]);
+  preStyles = extend(preStyles, normalizedCurStyles);
 
-  iconStyle
-    .getText()
-    .setTextBaseline(textBaselines[parseFloat(controls['textBaseline'].value)]);
+  setStyles(elm, preStyles);
 
-  iconStyle.getText().setOffsetX(parseFloat(controls['textOffsetX'].value));
-  iconStyle.getText().setOffsetY(parseFloat(controls['textOffsetY'].value));
-
-  iconFeature.changed();
+  if(elm && !elm.style && !isEmptyObject(preStyles)) {
+    elm.setStyle('', '');
+  }
 }

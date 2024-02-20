@@ -1,7 +1,1 @@
-function relu_(x) {
-	  var $x = convertToTensor(x, 'x', 'relu');
-	  var inputs = {
-	    x: $x
-	  };
-	  return ENGINE.runKernel(Relu, inputs);
-	}
+function relu_(e){var t=convertToTensor(e,"x","relu");if("bool"===t.dtype)return t.toInt();return ENV.engine.runKernel(function(e){return e.relu(t)},{$x:t},function(e){var n=t.step();return {$x:function(){return e.mulStrict(n.toFloat())}}})}

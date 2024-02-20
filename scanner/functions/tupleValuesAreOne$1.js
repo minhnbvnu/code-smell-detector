@@ -1,0 +1,1 @@
+function tupleValuesAreOne$1(e){var t=parseTupleParam$1(e),n=t[0],r=t[1],o=t[2];return 1===n&&1===r&&1===o}

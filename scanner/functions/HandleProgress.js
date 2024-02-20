@@ -1,0 +1,1 @@
+function HandleProgress(e){if(!onprogress||!e.lengthComputable){return}var response=e.response;wr.responses[requestId]=response;if(e.chunk){var buffer=getTempBuffer(e.chunk.length);HEAPU8.set(e.chunk,buffer);dynCall("viiiiii",onprogress,[arg,response.status,e.loaded,e.total,buffer,e.chunk.length])}else{dynCall("viiiiii",onprogress,[arg,response.status,e.loaded,e.total,0,0])}}

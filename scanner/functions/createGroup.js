@@ -1,8 +1,1 @@
-function createGroup(behavior, disjunction, from, to) {
-	      return addRaw({
-	        type: 'group',
-	        behavior: behavior,
-	        body: disjunction,
-	        range: [from, to]
-	      });
-	    }
+function createGroup(i,o,s,u){return addRaw({type:"group",behavior:i,body:o,range:[s,u]})}

@@ -1,0 +1,1 @@
+function Enforce(t){_classCallCheck(this,Enforce);return r.call(this,d,"enforce")}

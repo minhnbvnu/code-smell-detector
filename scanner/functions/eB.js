@@ -1,1 +1,1 @@
-function eb(a){a=a|0;return H[a+28>>2]}
+function eB(t,e,r){return t.hasEdge(e,r)}

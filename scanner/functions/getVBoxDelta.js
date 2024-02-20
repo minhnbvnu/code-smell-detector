@@ -1,0 +1,1 @@
+function getVBoxDelta(e){var o=0;return e&&"function"==typeof e.css&&$.each(["borderTopWidth","borderBottomWidth","paddingTop","paddingBottom"],(function(t,n){o+=parseFloat(e.css(n))||0})),o}

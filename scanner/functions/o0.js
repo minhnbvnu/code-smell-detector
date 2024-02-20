@@ -1,0 +1,1 @@
+function o0(e,t){var n=arguments.length>2&&void 0!==arguments[2]?arguments[2]:{};Object.assign(t,i0,n),Se.setGet(e,t,[]),Se.obj(e,t),Se.algo(e,t,1,1),r0(e,t)}

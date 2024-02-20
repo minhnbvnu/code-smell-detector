@@ -1,0 +1,1 @@
+function Bat(n,t,e){var i,r;if(typeof e!="function")throw new Error;return function(){var o=ri(this,n),s=o.tween;if(s!==i){r=(i=s).slice();for(var a={name:t,value:e},l=0,c=r.length;l<c;++l)if(r[l].name===t){r[l]=a;break}l===c&&r.push(a)}o.tween=r}}

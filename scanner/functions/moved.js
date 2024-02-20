@@ -1,0 +1,1 @@
+function moved (type) { drake.emit(type, item, _lastDropTarget, _source); }

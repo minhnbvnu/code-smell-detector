@@ -1,0 +1,1 @@
+function LG(t,e,n,i){return t*i-n*e}

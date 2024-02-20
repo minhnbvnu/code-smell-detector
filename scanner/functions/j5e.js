@@ -1,0 +1,1 @@
+function j5e(e,t,r){if(!e||!e.length)return r;for(var i=0;i<e.length&&(r=e[i](r,t),!!r);i++);return r}

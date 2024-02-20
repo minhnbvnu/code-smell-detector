@@ -1,0 +1,1 @@
+function WRe(e){up(e);const t=e.codePointAt(0)===47;let r=ZRe(e,!t);return r.length===0&&!t&&(r="."),r.length>0&&e.codePointAt(e.length-1)===47&&(r+="/"),t?"/"+r:r}

@@ -1,0 +1,1 @@
+function parse_EncryptionHeader(blob,length){var o={};o.Flags=blob.read_shift(4);var tmp=blob.read_shift(4);if(tmp!==0)throw"Unrecognized SizeExtra: "+tmp;o.AlgID=blob.read_shift(4);switch(o.AlgID){case 0:case 26625:case 26126:case 26127:case 26128:break;default:throw"Unrecognized encryption algorithm: "+o.AlgID}parsenoop(blob,length-12);return o}

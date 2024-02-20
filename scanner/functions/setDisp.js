@@ -1,0 +1,1 @@
+function setDisp(_,$){for(i=0;i<_.length;i++)_[i].style.display=$}

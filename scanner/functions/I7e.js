@@ -1,0 +1,1 @@
+function I7e(e,t){if(/\(\)|\[\]|\{\}/.test(e.sliceDoc(t-1,t+1)))return{from:t,to:t};let r=Bn(e).resolveInner(t),n=r.childBefore(t),i=r.childAfter(t),a;return n&&i&&n.to<=t&&i.from>=t&&(a=n.type.prop(kt.closedBy))&&a.indexOf(i.name)>-1&&e.doc.lineAt(n.to).from==e.doc.lineAt(i.from).from&&!/\S/.test(e.sliceDoc(n.to,i.from))?{from:n.to,to:i.from}:null}

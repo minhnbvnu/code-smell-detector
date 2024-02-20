@@ -1,0 +1,1 @@
+function elementIsVisible(el){return!!(el[LEXICON.oW]||el[LEXICON.oH]||el.getClientRects()[LEXICON.l])}

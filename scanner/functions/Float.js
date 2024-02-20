@@ -1,0 +1,1 @@
+function Float(t){var o;_classCallCheck(this,Float);(o=r.call(this,_,"float")).id=t.id||"";o.name=t.name||"";o.use=t.use||"";o.usehref=t.usehref||"";return o}

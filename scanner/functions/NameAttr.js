@@ -1,0 +1,1 @@
+function NameAttr(t){_classCallCheck(this,NameAttr);return r.call(this,d,"nameAttr")}

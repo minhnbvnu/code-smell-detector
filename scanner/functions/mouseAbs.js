@@ -1,0 +1,1 @@
+function mouseAbs(e){return[(e.pageX-docOffset[0]),(e.pageY-docOffset[1])]}

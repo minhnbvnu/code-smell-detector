@@ -1,0 +1,1 @@
+function TH(){for(var n=0,t=Kf.length;n<t;n++)document.removeEventListener(Kf[n],qf,{capture:!0,passive:!1})}

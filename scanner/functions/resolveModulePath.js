@@ -1,32 +1,19 @@
-function resolveModulePath(relativePath, parentModule) {
-  if (!relativePath) return;
-  if (!(parentModule && parentModule.filename)) return;
-
-  if (!nativeModules) nativeModules = process.binding('natives');
-  if (nativeModules.hasOwnProperty(relativePath)) return;
-  if (relativePath[0] === '.') return;
-  if (isAbsolute(relativePath)) return;
-
-  const folderPath = path.dirname(parentModule.filename);
-
-  const range =
-    cache.folders[folderPath] && cache.folders[folderPath][relativePath];
-  if (!range) {
-    const builtinPath = cache.builtins[relativePath];
-    if (builtinPath) {
-      return builtinPath;
-    } else {
-      return;
+function resolveModulePath(env, path) {
+    if (path.type === IDENTIFIER) {
+        var def = env.lookup(path.value);
+        if (def.type !== MODULE_DEF)
+            throw new ReferenceError(path.value + " is not a module");
+        path.denotedModule = def.binding;
+        return def.binding;
     }
-  }
 
-  const candidates = cache.dependencies[relativePath];
-  if (candidates == null) return;
+    var mod = resolveModulePath(env, path.children[0]);
+    var name = path.children[1].value;
+    // BUG 620824: better error message
+    if (!mod.exportedModules.has(name))
+        throw new ReferenceError("no exported module '" + name + "'");
 
-  for (let version in candidates) {
-    const resolvedPath = candidates[version];
-    if (Module._cache[resolvedPath] || isCorePath(resolvedPath)) {
-      if (satisfies(version, range)) return resolvedPath;
-    }
-  }
+    var mod2 = mod.exportedModules.get(name).module;
+    path.denotedModule = mod2;
+    return mod2;
 }

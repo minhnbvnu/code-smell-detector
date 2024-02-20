@@ -1,0 +1,1 @@
+function getPageTitle(i,o,s){if(s===fs.notFound)return"Page not found";if(i.length){if(s===fs.component||s===fs.example&&i[0].components)return au()(i[0],"components.0.name",i[0].name)+" — "+o;if(s===fs.section||s===fs.example)return i[0].name+" — "+o}return o}

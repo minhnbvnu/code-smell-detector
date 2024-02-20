@@ -1,0 +1,1 @@
+function pW(t){var e=t.getModel("universalTransition").get("seriesKey");return e||t.id}

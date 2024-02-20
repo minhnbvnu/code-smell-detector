@@ -1,0 +1,1 @@
+function Compression(t){var o;_classCallCheck(this,Compression);(o=r.call(this,d,"compression",!0)).compressLogicalStructure=null;o.compressObjectStream=null;o.level=null;o.type=null;return o}

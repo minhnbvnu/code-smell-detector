@@ -1,0 +1,1 @@
+function TimePatterns(t){var o;_classCallCheck(this,TimePatterns);(o=r.call(this,h,"timePatterns",!0)).timePattern=new l.XFAObjectArray(4);return o}

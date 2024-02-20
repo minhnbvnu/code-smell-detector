@@ -1,0 +1,1 @@
+function GF(t,e,n,i){return new Wu({shape:{points:t},draggable:!!n,cursor:e,drift:n,onmousemove:function(t){de(t.event)},ondragend:i})}

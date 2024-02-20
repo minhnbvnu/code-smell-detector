@@ -1,4 +1,4 @@
-function fusedConv2d(args) {
+function fusedConv2D(args) {
 	  var inputs = args.inputs,
 	      backend = args.backend,
 	      attrs = args.attrs;
@@ -13,74 +13,38 @@ function fusedConv2d(args) {
 	      dimRoundingMode = attrs.dimRoundingMode,
 	      activation = attrs.activation,
 	      leakyreluAlpha = attrs.leakyreluAlpha;
-	  var $dataFormat = convertConv2DDataFormat(dataFormat);
-	  var convInfo = computeConv2DInfo(x.shape, filter.shape, strides, dilations, pad, dimRoundingMode, false
-	  /* depthwise */
-	  , $dataFormat);
-	  var out;
-	  var intermediates = [];
-
-	  if (convInfo.filterHeight === 1 && convInfo.filterWidth === 1 && convInfo.dilationHeight === 1 && convInfo.dilationWidth === 1 && convInfo.strideHeight === 1 && convInfo.strideWidth === 1 && (convInfo.padInfo.type === 'SAME' || convInfo.padInfo.type === 'VALID')) {
-	    out = conv2dByMatMul({
-	      x: x,
-	      filter: filter,
-	      convInfo: convInfo,
-	      backend: backend,
-	      bias: bias,
-	      activation: activation,
-	      preluActivationWeights: preluActivationWeights,
-	      leakyreluAlpha: leakyreluAlpha
-	    });
-	  } else if (env().getBool('WEBGL_CONV_IM2COL') && x.shape[0] === 1) {
-	    out = conv2dWithIm2Row({
-	      x: x,
-	      filter: filter,
-	      convInfo: convInfo,
-	      backend: backend,
-	      bias: bias,
-	      activation: activation,
-	      preluActivationWeights: preluActivationWeights,
-	      leakyreluAlpha: leakyreluAlpha
-	    });
-	  } else {
-	    var hasBias = bias != null;
-	    var hasPreluActivationWeights = preluActivationWeights != null;
-	    var hasLeakyreluAlpha = activation === 'leakyrelu';
-	    var fusedActivation = activation ? mapActivationToShaderProgram(activation, false) : null;
-	    var program = new Conv2DProgram(convInfo, hasBias, fusedActivation, hasPreluActivationWeights, hasLeakyreluAlpha);
-	    var _inputs = [x, filter];
-
-	    if (bias) {
-	      _inputs.push(bias);
-	    }
-
-	    if (preluActivationWeights) {
-	      _inputs.push(preluActivationWeights);
-	    }
-
-	    if (hasLeakyreluAlpha) {
-	      var $leakyreluAlpha = backend.makeTensorInfo([], 'float32', createScalarValue(leakyreluAlpha, 'float32'));
-
-	      _inputs.push($leakyreluAlpha);
-
-	      intermediates.push($leakyreluAlpha);
-	    }
-
-	    out = backend.runWebGLProgram(program, _inputs, 'float32');
-	  }
-
-	  var outReshaped = reshape$3({
+	  var result = conv2D({
 	    inputs: {
-	      x: out
+	      x: x,
+	      filter: filter
 	    },
 	    backend: backend,
 	    attrs: {
-	      shape: convInfo.outShape
+	      strides: strides,
+	      pad: pad,
+	      dataFormat: dataFormat,
+	      dilations: dilations,
+	      dimRoundingMode: dimRoundingMode
 	    }
 	  });
-	  intermediates.push(out);
-	  intermediates.forEach(function (t) {
-	    return backend.disposeIntermediateTensorInfo(t);
-	  });
-	  return outReshaped;
+
+	  if (bias) {
+	    var resultOld = result;
+	    result = add$4({
+	      inputs: {
+	        a: result,
+	        b: bias
+	      },
+	      backend: backend
+	    });
+	    backend.disposeIntermediateTensorInfo(resultOld);
+	  }
+
+	  if (activation) {
+	    var _resultOld = result;
+	    result = applyActivation$1(backend, result, activation, preluActivationWeights, leakyreluAlpha);
+	    backend.disposeIntermediateTensorInfo(_resultOld);
+	  }
+
+	  return result;
 	}

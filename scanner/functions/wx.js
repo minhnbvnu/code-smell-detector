@@ -1,0 +1,1 @@
+function wx(t){return function(){this.removeAttribute(t)}}

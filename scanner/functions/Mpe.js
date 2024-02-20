@@ -1,0 +1,1 @@
+function Mpe(e,t){let{children:r,...n}=e,i=SR(t),a={...n,ref:i};return S.createElement(oU.Provider,{value:a},r)}

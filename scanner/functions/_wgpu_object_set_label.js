@@ -1,0 +1,1 @@
+function _wgpu_object_set_label(o,label){wgpu[o]["label"]=UTF8ToString(label)}

@@ -1,1 +1,1 @@
-function $n(t,n,e){t.c=e?re(n,!0):n,t.c&&(t.c=t.c.replace(/:$/,""))}
+function $n(t,e,i){var n,o,r;if(!this.isValid())return NaN;if(!(n=pn(t,this)).isValid())return NaN;switch(o=6e4*(n.utcOffset()-this.utcOffset()),e=ot(e)){case"year":r=Kn(this,n)/12;break;case"month":r=Kn(this,n);break;case"quarter":r=Kn(this,n)/3;break;case"second":r=(this-n)/1e3;break;case"minute":r=(this-n)/6e4;break;case"hour":r=(this-n)/36e5;break;case"day":r=(this-n-o)/864e5;break;case"week":r=(this-n-o)/6048e5;break;default:r=this-n}return i?r:ut(r)}

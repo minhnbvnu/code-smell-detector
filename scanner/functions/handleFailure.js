@@ -1,1 +1,0 @@
-function handleFailure(data) { console.log('error', data); }

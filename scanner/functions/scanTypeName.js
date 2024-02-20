@@ -1,0 +1,1 @@
+function scanTypeName(){for(z=advance();w<_&&isTypeName(C.charCodeAt(w));){if(46===C.charCodeAt(w)){if(w+1>=_)return u.ILLEGAL;if(60===C.charCodeAt(w+1))break}z+=advance()}return u.NAME}

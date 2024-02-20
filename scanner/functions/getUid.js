@@ -1,3 +1,6 @@
-function getUid(obj) {
-  return obj.ol_uid || (obj.ol_uid = String(++uidCounter_));
+function getUid() {
+  if (process.platform !== 'win32' && process.getuid) {
+    return process.getuid();
+  }
+  return null;
 }

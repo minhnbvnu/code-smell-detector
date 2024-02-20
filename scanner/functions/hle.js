@@ -1,0 +1,1 @@
+function hle(){var e={scalar:{},sequence:{},mapping:{},fallback:{}},t,r;function i(a){e[a.kind][a.tag]=e.fallback[a.tag]=a}for(t=0,r=arguments.length;t<r;t+=1)arguments[t].forEach(i);return e}

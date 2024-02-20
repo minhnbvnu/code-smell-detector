@@ -1,0 +1,1 @@
+function _6(t){return((t*=2)<=1?t*t*t:(t-=2)*t*t+2)/2}

@@ -1,0 +1,1 @@
+function cleanupRows(e){for(var o in rowsCache){var t=!0;hasFrozenRows&&(options.frozenBottom&&o>=actualFrozenRow||!options.frozenBottom&&o<=actualFrozenRow)&&(t=!1),(o=parseInt(o,10))!==activeRow&&(o<e.top||o>e.bottom)&&t&&removeRowFromCache(o)}options.enableAsyncPostRenderCleanup&&startPostProcessingCleanup()}

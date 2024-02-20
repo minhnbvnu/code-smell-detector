@@ -1,9 +1,1 @@
-function getUnicodeRangeFor(value) {
- for (let i = 0, ii = UnicodeRanges.length; i < ii; i++) {
-  const range = UnicodeRanges[i];
-  if (value >= range.begin && value < range.end) {
-   return i;
-  }
- }
- return -1;
-}
+function getUnicodeRangeFor(t){for(let r=0,o=u.length;r<o;r++){const o=u[r];if(t>=o.begin&&t<o.end)return r}return-1}

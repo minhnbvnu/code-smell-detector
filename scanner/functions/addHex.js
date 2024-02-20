@@ -1,9 +1,1 @@
-function addHex(a, b, size) {
-    var c = 0;
-
-    for (var i = size; i >= 0; i--) {
-      c += a[i] + b[i];
-      a[i] = c & 255;
-      c >>= 8;
-    }
-  }
+function addHex(t,r,o){for(var c=0,l=o;l>=0;l--){c+=t[l]+r[l];t[l]=255&c;c>>=8}}

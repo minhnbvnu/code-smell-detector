@@ -1,0 +1,1 @@
+function Eye(e,t,r,i,a){if(!t)return _ye(e.mode,r,i,a);if(t&&!t.isDirectory())throw new Error(`Cannot overwrite non-directory '${i}' with directory '${r}'.`);return eq(r,i,a)}

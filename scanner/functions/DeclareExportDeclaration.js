@@ -1,12 +1,13 @@
 function DeclareExportDeclaration(node) {
-	  this.word("declare");
-	  this.space();
-	  this.word("export");
-	  this.space();
-	  if (node.default) {
-	    this.word("default");
-	    this.space();
-	  }
+  this.word("declare");
+  this.space();
+  this.word("export");
+  this.space();
 
-	  FlowExportDeclaration.apply(this, arguments);
-	}
+  if (node.default) {
+    this.word("default");
+    this.space();
+  }
+
+  FlowExportDeclaration.apply(this, arguments);
+}

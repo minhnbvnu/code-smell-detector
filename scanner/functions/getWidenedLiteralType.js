@@ -1,0 +1,3 @@
+function getWidenedLiteralType(type) {
+                return type.flags & 1056 /* EnumLike */ && isFreshLiteralType(type) ? getBaseTypeOfEnumLikeType(type) : type.flags & 128 /* StringLiteral */ && isFreshLiteralType(type) ? stringType : type.flags & 256 /* NumberLiteral */ && isFreshLiteralType(type) ? numberType : type.flags & 2048 /* BigIntLiteral */ && isFreshLiteralType(type) ? bigintType : type.flags & 512 /* BooleanLiteral */ && isFreshLiteralType(type) ? booleanType : type.flags & 1048576 /* Union */ ? mapType(type, getWidenedLiteralType) : type;
+            }

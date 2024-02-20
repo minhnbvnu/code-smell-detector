@@ -1,0 +1,1 @@
+function addDestroyEventListener(element,eventNames,listener,passive){setupResponsiveEventListener(element,eventNames,listener,!1,passive),_destroyEvents.push(COMPATIBILITY.bind(setupResponsiveEventListener,0,element,eventNames,listener,!0,passive))}

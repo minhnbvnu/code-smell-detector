@@ -1,0 +1,1 @@
+function YP(t){let e=null;return function(n){return n?Fy(n,e=e||my(t)):t}}

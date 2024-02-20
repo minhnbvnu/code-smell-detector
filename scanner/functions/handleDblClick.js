@@ -1,0 +1,1 @@
+function handleDblClick(e){var o=getCellFromEvent(e);!o||null!==currentEditor&&activeRow==o.row&&activeCell==o.cell||(trigger(self.onDblClick,{row:o.row,cell:o.cell},e),e.isImmediatePropagationStopped()||options.editable&&gotoCell(o.row,o.cell,!0,e))}

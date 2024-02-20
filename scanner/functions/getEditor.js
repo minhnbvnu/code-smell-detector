@@ -1,0 +1,1 @@
+function getEditor(e,o){var t=columns[o],n=data.getItemMetadata&&data.getItemMetadata(e),l=n&&n.columns;return l&&l[t.id]&&void 0!==l[t.id].editor?l[t.id].editor:l&&l[o]&&void 0!==l[o].editor?l[o].editor:t.editor||options.editorFactory&&options.editorFactory.getEditor(t)}

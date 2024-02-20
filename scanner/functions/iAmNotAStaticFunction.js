@@ -1,0 +1,1 @@
+function iAmNotAStaticFunction() { return 10; }

@@ -1,0 +1,1 @@
+function _emscripten_set_resize_callback_on_thread(target,userData,useCapture,callbackfunc,targetThread){registerUiEventCallback(target,userData,useCapture,callbackfunc,10,"resize",targetThread);return 0}

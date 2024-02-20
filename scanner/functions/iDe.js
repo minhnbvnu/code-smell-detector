@@ -1,0 +1,1 @@
+function iDe(e){e.exit("blockQuote")}

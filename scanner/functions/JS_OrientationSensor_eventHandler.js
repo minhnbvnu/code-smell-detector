@@ -1,0 +1,1 @@
+function JS_OrientationSensor_eventHandler(){if(JS_OrientationSensor_callback!=0)dynCall_vffff(JS_OrientationSensor_callback,JS_OrientationSensor.quaternion[0],JS_OrientationSensor.quaternion[1],JS_OrientationSensor.quaternion[2],JS_OrientationSensor.quaternion[3])}

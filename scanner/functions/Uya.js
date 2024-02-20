@@ -1,0 +1,1 @@
+function Uya(e,a){var r=[];return e&&e.forEach(function(e){var t=formatFileSize(e.size),n=e.title||"---";a&&(n=e[a]+": "+n),r.push({title:n,url:Nya+e.id,info:t,icon:e.format})}),r}

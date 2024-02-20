@@ -1,0 +1,1 @@
+function Background_setPrototypeOf(o, p) { Background_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return Background_setPrototypeOf(o, p); }

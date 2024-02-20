@@ -1,0 +1,1 @@
+function queryTokenizer(s) { return $.trim(s).split(/\s+/); }

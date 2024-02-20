@@ -1,0 +1,1 @@
+function HE(t,e,n,i){t.isGroup||E([["cursor",Sa.prototype.cursor],["zlevel",i||0],["z",n||0],["z2",0]],(function(n){var i=n[0];_t(e,i)?t[i]=rt(e[i],n[1]):null==t[i]&&(t[i]=n[1])})),E(G(e),(function(n){if(0===n.indexOf("on")){var i=e[n];t[n]=X(i)?i:null}})),_t(e,"draggable")&&(t.draggable=e.draggable),null!=e.name&&(t.name=e.name),null!=e.id&&(t.id=e.id)}

@@ -1,0 +1,1 @@
+function DOe(e){let t=null,r=1,i=null,a=0;for(let n=0;n<e.length;++n)e[n]!==0?(a>r&&(t=i,r=a),i=null,a=0):(i===null&&(i=n),++a);return a>r&&(t=i,r=a),{idx:t,len:r}}

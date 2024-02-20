@@ -1,1 +1,1 @@
-function jx(a){a=a|0;var b=0;b=fa-16|0;fa=b;L[b+12>>2]=a;a=oa(96);pm(a,L[b+12>>2],1);fa=b+16|0;return a|0}
+function Jx(t){var e=this._name,r=this._id;typeof t!="function"&&(t=tf(t));for(var n=this._groups,i=n.length,s=[],a=[],o=0;o<i;++o)for(var l=n[o],u=l.length,d,f=0;f<u;++f)if(d=l[f]){for(var p=t.call(d,d.__data__,f,l),g,b=dn(d,r),k=0,T=p.length;k<T;++k)(g=p[k])&&Ml(g,e,r,k,p,b);s.push(p),a.push(d)}return new ri(s,a,e,r)}

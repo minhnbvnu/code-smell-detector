@@ -1,0 +1,1 @@
+function _sum(n,r,u,d,o){var _,m,t,s;return t=_mulmodp(_submodp(n,r),_addmodp(u,d)),s=_mulmodp(_addmodp(n,r),_submodp(u,d)),_=_sqrmodp(_addmodp(t,s)),m=_mulmodp(_sqrmodp(_submodp(t,s)),o),[_,m]}

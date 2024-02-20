@@ -1,0 +1,1 @@
+function Cbs(scope){this.scope=scope}

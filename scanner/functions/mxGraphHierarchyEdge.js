@@ -1,0 +1,1 @@
+function mxGraphHierarchyEdge(a){mxGraphAbstractHierarchyCell.apply(this,arguments);this.edges=a;this.ids=[];for(var b=0;b<a.length;b++)this.ids.push(mxObjectIdentity.get(a[b]))}

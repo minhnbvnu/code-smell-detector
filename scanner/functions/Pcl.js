@@ -1,0 +1,1 @@
+function Pcl(t){var o;_classCallCheck(this,Pcl);(o=r.call(this,d,"pcl",!0)).name=t.name||"";o.batchOutput=null;o.fontInfo=null;o.jog=null;o.mediumInfo=null;o.outputBin=null;o.pageOffset=null;o.staple=null;o.xdc=null;return o}

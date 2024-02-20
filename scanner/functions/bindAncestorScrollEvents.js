@@ -1,0 +1,1 @@
+function bindAncestorScrollEvents(){for(var e=hasFrozenRows&&!options.frozenBottom?$canvasBottomL[0]:$canvasTopL[0];(e=e.parentNode)!=document.body&&null!=e;)if(e==$viewportTopL[0]||e.scrollWidth!=e.clientWidth||e.scrollHeight!=e.clientHeight){var o=$(e);$boundAncestors=$boundAncestors?$boundAncestors.add(o):o,o.on("scroll."+uid,handleActiveCellPositionChange)}}

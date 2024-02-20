@@ -1,0 +1,1 @@
+function getCanvasNode(e,o){return _getContainerElement(getCanvases(),e,o)}

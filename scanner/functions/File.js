@@ -1,3 +1,9 @@
-function File(node) {
-	  this.print(node.program, node);
-	}
+function File() {
+  Item.call(this);
+
+  /**
+   * File content.
+   * @type {Buffer}
+   */
+  this._content = EMPTY;
+}

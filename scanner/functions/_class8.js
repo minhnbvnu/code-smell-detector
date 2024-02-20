@@ -1,0 +1,1 @@
+function _class8(e,t){var r=arguments.length>2&&void 0!==arguments[2]?arguments[2]:o.ERROR;_classCallCheck(this,_class8),this.span=e,this.msg=t,this.level=r}

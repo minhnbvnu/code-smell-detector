@@ -1,0 +1,1 @@
+function TimeSlotManager(){_classCallCheck(this,TimeSlotManager);this.reset()}

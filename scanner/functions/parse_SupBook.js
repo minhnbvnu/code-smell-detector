@@ -1,0 +1,1 @@
+function parse_SupBook(blob,length,opts){var end=blob.l+length;var ctab=blob.read_shift(2);var cch=blob.read_shift(2);var virtPath;if(cch>=1&&cch<=255)virtPath=parse_XLUnicodeStringNoCch(blob,cch);var rgst=blob.read_shift(end-blob.l);opts.sbcch=cch;return[cch,ctab,virtPath,rgst]}

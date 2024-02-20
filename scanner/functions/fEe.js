@@ -1,0 +1,1 @@
+function fEe(e,t){return-1*pG(e,t)}

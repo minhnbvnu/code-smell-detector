@@ -1,0 +1,1 @@
+function JW(t,e,n,i){if(n!=null){const r=(0,g.Kn)(n)&&!(0,g.kJ)(n)||(0,g.kJ)(n)&&n.length&&(0,g.Kn)(n[0]);if(r){t.update[e]=n}else{t[i||"enter"][e]={value:n}}return 1}else{return 0}}

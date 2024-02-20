@@ -1,0 +1,1 @@
+function nt(t,e){var i=t.toLowerCase();it[i]=it[i+"s"]=it[e]=t}

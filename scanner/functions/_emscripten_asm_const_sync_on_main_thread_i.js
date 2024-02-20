@@ -1,0 +1,1 @@
+function _emscripten_asm_const_sync_on_main_thread_i(code){return ASM_CONSTS[code]()}

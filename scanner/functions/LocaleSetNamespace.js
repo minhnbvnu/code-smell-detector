@@ -1,0 +1,1 @@
+function LocaleSetNamespace(){_classCallCheck(this,LocaleSetNamespace)}

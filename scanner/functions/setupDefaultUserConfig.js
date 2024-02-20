@@ -1,0 +1,4 @@
+function setupDefaultUserConfig() {
+    createDefaultConfigJSON();
+    createDefaultSoliumIgnore();
+}

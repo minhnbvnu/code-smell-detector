@@ -1,0 +1,1 @@
+function mxCell(a,b,c){this.value=a;this.setGeometry(b);this.setStyle(c);if(null!=this.onInit)this.onInit()}

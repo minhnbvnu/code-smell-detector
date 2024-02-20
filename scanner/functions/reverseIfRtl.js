@@ -1,11 +1,1 @@
-function reverseIfRtl(chars) {
- const charsLength = chars.length;
- if (charsLength <= 1 || !isRTLRangeFor(chars.charCodeAt(0))) {
-  return chars;
- }
- const buf = [];
- for (let ii = charsLength - 1; ii >= 0; ii--) {
-  buf.push(chars[ii]);
- }
- return buf.join("");
-}
+function reverseIfRtl(t){const r=t.length;if(r<=1||!function isRTLRangeFor(t){let r=u[13];if(t>=r.begin&&t<r.end)return!0;r=u[11];return t>=r.begin&&t<r.end}(t.charCodeAt(0)))return t;const o=[];for(let c=r-1;c>=0;c--)o.push(t[c]);return o.join("")}

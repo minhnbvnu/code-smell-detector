@@ -1,0 +1,1 @@
+function ___cxa_guard_release() {}

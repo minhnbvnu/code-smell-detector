@@ -1,14 +1,12 @@
-function addState(parentState, pattern, checkFn, iterateFn, processFn) {
-    let state = parentState;
+function addState(stateName, stateParams, activeClass) {
+        var state = $state.get(stateName, stateContext($element));
+        var stateHash = createStateHash(stateName, stateParams);
 
-    for (let i = 0, ii = pattern.length - 1; i < ii; i++) {
-      const item = pattern[i];
-      state = state[item] || (state[item] = []);
-    }
+        states.push({
+          state: state || { name: stateName },
+          params: stateParams,
+          hash: stateHash
+        });
 
-    state[pattern[pattern.length - 1]] = {
-      checkFn,
-      iterateFn,
-      processFn
-    };
-  }
+        activeClasses[stateHash] = activeClass;
+      }

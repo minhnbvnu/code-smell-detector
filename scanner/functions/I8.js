@@ -1,0 +1,1 @@
+function I8(t){return t===0&&Number.NEGATIVE_INFINITY===1/t}

@@ -1,20 +1,24 @@
-function crawl(node) {
-	  var state = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+function crawl(map, value, object) {
+  let names = object ? Object.getOwnPropertyNames(value) : STANDARD_GLOBALS
+  let properties = []
 
-	  if (t.isMemberExpression(node)) {
-	    crawl(node.object, state);
-	    if (node.computed) crawl(node.property, state);
-	  } else if (t.isBinary(node) || t.isAssignmentExpression(node)) {
-	    crawl(node.left, state);
-	    crawl(node.right, state);
-	  } else if (t.isCallExpression(node)) {
-	    state.hasCall = true;
-	    crawl(node.callee, state);
-	  } else if (t.isFunction(node)) {
-	    state.hasFunction = true;
-	  } else if (t.isIdentifier(node)) {
-	    state.hasHelper = state.hasHelper || isHelper(node.callee);
-	  }
+  for (let name of names) {
+    let descriptor = Object.getOwnPropertyDescriptor(value, name)
 
-	  return state;
-	}
+    if (Object(descriptor.value) !== descriptor.value) continue
+    if (map.has(descriptor.value)) continue
+
+    let property = {type: 'Identifier', name}
+    if (object) property = {type: 'MemberExpression', object, property}
+
+    map.set(descriptor.value, property)
+
+    properties.push({value: descriptor.value, object: property})
+  }
+
+  for (let property of properties) {
+    crawl(map, property.value, property.object)
+  }
+
+  return map
+}

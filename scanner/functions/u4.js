@@ -1,0 +1,1 @@
+function u4(a){a=a|0;var b=0;if(a)if(!(a&1)){b=a;a=0;do{a=a+1|0;b=b>>>1}while(!(b&1|0))}else a=0;else a=32;return a|0}

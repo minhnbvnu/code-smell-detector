@@ -1,0 +1,1 @@
+function pI(t){var e=(t.ecModel.getComponent("axisPointer")||{}).coordSysAxesInfo;return e&&e.axesInfo[fI(t)]}

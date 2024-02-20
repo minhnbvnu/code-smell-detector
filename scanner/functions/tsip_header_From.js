@@ -1,0 +1,1 @@
+function tsip_header_From(o_uri, s_tag){ tsip_header_NameAddr.call(this, tsip_header_type_e.From, o_uri, s_tag); }

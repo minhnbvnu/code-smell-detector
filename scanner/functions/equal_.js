@@ -1,15 +1,1 @@
-function equal_(a, b) {
-	  var $a = convertToTensor(a, 'a', 'equal');
-	  var $b = convertToTensor(b, 'b', 'equal');
-
-	  var _makeTypesMatch = makeTypesMatch($a, $b);
-
-	  $a = _makeTypesMatch[0];
-	  $b = _makeTypesMatch[1];
-	  assertAndGetBroadcastShape($a.shape, $b.shape);
-	  var inputs = {
-	    a: $a,
-	    b: $b
-	  };
-	  return ENGINE.runKernel(Equal, inputs);
-	}
+function equal_(e,t){var n,r=convertToTensor(e,"a","equal"),o=convertToTensor(t,"b","equal");return n=makeTypesMatch(r,o),r=n[0],o=n[1],assertAndGetBroadcastShape(r.shape,o.shape),ENV.engine.runKernel(function(e){return e.equal(r,o)},{$a:r,$b:o})}

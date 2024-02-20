@@ -1,0 +1,1 @@
+function H5(t,e,r){return function(){this.style.setProperty(t,e,r)}}

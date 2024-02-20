@@ -1,3 +1,3 @@
-function reLU(args) {
-	  return new ReLU(args);
-	}
+function Relu() {
+	    return _Activation3.apply(this, arguments) || this;
+	  }

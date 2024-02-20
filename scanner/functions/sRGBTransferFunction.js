@@ -1,11 +1,1 @@
-function sRGBTransferFunction(color) {
-    if (color <= 0.0031308) {
-      return adjustToRange(0, 1, 12.92 * color);
-    }
-
-    if (color >= 0.99554525) {
-      return 1;
-    }
-
-    return adjustToRange(0, 1, (1 + 0.055) * color ** (1 / 2.4) - 0.055);
-  }
+function sRGBTransferFunction(t){return t<=.0031308?adjustToRange(0,1,12.92*t):t>=.99554525?1:adjustToRange(0,1,1.055*Math.pow(t,1/2.4)-.055)}

@@ -1,0 +1,1 @@
+function wordsToBytes(r){for(var f=[],n=0;n<32*r.length;n+=8)f.push(r[n>>>5]>>>24-n%32&255);return f}

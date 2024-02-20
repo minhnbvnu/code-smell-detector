@@ -1,0 +1,1 @@
+function safe_format_xlml(cell,nf,o){try{if(cell.t==="e"){cell.w=cell.w||BErr[cell.v]}else if(nf==="General"){if(cell.t==="n"){if((cell.v|0)===cell.v)cell.w=SSF._general_int(cell.v);else cell.w=SSF._general_num(cell.v)}else cell.w=SSF._general(cell.v)}else cell.w=xlml_format(nf||"General",cell.v);if(o.cellNF)cell.z=XLMLFormatMap[nf]||nf||"General"}catch(e){if(o.WTF)throw e}}

@@ -1,0 +1,1 @@
+function LinkAnnotationElement(t){var a,i=arguments.length>1&&void 0!==arguments[1]?arguments[1]:null;_classCallCheck(this,LinkAnnotationElement);(a=r.call(this,t,{isRenderable:!0,ignoreBorder:!(null==i||!i.ignoreBorder),createQuadrilaterals:!0})).isTooltipOnly=t.data.isTooltipOnly;return a}

@@ -1,0 +1,1 @@
+function cancelCrop(){Selection.done();Tracker.activateHandlers(null,null)}

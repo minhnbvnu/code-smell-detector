@@ -1,0 +1,1 @@
+function _emscripten_sample_gamepad_data(){return(JSEvents.lastGamepadState=navigator.getGamepads?navigator.getGamepads():navigator.webkitGetGamepads?navigator.webkitGetGamepads():null)?0:-1}

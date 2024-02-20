@@ -1,0 +1,1 @@
+function ghe(e){for(let{element:t,scrollTop:r,scrollLeft:n}of e)t.scrollTop=r,t.scrollLeft=n}

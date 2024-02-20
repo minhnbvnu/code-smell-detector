@@ -1,3 +1,1 @@
-function parseClassEscape() {
-	      return parseAtomEscape(true);
-	    }
+function parseClassEscape(){return parseAtomEscape(!0)}

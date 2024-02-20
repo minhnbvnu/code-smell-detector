@@ -1,0 +1,1 @@
+function mxTriangle(){mxActor.call(this)}

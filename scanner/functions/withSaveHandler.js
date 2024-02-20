@@ -1,3 +1,1 @@
-function withSaveHandler(saveHandler) {
-	  return new PassthroughSaver(saveHandler);
-	}
+function withSaveHandler(e){return new PassthroughSaver(e)}

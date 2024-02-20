@@ -1,0 +1,1 @@
+function TFe(e){let t=e.replace(pFe,IFe);return t.slice(0,3)==="ms-"&&(t="-"+t),t}

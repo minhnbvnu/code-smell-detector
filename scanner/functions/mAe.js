@@ -1,0 +1,1 @@
+function mAe(e){var t=lg();if(!t)return null;try{return t.getPath(e)}catch{return null}}

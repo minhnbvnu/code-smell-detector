@@ -1,0 +1,4 @@
+function getApparentType(type) {
+                const t = !(type.flags & 465829888 /* Instantiable */) ? type : getBaseConstraintOfType(type) || unknownType;
+                return getObjectFlags(t) & 32 /* Mapped */ ? getApparentTypeOfMappedType(t) : t.flags & 2097152 /* Intersection */ ? getApparentTypeOfIntersectionType(t) : t.flags & 402653316 /* StringLike */ ? globalStringType : t.flags & 296 /* NumberLike */ ? globalNumberType : t.flags & 2112 /* BigIntLike */ ? getGlobalBigIntType() : t.flags & 528 /* BooleanLike */ ? globalBooleanType : t.flags & 12288 /* ESSymbolLike */ ? getGlobalESSymbolType() : t.flags & 67108864 /* NonPrimitive */ ? emptyObjectType : t.flags & 4194304 /* Index */ ? keyofConstraintType : t.flags & 2 /* Unknown */ && !strictNullChecks ? emptyObjectType : t;
+            }

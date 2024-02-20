@@ -1,0 +1,1 @@
+function readSP(){return readBits('s', 8);}

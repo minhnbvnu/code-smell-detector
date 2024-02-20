@@ -1,1 +1,1 @@
-function So(t,n,e){n=ko(t,cs("local"),n),t.a[n]&&(N(t.a[n],function(t){return t==e}),0==t.a[n].length&&delete t.a[n]),D(t.a)&&Co(t)}
+function So(){return y(this)}

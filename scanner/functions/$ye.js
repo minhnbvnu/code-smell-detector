@@ -1,0 +1,1 @@
+function $ye(e,t,r){jn.unlink(t,i=>i?r(i):jn.symlink(e,t,r))}

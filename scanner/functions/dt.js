@@ -1,0 +1,1 @@
+function dt(t,e){return d(lt,t)?lt[t](e._strict,e._locale):new RegExp(ct(t.replace("\\","").replace(/\\(\[)|\\(\])|\[([^\]\[]*)\]|\\(.)/g,(function(t,e,i,n,r){return e||i||n||r}))))}

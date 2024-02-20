@@ -1,0 +1,1 @@
+function SubjectDNs(t){var o;_classCallCheck(this,SubjectDNs);(o=r.call(this,_,"subjectDNs",!0)).id=t.id||"";o.type=(0,d.getStringOption)(t.type,["optional","required"]);o.use=t.use||"";o.usehref=t.usehref||"";o.subjectDN=new c.XFAObjectArray;return o}

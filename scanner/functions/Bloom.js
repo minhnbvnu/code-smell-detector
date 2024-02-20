@@ -1,0 +1,1 @@
+function Bloom(e,d,f,a,b){this.p=e;this.r=d;this.c=f;this.pc=a;this.petals=[];this.garden=b;this.init();this.garden.addBloom(this)}

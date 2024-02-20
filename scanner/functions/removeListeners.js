@@ -1,0 +1,1 @@
+function removeListeners(){Y.forEach((function(i){var o=i.node,s=i.eventType,u=i.handler,C=i.options;o.removeEventListener(s,u,C)})),Y=[]}

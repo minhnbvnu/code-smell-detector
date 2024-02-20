@@ -1,1 +1,1 @@
-function Gp(a){a=a|0;var b=0;b=fa-16|0;L[b+12>>2]=a;return L[b+12>>2]+708|0}
+function gp(a,b){a=a|0;b=b|0;var c=0;c=sp(a|0)|0;return ((b|0)==0?a:c)|0}

@@ -1,5 +1,1 @@
-function assertTypesMatch(a, b) {
-	  assert(a.dtype === b.dtype, function () {
-	    return "The dtypes of the first(" + a.dtype + ") and" + (" second(" + b.dtype + ") input must match");
-	  });
-	}
+function assertTypesMatch(e,t){assert(e.dtype===t.dtype,"The dtypes of the first("+e.dtype+") and second("+t.dtype+") input must match");}

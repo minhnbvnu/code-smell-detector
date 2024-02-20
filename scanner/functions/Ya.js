@@ -1,0 +1,1 @@
+function Ya(a){return a&&a.window===a}

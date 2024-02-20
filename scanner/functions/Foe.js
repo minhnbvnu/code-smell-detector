@@ -1,0 +1,1 @@
+function Foe(e,t){let r=Object.create(null);for(let n of e.getChildren(Coe)){let i=n.getChild(L9e),a=n.getChild(UD)||n.getChild(Eoe);i&&(r[t.read(i.from,i.to)]=a?a.type.id==UD?t.read(a.from+1,a.to-1):t.read(a.from,a.to):"")}return r}

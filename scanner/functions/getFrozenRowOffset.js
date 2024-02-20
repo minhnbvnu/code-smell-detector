@@ -1,0 +1,1 @@
+function getFrozenRowOffset(e){return hasFrozenRows?options.frozenBottom?e>=actualFrozenRow?h<viewportTopH?actualFrozenRow*options.rowHeight:h:0:e>=actualFrozenRow?frozenRowsHeight:0:0}

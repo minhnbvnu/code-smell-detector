@@ -1,0 +1,1 @@
+function DefaultTypeface(t){var o;_classCallCheck(this,DefaultTypeface);(o=r.call(this,d,"defaultTypeface")).writingScript=(0,u.getStringOption)(t.writingScript,["*","Arabic","Cyrillic","EastEuropeanRoman","Greek","Hebrew","Japanese","Korean","Roman","SimplifiedChinese","Thai","TraditionalChinese","Vietnamese"]);return o}

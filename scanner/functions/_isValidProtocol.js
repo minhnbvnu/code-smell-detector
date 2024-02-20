@@ -1,17 +1,1 @@
-function _isValidProtocol(url) {
-  if (!url) {
-    return false;
-  }
-
-  switch (url.protocol) {
-    case "http:":
-    case "https:":
-    case "ftp:":
-    case "mailto:":
-    case "tel:":
-      return true;
-
-    default:
-      return false;
-  }
-}
+function _isValidProtocol(t){if(!t)return!1;switch(t.protocol){case"http:":case"https:":case"ftp:":case"mailto:":case"tel:":return!0;default:return!1}}

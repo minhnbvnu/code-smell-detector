@@ -1,0 +1,1 @@
+function vSe(e,t,r){var i="",a=e.tag,n,s;for(n=0,s=r.length;n<s;n+=1)Kc(e,t,r[n],!1,!1)&&(n!==0&&(i+=","+(e.condenseFlow?"":" ")),i+=e.dump);e.tag=a,e.dump="["+i+"]"}

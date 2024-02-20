@@ -1,1 +1,1 @@
-function Hu(a){a=a|0;var b=0;b=fa-16|0;L[b+12>>2]=a;return J[L[b+12>>2]+120|0]&1}
+function hu(t){for(var e=[],i=0;i<t.pointers.length;)e[i]={clientX:Ah(t.pointers[i].clientX),clientY:Ah(t.pointers[i].clientY)},i++;return{timeStamp:Rh(),pointers:e,center:lu(e),deltaX:t.deltaX,deltaY:t.deltaY}}

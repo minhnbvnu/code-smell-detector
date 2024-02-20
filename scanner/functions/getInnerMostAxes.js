@@ -1,9 +1,1 @@
-function getInnerMostAxes(numAxes, rank) {
-	  var res = [];
-
-	  for (var i = rank - numAxes; i < rank; ++i) {
-	    res.push(i);
-	  }
-
-	  return res;
-	}
+function getInnerMostAxes(e,t){for(var n=[],r=t-e;r<t;++r)n.push(r);return n}

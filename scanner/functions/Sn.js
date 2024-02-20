@@ -1,1 +1,1 @@
-function Sn(t){return Au(t,function(t){return t=t.toString(16),1<t.length?t:"0"+t}).join("")}
+function Sn(){return!!this.isValid()&&this._isUTC&&0===this._offset}

@@ -1,0 +1,5 @@
+function qte(e){return new Promise(t=>{process.nextTick(()=>{let r={os:""},i;Y1&&Ht("ioreg -rd1 -c IOPlatformExpertDevice | grep IOPlatformUUID",function(a,n){a||(i=n.toString().split(`
+`)[0].replace(/"/g,"").split("="),r.os=i.length>1?i[1].trim().toLowerCase():""),e&&e(r),t(r)}),O3&&Ht("( cat /var/lib/dbus/machine-id /etc/machine-id 2> /dev/null || hostname ) | head -n 1 || :",function(a,n){a||(r.os=n.toString().split(`
+`)[0].trim().toLowerCase()),e&&e(r),t(r)}),(jte||Lte||Bte)&&Ht("kenv -q smbios.system.uuid",function(a,n){a||(r.os=n.toString().split(`
+`)[0].trim().toLowerCase()),e&&e(r),t(r)}),yg&&Ht('%windir%\\System32\\reg query "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Cryptography" /v MachineGuid',Mr.execOptsWin,function(a,n){a||(i=n.toString().split(`
+\r`)[0].split("REG_SZ"),r.os=i.length>1?i[1].replace(/\r+|\n+|\s+/ig,"").toLowerCase():""),e&&e(r),t(r)})})})}

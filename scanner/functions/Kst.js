@@ -1,0 +1,1 @@
+function Kst(n){return function(){VF(this,n)}}

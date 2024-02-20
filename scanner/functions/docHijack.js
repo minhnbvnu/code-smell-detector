@@ -1,0 +1,1 @@
+function docHijack(p){var old = doc[p];doc[p] = function(v){return addListen(old(v))}}

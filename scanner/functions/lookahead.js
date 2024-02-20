@@ -1,3 +1,1 @@
-function lookahead() {
-	      return str[pos];
-	    }
+function lookahead(){return i[B]}

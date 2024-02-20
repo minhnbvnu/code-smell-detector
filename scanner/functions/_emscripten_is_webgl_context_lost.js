@@ -1,0 +1,1 @@
+function _emscripten_is_webgl_context_lost(contextHandle){return!GL.contexts[contextHandle]||GL.contexts[contextHandle].GLctx.isContextLost()}

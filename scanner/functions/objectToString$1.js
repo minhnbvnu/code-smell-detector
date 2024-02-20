@@ -1,0 +1,1 @@
+function objectToString$1(value){return nativeObjectToString.call(value)}

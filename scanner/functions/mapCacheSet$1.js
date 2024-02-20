@@ -1,0 +1,1 @@
+function mapCacheSet$1(key,value){var data=getMapData(this,key),size=data.size;return data.set(key,value),this.size+=data.size==size?0:1,this}

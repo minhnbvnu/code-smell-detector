@@ -1,0 +1,1 @@
+function Cy(t){return typeof t.constructor=="function"&&!Kc(t)?p9(j1(t)):{}}

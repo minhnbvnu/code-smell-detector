@@ -1,0 +1,1 @@
+function grabTheRightIcon(icon,variant){return toCodePoint(variant==="️"?icon.slice(0,-1):icon.length===3&&icon.charAt(1)==="️"?icon.charAt(0)+icon.charAt(2):icon)}

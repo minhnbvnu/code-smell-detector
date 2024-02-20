@@ -1,0 +1,1 @@
+function t$(n,t,e,i){for(;i*2+1<e;){var r=i*2+1,o=r+1,s=i;if(n[s]<n[r]&&(s=r),o<e&&n[s]<n[o]&&(s=o),s===i)break;var a=n[i];n[i]=n[s],n[s]=a;var l=t[i];t[i]=t[s],t[s]=l,i=s}}

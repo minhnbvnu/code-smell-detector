@@ -1,0 +1,1 @@
+function Wrt(n,t,e){this.id=n,this.addr=e,this.cache=[],this.setValue=Srt(t.type)}

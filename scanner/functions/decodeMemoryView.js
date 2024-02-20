@@ -1,1 +1,7 @@
-function decodeMemoryView(handle){var size=HEAPU32[handle>>2];var data=HEAPU32[handle+4>>2];return new TA(HEAP8.buffer,data,size)}
+function decodeMemoryView(handle) {
+            handle = handle >> 2;
+            var heap = HEAPU32;
+            var size = heap[handle >>> 0];
+            var data = heap[handle + 1 >>> 0];
+            return new TA(heap.buffer, data, size);
+          }

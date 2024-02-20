@@ -1,0 +1,1 @@
+function LRe(e,t){let r;return n;function n(...l){const s=e.length>l.length;let u;s&&l.push(i);try{u=e.apply(this,l)}catch(c){const d=c;if(s&&r)throw d;return i(d)}s||(u instanceof Promise?u.then(a,i):u instanceof Error?i(u):a(u))}function i(l,...s){r||(r=!0,t(l,...s))}function a(l){i(null,l)}}

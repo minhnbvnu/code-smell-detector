@@ -1,0 +1,1 @@
+function acc_1(d) { return d[1] }

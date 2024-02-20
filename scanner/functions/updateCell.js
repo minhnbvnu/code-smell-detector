@@ -1,0 +1,1 @@
+function updateCell(e,o){var t=getCellNode(e,o);if(t){var n=columns[o],l=getDataItem(e);if(currentEditor&&activeRow===e&&activeCell===o)currentEditor.loadValue(l);else applyFormatResultToCellNode(l?getFormatter(e,n)(e,o,getDataItemValueForColumn(l,n),n,l,self):"",t),invalidatePostProcessingResults(e)}}

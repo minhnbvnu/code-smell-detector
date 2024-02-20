@@ -1,3 +1,10 @@
 function isPrimitive(value) {
-	  return value === null || typeof value !== 'object' && typeof value !== 'function';
-	}
+    switch (typeof value) {
+      case 'number': /* falls through */
+      case 'boolean': /* falls through */
+      case 'string':
+        return true;
+      default:
+        return false;
+    }
+  }

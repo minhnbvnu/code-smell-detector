@@ -1,0 +1,1 @@
+function YN(t){vt(t.edges(),function(e){var r=t.edge(e);r.reversed&&r.points.reverse()})}

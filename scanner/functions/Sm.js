@@ -1,1 +1,1 @@
-function sm(a){a=a|0;return L[a+96>>2]}
+function Sm(a,b,c){a=a|0;b=b|0;c=c|0;return Sa[f[(f[a>>2]|0)+44>>2]&31](a,b,c)|0}

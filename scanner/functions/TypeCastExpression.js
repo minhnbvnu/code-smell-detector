@@ -1,3 +1,3 @@
 function TypeCastExpression(node) {
-	  return node.typeAnnotation;
-	}
+  return node.typeAnnotation;
+}

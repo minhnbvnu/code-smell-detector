@@ -1,0 +1,1 @@
+function _glActiveTexture(x0){GLctx["activeTexture"](x0)}

@@ -1,0 +1,1 @@
+function baseIsArguments$1(value){return isObjectLike$6(value)&&baseGetTag$3(value)==argsTag$3}

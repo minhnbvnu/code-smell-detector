@@ -1,0 +1,1 @@
+function dlt(n){return function(t){this.textContent=n.call(this,t)}}

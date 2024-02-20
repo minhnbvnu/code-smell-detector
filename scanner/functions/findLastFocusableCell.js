@@ -1,0 +1,1 @@
+function findLastFocusableCell(e){for(var o=0,t=null;o<columns.length;)canCellBeActive(e,o)&&(t=o),o+=getColspan(e,o);return t}

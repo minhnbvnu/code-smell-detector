@@ -1,0 +1,1 @@
+function QT(t,e){for(;_n()&&t+er!==47+10;)if(t+er===42+42&&_s()===47)break;return"/*"+wc(e,rn-1)+"*"+b1(t===47?t:_n())}

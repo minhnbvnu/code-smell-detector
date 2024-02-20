@@ -1,0 +1,1 @@
+function kAe(e,t){var r=e.transports,i={data:Array.prototype.slice.call(arguments,2),date:new Date,level:t,variables:e.variables};Nee(r,i,e)}

@@ -1,13 +1,13 @@
 function isImmutable(node) {
-	  if (t.isType(node.type, "Immutable")) return true;
+  if ((0, _isType.default)(node.type, "Immutable")) return true;
 
-	  if (t.isIdentifier(node)) {
-	    if (node.name === "undefined") {
-	      return true;
-	    } else {
-	      return false;
-	    }
-	  }
+  if ((0, _generated.isIdentifier)(node)) {
+    if (node.name === "undefined") {
+      return true;
+    } else {
+      return false;
+    }
+  }
 
-	  return false;
-	}
+  return false;
+}

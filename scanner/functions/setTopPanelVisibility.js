@@ -1,0 +1,1 @@
+function setTopPanelVisibility(e,o){var t=!1!==o;options.showTopPanel!=e&&(options.showTopPanel=e,e?t?$topPanelScroller.slideDown("fast",resizeCanvas):($topPanelScroller.show(),resizeCanvas()):t?$topPanelScroller.slideUp("fast",resizeCanvas):($topPanelScroller.hide(),resizeCanvas()))}

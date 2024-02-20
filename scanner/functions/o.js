@@ -1,1 +1,1 @@
-function O(){return r(this,void 0,void 0,(function(){return i(this,(function(t){return[2,n.loadGraphModel(getModelURL("facemesh"),{fromTFHub:!1})]}))}))}
+function o(e,t,n){s(e,t,n),y[e]=t}

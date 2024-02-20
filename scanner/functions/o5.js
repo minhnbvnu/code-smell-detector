@@ -1,0 +1,1 @@
+function o5(t){typeof t=="function"?t=a5(t):t=tf(t);for(var e=this._groups,r=e.length,n=[],i=[],s=0;s<r;++s)for(var a=e[s],o=a.length,l,u=0;u<o;++u)(l=a[u])&&(n.push(t.call(l,l.__data__,u,a)),i.push(l));return new Ar(n,i)}

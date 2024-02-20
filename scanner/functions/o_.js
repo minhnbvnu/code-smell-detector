@@ -1,0 +1,1 @@
+function o_(t){return function(){var e=t.apply(this,arguments);this.innerHTML=e==null?"":e}}

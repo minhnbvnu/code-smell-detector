@@ -1,0 +1,1 @@
+function ConditionalRule(i,o,s){this.type="conditional",this.isProcessed=!1,this.key=i;var u=i.match(X);for(var C in this.at=u?u[1]:"unknown",this.query=s.name||"@"+this.at,this.options=s,this.rules=new Xe(_extends({},s,{parent:this})),o)this.rules.add(C,o[C]);this.rules.process()}

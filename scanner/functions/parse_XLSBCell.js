@@ -1,0 +1,1 @@
+function parse_XLSBCell(data){var col=data.read_shift(4);var iStyleRef=data.read_shift(2);iStyleRef+=data.read_shift(1)<<16;var fPhShow=data.read_shift(1);return{c:col,iStyleRef:iStyleRef}}

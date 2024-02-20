@@ -1,0 +1,1 @@
+function _eglGetError(){return EGL.errorCode}

@@ -1,0 +1,1 @@
+function Yae(e,t,r){if(r<=0)for(let n=e,i=t;;){if(n.nodeType==3)return{node:n,offset:i};if(n.nodeType==1&&i>0)n=n.childNodes[i-1],i=wo(n);else break}if(r>=0)for(let n=e,i=t;;){if(n.nodeType==3)return{node:n,offset:i};if(n.nodeType==1&&i<n.childNodes.length&&r>=0)n=n.childNodes[i],i=0;else break}return null}

@@ -1,0 +1,1 @@
+function GEe(e,t){if(Array.isArray(t)){for(var r=[],i=0;i<t.length;i++){var a=t[i];(KG[a]||e==="array"&&a==="array")&&(r[r.length]=a)}if(r.length)return r}else{if(KG[t])return[t];if(e==="array"&&t==="array")return["array"]}}

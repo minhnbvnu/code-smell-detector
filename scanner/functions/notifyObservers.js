@@ -1,0 +1,1 @@
+function notifyObservers(a){clearTimeout(notifyTimeoutID[a]);notifyTimeoutID[a]=setTimeout(function(){for(var i in modelObservers[a])modelObservers[a][i](k.model[a]);if(modelObservers[''])for(var i in modelObservers[''])modelObservers[''][i]()})}

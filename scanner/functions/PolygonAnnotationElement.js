@@ -1,0 +1,1 @@
+function PolygonAnnotationElement(t){var a;_classCallCheck(this,PolygonAnnotationElement);(a=r.call(this,t)).containerClassName="polygonAnnotation";a.svgElementName="svg:polygon";return a}

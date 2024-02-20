@@ -1,0 +1,1 @@
+function YX(n){let t=n.getError();if(t!==n.NO_ERROR)throw new Error("WebGL Error: "+QX(n,t))}

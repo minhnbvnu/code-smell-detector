@@ -1,34 +1,15 @@
-function assertChanges (subject, prop, msg) {
-      if (msg) flag(this, 'message', msg);
-      var fn = flag(this, 'object')
-        , flagMsg = flag(this, 'message')
-        , ssfi = flag(this, 'ssfi');
-      new Assertion(fn, flagMsg, ssfi, true).is.a('function');
+function assertChanges (object, prop, msg) {
+    if (msg) flag(this, 'message', msg);
+    var fn = flag(this, 'object');
+    new Assertion(object, msg).to.have.property(prop);
+    new Assertion(fn).is.a('function');
 
-      var initial;
-      if (!prop) {
-        new Assertion(subject, flagMsg, ssfi, true).is.a('function');
-        initial = subject();
-      } else {
-        new Assertion(subject, flagMsg, ssfi, true).to.have.property(prop);
-        initial = subject[prop];
-      }
+    var initial = object[prop];
+    fn();
 
-      fn();
-
-      var final = prop === undefined || prop === null ? subject() : subject[prop];
-      var msgObj = prop === undefined || prop === null ? initial : '.' + prop;
-
-      // This gets flagged because of the .by(delta) assertion
-      flag(this, 'deltaMsgObj', msgObj);
-      flag(this, 'initialDeltaValue', initial);
-      flag(this, 'finalDeltaValue', final);
-      flag(this, 'deltaBehavior', 'change');
-      flag(this, 'realDelta', final !== initial);
-
-      this.assert(
-        initial !== final
-        , 'expected ' + msgObj + ' to change'
-        , 'expected ' + msgObj + ' to not change'
-      );
-    }
+    this.assert(
+      initial !== object[prop]
+      , 'expected .' + prop + ' to change'
+      , 'expected .' + prop + ' to not change'
+    );
+  }

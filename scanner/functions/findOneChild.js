@@ -1,0 +1,1 @@
+function findOneChild(test,elems){for(var i=0,l=elems.length;i<l;i++){if(test(elems[i]))return elems[i]}return null}

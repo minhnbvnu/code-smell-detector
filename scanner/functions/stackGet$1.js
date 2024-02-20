@@ -1,0 +1,1 @@
+function stackGet$1(key){return this.__data__.get(key)}

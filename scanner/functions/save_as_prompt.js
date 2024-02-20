@@ -1,11 +1,11 @@
 function save_as_prompt({
-	dialogTitle = localize("Save As"),
-	defaultFileName = "",
+	dialogTitle=localize("Save As"),
+	defaultFileName="",
 	defaultFileFormatID,
 	formats,
-	promptForName = true,
+	promptForName=true,
 }) {
-	return new Promise((resolve) => {
+	return new Promise((resolve)=> {
 		const $w = new $DialogWindow(dialogTitle);
 		$w.addClass("save-as");
 
@@ -40,7 +40,7 @@ function save_as_prompt({
 			$file_name.val(defaultFileName);
 		}
 
-		const get_selected_format = () => {
+		const get_selected_format = ()=> {
 			const selected_format_id = $file_type.val();
 			for (const format of formats) {
 				if (format.formatID === selected_format_id) {
@@ -50,7 +50,7 @@ function save_as_prompt({
 		};
 
 		// Select file type when typing file name
-		const select_file_type_from_file_name = () => {
+		const select_file_type_from_file_name = ()=> {
 			const extension_match = (promptForName ? $file_name.val() : defaultFileName).match(/\.([\w\d]+)$/);
 			if (extension_match) {
 				const selected_format = get_selected_format();
@@ -70,7 +70,7 @@ function save_as_prompt({
 		if (promptForName) {
 			$file_name.on("input", select_file_type_from_file_name);
 		}
-		if (defaultFileFormatID && formats.some((format) => format.formatID === defaultFileFormatID)) {
+		if (defaultFileFormatID && formats.some((format)=> format.formatID === defaultFileFormatID)) {
 			$file_type.val(defaultFileFormatID);
 		} else {
 			select_file_type_from_file_name();
@@ -78,7 +78,7 @@ function save_as_prompt({
 
 		// Change file extension when selecting file type
 		// allowing non-default extension like .dib vs .bmp, .jpg vs .jpeg to stay
-		const update_extension_from_file_type = (add_extension_if_absent) => {
+		const update_extension_from_file_type = (add_extension_if_absent)=> {
 			if (!promptForName) {
 				return;
 			}
@@ -101,7 +101,7 @@ function save_as_prompt({
 				$file_name.val(file_name);
 			}
 		};
-		$file_type.on("change", () => {
+		$file_type.on("change", ()=> {
 			update_extension_from_file_type(false);
 		});
 		// and initially
@@ -114,7 +114,7 @@ function save_as_prompt({
 				newFileName: promptForName ? $file_name.val() : defaultFileName,
 				newFileFormatID: $file_type.val(),
 			});
-		}, { type: "submit" });
+		});
 		$w.$Button(localize("Cancel"), () => {
 			$w.close();
 		});

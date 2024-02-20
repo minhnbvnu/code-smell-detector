@@ -1,0 +1,1 @@
+function ___atomic_fetch_add_8(ptr,vall,valh,memmodel){var l=HEAP32[ptr>>2];var h=HEAP32[ptr+4>>2];HEAP32[ptr>>2]=_i64Add(l,h,vall,valh);HEAP32[ptr+4>>2]=getTempRet0();return(setTempRet0(h),l)|0}

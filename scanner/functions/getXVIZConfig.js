@@ -1,0 +1,3 @@
+function getXVIZConfig() {
+  return xvizConfig;
+}

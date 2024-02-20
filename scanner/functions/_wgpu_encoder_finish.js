@@ -1,0 +1,1 @@
+function _wgpu_encoder_finish(encoder){let cmdBuffer=wgpu[encoder]["finish"]();_wgpu_object_destroy(encoder);return wgpuStore(cmdBuffer)}

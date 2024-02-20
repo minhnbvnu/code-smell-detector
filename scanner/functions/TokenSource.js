@@ -1,0 +1,3 @@
+function TokenSource() {
+	return this;
+}

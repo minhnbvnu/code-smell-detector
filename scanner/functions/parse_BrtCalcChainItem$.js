@@ -1,0 +1,1 @@
+function parse_BrtCalcChainItem$(data,length){var out={};out.i=data.read_shift(4);var cell={};cell.r=data.read_shift(4);cell.c=data.read_shift(4);out.r=encode_cell(cell);var flags=data.read_shift(1);if(flags&2)out.l="1";if(flags&8)out.a="1";return out}

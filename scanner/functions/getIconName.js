@@ -1,12 +1,11 @@
-function getIconName(location, visible) {
-  switch (location) {
-    case 'right':
-      return visible ? 'icon-chevron-right' : 'icon-chevron-left';
-    case 'bottom':
-      return visible ? 'icon-chevron-down' : 'icon-chevron-up';
-    case 'left':
-      return visible ? 'icon-chevron-left' : 'icon-chevron-right';
-    default:
-      throw new Error(`Invalid location: ${location}`);
+function getIconName(familyPrefix, cls) {
+    var parts = cls.split('-');
+    var prefix = parts[0];
+    var iconName = parts.slice(1).join('-');
+
+    if (prefix === familyPrefix && iconName !== '' && !isReserved(iconName)) {
+      return iconName;
+    } else {
+      return null;
+    }
   }
-}

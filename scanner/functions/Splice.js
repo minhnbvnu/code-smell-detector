@@ -1,0 +1,1 @@
+function Splice(val) { this.v = val; }

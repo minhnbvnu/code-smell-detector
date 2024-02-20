@@ -1,1 +1,1 @@
-function Ef(a){a=a|0;return 1171}
+function ef(){this.$get=["$window",function(a){return H(a.document)}]}

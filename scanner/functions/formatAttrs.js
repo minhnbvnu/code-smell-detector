@@ -1,0 +1,1 @@
+function formatAttrs(attributes,opts){if(!attributes)return;var output="",value;for(var key in attributes){value=attributes[key];if(output){output+=" "}if(!value&&booleanAttributes[key]){output+=key}else{output+=key+'="'+(opts.decodeEntities?entities.encodeXML(value):value)+'"'}}return output}

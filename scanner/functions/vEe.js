@@ -1,0 +1,1 @@
+function vEe(e,t,r){return new RegExp("\\.("+r.extensions.join("|")+")$","i").test(t)&&!(r.include&&r.include instanceof RegExp&&!r.include.test(e))&&!(r.include&&typeof r.include=="function"&&!r.include(e,t))&&!(r.exclude&&r.exclude instanceof RegExp&&r.exclude.test(e))&&!(r.exclude&&typeof r.exclude=="function"&&r.exclude(e,t))}

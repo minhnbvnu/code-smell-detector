@@ -1,0 +1,1 @@
+function pfe(e){var t=e.match(lfe);Do.ok(t,"timestamps must be in UTC");var r=new Date,i=r.getUTCFullYear(),a=Math.floor(i/100)*100,n=parseInt(t[1],10);return i%100<50&&n>=60?n+=a-1:n+=a,r.setUTCFullYear(n,parseInt(t[2],10)-1,parseInt(t[3],10)),r.setUTCHours(parseInt(t[4],10),parseInt(t[5],10)),t[6]&&t[6].length>0&&r.setUTCSeconds(parseInt(t[6],10)),r}

@@ -1,17 +1,1 @@
-function getCustomHuffmanTable(index, referredTo, customTables) {
-    let currentIndex = 0;
-
-    for (let i = 0, ii = referredTo.length; i < ii; i++) {
-      const table = customTables[referredTo[i]];
-
-      if (table) {
-        if (index === currentIndex) {
-          return table;
-        }
-
-        currentIndex++;
-      }
-    }
-
-    throw new Jbig2Error("can't find custom Huffman table");
-  }
+function getCustomHuffmanTable(t,r,o){for(var c=0,l=0,u=r.length;l<u;l++){var h=o[r[l]];if(h){if(t===c)return h;c++}}throw new d("can't find custom Huffman table")}

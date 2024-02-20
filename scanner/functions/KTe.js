@@ -1,0 +1,1 @@
+function KTe(e,t){const r={src:wd(t.url)};t.alt!==null&&t.alt!==void 0&&(r.alt=t.alt),t.title!==null&&t.title!==void 0&&(r.title=t.title);const n={type:"element",tagName:"img",properties:r,children:[]};return e.patch(t,n),e.applyData(t,n)}

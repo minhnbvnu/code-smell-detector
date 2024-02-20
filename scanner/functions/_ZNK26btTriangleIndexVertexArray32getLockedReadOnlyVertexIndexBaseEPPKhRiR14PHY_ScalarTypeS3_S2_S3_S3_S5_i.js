@@ -1,0 +1,51 @@
+function _ZNK26btTriangleIndexVertexArray32getLockedReadOnlyVertexIndexBaseEPPKhRiR14PHY_ScalarTypeS3_S2_S3_S3_S5_i(sp)
+{
+	var i7;
+	var fp = sp>>2;
+	var r0;
+	var r1;
+	var r2;
+	var r3;
+var __label__ = 0;
+	i7 = sp + 0;var g0 = i7>>2; // save stack
+	r0 = heap32[(fp)];
+	r1 = heap32[(fp+9)];
+	r0 = r0 >> 2;
+	r1 = r1 << 5;
+	r0 = heap32[(r0+8)];
+	r0 = (r0 + r1)|0;
+	r0 = r0 >> 2;
+	r1 = heap32[(fp+2)];
+	r2 = heap32[(r0+3)];
+	r1 = r1 >> 2;
+	r3 = heap32[(fp+1)];
+	heap32[(r1)] = r2;
+	r1 = r3 >> 2;
+	r2 = heap32[(r0+4)];
+	r3 = heap32[(fp+3)];
+	heap32[(r1)] = r2;
+	r1 = r3 >> 2;
+	r2 = heap32[(r0+7)];
+	r3 = heap32[(fp+4)];
+	heap32[(r1)] = r2;
+	r1 = r3 >> 2;
+	r2 = heap32[(r0+5)];
+	r3 = heap32[(fp+7)];
+	heap32[(r1)] = r2;
+	r1 = r3 >> 2;
+	r2 = heap32[(r0)];
+	r3 = heap32[(fp+5)];
+	heap32[(r1)] = r2;
+	r1 = r3 >> 2;
+	r2 = heap32[(r0+1)];
+	r3 = heap32[(fp+6)];
+	heap32[(r1)] = r2;
+	r1 = r3 >> 2;
+	r2 = heap32[(r0+2)];
+	r3 = heap32[(fp+8)];
+	heap32[(r1)] = r2;
+	r1 = r3 >> 2;
+	r0 = heap32[(r0+6)];
+	heap32[(r1)] = r0;
+	return;
+}

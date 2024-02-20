@@ -1,5 +1,1 @@
-function createText(content) {
-  const node = new _template.Text({});
-  node[_xfa_object.$content] = content;
-  return node;
-}
+function createText(t){var r=new l.Text({});r[c.$content]=t;return r}

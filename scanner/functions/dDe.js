@@ -1,0 +1,1 @@
+function dDe(e,t,r){const n=this;return i;function i(l){return n.parser.lazy[n.now().line]?r(l):ft(l)?(e.enter("lineEnding"),e.consume(l),e.exit("lineEnding"),i):Or(e,a,"linePrefix",4+1)(l)}function a(l){const s=n.events[n.events.length-1];return s&&s[1].type==="linePrefix"&&s[2].sliceSerialize(s[1],!0).length>=4?t(l):ft(l)?i(l):r(l)}}

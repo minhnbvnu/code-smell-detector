@@ -1,3 +1,3 @@
 function BooleanTypeAnnotation() {
-	  this.word("boolean");
-	}
+  this.word("boolean");
+}

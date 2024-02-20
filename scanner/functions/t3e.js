@@ -1,0 +1,1 @@
+function t3e(e){if(e===null)return!0;var t,r,i,a,n,s=e;for(n=new Array(s.length),t=0,r=s.length;t<r;t+=1){if(i=s[t],e3e.call(i)!=="[object Object]"||(a=Object.keys(i),a.length!==1))return!1;n[t]=[a[0],i[a[0]]]}return!0}

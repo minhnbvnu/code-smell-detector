@@ -1,0 +1,1 @@
+function tU(n,t,e){let i=n*t,r=_T(i);for(let o=0;o<i;++o)r[o]=Q$(e,0,1e-4);return r}

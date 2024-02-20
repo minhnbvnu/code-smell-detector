@@ -1,0 +1,1 @@
+function write_BrtBeginSst(sst,o){if(!o)o=new_buf(8);o.write_shift(4,sst.Count);o.write_shift(4,sst.Unique);return o}

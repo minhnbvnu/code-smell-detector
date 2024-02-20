@@ -1,9 +1,6 @@
-function getTypeName(featurePrefix, featureType) {
-  featurePrefix = featurePrefix ? featurePrefix : FEATURE_PREFIX;
-  const prefix = featurePrefix + ':';
-  // The featureType already contains the prefix.
-  if (featureType.startsWith(prefix)) {
-    return featureType;
-  }
-  return prefix + featureType;
-}
+function getTypeName(type) {
+          var ptr = ___getTypeName(type);
+          var rv = readLatin1String(ptr);
+          _free(ptr);
+          return rv;
+        }

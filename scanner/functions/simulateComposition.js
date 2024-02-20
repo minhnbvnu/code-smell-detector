@@ -1,0 +1,3 @@
+function simulateComposition() {
+    window.CompositionEvent = {};
+  }

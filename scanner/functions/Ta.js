@@ -1,0 +1,1 @@
+function Ta(a,b){if("hasOwnProperty"===a)throw Ba("badname",b);}

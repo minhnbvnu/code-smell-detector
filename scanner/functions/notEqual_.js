@@ -1,15 +1,1 @@
-function notEqual_(a, b) {
-	  var $a = convertToTensor(a, 'a', 'notEqual');
-	  var $b = convertToTensor(b, 'b', 'notEqual');
-
-	  var _makeTypesMatch = makeTypesMatch($a, $b);
-
-	  $a = _makeTypesMatch[0];
-	  $b = _makeTypesMatch[1];
-	  assertAndGetBroadcastShape($a.shape, $b.shape);
-	  var inputs = {
-	    a: $a,
-	    b: $b
-	  };
-	  return ENGINE.runKernel(NotEqual, inputs);
-	}
+function notEqual_(e,t){var n,r=convertToTensor(e,"a","notEqual"),o=convertToTensor(t,"b","notEqual");return n=makeTypesMatch(r,o),r=n[0],o=n[1],assertAndGetBroadcastShape(r.shape,o.shape),ENV.engine.runKernel(function(e){return e.notEqual(r,o)},{$a:r,$b:o})}

@@ -1,0 +1,1 @@
+function ffe(e){var t=e.match(cfe);Do.ok(t);var r=new Date;return r.setUTCFullYear(parseInt(t[1],10),parseInt(t[2],10)-1,parseInt(t[3],10)),r.setUTCHours(parseInt(t[4],10),parseInt(t[5],10)),t[6]&&t[6].length>0&&r.setUTCSeconds(parseInt(t[6],10)),r}

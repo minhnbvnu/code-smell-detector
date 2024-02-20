@@ -1,0 +1,1 @@
+function Dh(t){wh(t),kh(t),wh(t)}

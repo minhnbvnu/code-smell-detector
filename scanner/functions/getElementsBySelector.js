@@ -1,0 +1,1 @@
+function getElementsBySelector(a,b){var c=[];try{c=Array.prototype.slice.call((b||document).querySelectorAll(a))}catch(exc){}return c}

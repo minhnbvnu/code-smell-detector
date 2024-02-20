@@ -1,0 +1,1 @@
+function write_BOOKVIEWS(ba,wb,opts){write_record(ba,"BrtBeginBookViews");write_record(ba,"BrtEndBookViews")}

@@ -1,0 +1,1 @@
+function copySymbolsIn$1(source,object){return copyObject(source,getSymbolsIn(source),object)}

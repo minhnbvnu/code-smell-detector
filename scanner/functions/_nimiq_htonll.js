@@ -1,0 +1,1 @@
+function _nimiq_htonll($0,$1){$0=$0|0;$1=$1|0;var $2=0,$3=0,$4=0,$5=0,$6=0,$7=0,label=0,sp=0;sp=STACKTOP;$2=HEAP8[8]|0;$3=$2<<24>>24==42;if($3){$4=_bswap_64($0,$1)|0;$5=tempRet0;$6=$5;$7=$4}else{$6=$1;$7=$0}tempRet0=$6;return $7|0}

@@ -1,0 +1,3 @@
+function AttributeValue() {
+	return DirectoryString();
+}

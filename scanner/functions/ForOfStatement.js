@@ -1,0 +1,1 @@
+function ForOfStatement(){i.apply(this,arguments)}

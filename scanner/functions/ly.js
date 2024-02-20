@@ -1,1 +1,1 @@
-function Ly(){aa();D()}
+function ly(t){return new Map(t.map(((t,n)=>[t.toLowerCase(),n])))}

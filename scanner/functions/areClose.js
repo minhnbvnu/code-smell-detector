@@ -1,11 +1,1 @@
-function areClose(a, e, epsilon) {
-	  if (!isFinite(a) && !isFinite(e)) {
-	    return true;
-	  }
-
-	  if (isNaN(a) || isNaN(e) || Math.abs(a - e) > epsilon) {
-	    return false;
-	  }
-
-	  return true;
-	}
+function areClose(e,t,n){return !(!isNaN(e)||!isNaN(t))||!(isNaN(e)||isNaN(t)||Math.abs(e-t)>n)}

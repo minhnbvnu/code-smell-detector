@@ -1,0 +1,1 @@
+function J1(t){var e=-1,r=Array(t.size);return t.forEach(function(n){r[++e]=n}),r}

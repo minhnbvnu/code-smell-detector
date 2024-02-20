@@ -1,4 +1,4 @@
-function reset_selected_colors() {
+function reset_selected_colors(){
 	selected_colors = {
 		foreground: "#000000",
 		background: "#ffffff",

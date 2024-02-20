@@ -1,11 +1,15 @@
-function readFile(path) {
-  return new Promise((resolve, reject) => {
-    fs.readFile(path, 'utf8', (error, content) => {
-      if (error) {
-        reject(error);
-      } else {
-        resolve({ path, content });
-      }
-    });
-  });
+function readFile(filename, encode = "utf-8") {
+  if (filename.indexOf("file://") === 0) {
+    if (process.platform === "win32") {
+      filename = filename.replace(/^file:\/\/\//, "")
+        .replace(/^file:\/\//, "")
+    } else {
+      filename = filename.replace(/^file:\/\//, "")
+    }
+  }
+  if (isExistsPath(filename)) {
+    return fs.readFileSync(filename, encode)
+  } else {
+    return ""
+  }
 }

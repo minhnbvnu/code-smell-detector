@@ -1,17 +1,1 @@
-function parseOnOff(refs) {
-      const onParsed = [];
-
-      if (Array.isArray(refs)) {
-        for (const value of refs) {
-          if (!(0, _primitives.isRef)(value)) {
-            continue;
-          }
-
-          if (contentGroupRefs.includes(value)) {
-            onParsed.push(value.toString());
-          }
-        }
-      }
-
-      return onParsed;
-    }
+function parseOnOff(t){var o=[];if(Array.isArray(t)){var c,l=_createForOfIteratorHelper(t);try{for(l.s();!(c=l.n()).done;){var h=c.value;h instanceof u.Ref&&(r.includes(h)&&o.push(h.toString()))}}catch(t){l.e(t)}finally{l.f()}}return o}

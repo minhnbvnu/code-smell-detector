@@ -1,0 +1,2 @@
+function Utf16BEEncoder() {
+}

@@ -1,0 +1,1 @@
+function cye({children:e,...t}){let{rowGroupProps:r}=Wne();return S.createElement("div",{...r,...t},e)}

@@ -1,0 +1,1 @@
+function YOe(e){return{value(){let t=oi(this).event;return t[e].apply(t,arguments)},configurable:!0,enumerable:!0}}

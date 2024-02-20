@@ -1,0 +1,15 @@
+function removeCWD(str) {
+  const isWin = process.platform === "win32";
+  let cwd = process.cwd();
+
+  if (isWin) {
+    // eslint-disable-next-line no-param-reassign
+    str = str.replace(/\\/g, "/");
+    // eslint-disable-next-line no-param-reassign
+    cwd = cwd.replace(/\\/g, "/");
+  }
+
+  return str
+    .replace(/\(from .*?\)/, "(from `replaced original path`)")
+    .replace(new RegExp(cwd, "g"), "");
+}

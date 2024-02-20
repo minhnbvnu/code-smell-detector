@@ -1,0 +1,1 @@
+function whitespace(c){return c===" "||c==="\n"||c==="\t"||c==="\f"||c==="\r"}

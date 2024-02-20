@@ -1,0 +1,1 @@
+function Oids(t){var o;_classCallCheck(this,Oids);(o=r.call(this,_,"oids",!0)).id=t.id||"";o.type=(0,d.getStringOption)(t.type,["optional","required"]);o.use=t.use||"";o.usehref=t.usehref||"";o.oid=new c.XFAObjectArray;return o}

@@ -1,0 +1,1 @@
+function write_XLWideString(data,o){if(o==null)o=new_buf(4+2*data.length);o.write_shift(4,data.length);if(data.length>0)o.write_shift(0,data,"dbcs");return o}

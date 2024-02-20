@@ -1,3 +1,1 @@
-function IrreversibleTransform() {
-      Transform.call(this);
-    }
+function IrreversibleTransform(){_classCallCheck(this,IrreversibleTransform);return r.apply(this,arguments)}

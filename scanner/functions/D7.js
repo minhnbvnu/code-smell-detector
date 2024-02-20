@@ -1,0 +1,1 @@
+function D7(n){let t=n.trim().split(/\s+/),e=[];for(let i=0;i<t.length;i++)e.push(...z7(t[i]));return e}

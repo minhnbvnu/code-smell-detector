@@ -1,0 +1,1 @@
+function r$(n){var t=[],e=[],i=[];n.forEach(function(o,s,a){t.push(s),e.push(a),i.push(o)});var r=[n.nCols,n.nRows];return new bl(e,t,i,r)}

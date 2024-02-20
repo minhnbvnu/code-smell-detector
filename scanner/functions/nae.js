@@ -1,0 +1,1 @@
+function nae(e,t,r){if(t==e.length)return t;t&&iae(e.charCodeAt(t))&&aae(e.charCodeAt(t-1))&&t--;let n=Tl(e,t);for(t+=Xc(n);t<e.length;){let i=Tl(e,t);if(n==JN||i==JN||r&&Wxe(i))t+=Xc(i),n=i;else if(XN(i)){let a=0,l=t-2;for(;l>=0&&XN(Tl(e,l));)a++,l-=2;if(a%2==0)break;t+=2}else break}return t}

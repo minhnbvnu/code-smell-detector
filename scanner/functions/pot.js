@@ -1,0 +1,1 @@
+function pot(){let n=new WeakMap;function t(o){let s=n.get(o);return s===void 0&&(s={},n.set(o,s)),s}function e(o){n.delete(o)}function i(o,s,a){n.get(o)[s]=a}function r(){n=new WeakMap}return{get:t,remove:e,update:i,dispose:r}}

@@ -1,0 +1,3 @@
+function DFAStatesSet() {
+	return this;
+}

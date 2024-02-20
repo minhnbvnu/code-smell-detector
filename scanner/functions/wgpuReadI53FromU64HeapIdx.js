@@ -1,0 +1,1 @@
+function wgpuReadI53FromU64HeapIdx(heap32Idx){return HEAPU32[heap32Idx]+HEAPU32[heap32Idx+1]*4294967296}

@@ -1,0 +1,1 @@
+function Cf(){this.$get=da(T)}

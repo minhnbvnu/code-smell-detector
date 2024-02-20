@@ -1,0 +1,1 @@
+function write_cust_props(cp,opts){var o=[XML_HEADER,CUST_PROPS_XML_ROOT];if(!cp)return o.join("");var pid=1;keys(cp).forEach(function custprop(k){++pid;o[o.length]=writextag("property",write_vt(cp[k]),{fmtid:"{D5CDD505-2E9C-101B-9397-08002B2CF9AE}",pid:pid,name:k})});if(o.length>2){o[o.length]="</Properties>";o[1]=o[1].replace("/>",">")}return o.join("")}

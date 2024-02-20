@@ -1,4 +1,1 @@
-function createPostTable(properties) {
-    var angle = Math.floor(properties.italicAngle * 2 ** 16);
-    return "\x00\x03\x00\x00" + (0, _util.string32)(angle) + "\x00\x00" + "\x00\x00" + (0, _util.string32)(properties.fixedPitch) + "\x00\x00\x00\x00" + "\x00\x00\x00\x00" + "\x00\x00\x00\x00" + "\x00\x00\x00\x00";
-  }
+function createPostTable(t){var r=Math.floor(t.italicAngle*Math.pow(2,16));return"\0\0\0"+(0,c.string32)(r)+"\0\0\0\0"+(0,c.string32)(t.fixedPitch?1:0)+"\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}

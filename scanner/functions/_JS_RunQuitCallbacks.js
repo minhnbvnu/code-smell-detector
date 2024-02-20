@@ -1,0 +1,1 @@
+function _JS_RunQuitCallbacks(){Module.QuitCleanup()}

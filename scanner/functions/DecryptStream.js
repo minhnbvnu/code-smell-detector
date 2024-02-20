@@ -1,8 +1,1 @@
-function DecryptStream(str, maybeLength, decrypt) {
-    this.str = str;
-    this.dict = str.dict;
-    this.decrypt = decrypt;
-    this.nextChunk = null;
-    this.initialized = false;
-    DecodeStream.call(this, maybeLength);
-  }
+function DecryptStream(t,o,c){var l;!function _classCallCheck(t,r){if(!(t instanceof r))throw new TypeError("Cannot call a class as a function")}(this,DecryptStream);(l=r.call(this,o)).str=t;l.dict=t.dict;l.decrypt=c;l.nextChunk=null;l.initialized=!1;return l}

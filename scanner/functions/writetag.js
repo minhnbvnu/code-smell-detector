@@ -1,0 +1,1 @@
+function writetag(f,g){return"<"+f+(g.match(wtregex)?' xml:space="preserve"':"")+">"+g+"</"+f+">"}

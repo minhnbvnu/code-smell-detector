@@ -1,0 +1,1 @@
+function Ale(e){for(Jr.buffer(e);e.length>1&&e[0]===0;)e=e.slice(1);return e}

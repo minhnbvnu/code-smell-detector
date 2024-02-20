@@ -1,0 +1,1 @@
+function mxConnectionConstraint(a,b,c,d,e){this.point=a;this.perimeter=null!=b?b:!0;this.name=c;this.dx=d?d:0;this.dy=e?e:0}

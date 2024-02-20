@@ -1,1 +1,1 @@
-function Rr(t){if(!t.requestUri||!t.sessionId&&!t.postBody)throw new Pi("internal-error")}
+function Rr(e){return un(nn(e,io,Sn),e+"")}

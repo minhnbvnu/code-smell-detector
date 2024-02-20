@@ -1,0 +1,1 @@
+function lot(n){let t="ENVMAP_BLENDING_NONE";if(n.envMap)switch(n.combine){case bv:t="ENVMAP_BLENDING_MULTIPLY";break;case vtt:t="ENVMAP_BLENDING_MIX";break;case ytt:t="ENVMAP_BLENDING_ADD";break}return t}

@@ -1,0 +1,1 @@
+function mxFastOrganicLayout(a){mxGraphLayout.call(this,a)}

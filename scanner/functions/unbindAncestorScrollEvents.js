@@ -1,0 +1,1 @@
+function unbindAncestorScrollEvents(){$boundAncestors&&($boundAncestors.off("scroll."+uid),$boundAncestors=null)}

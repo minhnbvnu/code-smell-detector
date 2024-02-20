@@ -1,0 +1,1 @@
+function cloneTypedArray$1(typedArray,isDeep){var buffer=isDeep?cloneArrayBuffer$1(typedArray.buffer):typedArray.buffer;return new typedArray.constructor(buffer,typedArray.byteOffset,typedArray.length)}

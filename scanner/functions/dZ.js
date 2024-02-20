@@ -1,0 +1,1 @@
+function dZ(n){let{inputs:t,backend:e}=n,{x:i}=t,r=[...i.shape,...i.shape],o=R.sizeFromShape(i.shape),s=Et({inputs:{x:i},backend:e,attrs:{shape:[o]}}),a=new I0(o),l=e.runWebGLProgram(a,[s],s.dtype),c=Et({inputs:{x:l},backend:e,attrs:{shape:r}});return e.disposeIntermediateTensorInfo(s),e.disposeIntermediateTensorInfo(l),c}

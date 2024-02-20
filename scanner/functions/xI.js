@@ -1,0 +1,1 @@
+function xI(t,e,r){if(Wm.randomUUID&&!e&&!t)return Wm.randomUUID();t=t||{};const n=t.random||(t.rng||bI)();if(n[6]=n[6]&15|64,n[8]=n[8]&63|128,e){r=r||0;for(let i=0;i<16;++i)e[r+i]=n[i];return e}return _I(n)}

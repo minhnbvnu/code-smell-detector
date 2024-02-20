@@ -1,0 +1,1 @@
+function _emscripten_glTexParameterf(x0,x1,x2){GLctx["texParameterf"](x0,x1,x2)}

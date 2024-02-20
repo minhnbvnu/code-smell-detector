@@ -1,0 +1,1 @@
+function DTe(e){for(;!Tse(e););return e}

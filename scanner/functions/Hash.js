@@ -1,3 +1,6 @@
-function hash(tileCoord) {
-  return (tileCoord[1] << tileCoord[0]) + tileCoord[2];
+function Hash (blockSize, finalSize) {
+  this._block = Buffer.alloc(blockSize)
+  this._finalSize = finalSize
+  this._blockSize = blockSize
+  this._len = 0
 }

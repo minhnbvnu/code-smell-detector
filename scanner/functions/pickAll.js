@@ -1,0 +1,1 @@
+function pickAll(test,g,scene,x,y,gx,gy){if(!scene.items.length)return false;var o,b,i;if(g._ratio!==1){x*=g._ratio;y*=g._ratio}for(i=scene.items.length;--i>=0;){o=scene.items[i];b=o.bounds;if(b&&!b.contains(gx,gy)||!b)continue;if(test(g,o,x,y,gx,gy))return o}return false}

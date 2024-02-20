@@ -1,0 +1,1 @@
+function hasIn$1(object,path){return null!=object&&hasPath(object,path,baseHasIn)}

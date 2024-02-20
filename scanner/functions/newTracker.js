@@ -1,0 +1,1 @@
+function newTracker(){var trk=$("<div></div>").addClass(cssClass("tracker"));$.browser.msie&&trk.css({opacity:0,backgroundColor:"white"});return trk}

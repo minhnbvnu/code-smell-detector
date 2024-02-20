@@ -1,11 +1,1 @@
-function arrayConcat(arrays) {
-	  var result = [];
-
-	  for (var i = 0; i < arrays.length; ++i) {
-	    for (var j = 0; j < arrays[i].length; ++j) {
-	      result.push(arrays[i][j]);
-	    }
-	  }
-
-	  return result;
-	}
+function arrayConcat(e){for(var t=[],n=0;n<e.length;++n)for(var r=0;r<e[n].length;++r)t.push(e[n][r]);return t}

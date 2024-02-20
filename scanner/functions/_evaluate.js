@@ -1,323 +1,318 @@
-function _evaluate(path) {
-	    if (!confident) return;
+function _evaluate(path, state) {
+  if (!state.confident) return;
+  const {
+    node
+  } = path;
 
-	    var node = path.node;
+  if (path.isSequenceExpression()) {
+    const exprs = path.get("expressions");
+    return evaluateCached(exprs[exprs.length - 1], state);
+  }
 
-	    if (path.isSequenceExpression()) {
-	      var exprs = path.get("expressions");
-	      return evaluate(exprs[exprs.length - 1]);
-	    }
+  if (path.isStringLiteral() || path.isNumericLiteral() || path.isBooleanLiteral()) {
+    return node.value;
+  }
 
-	    if (path.isStringLiteral() || path.isNumericLiteral() || path.isBooleanLiteral()) {
-	      return node.value;
-	    }
+  if (path.isNullLiteral()) {
+    return null;
+  }
 
-	    if (path.isNullLiteral()) {
-	      return null;
-	    }
+  if (path.isTemplateLiteral()) {
+    return evaluateQuasis(path, node.quasis, state);
+  }
 
-	    if (path.isTemplateLiteral()) {
-	      var str = "";
+  if (path.isTaggedTemplateExpression() && path.get("tag").isMemberExpression()) {
+    const object = path.get("tag.object");
+    const {
+      node: {
+        name
+      }
+    } = object;
+    const property = path.get("tag.property");
 
-	      var i = 0;
-	      var _exprs = path.get("expressions");
+    if (object.isIdentifier() && name === "String" && !path.scope.getBinding(name, true) && property.isIdentifier && property.node.name === "raw") {
+      return evaluateQuasis(path, node.quasi.quasis, state, true);
+    }
+  }
 
-	      for (var _iterator = node.quasis, _isArray = Array.isArray(_iterator), _i = 0, _iterator = _isArray ? _iterator : (0, _getIterator3.default)(_iterator);;) {
-	        var _ref;
+  if (path.isConditionalExpression()) {
+    const testResult = evaluateCached(path.get("test"), state);
+    if (!state.confident) return;
 
-	        if (_isArray) {
-	          if (_i >= _iterator.length) break;
-	          _ref = _iterator[_i++];
-	        } else {
-	          _i = _iterator.next();
-	          if (_i.done) break;
-	          _ref = _i.value;
-	        }
+    if (testResult) {
+      return evaluateCached(path.get("consequent"), state);
+    } else {
+      return evaluateCached(path.get("alternate"), state);
+    }
+  }
 
-	        var elem = _ref;
+  if (path.isExpressionWrapper()) {
+    return evaluateCached(path.get("expression"), state);
+  }
 
-	        if (!confident) break;
+  if (path.isMemberExpression() && !path.parentPath.isCallExpression({
+    callee: node
+  })) {
+    const property = path.get("property");
+    const object = path.get("object");
 
-	        str += elem.value.cooked;
+    if (object.isLiteral() && property.isIdentifier()) {
+      const value = object.node.value;
+      const type = typeof value;
 
-	        var expr = _exprs[i++];
-	        if (expr) str += String(evaluate(expr));
-	      }
+      if (type === "number" || type === "string") {
+        return value[property.node.name];
+      }
+    }
+  }
 
-	      if (!confident) return;
-	      return str;
-	    }
+  if (path.isReferencedIdentifier()) {
+    const binding = path.scope.getBinding(node.name);
 
-	    if (path.isConditionalExpression()) {
-	      var testResult = evaluate(path.get("test"));
-	      if (!confident) return;
-	      if (testResult) {
-	        return evaluate(path.get("consequent"));
-	      } else {
-	        return evaluate(path.get("alternate"));
-	      }
-	    }
+    if (binding && binding.constantViolations.length > 0) {
+      return deopt(binding.path, state);
+    }
 
-	    if (path.isExpressionWrapper()) {
-	      return evaluate(path.get("expression"));
-	    }
+    if (binding && path.node.start < binding.path.node.end) {
+      return deopt(binding.path, state);
+    }
 
-	    if (path.isMemberExpression() && !path.parentPath.isCallExpression({ callee: node })) {
-	      var property = path.get("property");
-	      var object = path.get("object");
+    if (binding == null ? void 0 : binding.hasValue) {
+      return binding.value;
+    } else {
+      if (node.name === "undefined") {
+        return binding ? deopt(binding.path, state) : undefined;
+      } else if (node.name === "Infinity") {
+        return binding ? deopt(binding.path, state) : Infinity;
+      } else if (node.name === "NaN") {
+        return binding ? deopt(binding.path, state) : NaN;
+      }
 
-	      if (object.isLiteral() && property.isIdentifier()) {
-	        var _value = object.node.value;
-	        var type = typeof _value === "undefined" ? "undefined" : (0, _typeof3.default)(_value);
-	        if (type === "number" || type === "string") {
-	          return _value[property.node.name];
-	        }
-	      }
-	    }
+      const resolved = path.resolve();
 
-	    if (path.isReferencedIdentifier()) {
-	      var binding = path.scope.getBinding(node.name);
+      if (resolved === path) {
+        return deopt(path, state);
+      } else {
+        return evaluateCached(resolved, state);
+      }
+    }
+  }
 
-	      if (binding && binding.constantViolations.length > 0) {
-	        return deopt(binding.path);
-	      }
+  if (path.isUnaryExpression({
+    prefix: true
+  })) {
+    if (node.operator === "void") {
+      return undefined;
+    }
 
-	      if (binding && path.node.start < binding.path.node.end) {
-	        return deopt(binding.path);
-	      }
+    const argument = path.get("argument");
 
-	      if (binding && binding.hasValue) {
-	        return binding.value;
-	      } else {
-	        if (node.name === "undefined") {
-	          return binding ? deopt(binding.path) : undefined;
-	        } else if (node.name === "Infinity") {
-	          return binding ? deopt(binding.path) : Infinity;
-	        } else if (node.name === "NaN") {
-	          return binding ? deopt(binding.path) : NaN;
-	        }
+    if (node.operator === "typeof" && (argument.isFunction() || argument.isClass())) {
+      return "function";
+    }
 
-	        var resolved = path.resolve();
-	        if (resolved === path) {
-	          return deopt(path);
-	        } else {
-	          return evaluate(resolved);
-	        }
-	      }
-	    }
+    const arg = evaluateCached(argument, state);
+    if (!state.confident) return;
 
-	    if (path.isUnaryExpression({ prefix: true })) {
-	      if (node.operator === "void") {
-	        return undefined;
-	      }
+    switch (node.operator) {
+      case "!":
+        return !arg;
 
-	      var argument = path.get("argument");
-	      if (node.operator === "typeof" && (argument.isFunction() || argument.isClass())) {
-	        return "function";
-	      }
+      case "+":
+        return +arg;
 
-	      var arg = evaluate(argument);
-	      if (!confident) return;
-	      switch (node.operator) {
-	        case "!":
-	          return !arg;
-	        case "+":
-	          return +arg;
-	        case "-":
-	          return -arg;
-	        case "~":
-	          return ~arg;
-	        case "typeof":
-	          return typeof arg === "undefined" ? "undefined" : (0, _typeof3.default)(arg);
-	      }
-	    }
+      case "-":
+        return -arg;
 
-	    if (path.isArrayExpression()) {
-	      var arr = [];
-	      var elems = path.get("elements");
-	      for (var _iterator2 = elems, _isArray2 = Array.isArray(_iterator2), _i2 = 0, _iterator2 = _isArray2 ? _iterator2 : (0, _getIterator3.default)(_iterator2);;) {
-	        var _ref2;
+      case "~":
+        return ~arg;
 
-	        if (_isArray2) {
-	          if (_i2 >= _iterator2.length) break;
-	          _ref2 = _iterator2[_i2++];
-	        } else {
-	          _i2 = _iterator2.next();
-	          if (_i2.done) break;
-	          _ref2 = _i2.value;
-	        }
+      case "typeof":
+        return typeof arg;
+    }
+  }
 
-	        var _elem = _ref2;
+  if (path.isArrayExpression()) {
+    const arr = [];
+    const elems = path.get("elements");
 
-	        _elem = _elem.evaluate();
+    for (const elem of elems) {
+      const elemValue = elem.evaluate();
 
-	        if (_elem.confident) {
-	          arr.push(_elem.value);
-	        } else {
-	          return deopt(_elem);
-	        }
-	      }
-	      return arr;
-	    }
+      if (elemValue.confident) {
+        arr.push(elemValue.value);
+      } else {
+        return deopt(elemValue.deopt, state);
+      }
+    }
 
-	    if (path.isObjectExpression()) {
-	      var obj = {};
-	      var props = path.get("properties");
-	      for (var _iterator3 = props, _isArray3 = Array.isArray(_iterator3), _i3 = 0, _iterator3 = _isArray3 ? _iterator3 : (0, _getIterator3.default)(_iterator3);;) {
-	        var _ref3;
+    return arr;
+  }
 
-	        if (_isArray3) {
-	          if (_i3 >= _iterator3.length) break;
-	          _ref3 = _iterator3[_i3++];
-	        } else {
-	          _i3 = _iterator3.next();
-	          if (_i3.done) break;
-	          _ref3 = _i3.value;
-	        }
+  if (path.isObjectExpression()) {
+    const obj = {};
+    const props = path.get("properties");
 
-	        var prop = _ref3;
+    for (const prop of props) {
+      if (prop.isObjectMethod() || prop.isSpreadElement()) {
+        return deopt(prop, state);
+      }
 
-	        if (prop.isObjectMethod() || prop.isSpreadProperty()) {
-	          return deopt(prop);
-	        }
-	        var keyPath = prop.get("key");
-	        var key = keyPath;
-	        if (prop.node.computed) {
-	          key = key.evaluate();
-	          if (!key.confident) {
-	            return deopt(keyPath);
-	          }
-	          key = key.value;
-	        } else if (key.isIdentifier()) {
-	          key = key.node.name;
-	        } else {
-	          key = key.node.value;
-	        }
-	        var valuePath = prop.get("value");
-	        var _value2 = valuePath.evaluate();
-	        if (!_value2.confident) {
-	          return deopt(valuePath);
-	        }
-	        _value2 = _value2.value;
-	        obj[key] = _value2;
-	      }
-	      return obj;
-	    }
+      const keyPath = prop.get("key");
+      let key = keyPath;
 
-	    if (path.isLogicalExpression()) {
-	      var wasConfident = confident;
-	      var left = evaluate(path.get("left"));
-	      var leftConfident = confident;
-	      confident = wasConfident;
-	      var right = evaluate(path.get("right"));
-	      var rightConfident = confident;
-	      confident = leftConfident && rightConfident;
+      if (prop.node.computed) {
+        key = key.evaluate();
 
-	      switch (node.operator) {
-	        case "||":
-	          if (left && leftConfident) {
-	            confident = true;
-	            return left;
-	          }
+        if (!key.confident) {
+          return deopt(key.deopt, state);
+        }
 
-	          if (!confident) return;
+        key = key.value;
+      } else if (key.isIdentifier()) {
+        key = key.node.name;
+      } else {
+        key = key.node.value;
+      }
 
-	          return left || right;
-	        case "&&":
-	          if (!left && leftConfident || !right && rightConfident) {
-	            confident = true;
-	          }
+      const valuePath = prop.get("value");
+      let value = valuePath.evaluate();
 
-	          if (!confident) return;
+      if (!value.confident) {
+        return deopt(value.deopt, state);
+      }
 
-	          return left && right;
-	      }
-	    }
+      value = value.value;
+      obj[key] = value;
+    }
 
-	    if (path.isBinaryExpression()) {
-	      var _left = evaluate(path.get("left"));
-	      if (!confident) return;
-	      var _right = evaluate(path.get("right"));
-	      if (!confident) return;
+    return obj;
+  }
 
-	      switch (node.operator) {
-	        case "-":
-	          return _left - _right;
-	        case "+":
-	          return _left + _right;
-	        case "/":
-	          return _left / _right;
-	        case "*":
-	          return _left * _right;
-	        case "%":
-	          return _left % _right;
-	        case "**":
-	          return Math.pow(_left, _right);
-	        case "<":
-	          return _left < _right;
-	        case ">":
-	          return _left > _right;
-	        case "<=":
-	          return _left <= _right;
-	        case ">=":
-	          return _left >= _right;
-	        case "==":
-	          return _left == _right;
-	        case "!=":
-	          return _left != _right;
-	        case "===":
-	          return _left === _right;
-	        case "!==":
-	          return _left !== _right;
-	        case "|":
-	          return _left | _right;
-	        case "&":
-	          return _left & _right;
-	        case "^":
-	          return _left ^ _right;
-	        case "<<":
-	          return _left << _right;
-	        case ">>":
-	          return _left >> _right;
-	        case ">>>":
-	          return _left >>> _right;
-	      }
-	    }
+  if (path.isLogicalExpression()) {
+    const wasConfident = state.confident;
+    const left = evaluateCached(path.get("left"), state);
+    const leftConfident = state.confident;
+    state.confident = wasConfident;
+    const right = evaluateCached(path.get("right"), state);
+    const rightConfident = state.confident;
 
-	    if (path.isCallExpression()) {
-	      var callee = path.get("callee");
-	      var context = void 0;
-	      var func = void 0;
+    switch (node.operator) {
+      case "||":
+        state.confident = leftConfident && (!!left || rightConfident);
+        if (!state.confident) return;
+        return left || right;
 
-	      if (callee.isIdentifier() && !path.scope.getBinding(callee.node.name, true) && VALID_CALLEES.indexOf(callee.node.name) >= 0) {
-	        func = global[node.callee.name];
-	      }
+      case "&&":
+        state.confident = leftConfident && (!left || rightConfident);
+        if (!state.confident) return;
+        return left && right;
+    }
+  }
 
-	      if (callee.isMemberExpression()) {
-	        var _object = callee.get("object");
-	        var _property = callee.get("property");
+  if (path.isBinaryExpression()) {
+    const left = evaluateCached(path.get("left"), state);
+    if (!state.confident) return;
+    const right = evaluateCached(path.get("right"), state);
+    if (!state.confident) return;
 
-	        if (_object.isIdentifier() && _property.isIdentifier() && VALID_CALLEES.indexOf(_object.node.name) >= 0 && INVALID_METHODS.indexOf(_property.node.name) < 0) {
-	          context = global[_object.node.name];
-	          func = context[_property.node.name];
-	        }
+    switch (node.operator) {
+      case "-":
+        return left - right;
 
-	        if (_object.isLiteral() && _property.isIdentifier()) {
-	          var _type = (0, _typeof3.default)(_object.node.value);
-	          if (_type === "string" || _type === "number") {
-	            context = _object.node.value;
-	            func = context[_property.node.name];
-	          }
-	        }
-	      }
+      case "+":
+        return left + right;
 
-	      if (func) {
-	        var args = path.get("arguments").map(evaluate);
-	        if (!confident) return;
+      case "/":
+        return left / right;
 
-	        return func.apply(context, args);
-	      }
-	    }
+      case "*":
+        return left * right;
 
-	    deopt(path);
-	  }
+      case "%":
+        return left % right;
+
+      case "**":
+        return Math.pow(left, right);
+
+      case "<":
+        return left < right;
+
+      case ">":
+        return left > right;
+
+      case "<=":
+        return left <= right;
+
+      case ">=":
+        return left >= right;
+
+      case "==":
+        return left == right;
+
+      case "!=":
+        return left != right;
+
+      case "===":
+        return left === right;
+
+      case "!==":
+        return left !== right;
+
+      case "|":
+        return left | right;
+
+      case "&":
+        return left & right;
+
+      case "^":
+        return left ^ right;
+
+      case "<<":
+        return left << right;
+
+      case ">>":
+        return left >> right;
+
+      case ">>>":
+        return left >>> right;
+    }
+  }
+
+  if (path.isCallExpression()) {
+    const callee = path.get("callee");
+    let context;
+    let func;
+
+    if (callee.isIdentifier() && !path.scope.getBinding(callee.node.name, true) && VALID_CALLEES.indexOf(callee.node.name) >= 0) {
+      func = global[node.callee.name];
+    }
+
+    if (callee.isMemberExpression()) {
+      const object = callee.get("object");
+      const property = callee.get("property");
+
+      if (object.isIdentifier() && property.isIdentifier() && VALID_CALLEES.indexOf(object.node.name) >= 0 && INVALID_METHODS.indexOf(property.node.name) < 0) {
+        context = global[object.node.name];
+        func = context[property.node.name];
+      }
+
+      if (object.isLiteral() && property.isIdentifier()) {
+        const type = typeof object.node.value;
+
+        if (type === "string" || type === "number") {
+          context = object.node.value;
+          func = context[property.node.name];
+        }
+      }
+    }
+
+    if (func) {
+      const args = path.get("arguments").map(arg => evaluateCached(arg, state));
+      if (!state.confident) return;
+      return func.apply(context, args);
+    }
+  }
+
+  deopt(path, state);
+}

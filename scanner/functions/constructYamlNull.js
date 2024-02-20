@@ -1,0 +1,3 @@
+function constructYamlNull() {
+  return null;
+}

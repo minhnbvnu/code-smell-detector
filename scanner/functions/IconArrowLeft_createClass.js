@@ -1,0 +1,1 @@
+function IconArrowLeft_createClass(Constructor, protoProps, staticProps) { if (protoProps) IconArrowLeft_defineProperties(Constructor.prototype, protoProps); if (staticProps) IconArrowLeft_defineProperties(Constructor, staticProps); return Constructor; }

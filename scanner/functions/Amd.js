@@ -1,0 +1,1 @@
+function Amd(t){_classCallCheck(this,Amd);return r.call(this,d,"amd")}

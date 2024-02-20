@@ -1,0 +1,1 @@
+function Xue(e){return new ci(this.q,this.x.multiply(e.toBigInteger()).mod(this.q))}

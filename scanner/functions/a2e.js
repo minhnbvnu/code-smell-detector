@@ -1,0 +1,1 @@
+function a2e(e,t,r){for(var i=0;i<e.length;i++)if(!e[i].test(t))return!1;if(t.prerelease.length&&!r.includePrerelease){for(i=0;i<e.length;i++)if(Pr(e[i].semver),e[i].semver!==Sd&&e[i].semver.prerelease.length>0){var a=e[i].semver;if(a.major===t.major&&a.minor===t.minor&&a.patch===t.patch)return!0}return!1}return!0}

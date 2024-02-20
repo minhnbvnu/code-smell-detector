@@ -1,10 +1,1 @@
-function pad1d_(x, paddings, constantValue) {
-	  if (constantValue === void 0) {
-	    constantValue = 0;
-	  }
-
-	  assert(paddings.length === 2, function () {
-	    return 'Invalid number of paddings. Must be length of 2.';
-	  });
-	  return pad(x, [paddings], constantValue);
-	}
+function pad1d_(e,t,n){return void 0===n&&(n=0),assert(2===t.length,"Invalid number of paddings. Must be length of 2."),pad(e,[t],n)}

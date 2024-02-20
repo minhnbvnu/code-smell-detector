@@ -1,3 +1,1 @@
-function NullOptimizer(queue) {
-    this.queue = queue;
-  }
+function NullOptimizer(t){_classCallCheck(this,NullOptimizer);this.queue=t}

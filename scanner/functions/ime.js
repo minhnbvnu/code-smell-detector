@@ -1,0 +1,1 @@
+function ime(){let e=O.useContext(a$);return{modalProviderProps:{"aria-hidden":e&&e.modalCount>0?!0:null}}}

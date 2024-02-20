@@ -1,0 +1,1 @@
+function sc_stringLength(s) { return s.length; }

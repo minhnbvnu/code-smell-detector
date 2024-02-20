@@ -1,3 +1,3 @@
 function _toArray(arr) {
-	  return _arrayWithHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableRest();
-	}
+  return arrayWithHoles(arr) || iterableToArray(arr) || nonIterableRest();
+}

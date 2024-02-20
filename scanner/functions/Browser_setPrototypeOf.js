@@ -1,0 +1,1 @@
+function Browser_setPrototypeOf(o, p) { Browser_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return Browser_setPrototypeOf(o, p); }

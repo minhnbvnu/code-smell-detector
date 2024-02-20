@@ -1,1 +1,1 @@
-function ph(a){a=a|0;return I[a+32|0]}
+function PH(){if(typeof WeakMap!="function")return null;var e=new WeakMap;return PH=function(){return e},e}

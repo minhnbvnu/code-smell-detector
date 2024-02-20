@@ -1,0 +1,1 @@
+function GlobalImageCache(){_classCallCheck(this,GlobalImageCache);this._refCache=new l.RefSetCache;this._imageCache=new l.RefSetCache}

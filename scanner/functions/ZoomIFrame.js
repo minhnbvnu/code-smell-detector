@@ -1,0 +1,1 @@
+function ZoomIFrame(){var _this2;return _classCallCheck(this,ZoomIFrame),(_this2=_super.apply(this,arguments)).iframe=null,_this2}

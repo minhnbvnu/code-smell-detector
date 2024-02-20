@@ -1,7 +1,1 @@
-function greaterStrict_(a, b) {
-	  deprecationWarn('strict variants of ops have been deprecated ' + 'and will be removed in future');
-	  var $a = convertToTensor(a, 'a', 'greaterStrict');
-	  var $b = convertToTensor(b, 'b', 'greaterStrict');
-	  assertShapesMatch($a.shape, $b.shape, 'Error in greaterStrict: ');
-	  return greater($a, $b);
-	}
+function greaterStrict_(e,t){var n=convertToTensor(e,"a","greaterStrict"),r=convertToTensor(t,"b","greaterStrict");return assertShapesMatch(n.shape,r.shape,"Error in greaterStrict: "),n.greater(r)}

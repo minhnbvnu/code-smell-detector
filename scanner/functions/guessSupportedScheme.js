@@ -1,0 +1,1 @@
+function guessSupportedScheme(a){if(a.startsWith("com.widevine")||a.startsWith("com.microsoft")||a.startsWith("com.chromecast")||a.startsWith("com.adobe")||a.startsWith("org.w3"))return"cenc";if(a.startsWith("com.apple"))return"cbcs-1-9";console.warn("EmeEncryptionSchemePolyfill: Unknown key system:",a,"Please contribute!");return null}

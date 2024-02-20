@@ -1,0 +1,1 @@
+function parse_SST(blob,length){var cnt=blob.read_shift(4);var ucnt=blob.read_shift(4);var strs=[];for(var i=0;i!=ucnt;++i){strs.push(parse_XLUnicodeRichExtendedString(blob))}strs.Count=cnt;strs.Unique=ucnt;return strs}

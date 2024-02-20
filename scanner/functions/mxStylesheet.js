@@ -1,0 +1,1 @@
+function mxStylesheet(){this.styles={};this.putDefaultVertexStyle(this.createDefaultVertexStyle());this.putDefaultEdgeStyle(this.createDefaultEdgeStyle())}

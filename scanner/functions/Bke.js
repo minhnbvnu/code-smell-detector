@@ -1,0 +1,1 @@
+function Bke(e,t,r){r||(r=t,t=KE);let i="chcp 65001 > nul && cmd /C "+e+" && chcp "+so+" > nul";bJ(i,t,function(a,n){r(a,n)})}

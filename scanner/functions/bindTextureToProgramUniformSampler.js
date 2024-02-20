@@ -1,8 +1,1 @@
-function bindTextureToProgramUniformSampler(gl, texture, uniformSamplerLocation, textureUnit) {
-	  callAndCheck(gl, function () {
-	    return bindTextureUnit(gl, texture, textureUnit);
-	  });
-	  callAndCheck(gl, function () {
-	    return gl.uniform1i(uniformSamplerLocation, textureUnit);
-	  });
-	}
+function bindTextureToProgramUniformSampler(e,t,n,r,o){callAndCheck(e,function(){return bindTextureUnit(e,n,o)}),callAndCheck(e,function(){return e.uniform1i(r,o)});}

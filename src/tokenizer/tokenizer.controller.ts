@@ -6,7 +6,11 @@ export class TokenizerController {
   constructor(private readonly tokenizerService: TokenizerService) {}
 
   @Post()
-  tokenize(@Query("type") type: "1d" | "2d") {
-    return this.tokenizerService.tokenize(type);
+  async tokenize() {
+    for(const type in ['1d', '2d']) {
+    await this.tokenizerService.tokenize(type as '1d' | '2d');
+    }
+  return true
+
   }
 }

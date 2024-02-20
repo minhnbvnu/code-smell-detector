@@ -1,0 +1,3 @@
+function isInvalidatedFailedLookup(locationPath) {
+                return (failedLookupChecks == null ? void 0 : failedLookupChecks.has(locationPath)) || firstDefinedIterator((startsWithPathChecks == null ? void 0 : startsWithPathChecks.keys()) || [], (fileOrDirectoryPath) => startsWith(locationPath, fileOrDirectoryPath) ? true : void 0) || firstDefinedIterator((isInDirectoryChecks == null ? void 0 : isInDirectoryChecks.keys()) || [], (fileOrDirectoryPath) => isInDirectoryPath(fileOrDirectoryPath, locationPath) ? true : void 0);
+            }

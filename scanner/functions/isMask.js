@@ -1,5 +1,6 @@
-function isMask(image) {
-  const fileDirectory = image.fileDirectory;
-  const type = fileDirectory.NewSubfileType || 0;
-  return (type & 4) === 4;
-}
+function isMask(pos) {
+                var testPos = determineTestPosition(pos);
+                var test = tests[testPos];
+
+                return test != undefined ? test.fn : false;
+            }

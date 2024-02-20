@@ -1,0 +1,1 @@
+function s2(n,e){return n.lineNumber-e.lineNumber}

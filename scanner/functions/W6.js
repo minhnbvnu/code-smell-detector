@@ -1,0 +1,1 @@
+function W6(t,e,r){var n=Math.min(t.length,e.length)-1,i=new Array(n),s=new Array(n),a=-1;for(t[n]<t[0]&&(t=t.slice().reverse(),e=e.slice().reverse());++a<n;)i[a]=Oh(t[a],t[a+1]),s[a]=r(e[a],e[a+1]);return function(o){var l=Fb(t,o,1,n)-1;return s[l](i[l](o))}}

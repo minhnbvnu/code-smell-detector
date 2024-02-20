@@ -1,0 +1,3 @@
+function shouldSuspendFiberAlwaysFalse() {
+    return false;
+  }

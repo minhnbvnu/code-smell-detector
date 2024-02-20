@@ -1,0 +1,1 @@
+function YFe(e,t,r){return Or(e,e.attempt(this.parser.constructs.document,t,r),"linePrefix",this.parser.constructs.disable.null.includes("codeIndented")?void 0:4)}

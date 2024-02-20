@@ -1,0 +1,1 @@
+function G9e(e){if(this.isInfinity())return this;if(e.signum()==0)return this.curve.getInfinity();var t=e,r=t.multiply(new Wr("3")),i=this.negate(),a=this,n;for(n=r.bitLength()-2;n>0;--n){a=a.twice();var s=r.testBit(n),o=t.testBit(n);s!=o&&(a=a.add(s?this:i))}return a}

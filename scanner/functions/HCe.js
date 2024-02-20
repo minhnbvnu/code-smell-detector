@@ -1,0 +1,1 @@
+function HCe(e){if(e==null&&(e=10),this.signum()==0||e<2||e>36)return"0";var t=this.chunkSize(e),r=Math.pow(e,t),i=lp(r),a=Cr(),n=Cr(),s="";for(this.divRemTo(i,a,n);a.signum()>0;)s=(r+n.intValue()).toString(e).substr(1)+s,a.divRemTo(i,a,n);return n.intValue().toString(e)+s}

@@ -1,0 +1,1 @@
+function subRender(template){return self.render(template,context,partials)}

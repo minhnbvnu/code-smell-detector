@@ -1,15 +1,1 @@
-function decodeIAID(contextCache, decoder, codeLength) {
-    var contexts = contextCache.getContexts("IAID");
-    var prev = 1;
-
-    for (var i = 0; i < codeLength; i++) {
-      var bit = decoder.readBit(contexts, prev);
-      prev = prev << 1 | bit;
-    }
-
-    if (codeLength < 31) {
-      return prev & (1 << codeLength) - 1;
-    }
-
-    return prev & 0x7fffffff;
-  }
+function decodeIAID(t,r,o){for(var c=t.getContexts("IAID"),l=1,u=0;u<o;u++){l=l<<1|r.readBit(c,l)}return o<31?l&(1<<o)-1:2147483647&l}

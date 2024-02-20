@@ -1,0 +1,1 @@
+function ZK(n,t){switch(n){case xn.PACKED_2X2_FLOAT32:return sw(t);case xn.PACKED_2X2_FLOAT16:return aw(t);case xn.UNPACKED_FLOAT32:return iw(t);case xn.UNPACKED_FLOAT16:return rw(t);case xn.PACKED_4X1_UNSIGNED_BYTE:return ow(t);default:throw new Error(`Unknown physical texture type ${n}`)}}

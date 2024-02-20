@@ -1,0 +1,1 @@
+function kq(a){a=a|0;return a&255|0}

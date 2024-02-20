@@ -1,8 +1,12 @@
-function ArrayIterator(items) {
-	    var _this;
+function ArrayIterator(array)
+{
+    var index = -1;
 
-	    _this = _LazyIterator.call(this) || this;
-	    _this.items = items;
-	    _this.trav = 0;
-	    return _this;
-	  }
+    this.next = function()
+    {
+        if (++index >= array.length)
+            throw StopIteration;
+
+        return array[index];
+    };
+}

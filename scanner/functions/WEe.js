@@ -1,0 +1,1 @@
+function WEe(e,t,r){switch(e.length){case 1:return tE(e[0],t,r,!0);default:var i="",a=rE(e);a.array&&a.object&&(i=a.null?"(":"(!"+t+" || ",i+="typeof "+t+' !== "object")',delete a.null,delete a.array,delete a.object),a.number&&delete a.integer;for(var n in a)i+=(i?" && ":"")+tE(n,t,r,!0);return i}}

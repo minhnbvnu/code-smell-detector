@@ -1,10 +1,1 @@
-function Slot(data, bone) {
-	      this.deform = new Array();
-	      if (data == null) throw new Error("data cannot be null.");
-	      if (bone == null) throw new Error("bone cannot be null.");
-	      this.data = data;
-	      this.bone = bone;
-	      this.color = new spine.Color();
-	      this.darkColor = data.darkColor == null ? null : new spine.Color();
-	      this.setToSetupPose();
-	    }
+function Slot(i){var o=i.name,u=i.active,C=i.onlyActive,_=i.className,w=i.props,P=void 0===w?{}:w,B=(0,Br.E)().slots,z=B[o];if(!z)throw new Error('Slot "'+o+'" not found, available slots: '+Object.keys(B).join(", "));var U=z.map((function(i,o){var _=i,w=_.id,B=_.render,z=P;if(w&&B){if(C&&w!==u)return null;var U=P.onClick;z=Object.assign({},P,{name:w,active:u?w===u:void 0,onClick:U&&function(){for(var i=arguments.length,o=new Array(i),s=0;s<i;s++)o[s]=arguments[s];return U.apply(void 0,[w].concat(o))}});var V=B;return s.createElement(V,Slot_extends({key:o},z))}var $=i;return s.createElement($,Slot_extends({key:o},z))})),V=U.filter(Boolean);return 0===V.length?null:s.createElement("div",{className:_},V)}

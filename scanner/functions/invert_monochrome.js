@@ -1,4 +1,4 @@
-function invert_monochrome(source_ctx, dest_ctx = source_ctx, monochrome_info = detect_monochrome(source_ctx)) {
+function invert_monochrome(source_ctx, dest_ctx=source_ctx, monochrome_info=detect_monochrome(source_ctx)) {
 	const image_data = source_ctx.getImageData(0, 0, source_ctx.canvas.width, source_ctx.canvas.height);
 	// Note: values in pixel_array may be different on big endian vs little endian machines.
 	// Only rely on equality of values within the array.
@@ -37,7 +37,7 @@ function invert_monochrome(source_ctx, dest_ctx = source_ctx, monochrome_info = 
 		return;
 	}
 	const [uint32_a, uint32_b] = monochrome_info.presentNonTransparentUint32s;
-	for (let i = 0, len = pixel_array.length; i < len; i += 1) {
+	for(let i=0, len=pixel_array.length; i<len; i+=1){
 		if (pixel_array[i] === uint32_a) {
 			pixel_array[i] = uint32_b;
 		} else if (pixel_array[i] === uint32_b) {

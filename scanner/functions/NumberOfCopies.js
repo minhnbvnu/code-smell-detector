@@ -1,0 +1,1 @@
+function NumberOfCopies(t){_classCallCheck(this,NumberOfCopies);return r.call(this,d,"numberOfCopies",null,(function(t){return t>=2&&t<=5}))}

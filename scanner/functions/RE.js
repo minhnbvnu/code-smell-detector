@@ -1,0 +1,1 @@
+function RE(n,t,e){let i=n.rows,r=n.columns,o=[];for(let s=0;s<r;s++){let a=0,l=0,c=0;for(let u=0;u<i;u++)c=n.get(u,s)-e[s],a+=c,l+=c*c;t?o.push((l-a*a/i)/(i-1)):o.push((l-a*a/i)/i)}return o}

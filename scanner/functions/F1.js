@@ -1,0 +1,1 @@
+function F1(h,m){1&h&&(t.TgZ(0,"kendo-tabstrip-tab",9),t.YNc(1,V0,3,4,"ng-template",10),t.YNc(2,Vv,1,2,"ng-template",11),t.qZA()),2&h&&t.Q6J("selected",m.$implicit.selected)}

@@ -1,0 +1,1 @@
+function isHighlightJs(astGenerator){return astGenerator&&void 0!==astGenerator.highlightAuto}

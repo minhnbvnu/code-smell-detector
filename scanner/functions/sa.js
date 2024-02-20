@@ -1,0 +1,1 @@
+function sa(a){return 0===a||null!=a}

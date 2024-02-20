@@ -1,1 +1,1 @@
-function Zx(a){a=a|0;var b=0;b=fa-16|0;fa=b;L[b+12>>2]=a;ee(L[b+12>>2]);fa=b+16|0}
+function zx(t){var e=this._id;return arguments.length?this.each(Ux(e,t)):dn(this.node(),e).ease}

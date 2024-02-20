@@ -1,0 +1,1 @@
+function getRegionalIndicatorSymbol(i){return String.fromCodePoint(127397+i.toUpperCase().charCodeAt(0))}

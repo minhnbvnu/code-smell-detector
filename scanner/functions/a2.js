@@ -1,2 +1,1 @@
-function a2($,z){var v=0;
-if(z<$){while(v<=14&&z<<++v<$);}return v}
+function a2(n,e,r,u,t,i,o,s,l,c){function a(f,p){return f?c(f):so(n,e,p,r,u,t,i,o,s,c)}l?a(null,ge.readFileSync(e,S.utf8Encoding)):ge.readFile(e,S.utf8Encoding,a)}

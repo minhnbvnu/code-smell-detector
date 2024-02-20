@@ -1,0 +1,1 @@
+function ___unlockfile($0){$0=$0|0;var label=0,sp=0;sp=STACKTOP;return}

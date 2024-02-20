@@ -1,0 +1,1 @@
+function parse_FullColorExt(blob,length){var o={};o.xclrType=blob.read_shift(2);o.nTintShade=blob.read_shift(2);switch(o.xclrType){case 0:blob.l+=4;break;case 1:o.xclrValue=parse_IcvXF(blob,4);break;case 2:o.xclrValue=parse_LongRGBA(blob,4);break;case 3:o.xclrValue=parse_ColorTheme(blob,4);break;case 4:blob.l+=4;break}blob.l+=8;return o}

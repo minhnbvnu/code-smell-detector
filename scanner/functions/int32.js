@@ -1,3 +1,1 @@
-function int32(b0, b1, b2, b3) {
-    return (b0 << 24) + (b1 << 16) + (b2 << 8) + b3;
-  }
+function int32(t,r){return t.charCodeAt(r)<<24|t.charCodeAt(r+1)<<16|t.charCodeAt(r+2)<<8|255&t.charCodeAt(r+3)}

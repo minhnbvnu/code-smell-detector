@@ -1,0 +1,1 @@
+function write_comments_bin(data,opts){}

@@ -1,0 +1,1 @@
+function getIndexAndLocation(){var _window$location=window.location,pathname=_window$location.pathname,search=_window$location.search,hash=_window$location.hash,state=globalHistory.state||{};return[state.idx,readOnly({pathname:pathname,search:search,hash:hash,state:state.usr||null,key:state.key||"default"})]}

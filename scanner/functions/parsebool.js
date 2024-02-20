@@ -1,0 +1,1 @@
+function parsebool(blob,length){return blob.read_shift(length)===1}

@@ -1,0 +1,1 @@
+function xke(e){var t={};if(e!==void 0)for(var r=0;r<e.length;++r){var i={},a=[];if(!ie.validate(e[r],mke,i,a)){var n=new Error("Cannot read PKCS#12 BagAttribute.");throw n.errors=a,n}var s=ie.derToOid(i.oid);if(sr.oids[s]!==void 0){t[sr.oids[s]]=[];for(var o=0;o<i.values.length;++o)t[sr.oids[s]].push(i.values[o].value)}}return t}

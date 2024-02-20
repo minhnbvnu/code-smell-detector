@@ -1,3 +1,8 @@
-function randomOffset() {
-                return offset / 2 + offset * Math.random()
-            }
+function randomOffset(node) {
+      return (
+        (Math.random() *
+          (1 +
+            (node.nodeType === 3 ? node.nodeValue : node.childNodes).length)) |
+        0
+      );
+    }

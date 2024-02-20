@@ -1,0 +1,1 @@
+function Xrt(n){switch(n){case us:return["Linear","( value )"];case He:return["sRGB","( value )"];default:return console.warn("THREE.WebGLProgram: Unsupported encoding:",n),["Linear","( value )"]}}

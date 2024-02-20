@@ -1,0 +1,1 @@
+function Yj(a,c,d){a=a|0;c=c|0;d=d|0;var e=0,g=0,h=0,i=0,j=0,k=0;e=Rg(a,c)|0;if((e|0)==(a+4|0)){g=-1;h=(g|0)==-1;i=(g|0)!=0;j=h?d:i;return j|0}a=e+28|0;if((b[a+11>>0]|0)<0)k=f[a>>2]|0;else k=a;g=Sj(k)|0;h=(g|0)==-1;i=(g|0)!=0;j=h?d:i;return j|0}

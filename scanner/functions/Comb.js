@@ -1,0 +1,1 @@
+function Comb(t){var o;_classCallCheck(this,Comb);(o=r.call(this,_,"comb")).id=t.id||"";o.numberOfCells=(0,d.getInteger)({data:t.numberOfCells,defaultValue:0,validate:function validate(t){return t>=0}});o.use=t.use||"";o.usehref=t.usehref||"";return o}

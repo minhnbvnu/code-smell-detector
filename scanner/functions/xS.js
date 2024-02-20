@@ -1,0 +1,1 @@
+function xS(t){for(var e=1/0,n=1/0,i=-1/0,r=-1/0,o=0;o<t.length;){var a=t[o++],s=t[o++];isNaN(a)||(e=Math.min(a,e),i=Math.max(a,i)),isNaN(s)||(n=Math.min(s,n),r=Math.max(s,r))}return[[e,n],[i,r]]}

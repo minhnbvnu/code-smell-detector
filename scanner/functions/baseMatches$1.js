@@ -1,0 +1,1 @@
+function baseMatches$1(source){var matchData=getMatchData(source);return 1==matchData.length&&matchData[0][2]?matchesStrictComparable$1(matchData[0][0],matchData[0][1]):function(object){return object===source||baseIsMatch(object,source,matchData)}}

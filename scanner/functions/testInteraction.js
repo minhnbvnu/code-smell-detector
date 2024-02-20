@@ -1,0 +1,1 @@
+function testInteraction (results) { this.initialize(results); }

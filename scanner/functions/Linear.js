@@ -1,3 +1,1 @@
-function linear(t) {
-  return t;
-}
+function Linear(t){var o;_classCallCheck(this,Linear);(o=r.call(this,_,"linear",!0)).id=t.id||"";o.type=(0,d.getStringOption)(t.type,["toRight","toBottom","toLeft","toTop"]);o.use=t.use||"";o.usehref=t.usehref||"";o.color=null;o.extras=null;return o}

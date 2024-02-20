@@ -1,0 +1,1 @@
+function fixopts(o){for(var y=0;y!=opts_fmt.length;++y)if(o[opts_fmt[y][0]]===undefined)o[opts_fmt[y][0]]=opts_fmt[y][1]}

@@ -1,0 +1,1 @@
+function loadFonts(fonts){var index=-1;while(font=fonts[++index]){loadFont(font.family,font.weight,font.style,font.src)}}

@@ -1,0 +1,1 @@
+function o3e(e,t,r,i){var a,n,s=new Fn(32),o=[Nt(),Nt(),Nt(),Nt()],u=[Nt(),Nt(),Nt(),Nt()];if(n=-1,r<64||u3e(u,i))return-1;for(a=0;a<r;++a)e[a]=t[a];for(a=0;a<32;++a)e[a+32]=i[a];var l=Nm(e,r);if(iw(l),MM(o,u,l),sw(u,t.subarray(32)),aw(o,u),nw(s,o),r-=64,qM(t,0,s,0)){for(a=0;a<r;++a)e[a]=0;return-1}for(a=0;a<r;++a)e[a]=t[a+64];return n=r,n}

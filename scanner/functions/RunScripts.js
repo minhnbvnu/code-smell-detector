@@ -1,0 +1,1 @@
+function RunScripts(t){_classCallCheck(this,RunScripts);return r.call(this,d,"runScripts",["both","client","none","server"])}

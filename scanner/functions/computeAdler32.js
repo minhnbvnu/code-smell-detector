@@ -1,12 +1,1 @@
-function computeAdler32(bytes) {
-  const bytesLength = bytes.length;
-  let a = 1,
-      b = 0;
-
-  for (let i = 0; i < bytesLength; ++i) {
-    a += bytes[i] & 0xff;
-    b += a;
-  }
-
-  return b % 65521 << 16 | a % 65521;
-}
+function computeAdler32(t){for(var r=t.length,o=1,c=0,l=0;l<r;++l)c+=o+=255&t[l];return c%65521<<16|o%65521}

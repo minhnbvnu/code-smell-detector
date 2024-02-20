@@ -1,0 +1,1 @@
+function Gx(t){typeof t!="function"&&(t=ef(t));for(var e=this._groups,r=e.length,n=new Array(r),i=0;i<r;++i)for(var s=e[i],a=s.length,o=n[i]=[],l,u=0;u<a;++u)(l=s[u])&&t.call(l,l.__data__,u,s)&&o.push(l);return new ri(n,this._parents,this._name,this._id)}

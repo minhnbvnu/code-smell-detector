@@ -1,0 +1,1 @@
+function parse_FormulaValue(blob){var b;if(__readUInt16LE(blob,blob.l+6)!==65535)return[parse_Xnum(blob),"n"];switch(blob[blob.l]){case 0:blob.l+=8;return["String","s"];case 1:b=blob[blob.l+2]===1;blob.l+=8;return[b,"b"];case 2:b=blob[blob.l+2];blob.l+=8;return[b,"e"];case 3:blob.l+=8;return["","s"]}}

@@ -1,0 +1,1 @@
+function ensurePanel(panels,selectedPanel,currentPanel){var keys=Object.keys(panels);return keys.indexOf(selectedPanel)>=0?selectedPanel:keys.length?keys[0]:currentPanel}

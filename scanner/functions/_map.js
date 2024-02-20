@@ -1,0 +1,1 @@
+function _map(e,r){for(var t=new Array(r.length),n=0;n<r.length;n++)t[n]=e(r[n]);return t}

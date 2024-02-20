@@ -1,8 +1,1 @@
-function downloadFloat32MatrixFromBuffer(gl, buffer, size) {
-	  var gl2 = gl;
-	  var downloadTarget = new Float32Array(size);
-	  gl2.bindBuffer(gl2.PIXEL_PACK_BUFFER, buffer);
-	  gl2.getBufferSubData(gl2.PIXEL_PACK_BUFFER, 0, downloadTarget);
-	  gl2.bindBuffer(gl2.PIXEL_PACK_BUFFER, null);
-	  return downloadTarget;
-	}
+function downloadFloat32MatrixFromBuffer(e,t,n,r,o){var a=e,i=new Float32Array(getUnpackedArraySizeFromMatrixSize(n*r,o.downloadUnpackNumChannels));a.bindBuffer(e.ARRAY_BUFFER,t),a.getBufferSubData(e.ARRAY_BUFFER,0,i),a.bindBuffer(e.ARRAY_BUFFER,null);var s=new Float32Array(n*r);return decodeMatrixFromUnpackedArray(i,s,o.downloadUnpackNumChannels),s}

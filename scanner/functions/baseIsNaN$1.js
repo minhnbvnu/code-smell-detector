@@ -1,0 +1,1 @@
+function baseIsNaN$1(value){return value!=value}

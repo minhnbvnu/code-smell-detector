@@ -1,0 +1,1 @@
+function JB(t){Nm(XB),t.registerComponentModel(UB),t.registerComponentView($B),function(t){t.registerAction("legendScroll","legendscroll",(function(t,e){var n=t.scrollDataIndex;null!=n&&e.eachComponent({mainType:"legend",subType:"scroll",query:t},(function(t){t.setScrollDataIndex(n)}))}))}(t)}

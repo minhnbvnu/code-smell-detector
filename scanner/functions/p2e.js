@@ -1,0 +1,1 @@
+function p2e(e){let t="",i=f2e(e).idx,a=!1;for(let n=0;n<=7;++n)if(!(a&&e[n]===0)){if(a&&(a=!1),i===n){t+=n===0?"::":":",a=!0;continue}t+=e[n].toString(16),n!==7&&(t+=":")}return t}

@@ -1,0 +1,1 @@
+function Boe(e){return qk.access(e).then(()=>!0).catch(()=>!1)}

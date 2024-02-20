@@ -1,0 +1,1 @@
+function Lrt(n,t){n.uniform4iv(this.addr,t)}

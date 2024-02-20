@@ -1,0 +1,1 @@
+function Wd(){return++qb}

@@ -1,0 +1,1 @@
+function strOk(T){return typeof T===S&&T.length>0}

@@ -1,20 +1,20 @@
-function process(poly) {
-        // Construct input for earcut
-        const coords = [];
-        const holes = [];
-        poly.points.forEach(({ x, y }) => coords.push(x, y));
-        poly.children.forEach((child) => {
-            // Children's children are new, separate shapes
-            child.children.forEach(process);
+function process( last ) {
+	function next() {
+		process( last );
+	}
+	var start = new Date().getTime();
+	config.depth = config.depth ? config.depth + 1 : 1;
 
-            holes.push(coords.length / 2);
-            child.points.forEach(({ x, y }) => coords.push(x, y));
-        });
-
-        // Add vertex data
-        vertexData.set(coords, vertexCount * 2);
-
-        // Add index data
-        earcut(coords, holes).forEach(i => indices.push(i + vertexCount));
-        vertexCount += coords.length / 2;
-    }
+	while ( config.queue.length && !config.blocking ) {
+		if ( !defined.setTimeout || config.updateRate <= 0 || ( ( new Date().getTime() - start ) < config.updateRate ) ) {
+			config.queue.shift()();
+		} else {
+			setTimeout( next, 13 );
+			break;
+		}
+	}
+	config.depth--;
+	if ( last && !config.blocking && !config.queue.length && config.depth === 0 ) {
+		done();
+	}
+}

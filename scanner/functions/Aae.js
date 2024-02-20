@@ -1,0 +1,1 @@
+function Aae(e,t,r){let n,{children:i}=e;r>0&&t instanceof Co&&i.length&&(n=i[i.length-1])instanceof Co&&n.mark.eq(t.mark)?Aae(n,t.children[0],r-1):(i.push(t),t.setParent(e)),e.length+=t.length}

@@ -1,0 +1,1 @@
+function PTe(e){return parseInt(e.substr(e.indexOf(" (")+2,e.indexOf(" Bytes)")-10))}

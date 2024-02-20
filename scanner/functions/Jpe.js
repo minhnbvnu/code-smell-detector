@@ -1,0 +1,1 @@
+function Jpe(e,t){return t==="rtl"?e.replace("start","right").replace("end","left"):e.replace("start","left").replace("end","right")}

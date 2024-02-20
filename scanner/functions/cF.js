@@ -1,1 +1,1 @@
-function Cf(a){a=a|0;return 1211}
+function cF(a){if(a.length<4)return cw(a);var b=[],c=-1,d=a.length,e,f=[0],g=[0];while(++c<3)e=a[c],f.push(e[0]),g.push(e[1]);b.push(cI(cL,f)+","+cI(cL,g)),--c;while(++c<d)e=a[c],f.shift(),f.push(e[0]),g.shift(),g.push(e[1]),cM(b,f,g);return b.join("")}

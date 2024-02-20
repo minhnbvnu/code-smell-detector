@@ -1,0 +1,1 @@
+function _glBindBufferBase(target,index,buffer){GLctx["bindBufferBase"](target,index,GL.buffers[buffer])}

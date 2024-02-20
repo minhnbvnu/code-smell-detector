@@ -1,0 +1,1 @@
+function _wgpu_buffer_map_async(buffer,callback,userData,mode,offset,size){let bufferObject=wgpu[buffer];(size<0?bufferObject["mapAsync"](mode,offset):bufferObject["mapAsync"](mode,offset,size)).then(()=>{((a1,a2,a3,a4,a5)=>dynCall_viiidd.apply(null,[callback,a1,a2,a3,a4,a5]))(buffer,userData,mode,offset,size)})}

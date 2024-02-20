@@ -1,0 +1,1 @@
+function readPC(){return (readBits('pch', 8)<<8) + readBits('pcl', 8);}

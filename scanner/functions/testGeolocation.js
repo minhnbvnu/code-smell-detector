@@ -1,0 +1,1 @@
+function testGeolocation (results) { this.initialize(results); }

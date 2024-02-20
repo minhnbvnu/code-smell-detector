@@ -1,0 +1,3 @@
+function entryWithFocus() {
+  return $(".withfocus");
+}

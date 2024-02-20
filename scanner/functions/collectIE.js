@@ -1,0 +1,1 @@
+function collectIE(n){if(!n.getAttribute('mce_save')){n.setAttribute('mce_save','1');o.push(n);}}

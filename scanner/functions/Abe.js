@@ -1,0 +1,1 @@
+function Abe(e,t,r){let{labelProps:n,inputProps:i,isSelected:a,isPressed:l,isDisabled:s,isReadOnly:u}=qK(e,t,r);return{labelProps:n,inputProps:{...i,role:"switch",checked:a},isSelected:a,isPressed:l,isDisabled:s,isReadOnly:u}}

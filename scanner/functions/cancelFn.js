@@ -1,0 +1,3 @@
+function cancelFn() {
+        close(true);
+      }

@@ -1,18 +1,3 @@
-function encode(geom) {
-  const type = geom.getType();
-  const geometryEncoder = GeometryEncoder[type];
-  const enc = geometryEncoder(geom);
-  let wktType = wktTypeLookup[type];
-  if (typeof (/** @type {?} */ (geom).getFlatCoordinates) === 'function') {
-    const dimInfo = encodeGeometryLayout(
-      /** @type {import("../geom/SimpleGeometry.js").default} */ (geom),
-    );
-    if (dimInfo.length > 0) {
-      wktType += ' ' + dimInfo;
-    }
-  }
-  if (enc.length === 0) {
-    return wktType + ' ' + EMPTY;
-  }
-  return wktType + '(' + enc + ')';
+function encode(val) {
+  return encodeURIComponent(val).replace(/%40/gi, '@').replace(/%3A/gi, ':').replace(/%24/g, '$').replace(/%2C/gi, ',').replace(/%20/g, '+').replace(/%5B/gi, '[').replace(/%5D/gi, ']');
 }

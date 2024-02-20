@@ -1,4 +1,3 @@
-function unlisten() {
-      image.removeEventListener('load', handleLoad);
-      image.removeEventListener('error', handleError);
-    }
+function unlisten(name) {
+  listeners.set(name, [])
+}

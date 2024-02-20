@@ -1,0 +1,1 @@
+function hashq(str){var o="",cc;for(var i=0;i!=str.length;++i)switch(cc=str.charCodeAt(i)){case 35:break;case 63:o+=" ";break;case 48:o+="0";break;default:o+=String.fromCharCode(cc)}return o}

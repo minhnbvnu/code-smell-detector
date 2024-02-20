@@ -1,0 +1,1 @@
+function aIe(e){return Ab(t);function t(r){return r&&r.type===e}}

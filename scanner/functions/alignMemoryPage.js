@@ -1,0 +1,1 @@
+function alignMemoryPage(x){if(x%4096>0){x+=4096-x%4096}return x}

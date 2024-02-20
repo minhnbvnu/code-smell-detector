@@ -1,0 +1,1 @@
+function AG(t,e,n){var i=t[e],r=t[1-e],o=Math.abs(i/r),a=Math.ceil(Math.sqrt(o*n)),s=Math.floor(n/a);0===s&&(s=1,a=n);for(var l=[],u=0;u<a;u++)l.push(s);var h=n-a*s;if(h>0)for(u=0;u<h;u++)l[u%a]+=1;return l}

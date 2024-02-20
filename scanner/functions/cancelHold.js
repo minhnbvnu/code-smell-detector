@@ -1,0 +1,1 @@
+function cancelHold(){if(rightClickPending){window.clearTimeout(holdTimeout);rightClickPending=false;rightClickEvent=null}}

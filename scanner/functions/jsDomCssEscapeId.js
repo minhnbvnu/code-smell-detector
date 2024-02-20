@@ -1,0 +1,1 @@
+function jsDomCssEscapeId(id){if(typeof window.CSS!=="undefined"&&typeof window.CSS.escape!=="undefined"){return window.CSS.escape(id)}return id.replace(/(#|\.|\+|\[|\]|\(|\)|\{|\})/g,"\\$1")}

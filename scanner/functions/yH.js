@@ -1,0 +1,1 @@
+function yH(n,t){return n.key?v5(n.key,t):n.detail&&n.detail.key?v5(n.detail.key,t):xH(n.keyIdentifier)||vH(n.keyCode)||""}

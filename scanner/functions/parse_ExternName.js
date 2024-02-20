@@ -1,0 +1,1 @@
+function parse_ExternName(blob,length,opts){var flags=blob.read_shift(2);var body;var o={fBuiltIn:flags&1,fWantAdvise:flags>>>1&1,fWantPict:flags>>>2&1,fOle:flags>>>3&1,fOleLink:flags>>>4&1,cf:flags>>>5&1023,fIcon:flags>>>15&1};if(opts.sbcch===14849)body=parse_AddinUdf(blob,length-2);o.body=body||blob.read_shift(length-2);return o}

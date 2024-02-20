@@ -1,0 +1,1 @@
+function parse_wb(data,name,opts){return(name.substr(-4)===".bin"?parse_wb_bin:parse_wb_xml)(data,opts)}

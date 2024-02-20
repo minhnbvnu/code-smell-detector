@@ -1,0 +1,1 @@
+function _emscripten_webgl_init_context_attributes(attributes){var a=attributes>>2;for(var i=0;i<56>>2;++i){HEAP32[a+i]=0}HEAP32[a+(0>>2)]=HEAP32[a+(4>>2)]=HEAP32[a+(12>>2)]=HEAP32[a+(16>>2)]=HEAP32[a+(32>>2)]=HEAP32[a+(40>>2)]=1}

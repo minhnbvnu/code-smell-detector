@@ -1,0 +1,1 @@
+function strLen(ptr){var end=ptr;while(HEAPU8[end])++end;return end-ptr}

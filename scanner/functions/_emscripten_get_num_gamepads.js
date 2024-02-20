@@ -1,0 +1,1 @@
+function _emscripten_get_num_gamepads(){return JSEvents.lastGamepadState.length}

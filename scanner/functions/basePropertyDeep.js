@@ -1,5 +1,5 @@
 function basePropertyDeep(path) {
-	  return function (object) {
-	    return baseGet(object, path);
-	  };
-	}
+      return function(object) {
+        return baseGet(object, path);
+      };
+    }

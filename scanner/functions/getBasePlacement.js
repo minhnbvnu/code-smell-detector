@@ -1,0 +1,1 @@
+function getBasePlacement(i){return i.split("-")[0]}

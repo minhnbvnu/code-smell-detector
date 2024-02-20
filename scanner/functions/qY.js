@@ -1,0 +1,1 @@
+function qY(e,t){if(e._schemas[t]||e._refs[t])throw new Error('schema with key or id "'+t+'" already exists')}

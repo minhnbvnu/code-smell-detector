@@ -1,0 +1,1 @@
+function Khe(e,t){var r=e.protocol==="https:"?"https":"http",i=t.protocol==="https:"?"Https":"Http";return[r,i].join("Over")}

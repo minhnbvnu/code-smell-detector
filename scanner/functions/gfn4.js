@@ -1,0 +1,1 @@
+function gfn4(o){for(var i=0;i!=o.length;++i)if((o.charCodeAt(i)|32)===101)return o.replace(gnr4,".$1").replace(gnr5,"E").replace("e","E").replace(gnr6,"$10$2");return o}

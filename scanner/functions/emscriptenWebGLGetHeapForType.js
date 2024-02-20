@@ -1,0 +1,1 @@
+function emscriptenWebGLGetHeapForType(type){switch(type){case 5120:return HEAP8;case 5121:return HEAPU8;case 5122:return HEAP16;case 5123:case 33635:case 32819:case 32820:case 36193:case 5131:return HEAPU16;case 5124:return HEAP32;case 5125:case 34042:case 35902:case 33640:case 35899:case 34042:return HEAPU32;case 5126:return HEAPF32;default:return null}}

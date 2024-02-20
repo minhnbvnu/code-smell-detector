@@ -1,0 +1,1 @@
+function skipToTag(){for(;C<B&&64!==z.charCodeAt(C);)advance();return!(C>=B)&&(u.assert(64===z.charCodeAt(C)),!0)}

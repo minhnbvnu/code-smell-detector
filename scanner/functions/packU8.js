@@ -1,0 +1,1 @@
+function packU8(n){return[n&255]}

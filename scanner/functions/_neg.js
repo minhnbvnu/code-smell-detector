@@ -1,0 +1,1 @@
+function _neg(e){return"object"===_typeof(e)&&null!==e?_objectNeg(e):-e}

@@ -1,0 +1,1 @@
+function isReturnTitle(i){return"return"===i||"returns"===i}

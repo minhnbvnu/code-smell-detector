@@ -1,0 +1,1 @@
+function getOrMakeEnvironment(){var e=getGlobalNamespace();return null==e.ENV&&(e.ENV=new Environment(getFeaturesFromURL()),setTensorTracker(function(){return e.ENV.engine})),e.ENV}

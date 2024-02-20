@@ -1,0 +1,1 @@
+function dist3(a,b){ return len3(sub3(a,b));}

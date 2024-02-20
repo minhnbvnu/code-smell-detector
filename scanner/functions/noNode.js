@@ -1,0 +1,1 @@
+function noNode() { new Menu({ datasets: [{}] }, www); }

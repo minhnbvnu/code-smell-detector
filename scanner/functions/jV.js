@@ -1,0 +1,1 @@
+function jV(e,t){t.classHierarchy.push("vtkWebGPUShaderCache"),e.getShaderModule=function(e){for(var n=e.getType(),r=e.getHash(),i=t._shaderModules.keys(),o=0;o<i.length;o++){var a=i[o];if(a.getHash()===r&&a.getType()===n)return t._shaderModules.get(a)}var s=VV.newInstance();return s.initialize(t.device,e),t._shaderModules.set(e,s),s}}

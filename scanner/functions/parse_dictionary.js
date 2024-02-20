@@ -1,0 +1,1 @@
+function parse_dictionary(blob,CodePage){var cnt=blob.read_shift(4);var dict={};for(var j=0;j!=cnt;++j){var pid=blob.read_shift(4);var len=blob.read_shift(4);dict[pid]=blob.read_shift(len,CodePage===1200?"utf16le":"utf8").replace(chr0,"").replace(chr1,"!")}if(blob.l&3)blob.l=blob.l>>2+1<<2;return dict}

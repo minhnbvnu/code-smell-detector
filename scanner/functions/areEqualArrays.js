@@ -1,0 +1,1 @@
+function areEqualArrays(i,o){if(i.length!==o.length)return!1;for(var s=0;s<i.length;){if(i[s]!==o[s])return!1;s++}return!0}

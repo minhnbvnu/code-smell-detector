@@ -1,0 +1,1 @@
+function uDe(){for(var e=0;e<this.t;++e)if(this.data[e]!=0)return e*this.DB+oDe(this.data[e]);return this.s<0?this.t*this.DB:-1}

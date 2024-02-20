@@ -1,0 +1,3 @@
+function isInView() {
+            return true;
+          }

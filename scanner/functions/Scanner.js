@@ -1,0 +1,1 @@
+function Scanner(string){this.string=string;this.tail=string;this.pos=0}

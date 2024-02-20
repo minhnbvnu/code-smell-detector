@@ -1,7 +1,1 @@
-function nextFrame() {
-	  return new Promise(function (resolve) {
-	    return delayCallback(function () {
-	      return resolve();
-	    });
-	  });
-	}
+function nextFrame(){return new Promise(function(e){return delayCallback(function(){return e()})})}

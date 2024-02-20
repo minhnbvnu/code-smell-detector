@@ -1,0 +1,1 @@
+function pQ(e,t){var n=tc.newInstance(),r=Se.newTypedArray(t.pointType,9),i=t.height*(1-t.base);r[0]=t.width/2*-1,r[1]=0-i,r[2]=0,r[3]=0,r[4]=t.height-i,r[5]=0,r[6]=t.width/2,r[7]=0-i,r[8]=0;var o=Uint8Array.from([3,0,1,2]);return n.getPoints().setData(r,3),n.getPolys().setData(o,1),n}

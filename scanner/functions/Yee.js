@@ -1,0 +1,1 @@
+function Yee(e,t){fg[e]?fg[e].apply(fg.context,t):fg.log.apply(fg.context,t)}

@@ -1,0 +1,1 @@
+function _emscripten_glEnable(x0){GLctx["enable"](x0)}

@@ -1,1 +1,1 @@
-function Ui(t){var n={};n["facebook.com"]=Vi,n["google.com"]=Ki,n["github.com"]=Fi,n["twitter.com"]=qi;var e=t&&t[Sh];try{if(e)return n[e]?new n[e](t):new Mi(t);if(void 0!==t[Nh])return new ji(t)}catch(t){}return null}
+function Ui(t){return function(){return this.isValid()?this._data[t]:NaN}}

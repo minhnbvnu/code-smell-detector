@@ -1,0 +1,1 @@
+function KIe(e,t){t=t||{};for(var r in e)t[r]=e[r];return t}

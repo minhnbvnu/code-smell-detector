@@ -1,0 +1,1 @@
+function _inet_addr(ptr){var addr=__inet_pton4_raw(Pointer_stringify(ptr));if(addr===null){return-1}return addr}

@@ -1,0 +1,1 @@
+function LX(e,t){return e+t}

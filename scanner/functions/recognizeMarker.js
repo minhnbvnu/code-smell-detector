@@ -1,0 +1,1 @@
+function recognizeMarker(id) { return function (marker) { return marker.id == id; } }

@@ -1,0 +1,1 @@
+function XhtmlNamespace(){_classCallCheck(this,XhtmlNamespace)}

@@ -1,11 +1,1 @@
-function _setValue(templateNode, value) {
-  if (!templateNode.value) {
-    const nodeValue = new Value({});
-
-    templateNode[_xfa_object.$appendChild](nodeValue);
-
-    templateNode.value = nodeValue;
-  }
-
-  templateNode.value[_xfa_object.$setValue](value);
-}
+function _setValue(t,r){if(!t.value){var o=new jt({});t[c.$appendChild](o);t.value=o}t.value[c.$setValue](r)}

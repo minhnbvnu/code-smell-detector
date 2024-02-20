@@ -1,0 +1,1 @@
+function IncrementalMerge(t){_classCallCheck(this,IncrementalMerge);return r.call(this,d,"incrementalMerge")}

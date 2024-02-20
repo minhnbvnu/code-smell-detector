@@ -1,0 +1,1 @@
+function combineFuncs(a,b){return function(elem){return a(elem)||b(elem)}}

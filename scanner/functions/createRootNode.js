@@ -1,0 +1,1 @@
+function createRootNode(g){var v;while(g.hasNode(v=_.uniqueId("_root")));return v}

@@ -1,0 +1,1 @@
+function cK(){try{return new a.XMLHttpRequest}catch(b){}}

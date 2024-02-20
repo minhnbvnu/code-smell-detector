@@ -1,0 +1,1 @@
+function PM(t){var e={};function r(n,i){var s=t.children(n);s&&s.length&&vt(s,function(a){r(a,i+1)}),e[n]=i}return vt(t.children(),function(n){r(n,1)}),e}

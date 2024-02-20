@@ -1,1 +1,0 @@
-function enableGrabCursor () { sceneEl.canvas.classList.add('a-grab-cursor'); }

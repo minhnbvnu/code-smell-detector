@@ -1,0 +1,1 @@
+function ek(a,b){a=a|0;b=b|0;var c=0,d=0,e=0,g=0,h=0,i=0;c=a+36|0;d=a+40|0;a=f[c>>2]|0;if((f[d>>2]|0)==(a|0)){e=1;return e|0}else{g=0;h=a}while(1){a=f[h+(g<<2)>>2]|0;g=g+1|0;if(!(Ra[f[(f[a>>2]|0)+24>>2]&127](a,b)|0)){e=0;i=4;break}h=f[c>>2]|0;if(g>>>0>=(f[d>>2]|0)-h>>2>>>0){e=1;i=4;break}}if((i|0)==4)return e|0;return 0}

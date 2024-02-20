@@ -1,0 +1,1 @@
+function vg_truncateOnWord(s,len,rev){var cnt=0,tok=s.split(vg_truncate_word_re);if(rev){s=(tok=tok.reverse()).filter(function(w){cnt+=w.length;return cnt<=len}).reverse()}else{s=tok.filter(function(w){cnt+=w.length;return cnt<=len})}return s.length?s.join("").trim():tok[0].slice(0,len)}

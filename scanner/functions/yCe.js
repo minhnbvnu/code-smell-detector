@@ -1,0 +1,1 @@
+function yCe(e,t){var r=e%this.DB,i=this.DB-r,a=(1<<i)-1,n=Math.floor(e/this.DB),s=this.s<<r&this.DM,o;for(o=this.t-1;o>=0;--o)t.data[o+n+1]=this.data[o]>>i|s,s=(this.data[o]&a)<<r;for(o=n-1;o>=0;--o)t.data[o]=0;t.data[n]=s,t.t=this.t+n+1,t.s=this.s,t.clamp()}

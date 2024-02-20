@@ -1,0 +1,1 @@
+function c_H(_,$){_=makeInRange(_,0,23);if($||_!=$dt.H){$dt.H=_;dealRange("H")}}

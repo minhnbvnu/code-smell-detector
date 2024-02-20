@@ -1,0 +1,1 @@
+function _JS_Sound_Set3D(channelInstance,threeD){var channel=WEBAudio.audioInstances[channelInstance];channel.set3D(threeD)}

@@ -1,0 +1,1 @@
+function q9e(){return new di(this.q,this.x.square().mod(this.q))}

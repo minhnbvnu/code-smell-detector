@@ -1,0 +1,1 @@
+function parse_XTI(blob,length){var iSupBook=blob.read_shift(2),itabFirst=blob.read_shift(2,"i"),itabLast=blob.read_shift(2,"i");return[iSupBook,itabFirst,itabLast]}

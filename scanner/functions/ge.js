@@ -1,0 +1,1 @@
+function ge(t){var e;if(t&&t._locale&&t._locale._abbr&&(t=t._locale._abbr),!t)return ae;if(!o(t)){if(e=fe(t))return e;t=[t]}return function(t){for(var e,i,n,r,o=0;o<t.length;){for(e=(r=ce(t[o]).split("-")).length,i=(i=ce(t[o+1]))?i.split("-"):null;e>0;){if(n=fe(r.slice(0,e).join("-")))return n;if(i&&i.length>=e&&S(r,i,!0)>=e-1)break;e--}o++}return ae}(t)}

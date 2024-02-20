@@ -1,0 +1,1 @@
+function getNumberOfDecimalPlaces(number){var match=number.toString().match(/(?:\.(\d+))?(?:[eE]([+-]?\d+))?$/);return match?Math.max(0,(match[1]?match[1].length:0)-(match[2]?+match[2]:0)):0}

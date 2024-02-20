@@ -1,0 +1,18 @@
+function try_CaseClause()
+  {
+    shiftT(88);                     // 'case'
+    lookahead1W(261);               // EQName^Token | S^WS | '$' | '%' | '(' | '(:' | 'after' | 'allowing' |
+    if (l1 == 31)                   // '$'
+    {
+      shiftT(31);                   // '$'
+      lookahead1W(254);             // EQName^Token | S^WS | '(:' | 'after' | 'allowing' | 'ancestor' |
+      try_VarName();
+      lookahead1W(30);              // S^WS | '(:' | 'as'
+      shiftT(79);                   // 'as'
+    }
+    lookahead1W(259);               // EQName^Token | S^WS | '%' | '(' | '(:' | 'after' | 'allowing' | 'ancestor' |
+    try_SequenceTypeUnion();
+    shiftT(220);                    // 'return'
+    lookahead1W(266);               // Wildcard | EQName^Token | IntegerLiteral | DecimalLiteral | DoubleLiteral |
+    try_ExprSingle();
+  }

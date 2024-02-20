@@ -1,10 +1,1 @@
-function complex_(real, imag) {
-	  var $real = convertToTensor(real, 'real', 'complex');
-	  var $imag = convertToTensor(imag, 'imag', 'complex');
-	  assertShapesMatch($real.shape, $imag.shape, "real and imag shapes, " + $real.shape + " and " + $imag.shape + ", " + "must match in call to tf.complex().");
-	  var inputs = {
-	    real: $real,
-	    imag: $imag
-	  };
-	  return ENGINE.runKernel(Complex, inputs);
-	}
+function complex_(e,t){var n=convertToTensor(e,"real","complex"),r=convertToTensor(t,"imag","complex");return assertShapesMatch(n.shape,r.shape,"real and imag shapes, "+n.shape+" and "+r.shape+", must match in call to tf.complex()."),ENV.engine.runKernel(function(e){return e.complex(n,r)},{$real:n,$imag:r})}

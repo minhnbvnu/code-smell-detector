@@ -1,0 +1,3 @@
+function BufferedLogger() {
+            this.logContents = [];
+        }

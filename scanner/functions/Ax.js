@@ -1,0 +1,1 @@
+function Ax(t,e,r){var n,i,s;return function(){var a,o=r(this),l;return o==null?void this.removeAttributeNS(t.space,t.local):(a=this.getAttributeNS(t.space,t.local),l=o+"",a===l?null:a===n&&l===i?s:(i=l,s=e(n=a,o)))}}

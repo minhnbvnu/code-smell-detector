@@ -1,0 +1,1 @@
+function vg_load_isFile(url){return url.indexOf(vg_load_fileProtocol)===0}

@@ -1,0 +1,1 @@
+function mxUndoManager(a){this.size=null!=a?a:100;this.clear()}

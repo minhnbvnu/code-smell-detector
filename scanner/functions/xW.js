@@ -1,0 +1,1 @@
+function xW(n,t,e){let i=t.shape.length,r=i>1?t.shape[i-1]:1,o=e.length,s=1;for(let h=r;h<o;++h)s*=e[h];let a=r<1?1:r,l=gn(t.shape)/a,c=[..._r(e.slice(0,r)),1],u=gn(e);return{sliceRank:r,numUpdates:l,sliceSize:s,strides:c,outputSize:u}}

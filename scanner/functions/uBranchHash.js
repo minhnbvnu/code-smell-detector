@@ -1,0 +1,3 @@
+function uBranchHash() {
+  return ubidx++;
+}

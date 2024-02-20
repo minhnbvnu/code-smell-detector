@@ -1,0 +1,1 @@
+function fd(t,e){t&gu?(this.primaryTouch=e.changedPointers[0].identifier,cd.call(this,e)):t&(yu|_u)&&cd.call(this,e)}

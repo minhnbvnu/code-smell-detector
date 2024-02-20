@@ -1,0 +1,1 @@
+function IconZoom_createClass(Constructor, protoProps, staticProps) { if (protoProps) IconZoom_defineProperties(Constructor.prototype, protoProps); if (staticProps) IconZoom_defineProperties(Constructor, staticProps); return Constructor; }

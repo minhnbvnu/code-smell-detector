@@ -1,0 +1,1 @@
+function _emscripten_glGetQueryivEXT(target,pname,params){if(!params){GL.recordError(1281);return}HEAP32[params>>2]=GLctx.disjointTimerQueryExt["getQueryEXT"](target,pname)}

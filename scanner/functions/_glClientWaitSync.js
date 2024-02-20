@@ -1,0 +1,1 @@
+function _glClientWaitSync(sync,flags,timeoutLo,timeoutHi){return GLctx.clientWaitSync(GL.syncs[sync],flags,convertI32PairToI53(timeoutLo,timeoutHi))}

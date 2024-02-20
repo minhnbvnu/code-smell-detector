@@ -1,0 +1,1 @@
+function bP(a){return a.rangeExtent?a.rangeExtent():bO(a.range())}

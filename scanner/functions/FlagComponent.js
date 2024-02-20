@@ -1,0 +1,1 @@
+function FlagComponent(i){var o=i.country,s=i.countryName,C=i.flags,_=i.flagUrl,w=Flag_objectWithoutProperties(i,wa);return C&&C[o]?C[o]({title:s}):u.createElement("img",Flag_extends({},w,{alt:s,role:s?void 0:"presentation",src:_.replace("{XX}",o).replace("{xx}",o.toLowerCase())}))}

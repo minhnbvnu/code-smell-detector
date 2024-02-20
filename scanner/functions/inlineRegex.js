@@ -1,0 +1,1 @@
+function inlineRegex(i){return function(o,s){return s.inline?i.exec(o):null}}

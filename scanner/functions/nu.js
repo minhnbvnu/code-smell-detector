@@ -1,1 +1,1 @@
-function nu(t,n){for(var e in n){var i=n[e].name;t[i]=iu(i,t[e],n[e].j)}}
+function nu(t,e,i){var n;if(t)if(t.forEach)t.forEach(e,i);else if(void 0!==t.length)for(n=0;n<t.length;)e.call(i,t[n],n,t),n++;else for(n in t)t.hasOwnProperty(n)&&e.call(i,t[n],n,t)}

@@ -1,0 +1,1 @@
+function _setDimensions(t,r){var a=r.width,i=r.height,o=r.rotation,l=t.style,c=o%180!=0,u=Math.floor(a)+"px",d=Math.floor(i)+"px";l.width=c?d:u;l.height=c?u:d;t.setAttribute("data-main-rotation",o)}

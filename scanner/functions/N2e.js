@@ -1,0 +1,1 @@
+function N2e(){return O.useEffect(()=>{window.scrollTo(0,0)},[]),w(oe,{children:[o(Nie,{}),o("br",{}),o("br",{})]})}

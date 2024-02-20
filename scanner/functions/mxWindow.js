@@ -1,0 +1,1 @@
+function mxWindow(a,b,c,d,e,f,g,k,l,m){null!=b&&(g=null!=g?g:!0,this.content=b,this.init(c,d,e,f,m),this.installMaximizeHandler(),this.installMinimizeHandler(),this.installCloseHandler(),this.setMinimizable(g),this.setTitle(a),(null==k||k)&&this.installMoveHandler(),null!=l&&null!=l.parentNode?l.parentNode.replaceChild(this.div,l):document.body.appendChild(this.div))}

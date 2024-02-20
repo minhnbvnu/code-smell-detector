@@ -1,1 +1,1 @@
-function dg(){return 11}
+function dG(n,t,e){let i=Math.exp(t*e*e);return e<=n?i:0}

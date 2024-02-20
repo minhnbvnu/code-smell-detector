@@ -1,0 +1,1 @@
+function ___atomic_compare_exchange_8(ptr,expected,desiredl,desiredh,weak,success_memmodel,failure_memmodel){var pl=HEAP32[ptr>>2];var ph=HEAP32[ptr+4>>2];var el=HEAP32[expected>>2];var eh=HEAP32[expected+4>>2];if(pl===el&&ph===eh){HEAP32[ptr>>2]=desiredl;HEAP32[ptr+4>>2]=desiredh;return 1}else{HEAP32[expected>>2]=pl;HEAP32[expected+4>>2]=ph;return 0}}

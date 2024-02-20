@@ -1,16 +1,15 @@
 function _listeners(target, type, unwrap) {
   var events = target._events;
 
-  if (events === undefined)
+  if (!events)
     return [];
 
   var evlistener = events[type];
-  if (evlistener === undefined)
+  if (!evlistener)
     return [];
 
   if (typeof evlistener === 'function')
     return unwrap ? [evlistener.listener || evlistener] : [evlistener];
 
-  return unwrap ?
-    unwrapListeners(evlistener) : arrayClone(evlistener, evlistener.length);
+  return unwrap ? unwrapListeners(evlistener) : arrayClone(evlistener, evlistener.length);
 }

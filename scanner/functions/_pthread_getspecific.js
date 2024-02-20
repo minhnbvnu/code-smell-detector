@@ -1,0 +1,1 @@
+function _pthread_getspecific(key){return PTHREAD_SPECIFIC[key]||0}

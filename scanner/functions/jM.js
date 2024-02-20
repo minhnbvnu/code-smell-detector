@@ -1,0 +1,1 @@
+function jM(t,e){return ir(e,function(r){var n=t.inEdges(r);if(n.length){var i=Bo(n,function(s,a){var o=t.edge(a),l=t.node(a.v);return{sum:s.sum+o.weight*l.order,weight:s.weight+o.weight}},{sum:0,weight:0});return{v:r,barycenter:i.sum/i.weight,weight:i.weight}}else return{v:r}})}

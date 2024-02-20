@@ -1,0 +1,1 @@
+function jsCanvasSelector(){var canvasId=Module["canvas"]?Module["canvas"].id:"unity-canvas";return"#"+jsDomCssEscapeId(canvasId)}

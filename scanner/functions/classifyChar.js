@@ -1,0 +1,1 @@
+function classifyChar(str,idx){var cc=str.charCodeAt(idx);if(cc>32){if(cc<48)return 1;if(cc<58)return 2;if(cc<65)return 1;if(cc<91||cc==95)return 3;if(cc<97)return 1;if(cc<123)return 3;return 1}return cc<33?0:4}

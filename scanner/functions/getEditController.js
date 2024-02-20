@@ -1,0 +1,1 @@
+function getEditController(){return editController}

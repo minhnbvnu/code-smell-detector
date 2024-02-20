@@ -1,0 +1,1 @@
+function reverseY(g){_.forEach(g.nodes(),function(v){reverseYOne(g.node(v))});_.forEach(g.edges(),function(e){var edge=g.edge(e);_.forEach(edge.points,reverseYOne);if(_.has(edge,"y")){reverseYOne(edge)}})}

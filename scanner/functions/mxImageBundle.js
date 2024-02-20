@@ -1,0 +1,1 @@
+function mxImageBundle(a){this.images=[];this.alt=null!=a?a:!1}

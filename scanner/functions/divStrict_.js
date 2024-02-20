@@ -1,7 +1,1 @@
-function divStrict_(a, b) {
-	  deprecationWarn('strict variants of ops have been deprecated ' + 'and will be removed in future');
-	  var $a = convertToTensor(a, 'a', 'div');
-	  var $b = convertToTensor(b, 'b', 'div');
-	  assertShapesMatch($a.shape, $b.shape, 'Error in divideStrict: ');
-	  return div($a, $b);
-	}
+function divStrict_(e,t){var n=convertToTensor(e,"a","div"),r=convertToTensor(t,"b","div");return assertShapesMatch(n.shape,r.shape,"Error in divideStrict: "),n.div(r)}

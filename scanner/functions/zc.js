@@ -1,1 +1,1 @@
-function zc(a){a=a|0;Ad(a);oa(a)}
+function zc(a,b){b=b||"_";return a.replace(ge,function(a,c){return(c?b:"")+a.toLowerCase()})}

@@ -1,0 +1,1 @@
+function bOe(e){return e=e||"",e?e.substr(0,4)+"-"+e.substr(4,2)+"-"+e.substr(6,2)+" "+e.substr(8,2)+":"+e.substr(10,2)+":"+e.substr(12,2):""}

@@ -1,0 +1,1 @@
+function Picture(t){_classCallCheck(this,Picture);return r.call(this,d,"picture")}

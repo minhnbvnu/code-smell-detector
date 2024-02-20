@@ -1,17 +1,1 @@
-function meanSquaredError_(labels, predictions, weights, reduction) {
-	  if (reduction === void 0) {
-	    reduction = exports.Reduction.SUM_BY_NONZERO_WEIGHTS;
-	  }
-
-	  var $labels = convertToTensor(labels, 'labels', 'meanSquaredError');
-	  var $predictions = convertToTensor(predictions, 'predictions', 'meanSquaredError');
-	  var $weights = null;
-
-	  if (weights != null) {
-	    $weights = convertToTensor(weights, 'weights', 'meanSquaredError');
-	  }
-
-	  assertShapesMatch($labels.shape, $predictions.shape, 'Error in meanSquaredError: ');
-	  var losses = squaredDifference($labels, $predictions);
-	  return computeWeightedLoss(losses, $weights, reduction);
-	}
+function meanSquaredError_(e,t,n,r){void 0===r&&(r=Reduction.SUM_BY_NONZERO_WEIGHTS);var o=convertToTensor(e,"labels","meanSquaredError"),a=convertToTensor(t,"predictions","meanSquaredError"),i=null;null!=n&&(i=convertToTensor(n,"weights","meanSquaredError")),assertShapesMatch(o.shape,a.shape,"Error in meanSquaredError: ");var s=o.squaredDifference(a);return computeWeightedLoss(s,i,r)}

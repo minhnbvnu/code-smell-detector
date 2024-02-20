@@ -1,0 +1,1 @@
+function c8(){return"#"+WC(this.r)+WC(this.g)+WC(this.b)}

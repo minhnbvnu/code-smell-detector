@@ -1,0 +1,1 @@
+function aot(n){let t="ENVMAP_MODE_REFLECTION";if(n.envMap)switch(n.envMapMode){case md:case TC:t="ENVMAP_MODE_REFRACTION";break}return t}

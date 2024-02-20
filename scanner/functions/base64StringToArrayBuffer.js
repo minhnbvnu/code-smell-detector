@@ -1,15 +1,1 @@
-function base64StringToArrayBuffer(str) {
-	  if (useNodeBuffer) {
-	    var buf = Buffer.from(str, 'base64');
-	    return buf.buffer.slice(buf.byteOffset, buf.byteOffset + buf.byteLength);
-	  }
-
-	  var s = atob(str);
-	  var buffer = new Uint8Array(s.length);
-
-	  for (var i = 0; i < s.length; ++i) {
-	    buffer.set([s.charCodeAt(i)], i);
-	  }
-
-	  return buffer.buffer;
-	}
+function base64StringToArrayBuffer(e){if(useNodeBuffer){var t=Buffer.from(e,"base64");return t.buffer.slice(t.byteOffset,t.byteOffset+t.byteLength)}for(var n=atob(e),r=new Uint8Array(n.length),o=0;o<n.length;++o)r.set([n.charCodeAt(o)],o);return r.buffer}

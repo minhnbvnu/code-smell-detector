@@ -1,10 +1,1 @@
-function createCharCode(charCodeToGlyphId, glyphId) {
-        for (var charCode in charCodeToGlyphId) {
-          if (glyphId === charCodeToGlyphId[charCode]) {
-            return charCode | 0;
-          }
-        }
-
-        newMapping.charCodeToGlyphId[newMapping.nextAvailableFontCharCode] = glyphId;
-        return newMapping.nextAvailableFontCharCode++;
-      }
+function createCharCode(t,r){for(var o in t)if(r===t[o])return 0|o;w.charCodeToGlyphId[w.nextAvailableFontCharCode]=r;return w.nextAvailableFontCharCode++}

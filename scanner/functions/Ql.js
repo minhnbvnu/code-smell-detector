@@ -1,1 +1,1 @@
-function ql(a){a=a|0;var b=0;b=fa-16|0;fa=b;L[b+12>>2]=a;a=L[b+12>>2];a=ha[L[L[a>>2]+92>>2]](a)&1;fa=b+16|0;return a|0}
+function Ql(e){return e=yl(e),e&&bt.test(e)?e.replace(gt,cr):e}

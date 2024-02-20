@@ -1,0 +1,1 @@
+function bCe(e,t){for(var r=0,i=0,a=Math.min(e.t,this.t);r<a;)i+=this.data[r]-e.data[r],t.data[r++]=i&this.DM,i>>=this.DB;if(e.t<this.t){for(i-=e.s;r<this.t;)i+=this.data[r],t.data[r++]=i&this.DM,i>>=this.DB;i+=this.s}else{for(i+=this.s;r<e.t;)i-=e.data[r],t.data[r++]=i&this.DM,i>>=this.DB;i-=e.s}t.s=i<0?-1:0,i<-1?t.data[r++]=this.DV+i:i>0&&(t.data[r++]=i),t.t=r,t.clamp()}

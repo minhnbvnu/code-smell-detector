@@ -1,0 +1,1 @@
+function Yb(a,b){b||xb(a);var d=a.parentNode;d&&d.removeChild(a)}

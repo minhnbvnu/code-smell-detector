@@ -1,0 +1,1 @@
+function qS(t,e,r,n){var i=-1,s=t==null?0:t.length;for(n&&s&&(r=t[++i]);++i<s;)r=e(r,t[i],i,t);return r}

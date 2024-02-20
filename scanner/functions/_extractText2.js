@@ -1,0 +1,1 @@
+function _extractText2(){var t=this.editorDiv.getElementsByTagName("div");if(0===t.length)return this.editorDiv.innerText;for(var r=[],a=0,i=t.length;a<i;a++){var o=t[a].firstChild;"#text"===(null==o?void 0:o.nodeName)?r.push(o.data):r.push("")}return r.join("\n")}

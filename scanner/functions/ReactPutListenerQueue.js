@@ -1,0 +1,3 @@
+function ReactPutListenerQueue() {
+  this.listenersToPut = [];
+}

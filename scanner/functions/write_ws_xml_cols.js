@@ -1,0 +1,2 @@
+function write_ws_xml_cols(ws,cols){var o=["<cols>"],col,width;for(var i=0;i!=cols.length;++i){if(!(col=cols[i]))continue;var p={min:i+1,max:i+1};width=-1;if(col.wpx)width=px2char(col.wpx);else if(col.wch)width=col.wch;if(width>-1){p.width=char2width(width);p.customWidth=1}o[o.length]=writextag("col",null,p)}o[o.length]="</cols>";return o.join("")
+}

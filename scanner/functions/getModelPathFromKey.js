@@ -1,9 +1,1 @@
-function getModelPathFromKey(key) {
-	  var items = key.split(PATH_SEPARATOR);
-
-	  if (items.length < 3) {
-	    throw new Error("Invalid key format: " + key);
-	  }
-
-	  return items.slice(1, items.length - 1).join(PATH_SEPARATOR);
-	}
+function getModelPathFromKey(e){var t=e.split(PATH_SEPARATOR);if(t.length<3)throw new Error("Invalid key format: "+e);return t.slice(1,t.length-1).join(PATH_SEPARATOR)}

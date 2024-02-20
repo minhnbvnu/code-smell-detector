@@ -1,0 +1,1 @@
+function filterColor(l) { return l.isColorLayer; }

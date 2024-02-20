@@ -1,18 +1,1 @@
-function parseAlternative() {
-	      var res = [],
-	          from = pos;
-	      var term;
-
-	      // Alternative ::
-	      //      [empty]
-	      //      Alternative Term
-	      while (term = parseTerm()) {
-	        res.push(term);
-	      }
-
-	      if (res.length === 1) {
-	        return res[0];
-	      }
-
-	      return createAlternative(res, from, pos);
-	    }
+function parseAlternative(){for(var i,o=[],s=B;i=parseTerm();)o.push(i);return 1===o.length?o[0]:createAlternative(o,s,B)}

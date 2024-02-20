@@ -1,0 +1,1 @@
+function UY(a){a=a|0;return VY(a,0,0)|0}

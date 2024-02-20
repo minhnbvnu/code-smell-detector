@@ -1,0 +1,1 @@
+function ChangePageSetup(b,c,e,f,n){this.ui=b;this.previousColor=this.color=c;this.previousImage=this.image=e;this.previousFormat=this.format=f;this.previousPageScale=this.pageScale=n;this.ignoreImage=this.ignoreColor=!1}

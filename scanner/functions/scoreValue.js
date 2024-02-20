@@ -1,0 +1,1 @@
+function scoreValue(value,token){var pos;return!value||-1===(pos=(value=String(value||"")).search(token.regex))?0:(token=token.string.length/value.length,0===pos&&(token+=.5),token)}

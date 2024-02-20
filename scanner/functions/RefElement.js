@@ -1,0 +1,1 @@
+function RefElement(t){var o;_classCallCheck(this,RefElement);(o=r.call(this,_,"ref")).id=t.id||"";o.use=t.use||"";o.usehref=t.usehref||"";return o}

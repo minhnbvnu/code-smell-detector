@@ -1,0 +1,1 @@
+function isCloseType(x){return!(!x||!x.closeMenu)}

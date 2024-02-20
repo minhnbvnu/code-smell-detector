@@ -1,0 +1,1 @@
+function filterNullChildren(e){return e&&e.filter(function(e){return null!==e})}

@@ -1,0 +1,1 @@
+function mxShape(a){this.stencil=a;this.initStyles()}

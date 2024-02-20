@@ -1,5 +1,5 @@
 function TupleTypeAnnotation(node) {
-	  this.token("[");
-	  this.printList(node.types, node);
-	  this.token("]");
-	}
+  this.token("[");
+  this.printList(node.types, node);
+  this.token("]");
+}

@@ -1,0 +1,1 @@
+function mxForm(a){this.table=document.createElement("table");this.table.className=a;this.body=document.createElement("tbody");this.table.appendChild(this.body)}

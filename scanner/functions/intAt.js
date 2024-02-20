@@ -1,0 +1,1 @@
+function intAt(s,i){var c=BI_RC[s.charCodeAt(i)];return c==null?-1:c}

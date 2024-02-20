@@ -1,0 +1,1 @@
+function testAnimation (results) { this.initialize(results); }

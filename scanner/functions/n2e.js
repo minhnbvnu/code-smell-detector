@@ -1,0 +1,1 @@
+function n2e(e,t,r){var i=null,a=null;try{var n=new fi(t,r)}catch{return null}return e.forEach(function(s){n.test(s)&&(!i||a.compare(s)===-1)&&(i=s,a=new Qt(i,r))}),i}

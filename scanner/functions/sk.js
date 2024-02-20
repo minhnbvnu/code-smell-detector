@@ -1,1 +1,1 @@
-function Sk(a,b){a=a|0;b=b|0;if(!(!b|!(L[b+236>>2]&2))){ha[L[L[a>>2]+92>>2]](a,b);return}Bd(a,b)}
+function sk(a,c,d){a=a|0;c=c|0;d=$(d);var e=0,g=Oa,h=0;e=Rg(a,c)|0;if((e|0)==(a+4|0)){g=d;return $(g)}a=e+28|0;if((b[a+11>>0]|0)<0)h=f[a>>2]|0;else h=a;g=$(+Iq(h));return $(g)}

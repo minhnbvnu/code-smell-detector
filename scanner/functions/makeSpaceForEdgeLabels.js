@@ -1,0 +1,1 @@
+function makeSpaceForEdgeLabels(g){var graph=g.graph();graph.ranksep/=2;_.forEach(g.edges(),function(e){var edge=g.edge(e);edge.minlen*=2;if(edge.labelpos.toLowerCase()!=="c"){if(graph.rankdir==="TB"||graph.rankdir==="BT"){edge.width+=edge.labeloffset}else{edge.height+=edge.labeloffset}}})}

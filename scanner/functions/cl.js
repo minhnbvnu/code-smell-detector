@@ -1,0 +1,1 @@
+function cl(t){return"string"==typeof t||"number"==typeof t}

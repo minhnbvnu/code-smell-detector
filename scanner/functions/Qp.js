@@ -1,1 +1,1 @@
-function qp(a){a=a|0;var b=0;b=fa-16|0;fa=b;L[b+12>>2]=a;a=fa-16|0;L[a+12>>2]=L[b+12>>2];fa=b+16|0;return L[a+12>>2]+324|0}
+function Qp(){var a=0;a=f[1786]|0;f[1786]=a+0;return a|0}

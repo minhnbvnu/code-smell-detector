@@ -1,0 +1,3 @@
+function handleSecondTap() {
+      playTrackNow(id);
+    }

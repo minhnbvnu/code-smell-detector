@@ -1,0 +1,1 @@
+function _emscripten_glValidateProgram(program){GLctx.validateProgram(GL.programs[program])}

@@ -1,0 +1,1 @@
+function lineStroke(g,items){var o=items[0],lw=o.strokeWidth,lc=o.strokeCap;g.lineWidth=lw!=null?lw:vg.config.render.lineWidth;g.lineCap=lc!=null?lc:vg.config.render.lineCap;linePath(g,items)}

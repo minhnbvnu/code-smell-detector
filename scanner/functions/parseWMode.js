@@ -1,7 +1,1 @@
-function parseWMode(cMap, lexer) {
-    var obj = lexer.getObj();
-
-    if (Number.isInteger(obj)) {
-      cMap.vertical = !!obj;
-    }
-  }
+function parseWMode(t,r){var o=r.getObj();Number.isInteger(o)&&(t.vertical=!!o)}

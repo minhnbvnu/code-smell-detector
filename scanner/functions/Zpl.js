@@ -1,0 +1,1 @@
+function Zpl(t){var o;_classCallCheck(this,Zpl);(o=r.call(this,d,"zpl",!0)).name=t.name?t.name.trim():"";o.batchOutput=null;o.flipLabel=null;o.fontInfo=null;o.xdc=null;return o}

@@ -1,0 +1,1 @@
+function _addEditorToLayer2(t){var r=_classPrivateFieldGet(this,P).get(t.pageIndex);r?r.addOrRebuild(t):this.addEditor(t)}

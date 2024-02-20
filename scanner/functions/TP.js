@@ -1,0 +1,1 @@
+function TP(t){t&&Y(t.series)&&E(t.series,(function(t){q(t)&&"k"===t.type&&(t.type="candlestick")}))}

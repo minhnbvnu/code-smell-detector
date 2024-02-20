@@ -1,0 +1,1 @@
+function _wgpu_device_create_command_encoder(device,descriptor){return wgpuStoreAndSetParent(wgpu[device]["createCommandEncoder"](debugDir(void 0,"GPUDevice.createCommandEncoder() with desc")),wgpu[device])}

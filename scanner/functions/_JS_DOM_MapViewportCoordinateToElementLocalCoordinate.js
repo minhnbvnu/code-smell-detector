@@ -1,0 +1,1 @@
+function _JS_DOM_MapViewportCoordinateToElementLocalCoordinate(viewportX,viewportY,targetX,targetY){var canvas=document.querySelector(jsCanvasSelector());var rect=canvas&&canvas.getBoundingClientRect();HEAPU32[targetX>>2]=viewportX-(rect?rect.left:0);HEAPU32[targetY>>2]=viewportY-(rect?rect.top:0)}

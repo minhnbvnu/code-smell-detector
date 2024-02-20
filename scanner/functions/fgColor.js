@@ -1,0 +1,1 @@
+function fgColor(bg) { return bg < 125 ? 255 : 0 }

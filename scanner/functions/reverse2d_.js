@@ -1,7 +1,1 @@
-function reverse2d_(x, axis) {
-	  var $x = convertToTensor(x, 'x', 'reverse');
-	  assert($x.rank === 2, function () {
-	    return "Error in reverse2D: x must be rank 2 but got rank " + $x.rank + ".";
-	  });
-	  return reverse($x, axis);
-	}
+function reverse2d_(e,t){var n=convertToTensor(e,"x","reverse");return assert(2===n.rank,"Error in reverse2D: x must be rank 2 but got\n             rank "+n.rank+"."),reverse(n,t)}

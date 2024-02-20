@@ -1,0 +1,1 @@
+function ab(a){return a&&a.$evalAsync&&a.$watch}

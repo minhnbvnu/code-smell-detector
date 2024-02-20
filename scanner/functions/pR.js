@@ -1,0 +1,1 @@
+function pR(e){return new RegExp(e.replace(/[-/\\^$*+?.()|[\]{}]/g,"\\$&"),"m")}

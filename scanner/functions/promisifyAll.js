@@ -1,23 +1,31 @@
-function promisifyAll(obj, suffix, filter, promisifier) {
-    var suffixRegexp = new RegExp(escapeIdentRegex(suffix) + "$");
-    var methods =
-        promisifiableMethods(obj, suffix, suffixRegexp, filter);
+function promisifyAll(source, destination, methods, promisify) {
+  if (!destination) {
+    destination = {};
+    methods = Object.keys(source)
+  }
 
-    for (var i = 0, len = methods.length; i < len; i+= 2) {
-        var key = methods[i];
-        var fn = methods[i+1];
-        var promisifiedKey = key + suffix;
-        if (promisifier === makeNodePromisified) {
-            obj[promisifiedKey] =
-                makeNodePromisified(key, THIS, key, fn, suffix);
-        } else {
-            var promisified = promisifier(fn, function() {
-                return makeNodePromisified(key, THIS, key, fn, suffix);
-            });
-            util.notEnumerableProp(promisified, "__isPromisified__", true);
-            obj[promisifiedKey] = promisified;
-        }
-    }
-    util.toFastProperties(obj);
-    return obj;
+  if (Array.isArray(destination)) {
+    methods = destination
+    destination = {}
+  }
+
+  if (!methods) {
+    methods = Object.keys(source)
+  }
+
+  if (typeof source === 'function') destination = promisify(source)
+
+  methods.forEach(function (name) {
+    // promisify only if it's a function
+    if (typeof source[name] === 'function') destination[name] = promisify(source[name])
+  })
+
+  // proxy the rest
+  Object.keys(source).forEach(function (name) {
+    if (deprecated(source, name)) return
+    if (destination[name]) return
+    destination[name] = source[name]
+  })
+
+  return destination
 }

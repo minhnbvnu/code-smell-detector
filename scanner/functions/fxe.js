@@ -1,0 +1,1 @@
+function fxe(e,t,r,i,a){var n=Bn.alloc(t.length+4);t.copy(n);for(var s=0,o=[],u=1;s<i;){var l=p(u++);s+=l.length,o.push(l)}return Bn.concat(o).slice(0,i);function p(c){n.writeUInt32BE(c,n.length-4);var f=S7.createHmac(e,a);f.update(n);for(var d=f.digest(),m=d,h=1;h++<r;){f=S7.createHmac(e,a),f.update(m),m=f.digest();for(var g=0;g<d.length;++g)d[g]^=m[g]}return d}}

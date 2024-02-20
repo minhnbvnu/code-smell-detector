@@ -1,0 +1,1 @@
+function PatternParser(){AsYouTypeFormatter_PatternParser_classCallCheck(this,PatternParser)}

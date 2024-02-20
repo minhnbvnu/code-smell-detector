@@ -1,0 +1,1 @@
+function j0e(e,t){e=En(e),e=To(e);let r=O.useRef(null),n=H1(e,r);return e.placeholder&&console.warn("Placeholders are deprecated due to accessibility issues. Please use help text instead. See the docs for details: https://react-spectrum.adobe.com/react-spectrum/TextField.html#help-text"),S.createElement(Xh,{...e,...n,ref:t,inputRef:r})}

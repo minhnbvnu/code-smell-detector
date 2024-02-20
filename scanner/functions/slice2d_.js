@@ -1,7 +1,1 @@
-function slice2d_(x, begin, size) {
-	  var $x = convertToTensor(x, 'x', 'slice2d');
-	  assert($x.rank === 2, function () {
-	    return "slice2d expects a rank-2 tensor, but got a rank-" + $x.rank + " tensor";
-	  });
-	  return slice$2($x, begin, size);
-	}
+function slice2d_(e,t,n){var r=convertToTensor(e,"x","slice2d");return assert(2===r.rank,"slice2d expects a rank-2 tensor, but got a rank-"+r.rank+" tensor"),slice(r,t,n)}

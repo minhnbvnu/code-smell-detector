@@ -1,0 +1,1 @@
+function hexdigit(n){return '0123456789ABCDEF'.charAt(n);}

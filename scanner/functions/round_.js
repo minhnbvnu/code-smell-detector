@@ -1,7 +1,1 @@
-function round_(x) {
-	  var $x = convertToTensor(x, 'x', 'round');
-	  var inputs = {
-	    x: $x
-	  };
-	  return ENGINE.runKernel(Round, inputs);
-	}
+function round_(e){var t=convertToTensor(e,"x","round");return ENV.engine.runKernel(function(e){return e.round(t)},{$x:t},function(e){return {$x:function(){return zerosLike(e)}}})}

@@ -1,0 +1,1 @@
+function YE(t,e){IE.add(jE*t-LE*e);LE=t,jE=e}

@@ -1,0 +1,1 @@
+function Z7e(e,t){return e.substr(e.length-t.length,t.length)==t}

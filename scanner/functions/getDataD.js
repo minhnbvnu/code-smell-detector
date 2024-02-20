@@ -1,0 +1,3 @@
+function getDataD() {
+    return dataD
+}

@@ -1,0 +1,1 @@
+function O3(e,t){return e==null||e==="http://www.w3.org/1999/xhtml"?Uz(t):e==="http://www.w3.org/2000/svg"&&t==="foreignObject"?"http://www.w3.org/1999/xhtml":e}

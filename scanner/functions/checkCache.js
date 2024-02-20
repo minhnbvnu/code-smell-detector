@@ -1,0 +1,1 @@
+function checkCache(current,cache,force){if(force)return force;if(type(current)!=TYPES.o||type(cache)!=TYPES.o)return current!==cache;for(var prop in current)if("c"!==prop){if(!current[LEXICON.hOP](prop)||!cache[LEXICON.hOP](prop))return!0;if(checkCache(current[prop],cache[prop]))return!0}return!1}

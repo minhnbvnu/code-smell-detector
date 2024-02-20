@@ -1,0 +1,1 @@
+function maybeParse(e){try{return JSON.parse(e)}catch(err){return null}}

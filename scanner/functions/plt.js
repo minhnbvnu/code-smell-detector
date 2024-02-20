@@ -1,0 +1,1 @@
+function plt(n){return function(){var t=n(this);this.textContent=t==null?"":t}}

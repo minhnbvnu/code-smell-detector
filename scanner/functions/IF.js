@@ -1,0 +1,1 @@
+function IF(){var n=arguments[0];return arguments[0]=this,n.apply(null,arguments),this}

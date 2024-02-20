@@ -1,3 +1,3 @@
 function AnyTypeAnnotation() {
-	  this.word("any");
-	}
+  this.word("any");
+}

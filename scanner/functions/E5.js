@@ -1,0 +1,1 @@
+function E5(t,e,r){var n=this.enter(),i=this,s=this.exit();return typeof t=="function"?(n=t(n),n&&(n=n.selection())):n=n.append(t+""),e!=null&&(i=e(i),i&&(i=i.selection())),r==null?s.remove():r(s),n&&i?n.merge(i).order():i}

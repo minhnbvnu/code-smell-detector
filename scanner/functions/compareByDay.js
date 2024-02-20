@@ -1,1 +1,12 @@
-function compareByDay(date1,date2){function sgn(value){return value<0?-1:value>0?1:0}var compare;if((compare=sgn(date1.getFullYear()-date2.getFullYear()))===0){if((compare=sgn(date1.getMonth()-date2.getMonth()))===0){compare=sgn(date1.getDate()-date2.getDate())}}return compare}
+function compareByDay(date1, date2) {
+            function sgn(value) {
+              return value < 0 ? -1 : value > 0 ? 1 : 0;
+            }
+            var compare;
+            if ((compare = sgn(date1.getFullYear() - date2.getFullYear())) === 0) {
+              if ((compare = sgn(date1.getMonth() - date2.getMonth())) === 0) {
+                compare = sgn(date1.getDate() - date2.getDate());
+              }
+            }
+            return compare;
+          }

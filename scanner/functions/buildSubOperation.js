@@ -1,15 +1,1 @@
-function buildSubOperation(num1, num2) {
-    if (num2.type === "literal") {
-      if (num2.number === 0) {
-        return num1;
-      } else if (num1.type === "literal") {
-        return new AstLiteral(num1.number - num2.number);
-      }
-    }
-
-    if (num2.type === "binary" && num2.op === "-" && num1.type === "literal" && num1.number === 1 && num2.arg1.type === "literal" && num2.arg1.number === 1) {
-      return num2.arg2;
-    }
-
-    return new AstBinaryOperation("-", num1, num2, num1.min - num2.max, num1.max - num2.min);
-  }
+function buildSubOperation(t,r){if("literal"===r.type){if(0===r.number)return t;if("literal"===t.type)return new o(t.number-r.number)}return"binary"===r.type&&"-"===r.op&&"literal"===t.type&&1===t.number&&"literal"===r.arg1.type&&1===r.arg1.number?r.arg2:new c("-",t,r,t.min-r.max,t.max-r.min)}

@@ -1,0 +1,1 @@
+function _glGetIntegerv(name_,p){emscriptenWebGLGet(name_,p,0)}

@@ -1,0 +1,1 @@
+function ufe(e,t,r){r===void 0&&(r="/");let n=typeof t=="string"?dd(t):t,i=QW(n.pathname||"/",r);if(i==null)return null;let a=NW(e);cfe(a);let l=null;for(let s=0;l==null&&s<a.length;++s)l=yfe(a[s],xfe(i));return l}

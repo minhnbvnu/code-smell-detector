@@ -1,5 +1,1 @@
-function getSqueezedParams(params, keptDims) {
-	  return keptDims.map(function (d) {
-	    return params[d];
-	  }).join(', ');
-	}
+function getSqueezedParams(e,t){return t.map(function(t){return e[t]}).join(", ")}

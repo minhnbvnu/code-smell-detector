@@ -1,0 +1,1 @@
+function useAddonState(addonId,defaultState){return useSharedState(addonId,defaultState)}

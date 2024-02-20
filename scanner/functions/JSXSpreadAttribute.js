@@ -1,6 +1,1 @@
-function JSXSpreadAttribute(node) {
-	  this.token("{");
-	  this.token("...");
-	  this.print(node.argument, node);
-	  this.token("}");
-	}
+function JSXSpreadAttribute(){i.apply(this,arguments)}

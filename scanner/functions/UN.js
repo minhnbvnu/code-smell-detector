@@ -1,0 +1,1 @@
+function UN(t){vt(t.edges(),function(e){if(e.v===e.w){var r=t.node(e.v);r.selfEdges||(r.selfEdges=[]),r.selfEdges.push({e,label:t.edge(e)}),t.removeEdge(e)}})}

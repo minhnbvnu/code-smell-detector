@@ -1,8 +1,8 @@
-function parseLink(node, objectStack) {
-  const values = /** @type {Object} */ (objectStack[objectStack.length - 1]);
-  const href = node.getAttribute('href');
-  if (href !== null) {
-    values['link'] = href;
+function parseLink (app) {
+  if (app.link) {
+    const linkArray = Array.isArray(app.link) ? app.link : [app.link];
+    const link = linkArray.find(link => link.attributes.rel === 'alternate');
+    return link && link.attributes.href;
   }
-  parseNode(LINK_PARSERS, node, objectStack);
+  return undefined;
 }

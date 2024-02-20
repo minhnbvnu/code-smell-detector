@@ -13,18 +13,18 @@ function detect_monochrome(ctx) {
 	const colorUint32s = [];
 	const colorRGBAs = [];
 	let anyTransparency = false;
-	for (let i = 0, len = pixelArray.length; i < len; i += 1) {
+	for(let i=0, len=pixelArray.length; i<len; i+=1){
 		// @TODO: should this threshold not mirror has_any_transparency?
 		// seems to have different notions of "any transparency"
 		// has_any_transparency is "has any pixels not fully opaque"
 		// detect_monochrome's anyTransparency means "has any pixels fully transparent"
-		if (id.data[i * 4 + 3] > 1) {
+		if (id.data[i*4+3] > 1) {
 			if (!colorUint32s.includes(pixelArray[i])) {
 				if (colorUint32s.length < 2) {
 					colorUint32s.push(pixelArray[i]);
-					colorRGBAs.push(id.data.slice(i * 4, (i + 1) * 4));
+					colorRGBAs.push(id.data.slice(i*4, (i+1)*4));
 				} else {
-					return { isMonochrome: false };
+					return {isMonochrome: false};
 				}
 			}
 		} else {

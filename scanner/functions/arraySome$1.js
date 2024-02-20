@@ -1,0 +1,1 @@
+function arraySome$1(array,predicate){for(var index=-1,length=null==array?0:array.length;++index<length;)if(predicate(array[index],index,array))return!0;return!1}

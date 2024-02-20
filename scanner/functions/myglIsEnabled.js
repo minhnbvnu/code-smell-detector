@@ -1,0 +1,6 @@
+function myglIsEnabled(sp)
+{
+	var cap = heap32[sp>>2];sp+=4;
+
+	r_g0 = imandreel_gl.isEnabled(cap);
+}

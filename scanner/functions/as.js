@@ -1,1 +1,1 @@
-function As(t){var n=os(t.G,Ss(t).options.authDomain).then(function(n){return(t.w=n)&&(n.ca=t.G),rs(t.G)});return _s(t,n)}
+function as(d){return function(e,a,t,s){var n=es(e),r=ts[d][es(e)];return 2===n&&(r=r[a?0:1]),r.replace(/%d/i,e)}}

@@ -1,5 +1,4 @@
-function match(value) {
-	      if (str.indexOf(value, pos) === pos) {
-	        return incr(value.length);
-	      }
-	    }
+function match(str, expected, msg) {
+        const name = msg || `'${str}'`
+        t.deepEqual(parse(str), expected, `${name} matches`)
+    }

@@ -1,3 +1,1 @@
-function isOdd(i) {
-  return (i & 1) !== 0;
-}
+function isOdd(t){return 0!=(1&t)}

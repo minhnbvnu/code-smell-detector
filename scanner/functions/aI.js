@@ -1,0 +1,1 @@
+function aI(t,e){var n=t&&t.getBoundingRect().clone(),i=e&&e.getBoundingRect().clone();if(n&&i){var r=xe([]);return Se(r,r,-t.rotation),n.applyTransform(be([],r,t.getLocalTransform())),i.applyTransform(be([],r,e.getLocalTransform())),n.intersect(i)}}

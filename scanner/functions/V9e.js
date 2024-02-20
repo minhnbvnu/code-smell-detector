@@ -1,0 +1,1 @@
+function V9e(){this.zinv==null&&(this.zinv=this.z.modInverse(this.curve.q));var e=this.y.toBigInteger().multiply(this.zinv);return this.curve.reduce(e),this.curve.fromBigInteger(e)}

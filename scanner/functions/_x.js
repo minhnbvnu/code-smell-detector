@@ -1,1 +1,1 @@
-function _x(a,b){a=a|0;b=b|0;var c=0,d=0,e=0,f=0,g=0,h=0;e=fa-16|0;fa=e;L[e+12>>2]=a;L[e+8>>2]=b;g=sa(64);a=L[e+12>>2];b=L[e+8>>2];c=fa-16|0;fa=c;L[c+12>>2]=g;L[c+8>>2]=a;L[c+4>>2]=b;a=L[c+8>>2];d=fa-16|0;fa=d;f=L[c+12>>2];L[d+8>>2]=f;L[d+4>>2]=a;a=L[d+8>>2];L[d+12>>2]=a;h=a+48|0;b=a;while(1){L[(fa-16|0)+12>>2]=b;b=b+16|0;if((h|0)!=(b|0)){continue}break}yj(a,L[d+4>>2]);fa=d+16|0;a=L[c+4>>2];b=L[a+4>>2];L[f+48>>2]=L[a>>2];L[f+52>>2]=b;b=L[a+12>>2];L[f+56>>2]=L[a+8>>2];L[f+60>>2]=b;fa=c+16|0;fa=e+16|0;return g|0}
+function _x(t){return this.each(function(){bx(this,t)})}

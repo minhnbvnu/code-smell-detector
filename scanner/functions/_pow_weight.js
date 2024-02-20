@@ -1,0 +1,1 @@
+function _pow_weight(u,w){if(u>=0&&u<=1){return Math.pow(1-Math.pow(u,w),w)}else{return 0}}

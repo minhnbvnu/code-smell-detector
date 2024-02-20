@@ -1,0 +1,1 @@
+function M$(t){if(t.type===oU){k$(t,SU)}if(t.type===fU){k$(t,EU)}if(t.type===hU){k$(t,DU)}if(t.type===sU){k$(t,CU)}if(t.type===uU){k$(t,FU)}k$(t,AU,t.value)}

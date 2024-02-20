@@ -1,0 +1,1 @@
+function cloneRegExp$1(regexp){var result=new regexp.constructor(regexp.source,reFlags.exec(regexp));return result.lastIndex=regexp.lastIndex,result}

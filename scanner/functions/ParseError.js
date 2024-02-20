@@ -1,0 +1,1 @@
+function ParseError(i){var o;return ParseError_classCallCheck(this,ParseError),o=w.call(this,i),Object.setPrototypeOf(_assertThisInitialized(o),ParseError.prototype),o.name=o.constructor.name,o}

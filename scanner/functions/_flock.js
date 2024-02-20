@@ -1,0 +1,1 @@
+function _flock(fd,operation){return 0}

@@ -1,0 +1,1 @@
+function gfn5(o){return o.indexOf(".")>-1?o.replace(gnr2,"").replace(gnr1,".$1"):o}

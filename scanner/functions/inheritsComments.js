@@ -1,6 +1,6 @@
 function inheritsComments(child, parent) {
-	  inheritTrailingComments(child, parent);
-	  inheritLeadingComments(child, parent);
-	  inheritInnerComments(child, parent);
-	  return child;
-	}
+  (0, _inheritTrailingComments.default)(child, parent);
+  (0, _inheritLeadingComments.default)(child, parent);
+  (0, _inheritInnerComments.default)(child, parent);
+  return child;
+}

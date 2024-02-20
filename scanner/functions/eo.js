@@ -1,1 +1,1 @@
-function Eo(t,n,e){return e=ko(t,n,e),"local"==n.C&&(t.b[e]=null),Ao(t,n.C).X(e)}
+function eo(t){t||(t=this.isUtc()?o.defaultFormatUtc:o.defaultFormat);var e=B(this,t);return this.localeData().postformat(e)}

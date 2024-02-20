@@ -1,0 +1,1 @@
+function LP(n,t,e,i,r,o){Gt(n,()=>n.bindTexture(n.TEXTURE_2D,t));let s,a,l;r instanceof Uint8Array?(s=new Uint8Array(e*i*4),a=n.UNSIGNED_BYTE,l=n.RGBA):(s=new Float32Array(e*i*4),a=n.FLOAT,l=o.internalFormatPackedFloat),s.set(r),Gt(n,()=>n.texImage2D(n.TEXTURE_2D,0,l,e,i,0,n.RGBA,a,s)),Gt(n,()=>n.bindTexture(n.TEXTURE_2D,null))}

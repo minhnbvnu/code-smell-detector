@@ -1,0 +1,1 @@
+function listCacheDelete$1(key){var data=this.__data__,index=assocIndexOf$3(data,key);return!(index<0)&&(index==data.length-1?data.pop():splice.call(data,index,1),--this.size,!0)}

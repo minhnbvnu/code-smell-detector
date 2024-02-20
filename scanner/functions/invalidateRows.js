@@ -1,0 +1,1 @@
+function invalidateRows(e){var o,t;if(e&&e.length){for(vScrollDir=0,t=e.length,o=0;o<t;o++)currentEditor&&activeRow===e[o]&&makeActiveCellNormal(),rowsCache[e[o]]&&removeRowFromCache(e[o]);options.enableAsyncPostRenderCleanup&&startPostProcessingCleanup()}}

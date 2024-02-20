@@ -1,0 +1,1 @@
+function wxt_helper(h){return keys(h).map(function(k){return" "+k+'="'+h[k]+'"'}).join("")}

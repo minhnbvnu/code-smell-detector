@@ -1,0 +1,1 @@
+function Jfe(e){return H2(e)==="[object Error]"||e instanceof Error}

@@ -1,0 +1,1 @@
+function sc_cadar(p) { return p.car.cdr.car; }

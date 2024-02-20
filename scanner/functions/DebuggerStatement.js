@@ -1,4 +1,3 @@
 function DebuggerStatement() {
-	  this.word("debugger");
-	  this.semicolon();
-	}
+	        this.type = syntax_1.Syntax.DebuggerStatement;
+	    }

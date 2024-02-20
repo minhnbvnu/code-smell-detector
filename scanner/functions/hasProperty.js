@@ -1,8 +1,11 @@
-function hasProperty(obj, name) {
-    if (typeof obj === 'undefined' || obj === null) {
-      return false;
-    }
+function hasProperty(obj, property) {
+        if (!obj) {
+            return false;
+        }
 
-    // The `in` operator does not work with primitives.
-    return name in Object(obj);
-  }
+        if (Object.prototype.hasOwnProperty.call(obj, property)) {
+            return true;
+        }
+
+        return hasProperty(getPrototype(obj), property);
+    }

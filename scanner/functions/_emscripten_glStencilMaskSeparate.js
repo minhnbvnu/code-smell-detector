@@ -1,0 +1,1 @@
+function _emscripten_glStencilMaskSeparate(x0,x1){GLctx["stencilMaskSeparate"](x0,x1)}

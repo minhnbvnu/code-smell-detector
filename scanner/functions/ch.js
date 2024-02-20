@@ -1,0 +1,1 @@
+function ch(t,e,i){t/=255,e/=255,i/=255;var n=Math.min(t,Math.min(e,i)),r=Math.max(t,Math.max(e,i));return n===r?{h:0,s:0,v:n}:{h:60*((t===n?3:i===n?1:5)-(t===n?e-i:i===n?t-e:i-t)/(r-n))/360,s:(r-n)/r,v:r}}

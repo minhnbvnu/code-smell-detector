@@ -1,0 +1,1 @@
+function pPe(e){return new Promise(t=>{process.nextTick(()=>{lPe().then(r=>{e&&e(r),t(r)})})})}

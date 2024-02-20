@@ -1,0 +1,1 @@
+function Jge(e){var t,r;let n=Gn();return S.createElement(_n,e,n!=null&&(t=n.theme)!=null&&(r=t.global)!=null&&r.express?S.createElement(QH,null):S.createElement(NH,null))}

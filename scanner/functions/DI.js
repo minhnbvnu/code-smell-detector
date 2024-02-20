@@ -1,0 +1,1 @@
+function DI(t){t.registerComponentView(TI),t.registerComponentModel(OM),t.registerCoordinateSystem("cartesian2d",JM),FM(t,"x",RM,CI),FM(t,"y",RM,CI),t.registerComponentView(MI),t.registerComponentView(II),t.registerPreprocessor((function(t){t.xAxis&&t.yAxis&&!t.grid&&(t.grid={})}))}

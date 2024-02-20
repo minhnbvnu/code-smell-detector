@@ -1,0 +1,1 @@
+function _JS_Accelerometer_IsRunning(){return JS_Accelerometer&&JS_Accelerometer.activated||JS_Accelerometer_callback!=0}

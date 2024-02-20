@@ -1,0 +1,1 @@
+function ProxyHandler(cbs){this._cbs=cbs||{}}

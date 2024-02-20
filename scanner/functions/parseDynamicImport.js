@@ -1,0 +1,1 @@
+function parseDynamicImport(){var i=this.startNode();return this.next(),this.type!==_.tokTypes.parenL&&this.unexpected(),this.finishNode(i,w)}

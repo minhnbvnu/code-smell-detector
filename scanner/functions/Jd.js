@@ -1,1 +1,1 @@
-function jd(a,b){a=a|0;b=b|0;H[a+4>>2]=b;return 1}
+function Jd(t,e){e.inputHandler=function(t){t.isFirst&&e(t)},t.on("hammer.input",e.inputHandler)}

@@ -1,19 +1,14 @@
-function getFuncName(aFunc) {
-    if (typeof aFunc !== 'function') {
-      return null;
-    }
+function getFuncName(func) {
+      var result = (func.name + ''),
+          array = realNames[result],
+          length = hasOwnProperty.call(realNames, result) ? array.length : 0;
 
-    var name = '';
-    if (typeof Function.prototype.name === 'undefined' && typeof aFunc.name === 'undefined') {
-      // Here we run a polyfill if Function does not support the `name` property and if aFunc.name is not defined
-      var match = toString.call(aFunc).match(functionNameMatch);
-      if (match) {
-        name = match[1];
+      while (length--) {
+        var data = array[length],
+            otherFunc = data.func;
+        if (otherFunc == null || otherFunc == func) {
+          return data.name;
+        }
       }
-    } else {
-      // If we've got a `name` property we just use it
-      name = aFunc.name;
+      return result;
     }
-
-    return name;
-  }

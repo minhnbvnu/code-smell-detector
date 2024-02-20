@@ -1,0 +1,1 @@
+function _emscripten_html5_remove_all_event_listeners(){JSEvents.removeAllEventListeners()}

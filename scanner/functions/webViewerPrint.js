@@ -1,3 +1,3 @@
 function webViewerPrint() {
-  PDFViewerApplication.triggerPrinting();
+  window.print();
 }

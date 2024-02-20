@@ -1,0 +1,1 @@
+function Ust(n){return function(){this.style.removeProperty(n)}}

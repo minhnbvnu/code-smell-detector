@@ -1,1 +1,10 @@
-function output(code,outs){cur_accum&=masks[cur_bits];if(cur_bits>0)cur_accum|=code<<cur_bits;else cur_accum=code;cur_bits+=n_bits;while(cur_bits>=8){char_out(cur_accum&255,outs);cur_accum>>=8;cur_bits-=8}if(free_ent>maxcode||clear_flg){if(clear_flg){maxcode=MAXCODE(n_bits=g_init_bits);clear_flg=false}else{++n_bits;if(n_bits==BITS)maxcode=1<<BITS;else maxcode=MAXCODE(n_bits)}}if(code==EOFCode){while(cur_bits>0){char_out(cur_accum&255,outs);cur_accum>>=8;cur_bits-=8}flush_char(outs)}}
+function output(value) {
+    if(!log_output) {
+        log_output = doc.createElement('textarea');
+        log_output.style.height = "200px";
+        log_output.style.width = (window.innerWidth - 100) + 'px';
+        doc.body.appendChild(log_output);
+    }
+    log_output.value = log_output.value + value;
+    log_output.scrollTop = log_output.scrollHeight;
+}

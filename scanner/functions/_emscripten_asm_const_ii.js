@@ -1,0 +1,1 @@
+function _emscripten_asm_const_ii(code,a0){return ASM_CONSTS[code](a0)}

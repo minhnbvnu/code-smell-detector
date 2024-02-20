@@ -1,0 +1,1 @@
+function fixup_uint32(t){var r,e;return r=t>uint_max||0>t?(e=Math.abs(t)%uint_max,0>t?uint_max-e:e):t}

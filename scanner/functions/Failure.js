@@ -1,0 +1,1 @@
+function Failure(why) {this.message = why;}

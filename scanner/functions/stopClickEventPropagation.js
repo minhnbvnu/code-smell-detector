@@ -1,0 +1,1 @@
+function stopClickEventPropagation(event){COMPATIBILITY.stpP(event)}

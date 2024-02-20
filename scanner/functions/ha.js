@@ -1,0 +1,1 @@
+function ha(a,b){Aa(a,b);Ba(a,b)}

@@ -1,0 +1,1 @@
+function mde(e){return lP.sprintf("%s, %02d %s %04d %02d:%02d:%02d GMT",dde[e.getUTCDay()],e.getUTCDate(),fde[e.getUTCMonth()],e.getUTCFullYear(),e.getUTCHours(),e.getUTCMinutes(),e.getUTCSeconds())}

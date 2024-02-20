@@ -1,0 +1,1 @@
+function U_(){return`#${is(this.r)}${is(this.g)}${is(this.b)}${is((isNaN(this.opacity)?1:this.opacity)*255)}`}

@@ -1,0 +1,1 @@
+function B8e(e){let t=[];for(let r of e.selection.ranges){let n=e.doc.lineAt(r.from),i=r.to<=n.to?n:e.doc.lineAt(r.to),a=t.length-1;a>=0&&t[a].to>n.from?t[a].to=i.to:t.push({from:n.from+/^\s*/.exec(n.text)[0].length,to:i.to})}return t}

@@ -1,0 +1,1 @@
+function C4e(){var e=O.useContext(oa),t=O.useCallback(function(r){return e===r?r:e&&r?"".concat(e,".").concat(r):r},[e]);return t}

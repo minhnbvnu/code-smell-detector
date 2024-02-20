@@ -1,0 +1,1 @@
+function prohibited(code){return code>=55296&&code<=57343||code>1114111}

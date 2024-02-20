@@ -1,3 +1,1 @@
-function Name(name) {
-    this.name = name;
-  }
+function Name(t){_classCallCheck(this,Name);this.name=t}

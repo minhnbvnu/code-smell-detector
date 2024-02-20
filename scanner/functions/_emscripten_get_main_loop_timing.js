@@ -1,0 +1,1 @@
+function _emscripten_get_main_loop_timing(mode,value){if(mode)HEAP32[mode>>2]=Browser.mainLoop.timingMode;if(value)HEAP32[value>>2]=Browser.mainLoop.timingValue}

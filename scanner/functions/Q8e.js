@@ -1,0 +1,1 @@
+function Q8e(e={}){return[Qle,Lle.of(e),ut.domEventHandlers({beforeinput(t,r){let n=t.inputType=="historyUndo"?Vle:t.inputType=="historyRedo"?jD:null;return n?(t.preventDefault(),n(r)):!1}})]}

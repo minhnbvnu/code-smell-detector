@@ -1,0 +1,1 @@
+function W_(t,e){var n,i,r=H_(t,"labels"),o=g_(e),a=Y_(r,o);return a||(U(o)?n=Z_(t,o):(i="auto"===o?function(t){var e=B_(t).autoInterval;return null!=e?e:B_(t).autoInterval=t.calculateCategoryInterval()}(t):o,n=X_(t,i)),U_(r,o,{labels:n,labelCategoryInterval:i}))}

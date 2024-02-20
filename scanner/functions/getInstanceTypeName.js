@@ -1,1 +1,3 @@
-function getInstanceTypeName(handle){return handle.$$.ptrType.registeredClass.name}
+function getInstanceTypeName(handle) {
+            return handle.$$.ptrType.registeredClass.name;
+          }

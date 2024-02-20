@@ -1,0 +1,1 @@
+function onMouseTouchDownContinue(event){var isTouchEvent=(event.originalEvent||event).touches!==undefined$1;return!_sleeping&&!_destroyed&&(1===COMPATIBILITY.mBtn(event)||isTouchEvent)}

@@ -1,0 +1,1 @@
+function vg_load_hasProtocol(url){return vg_load_protocolRE.test(url)}

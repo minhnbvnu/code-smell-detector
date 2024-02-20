@@ -1,0 +1,1 @@
+function aFe(e){e.isMaximized()?e.unmaximize():e.maximize()}

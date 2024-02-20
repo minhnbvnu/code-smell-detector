@@ -1,0 +1,1 @@
+function bitOr(A, B) { return A | B; }

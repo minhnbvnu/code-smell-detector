@@ -1,0 +1,1 @@
+function hm(a,b,c,d){a=a|0;b=b|0;c=c|0;d=d|0;if(fp(a,f[b+8>>2]|0,0)|0)Ck(0,b,c,d);return}

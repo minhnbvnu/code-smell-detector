@@ -1,1 +1,1 @@
-function ja(){var a=b.preRun.shift();ea.unshift(a);}
+function ja(a,b,d,e,f,g){try{a(b,d,e,f,g)}catch(h){c(h,wa(d))}}

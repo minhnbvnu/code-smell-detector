@@ -1,0 +1,1 @@
+function qZ(e){if(Intl.Locale){let r=new Intl.Locale(e).maximize(),n=typeof r.getTextInfo=="function"?r.getTextInfo():r.textInfo;if(n)return n.direction==="rtl";if(r.script)return Nhe.has(r.script)}let t=e.split("-")[0];return Lhe.has(t)}

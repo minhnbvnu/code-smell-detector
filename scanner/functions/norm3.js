@@ -1,0 +1,1 @@
+function norm3(a)  { const l = len3(a); return [a[0]/l, a[1]/l, a[2]/l]; }

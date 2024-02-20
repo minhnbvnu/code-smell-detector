@@ -1,0 +1,1 @@
+function selectCountryFromList(i,o,s){s=new Y(s);for(var u,C=getCountryByCallingCode_createForOfIteratorHelperLoose(i);!(u=C()).done;){var _=u.value;if(s.country(_),s.leadingDigits()){if(o&&0===o.search(s.leadingDigits()))return _}else if(getNumberType({phone:o,country:_},void 0,s.metadata))return _}}

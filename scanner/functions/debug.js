@@ -1,51 +1,21 @@
-function debug() {
-    // disabled?
-    if (!debug.enabled) return;
+function debug(val) {
+        if (loginData.enableDebug && loginData.enableLogs) {
+          if (val !== undefined) {
+            var regex1 = /"password":".*?"/g;
+            var regex2 = /&pass=.*?(?=["&]|$)/g;
+            var regex3 = /&token=([^&]*)/g;
+            var regex4 = /&auth=([^&]*)/g;
 
-    var self = debug;
+            //console.log ("VAL IS " + val);
+            val = val.replace(regex1, "<password removed>");
+            val = val.replace(regex2, "<password removed>");
+            val = val.replace (regex3, "&token=<removed>");
+            val = val.replace (regex4, "&auth=<removed>");
+          }
 
-    // set `diff` timestamp
-    var curr = +new Date();
-    var ms = curr - (prevTime || curr);
-    self.diff = ms;
-    self.prev = prevTime;
-    self.curr = curr;
-    prevTime = curr;
-
-    // turn the `arguments` into a proper Array
-    var args = new Array(arguments.length);
-    for (var i = 0; i < args.length; i++) {
-      args[i] = arguments[i];
-    }
-
-    args[0] = exports.coerce(args[0]);
-
-    if ('string' !== typeof args[0]) {
-      // anything else let's inspect with %O
-      args.unshift('%O');
-    }
-
-    // apply any `formatters` transformations
-    var index = 0;
-    args[0] = args[0].replace(/%([a-zA-Z%])/g, function(match, format) {
-      // if we encounter an escaped % then don't increase the array index
-      if (match === '%%') return match;
-      index++;
-      var formatter = exports.formatters[format];
-      if ('function' === typeof formatter) {
-        var val = args[index];
-        match = formatter.call(self, val);
-
-        // now we need to remove `args[index]` since it's inlined in the `format`
-        args.splice(index, 1);
-        index--;
+          $ionicPlatform.ready(function () {
+            $fileLogger.debug(val);
+          });
+          console.log(val);
+        }
       }
-      return match;
-    });
-
-    // apply env-specific formatting (colors, etc.)
-    exports.formatArgs.call(self, args);
-
-    var logFn = debug.log || exports.log || console.log.bind(console);
-    logFn.apply(self, args);
-  }

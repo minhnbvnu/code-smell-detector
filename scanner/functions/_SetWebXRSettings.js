@@ -1,0 +1,1 @@
+function _SetWebXRSettings(strJson){Module.WebXR.Settings=JSON.parse(UTF8ToString(strJson));console.log(Module.WebXR.Settings)}

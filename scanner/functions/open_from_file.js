@@ -8,22 +8,22 @@ function open_from_file(file, source_file_handle) {
 	// We do this for image files in read_image_file, and palette files in AnyPalette.js.
 
 	if (file.name.match(/\.theme(pack)?$/i)) {
-		file.text().then(load_theme_from_text, (error) => {
+		file.text().then(load_theme_from_text, (error)=> {
 			show_error_message(localize("Paint cannot open this file."), error);
 		});
 		return
 	}
 	// Try loading as an image file first, then as a palette file, but show a combined error message if both fail.
-	read_image_file(file, (as_image_error, image_info) => {
+	read_image_file(file, (as_image_error, image_info)=> {
 		if (as_image_error) {
-			AnyPalette.loadPalette(file, (as_palette_error, new_palette) => {
+			AnyPalette.loadPalette(file, (as_palette_error, new_palette)=> {
 				if (as_palette_error) {
-					show_file_format_errors({ as_image_error, as_palette_error });
+					show_file_format_errors({as_image_error, as_palette_error});
 					return;
 				}
-				palette = new_palette.map((color) => color.toString());
+				palette = new_palette.map((color)=> color.toString());
 				$colorbox.rebuild_palette();
-				window.console && console.log(`Loaded palette: ${palette.map(() => `%c█`).join("")}`, ...palette.map((color) => `color: ${color};`));
+				window.console && console.log(`Loaded palette: ${palette.map(()=> `%c█`).join("")}`, ...palette.map((color)=> `color: ${color};`));
 			});
 			return;
 		}

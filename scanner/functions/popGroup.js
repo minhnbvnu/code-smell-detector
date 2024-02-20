@@ -1,0 +1,4 @@
+function popGroup()
+    {
+        groupStack.pop();
+    }

@@ -1,0 +1,1 @@
+function fix_row(cstr){return cstr.replace(/([A-Z]|^)(\d+)$/,"$1$$$2")}

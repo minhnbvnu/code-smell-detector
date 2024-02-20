@@ -1,0 +1,1 @@
+function bTe(e,t){const r=t.start._index,n=t.start._bufferIndex,i=t.end._index,a=t.end._bufferIndex;let l;if(r===i)l=[e[r].slice(n,a)];else{if(l=e.slice(r,i),n>-1){const s=l[0];typeof s=="string"?l[0]=s.slice(n):l.shift()}a>0&&l.push(e[i].slice(0,a))}return l}

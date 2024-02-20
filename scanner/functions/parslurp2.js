@@ -1,0 +1,1 @@
+function parslurp2(blob,length,cb){var arr=[],target=blob.l+length,len=blob.read_shift(2);while(len--!==0)arr.push(cb(blob,target-blob.l));if(target!==blob.l)throw new Error("Slurp error");return arr}

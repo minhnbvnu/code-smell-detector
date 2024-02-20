@@ -1,0 +1,3 @@
+function getAllSelectedIds() {
+            return selectedRowIds;
+        }

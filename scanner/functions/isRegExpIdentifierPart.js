@@ -1,0 +1,1 @@
+function isRegExpIdentifierPart(i){return isIdentifierChar(i,!0)||36===i||95===i||8204===i||8205===i}

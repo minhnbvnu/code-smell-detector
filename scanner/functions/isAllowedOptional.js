@@ -1,0 +1,1 @@
+function isAllowedOptional(i){return isProperty(i)||isParamTitle(i)}

@@ -1,0 +1,1 @@
+function h1(n){return typeof n=="number"?[n,n,n]:n.length===2?[n[0],n[1],1]:n}

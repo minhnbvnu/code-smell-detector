@@ -1,0 +1,1 @@
+function discriminator(tag) { return null; }

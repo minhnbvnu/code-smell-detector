@@ -1,0 +1,1 @@
+function D0(e){let t;return e.nodeType==11?t=e.getSelection?e:e.ownerDocument:t=e,t.getSelection()}

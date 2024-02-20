@@ -1,0 +1,1 @@
+function parse_RefU(blob,length){var rwFirst=blob.read_shift(2);var rwLast=blob.read_shift(2);var colFirst=blob.read_shift(1);var colLast=blob.read_shift(1);return{s:{c:colFirst,r:rwFirst},e:{c:colLast,r:rwLast}}}

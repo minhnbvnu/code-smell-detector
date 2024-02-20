@@ -1,1 +1,1 @@
-function qm(a){a=a|0;var b=0;b=fa-16|0;fa=b;L[b+12>>2]=a;a=fa-16|0;L[a+12>>2]=L[b+12>>2];fa=b+16|0;return P[L[a+12>>2]+4>>2]<S(1)|0}
+function Qm(a){a=a|0;var b=0,c=0;b=f[a>>2]|0;if(!b)return;c=a+4|0;a=f[c>>2]|0;if((a|0)!=(b|0))f[c>>2]=a+(~((a+-4-b|0)>>>2)<<2);Oq(b);return}

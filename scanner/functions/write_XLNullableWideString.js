@@ -1,0 +1,1 @@
+function write_XLNullableWideString(data,o){if(!o)o=new_buf(127);o.write_shift(4,data.length>0?data.length:4294967295);if(data.length>0)o.write_shift(0,data,"dbcs");return o}

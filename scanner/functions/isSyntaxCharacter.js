@@ -1,0 +1,1 @@
+function isSyntaxCharacter(i){return 36===i||i>=40&&i<=43||46===i||63===i||i>=91&&i<=94||i>=123&&i<=125}

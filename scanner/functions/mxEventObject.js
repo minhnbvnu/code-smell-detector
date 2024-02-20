@@ -1,0 +1,1 @@
+function mxEventObject(a){this.name=a;this.properties=[];for(var b=1;b<arguments.length;b+=2)null!=arguments[b+1]&&(this.properties[arguments[b]]=arguments[b+1])}

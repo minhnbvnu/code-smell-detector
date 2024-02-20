@@ -1,0 +1,1 @@
+function sc_isCharOfClass(c, cl) { return (cl.indexOf(c) != -1); }

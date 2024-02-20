@@ -1,0 +1,1 @@
+function _emscripten_glQueryCounterEXT(id,target){GLctx.disjointTimerQueryExt["queryCounterEXT"](GL.queries[id],target)}

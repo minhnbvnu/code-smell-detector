@@ -1,0 +1,1 @@
+function DEe(e){var t="";return e.bg&&(t+="".concat(e.bg,"-bg ")),e.fg&&(t+="".concat(e.fg,"-fg ")),e.decoration&&(t+="ansi-".concat(e.decoration," ")),t===""?null:(t=t.substring(0,t.length-1),t)}

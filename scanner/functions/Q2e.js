@@ -1,0 +1,1 @@
+function Q2e(e,t,r){return new Promise((i,a)=>{e in bb?bb[e](t,r).then(i,a):a(new Error(`do not support find by "${e}"`))})}

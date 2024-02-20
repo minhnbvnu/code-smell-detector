@@ -1,0 +1,1 @@
+function parse_cc(data,name,opts){return(name.substr(-4)===".bin"?parse_cc_bin:parse_cc_xml)(data,opts)}

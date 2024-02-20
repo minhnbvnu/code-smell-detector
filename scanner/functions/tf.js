@@ -1,1 +1,1 @@
-function Tf(a){a=a|0;oa(_b(a))}
+function tf(){this.$get=["$rootScope","$exceptionHandler",function(a,b){return td(function(b){a.$evalAsync(b)},b)}]}

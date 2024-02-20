@@ -1,0 +1,1 @@
+function of(){this.$get=function(){return function(){return new T.XMLHttpRequest}}}

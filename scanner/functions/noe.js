@@ -1,0 +1,1 @@
+function noe(e,t){return Ma(e,r=>e.moveVertically(r,t))}

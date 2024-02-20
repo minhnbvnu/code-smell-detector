@@ -1,26 +1,31 @@
-function Binding(_ref) {
-	    var existing = _ref.existing,
-	        identifier = _ref.identifier,
-	        scope = _ref.scope,
-	        path = _ref.path,
-	        kind = _ref.kind;
-	    (0, _classCallCheck3.default)(this, Binding);
+function Binding(system) {
+  /**
+   * Mock file system.
+   * @type {FileSystem}
+   */
+  this._system = system;
 
-	    this.identifier = identifier;
-	    this.scope = scope;
-	    this.path = path;
-	    this.kind = kind;
+  /**
+   * Lookup of open files.
+   * @type {Object<number, FileDescriptor>}
+   */
+  this._openFiles = {};
 
-	    this.constantViolations = [];
-	    this.constant = true;
+  /**
+   * Counter for file descriptors.
+   * @type {number}
+   */
+  this._counter = -1;
 
-	    this.referencePaths = [];
-	    this.referenced = false;
-	    this.references = 0;
+  const stdin = new FileDescriptor(constants.O_RDWR);
+  stdin.setItem(new File.StandardInput());
+  this.trackDescriptor(stdin);
 
-	    this.clearValue();
+  const stdout = new FileDescriptor(constants.O_RDWR);
+  stdout.setItem(new File.StandardOutput());
+  this.trackDescriptor(stdout);
 
-	    if (existing) {
-	      this.constantViolations = [].concat(existing.path, existing.constantViolations, this.constantViolations);
-	    }
-	  }
+  const stderr = new FileDescriptor(constants.O_RDWR);
+  stderr.setItem(new File.StandardError());
+  this.trackDescriptor(stderr);
+}

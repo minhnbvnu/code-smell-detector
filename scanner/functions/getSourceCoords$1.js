@@ -1,14 +1,1 @@
-function getSourceCoords$1(aShape, axis) {
-	  var currentCoords = ['resRC.x', 'resRC.y', 'resRC.z', 'resRC.w'];
-	  var sourceCoords = [];
-
-	  for (var i = 0; i < aShape.length; i++) {
-	    if (i === 2) {
-	      sourceCoords.push('int(getIndices(resRC.x, resRC.z))');
-	    } else {
-	      sourceCoords.push("" + currentCoords[i]);
-	    }
-	  }
-
-	  return sourceCoords.join();
-	}
+function getSourceCoords$1(e,t){if(1===e)return "rc";for(var n="",r=0;r<e;r++)n+=t[r],r<e-1&&(n+=",");return n}

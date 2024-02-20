@@ -1,0 +1,1 @@
+function qot(n,t,e,i){let r=n;do r.z===null&&(r.z=VS(r.x,r.y,t,e,i)),r.prevZ=r.prev,r.nextZ=r.next,r=r.next;while(r!==n);r.prevZ.nextZ=null,r.prevZ=null,Xot(r)}

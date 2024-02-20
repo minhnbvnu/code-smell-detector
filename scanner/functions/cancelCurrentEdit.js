@@ -1,0 +1,1 @@
+function cancelCurrentEdit(){return makeActiveCellNormal(),!0}

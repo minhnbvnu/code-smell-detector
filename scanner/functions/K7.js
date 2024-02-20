@@ -1,0 +1,1 @@
+function K7(t){if(!Gr(t)||V7(t))return!1;var e=aa(t)?X7:H7;return e.test(gs(t))}

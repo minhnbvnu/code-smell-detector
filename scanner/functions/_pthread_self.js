@@ -1,0 +1,1 @@
+function _pthread_self(){var label=0,sp=0;sp=STACKTOP;return 33548|0}

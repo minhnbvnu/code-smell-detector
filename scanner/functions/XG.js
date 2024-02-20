@@ -1,1 +1,1 @@
-function Xg(a,b){a=a|0;b=b|0;return G[H[a>>2]+(b<<1)>>1]}
+function XG(n,t,e=0){let i=[];if(typeof t=="number")Ut(n.shape[e]%t===0,()=>"Number of splits must evenly divide the axis."),i=new Array(t).fill(n.shape[e]/t);else{let r=t.reduce((s,a)=>(a===-1&&(s+=1),s),0);Ut(r<=1,()=>"There should be only one negative value in split array.");let o=t.indexOf(-1);if(o!==-1){let s=t.reduce((a,l)=>l>0?a+l:a);t[o]=n.shape[e]-s}Ut(n.shape[e]===t.reduce((s,a)=>s+a),()=>"The sum of sizes must match the size of the axis dimension."),i=t}return i}

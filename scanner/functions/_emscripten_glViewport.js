@@ -1,0 +1,1 @@
+function _emscripten_glViewport(x0,x1,x2,x3){GLctx["viewport"](x0,x1,x2,x3)}

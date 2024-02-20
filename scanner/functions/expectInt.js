@@ -1,5 +1,1 @@
-function expectInt(obj) {
-    if (!Number.isInteger(obj)) {
-      throw new _util.FormatError("Malformed CMap: expected int.");
-    }
-  }
+function expectInt(t){if(!Number.isInteger(t))throw new c.FormatError("Malformed CMap: expected int.")}

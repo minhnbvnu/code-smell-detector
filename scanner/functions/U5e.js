@@ -1,0 +1,1 @@
+function U5e(e){var t=e.replace(/color:\s*(\w+).*/,"$1").toLowerCase();return Sz[t]||""}

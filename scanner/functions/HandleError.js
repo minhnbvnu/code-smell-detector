@@ -1,0 +1,1 @@
+function HandleError(err,code){ClearTimeout();if(!onresponse){return}var len=lengthBytesUTF8(err)+1;var buffer=_malloc(len);stringToUTF8(err,buffer,len);dynCall("viiiiii",onresponse,[arg,500,0,0,buffer,code]);_free(buffer);if(requestOptions.tempBuffer){_free(requestOptions.tempBuffer)}}

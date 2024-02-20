@@ -1,0 +1,1 @@
+function vH(n){var t="";return Number(n)&&(n>=65&&n<=90?t=String.fromCharCode(32+n):n>=112&&n<=123?t="f"+(n-112+1):n>=48&&n<=57?t=String(n-48):n>=96&&n<=105?t=String(n-96):t=hH[n]),t}

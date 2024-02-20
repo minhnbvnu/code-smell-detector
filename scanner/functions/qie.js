@@ -1,0 +1,1 @@
+function qie(e){return Nie.from(e.toString(),"ascii").toString("hex")}

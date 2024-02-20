@@ -9,7 +9,7 @@ function draw_grid(ctx, scale) {
 		grid_pattern_canvas.ctx.fillStyle = dark_gray;
 		grid_pattern_canvas.ctx.fillRect(0, 0, pattern_size, 1);
 		grid_pattern_canvas.ctx.fillStyle = light_gray;
-		for (let i = 1; i < pattern_size; i += 2) {
+		for (let i=1; i<pattern_size; i+=2) {
 			grid_pattern_canvas.ctx.fillRect(i, 0, 1, 1);
 			grid_pattern_canvas.ctx.fillRect(0, i, 1, 1);
 		}

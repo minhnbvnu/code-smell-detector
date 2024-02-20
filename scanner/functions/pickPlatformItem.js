@@ -1,15 +1,1 @@
-function pickPlatformItem(dict) {
-    if (dict.has("UF")) {
-      return dict.get("UF");
-    } else if (dict.has("F")) {
-      return dict.get("F");
-    } else if (dict.has("Unix")) {
-      return dict.get("Unix");
-    } else if (dict.has("Mac")) {
-      return dict.get("Mac");
-    } else if (dict.has("DOS")) {
-      return dict.get("DOS");
-    }
-
-    return null;
-  }
+function pickPlatformItem(t){return t.has("UF")?t.get("UF"):t.has("F")?t.get("F"):t.has("Unix")?t.get("Unix"):t.has("Mac")?t.get("Mac"):t.has("DOS")?t.get("DOS"):null}

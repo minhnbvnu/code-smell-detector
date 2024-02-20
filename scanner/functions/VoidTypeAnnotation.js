@@ -1,3 +1,3 @@
 function VoidTypeAnnotation() {
-	  this.word("void");
-	}
+  this.word("void");
+}

@@ -1,0 +1,1 @@
+function rr(e,t,r,n){for(var i=-1,a=e.length,o=r.length,s=-1,f=t.length,u=K(a-o,0),c=E(f+u),h=!n;++s<f;)c[s]=t[s];for(;++i<o;)(h||i<a)&&(c[r[i]]=e[i]);for(;u--;)c[s++]=e[i++];return c}

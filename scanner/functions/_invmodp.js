@@ -1,0 +1,1 @@
+function _invmodp(n){for(var r=n,u=250;--u;)n=_sqrmodp(n),n=_mulmodp(n,r);return n=_sqrmodp(n),n=_sqrmodp(n),n=_mulmodp(n,r),n=_sqrmodp(n),n=_sqrmodp(n),n=_mulmodp(n,r),n=_sqrmodp(n),n=_mulmodp(n,r)}

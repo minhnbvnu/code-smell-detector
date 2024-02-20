@@ -1,0 +1,1 @@
+function maths(){_classCallCheck(this,maths)}

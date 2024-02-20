@@ -1,0 +1,1 @@
+function _emscripten_glCompileShader(shader){GLctx.compileShader(GL.shaders[shader])}

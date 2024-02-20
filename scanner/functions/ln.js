@@ -1,0 +1,1 @@
+function ln(t){return t<0?-1*Math.round(-1*t):Math.round(t)}

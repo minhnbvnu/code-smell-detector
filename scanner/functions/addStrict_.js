@@ -1,7 +1,1 @@
-function addStrict_(a, b) {
-	  deprecationWarn('strict variants of ops have been deprecated ' + 'and will be removed in future');
-	  var $a = convertToTensor(a, 'a', 'addStrict');
-	  var $b = convertToTensor(b, 'b', 'addStrict');
-	  assertShapesMatch($a.shape, $b.shape, 'Error in addStrict: ');
-	  return add$1($a, $b);
-	}
+function addStrict_(e,t){var n=convertToTensor(e,"a","addStrict"),r=convertToTensor(t,"b","addStrict");return assertShapesMatch(n.shape,r.shape,"Error in addStrict: "),n.add(r)}

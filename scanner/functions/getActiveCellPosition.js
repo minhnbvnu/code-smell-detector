@@ -1,0 +1,1 @@
+function getActiveCellPosition(){return absBox(activeCellNode)}

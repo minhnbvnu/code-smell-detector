@@ -1,0 +1,1 @@
+function m5e(e){return Vd(e)&&!bw(e)&&e!==65279&&e!==X3e&&e!==Km}

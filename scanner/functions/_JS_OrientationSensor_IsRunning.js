@@ -1,0 +1,1 @@
+function _JS_OrientationSensor_IsRunning(){return JS_OrientationSensor&&JS_OrientationSensor.activated||JS_OrientationSensor_callback!=0}

@@ -1,0 +1,1 @@
+function _bi(t,n){if(void 0!==n)return 256===n?_bi(utils.string2bytes(t)):new BigInteger(t,n);if("string"==typeof t)return new BigInteger(t,10);if(t instanceof Array||t instanceof Uint8Array||Buffer.isBuffer(t))return new BigInteger(t);if("number"==typeof t)return new BigInteger(t.toString(),10);throw"Can't convert "+t+" to BigInteger"}

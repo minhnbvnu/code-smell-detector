@@ -1,0 +1,1 @@
+function ___dlsym(handle,symbol){}

@@ -1,0 +1,1 @@
+function astralReplacer(c){var high=c.charCodeAt(0);var low=c.charCodeAt(1);var codePoint=(high-55296)*1024+low-56320+65536;return"&#x"+codePoint.toString(16).toUpperCase()+";"}

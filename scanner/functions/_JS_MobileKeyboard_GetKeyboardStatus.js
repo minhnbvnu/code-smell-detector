@@ -1,0 +1,1 @@
+function _JS_MobileKeyboard_GetKeyboardStatus(){var kKeyboardStatusVisible=0;var kKeyboardStatusDone=1;if(!mobile_input)return kKeyboardStatusDone;return kKeyboardStatusVisible}

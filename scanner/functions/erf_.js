@@ -1,15 +1,1 @@
-function erf_(x) {
-	  var $x = convertToTensor(x, 'x', 'erf');
-	  assert($x.dtype === 'int32' || $x.dtype === 'float32', function () {
-	    return 'Input dtype must be `int32` or `float32`.';
-	  });
-
-	  if ($x.dtype === 'int32') {
-	    $x = cast($x, 'float32');
-	  }
-
-	  var inputs = {
-	    x: $x
-	  };
-	  return ENGINE.runKernel(Erf, inputs);
-	}
+function erf_(e){var t=convertToTensor(e,"x","erf");assert("int32"===t.dtype||"float32"===t.dtype,"Input dtype must be `int32` or `float32`."),"int32"===t.dtype&&(t=t.toFloat());return ENV.engine.runKernel(function(e){return e.erf(t)},{$x:t},function(e){return {$x:function(){return e.mul(t.square().neg().exp().mul(2/Math.sqrt(Math.PI)))}}})}

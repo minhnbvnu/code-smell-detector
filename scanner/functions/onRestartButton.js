@@ -1,0 +1,4 @@
+function onRestartButton() {
+    onStopButton();
+    onPlayButton();
+}

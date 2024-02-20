@@ -1,0 +1,1 @@
+function sTe(e,t,r){const n=this;return Or(e,i,"listItemPrefixWhitespace",n.parser.constructs.disable.null.includes("codeIndented")?void 0:4+1);function i(a){const l=n.events[n.events.length-1];return!Ht(a)&&l&&l[1].type==="listItemPrefixWhitespace"?t(a):r(a)}}

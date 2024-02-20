@@ -1,0 +1,1 @@
+function hasMargin(t){return t.margin&&(t.margin.topInset||t.margin.rightInset||t.margin.bottomInset||t.margin.leftInset)}

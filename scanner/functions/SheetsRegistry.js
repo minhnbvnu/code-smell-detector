@@ -1,0 +1,1 @@
+function SheetsRegistry(){this.registry=[]}

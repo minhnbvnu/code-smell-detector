@@ -1,0 +1,1 @@
+function KL(t,e){return $L(t.node1,e)}

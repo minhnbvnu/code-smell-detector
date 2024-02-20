@@ -1,5 +1,3 @@
 function webViewerDownload() {
-  PDFViewerApplication.downloadOrSave({
-    sourceEventType: "download"
-  });
+  PDFViewerApplication.download();
 }

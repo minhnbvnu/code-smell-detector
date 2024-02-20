@@ -1,0 +1,1 @@
+function isNumberTypeEqualTo(i,o,s){return!(!(o=s.type(o))||!o.pattern())&&(!(o.possibleLengths()&&o.possibleLengths().indexOf(i.length)<0)&&matchesEntirely(i,o.pattern()))}

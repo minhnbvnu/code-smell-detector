@@ -1,0 +1,1 @@
+function m6(){var t,e,r=this,n=r._id,i=r.size();return new Promise(function(s,a){var o={value:a},l={value:function(){--i===0&&s()}};r.each(function(){var u=Pn(this,n),d=u.on;d!==t&&(e=(t=d).copy(),e._.cancel.push(o),e._.interrupt.push(o),e._.end.push(l)),u.on=e}),i===0&&s()})}

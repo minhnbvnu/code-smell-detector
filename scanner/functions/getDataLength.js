@@ -1,0 +1,1 @@
+function getDataLength(){return data.getLength?data.getLength():data&&data.length||0}

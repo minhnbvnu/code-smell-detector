@@ -1,0 +1,2 @@
+function aOe(){let e="ip a 2> /dev/null",t=[];try{let r=Mi(e,{maxBuffer:1024*2e4}).toString().split(`
+`),i=hre(r);t=nOe(i)}catch{Rt.noop()}try{t=gre("/etc/network/interfaces")}catch{Rt.noop()}return t}

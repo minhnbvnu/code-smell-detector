@@ -1,0 +1,1 @@
+function getParentNode(i){return"html"===getNodeName(i)?i:i.assignedSlot||i.parentNode||(isShadowRoot(i)?i.host:null)||getDocumentElement(i)}

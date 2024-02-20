@@ -1,1 +1,1 @@
-function hm(a){a=a|0;return 64}
+function Hm(a){a=a|0;var c=0;f[a>>2]=1352;f[a+4>>2]=0;f[a+8>>2]=0;f[a+12>>2]=-1;c=a+16|0;f[a+32>>2]=0;f[c>>2]=0;f[c+4>>2]=0;f[c+8>>2]=0;b[c+12>>0]=0;return}

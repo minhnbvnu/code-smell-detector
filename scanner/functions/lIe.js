@@ -1,0 +1,1 @@
+function lIe(){return!0}

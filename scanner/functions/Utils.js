@@ -1,1 +1,1 @@
-function Utils() {}
+function Utils(){}

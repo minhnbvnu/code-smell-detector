@@ -1,0 +1,1 @@
+function y1e(e){var t=-1,r=Array(e.size);return e.forEach(function(i){r[++t]=i}),r}

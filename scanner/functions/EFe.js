@@ -1,0 +1,1 @@
+function EFe(e,t){const r={};let n,i;for(i in t.properties)if(i!=="children"&&GI.call(t.properties,i)){const a=AFe(e,i,t.properties[i]);if(a){const[l,s]=a;e.tableCellAlignToStyle&&l==="align"&&typeof s=="string"&&vFe.has(t.tagName)?n=s:r[l]=s}}if(n){const a=r.style||(r.style={});a[e.stylePropertyNameCase==="css"?"text-align":"textAlign"]=n}return r}

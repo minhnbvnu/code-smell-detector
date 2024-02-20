@@ -1,0 +1,1 @@
+function _eglChooseConfig(display,attrib_list,configs,config_size,numConfigs){return EGL.chooseConfig(display,attrib_list,configs,config_size,numConfigs)}

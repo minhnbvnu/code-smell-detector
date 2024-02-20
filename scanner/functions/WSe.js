@@ -1,0 +1,1 @@
+function WSe(e,t){let r=e.visibleRanges;if(r.length==1&&r[0].from==e.viewport.from&&r[0].to==e.viewport.to)return r;let n=[];for(let{from:i,to:a}of r)i=Math.max(e.state.doc.lineAt(i).from,i-t),a=Math.min(e.state.doc.lineAt(a).to,a+t),n.length&&n[n.length-1].to>=i?n[n.length-1].to=a:n.push({from:i,to:a});return n}

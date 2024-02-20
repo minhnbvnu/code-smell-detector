@@ -1,1 +1,1 @@
-function Rs(t,n){t.I.push(n),_s(t,t.i.then(function(){!t.l&&k(t.I,n)&&t.R!==t.getUid()&&(t.R=t.getUid(),n(Ps(t)))}))}
+function rs(t,e){return void 0!==es[t]&&(void 0===e?es[t]:(es[t]=e,"s"===t&&(es.ss=e-1),!0))}

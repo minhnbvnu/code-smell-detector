@@ -1,1 +1,1 @@
-function tanh(n) { return sinh(n) / cosh(n); }
+function tanh(e){if(null!=Math.tanh)return Math.tanh(e);if(e===1/0)return 1;if(e===-1/0)return -1;var t=Math.exp(2*e);return (t-1)/(t+1)}

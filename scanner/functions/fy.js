@@ -1,0 +1,1 @@
+function fy(t,e){for(var r=-1,n=t==null?0:t.length,i=0,s=[];++r<n;){var a=t[r];e(a,r,t)&&(s[i++]=a)}return s}

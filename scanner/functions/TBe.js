@@ -1,0 +1,1 @@
+function TBe(e){var t=this.RULES;delete t.keywords[e],delete t.all[e],delete t.custom[e];for(var r=0;r<t.length;r++)for(var n=t[r].rules,i=0;i<n.length;i++)if(n[i].keyword==e){n.splice(i,1);break}return this}

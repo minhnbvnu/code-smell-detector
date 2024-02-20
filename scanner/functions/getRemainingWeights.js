@@ -1,0 +1,3 @@
+function getRemainingWeights() {
+            return remainingWeights;
+        }

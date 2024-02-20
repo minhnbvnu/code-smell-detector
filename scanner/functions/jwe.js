@@ -1,0 +1,1 @@
+function jwe(e,t){let r=[Zwe],n;return e instanceof vb&&(e.module&&r.push(ut.styleModule.of(e.module)),n=e.themeType),t!=null&&t.fallback?r.push(Ple.of(e)):n?r.push(LD.computeN([ut.darkTheme],i=>i.facet(ut.darkTheme)==(n=="dark")?[e]:[])):r.push(LD.of(e)),r}

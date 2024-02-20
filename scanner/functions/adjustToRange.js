@@ -1,3 +1,1 @@
-function adjustToRange(min, max, value) {
-    return Math.max(min, Math.min(max, value));
-  }
+function adjustToRange(t,r,o){return Math.max(t,Math.min(r,o))}

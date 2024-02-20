@@ -1,0 +1,1 @@
+function m9(e,a){var p;const r=t5(a,e.itemTitle,a),c=e.returnObject?a:t5(a,e.itemValue,r),i=t5(a,e.itemChildren),s=e.itemProps===!0?typeof a=="object"&&a!=null&&!Array.isArray(a)?"children"in a?ne(a,["children"])[1]:a:void 0:t5(a,e.itemProps),d={title:r,value:c,...s};return{title:String((p=d.title)!=null?p:""),value:d.value,props:d,children:Array.isArray(i)?p9(e,i):void 0,raw:a}}

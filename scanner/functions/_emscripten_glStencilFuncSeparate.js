@@ -1,0 +1,1 @@
+function _emscripten_glStencilFuncSeparate(x0,x1,x2,x3){GLctx["stencilFuncSeparate"](x0,x1,x2,x3)}

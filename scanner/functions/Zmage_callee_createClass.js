@@ -1,0 +1,1 @@
+function Zmage_callee_createClass(Constructor, protoProps, staticProps) { if (protoProps) Zmage_callee_defineProperties(Constructor.prototype, protoProps); if (staticProps) Zmage_callee_defineProperties(Constructor, staticProps); return Constructor; }

@@ -1,0 +1,1 @@
+function DatePatterns(t){var o;_classCallCheck(this,DatePatterns);(o=r.call(this,h,"datePatterns",!0)).datePattern=new l.XFAObjectArray(4);return o}

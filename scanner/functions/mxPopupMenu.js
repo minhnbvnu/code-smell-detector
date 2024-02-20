@@ -1,0 +1,1 @@
+function mxPopupMenu(a){this.factoryMethod=a;null!=a&&this.init()}

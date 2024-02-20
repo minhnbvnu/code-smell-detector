@@ -1,5 +1,3 @@
-function isEmptyObject (keys) {
-  var key;
-  for (key in keys) { return false; }
-  return true;
-}
+function isEmptyObject(obj) {
+	  return Object.keys(obj).length === 0;
+	}

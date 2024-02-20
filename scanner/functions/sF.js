@@ -1,1 +1,1 @@
-function Sf(a){a=a|0;return aa(H[a+60>>2])|0}
+function sF(n){let t=n.length,e,i;for(;t;)i=Math.floor(Math.random()*t--),e=n[t],n[t]=n[i],n[i]=e;return n}

@@ -1,0 +1,1 @@
+function Xg(a){a&&a.dispatchConfig.registrationName&&zc(a._targetInst,null,a)}

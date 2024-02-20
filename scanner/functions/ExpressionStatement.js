@@ -1,4 +1,4 @@
-function ExpressionStatement(node) {
-	  this.print(node.expression, node);
-	  this.semicolon();
-	}
+function ExpressionStatement(expression) {
+	        this.type = syntax_1.Syntax.ExpressionStatement;
+	        this.expression = expression;
+	    }

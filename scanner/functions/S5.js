@@ -1,0 +1,1 @@
+function S5(){for(var t=this._groups,e=-1,r=t.length;++e<r;)for(var n=t[e],i=n.length-1,s=n[i],a;--i>=0;)(a=n[i])&&(s&&a.compareDocumentPosition(s)^4&&s.parentNode.insertBefore(a,s),s=a);return this}

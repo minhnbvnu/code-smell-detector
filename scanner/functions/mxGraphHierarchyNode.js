@@ -1,0 +1,1 @@
+function mxGraphHierarchyNode(a){mxGraphAbstractHierarchyCell.apply(this,arguments);this.cell=a;this.id=mxObjectIdentity.get(a);this.connectsAsTarget=[];this.connectsAsSource=[]}

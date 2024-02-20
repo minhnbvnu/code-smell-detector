@@ -1,0 +1,1 @@
+function tG(t){if(t&&t.aria){var e=t.aria;null!=e.show&&(e.enabled=e.show),e.label=e.label||{},E(["description","general","series","data"],(function(t){null!=e[t]&&(e.label[t]=e[t])}))}}

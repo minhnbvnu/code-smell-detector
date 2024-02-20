@@ -1,0 +1,1 @@
+function _divMutate(e,t){return"object"===_typeof(e)&&null!==e?(Object.isFrozen(e)?_objectDiv:_objectDivMutate)(e,t):e/=t}

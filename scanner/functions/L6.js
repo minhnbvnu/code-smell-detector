@@ -1,0 +1,1 @@
+function L6(t,e){return function(r,n){for(var i=r.length,s=[],a=0,o=t[0],l=0;i>0&&o>0&&(l+o+1>n&&(o=Math.max(1,n-l)),s.push(r.substring(i-=o,i+o)),!((l+=o+1)>n));)o=t[a=(a+1)%t.length];return s.reverse().join(e)}}

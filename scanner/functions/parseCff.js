@@ -1,13 +1,1 @@
-function parseCff(data, start, end, seacAnalysisEnabled) {
-    const properties = {};
-    const parser = new _cff_parser.CFFParser(new _stream.Stream(data, start, end - start), properties, seacAnalysisEnabled);
-    const cff = parser.parse();
-    return {
-      glyphs: cff.charStrings.objects,
-      subrs: cff.topDict.privateDict && cff.topDict.privateDict.subrsIndex && cff.topDict.privateDict.subrsIndex.objects,
-      gsubrs: cff.globalSubrIndex && cff.globalSubrIndex.objects,
-      isCFFCIDFont: cff.isCIDFont,
-      fdSelect: cff.fdSelect,
-      fdArray: cff.fdArray
-    };
-  }
+function parseCff(t,r,o,c){var u=new l.CFFParser(new d.Stream(t,r,o-r),{},c).parse();return{glyphs:u.charStrings.objects,subrs:u.topDict.privateDict&&u.topDict.privateDict.subrsIndex&&u.topDict.privateDict.subrsIndex.objects,gsubrs:u.globalSubrIndex&&u.globalSubrIndex.objects,isCFFCIDFont:u.isCIDFont,fdSelect:u.fdSelect,fdArray:u.fdArray}}

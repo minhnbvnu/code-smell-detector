@@ -1,0 +1,1 @@
+function _getbit(n,r){return n[r>>4]>>(15&r)&1}

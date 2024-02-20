@@ -1,0 +1,1 @@
+function _decodeint(t){return _bi255(t.slice(0).reverse())}

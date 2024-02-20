@@ -1,0 +1,1 @@
+function hT(e){return Object.prototype.toString.call(e)==="[object Number]"&&e%1===0&&!_T.isNegativeZero(e)}

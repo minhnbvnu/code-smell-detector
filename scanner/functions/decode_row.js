@@ -1,0 +1,1 @@
+function decode_row(rowstr){return parseInt(unfix_row(rowstr),10)-1}

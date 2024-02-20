@@ -1,0 +1,1 @@
+function Vme(e){return Object.prototype.toString.call(e)==="[object Number]"&&(e%1!=0||nL.isNegativeZero(e))}

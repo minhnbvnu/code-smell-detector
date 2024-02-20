@@ -1,0 +1,1 @@
+function MeshBuilder(){this.ptr=_emscripten_bind_MeshBuilder_MeshBuilder_0();getCache(MeshBuilder)[this.ptr]=this}

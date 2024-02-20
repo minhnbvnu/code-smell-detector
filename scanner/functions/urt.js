@@ -1,0 +1,1 @@
+function urt(n,t){let e=this.cache,i=t.elements;if(i===void 0){if(ii(e,t))return;n.uniformMatrix4fv(this.addr,!1,t),Kn(e,t)}else{if(ii(e,i))return;YD.set(i),n.uniformMatrix4fv(this.addr,!1,YD),Kn(e,i)}}

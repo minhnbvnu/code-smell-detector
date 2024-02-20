@@ -1,11 +1,1 @@
-function bindCanvasToFramebuffer(gl) {
-	  callAndCheck(gl, function () {
-	    return gl.bindFramebuffer(gl.FRAMEBUFFER, null);
-	  });
-	  callAndCheck(gl, function () {
-	    return gl.viewport(0, 0, gl.canvas.width, gl.canvas.height);
-	  });
-	  callAndCheck(gl, function () {
-	    return gl.scissor(0, 0, gl.canvas.width, gl.canvas.height);
-	  });
-	}
+function bindCanvasToFramebuffer(e){callAndCheck(e,function(){return e.bindFramebuffer(e.FRAMEBUFFER,null)}),callAndCheck(e,function(){return e.viewport(0,0,e.canvas.width,e.canvas.height)}),callAndCheck(e,function(){return e.scissor(0,0,e.canvas.width,e.canvas.height)});}

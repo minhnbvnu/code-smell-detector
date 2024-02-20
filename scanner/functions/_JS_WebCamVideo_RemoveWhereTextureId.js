@@ -1,0 +1,1 @@
+function _JS_WebCamVideo_RemoveWhereTextureId(textureId){if(typeof _JS_WebCamVideo_Update!=="undefined"){return}Object.entries(webcamBufferToTextureTable).forEach(function(pair){if(pair[1]==textureId){delete webcamBufferToTextureTable[pair[0]]}})}

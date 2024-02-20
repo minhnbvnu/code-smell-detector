@@ -1,15 +1,1 @@
-function addChildren(node, nodesToVisit) {
-    if (node instanceof _primitives.Dict) {
-      node = node.getRawValues();
-    } else if ((0, _primitives.isStream)(node)) {
-      node = node.dict.getRawValues();
-    } else if (!Array.isArray(node)) {
-      return;
-    }
-
-    for (const rawValue of node) {
-      if (mayHaveChildren(rawValue)) {
-        nodesToVisit.push(rawValue);
-      }
-    }
-  }
+function addChildren(t,r){if(t instanceof c.Dict)t=t.getRawValues();else if(t instanceof l.BaseStream)t=t.dict.getRawValues();else if(!Array.isArray(t))return;var o,u,h=_createForOfIteratorHelper(t);try{for(h.s();!(o=h.n()).done;){var d=o.value;((u=d)instanceof c.Ref||u instanceof c.Dict||u instanceof l.BaseStream||Array.isArray(u))&&r.push(d)}}catch(t){h.e(t)}finally{h.f()}}

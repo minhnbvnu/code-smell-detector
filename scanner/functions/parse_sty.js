@@ -1,0 +1,1 @@
+function parse_sty(data,name,opts){return(name.substr(-4)===".bin"?parse_sty_bin:parse_sty_xml)(data,opts)}

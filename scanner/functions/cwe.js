@@ -1,0 +1,1 @@
+function cwe(e={}){return[yc.of(e),iwe(),uwe]}

@@ -1,0 +1,1 @@
+function StructTreePage(t,r){_classCallCheck(this,StructTreePage);this.root=t;this.rootDict=t?t.dict:null;this.pageDict=r;this.nodes=[]}

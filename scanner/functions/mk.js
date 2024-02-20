@@ -1,1 +1,1 @@
-function Mk(a,b){a=a|0;b=b|0;return L[L[a+220>>2]+(b<<2)>>2]}
+function mk(a,b){a=a|0;b=b|0;var c=0,d=0,e=0,g=0;c=f[b>>2]|0;if(!c){d=0;return d|0}e=a+44|0;g=f[e>>2]|0;if(g>>>0<(f[a+48>>2]|0)>>>0){f[b>>2]=0;f[g>>2]=c;f[e>>2]=(f[e>>2]|0)+4;d=1;return d|0}else{Ug(a+40|0,b);d=1;return d|0}return 0}

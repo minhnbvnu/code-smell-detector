@@ -1,0 +1,1 @@
+function SP(t,e,n,i){var r=t.getData().getLayout("largePoints"),o=new wP({shape:{points:r},__sign:1,ignoreCoarsePointer:!0});e.add(o);var a=new wP({shape:{points:r},__sign:-1,ignoreCoarsePointer:!0});e.add(a);var s=new wP({shape:{points:r},__sign:0,ignoreCoarsePointer:!0});e.add(s),MP(1,o,t),MP(-1,a,t),MP(0,s,t),i&&(o.incremental=!0,a.incremental=!0),n&&n.push(o,a)}

@@ -1,3 +1,3 @@
 function getPrevSibling() {
-	  return this.getSibling(this.key - 1);
-	}
+  return this.getSibling(this.key - 1);
+}

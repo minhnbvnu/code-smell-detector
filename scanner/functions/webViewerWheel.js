@@ -16,23 +16,13 @@ function webViewerWheel(evt) {
     }
 
     const previousScale = pdfViewer.currentScale;
-    const delta = (0, _ui_utils.normalizeWheelEventDirection)(evt);
-    let ticks = 0;
-
-    if (evt.deltaMode === WheelEvent.DOM_DELTA_LINE || evt.deltaMode === WheelEvent.DOM_DELTA_PAGE) {
-      if (Math.abs(delta) >= 1) {
-        ticks = Math.sign(delta);
-      } else {
-        ticks = PDFViewerApplication.accumulateWheelTicks(delta);
-      }
-    } else {
-      const PIXELS_PER_LINE_SCALE = 30;
-      ticks = PDFViewerApplication.accumulateWheelTicks(delta / PIXELS_PER_LINE_SCALE);
-    }
+    const delta = (0, _ui_utils.normalizeWheelEventDelta)(evt);
+    const MOUSE_WHEEL_DELTA_PER_PAGE_SCALE = 3.0;
+    const ticks = delta * MOUSE_WHEEL_DELTA_PER_PAGE_SCALE;
 
     if (ticks < 0) {
       PDFViewerApplication.zoomOut(-ticks);
-    } else if (ticks > 0) {
+    } else {
       PDFViewerApplication.zoomIn(ticks);
     }
 

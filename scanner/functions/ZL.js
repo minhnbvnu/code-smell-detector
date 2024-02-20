@@ -1,0 +1,1 @@
+function ZL(t,e){return $L(t.node2,e)*t.getValue()}

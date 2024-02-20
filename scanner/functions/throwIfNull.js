@@ -1,11 +1,1 @@
-function throwIfNull(gl, returnTOrNull, failureMessage) {
-	  var tOrNull = callAndCheck(gl, function () {
-	    return returnTOrNull();
-	  });
-
-	  if (tOrNull == null) {
-	    throw new Error(failureMessage);
-	  }
-
-	  return tOrNull;
-	}
+function throwIfNull(e,t,n){var r=callAndCheck(e,function(){return t()});if(null==r)throw new Error(n);return r}

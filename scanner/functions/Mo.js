@@ -1,0 +1,1 @@
+function Mo(){return f({},g(this))}

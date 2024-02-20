@@ -1,0 +1,1 @@
+function setActiveCanvasNode(e){e&&($activeCanvasNode=$(e.target).closest(".grid-canvas"))}

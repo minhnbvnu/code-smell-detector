@@ -1,0 +1,1 @@
+function vfe(e,t){let r=e.split("/"),n=r.length;return r.some(RB)&&(n+=gfe),t&&(n+=hfe),r.filter(i=>!RB(i)).reduce((i,a)=>i+(dfe.test(a)?ffe:a===""?pfe:mfe),n)}

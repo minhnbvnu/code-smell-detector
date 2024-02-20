@@ -1,0 +1,3 @@
+function nullLowestDelta() {
+        lowestDelta = null;
+    }

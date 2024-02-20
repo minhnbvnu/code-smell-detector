@@ -1,0 +1,1 @@
+function onNavigateDownClicked( event ) { event.preventDefault(); onUserInput(); navigateDown(); }

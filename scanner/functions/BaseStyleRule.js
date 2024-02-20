@@ -1,0 +1,1 @@
+function BaseStyleRule(i,o,s){this.type="style",this.isProcessed=!1;var u=s.sheet,C=s.Renderer;this.key=i,this.options=s,this.style=o,u?this.renderer=u.renderer:C&&(this.renderer=new C)}

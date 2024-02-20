@@ -1,1 +1,1 @@
-function Br(t,n){t.Ya.then(function(){t.a.register("authEvent",n,oi("gapi.iframes.CROSS_ORIGIN_IFRAMES_FILTER"))})}
+function Br(t,e,i){var n=Wr(t,e,i);return Fr(n.r,n.g,n.b)}

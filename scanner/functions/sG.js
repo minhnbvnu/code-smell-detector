@@ -1,0 +1,1 @@
+function sG(n,t){let e=t,i=e_(n.shape,t.shape);return i.length>0&&(e=IA(e,i)),EA(e,n.shape)}

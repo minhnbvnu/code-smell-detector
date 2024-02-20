@@ -1,0 +1,1 @@
+function gW(t,e){for(var n=0;n<t.length;n++){if(null!=e.seriesIndex&&e.seriesIndex===t[n].seriesIndex||null!=e.seriesId&&e.seriesId===t[n].id)return n}}

@@ -1,10 +1,3 @@
-function maj(result, x, y, z, tmp) {
-    result.assign(x);
-    result.and(y);
-    tmp.assign(x);
-    tmp.and(z);
-    result.xor(tmp);
-    tmp.assign(y);
-    tmp.and(z);
-    result.xor(tmp);
-  }
+function maj (x, y, z) {
+  return (x & y) | (z & (x | y))
+}

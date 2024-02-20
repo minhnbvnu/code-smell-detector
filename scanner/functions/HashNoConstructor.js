@@ -1,0 +1,1 @@
+function HashNoConstructor(s){Base.call(this,"digest"),this._hash=s,this.buffers=[]}

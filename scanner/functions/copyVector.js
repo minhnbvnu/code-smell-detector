@@ -1,0 +1,1 @@
+function copyVector(e,t){return Object.assign(t,e)}

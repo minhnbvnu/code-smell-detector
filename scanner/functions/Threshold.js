@@ -1,0 +1,1 @@
+function Threshold(t){_classCallCheck(this,Threshold);return r.call(this,d,"threshold",["trace","error","information","warning"])}

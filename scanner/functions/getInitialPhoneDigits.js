@@ -1,0 +1,1 @@
+function getInitialPhoneDigits(i){var o=i.value,s=i.phoneNumber,u=i.defaultCountry,C=i.international,_=i.useNationalFormat,w=i.metadata;return(!1===C||_)&&s&&s.country?generateNationalNumberDigits(s):!o&&C&&u?getInternationalPhoneNumberPrefix(u,w):o}

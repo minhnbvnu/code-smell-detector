@@ -1,0 +1,1 @@
+function _glUniform1i(location,v0){GLctx.uniform1i(webglGetUniformLocation(location),v0)}

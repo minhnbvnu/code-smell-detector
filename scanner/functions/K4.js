@@ -1,0 +1,1 @@
+function K4(n,t){for(let e=0;e<t.length;e++){let i=t[e];Object.defineProperty(n,i,{get:function(){return this.node[i]},configurable:!0})}}

@@ -1,0 +1,1 @@
+function navigatePageUp(){scrollPage(-1)}

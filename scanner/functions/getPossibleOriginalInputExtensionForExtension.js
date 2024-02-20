@@ -1,0 +1,3 @@
+function getPossibleOriginalInputExtensionForExtension(path) {
+            return fileExtensionIsOneOf(path, [".d.mts" /* Dmts */, ".mjs" /* Mjs */, ".mts" /* Mts */]) ? [".mts" /* Mts */, ".mjs" /* Mjs */] : fileExtensionIsOneOf(path, [".d.cts" /* Dcts */, ".cjs" /* Cjs */, ".cts" /* Cts */]) ? [".cts" /* Cts */, ".cjs" /* Cjs */] : fileExtensionIsOneOf(path, [`.d.json.ts`]) ? [".json" /* Json */] : [".tsx" /* Tsx */, ".ts" /* Ts */, ".jsx" /* Jsx */, ".js" /* Js */];
+        }

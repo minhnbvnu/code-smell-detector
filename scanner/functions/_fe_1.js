@@ -1,0 +1,1 @@
+function _fe_1($0){$0=$0|0;var $1=0,dest=0,label=0,sp=0,stop=0;sp=STACKTOP;HEAP32[$0>>2]=1;$1=$0+4|0;dest=$1;stop=dest+36|0;do{HEAP32[dest>>2]=0|0;dest=dest+4|0}while((dest|0)<(stop|0));return}

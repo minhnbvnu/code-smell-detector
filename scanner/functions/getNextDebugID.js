@@ -1,0 +1,3 @@
+function getNextDebugID() {
+	  return nextDebugID++;
+	}

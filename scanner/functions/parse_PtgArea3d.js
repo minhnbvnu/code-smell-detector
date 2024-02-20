@@ -1,0 +1,1 @@
+function parse_PtgArea3d(blob,length){var type=(blob[blob.l++]&96)>>5;var ixti=blob.read_shift(2);var area=parse_RgceArea(blob,8);return[type,ixti,area]}

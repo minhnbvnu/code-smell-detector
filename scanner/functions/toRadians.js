@@ -1,3 +1,1 @@
-function toRadians(angleInDegrees) {
-  return (angleInDegrees * Math.PI) / 180;
-}
+function toRadians(d) {  return d * Math.PI / 180;}

@@ -1,0 +1,1 @@
+function mxCellMarker(a,b,c,d){mxEventSource.call(this);null!=a&&(this.graph=a,this.validColor=null!=b?b:mxConstants.DEFAULT_VALID_COLOR,this.invalidColor=null!=c?c:mxConstants.DEFAULT_INVALID_COLOR,this.hotspot=null!=d?d:mxConstants.DEFAULT_HOTSPOT,this.highlight=new mxCellHighlight(a))}

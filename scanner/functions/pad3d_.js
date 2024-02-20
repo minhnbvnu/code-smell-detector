@@ -1,10 +1,1 @@
-function pad3d_(x, paddings, constantValue) {
-	  if (constantValue === void 0) {
-	    constantValue = 0;
-	  }
-
-	  assert(paddings.length === 3 && paddings[0].length === 2 && paddings[1].length === 2 && paddings[2].length === 2, function () {
-	    return 'Invalid number of paddings. Must be length of 2 each.';
-	  });
-	  return pad(x, paddings, constantValue);
-	}
+function pad3d_(e,t,n){return void 0===n&&(n=0),assert(3===t.length&&2===t[0].length&&2===t[1].length&&2===t[2].length,"Invalid number of paddings. Must be length of 2 each."),pad(e,t,n)}

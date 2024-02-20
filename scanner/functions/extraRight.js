@@ -1,0 +1,1 @@
+function extraRight(marker) { return marker.inclusiveRight ? 1 : 0 }

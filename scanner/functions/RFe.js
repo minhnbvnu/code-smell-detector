@@ -1,0 +1,1 @@
+function RFe(e,t){return t.toUpperCase()}

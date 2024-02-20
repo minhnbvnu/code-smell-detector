@@ -1,0 +1,1 @@
+function toKey$5(value){if("string"==typeof value||isSymbol(value))return value;var result=value+"";return"0"==result&&1/value==-INFINITY$1?"-0":result}

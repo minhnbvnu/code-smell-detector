@@ -1,0 +1,1 @@
+function handleDrag(e,o){return trigger(self.onDrag,o,e)}

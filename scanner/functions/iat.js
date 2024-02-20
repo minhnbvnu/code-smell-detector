@@ -1,0 +1,1 @@
+function iat(n){return function(){var t=n.apply(this,arguments);this.innerHTML=t==null?"":t}}

@@ -1,0 +1,1 @@
+function getCellFromNode(e){var o=/l\d+/.exec(e.className);if(!o)throw new Error("SlickGrid getCellFromNode: cannot get cell - "+e.className);return parseInt(o[0].substr(1,o[0].length-1),10)}

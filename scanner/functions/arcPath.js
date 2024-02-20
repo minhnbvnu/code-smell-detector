@@ -1,0 +1,1 @@
+function arcPath(g,o){var x=o.x||0,y=o.y||0,ir=o.innerRadius||0,or=o.outerRadius||0,sa=(o.startAngle||0)-Math.PI/2,ea=(o.endAngle||0)-Math.PI/2;g.beginPath();if(ir===0)g.moveTo(x,y);else g.arc(x,y,ir,sa,ea,0);g.arc(x,y,or,ea,sa,1);g.closePath()}

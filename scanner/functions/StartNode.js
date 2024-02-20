@@ -1,0 +1,1 @@
+function StartNode(t){_classCallCheck(this,StartNode);return r.call(this,d,"startNode")}

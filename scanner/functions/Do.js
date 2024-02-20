@@ -1,1 +1,1 @@
-function Do(){this.a=To()}
+function Do(){return this.isValid()?this.toISOString():null}

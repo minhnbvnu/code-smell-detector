@@ -1,0 +1,1 @@
+function Poe(e){return e==9||e==10||e==13||e==32}

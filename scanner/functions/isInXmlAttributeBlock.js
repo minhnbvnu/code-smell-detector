@@ -1,0 +1,1 @@
+function isInXmlAttributeBlock(state) { return isIn(state, "attribute"); }

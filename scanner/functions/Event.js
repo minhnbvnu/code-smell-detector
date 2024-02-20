@@ -1,5 +1,8 @@
-function Event(time, data) {
-	      if (data == null) throw new Error("data cannot be null.");
-	      this.time = time;
-	      this.data = data;
-	    }
+function Event(type) {
+    var me = this;
+    return (me == null || me.constructor != Event)
+      ? new Event(type)
+      : (type instanceof Event)
+          ? type
+          : extend(me, { 'timeStamp': +new Date }, typeof type == 'string' ? { 'type': type } : type);
+  }

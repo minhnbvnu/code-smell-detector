@@ -1,0 +1,1 @@
+function jce(e,t){throw new Error('"auto" format cannot be used for writing')}

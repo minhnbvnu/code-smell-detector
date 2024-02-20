@@ -1,0 +1,1 @@
+function testAudio (results) { this.initialize(results); }

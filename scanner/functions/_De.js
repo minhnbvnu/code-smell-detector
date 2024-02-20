@@ -1,0 +1,1 @@
+function _De(e,t,r){const n=this;return i;function i(l){return ft(l)?(e.enter("lineEnding"),e.consume(l),e.exit("lineEnding"),a):r(l)}function a(l){return n.parser.lazy[n.now().line]?r(l):t(l)}}

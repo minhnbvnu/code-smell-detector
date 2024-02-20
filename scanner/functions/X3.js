@@ -1,0 +1,1 @@
+function X3(e,t,r){var n=e.tag;if(n===5||n===6)e=e.stateNode,t?r.nodeType===8?r.parentNode.insertBefore(e,t):r.insertBefore(e,t):(r.nodeType===8?(t=r.parentNode,t.insertBefore(e,r)):(t=r,t.appendChild(e)),r=r._reactRootContainer,r!=null||t.onclick!==null||(t.onclick=bg));else if(n!==4&&(e=e.child,e!==null))for(X3(e,t,r),e=e.sibling;e!==null;)X3(e,t,r),e=e.sibling}

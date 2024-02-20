@@ -1,0 +1,1 @@
+function _JS_SystemInfo_HasCursorLock(){return Module.SystemInfo.hasCursorLock}

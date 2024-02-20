@@ -1,0 +1,1 @@
+function R5(t){return function(){this.removeAttribute(t)}}

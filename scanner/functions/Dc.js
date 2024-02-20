@@ -1,0 +1,1 @@
+function Dc(t,e,i){for(var n in i)if(i.hasOwnProperty(n)){i[n].top=0;do{var r=null;for(var o in i)if(null!==i[o].top&&o!==n&&i[n].index>i[o].index&&Mc(i[n],i[o])){r=i[o];break}null!=r&&(i[n].top=r.top+r.height)}while(r)}for(var s=0;s<t.length;s++)void 0!==t[s].data.subgroup&&(t[s].top=i[t[s].data.subgroup].top+.5*e.item.vertical)}

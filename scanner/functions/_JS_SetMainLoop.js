@@ -1,0 +1,1 @@
+function _JS_SetMainLoop(func,fps,simulateInfiniteLoop){try{_emscripten_set_main_loop(func,fps,simulateInfiniteLoop)}catch{}}

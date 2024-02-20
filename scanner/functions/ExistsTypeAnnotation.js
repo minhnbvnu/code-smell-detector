@@ -1,0 +1,3 @@
+function ExistsTypeAnnotation() {
+  this.token("*");
+}

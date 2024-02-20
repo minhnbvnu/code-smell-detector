@@ -1,0 +1,1 @@
+function onNavigateLeftClicked( event ) { event.preventDefault(); onUserInput(); navigateLeft(); }

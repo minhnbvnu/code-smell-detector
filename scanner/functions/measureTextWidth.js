@@ -1,3 +1,4 @@
-function measureTextWidth(font, text) {
-  return measureText(font, text).width;
+function measureTextWidth(svgTextElement) {
+  var result = svgTextElement.getBBox();
+  return result.width;
 }

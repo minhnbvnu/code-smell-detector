@@ -1,0 +1,1 @@
+function _getAnnoPos (anno) { return [anno.start.offset, anno.end.offset] }

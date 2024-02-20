@@ -1,0 +1,1 @@
+function handleHeaderContextMenu(e){var o=$(e.target).closest(".slick-header-column",".slick-header-columns"),t=o&&o.data("column");trigger(self.onHeaderContextMenu,{column:t},e)}

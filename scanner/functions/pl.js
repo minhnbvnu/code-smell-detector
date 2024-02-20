@@ -1,1 +1,1 @@
-function Pl(a){a=a|0;return a+144|0}
+function pl(e){if(!e)return 0===e?e:0;if((e=vl(e))===De||e===-De){return(e<0?-1:1)*Pe}return e===e?e:0}

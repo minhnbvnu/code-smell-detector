@@ -1,15 +1,1 @@
-function CFFFont(file, properties) {
-    this.properties = properties;
-    var parser = new _cff_parser.CFFParser(file, properties, SEAC_ANALYSIS_ENABLED);
-    this.cff = parser.parse();
-    this.cff.duplicateFirstGlyph();
-    var compiler = new _cff_parser.CFFCompiler(this.cff);
-    this.seacs = this.cff.seacs;
-
-    try {
-      this.data = compiler.compile();
-    } catch (e) {
-      (0, _util.warn)("Failed to compile font " + properties.loadedName);
-      this.data = file;
-    }
-  }
+function CFFFont(t,r){!function _classCallCheck(t,r){if(!(t instanceof r))throw new TypeError("Cannot call a class as a function")}(this,CFFFont);this.properties=r;var o=new c.CFFParser(t,r,l.SEAC_ANALYSIS_ENABLED);this.cff=o.parse();this.cff.duplicateFirstGlyph();var h=new c.CFFCompiler(this.cff);this.seacs=this.cff.seacs;try{this.data=h.compile()}catch(o){(0,u.warn)("Failed to compile font "+r.loadedName);this.data=t}this._createBuiltInEncoding()}

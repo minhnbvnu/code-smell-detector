@@ -1,7 +1,1 @@
-function print(x, verbose) {
-	  if (verbose === void 0) {
-	    verbose = false;
-	  }
-
-	  console.log(x.toString(verbose));
-	}
+function Print(t){_classCallCheck(this,Print);return r.call(this,d,"print")}

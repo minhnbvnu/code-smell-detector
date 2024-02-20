@@ -1,0 +1,1 @@
+function _extractFormattedDigitsAndPlus(i){var o=extractFormattedPhoneNumber(i)||"";return"+"===o[0]?[o.slice("+".length),!0]:[o]}

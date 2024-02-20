@@ -1,0 +1,1 @@
+function getCurrentTarget(){return B||i}

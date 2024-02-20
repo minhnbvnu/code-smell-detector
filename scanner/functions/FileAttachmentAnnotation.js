@@ -1,0 +1,1 @@
+function FileAttachmentAnnotation(t){var o;_classCallCheck(this,FileAttachmentAnnotation);o=r.call(this,t);var l=new w.FileSpec(t.dict.get("FS"),t.xref);o.data.annotationType=c.AnnotationType.FILEATTACHMENT;o.data.file=l.serializable;return o}

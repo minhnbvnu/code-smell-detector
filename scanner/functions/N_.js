@@ -1,0 +1,1 @@
+function N_(e,t,n){const r=e.length;if(0===r)return"";let o=0;for(;o<r;){const i=e.charAt(r-o-1);if(i!==t||n){if(i===t||!n)break;o++}else o++}return e.slice(0,r-o)}

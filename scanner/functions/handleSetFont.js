@@ -1,6 +1,1 @@
-function handleSetFont(fontName, fontRef) {
-      return self.loadFont(fontName, fontRef, resources).then(function (translated) {
-        textState.font = translated.font;
-        textState.fontMatrix = translated.font.fontMatrix || _util.FONT_IDENTITY_MATRIX;
-      });
-    }
+function handleSetFont(t,r){return U.loadFont(t,r,h).then((function(t){return t.font.isType3Font?t.loadType3Data(U,h,l).catch((function(){})).then((function(){return t})):t})).then((function(t){N.font=t.font;N.fontMatrix=t.font.fontMatrix||c.FONT_IDENTITY_MATRIX}))}

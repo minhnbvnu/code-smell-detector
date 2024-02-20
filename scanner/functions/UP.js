@@ -1,0 +1,1 @@
+function UP(n){switch(n.shapeInfo.logicalShape.length){case 0:return IK(n);case 1:return RK(n);case 2:return NK(n);case 3:return DK(n);default:return FK(n)}}

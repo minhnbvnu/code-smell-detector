@@ -1,7 +1,14 @@
-function extractDomain (url) {
-  // Find and remove protocol (e.g., http, ftp, etc.) to get domain.
-  var domain = url.indexOf('://') > -1 ? url.split('/')[2] : url.split('/')[0];
+function extractDomain(url) {
+     var domain;
+     //find & remove protocol (http, ftp, etc.) and get domain
+     if (url.indexOf("://") > -1) {
+       domain = url.split('/')[2];
+     } else {
+       domain = url.split('/')[0];
+     }
 
-  // Find and remove port number.
-  return domain.substring(0, domain.indexOf(':'));
-}
+     //find & remove port number
+     domain = domain.split(':')[0];
+
+     return domain;
+   }

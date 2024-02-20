@@ -1,1 +1,1 @@
-function yf(a){a=a|0;oa(rd(a))}
+function Yf(a){F(a)&&(a=a.split(" "));var b=Z();n(a,function(a){a.length&&(b[a]=!0)});return b}

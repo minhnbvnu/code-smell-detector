@@ -1,0 +1,1 @@
+function kee(e){if(this[Ju]+=e.length,this[M3]._maxPayload<1||this[Ju]<=this[M3]._maxPayload){this[kp].push(e);return}this[G_]=new RangeError("Max payload size exceeded"),this[G_][Cee]=1009,this.removeListener("data",kee),this.reset()}

@@ -1,0 +1,1 @@
+function getBaseUrl(){return url_1.URLExt.normalize(getOption("baseUrl")||"/")}

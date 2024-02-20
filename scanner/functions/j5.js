@@ -1,0 +1,1 @@
+function j5(t){return function(){delete this[t]}}

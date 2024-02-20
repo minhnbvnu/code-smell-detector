@@ -1,16 +1,1 @@
-function StreamsSequenceStream(streams) {
-    this.streams = streams;
-    let maybeLength = 0;
-
-    for (let i = 0, ii = streams.length; i < ii; i++) {
-      const stream = streams[i];
-
-      if (stream instanceof DecodeStream) {
-        maybeLength += stream._rawMinBufferLength;
-      } else {
-        maybeLength += stream.length;
-      }
-    }
-
-    DecodeStream.call(this, maybeLength);
-  }
+function StreamsSequenceStream(t){var o,c=arguments.length>1&&void 0!==arguments[1]?arguments[1]:null;_classCallCheck(this,StreamsSequenceStream);var l,u=0,d=_createForOfIteratorHelper(t);try{for(d.s();!(l=d.n()).done;){var g=l.value;u+=g instanceof h?g._rawMinBufferLength:g.length}}catch(t){d.e(t)}finally{d.f()}(o=r.call(this,u)).streams=t;o._onError=c;return o}

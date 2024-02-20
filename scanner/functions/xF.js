@@ -1,1 +1,1 @@
-function xf(a,b){a=a|0;b=b|0;H[a+12>>2]=-1;H[a+8>>2]=b;return 1}
+function xF(t){t.registerComponentModel(cF),t.registerComponentView(vF),az(t)}

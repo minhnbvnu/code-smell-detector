@@ -1,0 +1,1 @@
+function parsexmlbool(value,tag){switch(value){case"1":case"true":case"TRUE":return true;default:return false}}

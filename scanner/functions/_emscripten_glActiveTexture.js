@@ -1,0 +1,1 @@
+function _emscripten_glActiveTexture(x0){GLctx["activeTexture"](x0)}

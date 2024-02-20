@@ -1,0 +1,1 @@
+function isChildOf(state) { return function(other) { return other.parent === state; }; }

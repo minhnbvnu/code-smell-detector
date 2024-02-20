@@ -1,0 +1,1 @@
+function gfn3(v){var o=v.toFixed(11).replace(gnr1,".$1");if(o.length>(v<0?12:11))o=v.toPrecision(6);return o}

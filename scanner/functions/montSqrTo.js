@@ -1,0 +1,1 @@
+function montSqrTo(x,r){x.squareTo(r);this.reduce(r)}

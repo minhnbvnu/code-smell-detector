@@ -1,0 +1,1 @@
+function getActiveCellNode(){return activeCellNode}

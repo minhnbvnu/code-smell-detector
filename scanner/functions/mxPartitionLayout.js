@@ -1,0 +1,1 @@
+function mxPartitionLayout(a,b,c,d){mxGraphLayout.call(this,a);this.horizontal=null!=b?b:!0;this.spacing=c||0;this.border=d||0}

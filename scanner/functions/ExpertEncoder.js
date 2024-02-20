@@ -1,0 +1,1 @@
+function ExpertEncoder(pc){if(pc&&typeof pc==="object")pc=pc.ptr;this.ptr=_emscripten_bind_ExpertEncoder_ExpertEncoder_1(pc);getCache(ExpertEncoder)[this.ptr]=this}

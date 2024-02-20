@@ -1,0 +1,1 @@
+function Jxe(e){let t=e.startState,r=t.facet(hae),n=e;for(let i=r.length-1;i>=0;i--){let a=r[i](e);a&&Object.keys(a).length&&(n=mae(n,cD(t,a,e.changes.newLength),!0))}return n==e?e:hn.create(t,e.changes,e.selection,n.effects,n.annotations,n.scrollIntoView)}

@@ -1,0 +1,1 @@
+function parse_BoolErr(blob,length){var cell=parse_XLSCell(blob,6);var val=parse_Bes(blob,2);cell.val=val;cell.t=val===true||val===false?"b":"e";return cell}

@@ -1,0 +1,1 @@
+function lme(e){let t=Ds(),{portalContainer:r=t?null:document.body,isExiting:n}=e,[i,a]=O.useState(!1),l=O.useMemo(()=>({contain:i,setContain:a}),[i,a]);if(!r)return null;let s=e.children;return e.disableFocusManagement||(s=S.createElement(jh,{restoreFocus:!0,contain:i&&!n},s)),s=S.createElement(qU.Provider,{value:l},S.createElement(upe,null,s)),fc.createPortal(s,r)}

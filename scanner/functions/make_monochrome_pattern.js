@@ -1,6 +1,6 @@
-function make_monochrome_pattern(lightness, rgba1 = [0, 0, 0, 255], rgba2 = [255, 255, 255, 255]) {
+function make_monochrome_pattern(lightness, rgba1=[0, 0, 0, 255], rgba2=[255, 255, 255, 255]){
 
-	const dither_threshold_table = Array.from({ length: 64 }, (_undefined, p) => {
+	const dither_threshold_table = Array.from({length: 64}, (_undefined, p) => {
 		const q = p ^ (p >> 3);
 		return (
 			((p & 4) >> 2) | ((q & 4) >> 1) |
@@ -17,8 +17,8 @@ function make_monochrome_pattern(lightness, rgba1 = [0, 0, 0, 255], rgba2 = [255
 
 	const pattern_image_data = main_ctx.createImageData(pattern_canvas.width, pattern_canvas.height);
 
-	for (let x = 0; x < pattern_canvas.width; x += 1) {
-		for (let y = 0; y < pattern_canvas.height; y += 1) {
+	for(let x = 0; x < pattern_canvas.width; x += 1){
+		for(let y = 0; y < pattern_canvas.height; y += 1){
 			const map_value = dither_threshold_table[(x & 7) + ((y & 7) << 3)];
 			const px_white = lightness > map_value;
 			const index = ((y * pattern_image_data.width) + x) * 4;

@@ -1,0 +1,1 @@
+function _JS_SystemInfo_HasAstcHdr(){var ext=GLctx.getExtension("WEBGL_compressed_texture_astc");if(ext&&ext.getSupportedProfiles){return ext.getSupportedProfiles().includes("hdr")}return false}

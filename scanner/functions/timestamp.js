@@ -1,8 +1,1 @@
-function timestamp() {
-    return {
-        name: 'timestamp',
-        writeBundle() {
-            console.log("\x1b[32m", "Finished at: " + date.format(new Date(), 'HH:mm:ss'));
-        }
-    };
-}
+function timestamp(){var i=new Date,o=[pad(i.getHours()),pad(i.getMinutes()),pad(i.getSeconds())].join(":");return[i.getDate(),w[i.getMonth()],o].join(" ")}

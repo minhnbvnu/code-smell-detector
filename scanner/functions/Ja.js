@@ -1,0 +1,1 @@
+function Ja(a){return J(a)?a:{}}

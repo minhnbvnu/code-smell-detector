@@ -1,0 +1,1 @@
+function hU(n){if(Math.tanh!=null)return Math.tanh(n);if(n===1/0)return 1;if(n===-1/0)return-1;{let t=Math.exp(2*n);return(t-1)/(t+1)}}

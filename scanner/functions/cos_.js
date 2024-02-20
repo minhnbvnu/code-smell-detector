@@ -1,7 +1,1 @@
-function cos_(x) {
-	  var $x = convertToTensor(x, 'x', 'cos');
-	  var inputs = {
-	    x: $x
-	  };
-	  return ENGINE.runKernel(Cos, inputs);
-	}
+function cos_(e){var t=convertToTensor(e,"x","cos");return ENV.engine.runKernel(function(e){return e.cos(t)},{$x:t},function(e){return {$x:function(){return t.toFloat().sin().neg().mulStrict(e)}}})}

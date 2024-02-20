@@ -1,0 +1,1 @@
+function cSqrTo(x,r){x.squareTo(r);this.reduce(r)}

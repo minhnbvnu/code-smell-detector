@@ -1,0 +1,1 @@
+function posEq(a, b) {return a.line == b.line && a.ch == b.ch;}

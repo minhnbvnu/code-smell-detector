@@ -1,0 +1,1 @@
+function cmpCoords(a, b) { return a.top - b.top || a.left - b.left }

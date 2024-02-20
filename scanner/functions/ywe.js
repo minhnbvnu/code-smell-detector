@@ -1,0 +1,1 @@
+function ywe(e){return e==="true"||e==="True"||e==="TRUE"}

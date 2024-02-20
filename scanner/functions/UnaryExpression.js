@@ -1,13 +1,6 @@
-function UnaryExpression(node) {
-	  var operator = node.operator;
-
-	  if (operator === "void") {
-	    return t.voidTypeAnnotation();
-	  } else if (t.NUMBER_UNARY_OPERATORS.indexOf(operator) >= 0) {
-	    return t.numberTypeAnnotation();
-	  } else if (t.STRING_UNARY_OPERATORS.indexOf(operator) >= 0) {
-	    return t.stringTypeAnnotation();
-	  } else if (t.BOOLEAN_UNARY_OPERATORS.indexOf(operator) >= 0) {
-	    return t.booleanTypeAnnotation();
-	  }
-	}
+function UnaryExpression(operator, argument) {
+	        this.type = syntax_1.Syntax.UnaryExpression;
+	        this.operator = operator;
+	        this.argument = argument;
+	        this.prefix = true;
+	    }

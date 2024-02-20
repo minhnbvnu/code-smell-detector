@@ -1,3 +1,3 @@
-function isStatic() {
-	  return this.scope.isStatic(this.node);
-	}
+function isStatic(node) {
+            return isClassElement(node) && hasStaticModifier(node) || isClassStaticBlockDeclaration(node);
+        }

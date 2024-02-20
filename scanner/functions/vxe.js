@@ -1,0 +1,1 @@
+function vxe(e,t,r){r===void 0&&(r=dH.Ber.BitString);var i=Bn.alloc(t.length+1);i[0]=0,t.copy(i,1),e.writeBuffer(i,r)}

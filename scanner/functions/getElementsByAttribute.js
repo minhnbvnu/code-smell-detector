@@ -1,0 +1,1 @@
+function getElementsByAttribute(a,b){var c=(b||document).getElementsByTagName('*'),nodes=[];for(var i=0,node;node=c[i];i++){if(node.getAttribute(a))nodes.push(node)}return nodes}

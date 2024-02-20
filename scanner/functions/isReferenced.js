@@ -1,104 +1,109 @@
-function isReferenced(node, parent) {
-	  switch (parent.type) {
-	    case "BindExpression":
-	      return parent.object === node || parent.callee === node;
+function isReferenced(node, parent, grandparent) {
+  switch (parent.type) {
+    case "MemberExpression":
+    case "JSXMemberExpression":
+    case "OptionalMemberExpression":
+      if (parent.property === node) {
+        return !!parent.computed;
+      }
 
-	    case "MemberExpression":
-	    case "JSXMemberExpression":
-	      if (parent.property === node && parent.computed) {
-	        return true;
-	      } else if (parent.object === node) {
-	        return true;
-	      } else {
-	        return false;
-	      }
+      return parent.object === node;
 
-	    case "MetaProperty":
-	      return false;
+    case "VariableDeclarator":
+      return parent.init === node;
 
-	    case "ObjectProperty":
-	      if (parent.key === node) {
-	        return parent.computed;
-	      }
+    case "ArrowFunctionExpression":
+      return parent.body === node;
 
-	    case "VariableDeclarator":
-	      return parent.id !== node;
+    case "PrivateName":
+      return false;
 
-	    case "ArrowFunctionExpression":
-	    case "FunctionDeclaration":
-	    case "FunctionExpression":
-	      for (var _iterator = parent.params, _isArray = Array.isArray(_iterator), _i = 0, _iterator = _isArray ? _iterator : (0, _getIterator3.default)(_iterator);;) {
-	        var _ref;
+    case "ClassMethod":
+    case "ClassPrivateMethod":
+    case "ObjectMethod":
+      if (parent.params.includes(node)) {
+        return false;
+      }
 
-	        if (_isArray) {
-	          if (_i >= _iterator.length) break;
-	          _ref = _iterator[_i++];
-	        } else {
-	          _i = _iterator.next();
-	          if (_i.done) break;
-	          _ref = _i.value;
-	        }
+    case "ObjectProperty":
+    case "ClassProperty":
+    case "ClassPrivateProperty":
+      if (parent.key === node) {
+        return !!parent.computed;
+      }
 
-	        var param = _ref;
+      if (parent.value === node) {
+        return !grandparent || grandparent.type !== "ObjectPattern";
+      }
 
-	        if (param === node) return false;
-	      }
+      return true;
 
-	      return parent.id !== node;
+    case "ClassDeclaration":
+    case "ClassExpression":
+      return parent.superClass === node;
 
-	    case "ExportSpecifier":
-	      if (parent.source) {
-	        return false;
-	      } else {
-	        return parent.local === node;
-	      }
+    case "AssignmentExpression":
+      return parent.right === node;
 
-	    case "ExportNamespaceSpecifier":
-	    case "ExportDefaultSpecifier":
-	      return false;
+    case "AssignmentPattern":
+      return parent.right === node;
 
-	    case "JSXAttribute":
-	      return parent.name !== node;
+    case "LabeledStatement":
+      return false;
 
-	    case "ClassProperty":
-	      if (parent.key === node) {
-	        return parent.computed;
-	      } else {
-	        return parent.value === node;
-	      }
+    case "CatchClause":
+      return false;
 
-	    case "ImportDefaultSpecifier":
-	    case "ImportNamespaceSpecifier":
-	    case "ImportSpecifier":
-	      return false;
+    case "RestElement":
+      return false;
 
-	    case "ClassDeclaration":
-	    case "ClassExpression":
-	      return parent.id !== node;
+    case "BreakStatement":
+    case "ContinueStatement":
+      return false;
 
-	    case "ClassMethod":
-	    case "ObjectMethod":
-	      return parent.key === node && parent.computed;
+    case "FunctionDeclaration":
+    case "FunctionExpression":
+      return false;
 
-	    case "LabeledStatement":
-	      return false;
+    case "ExportNamespaceSpecifier":
+    case "ExportDefaultSpecifier":
+      return false;
 
-	    case "CatchClause":
-	      return parent.param !== node;
+    case "ExportSpecifier":
+      if (grandparent != null && grandparent.source) {
+        return false;
+      }
 
-	    case "RestElement":
-	      return false;
+      return parent.local === node;
 
-	    case "AssignmentExpression":
-	      return parent.right === node;
+    case "ImportDefaultSpecifier":
+    case "ImportNamespaceSpecifier":
+    case "ImportSpecifier":
+      return false;
 
-	    case "AssignmentPattern":
-	      return parent.right === node;
+    case "JSXAttribute":
+      return false;
 
-	    case "ObjectPattern":
-	    case "ArrayPattern":
-	      return false;
-	  }
+    case "ObjectPattern":
+    case "ArrayPattern":
+      return false;
 
-	  return true;
-	}
+    case "MetaProperty":
+      return false;
+
+    case "ObjectTypeProperty":
+      return parent.key !== node;
+
+    case "TSEnumMember":
+      return parent.id !== node;
+
+    case "TSPropertySignature":
+      if (parent.key === node) {
+        return !!parent.computed;
+      }
+
+      return true;
+  }
+
+  return true;
+}

@@ -1,0 +1,1 @@
+function Browser_createClass(Constructor, protoProps, staticProps) { if (protoProps) Browser_defineProperties(Constructor.prototype, protoProps); if (staticProps) Browser_defineProperties(Constructor, staticProps); return Constructor; }

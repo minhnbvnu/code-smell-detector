@@ -1,0 +1,1 @@
+function Decimal(t){var o;_classCallCheck(this,Decimal);(o=r.call(this,_,"decimal")).fracDigits=(0,d.getInteger)({data:t.fracDigits,defaultValue:2,validate:function validate(t){return!0}});o.id=t.id||"";o.leadDigits=(0,d.getInteger)({data:t.leadDigits,defaultValue:-1,validate:function validate(t){return!0}});o.name=t.name||"";o.use=t.use||"";o.usehref=t.usehref||"";return o}

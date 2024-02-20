@@ -1,8 +1,3 @@
-function precision(yTrue, yPred) {
-	  return tidy(function () {
-	    var tp = truePositives(yTrue, yPred);
-	    var fp = falsePositives(yTrue, yPred);
-	    var denominator = tp.add(fp);
-	    return where(greater(denominator, 0), tp.div(denominator), 0).cast('float32');
-	  });
-	}
+function precision(num) {
+        return (floor(num) !== num) ? num.toFixed(16).replace(/0+$/, "").split(".")[1].length : 0;
+    }

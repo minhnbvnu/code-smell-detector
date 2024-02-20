@@ -1,0 +1,1 @@
+function Kfe(e){return typeof e=="string"}

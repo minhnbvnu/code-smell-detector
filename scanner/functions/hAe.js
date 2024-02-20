@@ -1,0 +1,1 @@
+function hAe(){return fa&&fa.remote?fa.remote:null}

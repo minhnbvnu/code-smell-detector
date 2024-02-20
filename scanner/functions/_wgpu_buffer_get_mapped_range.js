@@ -1,0 +1,1 @@
+function _wgpu_buffer_get_mapped_range(gpuBuffer,offset,size){gpuBuffer=wgpu[gpuBuffer];try{gpuBuffer.mappedRanges[offset]=size<0?gpuBuffer["getMappedRange"](offset):gpuBuffer["getMappedRange"](offset,size)}catch(e){return-1}return offset}

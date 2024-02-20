@@ -1,0 +1,1 @@
+function Cx(t,e,r){var n,i=r+"",s;return function(){var a=this.getAttributeNS(t.space,t.local);return a===i?null:a===n?s:s=e(n=a,r)}}

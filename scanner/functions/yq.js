@@ -1,0 +1,1 @@
+function yq(){return ln(1)|0}

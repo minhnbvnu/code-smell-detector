@@ -1,0 +1,1 @@
+function HU(e,t){var n=arguments.length>2&&void 0!==arguments[2]?arguments[2]:{};Object.assign(t,WU,n),Se.obj(e,t,n),Se.get(e,t,["container","viewStream","canvasView","interactor","interactorStyle","interactiveQuality","interactiveRatio","stillQuality","stillRatio"]),Se.setGet(e,t,["session","rpcMouseEvent","rpcGestureEvent","rpcWheelEvent"]),zU(e,t)}

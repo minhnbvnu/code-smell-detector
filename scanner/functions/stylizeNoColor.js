@@ -1,3 +1,1 @@
-function stylizeNoColor(str, styleType) {
-  return str;
-}
+function stylizeNoColor(i,o){return i}

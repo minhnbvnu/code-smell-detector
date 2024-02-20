@@ -1,0 +1,1 @@
+function translatedBounds(item,bounds){var b=new vg.Bounds(bounds);while((item=item.mark.group)!=null){b.translate(item.x||0,item.y||0)}return b}

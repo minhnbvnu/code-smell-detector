@@ -1,0 +1,1 @@
+function _emscripten_thread_sleep(msecs){var start=_emscripten_get_now();while(_emscripten_get_now()-start<msecs){}}

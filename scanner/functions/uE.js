@@ -1,1 +1,1 @@
-function ue(){var r=[];return function e(t,n){return r.push(t+" ")>b.cacheLength&&delete e[r.shift()],e[t+" "]=n}}
+function uE(t,e){if(t&&rE.hasOwnProperty(t.type)){rE[t.type](t,e)}else{iE(t,e)}}

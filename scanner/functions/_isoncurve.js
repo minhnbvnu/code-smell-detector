@@ -1,0 +1,1 @@
+function _isoncurve(t){var n=t[0],e=t[1],i=n.sqr(),r=e.sqr(),_=_D.times(i).times(r);return r.minus(i).minus(_ONE).minus(_).modq().equals(_ZERO)}

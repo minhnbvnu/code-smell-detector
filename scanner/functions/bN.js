@@ -1,0 +1,1 @@
+function bN(t,e){return t.node(e).width}

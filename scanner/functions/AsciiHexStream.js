@@ -1,11 +1,1 @@
-function AsciiHexStream(str, maybeLength) {
-    this.str = str;
-    this.dict = str.dict;
-    this.firstDigit = -1;
-
-    if (maybeLength) {
-      maybeLength = 0.5 * maybeLength;
-    }
-
-    DecodeStream.call(this, maybeLength);
-  }
+function AsciiHexStream(t,o){var c;!function _classCallCheck(t,r){if(!(t instanceof r))throw new TypeError("Cannot call a class as a function")}(this,AsciiHexStream);o&&(o*=.5);(c=r.call(this,o)).str=t;c.dict=t.dict;c.firstDigit=-1;return c}

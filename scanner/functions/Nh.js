@@ -1,0 +1,1 @@
+function Nh(a){vb(0,!0,a)}

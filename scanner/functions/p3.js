@@ -1,0 +1,1 @@
+function p3(t,e,r){const n=e.width,i=e.height,s=[{x:0,y:0},{x:n+i/2,y:0},{x:n,y:-i/2},{x:n+i/2,y:-i},{x:0,y:-i}],a=ki(t,n,i,s);return r.intersect=function(o){return jn(r,s,o)},a}

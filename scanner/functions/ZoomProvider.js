@@ -1,0 +1,1 @@
+function ZoomProvider(){var _this11;return _classCallCheck2(this,ZoomProvider),(_this11=_super5.apply(this,arguments)).state={value:1},_this11.set=function(value){return _this11.setState({value:value})},_this11}

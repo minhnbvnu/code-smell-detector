@@ -1,0 +1,1 @@
+function useInRouterContext(){return null!=Object(react__WEBPACK_IMPORTED_MODULE_37__.useContext)(LocationContext)}

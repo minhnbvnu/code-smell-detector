@@ -1,0 +1,1 @@
+function activateHandlers(move,done){btndown=true;onMove=move;onDone=done;toFront();return false}

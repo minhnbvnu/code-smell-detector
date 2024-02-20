@@ -1,0 +1,1 @@
+function T5e(){return w(oe,{children:[o("h1",{children:"Elon Musk"}),o(de,{children:"A simple form about Elon!"}),o(Ee,{leftHeader:o("h3",{children:"Example: "}),rightHeader:o("h3",{children:"Code:"}),left:o(F5e,{}),right:o(N,{links:!0,input1:D5e})})]})}

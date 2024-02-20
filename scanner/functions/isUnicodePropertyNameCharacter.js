@@ -1,0 +1,1 @@
+function isUnicodePropertyNameCharacter(i){return isControlLetter(i)||95===i}

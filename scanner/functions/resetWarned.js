@@ -1,0 +1,3 @@
+function resetWarned() {
+  warned = {};
+}

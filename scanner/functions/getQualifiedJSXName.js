@@ -1,13 +1,1 @@
-function getQualifiedJSXName(object) {
-	  if (object.type === "JSXIdentifier") {
-	    return object.name;
-	  }
-
-	  if (object.type === "JSXNamespacedName") {
-	    return object.namespace.name + ":" + object.name.name;
-	  }
-
-	  if (object.type === "JSXMemberExpression") {
-	    return getQualifiedJSXName(object.object) + "." + getQualifiedJSXName(object.property);
-	  }
-	}
+function getQualifiedJSXName(i){return i?"JSXIdentifier"===i.type?i.name:"JSXNamespacedName"===i.type?i.namespace.name+":"+i.name.name:"JSXMemberExpression"===i.type?getQualifiedJSXName(i.object)+"."+getQualifiedJSXName(i.property):void 0:i}

@@ -1,0 +1,1 @@
+function parse_RgceLocRel(blob,length){var r=blob.read_shift(2);var cl=blob.read_shift(2);var cRel=(cl&32768)>>15,rRel=(cl&16384)>>14;cl&=16383;if(cRel!==0)while(cl>=256)cl-=256;return{r:r,c:cl,cRel:cRel,rRel:rRel}}

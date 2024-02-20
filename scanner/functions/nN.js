@@ -1,0 +1,1 @@
+function nN(t){var e=sN(t);vt(t.graph().dummyChains,function(r){for(var n=t.node(r),i=n.edgeObj,s=iN(t,e,i.v,i.w),a=s.path,o=s.lca,l=0,u=a[l],d=!0;r!==i.w;){if(n=t.node(r),d){for(;(u=a[l])!==o&&t.node(u).maxRank<n.rank;)l++;u===o&&(d=!1)}if(!d){for(;l<a.length-1&&t.node(u=a[l+1]).minRank<=n.rank;)l++;u=a[l]}t.setParent(r,u),r=t.successors(r)[0]}})}

@@ -1,0 +1,1 @@
+function textClean(text){return text.replace(/&nbsp;|\n/g," ").replace(/\s\s+/g," ")}

@@ -1,0 +1,1 @@
+function parse_BIFF5String(blob){var len=blob.read_shift(1);return blob.read_shift(len,"sbcs-cont")}

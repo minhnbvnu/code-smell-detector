@@ -1,0 +1,1 @@
+function zT(n){return n===0?"false":"true"}

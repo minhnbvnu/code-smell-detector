@@ -1,0 +1,1 @@
+function Sup(t){_classCallCheck(this,Sup);return r.call(this,t,"sup")}

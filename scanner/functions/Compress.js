@@ -1,0 +1,1 @@
+function Compress(t){var o;_classCallCheck(this,Compress);(o=r.call(this,d,"compress")).scope=(0,u.getStringOption)(t.scope,["imageOnly","document"]);return o}

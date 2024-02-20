@@ -1,1 +1,1 @@
-function z(f){var e=u[f[d]];e||(e={},A++,f[d]=A,u[A]=e);return e}
+function z(e){return!!(ionic.keyboard.isLandscape&&se&&Math.abs(se-e)<2)}

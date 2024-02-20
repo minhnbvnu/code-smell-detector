@@ -1,0 +1,3 @@
+function clearCrxDir() {
+  deleteRecursive(getCrxDir());
+}

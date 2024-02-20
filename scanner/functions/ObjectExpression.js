@@ -1,3 +1,1 @@
-function ObjectExpression() {
-	  return t.genericTypeAnnotation(t.identifier("Object"));
-	}
+function ObjectExpression(){i.apply(this,arguments)}

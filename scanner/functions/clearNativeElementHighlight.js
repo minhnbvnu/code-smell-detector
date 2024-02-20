@@ -1,0 +1,3 @@
+function clearNativeElementHighlight() {
+    hideOverlay(agent);
+  }

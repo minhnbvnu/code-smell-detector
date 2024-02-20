@@ -1,0 +1,1 @@
+function nse(e,t,r){return new Promise((i,a)=>{e in A5?A5[e](t,r).then(i,a):a(new Error(`do not support find by "${e}"`))})}

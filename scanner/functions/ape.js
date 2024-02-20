@@ -1,0 +1,1 @@
+function ape(e){const{targetTouches:t}=e;return t.length>0?t[0]:null}

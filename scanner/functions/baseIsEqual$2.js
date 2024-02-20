@@ -1,0 +1,1 @@
+function baseIsEqual$2(value,other,bitmask,customizer,stack){return value===other||(null==value||null==other||!isObjectLike$3(value)&&!isObjectLike$3(other)?value!=value&&other!=other:baseIsEqualDeep(value,other,bitmask,customizer,baseIsEqual$2,stack))}

@@ -1,0 +1,3 @@
+function getFilteredItems() {
+            return filteredItems;
+        }

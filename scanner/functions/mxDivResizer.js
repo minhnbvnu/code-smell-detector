@@ -1,0 +1,1 @@
+function mxDivResizer(a,b){if("div"==a.nodeName.toLowerCase()){null==b&&(b=window);this.div=a;var c=mxUtils.getCurrentStyle(a);null!=c&&(this.resizeWidth="auto"==c.width,this.resizeHeight="auto"==c.height);mxEvent.addListener(b,"resize",mxUtils.bind(this,function(a){this.handlingResize||(this.handlingResize=!0,this.resize(),this.handlingResize=!1)}));this.resize()}}

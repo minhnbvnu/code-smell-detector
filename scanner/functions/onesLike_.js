@@ -1,7 +1,1 @@
-function onesLike_(x) {
-	  var $x = convertToTensor(x, 'x', 'onesLike');
-	  var inputs = {
-	    x: $x
-	  };
-	  return ENGINE.runKernel(OnesLike, inputs);
-	}
+function onesLike_(e){var t=convertToTensor(e,"x","onesLike");return ones$1(t.shape,t.dtype)}

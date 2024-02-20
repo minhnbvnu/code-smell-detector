@@ -1,0 +1,1 @@
+function deferMethod(){return"undefined"==typeof setImmediate?process.nextTick:setImmediate}

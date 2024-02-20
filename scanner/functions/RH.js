@@ -1,1 +1,1 @@
-function rh(a){a=a|0;return H[a+56>>2]}
+function RH(n){var t={deltaX:n.deltaX,deltaY:n.deltaY};if(!("deltaX"in n)){if("wheelDeltaX"in n&&"wheelDeltaY"in n)t.deltaX=-n.wheelDeltaX,t.deltaY=-n.wheelDeltaY;else if("wheelDelta"in n)t.deltaX=0,t.deltaY=-n.wheelDelta;else if("axis"in n)t.deltaX=n.axis===1?n.detail:0,t.deltaY=n.axis===2?n.detail:0;else if(n.targetTouches){var e=n.targetTouches[0];t.deltaX=Xf.pageX-e.pageX,t.deltaY=Xf.pageY-e.pageY}}return t}

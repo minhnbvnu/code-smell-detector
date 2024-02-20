@@ -1,0 +1,1 @@
+function Change(t){_classCallCheck(this,Change);return r.call(this,d,"change")}

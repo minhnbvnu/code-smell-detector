@@ -1,0 +1,1 @@
+function mxConnector(a,b,c){mxPolyline.call(this,a,b,c)}

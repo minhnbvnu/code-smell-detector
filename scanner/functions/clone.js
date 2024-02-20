@@ -1,10 +1,10 @@
-function clone(extent, dest) {
-  if (dest) {
-    dest[0] = extent[0];
-    dest[1] = extent[1];
-    dest[2] = extent[2];
-    dest[3] = extent[3];
-    return dest;
+function clone(obj) {
+    var clonedObj = {};
+    for (var prop in obj) {
+      if (obj.hasOwnProperty(prop)) {
+        clonedObj[prop] = obj[prop];
+      }
+    }
+
+    return clonedObj;
   }
-  return extent.slice();
-}

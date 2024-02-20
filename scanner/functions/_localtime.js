@@ -1,0 +1,1 @@
+function _localtime(time){return _localtime_r(time,___tm_current)}

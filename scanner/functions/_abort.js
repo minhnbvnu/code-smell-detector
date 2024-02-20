@@ -1,1 +1,1 @@
-function _abort(){abort("")}
+function _abort(){Module["abort"]()}

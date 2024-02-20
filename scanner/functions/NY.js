@@ -1,0 +1,1 @@
+function NY(e,t){t.classHierarchy.push("vtkPlaneManipulator"),e.handleEvent=function(e,n){return MY(e.position.x,e.position.y,t.origin,t.normal,e.pokedRenderer,n)}}

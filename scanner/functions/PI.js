@@ -1,0 +1,1 @@
+function PI(t){var e=t.polar;if(e){Y(e)||(e=[e]);var n=[];E(e,(function(e,i){e.indicator?(e.type&&!e.shape&&(e.shape=e.type),t.radar=t.radar||[],Y(t.radar)||(t.radar=[t.radar]),t.radar.push(e)):n.push(e)})),t.polar=n}E(t.series,(function(t){t&&"radar"===t.type&&t.polarIndex&&(t.radarIndex=t.polarIndex)}))}

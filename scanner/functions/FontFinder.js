@@ -1,0 +1,1 @@
+function FontFinder(t){!function _classCallCheck(t,r){if(!(t instanceof r))throw new TypeError("Cannot call a class as a function")}(this,FontFinder);this.fonts=new Map;this.cache=new Map;this.warned=new Set;this.defaultFont=null;this.add(t)}

@@ -1,0 +1,1 @@
+function DocumentAssembly(t){_classCallCheck(this,DocumentAssembly);return r.call(this,d,"documentAssembly")}

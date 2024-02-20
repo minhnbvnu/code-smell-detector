@@ -1,0 +1,3 @@
+function getFilter() {
+            return filter;
+        }

@@ -1,0 +1,1 @@
+function onDie(e){if("die"===e.data)try{window.close()}catch(o_O){}}

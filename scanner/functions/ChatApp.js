@@ -1,0 +1,47 @@
+function ChatApp() {
+  const { logout } = useContext(AuthContext);
+
+  return (
+    <ChatAppStack.Navigator
+      screenOptions={{
+        headerStyle: {
+          backgroundColor: '#6646ee'
+        },
+        headerTintColor: '#ffffff',
+        headerTitleStyle: {
+          fontSize: 22
+        }
+      }}
+    >
+      <ChatAppStack.Screen
+        name='Home'
+        component={HomeScreen}
+        options={({ navigation }) => ({
+          headerRight: () => (
+            <IconButton
+              icon='message-plus'
+              size={28}
+              color='#ffffff'
+              onPress={() => navigation.navigate('AddRoom')}
+            />
+          ),
+          headerLeft: () => (
+            <IconButton
+              icon='logout-variant'
+              size={28}
+              color='#ffffff'
+              onPress={() => logout()}
+            />
+          )
+        })}
+      />
+      <ChatAppStack.Screen
+        name='Room'
+        component={RoomScreen}
+        options={({ route }) => ({
+          title: route.params.thread.name
+        })}
+      />
+    </ChatAppStack.Navigator>
+  );
+}

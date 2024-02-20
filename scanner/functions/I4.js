@@ -1,0 +1,1 @@
+function I4(n,t,e){if(n.prevent)return!1;if(n.started)return!0;let i=Math.abs(n.x-t),r=Math.abs(n.y-e);return i>=E4||r>=E4}

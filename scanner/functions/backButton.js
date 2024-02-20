@@ -1,0 +1,4 @@
+function backButton()
+{
+    history.back();
+}

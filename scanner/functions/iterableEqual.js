@@ -1,16 +1,15 @@
-function iterableEqual(leftHandOperand, rightHandOperand, options) {
-    var length = leftHandOperand.length;
-    if (length !== rightHandOperand.length) {
-      return false;
+function iterableEqual(a, b) {
+  if (a.length !==  b.length) return false;
+
+  var i = 0;
+  var match = true;
+
+  for (; i < a.length; i++) {
+    if (a[i] !== b[i]) {
+      match = false;
+      break;
     }
-    if (length === 0) {
-      return true;
-    }
-    var index = -1;
-    while (++index < length) {
-      if (deepEqual(leftHandOperand[index], rightHandOperand[index], options) === false) {
-        return false;
-      }
-    }
-    return true;
   }
+
+  return match;
+}

@@ -1,0 +1,1 @@
+function Xpe(e){St(()=>(window.addEventListener("resize",e,!1),()=>{window.removeEventListener("resize",e,!1)}),[e])}

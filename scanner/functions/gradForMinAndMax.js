@@ -1,16 +1,1 @@
-function gradForMinAndMax(dy, y, xOrig, origAxes) {
-	  if (y.rank < xOrig.rank) {
-	    y = reshape(y, expandShapeToKeepDim(y.shape, origAxes));
-	  }
-
-	  if (dy.rank < xOrig.rank) {
-	    dy = reshape(dy, expandShapeToKeepDim(dy.shape, origAxes));
-	  }
-
-	  return {
-	    x: function x() {
-	      var dx = mul(dy, cast(equal(xOrig, y), dy.dtype));
-	      return dx;
-	    }
-	  };
-	}
+function gradForMinAndMax(e,t,n,r,o){var a=t[0];return a.rank<n.rank&&(a=a.reshape(expandShapeToKeepDim(a.shape,r))),e.rank<n.rank&&(e=e.reshape(expandShapeToKeepDim(e.shape,r))),{$x:function(){var t=e.mul(n.equal(a).cast(e.dtype));return null==o?t:t.transpose(o)}}}

@@ -1,1 +1,1 @@
-function isUndefined(arg){return arg===void 0}
+function isUndefined(value) {return typeof value === 'undefined';}

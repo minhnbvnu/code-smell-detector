@@ -1,3 +1,4 @@
-function getCookie(res) {
-  return res.headers['set-cookie'][0].split(';')[0];
+function getCookie(name) {
+  const v = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');
+  return v ? v[2] : null;
 }

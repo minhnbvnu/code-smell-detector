@@ -1,0 +1,1 @@
+function PopupElement(t){_classCallCheck(this,PopupElement);this.container=t.container;this.trigger=t.trigger;this.color=t.color;this.titleObj=t.titleObj;this.modificationDate=t.modificationDate;this.contentsObj=t.contentsObj;this.richText=t.richText;this.hideWrapper=t.hideWrapper||!1;this.pinned=!1}

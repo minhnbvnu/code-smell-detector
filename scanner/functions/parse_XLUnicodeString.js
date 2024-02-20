@@ -1,0 +1,1 @@
+function parse_XLUnicodeString(blob,length,opts){var cch=blob.read_shift(opts!==undefined&&opts.biff>0&&opts.biff<8?1:2);if(cch===0){blob.l++;return""}return parse_XLUnicodeStringNoCch(blob,cch,opts)}

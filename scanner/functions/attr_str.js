@@ -1,0 +1,1 @@
+function attr_str(a) {return ' ' + a.nodeName + '="' + escape(a.value) + '"';}

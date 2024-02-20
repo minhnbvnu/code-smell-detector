@@ -1,0 +1,1 @@
+function isClearType(x){return!(!x||!x.clearLastViewed)}

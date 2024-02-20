@@ -1,3 +1,0 @@
-function ExistentialTypeParam() {
-	  this.token("*");
-	}

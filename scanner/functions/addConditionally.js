@@ -1,0 +1,1 @@
+function addConditionally(obj,prop,what,where,recurse){var tmp=fetch(what,where,recurse);if(tmp)obj[prop]=tmp}

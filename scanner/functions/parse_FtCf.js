@@ -1,0 +1,1 @@
+function parse_FtCf(blob,length){var out={};blob.l+=4;blob.cf=blob.read_shift(2);return out}

@@ -1,0 +1,1 @@
+function enableCrop(){options.disabled=false;interfaceUpdate()}

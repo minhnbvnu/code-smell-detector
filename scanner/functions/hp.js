@@ -1,0 +1,1 @@
+function hp(a){a=a|0;return (f[a+12>>2]|0)-(f[a+8>>2]|0)>>2|0}

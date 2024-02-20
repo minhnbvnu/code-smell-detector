@@ -1,0 +1,1 @@
+function discrete(type){return type==="ordinal"||type==="quantize"||type==="quantile"||type==="threshold"}

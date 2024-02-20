@@ -1,0 +1,1 @@
+function typecx() { cx.state.keywords = typeKeywords; }

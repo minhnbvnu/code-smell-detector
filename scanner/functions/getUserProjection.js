@@ -1,3 +1,0 @@
-function getUserProjection() {
-  return userProjection;
-}

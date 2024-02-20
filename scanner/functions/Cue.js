@@ -1,0 +1,1 @@
+function Cue(e){return e.message=jT(e),f8(e)}

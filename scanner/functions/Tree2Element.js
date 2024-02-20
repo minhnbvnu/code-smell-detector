@@ -1,0 +1,1 @@
+function Tree2Element(i){return i&&i.map((function(i,o){return s.createElement(i.tag,__assign({key:o},i.attr),Tree2Element(i.child))}))}

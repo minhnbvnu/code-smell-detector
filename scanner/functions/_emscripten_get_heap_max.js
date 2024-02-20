@@ -1,0 +1,1 @@
+function _emscripten_get_heap_max(){return 2147483648}

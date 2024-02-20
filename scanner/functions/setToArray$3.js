@@ -1,0 +1,1 @@
+function setToArray$3(set){var index=-1,result=Array(set.size);return set.forEach((function(value){result[++index]=value})),result}

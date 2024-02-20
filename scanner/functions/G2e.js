@@ -1,0 +1,1 @@
+function G2e(e){let t=process.platform;return new Promise((r,i)=>{if(!(t in vb))return i(new Error(`platform ${t} is unsupported`));let a=vb[t];typeof a=="string"&&(a=vb[a]),a(e).then(r,i)})}

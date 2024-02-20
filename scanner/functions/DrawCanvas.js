@@ -1,0 +1,3 @@
+function DrawCanvas() {
+  DrawCanvasRAF(TimeNow());
+}

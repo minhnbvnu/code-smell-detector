@@ -1,0 +1,1 @@
+function sZ(e,t,r){for(var i,a=~(r-1),n=0;n<16;++n)i=a&(e[n]^t[n]),e[n]^=i,t[n]^=i}

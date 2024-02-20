@@ -1,0 +1,1 @@
+function startRegex(e){return RegExp("^("+e.join("|")+")")}

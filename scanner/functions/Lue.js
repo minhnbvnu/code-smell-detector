@@ -1,0 +1,1 @@
+function Lue(e,...t){let r=WT.dirname(e);if(T0.existsSync(r))return T0.writeFileSync(e,...t);GT.mkdirsSync(r),T0.writeFileSync(e,...t)}

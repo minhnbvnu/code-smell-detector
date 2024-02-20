@@ -1,0 +1,1 @@
+function mxXmlCanvas2D(a){mxAbstractCanvas2D.call(this);this.root=a;this.writeDefaults()}

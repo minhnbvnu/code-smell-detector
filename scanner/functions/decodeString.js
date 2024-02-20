@@ -1,8 +1,1 @@
-function decodeString(bytes, encoding) {
-	  if (encoding === void 0) {
-	    encoding = 'utf-8';
-	  }
-
-	  encoding = encoding || 'utf-8';
-	  return env().platform.decode(bytes, encoding);
-	}
+function decodeString(t){try{return(0,c.stringToUTF8String)(t)}catch(r){(0,c.warn)('UTF-8 decoding failed: "'.concat(r,'".'));return t}}

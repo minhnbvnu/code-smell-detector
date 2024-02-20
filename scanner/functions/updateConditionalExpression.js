@@ -1,0 +1,3 @@
+function updateConditionalExpression(node, condition, questionToken, whenTrue, colonToken, whenFalse) {
+                return node.condition !== condition || node.questionToken !== questionToken || node.whenTrue !== whenTrue || node.colonToken !== colonToken || node.whenFalse !== whenFalse ? update(createConditionalExpression(condition, questionToken, whenTrue, colonToken, whenFalse), node) : node;
+            }

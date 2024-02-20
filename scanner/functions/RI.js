@@ -1,0 +1,1 @@
+function RI(e,t){return({state:r,dispatch:n})=>{if(r.readOnly)return!1;let i=e(t,r);return i?(n(r.update(i)),!0):!1}}

@@ -1,0 +1,1 @@
+function _glValidateProgram(program){GLctx.validateProgram(GL.programs[program])}

@@ -1,0 +1,1 @@
+function i4(e){var t=e.indexOf(":");if(t===-1)return null;var r=e.slice(0,t);for(++t;e[t]===" ";)++t;var i=e.slice(t);return[r,i]}

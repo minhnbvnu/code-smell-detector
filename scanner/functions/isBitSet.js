@@ -1,5 +1,5 @@
-function isBitSet( value, position ) {
+function isBitSet(value, position) {
 
-          return value & ( 1 << position );
+        return value & (1 << position);
 
-        }
+      }

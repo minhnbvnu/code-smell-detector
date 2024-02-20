@@ -1,0 +1,2 @@
+function zTe(e,t){const r=t.value?t.value+`
+`:"",n={};t.lang&&(n.className=["language-"+t.lang]);let i={type:"element",tagName:"code",properties:n,children:[{type:"text",value:r}]};return t.meta&&(i.data={meta:t.meta}),e.patch(t,i),i=e.applyData(t,i),i={type:"element",tagName:"pre",properties:{},children:[i]},e.patch(t,i),i}

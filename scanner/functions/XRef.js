@@ -1,12 +1,1 @@
-function XRef(stream, pdfManager) {
-    this.stream = stream;
-    this.pdfManager = pdfManager;
-    this.entries = [];
-    this.xrefstms = Object.create(null);
-    this._cacheMap = new Map();
-    this.stats = {
-      streamTypes: Object.create(null),
-      fontTypes: Object.create(null)
-    };
-    this._newRefNum = null;
-  }
+function XRef(t,r){!function _classCallCheck(t,r){if(!(t instanceof r))throw new TypeError("Cannot call a class as a function")}(this,XRef);this.stream=t;this.pdfManager=r;this.entries=[];this.xrefstms=Object.create(null);this._cacheMap=new Map;this._pendingRefs=new l.RefSet;this.stats=new u.DocStats(r.msgHandler);this._newRefNum=null}

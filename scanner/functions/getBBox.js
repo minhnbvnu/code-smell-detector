@@ -1,31 +1,15 @@
-function getBBox(data) {
-  const def = -1;
+function getBBox(ring) {
+    let
+      x =  Infinity, y =  Infinity,
+      X = -Infinity, Y = -Infinity;
 
-  if (!data) {
-    return {
-      x: def,
-      y: def,
-      width: def,
-      height: def
-    };
+    for (let i = 0; i < ring.length; i++) {
+      x = Math.min(x, ring[i][0]);
+      y = Math.min(y, ring[i][1]);
+
+      X = Math.max(X, ring[i][0]);
+      Y = Math.max(Y, ring[i][1]);
+    }
+
+    return { minX:x, minY:y, maxX:X, maxY:Y };
   }
-
-  const bbox = data.trim().split(/\s*,\s*/).map(m => getMeasurement(m, "-1"));
-
-  if (bbox.length < 4 || bbox[2] < 0 || bbox[3] < 0) {
-    return {
-      x: def,
-      y: def,
-      width: def,
-      height: def
-    };
-  }
-
-  const [x, y, width, height] = bbox;
-  return {
-    x,
-    y,
-    width,
-    height
-  };
-}

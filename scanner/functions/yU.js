@@ -1,0 +1,1 @@
+function yU(n,t){let e=n.reduce((i,r)=>i*r,1);if(t==null||t==="float32")return $s(n,new Float32Array(e));if(t==="int32")return $s(n,new Int32Array(e));if(t==="bool")return $s(n,new Uint8Array(e));throw new Error(`Unknown data type ${t}`)}

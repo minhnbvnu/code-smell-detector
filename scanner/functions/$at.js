@@ -1,0 +1,1 @@
+function $at(n,t,e){var i,r=e+"",o;return function(){var s=this.getAttribute(n);return s===r?null:s===i?o:o=t(i=s,e)}}

@@ -1,0 +1,1 @@
+function NQ(e,t){var n=t.getHandle1().getOrigin();if(0===e)return n.length>0;var r=t.getHandle2().getOrigin();return n.length>0&&r.length>0&&!Lt(n,r,0)}

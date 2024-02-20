@@ -1,0 +1,1 @@
+function PostScriptStack(t){_classCallCheck(this,PostScriptStack);this.stack=t?Array.prototype.slice.call(t,0):[]}

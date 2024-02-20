@@ -1,3 +1,1 @@
-function ReversibleTransform() {
-      Transform.call(this);
-    }
+function ReversibleTransform(){_classCallCheck(this,ReversibleTransform);return r.apply(this,arguments)}

@@ -1,0 +1,1 @@
+function valueToHtml(t){return d.HTMLResult.success({name:"div",attributes:{class:["xfaRich"],style:Object.create(null)},children:[{name:"span",attributes:{style:Object.create(null)},value:t}]})}

@@ -1,0 +1,1 @@
+function arrayWrap(val) { return isArray(val) ? val : (isDefined(val) ? [ val ] : []); }

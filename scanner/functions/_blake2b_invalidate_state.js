@@ -1,0 +1,1 @@
+function _blake2b_invalidate_state($0){$0=$0|0;var label=0,sp=0;sp=STACKTOP;_clear_internal_memory($0,240);_blake2b_set_lastblock($0);return}

@@ -1,0 +1,1 @@
+function nV(t,e,n,i){t[0]=n,t[1]=i,t[2]=t[0]/e.getWidth(),t[3]=t[1]/e.getHeight()}

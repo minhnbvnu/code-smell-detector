@@ -1,0 +1,1 @@
+function _emscripten_glDepthFunc(x0){GLctx["depthFunc"](x0)}

@@ -1,0 +1,1 @@
+function mxParallelEdgeLayout(a){mxGraphLayout.call(this,a)}

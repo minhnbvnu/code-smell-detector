@@ -1,0 +1,3 @@
+function EmptyComponent() {
+	return null;
+}

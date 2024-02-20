@@ -1,1 +1,1 @@
-function vt(t){function e(t){if(null!==t&&!B(t))throw"Expected a Function."}return new fe(e,t)}
+function vt(t,e){if("object"==typeof t){var i,n=lt(t=rt(t));for(i=0;i<n.length;i++)this[n[i].unit](t[n[i].unit])}else if(E(this[t=ot(t)]))return this[t](e);return this}

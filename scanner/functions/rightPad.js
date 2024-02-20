@@ -1,7 +1,1 @@
-function rightPad(a, size) {
-	  if (size <= a.length) {
-	    return a;
-	  }
-
-	  return a + ' '.repeat(size - a.length);
-	}
+function rightPad(e,t){return t<=e.length?e:e+" ".repeat(t-e.length)}

@@ -1,0 +1,3 @@
+function lastLine() {
+    return line;
+  }

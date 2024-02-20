@@ -1,0 +1,1 @@
+function fe(a){a=ea.element(a).injector();if(!a)throw Ba("test");return a.get("$$testability")}

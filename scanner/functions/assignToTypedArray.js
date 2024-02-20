@@ -1,4 +1,1 @@
-function assignToTypedArray(data, real, imag, index) {
-	  data[index * 2] = real;
-	  data[index * 2 + 1] = imag;
-	}
+function assignToTypedArray(e,t,n,r){e[2*r]=t,e[2*r+1]=n;}

@@ -1,0 +1,1 @@
+function browserSupportsCssZoom(){try{return void 0!==globalWindow$2.document.implementation.createHTMLDocument("").body.style.zoom}catch(error){return!1}}

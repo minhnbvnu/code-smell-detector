@@ -1,0 +1,1 @@
+function sheet_to_row_object_array(sheet,opts){return sheet_to_json(sheet,opts!=null?opts:{})}

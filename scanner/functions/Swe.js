@@ -1,0 +1,1 @@
+function Swe(e){return 48<=e&&e<=57||65<=e&&e<=70||97<=e&&e<=102}

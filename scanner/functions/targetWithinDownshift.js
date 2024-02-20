@@ -1,0 +1,1 @@
+function targetWithinDownshift(target,downshiftElements,environment,checkActiveElement){return void 0===checkActiveElement&&(checkActiveElement=!0),downshiftElements.some((function(contextNode){return contextNode&&(isOrContainsNode(contextNode,target,environment)||checkActiveElement&&isOrContainsNode(contextNode,environment.document.activeElement,environment))}))}

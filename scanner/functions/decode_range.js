@@ -1,0 +1,1 @@
+function decode_range(range){var x=range.split(":").map(decode_cell);return{s:x[0],e:x[x.length-1]}}

@@ -1,0 +1,1 @@
+function _wgpu_compute_pass_encoder_dispatch_workgroups(encoder,workgroupCountX,workgroupCountY,workgroupCountZ){wgpu[encoder]["dispatchWorkgroups"](workgroupCountX,workgroupCountY,workgroupCountZ)}

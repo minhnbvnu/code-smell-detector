@@ -1,0 +1,1 @@
+function u2e(e){let t="",r=e;for(let i=1;i<=4;++i)t=String(r%256)+t,i!==4&&(t="."+t),r=Math.floor(r/256);return t}

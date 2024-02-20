@@ -1,0 +1,1 @@
+function _ControllerPulse(controller,intensity,duration){Module.WebXR.callHapticPulse({detail:{"controller":controller,"intensity":intensity,"duration":duration}})}

@@ -1,0 +1,1 @@
+function zoomOutOneStep () { zoom_set(zoom_level-1); }

@@ -1,0 +1,1 @@
+function _JS_Get_WASM_Size(){return Module.wasmFileSize}

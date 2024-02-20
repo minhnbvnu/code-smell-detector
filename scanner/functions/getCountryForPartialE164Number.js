@@ -1,0 +1,1 @@
+function getCountryForPartialE164Number(i,o){var s=o.country,u=o.countries,C=o.required,_=o.metadata;if("+"===i)return s;var w=getCountryFromPossiblyIncompleteInternationalPhoneNumber(i,_);return w&&(!u||u.indexOf(w)>=0)?w:!s||C||couldNumberBelongToCountry(i,s,_)?s:void 0}

@@ -1,0 +1,1 @@
+function d5e(e,t){var r,i,a;for(r=0,i=e.implicitTypes.length;r<i;r+=1)if(a=e.implicitTypes[r],a.resolve(t))return!0;return!1}

@@ -1,0 +1,1 @@
+function ph(t,e,i){var n,r,o,s=Math.floor(6*t),a=6*t-s,h=i*(1-e),l=i*(1-a*e),u=i*(1-(1-a)*e);switch(s%6){case 0:n=i,r=u,o=h;break;case 1:n=l,r=i,o=h;break;case 2:n=h,r=i,o=u;break;case 3:n=h,r=l,o=i;break;case 4:n=u,r=h,o=i;break;case 5:n=i,r=h,o=l}return{r:Math.floor(255*n),g:Math.floor(255*r),b:Math.floor(255*o)}}

@@ -1,5 +1,1 @@
-function ErrorFont(error) {
-    this.error = error;
-    this.loadedName = "g_font_error";
-    this.missingFile = true;
-  }
+function ErrorFont(t){_classCallCheck(this,ErrorFont);this.error=t;this.loadedName="g_font_error";this.missingFile=!0}

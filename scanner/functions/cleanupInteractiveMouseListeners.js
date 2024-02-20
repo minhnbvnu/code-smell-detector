@@ -1,0 +1,1 @@
+function cleanupInteractiveMouseListeners(){getDocument().removeEventListener("mousemove",ee),tr=tr.filter((function(i){return i!==ee}))}

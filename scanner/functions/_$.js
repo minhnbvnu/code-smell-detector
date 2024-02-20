@@ -1,0 +1,1 @@
+function _$(n,t){var e=eb(n),i=nb(n),r=Gn.range(e).map(function(){return Gn.zeros(n.hyperplane?n.hyperplane.length:0)}),o=Gn.zeros(e),s=Gn.range(e).map(function(){return[-1,-1]}),a=Gn.range(i).map(function(){return Gn.range(t).map(function(){return-1})});return tb(n,r,o,s,a,0,0),new aE(r,o,s,a)}

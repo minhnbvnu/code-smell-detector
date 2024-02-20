@@ -1,0 +1,1 @@
+function eN(t){var e=nm(t),r=um(t,Ss(1,e+1),"inEdges"),n=um(t,Ss(e-1,-1,-1),"outEdges"),i=qM(t);hm(t,i);for(var s=Number.POSITIVE_INFINITY,a,o=0,l=0;l<4;++o,++l){rN(o%2?r:n,o%4>=2),i=lu(t);var u=HM(t,i);u<s&&(l=0,a=ML(i),s=u)}hm(t,a)}

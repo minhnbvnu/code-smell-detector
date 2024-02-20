@@ -1,0 +1,1 @@
+function _JS_Sound_GetLength(bufferInstance){if(WEBAudio.audioWebEnabled==0)return 0;var soundClip=WEBAudio.audioInstances[bufferInstance];if(!soundClip)return 0;return soundClip.getLength()}

@@ -1,0 +1,1 @@
+function parse_Obj(blob,length){var cmo=parse_FtCmo(blob,22);var fts=parse_FtArray(blob,length-22,cmo[1]);return{cmo:cmo,ft:fts}}

@@ -1,0 +1,1 @@
+function UB(n){let t=n[0];return Boolean(t)&&Boolean(t.selector)&&t.selector.indexOf(l4)===0}

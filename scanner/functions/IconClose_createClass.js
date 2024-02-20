@@ -1,0 +1,1 @@
+function IconClose_createClass(Constructor, protoProps, staticProps) { if (protoProps) IconClose_defineProperties(Constructor.prototype, protoProps); if (staticProps) IconClose_defineProperties(Constructor, staticProps); return Constructor; }

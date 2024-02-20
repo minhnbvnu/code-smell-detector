@@ -1,0 +1,1 @@
+function parseNamedReference(){if(s.namedGroups&&matchReg(/^k<(?=.*?>)/)){var i=parseIdentifier();return skip(">"),createNamedReference(i)}}

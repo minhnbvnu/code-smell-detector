@@ -1,0 +1,1 @@
+function bytesToWords(r){for(var f=[],n=0,t=0;n<r.length;n++,t+=8)f[t>>>5]|=r[n]<<24-t%32;return f}

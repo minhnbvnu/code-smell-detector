@@ -1,0 +1,1 @@
+function _dbl(n,r){var u,d,o,_,m;return o=_sqrmodp(_addmodp(n,r)),_=_sqrmodp(_submodp(n,r)),m=_submodp(o,_),u=_mulmodp(_,o),d=_mulmodp(_addmodp(_mulasmall(m),o),m),[u,d]}

@@ -1,0 +1,1 @@
+function D5(){var t=arguments[0];return arguments[0]=this,t.apply(null,arguments),this}

@@ -1,0 +1,1 @@
+function __buildResponseError_236(e,t){return t||(t=new Error("Upload error")),"string"==typeof t&&(t=new Error(t)),t instanceof Error||(t=___extends_236(new Error("Upload error"),{data:t})),_$isNetworkError_219(e)?t=new _$NetworkError_192(t,e):(t.request=e,t)}

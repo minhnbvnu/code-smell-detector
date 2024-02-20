@@ -1,0 +1,1 @@
+function Re(t,e){var i,n;if(1===e.length&&o(e[0])&&(e=e[0]),!e.length)return Ae();for(i=e[0],n=1;n<e.length;++n)e[n].isValid()&&!e[n][t](i)||(i=e[n]);return i}

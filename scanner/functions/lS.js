@@ -1,0 +1,1 @@
+function lS(t){return null==t||q(t)||(t={isIgnore:t}),t||{}}

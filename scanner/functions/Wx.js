@@ -1,1 +1,1 @@
-function wx(a){a=a|0;var b=0;b=fa-16|0;L[b+12>>2]=a;return L[L[b+12>>2]+112>>2]}
+function Wx(t,e){return function(){var r=e.apply(this,arguments);if(typeof r!="function")throw new Error;Pn(this,t).ease=r}}

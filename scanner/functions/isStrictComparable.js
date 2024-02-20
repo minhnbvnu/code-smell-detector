@@ -1,3 +1,3 @@
 function isStrictComparable(value) {
-	  return value === value && !isObject(value);
-	}
+      return value === value && !isObject(value);
+    }

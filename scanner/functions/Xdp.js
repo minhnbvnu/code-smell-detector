@@ -1,0 +1,1 @@
+function Xdp(t){var o;_classCallCheck(this,Xdp);(o=r.call(this,u,"xdp",!0)).uuid=t.uuid||"";o.timeStamp=t.timeStamp||"";o.config=null;o.connectionSet=null;o.datasets=null;o.localeSet=null;o.stylesheet=new l.XFAObjectArray;o.template=null;return o}

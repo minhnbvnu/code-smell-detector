@@ -1,6 +1,1 @@
-function quadraticCurveTo(xa, ya, x, y) {
-      cmds.push({
-        cmd: "quadraticCurveTo",
-        args: [xa, ya, x, y]
-      });
-    }
+function quadraticCurveTo(t,o,c,l){r.push({cmd:"quadraticCurveTo",args:[t,o,c,l]})}

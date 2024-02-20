@@ -1,0 +1,1 @@
+function C_(t,e,r){var n=w_(t+""),i,s=n.length,a;if(arguments.length<2){var o=this.node().__on;if(o){for(var l=0,u=o.length,d;l<u;++l)for(i=0,d=o[l];i<s;++i)if((a=n[i]).type===d.type&&a.name===d.name)return d.value}return}for(o=e?E_:T_,i=0;i<s;++i)this.each(o(n[i],e,r));return this}

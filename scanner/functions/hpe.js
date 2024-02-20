@@ -1,0 +1,1 @@
+function hpe(e){o2(e)&&(gu=!0,bo="virtual")}

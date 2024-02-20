@@ -1,1 +1,1 @@
-function Ks(){return{name:"app",K:"an instance of Firebase App",optional:!0,M:function(t){return!!(t&&t instanceof au.app.App)}}}
+function ks(e){return gs(2,e)}

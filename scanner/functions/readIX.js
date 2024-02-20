@@ -1,0 +1,1 @@
+function readIX(){return (readBits('reg_ixh', 8)<<8) + readBits('reg_ixl', 8);}

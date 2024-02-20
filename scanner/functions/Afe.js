@@ -1,0 +1,1 @@
+function Afe(e){return e.replace(/=*$/,"")}

@@ -1,7 +1,6 @@
-function Meta (attrs) {
-  return {
-    tagName: 'meta',
-    attributes: attrs,
-    exists: function () { return document.querySelector('meta[name="' + attrs.name + '"]'); }
-  };
+function Meta(obj) {
+  this.descs = {};
+  this.watching = {};
+  this.cache = {};
+  this.source = obj;
 }

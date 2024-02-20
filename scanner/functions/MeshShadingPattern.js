@@ -1,0 +1,1 @@
+function MeshShadingPattern(t){var a;_classCallCheck(this,MeshShadingPattern);(a=r.call(this))._coords=t[2];a._colors=t[3];a._figures=t[4];a._bounds=t[5];a._bbox=t[7];a._background=t[8];a.matrix=null;return a}

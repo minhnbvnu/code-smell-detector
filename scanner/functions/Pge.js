@@ -1,0 +1,1 @@
+function Pge(e,t){let{children:r,...n}=e,{styleProps:i}=_t(n,Ege);i.style.display="grid";let a=Yr(t);return S.createElement("div",{...Kt(n),...i,ref:a},r)}

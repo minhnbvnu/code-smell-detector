@@ -1,0 +1,1 @@
+function adjustCodePosition(){$("#code").css("margin-top",($("#garden").height()-$("#code").height())/2)}

@@ -1,0 +1,1 @@
+function _swapc($0,$1){$0=$0|0;$1=$1|0;var $$=0,$2=0,$3=0,label=0,sp=0;sp=STACKTOP;$2=($1|0)==0;$3=_llvm_bswap_i32($0|0)|0;$$=$2?$0:$3;return $$|0}

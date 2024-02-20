@@ -1,0 +1,1 @@
+function getWeek($,C){C=C||0;var _=new Date($.y,$.M-1,$.d+C),B=_.getDay();_.setDate(_.getDate()-(B+6)%7+3);var A=_.valueOf();_.setMonth(0);_.setDate(4);return Math.round((A-_.valueOf())/(7*86400000))+1}

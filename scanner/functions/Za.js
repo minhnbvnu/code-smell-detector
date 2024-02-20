@@ -1,0 +1,1 @@
+function Za(a){return"[object RegExp]"===ka.call(a)}

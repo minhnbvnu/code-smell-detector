@@ -1,0 +1,1 @@
+function Grt(n,t,e){let i=n.name,r=i.length;for(sS.lastIndex=0;;){let o=sS.exec(i),s=sS.lastIndex,a=o[1],l=o[2]==="]",c=o[3];if(l&&(a=a|0),c===void 0||c==="["&&s+2===r){QD(e,c===void 0?new Wrt(a,n,t):new Kz(a,n,t));break}else{let h=e.map[a];h===void 0&&(h=new Yz(a),QD(e,h)),e=h}}}

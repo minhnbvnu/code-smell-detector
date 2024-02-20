@@ -1,0 +1,3 @@
+function delPic(){
+        $('#dependencyMap').hide()
+    }

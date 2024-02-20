@@ -1,0 +1,1 @@
+function _scalarmultBytes(t,n){return _pt_unxform(_xpt_mult_bytes(_pt_xform(t),n))}

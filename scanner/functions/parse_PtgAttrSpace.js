@@ -1,0 +1,1 @@
+function parse_PtgAttrSpace(blob,length){blob.read_shift(2);return parse_PtgAttrSpaceType(blob,2)}

@@ -1,0 +1,1 @@
+function compact(array) { return filter.call(array, function(item){ return item != null }) }

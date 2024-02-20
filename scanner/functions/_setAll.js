@@ -1,0 +1,1 @@
+function _setAll($){s_y($.y);s_M($.M);s_d($.d);if($dp.has.st){s_H($.H);s_m($.m);s_s($.s)}}

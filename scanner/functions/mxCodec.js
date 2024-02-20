@@ -1,0 +1,1 @@
+function mxCodec(a){this.document=a||mxUtils.createXmlDocument();this.objects=[]}

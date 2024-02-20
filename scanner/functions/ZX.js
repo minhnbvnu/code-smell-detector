@@ -1,0 +1,1 @@
+function ZX(){for(var e=arguments.length,t=new Array(e),n=0;n<e;n++)t[n]=arguments[n];return t.reduce(YX,0)/t.length}

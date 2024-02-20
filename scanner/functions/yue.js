@@ -1,0 +1,1 @@
+function yue(e,t){var r=e.match(NMe);if(!r)return!1;var n=r[1],i=r[2],a=r[3],l=r[5];return(n<=23&&i<=59&&a<=59||n==23&&i==59&&a==60)&&(!t||l)}

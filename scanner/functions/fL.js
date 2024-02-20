@@ -1,0 +1,1 @@
+function fL(t){return k({strokeNoScale:!0},t.brushStyle)}

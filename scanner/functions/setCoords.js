@@ -1,0 +1,1 @@
+function setCoords(obj){tailorVal={"leftX":obj.x,"leftY":obj.y,"rightX":obj.x2,"rightY":obj.y2,"width":obj.w,"height":obj.h}}

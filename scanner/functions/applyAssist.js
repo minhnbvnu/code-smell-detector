@@ -1,0 +1,1 @@
+function applyAssist(t,r){var o=t.assist;if(o){var l=o[c.$toHTML]();l&&(r.title=l);var u=o.role.match(S);if(u){var h=u[1];r.role="heading";r["aria-level"]=h}}if("table"===t.layout)r.role="table";else if("row"===t.layout)r.role="row";else{var d=t[c.$getParent]();"row"===d.layout&&(d.assist&&"TH"===d.assist.role?r.role="columnheader":r.role="cell")}}

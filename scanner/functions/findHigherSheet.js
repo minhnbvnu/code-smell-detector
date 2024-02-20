@@ -1,0 +1,1 @@
+function findHigherSheet(i,o){for(var s=0;s<i.length;s++){var u=i[s];if(u.attached&&u.options.index>o.index&&u.options.insertionPoint===o.insertionPoint)return u}return null}

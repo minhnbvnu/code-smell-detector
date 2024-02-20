@@ -1,0 +1,1 @@
+function cased(str) {return caseInsensitive ? str.toLowerCase() : str;}

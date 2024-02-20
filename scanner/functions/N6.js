@@ -1,0 +1,1 @@
+function N6(t){t:for(var e=t.length,r=1,n=-1,i;r<e;++r)switch(t[r]){case".":n=i=r;break;case"0":n===0&&(n=r),i=r;break;default:if(!+t[r])break t;n>0&&(n=0);break}return n>0?t.slice(0,n)+t.slice(i+1):t}

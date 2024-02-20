@@ -1,0 +1,1 @@
+function _base32encode(e){var r,t="";for(r=0;255>r;r+=5)t=_BASE32CHARS.substr(core.getbit(e,r)+(core.getbit(e,r+1)<<1)+(core.getbit(e,r+2)<<2)+(core.getbit(e,r+3)<<3)+(core.getbit(e,r+4)<<4),1)+t;return t}

@@ -1,0 +1,1 @@
+function intToHex(i){var s=i.toString(16);while(s.length%2!=0)s='0'+s;return '0x'+s}

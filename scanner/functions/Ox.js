@@ -1,0 +1,1 @@
+function Ox(t,e){return function(){Sh(this,t).delay=+e.apply(this,arguments)}}

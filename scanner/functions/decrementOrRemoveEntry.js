@@ -1,0 +1,1 @@
+function decrementOrRemoveEntry(map,k){if(!--map[k]){delete map[k]}}

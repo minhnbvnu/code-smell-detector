@@ -1,0 +1,1 @@
+function w3e(e){return e.toString()}

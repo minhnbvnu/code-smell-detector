@@ -1,0 +1,1 @@
+function _emscripten_set_focus_callback_on_thread(target,userData,useCapture,callbackfunc,targetThread){registerFocusEventCallback(target,userData,useCapture,callbackfunc,13,"focus",targetThread);return 0}

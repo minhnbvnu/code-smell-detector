@@ -1,0 +1,1 @@
+function setHeaderRowVisibility(e,o){var t=!1!==o;options.showHeaderRow!=e&&(options.showHeaderRow=e,e?t?$headerRowScroller.slideDown("fast",resizeCanvas):($headerRowScroller.show(),resizeCanvas()):t?$headerRowScroller.slideUp("fast",resizeCanvas):($headerRowScroller.hide(),resizeCanvas()))}

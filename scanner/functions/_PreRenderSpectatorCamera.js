@@ -1,0 +1,1 @@
+function _PreRenderSpectatorCamera(){Module.WebXR.startRenderSpectatorCamera()}

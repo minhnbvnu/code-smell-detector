@@ -1,3 +1,3 @@
-function data() {
-	      return _data.apply(this, arguments);
-	    }
+function Data() {
+	this.expando = jQuery.expando + Data.uid++;
+}

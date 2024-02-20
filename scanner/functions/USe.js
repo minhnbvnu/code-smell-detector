@@ -1,0 +1,1 @@
+function USe(e,t){return new gi(e,t).set.map(function(r){return r.map(function(i){return i.value}).join(" ").trim().split(" ")})}

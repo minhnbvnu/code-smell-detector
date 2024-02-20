@@ -1,8 +1,1 @@
-function Jbig2Stream(stream, maybeLength, dict, params) {
-    this.stream = stream;
-    this.maybeLength = maybeLength;
-    this.dict = dict;
-    this.params = params;
-
-    _stream.DecodeStream.call(this, maybeLength);
-  }
+function Jbig2Stream(t,o,c){var l;!function _classCallCheck(t,r){if(!(t instanceof r))throw new TypeError("Cannot call a class as a function")}(this,Jbig2Stream);(l=r.call(this,o)).stream=t;l.dict=t.dict;l.maybeLength=o;l.params=c;return l}

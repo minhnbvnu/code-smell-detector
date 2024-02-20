@@ -1,0 +1,1 @@
+function vg_axisTickLabels(){return{type:"text",interactive:true,key:"data",properties:{enter:{fill:{value:vg.config.axis.tickLabelColor},font:{value:vg.config.axis.tickLabelFont},fontSize:{value:vg.config.axis.tickLabelFontSize},opacity:{value:1e-6},text:{field:"label"}},exit:{opacity:{value:1e-6}},update:{opacity:{value:1}}}}}

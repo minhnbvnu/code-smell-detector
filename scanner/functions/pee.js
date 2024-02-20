@@ -1,0 +1,1 @@
+function pee(e,t){return function(r){return!(r==null||r.runtime!==e&&!JAe(r)||r.abi!==t&&!r.napi||r.uv&&r.uv!==iee||r.armv&&r.armv!==V_||r.libc&&r.libc!==ree)}}

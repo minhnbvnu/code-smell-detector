@@ -1,3 +1,1 @@
-function calculateSHA384(data, offset, length) {
-  return calculateSHA512(data, offset, length, true);
-}
+function calculateSHA384(t,r,o){return m(t,r,o,!0)}

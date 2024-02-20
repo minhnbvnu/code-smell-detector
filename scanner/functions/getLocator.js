@@ -1,0 +1,1 @@
+function getLocator(i){for(var o=i.split("\n"),s=[],u=0,C=0;u<o.length;u++)s.push(C),C+=o[u].length+1;return function locate(i){for(var o=0,u=s.length;o<u;){var C=o+u>>1;i<s[C]?u=C:o=C+1}var _=o-1;return{line:_,column:i-s[_]}}}

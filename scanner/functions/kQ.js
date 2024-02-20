@@ -1,0 +1,1 @@
+function kQ(n){let{inputs:t,backend:e,attrs:i}=n,{x:r}=t,{numOrSizeSplits:o,axis:s}=i,a=R.parseAxisParam(s,r.shape)[0],l=F.prepareSplitSize(r,o,a),c=r.shape.length,u=new Array(c).fill(0),h=r.shape.slice();return l.map(p=>{let d=[...h];d[a]=p;let f=lo({inputs:{x:r},backend:e,attrs:{begin:u,size:d}});return u[a]+=p,f})}

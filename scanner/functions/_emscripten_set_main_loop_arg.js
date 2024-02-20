@@ -1,0 +1,1 @@
+function _emscripten_set_main_loop_arg(func,arg,fps,simulateInfiniteLoop){var browserIterationFunc=function(){wasmTable.get(func)(arg)};setMainLoop(browserIterationFunc,fps,simulateInfiniteLoop,arg)}

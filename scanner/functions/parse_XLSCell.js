@@ -1,0 +1,1 @@
+function parse_XLSCell(blob,length){var rw=blob.read_shift(2);var col=blob.read_shift(2);var ixfe=blob.read_shift(2);return{r:rw,c:col,ixfe:ixfe}}

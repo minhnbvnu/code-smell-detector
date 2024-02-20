@@ -1,7 +1,1 @@
-function atanh_(x) {
-	  var $x = convertToTensor(x, 'x', 'atanh');
-	  var inputs = {
-	    x: $x
-	  };
-	  return ENGINE.runKernel(Atanh, inputs);
-	}
+function atanh_(e){var t=convertToTensor(e,"x","atanh");return ENV.engine.runKernel(function(e){return e.atanh(t)},{$x:t},function(e){return {$x:function(){return e.div(scalar(1).sub(t.toFloat().square()))}}})}

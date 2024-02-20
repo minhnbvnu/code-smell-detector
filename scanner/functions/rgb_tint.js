@@ -1,0 +1,1 @@
+function rgb_tint(hex,tint){if(tint===0)return hex;var hsl=rgb2HSL(hex2RGB(hex));if(tint<0)hsl[2]=hsl[2]*(1+tint);else hsl[2]=1-(1-hsl[2])*(1-tint);return rgb2Hex(hsl2RGB(hsl))}

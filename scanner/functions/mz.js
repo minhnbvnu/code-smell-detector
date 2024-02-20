@@ -1,1 +1,1 @@
-function Mz(a){a=a|0;return 428}
+function mz(){Object.keys(az).forEach((function(e){delete az[e]}))}

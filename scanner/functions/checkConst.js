@@ -1,0 +1,1 @@
+function checkConst(i,o){var s=o.findDeclaration(i.name);if(s&&"const"===s.kind)throw new $d(i.name+" is read-only",i)}

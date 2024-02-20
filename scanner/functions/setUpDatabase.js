@@ -1,9 +1,1 @@
-function setUpDatabase(openRequest) {
-	  var db = openRequest.result;
-	  db.createObjectStore(MODEL_STORE_NAME, {
-	    keyPath: 'modelPath'
-	  });
-	  db.createObjectStore(INFO_STORE_NAME, {
-	    keyPath: 'modelPath'
-	  });
-	}
+function setUpDatabase(e){var t=e.result;t.createObjectStore(MODEL_STORE_NAME,{keyPath:"modelPath"}),t.createObjectStore(INFO_STORE_NAME,{keyPath:"modelPath"});}

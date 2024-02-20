@@ -1,0 +1,1 @@
+function formatRFC3966(i){var o=i.number,s=i.ext;if(!o)return"";if("+"!==o[0])throw new Error('"formatRFC3966()" expects "number" to be in E.164 format.');return"tel:".concat(o).concat(s?";ext="+s:"")}

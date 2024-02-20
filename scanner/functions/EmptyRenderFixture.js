@@ -1,0 +1,3 @@
+function EmptyRenderFixture() {
+  return null;
+}

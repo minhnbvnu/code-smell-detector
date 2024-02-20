@@ -1,0 +1,1 @@
+function YM(t){return Bo(t.edges(),function(e,r){return e+t.edge(r).weight},0)}

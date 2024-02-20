@@ -1,0 +1,1 @@
+function tagForWordNet(T){var E,S=tagForPENN(T);if(T&&S.length){for(var A=0;A<S.length;A++)E=S[A],S[A]="-",PosTagger.isNoun(E)?S[A]="n":PosTagger.isVerb(E)?S[A]="v":PosTagger.isAdverb(E)?S[A]="r":PosTagger.isAdj(E)&&(S[A]="a");return S}return EA}

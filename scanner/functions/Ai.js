@@ -1,0 +1,1 @@
+function Ai(t){return function(){return this.as(t)}}

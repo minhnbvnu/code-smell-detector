@@ -1,0 +1,1 @@
+function _emscripten_glClearDepthf(x0){GLctx["clearDepth"](x0)}

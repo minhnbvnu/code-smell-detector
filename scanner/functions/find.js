@@ -1,3 +1,3 @@
-function find(spec) {
-  return helper.find(data, spec);
-}
+function find(selector) {
+      return getContainer().querySelector('.jasmine_html-reporter ' + selector);
+    }

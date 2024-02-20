@@ -1,0 +1,1 @@
+function JEe(e,t){e=e.trim();let r=Uo(e);return r<t?" ".repeat(t-r)+e:e}

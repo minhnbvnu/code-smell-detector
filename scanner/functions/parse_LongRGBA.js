@@ -1,0 +1,1 @@
+function parse_LongRGBA(blob,length){var r=blob.read_shift(1),g=blob.read_shift(1),b=blob.read_shift(1),a=blob.read_shift(1);return[r,g,b,a]}

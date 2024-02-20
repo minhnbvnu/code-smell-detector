@@ -1,0 +1,1 @@
+function animateElementClass(a,b){if(!f.disableAnimation){a.getBoundingClientRect();a.classList.add("animating");b&&b();setTimeout(function(){a.classList.remove("animating")},f.animateDuration)}else b()}

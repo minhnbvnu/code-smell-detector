@@ -1,0 +1,1 @@
+function arrayMethodFix(fn){return function(){return fn.apply($.ES5Object(this),arguments)}}

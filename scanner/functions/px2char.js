@@ -1,0 +1,1 @@
+function px2char(px){return((px-5)/MDW*100+.5|0)/100}

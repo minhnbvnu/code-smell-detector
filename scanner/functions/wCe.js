@@ -1,0 +1,1 @@
+function wCe(e,t){var r=this.abs(),i=e.abs(),a=r.t;for(t.t=a+i.t;--a>=0;)t.data[a]=0;for(a=0;a<i.t;++a)t.data[a+r.t]=r.am(0,i.data[a],t,a,0,r.t);t.s=0,t.clamp(),this.s!=e.s&&Ie.ZERO.subTo(t,t)}

@@ -1,0 +1,1 @@
+function uploadMatrixToPackedTexture(e,t,n,r,o,a,i,s,u){var l=getPackedMatrixTextureShapeWidthHeight(a,i),c=l[0],p=l[1],d=new Float32Array(n*getPackedRGBAArraySizeFromMatrixShape(r,o));encodeMatrixToPackedRGBA(s,n,r,o,d),uploadDataToTexture(e,t,c,p,d,e.RGBA);}

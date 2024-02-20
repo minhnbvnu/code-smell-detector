@@ -1,0 +1,1 @@
+function isParamTitle(i){return"param"===i||"argument"===i||"arg"===i}

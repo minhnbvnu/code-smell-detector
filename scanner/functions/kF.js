@@ -1,0 +1,1 @@
+function kF(){var n=new Array(this.size()),t=-1;return this.each(function(){n[++t]=this}),n}

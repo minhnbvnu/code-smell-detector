@@ -1,0 +1,1 @@
+function B5(){let t=0;for(const e of this)++t;return t}

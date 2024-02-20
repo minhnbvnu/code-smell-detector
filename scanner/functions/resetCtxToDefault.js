@@ -1,17 +1,1 @@
-function resetCtxToDefault(ctx) {
-    ctx.strokeStyle = "#000000";
-    ctx.fillStyle = "#000000";
-    ctx.fillRule = "nonzero";
-    ctx.globalAlpha = 1;
-    ctx.lineWidth = 1;
-    ctx.lineCap = "butt";
-    ctx.lineJoin = "miter";
-    ctx.miterLimit = 10;
-    ctx.globalCompositeOperation = "source-over";
-    ctx.font = "10px sans-serif";
-
-    if (ctx.setLineDash !== undefined) {
-      ctx.setLineDash([]);
-      ctx.lineDashOffset = 0;
-    }
-  }
+function resetCtxToDefault(t,r){t.strokeStyle=t.fillStyle=r||"#000000";t.fillRule="nonzero";t.globalAlpha=1;t.lineWidth=1;t.lineCap="butt";t.lineJoin="miter";t.miterLimit=10;t.globalCompositeOperation="source-over";t.font="10px sans-serif";if(void 0!==t.setLineDash){t.setLineDash([]);t.lineDashOffset=0}}

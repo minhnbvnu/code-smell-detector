@@ -1,0 +1,1 @@
+function EquateRange(t){var o;_classCallCheck(this,EquateRange);(o=r.call(this,d,"equateRange")).from=t.from||"";o.to=t.to||"";o._unicodeRange=t.unicodeRange||"";return o}

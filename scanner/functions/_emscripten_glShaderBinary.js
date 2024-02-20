@@ -1,0 +1,1 @@
+function _emscripten_glShaderBinary(){GL.recordError(1280)}

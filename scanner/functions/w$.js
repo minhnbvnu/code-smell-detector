@@ -1,0 +1,1 @@
+function w$(n){var t,e;if(n.length>0){var i=[];try{for(var r=g$(n),o=r.next();!o.done;o=r.next()){var s=o.value;i.push.apply(i,sE(s.indices))}}catch(a){t={error:a}}finally{try{o&&!o.done&&(e=r.return)&&e.call(r)}finally{if(t)throw t.error}}return i}else return[[-1]]}

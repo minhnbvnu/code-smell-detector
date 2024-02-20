@@ -1,1 +1,1 @@
-function Qx(){var a=0;a=oa(200);Pf(a,$a(),$a());return a|0}
+function qx(t){if(t._id!==this._id)throw new Error;for(var e=this._groups,r=t._groups,n=e.length,i=r.length,s=Math.min(n,i),a=new Array(n),o=0;o<s;++o)for(var l=e[o],u=r[o],d=l.length,f=a[o]=new Array(d),p,g=0;g<d;++g)(p=l[g]||u[g])&&(f[g]=p);for(;o<n;++o)a[o]=e[o];return new ri(a,this._parents,this._name,this._id)}

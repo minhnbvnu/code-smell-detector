@@ -1,0 +1,1 @@
+function StateManager(){var t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:new Y;_classCallCheck(this,StateManager);this.state=t;this.stateStack=[]}

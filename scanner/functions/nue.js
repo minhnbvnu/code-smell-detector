@@ -1,0 +1,1 @@
+function nue(e,t){e=aue(e);var r=e.indexOf("=");if(t)r===0&&(e=e.substr(1),r=e.indexOf("="));else if(r<=0)return;var i,a;if(r<=0?(i="",a=e.trim()):(i=e.substr(0,r).trim(),a=e.substr(r+1).trim()),!(yT.test(i)||yT.test(a))){var n=new At;return n.key=i,n.value=a,n}}

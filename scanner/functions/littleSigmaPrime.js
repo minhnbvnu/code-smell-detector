@@ -1,10 +1,1 @@
-function littleSigmaPrime(result, x, tmp) {
-    result.assign(x);
-    result.rotateRight(19);
-    tmp.assign(x);
-    tmp.rotateRight(61);
-    result.xor(tmp);
-    tmp.assign(x);
-    tmp.shiftRight(6);
-    result.xor(tmp);
-  }
+function littleSigmaPrime(t,r,o){t.assign(r);t.rotateRight(19);o.assign(r);o.rotateRight(61);t.xor(o);o.assign(r);o.shiftRight(6);t.xor(o)}

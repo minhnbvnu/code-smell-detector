@@ -1,4 +1,4 @@
 function stackClear() {
-	  this.__data__ = new ListCache();
-	  this.size = 0;
-	}
+      this.__data__ = new ListCache;
+      this.size = 0;
+    }

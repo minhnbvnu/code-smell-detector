@@ -1,0 +1,1 @@
+function Ex(t,e,r){var n,i=r+"",s;return function(){var a=this.getAttribute(t);return a===i?null:a===n?s:s=e(n=a,r)}}

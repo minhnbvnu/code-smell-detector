@@ -1,3 +1,1 @@
-function nearestLargerEven(val) {
-	  return val % 2 === 0 ? val : val + 1;
-	}
+function nearestLargerEven(e){return e%2==0?e:e+1}

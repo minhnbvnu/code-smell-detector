@@ -1,7 +1,1 @@
-function createPackedMatrixTexture(gl, rows, columns, textureConfig) {
-	  var _tex_util$getPackedMa = getPackedMatrixTextureShapeWidthHeight(rows, columns),
-	      width = _tex_util$getPackedMa[0],
-	      height = _tex_util$getPackedMa[1];
-
-	  return createAndConfigureTexture(gl, width, height, getInternalFormatForPackedMatrixTexture(textureConfig), gl.RGBA, gl.FLOAT);
-	}
+function createPackedMatrixTexture(e,t,n,r){var o=getPackedMatrixTextureShapeWidthHeight(t,n);return createAndConfigureTexture(e,o[0],o[1],r.internalFormatPackedFloat,e.RGBA,e.FLOAT)}

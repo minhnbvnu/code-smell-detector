@@ -1,0 +1,3 @@
+function constantSelector() {
+      return constant;
+    }

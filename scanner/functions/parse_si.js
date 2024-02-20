@@ -1,0 +1,1 @@
+function parse_si(x,opts){var html=opts?opts.cellHTML:true;var z={};if(!x)return null;var y;if(x.charCodeAt(1)===116){z.t=utf8read(unescapexml(x.substr(x.indexOf(">")+1).split(/<\/t>/)[0]));z.r=x;if(html)z.h=z.t}else if(y=x.match(sirregex)){z.r=x;z.t=utf8read(unescapexml(x.match(sitregex).join("").replace(tagregex,"")));if(html)z.h=parse_rs(x)}return z}

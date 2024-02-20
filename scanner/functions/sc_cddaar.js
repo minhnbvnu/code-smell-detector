@@ -1,0 +1,1 @@
+function sc_cddaar(p) { return p.car.car.cdr.cdr; }

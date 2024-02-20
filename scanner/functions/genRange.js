@@ -1,0 +1,1 @@
+function genRange(min,max){var a=[];for(var i=min;i<=max;i++)a.push(i);return a}

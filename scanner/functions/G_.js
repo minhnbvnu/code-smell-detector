@@ -1,0 +1,1 @@
+function G_(e){return e?typeof e=="string"?e:e.source:null}

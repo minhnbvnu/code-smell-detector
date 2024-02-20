@@ -1,5 +1,3 @@
-function caller(obj) {
-    var methodName = this.pop();
-    var fn = ensureMethod(obj, methodName);
-    return fn.apply(obj, this);
+function caller (value, callback, children) {
+	callback(value, counter(value, callback, children), children)
 }

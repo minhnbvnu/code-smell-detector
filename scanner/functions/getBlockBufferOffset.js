@@ -1,3 +1,1 @@
-function getBlockBufferOffset(component, row, col) {
-    return 64 * ((component.blocksPerLine + 1) * row + col);
-  }
+function getBlockBufferOffset(t,r,o){return 64*((t.blocksPerLine+1)*r+o)}

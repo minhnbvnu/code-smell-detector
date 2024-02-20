@@ -1,0 +1,1 @@
+function hfe(e,t){e.signatures.x509===void 0&&(e.signatures.x509={});var r=e.signatures.x509;if(r.algo=t.type+"-"+t.defaultHashAlgorithm(),Gs[r.algo]===void 0)return!1;var i=new fr.BerWriter;j2(e,i);var a=i.buffer;r.cache=a;var n=t.createSign();return n.write(a),e.signatures.x509.signature=n.sign(),!0}

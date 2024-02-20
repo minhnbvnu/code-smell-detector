@@ -1,0 +1,1 @@
+function L6e(e,t){let r=!1;return t&&e.iterChangedRanges((n,i)=>{n<t.to&&i>t.from&&(r=!0)}),r}

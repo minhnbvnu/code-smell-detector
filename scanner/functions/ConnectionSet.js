@@ -1,0 +1,1 @@
+function ConnectionSet(t){var o;_classCallCheck(this,ConnectionSet);(o=r.call(this,u,"connectionSet",!0)).wsdlConnection=new l.XFAObjectArray;o.xmlConnection=new l.XFAObjectArray;o.xsdConnection=new l.XFAObjectArray;return o}

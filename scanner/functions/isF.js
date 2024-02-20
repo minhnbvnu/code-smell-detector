@@ -1,0 +1,1 @@
+function isF(value) { return ({}).toString.call(value) == "[object Function]" }

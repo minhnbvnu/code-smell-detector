@@ -1,4 +1,13 @@
-function isBlacklisted() {
-	  var blacklist = this.opts.blacklist;
-	  return blacklist && blacklist.indexOf(this.node.type) > -1;
-	}
+function isBlacklisted(ip, callback) {
+    var host_lookup = reverseIp(ip) + bl_zones[current_bl];
+
+    dns.resolve4(host_lookup, function(err, domain) {
+        if (err) {
+            // Not blacklisted
+            callback(false);
+        } else {
+            // It is blacklisted
+            callback(true);
+        }
+    });
+}

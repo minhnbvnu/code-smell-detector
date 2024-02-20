@@ -1,0 +1,1 @@
+function P5e(e,t){!aa||!aa.BrowserWindow||aa.BrowserWindow.getAllWindows().forEach(function(r){r.webContents&&r.webContents.send(e,t)})}

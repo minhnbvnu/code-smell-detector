@@ -1,0 +1,1 @@
+function copyKeys(dst,src){Object.keys(src).forEach(function(key){dst[key]=src[key]})}

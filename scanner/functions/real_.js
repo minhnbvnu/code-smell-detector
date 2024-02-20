@@ -1,7 +1,1 @@
-function real_(input) {
-	  var $input = convertToTensor(input, 'input', 'real');
-	  var inputs = {
-	    input: $input
-	  };
-	  return ENGINE.runKernel(Real, inputs);
-	}
+function real_(e){var t=convertToTensor(e,"input","real");return ENV.engine.runKernel(function(e){return e.real(t)},{$input:t})}

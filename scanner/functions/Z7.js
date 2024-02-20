@@ -1,0 +1,1 @@
+function Z7(t,e){return t==null?void 0:t[e]}

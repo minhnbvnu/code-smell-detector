@@ -1,0 +1,1 @@
+function evaluateProps(i,o){var s=Object.assign({},o,{content:invokeWithArgsOrReturn(o.content,[i])},o.ignoreAttributes?{}:getDataAttributeProps(i,o.plugins));return s.aria=Object.assign({},er.aria,s.aria),s.aria={expanded:"auto"===s.aria.expanded?o.interactive:s.aria.expanded,content:"auto"===s.aria.content?o.interactive?null:"describedby":s.aria.content},s}

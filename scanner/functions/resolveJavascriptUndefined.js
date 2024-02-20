@@ -1,0 +1,3 @@
+function resolveJavascriptUndefined() {
+  return true;
+}

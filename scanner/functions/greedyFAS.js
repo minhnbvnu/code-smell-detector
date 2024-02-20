@@ -1,0 +1,1 @@
+function greedyFAS(g,weightFn){if(g.nodeCount()<=1){return[]}var state=buildState(g,weightFn||DEFAULT_WEIGHT_FN);var results=doGreedyFAS(state.graph,state.buckets,state.zeroIdx);return _.flatten(_.map(results,function(e){return g.outEdges(e.v,e.w)}),true)}

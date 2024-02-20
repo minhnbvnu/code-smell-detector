@@ -1,0 +1,1 @@
+function ZO(t,e,n,i){return t&&(t.legacy||!1!==t.legacy&&!n&&!i&&"tspan"!==e&&("text"===e||_t(t,"text")))}

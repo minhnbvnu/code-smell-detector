@@ -1,0 +1,1 @@
+function unpackU16(bytes){return as_unsigned(bytes[0]<<8|bytes[1],16)}

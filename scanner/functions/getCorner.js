@@ -1,15 +1,1 @@
-function getCorner(extent, corner) {
-  let coordinate;
-  if (corner === 'bottom-left') {
-    coordinate = getBottomLeft(extent);
-  } else if (corner === 'bottom-right') {
-    coordinate = getBottomRight(extent);
-  } else if (corner === 'top-left') {
-    coordinate = getTopLeft(extent);
-  } else if (corner === 'top-right') {
-    coordinate = getTopRight(extent);
-  } else {
-    throw new Error('Invalid corner');
-  }
-  return coordinate;
-}
+function getCorner(ord){var c=getFixed();switch(ord){case"ne":return[c.x2,c.y];case"nw":return[c.x,c.y];case"se":return[c.x2,c.y2];case"sw":return[c.x,c.y2]}}

@@ -1,1 +1,1 @@
-function Ps(t){return Os(t)&&Os(t)._lat||null}
+function ps(e){return(lf(e)?wn:no)(e)}

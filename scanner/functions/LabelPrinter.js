@@ -1,0 +1,1 @@
+function LabelPrinter(t){var o;_classCallCheck(this,LabelPrinter);(o=r.call(this,d,"labelPrinter",!0)).name=(0,u.getStringOption)(t.name,["zpl","dpl","ipl","tcpl"]);o.batchOutput=null;o.flipLabel=null;o.fontInfo=null;o.xdc=null;return o}

@@ -1,19 +1,11 @@
-function fetchFile(fileURL, { type = 'arraybuffer' } = {}) {
-  return new Promise((resolve, reject) => {
-    const request = new XMLHttpRequest();
-    request.open('GET', fileURL, true);
-    request.responseType = type;
-
-    request.onload = function(e) {
-      if (request.status === 200) {
-        resolve(request.response);
-      } else {
-        reject(createFetchError(fileURL, request.statusText));
+async function fetchFile(url, options) {
+    if (typeof url === "string") {
+      url = resolvePath(url);
+      let fetchOptions = options;
+      if (options?.fetch && typeof options?.fetch !== "function") {
+        fetchOptions = options.fetch;
       }
-    };
-
-    request.onerror = error => reject(createFetchError(fileURL, error));
-
-    request.send();
-  });
-}
+      return await fetch(url, fetchOptions);
+    }
+    return await makeResponse(url);
+  }

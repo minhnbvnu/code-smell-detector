@@ -1,0 +1,1 @@
+function US(t,e,n){var i=t.get("borderRadius");if(null==i)return n?{cornerRadius:0}:null;Y(i)||(i=[i,i,i,i]);var r=Math.abs(e.r||0-e.r0||0);return{cornerRadius:z(i,(function(t){return Ir(t,r)}))}}

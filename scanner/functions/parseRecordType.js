@@ -1,0 +1,1 @@
+function parseRecordType(){var o,s,C=w-1;if(consume(u.LBRACE,"RecordType should start with {"),o=[],B===u.COMMA)consume(u.COMMA);else for(;B!==u.RBRACE;)o.push(parseFieldType()),B!==u.RBRACE&&expect(u.COMMA);return s=w,expect(u.RBRACE),maybeAddRange({type:i.RecordType,fields:o},[C,s])}

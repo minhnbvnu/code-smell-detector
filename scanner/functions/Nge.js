@@ -1,0 +1,1 @@
+function Nge(e){var t=wv({},e);return Zp.default.createElement("svg",wv({viewBox:"0 0 36 36"},t,t),Zp.default.createElement("circle",{fillRule:"evenodd",cx:"17.8",cy:"18.2",r:"3.4"}),Zp.default.createElement("circle",{fillRule:"evenodd",cx:"29.5",cy:"18.2",r:"3.4"}),Zp.default.createElement("circle",{fillRule:"evenodd",cx:"6.1",cy:"18.2",r:"3.4"}))}

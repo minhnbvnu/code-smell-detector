@@ -1,0 +1,1 @@
+function vOe(e){let t=2*(parseFloat(e)+100);return t<=100?t:100}

@@ -1,0 +1,1 @@
+function mxPoint(a,b){this.x=null!=a?a:0;this.y=null!=b?b:0}

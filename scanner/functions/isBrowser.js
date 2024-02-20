@@ -1,4 +1,3 @@
 function isBrowser() {
-	  return typeof window !== 'undefined' && window.document != null || //@ts-ignore
-	  typeof WorkerGlobalScope !== 'undefined';
-	}
+      return (!$window.cordova && !$window.PhoneGap && !$window.phonegap) || isRipple();
+    }

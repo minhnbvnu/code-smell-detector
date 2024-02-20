@@ -1,0 +1,1 @@
+function parse_BrtFRTArchID$(data,length){var o={};data.read_shift(4);o.ArchID=data.read_shift(4);data.l+=length-8;return o}

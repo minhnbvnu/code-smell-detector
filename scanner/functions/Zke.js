@@ -1,0 +1,1 @@
+function Zke(e,t,r,n,i){let a=ld(r),l=a?t.tags[ad(e.doc,a)]:null,s=l&&l.attrs?Object.keys(l.attrs):[],u=l&&l.globalAttrs===!1?s:s.length?s.concat(t.globalAttrNames):t.globalAttrNames;return{from:n,to:i,options:u.map(c=>({label:c,type:"property"})),validFor:Uoe}}

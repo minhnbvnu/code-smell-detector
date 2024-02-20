@@ -1,0 +1,1 @@
+function handleHeaderMouseLeave(e){trigger(self.onHeaderMouseLeave,{column:$(this).data("column"),grid:self},e)}

@@ -1,0 +1,1 @@
+function xlml_set_prop(Props,tag,val){switch(tag){case"Description":tag="Comments";break}Props[tag]=val}

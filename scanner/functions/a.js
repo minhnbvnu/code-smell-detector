@@ -1,0 +1,1 @@
+function a(e){var r=e.target;if(t(r).is(n))i.call(r,e);else for(var a=t(r).parents(),o=0;o<a.length;o++)t(a[o]).is(n)&&i.call(a[o],e)}

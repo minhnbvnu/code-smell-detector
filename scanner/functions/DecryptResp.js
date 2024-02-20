@@ -1,0 +1,1 @@
+function DecryptResp(e,s){return new Promise((s,t)=>{$.post({url:"https://welfare.yuheng.best/api/series3/decrypt",headers:{"Content-Type":"application/json"},body:JSON.stringify({yh:e,appid:"paofu"})},(e,p,i)=>{if(console.log(JSON.stringify(i)),e)t(e);else{const{success:e,data:p,message:n}=JSON.parse(i);e?s(p):t(n)}})})}

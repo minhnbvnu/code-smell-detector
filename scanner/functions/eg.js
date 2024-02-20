@@ -1,0 +1,1 @@
+function eg(a){return a+""}

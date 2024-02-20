@@ -1,4 +1,4 @@
-function open_from_image_info(info, callback, canceled, into_existing_session, from_session_load) {
+function open_from_image_info(info, callback, canceled, into_existing_session, from_session_load){
 	are_you_sure(({ canvas_modified_while_loading } = {}) => {
 		deselect();
 		cancel();

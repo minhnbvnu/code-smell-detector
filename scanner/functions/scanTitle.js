@@ -1,0 +1,1 @@
+function scanTitle(){var i,o="";for(advance();C<B&&((i=z.charCodeAt(C))>=97&&i<=122||i>=65&&i<=90||i>=48&&i<=57);)o+=advance();return o}

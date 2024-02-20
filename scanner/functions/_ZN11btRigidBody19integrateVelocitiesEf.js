@@ -1,0 +1,110 @@
+function _ZN11btRigidBody19integrateVelocitiesEf(sp)
+{
+	var i7;
+	var fp = sp>>2;
+	var r0;
+	var r1;
+	var f0;
+	var f1;
+	var f2;
+	var f3;
+	var f4;
+	var f5;
+	var f6;
+	var f7;
+	var f8;
+	var f9;
+	var f10;
+	var f11;
+var __label__ = 0;
+	i7 = sp + -8;var g0 = i7>>2; // save stack
+	r0 = heap32[(fp)];
+	r1 = heapU8[r0+204];
+	r1 = r1 & 3;
+if(!(r1 !=0)) //_LBB687_3
+{
+	f0 = heapFloat[(fp+1)];
+	r0 = r0 >> 2;
+	f1 = heapFloat[(r0+84)];
+	f1 = f1*f0;
+	f2 = heapFloat[(r0+101)];
+	f3 = heapFloat[(r0+103)];
+	f4 = heapFloat[(r0+102)];
+	f5 = heapFloat[(r0+76)];
+	f2 = f2*f1;
+	f2 = f5+f2;
+	heapFloat[(r0+76)] = f2;
+	f2 = f4*f1;
+	f4 = heapFloat[(r0+77)];
+	f2 = f4+f2;
+	heapFloat[(r0+77)] = f2;
+	f1 = f3*f1;
+	f2 = heapFloat[(r0+78)];
+	f1 = f2+f1;
+	heapFloat[(r0+78)] = f1;
+	f1 = heapFloat[(r0+105)];
+	f2 = heapFloat[(r0+64)];
+	f3 = heapFloat[(r0+106)];
+	f4 = heapFloat[(r0+65)];
+	f2 = f2*f1;
+	f4 = f4*f3;
+	f5 = heapFloat[(r0+107)];
+	f6 = heapFloat[(r0+66)];
+	f2 = f2+f4;
+	f4 = f6*f5;
+	f2 = f2+f4;
+	f4 = heapFloat[(r0+68)];
+	f6 = heapFloat[(r0+69)];
+	f7 = heapFloat[(r0+72)];
+	f8 = heapFloat[(r0+73)];
+	f9 = heapFloat[(r0+74)];
+	f10 = heapFloat[(r0+70)];
+	f11 = heapFloat[(r0+80)];
+	f2 = f2*f0;
+	f4 = f4*f1;
+	f6 = f6*f3;
+	f2 = f11+f2;
+	f4 = f4+f6;
+	f6 = f10*f5;
+	f4 = f4+f6;
+	heapFloat[(r0+80)] = f2;
+	f1 = f7*f1;
+	f3 = f8*f3;
+	f4 = f4*f0;
+	f6 = heapFloat[(r0+81)];
+	f4 = f6+f4;
+	f1 = f1+f3;
+	f3 = f9*f5;
+	f1 = f1+f3;
+	heapFloat[(r0+81)] = f4;
+	f1 = f1*f0;
+	f3 = heapFloat[(r0+82)];
+	f1 = f3+f1;
+	f2 = f2*f2;
+	f3 = f4*f4;
+	heapFloat[(r0+82)] = f1;
+	f2 = f2+f3;
+	f1 = f1*f1;
+	f1 = f2+f1;
+	heapFloat[(g0)] = f1;
+	sqrtf(i7);
+	f1 = f_g0;
+	f2 = f1*f0;
+	f3 =        1.5707963705062866;
+if(!(f2 <=f3)) //_LBB687_3
+{
+	f0 = f3/f0;
+	f0 = f0/f1;
+	f1 = heapFloat[(r0+80)];
+	f1 = f1*f0;
+	heapFloat[(r0+80)] = f1;
+	f1 = heapFloat[(r0+81)];
+	f1 = f1*f0;
+	heapFloat[(r0+81)] = f1;
+	f1 = heapFloat[(r0+82)];
+	f0 = f1*f0;
+	heapFloat[(r0+82)] = f0;
+}
+}
+	return;
+}

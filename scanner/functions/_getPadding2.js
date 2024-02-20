@@ -1,0 +1,1 @@
+function _getPadding2(){return _classPrivateFieldGet(this,m)?Math.ceil(this.thickness*this.parent.scaleFactor):0}

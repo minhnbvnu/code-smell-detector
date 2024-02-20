@@ -1,3 +1,1 @@
-function eitherStridesOrDilationsAreOne(strides, dilations) {
-	  return tupleValuesAreOne(strides) || tupleValuesAreOne(dilations);
-	}
+function eitherStridesOrDilationsAreOne(e,t){return tupleValuesAreOne(e)||tupleValuesAreOne(t)}

@@ -1,0 +1,1 @@
+function Ur(t){return/(^#[0-9A-F]{6}$)|(^#[0-9A-F]{3}$)/i.test(t)}

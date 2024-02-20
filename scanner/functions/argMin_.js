@@ -1,14 +1,1 @@
-function argMin_(x, axis) {
-	  if (axis === void 0) {
-	    axis = 0;
-	  }
-
-	  var $x = convertToTensor(x, 'x', 'argMin');
-	  var inputs = {
-	    x: $x
-	  };
-	  var attrs = {
-	    axis: axis
-	  };
-	  return ENGINE.runKernel(ArgMin, inputs, attrs);
-	}
+function argMin_(e,t){void 0===t&&(t=0);var n=convertToTensor(e,"x","argMin");null==t&&(t=0);var r=parseAxisParam(t,n.shape),o=getAxesPermutation(r,n.rank);null!=o&&(n=n.transpose(o),r=getInnerMostAxes(r.length,n.rank));return ENV.engine.runKernel(function(e){return e.argMin(n,r[0])},{$x:n},function(e){return {$x:function(){return zerosLike(n)}}})}

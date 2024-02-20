@@ -1,0 +1,1 @@
+function parseTableRow(i,o,s){var u=s.inTable;s.inTable=!0;var C=o(i.trim(),s);s.inTable=u;var _=[[]];return C.forEach((function(i,o){"tableSeparator"===i.type?0!==o&&o!==C.length-1&&_.push([]):("text"===i.type&&(null==C[o+1]||"tableSeparator"===C[o+1].type)&&(i.content=i.content.replace(Aa,"")),_[_.length-1].push(i))})),_}

@@ -1,0 +1,1 @@
+function _wctomb($0,$1){$0=$0|0;$1=$1|0;var $$0=0,$2=0,$3=0,label=0,sp=0;sp=STACKTOP;$2=($0|0)==(0|0);if($2){$$0=0}else{$3=_wcrtomb($0,$1,0)|0;$$0=$3}return $$0|0}

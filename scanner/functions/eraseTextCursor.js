@@ -1,0 +1,4 @@
+function eraseTextCursor() {
+   restoreDrawingSurface();
+   drawCurrentText();
+}

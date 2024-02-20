@@ -1,7 +1,1 @@
-function imag_(input) {
-	  var $input = convertToTensor(input, 'input', 'imag');
-	  var inputs = {
-	    input: $input
-	  };
-	  return ENGINE.runKernel(Imag, inputs);
-	}
+function imag_(e){var t=convertToTensor(e,"input","imag");return ENV.engine.runKernel(function(e){return e.imag(t)},{$input:t})}

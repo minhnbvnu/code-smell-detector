@@ -1,0 +1,1 @@
+function o8(e,t){var r=0,i=e.path?e.path.length:0,a=t.path?t.path.length:0;if(r=a-i,r!==0)return r;var n=e.creation?e.creation.getTime():a8,s=t.creation?t.creation.getTime():a8;return r=n-s,r!==0||(r=e.creationIndex-t.creationIndex),r}

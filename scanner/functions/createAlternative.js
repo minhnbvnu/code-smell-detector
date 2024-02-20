@@ -1,7 +1,1 @@
-function createAlternative(terms, from, to) {
-	      return addRaw({
-	        type: 'alternative',
-	        body: terms,
-	        range: [from, to]
-	      });
-	    }
+function createAlternative(i,o,s){return addRaw({type:"alternative",body:i,range:[o,s]})}

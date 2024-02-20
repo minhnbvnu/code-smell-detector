@@ -1,0 +1,1 @@
+function _glBeginTransformFeedback(x0){GLctx["beginTransformFeedback"](x0)}

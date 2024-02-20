@@ -1,1 +1,1 @@
-function Ju(a){a=a|0;var b=0;b=fa-16|0;L[b+12>>2]=a;return S(P[L[b+12>>2]+116>>2])}
+function ju(t,e,i){i||(i=Ou);var n=e[i[0]]-t[i[0]],r=e[i[1]]-t[i[1]];return 180*Math.atan2(r,n)/Math.PI}

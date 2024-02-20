@@ -1,1 +1,1 @@
-function Si(t){var n=t;if("object"==typeof t&&null!=t){n="length"in t?[]:{};for(var e in t)Ti(n,e,Si(t[e]))}return n}
+function Si(t){return t}

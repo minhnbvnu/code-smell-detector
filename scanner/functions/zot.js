@@ -1,0 +1,1 @@
+function zot(n,t){return n*n*n*t}

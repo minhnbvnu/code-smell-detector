@@ -1,0 +1,1 @@
+function parse_BrtColor(data,length){var out={};var d=data.read_shift(1);out.fValidRGB=d&1;out.xColorType=d>>>1;out.index=data.read_shift(1);out.nTintAndShade=data.read_shift(2,"i");out.bRed=data.read_shift(1);out.bGreen=data.read_shift(1);out.bBlue=data.read_shift(1);out.bAlpha=data.read_shift(1)}

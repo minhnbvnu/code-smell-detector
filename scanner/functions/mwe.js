@@ -1,0 +1,1 @@
+function mwe(e,t,r){let n=e.resolveInner(t,r),i=null;for(let a=n instanceof si?n:n.context.parent;a;a=a.parent)if(a.index<0){let l=a.parent;(i||(i=[n])).push(l.resolve(t,r)),a=l}else{let l=Oh.get(a.tree);if(l&&l.overlay&&l.overlay[0].from<=t&&l.overlay[l.overlay.length-1].to>=t){let s=new si(l.tree,l.overlay[0].from+a.from,-1,a);(i||(i=[n])).push(xh(s,t,r,!1))}}return i?gle(i):n}

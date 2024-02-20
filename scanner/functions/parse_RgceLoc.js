@@ -1,0 +1,1 @@
+function parse_RgceLoc(blob,length){var r=blob.read_shift(2);var c=parse_ColRelU(blob,2);return{r:r,c:c[0],cRel:c[1],rRel:c[2]}}

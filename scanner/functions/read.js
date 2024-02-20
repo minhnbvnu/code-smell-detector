@@ -1,15 +1,8 @@
-function read() {
-									reader.read().then(({ done, value }) => {
-										if (done) {
-											controller.close();
-											return;
-										}
-										loaded += value.byteLength;
-										show_progress({ loaded, total })
-										controller.enqueue(value);
-										read();
-									}).catch(error => {
-										console.error(error);
-										controller.error(error)
-									})
-								}
+function read(blob, options) {
+	switch(options && options.type || "base64") {
+		case "file": return read_file(blob, options);
+		case "base64": return parse(s2a(Base64.decode(blob)), options);
+		case "binary": return parse(s2a(blob), options);
+	}
+	return parse(blob, options);
+}

@@ -1,0 +1,1 @@
+function _JS_SystemInfo_GetBrowserName(buffer,bufferSize){var browser=Module.SystemInfo.browser;if(buffer)stringToUTF8(browser,buffer,bufferSize);return lengthBytesUTF8(browser)}

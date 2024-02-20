@@ -1,0 +1,1 @@
+function sot(n){let t="ENVMAP_TYPE_CUBE";if(n.envMap)switch(n.envMapMode){case fd:case md:t="ENVMAP_TYPE_CUBE";break;case _v:case TC:t="ENVMAP_TYPE_CUBE_UV";break}return t}

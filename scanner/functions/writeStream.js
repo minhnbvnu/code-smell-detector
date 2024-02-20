@@ -1,12 +1,57 @@
-function writeStream(stream, buffer, transform) {
-  writeDict(stream.dict, buffer, transform);
-  buffer.push(" stream\n");
-  let string = (0, _util.bytesToString)(stream.getBytes());
+function writeStream(file, optResolver, onWritten) {
+  var flags = fo.getFlags({
+    overwrite: optResolver.resolve('overwrite', file),
+    append: optResolver.resolve('append', file),
+  });
 
-  if (transform !== null) {
-    string = transform.encryptString(string);
+  var encoding = optResolver.resolve('encoding', file);
+  var codec = getCodec(encoding);
+  if (encoding && !codec) {
+    return onWritten(new Error('Unsupported encoding: ' + encoding));
   }
 
-  buffer.push(string);
-  buffer.push("\nendstream\n");
+  var opt = {
+    mode: file.stat.mode,
+    // TODO: need to test this
+    flags: flags,
+  };
+
+  // TODO: is this the best API?
+  var outStream = fo.createWriteStream(file.path, opt, onFlush);
+
+  // TODO: should this use a clone?
+  var streams = [file.contents];
+
+  if (encoding && encoding.enc !== DEFAULT_ENCODING) {
+    streams.push(getCodec(DEFAULT_ENCODING).decodeStream());
+    streams.push(codec.encodeStream());
+  }
+
+  streams.push(outStream);
+
+  pipeline(streams, onWritten);
+
+  // Cleanup
+  function onFlush(fd, callback) {
+    // TODO: this is doing sync stuff & the callback seems unnecessary
+    readStream(file, { resolve: resolve }, complete);
+
+    function resolve(key) {
+      if (key === 'encoding') {
+        return encoding;
+      }
+      if (key === 'removeBOM') {
+        return false;
+      }
+      throw new Error("Eek! stub resolver doesn't have " + key);
+    }
+
+    function complete() {
+      if (typeof fd !== 'number') {
+        return callback();
+      }
+
+      fo.updateMetadata(fd, file, callback);
+    }
+  }
 }

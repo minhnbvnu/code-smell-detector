@@ -1,0 +1,1 @@
+function _emscripten_glBlendFunc(x0,x1){GLctx["blendFunc"](x0,x1)}

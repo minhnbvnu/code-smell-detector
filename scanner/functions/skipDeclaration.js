@@ -1,0 +1,1 @@
+function skipDeclaration(toks,i,n){while(i<n&&toks[i]!==";"&&toks[i]!=="}"){++i}return i<n&&toks[i]===";"?i+1:i}

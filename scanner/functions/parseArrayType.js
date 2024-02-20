@@ -1,0 +1,1 @@
+function parseArrayType(){var o,s,C=w-1;for(consume(u.LBRACK,"ArrayType should start with ["),o=[];B!==u.RBRACK;){if(B===u.REST){s=w-3,consume(u.REST),o.push(maybeAddRange({type:i.RestType,expression:parseTypeExpression()},[s,P]));break}o.push(parseTypeExpression()),B!==u.RBRACK&&expect(u.COMMA)}return expect(u.RBRACK),maybeAddRange({type:i.ArrayType,elements:o},[C,P])}

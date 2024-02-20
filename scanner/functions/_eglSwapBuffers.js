@@ -1,0 +1,1 @@
+function _eglSwapBuffers(){if(!EGL.defaultDisplayInitialized){EGL.setErrorCode(12289)}else if(!Module.ctx){EGL.setErrorCode(12290)}else if(Module.ctx.isContextLost()){EGL.setErrorCode(12302)}else{EGL.setErrorCode(12288);return 1}return 0}

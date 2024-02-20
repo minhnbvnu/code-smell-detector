@@ -1,0 +1,1 @@
+function bc(t,e,i,n){if(i)for(var r=0;r<t.length;r++)t[r].top=null;for(r=0;r<t.length;r++){var o=t[r];if(o.stack&&null===o.top){o.top=e.axis;var s=!1;do{for(var a=null,h=0,l=t.length;h<l;h++){var u=t[h];if(s=n()||!1)return!0;if(null!==u.top&&u!==o&&u.stack&&xc(o,u,e.item,u.options.rtl)){a=u;break}}null!=a&&(o.top=a.top+a.height+e.item.vertical)}while(a)}}return s}

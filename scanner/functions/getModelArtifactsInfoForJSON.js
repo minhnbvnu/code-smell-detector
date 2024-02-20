@@ -1,13 +1,1 @@
-function getModelArtifactsInfoForJSON(modelArtifacts) {
-	  if (modelArtifacts.modelTopology instanceof ArrayBuffer) {
-	    throw new Error('Expected JSON model topology, received ArrayBuffer.');
-	  }
-
-	  return {
-	    dateSaved: new Date(),
-	    modelTopologyType: 'JSON',
-	    modelTopologyBytes: modelArtifacts.modelTopology == null ? 0 : stringByteLength(JSON.stringify(modelArtifacts.modelTopology)),
-	    weightSpecsBytes: modelArtifacts.weightSpecs == null ? 0 : stringByteLength(JSON.stringify(modelArtifacts.weightSpecs)),
-	    weightDataBytes: modelArtifacts.weightData == null ? 0 : modelArtifacts.weightData.byteLength
-	  };
-	}
+function getModelArtifactsInfoForJSON(e){if(e.modelTopology instanceof ArrayBuffer)throw new Error("Expected JSON model topology, received ArrayBuffer.");return {dateSaved:new Date,modelTopologyType:"JSON",modelTopologyBytes:null==e.modelTopology?0:stringByteLength(JSON.stringify(e.modelTopology)),weightSpecsBytes:null==e.weightSpecs?0:stringByteLength(JSON.stringify(e.weightSpecs)),weightDataBytes:null==e.weightData?0:e.weightData.byteLength}}

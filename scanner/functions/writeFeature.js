@@ -1,15 +1,11 @@
-function writeFeature(node, feature, objectStack) {
-  const context = objectStack[objectStack.length - 1];
-  const featureType = context['featureType'];
-  const featureNS = context['featureNS'];
-  const gmlVersion = context['gmlVersion'];
-  const child = createElementNS(featureNS, featureType);
-  node.appendChild(child);
-  if (gmlVersion === 2) {
-    GML2.prototype.writeFeatureElement(child, feature, objectStack);
-  } else if (gmlVersion === 3) {
-    GML3.prototype.writeFeatureElement(child, feature, objectStack);
-  } else {
-    GML32.prototype.writeFeatureElement(child, feature, objectStack);
-  }
+function writeFeature(feature, pbf) {
+    if (feature.geometry !== null) pbf.writeMessage(1, writeGeometry, feature.geometry);
+
+    if (feature.id !== undefined) {
+        if (typeof feature.id === 'number' && feature.id % 1 === 0) pbf.writeSVarintField(12, feature.id);
+        else pbf.writeStringField(11, feature.id);
+    }
+
+    if (feature.properties) writeProps(feature.properties, pbf);
+    writeProps(feature, pbf, true);
 }

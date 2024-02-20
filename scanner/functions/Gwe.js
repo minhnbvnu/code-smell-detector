@@ -1,0 +1,1 @@
+function Gwe(e,t){return Vo.strictEqual(e.peek(),fr.Ber.Integer,t+" is not an Integer"),CK.mpNormalize(e.readString(fr.Ber.Integer,!0))}

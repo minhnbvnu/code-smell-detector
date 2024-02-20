@@ -1,0 +1,1 @@
+function Y2(t,e,r){var n=t._x1-t._x0,i=e-t._x1,s=(t._y1-t._y0)/(n||i<0&&-0),a=(r-t._y1)/(i||n<0&&-0),o=(s*i+a*n)/(n+i);return(P2(s)+P2(a))*Math.min(Math.abs(s),Math.abs(a),.5*Math.abs(o))||0}

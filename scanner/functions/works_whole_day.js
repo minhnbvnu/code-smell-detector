@@ -1,0 +1,1 @@
+function works_whole_day() { return 1 }

@@ -1,0 +1,1 @@
+function getExtendedPassedProps(i){var o=(i.plugins||[]).reduce((function(o,s){var u,C=s.name,_=s.defaultValue;C&&(o[C]=void 0!==i[C]?i[C]:null!=(u=er[C])?u:_);return o}),{});return Object.assign({},i,o)}

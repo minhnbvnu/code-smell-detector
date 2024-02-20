@@ -1,0 +1,1 @@
+function dI(t){return!!t.get(["handle","show"])}

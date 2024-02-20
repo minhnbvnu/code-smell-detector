@@ -1,0 +1,1 @@
+function allowTx(action,location,retry){return!blockers.length||(blockers.call({action:action,location:location,retry:retry}),!1)}

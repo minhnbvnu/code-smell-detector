@@ -1,3 +1,3 @@
 function getAllKeys(object) {
-	  return baseGetAllKeys(object, keys, getSymbols);
-	}
+      return baseGetAllKeys(object, keys, getSymbols);
+    }

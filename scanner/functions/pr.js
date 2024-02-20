@@ -1,1 +1,1 @@
-function Pr(t,n){return jr(t,Yh,n)}
+function pr(t){for(var e=1;e<arguments.length;e++){var i,n=null!=arguments[e]?arguments[e]:{};if(e%2)Cn(i=cr(Object(n),!0)).call(i,(function(e){on(t,e,n[e])}));else if(yt)ut(t,yt(n));else{var o;Cn(o=cr(Object(n))).call(o,(function(e){X(t,e,kt(n,e))}))}}return t}

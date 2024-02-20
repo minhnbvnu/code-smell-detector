@@ -1,0 +1,3 @@
+function syntaxRequiresTrailingSemicolonOrASI(kind) {
+            return kind === 240 /* VariableStatement */ || kind === 241 /* ExpressionStatement */ || kind === 243 /* DoStatement */ || kind === 248 /* ContinueStatement */ || kind === 249 /* BreakStatement */ || kind === 250 /* ReturnStatement */ || kind === 254 /* ThrowStatement */ || kind === 256 /* DebuggerStatement */ || kind === 169 /* PropertyDeclaration */ || kind === 262 /* TypeAliasDeclaration */ || kind === 269 /* ImportDeclaration */ || kind === 268 /* ImportEqualsDeclaration */ || kind === 275 /* ExportDeclaration */ || kind === 267 /* NamespaceExportDeclaration */ || kind === 274 /* ExportAssignment */;
+        }

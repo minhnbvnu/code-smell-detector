@@ -1,9 +1,1 @@
-function expectNumbersClose(a, e, epsilon) {
-	  if (epsilon == null) {
-	    epsilon = testEpsilon();
-	  }
-
-	  if (!areClose(a, e, epsilon)) {
-	    throw new Error("Numbers differ: actual === " + a + ", expected === " + e);
-	  }
-	}
+function expectNumbersClose(e,t,n){if(null==n&&(n=ENV.get("TEST_EPSILON")),!areClose(e,t,n))throw new Error("Numbers differ: actual === "+e+", expected === "+t)}

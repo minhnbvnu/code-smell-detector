@@ -1,0 +1,1 @@
+function Bq(){return 1}

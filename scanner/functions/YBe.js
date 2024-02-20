@@ -1,0 +1,1 @@
+function YBe(e,t,r){return this.addSchema(e,t,r,!0),this}

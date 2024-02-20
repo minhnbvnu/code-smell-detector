@@ -1,0 +1,1 @@
+function f8(n){var t=n.length;return function(e){var i=Math.floor(((e%=1)<0?++e:e)*t),r=n[(i+t-1)%t],o=n[i%t],s=n[(i+1)%t],a=n[(i+2)%t];return jC((e-i/t)*t,r,o,s,a)}}

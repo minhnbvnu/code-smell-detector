@@ -1,0 +1,1 @@
+function Tq(a){a=a|0;return 0}

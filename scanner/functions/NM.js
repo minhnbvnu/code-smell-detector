@@ -1,0 +1,1 @@
+function NM(t){function e(r){var n=t.children(r),i=t.node(r);if(n.length&&vt(n,e),me(i,"minRank")){i.borderLeft=[],i.borderRight=[];for(var s=i.minRank,a=i.maxRank+1;s<a;++s)im(t,"borderLeft","_bl",r,i,s),im(t,"borderRight","_br",r,i,s)}}vt(t.children(),e)}

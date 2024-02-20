@@ -1,0 +1,1 @@
+function parse_PtgAttrBaxcel(blob,length){var bitSemi=blob[blob.l+1]&1;var bitBaxcel=1;blob.l+=4;return[bitSemi,bitBaxcel]}

@@ -1,0 +1,1 @@
+function TMe(e,t){return t[e]===void 0?"":"var refVal"+e+" = refVal["+e+"];"}

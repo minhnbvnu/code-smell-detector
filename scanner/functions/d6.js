@@ -1,0 +1,1 @@
+function d6(t){return this.tween("text",typeof t=="function"?h6(Ah(this,"text",t)):u6(t==null?"":t+""))}

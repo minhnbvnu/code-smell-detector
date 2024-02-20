@@ -1,0 +1,1 @@
+function getCountryCallingCode(i,o){if((o=new Y(o)).hasCountry(i))return o.country(i).countryCallingCode();throw new Error("Unknown country: ".concat(i))}

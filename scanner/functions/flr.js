@@ -1,0 +1,1 @@
+function flr(val){if(val<2147483647&&val>-2147483648)return""+(val>=0?val|0:val-1|0);return""+Math.floor(val)}

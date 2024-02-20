@@ -1,21 +1,42 @@
 function createApplication() {
-  var app = function(req, res, next) {
-    app.handle(req, res, next);
-  };
+    let app = function(req,res,next) {
+        app.handle(req,res,next)
+    };
 
-  mixin(app, EventEmitter.prototype, false);
-  mixin(app, proto, false);
+    mixin(app,proto,false);
 
-  // expose the prototype that will get set on requests
-  app.request = Object.create(req, {
-    app: { configurable: true, enumerable: true, writable: true, value: app }
-  })
+    var req = Object.create(http.IncomingMessage.prototype);
+    var res = Object.create(http.ServerResponse.prototype)
 
-  // expose the prototype that will get set on responses
-  app.response = Object.create(res, {
-    app: { configurable: true, enumerable: true, writable: true, value: app }
-  })
+    res.send = function (body) {
+        if(typeof body === 'object') {
+            this.json(body)
+        }
+        else if(typeof body === 'string') {
+            this.setHeader('Content-Type', 'text/plain');
+            this.end(body,'utf8');
+        }
+        return this;
+    }
 
-  app.init();
-  return app;
+
+    res.json = function (body) {
+        this.setHeader('Content-Type', 'application/json');
+        return this.send(JSON.stringify(body))
+    }
+
+    app.request = Object.create(req,{
+        app : {
+            configurable: true, enumerable: true, writable: true, value: app
+        }
+    });
+
+    app.response = Object.create(res,{
+        app : {
+            configurable: true, enumerable: true, writable: true, value: app
+        }
+    });
+
+    app.init();
+    return app;
 }

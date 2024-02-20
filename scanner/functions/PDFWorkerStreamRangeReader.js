@@ -1,0 +1,1 @@
+function PDFWorkerStreamRangeReader(t,r,o){_classCallCheck(this,PDFWorkerStreamRangeReader);this._msgHandler=o;this.onProgress=null;var c=this._msgHandler.sendWithStream("GetRangeReader",{begin:t,end:r});this._reader=c.getReader()}

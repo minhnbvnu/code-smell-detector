@@ -1,0 +1,1 @@
+function oat(){this.previousSibling&&this.parentNode.insertBefore(this,this.parentNode.firstChild)}

@@ -1,0 +1,1 @@
+function uK(n,t){switch(n.length){case 0:return WP();case 1:return bK(n,t);case 2:return AK(n,t);case 3:return wK(n,t);case 4:return CK(n,t);case 5:return MK(n,t);case 6:return EK(n,t);default:throw new Error(`${n.length}-D output sampling is not yet supported`)}}

@@ -1,0 +1,1 @@
+function wM(t){var e=t.graph().acyclicer==="greedy"?xM(t,r(t)):TM(t);vt(e,function(n){var i=t.edge(n);t.removeEdge(n),i.forwardName=n.name,i.reversed=!0,t.setEdge(n.w,n.v,i,ou("rev"))});function r(n){return function(i){return n.edge(i).weight}}}

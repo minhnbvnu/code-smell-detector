@@ -1,0 +1,1 @@
+function enc(s){return s.replace(/[\r\n\\]/g,function(c){if(c==='\n')return'\\n';else if(c==='\\')return'\\\\';return'\\r';});}

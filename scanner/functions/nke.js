@@ -1,0 +1,1 @@
+function nke(e){for(;e;e=e.parent)if(e.name=="svg"||e.name=="math")return!0;return!1}

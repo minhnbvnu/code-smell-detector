@@ -1,0 +1,1 @@
+function Hst(n,t){return function(){var e=t.apply(this,arguments);e==null?this.removeAttribute(n):this.setAttribute(n,e)}}

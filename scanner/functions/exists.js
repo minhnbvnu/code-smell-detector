@@ -1,8 +1,9 @@
-function exists(filename) {
-	  var cached = existsCache[filename];
-	  if (cached == null) {
-	    return existsCache[filename] = _fs2.default.existsSync(filename);
-	  } else {
-	    return cached;
-	  }
-	}
+function exists(path) {
+  try {
+    statSync(path);
+    return true;
+  } catch (err) {
+    if (err.code === 'ENOENT') return false;
+    throw err;
+  }
+}

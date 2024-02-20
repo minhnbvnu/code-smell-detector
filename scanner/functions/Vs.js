@@ -1,1 +1,1 @@
-function Vs(){return{name:"",K:"an HTML element",optional:!1,M:function(t){return!!(t&&t instanceof Element)}}}
+function Vs(e,t){return!!(null==e?0:e.length)&&-1<Js(e,t,0)}

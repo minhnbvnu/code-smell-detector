@@ -1,7 +1,10 @@
-function setLineDash(ctx, lineDashArray) {
-    if (!lineDashArray || !ctx.setLineDash || !Array.isArray(lineDashArray)) {
-        return;
-    }
-    ctx.setLineDash(lineDashArray);
+function setLineDash( value ) {
 
-}
+		if ( _contextLineDash.length !== value.length ) {
+
+			_context.setLineDash( value );
+			_contextLineDash = value;
+
+		}
+
+	}

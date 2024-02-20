@@ -1,0 +1,3 @@
+function extensionIsOk(extensions, extension) {
+            return extensions & 2 /* JavaScript */ && (extension === ".js" /* Js */ || extension === ".jsx" /* Jsx */ || extension === ".mjs" /* Mjs */ || extension === ".cjs" /* Cjs */) || extensions & 1 /* TypeScript */ && (extension === ".ts" /* Ts */ || extension === ".tsx" /* Tsx */ || extension === ".mts" /* Mts */ || extension === ".cts" /* Cts */) || extensions & 4 /* Declaration */ && (extension === ".d.ts" /* Dts */ || extension === ".d.mts" /* Dmts */ || extension === ".d.cts" /* Dcts */) || extensions & 8 /* Json */ && extension === ".json" /* Json */ || false;
+        }

@@ -1,0 +1,3 @@
+function testAfter() {
+            throw err
+          }

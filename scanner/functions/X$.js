@@ -1,0 +1,1 @@
+function X$(){const t=W$();if(E$(",")){throw new Error(zU)}return t}

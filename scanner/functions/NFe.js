@@ -1,0 +1,1 @@
+function NFe(e){const t={};let r=-1;for(;++r<e.length;)LFe(t,e[r]);return t}

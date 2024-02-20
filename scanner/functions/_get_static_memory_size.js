@@ -1,0 +1,1 @@
+function _get_static_memory_size(){var label=0,sp=0;sp=STACKTOP;return 4096}

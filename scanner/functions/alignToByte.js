@@ -1,8 +1,1 @@
-function alignToByte() {
-      bufferSize = 0;
-
-      if (skipNextBit) {
-        position++;
-        skipNextBit = false;
-      }
-    }
+function alignToByte(){g=0;if(v){d++;v=!1}}

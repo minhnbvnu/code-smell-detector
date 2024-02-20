@@ -1,0 +1,1 @@
+function xG(t){return q(t)&&!N(t)}

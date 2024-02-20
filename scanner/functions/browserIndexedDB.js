@@ -1,0 +1,1 @@
+function browserIndexedDB(e){return new BrowserIndexedDB(e)}

@@ -1,1 +1,1 @@
-function Jn(t,n){if(t){t=t.split("&");for(var e=0;e<t.length;e++){var i=t[e].indexOf("="),r=null;if(0<=i){var o=t[e].substring(0,i);r=t[e].substring(i+1)}else o=t[e];n(o,r?decodeURIComponent(r.replace(/\+/g," ")):"")}}}
+function Jn(){return this.clone().locale("en").format("ddd MMM DD YYYY HH:mm:ss [GMT]ZZ")}

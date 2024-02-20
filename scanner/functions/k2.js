@@ -1,0 +1,1 @@
+function k2(t){var e=t.getDay();return e>=4||e===0?$s(t):$s.ceil(t)}

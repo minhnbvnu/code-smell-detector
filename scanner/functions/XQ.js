@@ -1,0 +1,1 @@
+function XQ(e){return sCe.charAt(e)}

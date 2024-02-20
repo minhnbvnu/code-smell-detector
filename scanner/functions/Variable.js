@@ -1,7 +1,5 @@
-function variable(initialValue, trainable, name, dtype) {
-	  if (trainable === void 0) {
-	    trainable = true;
-	  }
-
-	  return ENGINE.makeVariable(initialValue, trainable, name, dtype);
-	}
+function Variable(name, defaultValue) {
+  this.name = name;
+  this.defaultValue = defaultValue;
+  this.docstring = null;
+}

@@ -1,0 +1,1 @@
+function lde(e,t){return e.substr(0,t.length)==t}

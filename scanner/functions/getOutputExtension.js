@@ -1,0 +1,3 @@
+function getOutputExtension(fileName, options) {
+            return fileExtensionIs(fileName, ".json" /* Json */) ? ".json" /* Json */ : options.jsx === 1 /* Preserve */ && fileExtensionIsOneOf(fileName, [".jsx" /* Jsx */, ".tsx" /* Tsx */]) ? ".jsx" /* Jsx */ : fileExtensionIsOneOf(fileName, [".mts" /* Mts */, ".mjs" /* Mjs */]) ? ".mjs" /* Mjs */ : fileExtensionIsOneOf(fileName, [".cts" /* Cts */, ".cjs" /* Cjs */]) ? ".cjs" /* Cjs */ : ".js" /* Js */;
+        }

@@ -1,0 +1,1 @@
+function mapCacheDelete$1(key){var result=getMapData$3(this,key).delete(key);return this.size-=result?1:0,result}

@@ -1,0 +1,1 @@
+function showMessages(){$("#messages").fadeIn(5000,function(){showLoveU()})}

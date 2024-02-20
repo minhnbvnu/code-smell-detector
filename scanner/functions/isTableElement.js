@@ -1,0 +1,1 @@
+function isTableElement(i){return["table","td","th"].indexOf(getNodeName(i))>=0}

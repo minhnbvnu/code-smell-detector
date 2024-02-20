@@ -1,3 +1,1 @@
-function TaggedTemplateExpression() {
-	  return resolveCall(this.get("tag"));
-	}
+function TaggedTemplateExpression(){i.apply(this,arguments)}

@@ -1,0 +1,1 @@
+function B6(t,e){var r=Nl(t,e);if(!r)return t+"";var n=r[0],i=r[1],s=i-(Hf=Math.max(-8,Math.min(8,Math.floor(i/3)))*3)+1,a=n.length;return s===a?n:s>a?n+new Array(s-a+1).join("0"):s>0?n.slice(0,s)+"."+n.slice(s):"0."+new Array(1-s).join("0")+Nl(t,Math.max(0,e+s-1))[0]}

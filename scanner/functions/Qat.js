@@ -1,0 +1,1 @@
+function Qat(n,t){return t=+t,function(){ri(this,n).duration=t}}

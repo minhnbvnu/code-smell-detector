@@ -1,0 +1,1 @@
+function Gee(e,t,r){return t.reduce(function(i,a){return a(i,e)},r||e.data)}

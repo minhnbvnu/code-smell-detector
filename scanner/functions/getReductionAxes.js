@@ -1,15 +1,1 @@
-function getReductionAxes(inShape, outShape) {
-	  var result = [];
-
-	  for (var i = 0; i < outShape.length; i++) {
-	    var inDim = inShape[inShape.length - i - 1];
-	    var outAxis = outShape.length - i - 1;
-	    var outDim = outShape[outAxis];
-
-	    if (inDim == null || inDim === 1 && outDim > 1) {
-	      result.unshift(outAxis);
-	    }
-	  }
-
-	  return result;
-	}
+function getReductionAxes(e,t){for(var n=[],r=0;r<t.length;r++){var o=e[e.length-r-1],a=t.length-r-1,i=t[a];(null==o||1===o&&i>1)&&n.unshift(a);}return n}

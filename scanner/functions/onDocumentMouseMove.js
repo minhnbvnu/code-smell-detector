@@ -1,0 +1,1 @@
+function onDocumentMouseMove(){var i=performance.now();i-Jt<20&&(Xt.isTouch=!1,document.removeEventListener("mousemove",onDocumentMouseMove)),Jt=i}

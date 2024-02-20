@@ -1,0 +1,1 @@
+function E4e(e){return 48<=e&&e<=55}

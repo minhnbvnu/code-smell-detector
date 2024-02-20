@@ -1,0 +1,1 @@
+function callUserCallback(func,synchronous){if(ABORT){return}if(synchronous){func();return}try{func()}catch(e){handleException(e)}}

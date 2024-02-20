@@ -1,0 +1,1 @@
+function _sprintf($0,$1,$varargs){$0=$0|0;$1=$1|0;$varargs=$varargs|0;var $2=0,$3=0,label=0,sp=0;sp=STACKTOP;STACKTOP=STACKTOP+16|0;$2=sp;HEAP32[$2>>2]=$varargs;$3=_vsprintf($0,$1,$2)|0;STACKTOP=sp;return $3|0}

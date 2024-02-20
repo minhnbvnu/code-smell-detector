@@ -1,0 +1,1 @@
+function _eglDestroyContext(display,context){if(display!=62e3){EGL.setErrorCode(12296);return 0}if(context!=62004){EGL.setErrorCode(12294);return 0}GL.deleteContext(EGL.context);EGL.setErrorCode(12288);if(EGL.currentContext==context){EGL.currentContext=0}return 1}

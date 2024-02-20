@@ -1,0 +1,1 @@
+function v7(e,t){if(e.statusCode>=400)return t((0,d6().createHttpError)(e)),!1;if(e.statusCode!==206){let r=(0,d6().safeGetHeader)(e,"accept-ranges");if(r==null||r==="none")return t(new Error(`Server doesn't support Accept-Ranges (response code ${e.statusCode})`)),!1}return!0}

@@ -1,47 +1,57 @@
 function _guessExecutionStatusRelativeTo(target) {
-	  var targetFuncParent = target.scope.getFunctionParent();
-	  var selfFuncParent = this.scope.getFunctionParent();
+  const funcParent = {
+    this: getOuterFunction(this),
+    target: getOuterFunction(target)
+  };
 
-	  if (targetFuncParent.node !== selfFuncParent.node) {
-	    var status = this._guessExecutionStatusRelativeToDifferentFunctions(targetFuncParent);
-	    if (status) {
-	      return status;
-	    } else {
-	      target = targetFuncParent.path;
-	    }
-	  }
+  if (funcParent.target.node !== funcParent.this.node) {
+    return this._guessExecutionStatusRelativeToDifferentFunctions(funcParent.target);
+  }
 
-	  var targetPaths = target.getAncestry();
-	  if (targetPaths.indexOf(this) >= 0) return "after";
+  const paths = {
+    target: target.getAncestry(),
+    this: this.getAncestry()
+  };
+  if (paths.target.indexOf(this) >= 0) return "after";
+  if (paths.this.indexOf(target) >= 0) return "before";
+  let commonPath;
+  const commonIndex = {
+    target: 0,
+    this: 0
+  };
 
-	  var selfPaths = this.getAncestry();
+  while (!commonPath && commonIndex.this < paths.this.length) {
+    const path = paths.this[commonIndex.this];
+    commonIndex.target = paths.target.indexOf(path);
 
-	  var commonPath = void 0;
-	  var targetIndex = void 0;
-	  var selfIndex = void 0;
-	  for (selfIndex = 0; selfIndex < selfPaths.length; selfIndex++) {
-	    var selfPath = selfPaths[selfIndex];
-	    targetIndex = targetPaths.indexOf(selfPath);
-	    if (targetIndex >= 0) {
-	      commonPath = selfPath;
-	      break;
-	    }
-	  }
-	  if (!commonPath) {
-	    return "before";
-	  }
+    if (commonIndex.target >= 0) {
+      commonPath = path;
+    } else {
+      commonIndex.this++;
+    }
+  }
 
-	  var targetRelationship = targetPaths[targetIndex - 1];
-	  var selfRelationship = selfPaths[selfIndex - 1];
-	  if (!targetRelationship || !selfRelationship) {
-	    return "before";
-	  }
+  if (!commonPath) {
+    throw new Error("Internal Babel error - The two compared nodes" + " don't appear to belong to the same program.");
+  }
 
-	  if (targetRelationship.listKey && targetRelationship.container === selfRelationship.container) {
-	    return targetRelationship.key > selfRelationship.key ? "before" : "after";
-	  }
+  if (isExecutionUncertainInList(paths.this, commonIndex.this - 1) || isExecutionUncertainInList(paths.target, commonIndex.target - 1)) {
+    return "unknown";
+  }
 
-	  var targetKeyPosition = t.VISITOR_KEYS[targetRelationship.type].indexOf(targetRelationship.key);
-	  var selfKeyPosition = t.VISITOR_KEYS[selfRelationship.type].indexOf(selfRelationship.key);
-	  return targetKeyPosition > selfKeyPosition ? "before" : "after";
-	}
+  const divergence = {
+    this: paths.this[commonIndex.this - 1],
+    target: paths.target[commonIndex.target - 1]
+  };
+
+  if (divergence.target.listKey && divergence.this.listKey && divergence.target.container === divergence.this.container) {
+    return divergence.target.key > divergence.this.key ? "before" : "after";
+  }
+
+  const keys = t.VISITOR_KEYS[commonPath.type];
+  const keyPosition = {
+    this: keys.indexOf(divergence.this.parentKey),
+    target: keys.indexOf(divergence.target.parentKey)
+  };
+  return keyPosition.target > keyPosition.this ? "before" : "after";
+}

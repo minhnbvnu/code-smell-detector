@@ -1,0 +1,1 @@
+function resetTooltipPosition(){if(ttElement.style.visibility!=='collapse')ttElement.style.visibility='collapse';ttElement.style.left='-9999px';ttElement.style.top='-9999px';if(elMore.style.display!=='none'){elMore.style.display='none';elMore.style.visibility='collapse';elMore.style.height='auto'}}

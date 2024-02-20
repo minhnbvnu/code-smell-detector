@@ -1,0 +1,1 @@
+function handleHeaderRowScroll(){var e=$headerRowScrollContainer[0].scrollLeft;e!=$viewportScrollContainerX[0].scrollLeft&&($viewportScrollContainerX[0].scrollLeft=e)}

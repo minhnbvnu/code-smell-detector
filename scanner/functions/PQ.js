@@ -1,0 +1,1 @@
+function PQ(e,t){for(let r=0;r<t.length;r++){let n=t[r];if(n.pos==e.pos&&n.sameState(e)){t[r].score<e.score&&(t[r]=e);return}}t.push(e)}

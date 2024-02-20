@@ -1,11 +1,1 @@
-function QueueOptimizer(queue) {
-    this.queue = queue;
-    this.state = null;
-    this.context = {
-      iCurr: 0,
-      fnArray: queue.fnArray,
-      argsArray: queue.argsArray
-    };
-    this.match = null;
-    this.lastProcessed = 0;
-  }
+function QueueOptimizer(t){var o;_classCallCheck(this,QueueOptimizer);(o=r.call(this,t)).state=null;o.context={iCurr:0,fnArray:t.fnArray,argsArray:t.argsArray};o.match=null;o.lastProcessed=0;return o}

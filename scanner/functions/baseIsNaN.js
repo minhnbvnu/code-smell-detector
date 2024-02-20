@@ -1,3 +1,3 @@
 function baseIsNaN(value) {
-	  return value !== value;
-	}
+    return value !== value;
+  }

@@ -1,0 +1,1 @@
+function NTe(e,t){let r;for(r in t)if(Nse.call(t,r))switch(r){case"canContainEols":{const n=t[r];n&&e[r].push(...n);break}case"transforms":{const n=t[r];n&&e[r].push(...n);break}case"enter":case"exit":{const n=t[r];n&&Object.assign(e[r],n);break}}}

@@ -1,0 +1,3 @@
+function clearParseAndGenerateServicesCalls() {
+        parseAndGenerateServicesCalls = {};
+    }

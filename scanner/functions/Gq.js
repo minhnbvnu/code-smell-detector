@@ -1,0 +1,1 @@
+function Gq(a){a=a|0;Ua[a&3]()}

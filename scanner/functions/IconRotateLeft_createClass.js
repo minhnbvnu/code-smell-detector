@@ -1,0 +1,1 @@
+function IconRotateLeft_createClass(Constructor, protoProps, staticProps) { if (protoProps) IconRotateLeft_defineProperties(Constructor.prototype, protoProps); if (staticProps) IconRotateLeft_defineProperties(Constructor, staticProps); return Constructor; }

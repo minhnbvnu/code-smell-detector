@@ -1,0 +1,1 @@
+function v8(n){return ArrayBuffer.isView(n)&&!(n instanceof DataView)}

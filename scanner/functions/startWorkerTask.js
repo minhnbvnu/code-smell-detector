@@ -1,3 +1,1 @@
-function startWorkerTask(task) {
-      WorkerTasks.push(task);
-    }
+function startWorkerTask(t){S.push(t)}

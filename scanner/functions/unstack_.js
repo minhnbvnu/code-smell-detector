@@ -1,17 +1,1 @@
-function unstack_(x, axis) {
-	  if (axis === void 0) {
-	    axis = 0;
-	  }
-
-	  var $x = convertToTensor(x, 'x', 'unstack', 'string_or_numeric');
-	  assert(axis >= -$x.shape.length && axis < $x.shape.length, function () {
-	    return "Axis = " + axis + " is not in [-" + $x.shape.length + ", " + $x.shape.length + ")";
-	  });
-	  var inputs = {
-	    value: $x
-	  };
-	  var attrs = {
-	    axis: axis
-	  };
-	  return ENGINE.runKernel(Unpack, inputs, attrs);
-	}
+function unstack_(e,t){void 0===t&&(t=0);for(var n,r=convertToTensor(e,"x","unstack"),o=r.shape[t],a=Array(r.rank-1).fill(0),i=0,s=0;s<r.rank;s++)s!==t&&(a[i]=r.shape[s],i++);n=Array(o).fill(1);var u=Array(r.rank).fill(0),l=r.shape.slice();return n.map(function(e){l[t]=e;var n=r.slice(u,l);return u[t]+=e,n.reshape(a)})}

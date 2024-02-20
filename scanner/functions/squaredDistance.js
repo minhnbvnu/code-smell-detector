@@ -1,5 +1,4 @@
-function squaredDistance(x1, y1, x2, y2) {
-  const dx = x2 - x1;
-  const dy = y2 - y1;
-  return dx * dx + dy * dy;
-}
+function squaredDistance(a, b) {
+        var x = b[0] - a[0], y = b[1] - a[1];
+        return x * x + y * y;
+    }

@@ -1,0 +1,1 @@
+function ZM(t,e){var r=LM(t,function(d){return me(d,"barycenter")}),n=r.lhs,i=Io(r.rhs,function(d){return-d.i}),s=[],a=0,o=0,l=0;n.sort(QM(!!e)),l=lm(s,i,l),vt(n,function(d){l+=d.vs.length,s.push(d.vs),a+=d.barycenter*d.weight,o+=d.weight,l=lm(s,i,l)});var u={vs:_a(s)};return o&&(u.barycenter=a/o,u.weight=o),u}

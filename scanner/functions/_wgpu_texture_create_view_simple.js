@@ -1,0 +1,1 @@
+function _wgpu_texture_create_view_simple(texture){return wgpuStoreAndSetParent(wgpu[texture]["createView"](),wgpu[texture])}

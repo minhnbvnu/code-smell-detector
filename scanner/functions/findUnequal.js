@@ -1,9 +1,1 @@
-function findUnequal(arr, start, value) {
-  for (var j = start, jj = arr.length; j < jj; ++j) {
-    if (arr[j] !== value) {
-      return j;
-    }
-  }
-
-  return j;
-}
+function findUnequal(t,r,o){var c,l;for(c=r,l=t.length;c<l;++c)if(t[c]!==o)return c;return c}

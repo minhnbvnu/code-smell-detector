@@ -1,0 +1,1 @@
+function FontInfo(t){var o;_classCallCheck(this,FontInfo);(o=r.call(this,d,"fontInfo",!0)).embed=null;o.map=null;o.subsetBelow=null;o.alwaysEmbed=new l.XFAObjectArray;o.defaultTypeface=new l.XFAObjectArray;o.neverEmbed=new l.XFAObjectArray;return o}

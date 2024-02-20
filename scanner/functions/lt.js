@@ -1,1 +1,1 @@
-function lt(){it&&(!1===E.hidden&&C.requestAnimationFrame?C.requestAnimationFrame(lt):C.setTimeout(lt,k.fx.interval),k.fx.tick())}
+function lt(t,e,i){ht[t]=C(e)?e:function(t,n){return t&&i?i:e}}

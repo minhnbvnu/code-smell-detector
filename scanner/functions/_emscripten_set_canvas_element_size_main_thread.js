@@ -1,0 +1,1 @@
+function _emscripten_set_canvas_element_size_main_thread(target,width,height){return _emscripten_set_canvas_element_size_calling_thread(target,width,height)}

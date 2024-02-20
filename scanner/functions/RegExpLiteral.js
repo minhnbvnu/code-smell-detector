@@ -1,3 +1,3 @@
 function RegExpLiteral() {
-	  return t.genericTypeAnnotation(t.identifier("RegExp"));
-	}
+  return t.genericTypeAnnotation(t.identifier("RegExp"));
+}

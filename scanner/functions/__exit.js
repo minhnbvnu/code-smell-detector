@@ -1,0 +1,1 @@
+function __exit(status){exit(status)}

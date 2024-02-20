@@ -1,0 +1,1 @@
+function getHostElementInvertedScale(){var rect=_paddingElementNative[LEXICON.bCR]();return{x:_supportTransform&&1/(MATH.round(rect.width)/_paddingElementNative[LEXICON.oW])||1,y:_supportTransform&&1/(MATH.round(rect.height)/_paddingElementNative[LEXICON.oH])||1}}

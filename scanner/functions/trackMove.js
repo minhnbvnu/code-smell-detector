@@ -1,0 +1,1 @@
+function trackMove(e){onMove(mouseAbs(e))}

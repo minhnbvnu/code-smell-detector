@@ -1,0 +1,1 @@
+function RQ(e,t){var n=!(arguments.length>2&&void 0!==arguments[2])||arguments[2],r=n&&!NQ(e,t)?t.getMoveHandle():t["getHandle".concat(e+1)](),i=r.getOrigin();return i.length?i:null}

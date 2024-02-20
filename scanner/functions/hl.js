@@ -1,0 +1,1 @@
+function hl(t){return t instanceof String||"string"==typeof t}

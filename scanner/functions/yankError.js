@@ -1,0 +1,1 @@
+function yankError(e){return function(t,n){t||n[0].error?call(e,t||n[0]):call(e,null,n[0])}}

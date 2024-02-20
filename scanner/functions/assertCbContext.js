@@ -1,0 +1,1 @@
+function assertCbContext() { return cbContext === context; }

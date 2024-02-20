@@ -1,1 +1,1 @@
-function isDataURI(filename){return filename.startsWith(dataURIPrefix)}
+function isDataURI(filename){return String.prototype.startsWith?filename.startsWith(dataURIPrefix):filename.indexOf(dataURIPrefix)===0}

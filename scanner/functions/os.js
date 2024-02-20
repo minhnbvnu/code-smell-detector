@@ -1,1 +1,1 @@
-function Os(t){return t.currentUser}
+function os(t){return void 0===t?ts:"function"==typeof t&&(ts=t,!0)}

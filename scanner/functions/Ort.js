@@ -1,0 +1,1 @@
+function Ort(n,t){n.uniform4uiv(this.addr,t)}

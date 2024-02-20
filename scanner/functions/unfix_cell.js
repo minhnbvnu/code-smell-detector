@@ -1,0 +1,1 @@
+function unfix_cell(cstr){return unfix_col(unfix_row(cstr))}

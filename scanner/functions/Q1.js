@@ -1,0 +1,1 @@
+function Q1(t){var e=new t.constructor(t.byteLength);return new ru(e).set(new ru(t)),e}

@@ -1,0 +1,1 @@
+function onNavigatePrevClicked( event ) { event.preventDefault(); onUserInput(); navigatePrev(); }

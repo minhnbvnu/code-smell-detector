@@ -1,0 +1,1 @@
+function ___syscall_dup3(fd,suggestFD,flags){try{var old=SYSCALLS.getStreamFromFD(fd);if(old.fd===suggestFD)return-28;var suggest=FS.getStream(suggestFD);if(suggest)FS.close(suggest);return FS.open(old.path,old.flags,0,suggestFD,suggestFD).fd}catch(e){if(typeof FS=="undefined"||!(e instanceof FS.ErrnoError))throw e;return-e.errno}}

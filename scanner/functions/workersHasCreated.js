@@ -1,3 +1,0 @@
-function workersHasCreated() {
-    return workersCreated;
-}

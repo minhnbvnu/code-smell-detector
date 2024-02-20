@@ -1,0 +1,1 @@
+function Ble(e,t){return e.languageDataAt("closeBrackets",t)[0]||wh}

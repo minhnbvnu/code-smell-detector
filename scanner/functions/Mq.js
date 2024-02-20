@@ -1,1 +1,1 @@
-function mq(a,b){a=a|0;b=b|0;var c=0;c=fa-16|0;L[c+12>>2]=a;L[c+8>>2]=b;L[L[c+12>>2]+92>>2]=L[c+8>>2]}
+function Mq(a){a=a|0;Oq(a);return}

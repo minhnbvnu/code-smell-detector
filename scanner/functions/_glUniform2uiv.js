@@ -1,0 +1,1 @@
+function _glUniform2uiv(location,count,value){GLctx.uniform2uiv(webglGetUniformLocation(location),HEAPU32,value>>2,count*2)}

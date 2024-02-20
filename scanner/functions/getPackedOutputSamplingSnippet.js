@@ -1,18 +1,1 @@
-function getPackedOutputSamplingSnippet(outShape, outTexShape) {
-	  switch (outShape.length) {
-	    case 0:
-	      return getOutputScalarCoords();
-
-	    case 1:
-	      return getOutputPacked1DCoords(outShape, outTexShape);
-
-	    case 2:
-	      return getOutputPacked2DCoords(outShape, outTexShape);
-
-	    case 3:
-	      return getOutputPacked3DCoords(outShape, outTexShape);
-
-	    default:
-	      return getOutputPackedNDCoords(outShape, outTexShape);
-	  }
-	}
+function getPackedOutputSamplingSnippet(e,t){switch(e.length){case 0:return getOutputScalarCoords();case 1:return getOutputPacked1DCoords(e,t);case 2:return getOutputPacked2DCoords(e,t);case 3:return getOutputPacked3DCoords(e,t);case 4:return getOutputPacked4DCoords(e,t);default:throw new Error(e.length+"-D packed output coordinate fetching is not yet supported")}}

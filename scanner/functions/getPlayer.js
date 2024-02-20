@@ -1,0 +1,3 @@
+function getPlayer() {
+    return player;
+}

@@ -7,12 +7,12 @@ function webViewerKeyDown(evt) {
       ensureViewerFocused = false;
   const cmd = (evt.ctrlKey ? 1 : 0) | (evt.altKey ? 2 : 0) | (evt.shiftKey ? 4 : 0) | (evt.metaKey ? 8 : 0);
   const pdfViewer = PDFViewerApplication.pdfViewer;
-  const isViewerInPresentationMode = pdfViewer?.isInPresentationMode;
+  const isViewerInPresentationMode = pdfViewer && pdfViewer.isInPresentationMode;
 
   if (cmd === 1 || cmd === 8 || cmd === 5 || cmd === 12) {
     switch (evt.keyCode) {
       case 70:
-        if (!PDFViewerApplication.supportsIntegratedFind && !evt.shiftKey) {
+        if (!PDFViewerApplication.supportsIntegratedFind) {
           PDFViewerApplication.findBar.open();
           handled = true;
         }
@@ -91,26 +91,11 @@ function webViewerKeyDown(evt) {
     }
   }
 
-  const {
-    eventBus
-  } = PDFViewerApplication;
-
   if (cmd === 1 || cmd === 8) {
     switch (evt.keyCode) {
       case 83:
-        eventBus.dispatch("download", {
-          source: window
-        });
+        PDFViewerApplication.download();
         handled = true;
-        break;
-
-      case 79:
-        {
-          eventBus.dispatch("openfile", {
-            source: window
-          });
-          handled = true;
-        }
         break;
     }
   }
@@ -138,10 +123,10 @@ function webViewerKeyDown(evt) {
     return;
   }
 
-  const curElement = (0, _ui_utils.getActiveOrFocusedElement)();
-  const curElementTagName = curElement?.tagName.toUpperCase();
+  const curElement = document.activeElement || document.querySelector(":focus");
+  const curElementTagName = curElement && curElement.tagName.toUpperCase();
 
-  if (curElementTagName === "INPUT" || curElementTagName === "TEXTAREA" || curElementTagName === "SELECT" || curElement?.isContentEditable) {
+  if (curElementTagName === "INPUT" || curElementTagName === "TEXTAREA" || curElementTagName === "SELECT" || curElement && curElement.isContentEditable) {
     if (evt.keyCode !== 27) {
       return;
     }
@@ -257,9 +242,13 @@ function webViewerKeyDown(evt) {
 
     if (turnPage !== 0 && (!turnOnlyIfPageFit || pdfViewer.currentScaleValue === "page-fit")) {
       if (turnPage > 0) {
-        pdfViewer.nextPage();
+        if (PDFViewerApplication.page < PDFViewerApplication.pagesCount) {
+          PDFViewerApplication.page++;
+        }
       } else {
-        pdfViewer.previousPage();
+        if (PDFViewerApplication.page > 1) {
+          PDFViewerApplication.page--;
+        }
       }
 
       handled = true;

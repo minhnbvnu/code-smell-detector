@@ -1,0 +1,1 @@
+function MC(t,e,n){return t.hierNode.ancestor.parentNode===e.parentNode?t.hierNode.ancestor:n}

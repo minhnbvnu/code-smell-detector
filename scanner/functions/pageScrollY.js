@@ -1,0 +1,1 @@
+function pageScrollY() { return window.pageYOffset || (document.documentElement || document.body).scrollTop }

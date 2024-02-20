@@ -1,0 +1,1 @@
+function ImageEdit(t){var o;_classCallCheck(this,ImageEdit);(o=r.call(this,_,"imageEdit",!0)).data=(0,d.getStringOption)(t.data,["link","embed"]);o.id=t.id||"";o.use=t.use||"";o.usehref=t.usehref||"";o.border=null;o.extras=null;o.margin=null;return o}

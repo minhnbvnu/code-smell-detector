@@ -1,0 +1,1 @@
+function ___cxa_atexit(){return _atexit.apply(null,arguments)}

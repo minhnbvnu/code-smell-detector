@@ -1,0 +1,1 @@
+function bB(t,e){e&&t.attr("style",e)}

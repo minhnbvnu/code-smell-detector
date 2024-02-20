@@ -1,0 +1,1 @@
+function _JS_SystemInfo_GetPreferredDevicePixelRatio(){if(Module.WebXR&&Module.WebXR.isInXR){return 1}return Module.devicePixelRatio||window.devicePixelRatio||1}

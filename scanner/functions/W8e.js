@@ -1,0 +1,1 @@
+function W8e(e,t){return e.ranges.length==t.ranges.length&&e.ranges.filter((r,n)=>r.empty!=t.ranges[n].empty).length===0}

@@ -1,0 +1,1 @@
+function Zse(){!this.destroyed&&this._writableState.finished&&this.destroy()}

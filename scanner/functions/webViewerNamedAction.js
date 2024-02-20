@@ -1,5 +1,7 @@
 function webViewerNamedAction(evt) {
-  switch (evt.action) {
+  const action = evt.action;
+
+  switch (action) {
     case "GoToPage":
       PDFViewerApplication.appConfig.toolbar.pageNumber.select();
       break;
@@ -9,14 +11,6 @@ function webViewerNamedAction(evt) {
         PDFViewerApplication.findBar.toggle();
       }
 
-      break;
-
-    case "Print":
-      PDFViewerApplication.triggerPrinting();
-      break;
-
-    case "SaveAs":
-      webViewerSave();
       break;
   }
 }

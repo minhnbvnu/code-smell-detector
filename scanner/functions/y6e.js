@@ -1,0 +1,1 @@
+function y6e(e){let t=e.dom.lastChild;if(!t)return e.dom.getBoundingClientRect();let r=bh(t);return r[r.length-1]||null}

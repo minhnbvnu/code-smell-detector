@@ -1,0 +1,1 @@
+function UF(n){return arguments.length?this.each(n==null?Jst:(typeof n=="function"?tat:Qst)(n)):this.node().textContent}

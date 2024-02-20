@@ -1,0 +1,1 @@
+function Yk(a){a=a|0;var c=0,d=0;f[a>>2]=0;f[a+4>>2]=0;f[a+8>>2]=0;c=0;while(1){if((c|0)==3)break;f[a+(c<<2)>>2]=0;c=c+1|0}if((b[a+11>>0]|0)<0)d=(f[a+8>>2]&2147483647)+-1|0;else d=10;Hj(a,d,0);return}

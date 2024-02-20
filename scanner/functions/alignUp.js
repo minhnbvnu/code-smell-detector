@@ -1,0 +1,1 @@
+function alignUp(x,multiple){if(x%multiple>0){x+=multiple-x%multiple}return x}

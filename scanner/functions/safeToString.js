@@ -1,7 +1,10 @@
-function safeToString(obj) {
-    try {
-        return obj + "";
-    } catch (e) {
-        return "[no string representation]";
+function safeToString(ob) {
+    try
+    {
+        return ob.toString();
+    }
+    catch (exc)
+    {
+        return "";
     }
 }

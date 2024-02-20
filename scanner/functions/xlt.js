@@ -1,0 +1,1 @@
+function xlt(n){return[eO(n[0]),eO(n[1])]}

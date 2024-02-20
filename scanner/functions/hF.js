@@ -1,0 +1,1 @@
+function hF(t){az(t),t.registerComponentModel(QB),t.registerComponentView(aF),oF(t)}

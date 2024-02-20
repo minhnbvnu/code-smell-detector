@@ -1,0 +1,1 @@
+function _emscripten_glBlendColor(x0,x1,x2,x3){GLctx["blendColor"](x0,x1,x2,x3)}

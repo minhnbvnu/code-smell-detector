@@ -1,0 +1,1 @@
+function simplify(g){var simplified=(new Graph).setGraph(g.graph());_.forEach(g.nodes(),function(v){simplified.setNode(v,g.node(v))});_.forEach(g.edges(),function(e){var simpleLabel=simplified.edge(e.v,e.w)||{weight:0,minlen:1},label=g.edge(e);simplified.setEdge(e.v,e.w,{weight:simpleLabel.weight+label.weight,minlen:Math.max(simpleLabel.minlen,label.minlen)})});return simplified}

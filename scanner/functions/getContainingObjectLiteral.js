@@ -1,0 +1,3 @@
+function getContainingObjectLiteral(func) {
+                return (func.kind === 171 /* MethodDeclaration */ || func.kind === 174 /* GetAccessor */ || func.kind === 175 /* SetAccessor */) && func.parent.kind === 207 /* ObjectLiteralExpression */ ? func.parent : func.kind === 215 /* FunctionExpression */ && func.parent.kind === 299 /* PropertyAssignment */ ? func.parent.parent : void 0;
+            }

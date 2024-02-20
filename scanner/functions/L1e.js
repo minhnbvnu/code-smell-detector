@@ -1,0 +1,1 @@
+function L1e(e,t){var r=e.port||(e.protocol==="https:"?"443":"80"),i=SO(e.hostname),a=t.split(",");return a.map(j1e).some(function(n){var s=i.indexOf(n.hostname),o=s>-1&&s===i.length-n.hostname.length;return n.hasPort?r===n.port&&o:o})}

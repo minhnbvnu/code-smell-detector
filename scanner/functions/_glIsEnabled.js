@@ -1,0 +1,1 @@
+function _glIsEnabled(x0){return GLctx["isEnabled"](x0)}

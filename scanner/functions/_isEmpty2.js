@@ -1,0 +1,1 @@
+function _isEmpty2(){if(0===_classPrivateFieldGet(this,k).size)return!0;if(1===_classPrivateFieldGet(this,k).size){var t,r=_createForOfIteratorHelper(_classPrivateFieldGet(this,k).values());try{for(r.s();!(t=r.n()).done;){return t.value.isEmpty()}}catch(t){r.e(t)}finally{r.f()}}return!1}

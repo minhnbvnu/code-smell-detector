@@ -1,0 +1,1 @@
+function hasEncryptionScheme(a){a=a.getConfiguration();var b=a.audioCapabilities&&a.audioCapabilities[0];return(a=a.videoCapabilities&&a.videoCapabilities[0]||b)&&void 0!==a.encryptionScheme?!0:!1}

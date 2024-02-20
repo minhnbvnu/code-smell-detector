@@ -1,12 +1,1 @@
-function getSubroutineBias(subrs) {
-    const numSubrs = subrs.length;
-    let bias = 32768;
-
-    if (numSubrs < 1240) {
-      bias = 107;
-    } else if (numSubrs < 33900) {
-      bias = 1131;
-    }
-
-    return bias;
-  }
+function getSubroutineBias(t){var r=t.length,o=32768;r<1240?o=107:r<33900&&(o=1131);return o}

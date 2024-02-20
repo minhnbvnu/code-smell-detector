@@ -1,0 +1,1 @@
+function Vke(e,t,r){var i=!0;if(r){for(var a=t.length(),n=t.last(),s=a-1-n;s<a-1;++s)i=i&&t.at(s)==n;i&&t.truncate(n+1)}return i}

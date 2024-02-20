@@ -1,0 +1,1 @@
+function XZ(e,t=e){return{...kR(e),focus(){t.current&&t.current.focus()}}}

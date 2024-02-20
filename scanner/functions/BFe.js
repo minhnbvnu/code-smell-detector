@@ -1,0 +1,1 @@
+function BFe(e,t){const r=t||MFe,n=typeof r.includeImageAlt=="boolean"?r.includeImageAlt:!0,i=typeof r.includeHtml=="boolean"?r.includeHtml:!0;return Ese(e,n,i)}

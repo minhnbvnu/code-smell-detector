@@ -1,0 +1,1 @@
+function $se(e){return e.path=e.socketPath,hk.connect(e)}

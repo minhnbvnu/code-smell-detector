@@ -1,0 +1,1 @@
+function parseUnionType(){var o,s=w-1;if(consume(u.LPAREN,"UnionType should start with ("),o=[],B!==u.RPAREN)for(;o.push(parseTypeExpression()),B!==u.RPAREN;)expect(u.PIPE);return consume(u.RPAREN,"UnionType should end with )"),maybeAddRange({type:i.UnionType,elements:o},[s,P])}

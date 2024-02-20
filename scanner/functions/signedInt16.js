@@ -1,4 +1,1 @@
-function signedInt16(b0, b1) {
-    var value = (b0 << 8) + b1;
-    return value & 1 << 15 ? value - 0x10000 : value;
-  }
+function signedInt16(t,r){var o=(t<<8)+r;return 32768&o?o-65536:o}

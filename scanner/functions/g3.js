@@ -1,0 +1,1 @@
+function g3(t,e,r){const n=e.height,i=e.width+n/4,s=t.insert("rect",":first-child").attr("rx",n/2).attr("ry",n/2).attr("x",-i/2).attr("y",-n/2).attr("width",i).attr("height",n);return r.intersect=function(a){return F0(r,a)},s}

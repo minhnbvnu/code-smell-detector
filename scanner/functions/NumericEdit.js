@@ -1,0 +1,1 @@
+function NumericEdit(t){var o;_classCallCheck(this,NumericEdit);(o=r.call(this,_,"numericEdit",!0)).hScrollPolicy=(0,d.getStringOption)(t.hScrollPolicy,["auto","off","on"]);o.id=t.id||"";o.use=t.use||"";o.usehref=t.usehref||"";o.border=null;o.comb=null;o.extras=null;o.margin=null;return o}

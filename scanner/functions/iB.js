@@ -1,0 +1,1 @@
+function iB(t){y0(t),fm(t)}

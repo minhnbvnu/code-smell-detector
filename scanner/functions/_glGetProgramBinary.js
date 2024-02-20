@@ -1,0 +1,1 @@
+function _glGetProgramBinary(program,bufSize,length,binaryFormat,binary){GL.recordError(1282)}

@@ -1,0 +1,1 @@
+function parse_FilePass(blob,length,opts){var o={Type:blob.read_shift(2)};if(o.Type)parse_FilePassHeader(blob,length-2,o);else parse_XORObfuscation(blob,length-2,opts,o);return o}

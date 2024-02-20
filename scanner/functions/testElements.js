@@ -1,0 +1,1 @@
+function testElements (results) { this.initialize(results); }

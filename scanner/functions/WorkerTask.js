@@ -1,0 +1,1 @@
+function WorkerTask(t){_classCallCheck(this,WorkerTask);this.name=t;this.terminated=!1;this._capability=(0,c.createPromiseCapability)()}

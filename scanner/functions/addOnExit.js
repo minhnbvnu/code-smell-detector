@@ -1,0 +1,1 @@
+function addOnExit(cb){__ATEXIT__.unshift(cb)}

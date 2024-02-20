@@ -1,4 +1,4 @@
-function reset_canvas_and_history() {
+function reset_canvas_and_history(){
 	undos.length = 0;
 	redos.length = 0;
 	current_history_node = root_history_node = make_history_node({

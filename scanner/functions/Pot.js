@@ -1,0 +1,1 @@
+function Pot(n,t){return n*n*t}

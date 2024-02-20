@@ -1,0 +1,1 @@
+function _JS_WebCamVideo_GetNativeWidth(deviceId){return activeWebCams[deviceId]&&activeWebCams[deviceId].video.videoWidth}

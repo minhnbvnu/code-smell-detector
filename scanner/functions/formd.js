@@ -1,0 +1,1 @@
+function formd(x){return parseFloat(x).toFixed(2);}

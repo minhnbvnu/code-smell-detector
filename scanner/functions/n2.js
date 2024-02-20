@@ -1,0 +1,1 @@
+function n2(){var t=r2();return t.copy=function(){return e2(t,n2())},Ih.apply(t,arguments),q6(t)}

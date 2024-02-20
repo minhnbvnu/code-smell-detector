@@ -1,0 +1,1 @@
+function parse_BrtWbProp(data,length){data.read_shift(4);var dwThemeVersion=data.read_shift(4);var strName=length>8?parse_XLWideString(data):"";return[dwThemeVersion,strName]}

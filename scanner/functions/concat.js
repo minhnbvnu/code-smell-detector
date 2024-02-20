@@ -1,5 +1,3 @@
-function concat(texts) {
-            return texts.map(function (t) {
-                return t.text;
-            }).join('');
-        }
+function concat(array1, array2, index) {
+  return array1.concat(slice.call(array2, index));
+}

@@ -1,0 +1,1 @@
+function e5(t){return function(){var e=this.ownerDocument,r=this.namespaceURI;return r===oh&&e.documentElement.namespaceURI===oh?e.createElement(t):e.createElementNS(r,t)}}

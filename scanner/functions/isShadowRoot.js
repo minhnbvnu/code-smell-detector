@@ -1,0 +1,1 @@
+function isShadowRoot(i){return"undefined"!=typeof ShadowRoot&&(i instanceof getWindow(i).ShadowRoot||i instanceof ShadowRoot)}

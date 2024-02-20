@@ -1,0 +1,1 @@
+function XFAObjectArray(){var t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:1/0;_classCallCheck(this,XFAObjectArray);this[ze]=t;this[Ne]=[]}

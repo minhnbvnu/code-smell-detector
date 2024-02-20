@@ -1,0 +1,1 @@
+function parse_XFCRC(blob,length){blob.l+=2;var o={cxfs:0,crc:0};o.cxfs=blob.read_shift(2);o.crc=blob.read_shift(4);return o}

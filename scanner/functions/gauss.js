@@ -1,3 +1,3 @@
-function gauss(x, sigma) {
-    return Math.exp(-(x * x) / (2.0 * sigma * sigma));
+function gauss(direction, taps = 5, samplerNum) {
+    return new BlurExpr(direction, taps, samplerNum);
 }

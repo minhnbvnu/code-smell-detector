@@ -1,0 +1,1 @@
+function aSe(e,t,r,n){let i=gn.find(e.docView,t);if(!i)return 1;let a=t-i.posAtStart;if(a==0)return 1;if(a==i.length)return-1;let l=i.coordsAt(a,-1);if(l&&CL(r,n,l))return-1;let s=i.coordsAt(a,1);return s&&CL(r,n,s)?1:l&&rle(n,l)?-1:1}

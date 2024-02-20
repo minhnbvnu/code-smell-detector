@@ -1,0 +1,1 @@
+function UAe(e){return e.charAt(1).toUpperCase()}

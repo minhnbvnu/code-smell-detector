@@ -1,0 +1,1 @@
+function hasReplaceVal(val) { return function(obj) { return obj.from === val; }; }

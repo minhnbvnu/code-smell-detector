@@ -1,11 +1,1 @@
-function decodeAndClamp(value, addend, coefficient, max) {
-  value = addend + value * coefficient;
-
-  if (value < 0) {
-    value = 0;
-  } else if (value > max) {
-    value = max;
-  }
-
-  return value;
-}
+function decodeAndClamp(t,r,o,c){(t=r+t*o)<0?t=0:t>c&&(t=c);return t}

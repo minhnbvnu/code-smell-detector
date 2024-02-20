@@ -1,1 +1,1 @@
-function md(a,b){a=a|0;b=b|0;return-1}
+function MD(t,e,r){var n=t==null?0:t.length;if(!n)return-1;var i=r==null?0:h9(r);return i<0&&(i=DD(n+i,0)),Gg(t,Gi(e),i)}

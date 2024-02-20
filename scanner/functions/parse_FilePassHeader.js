@@ -1,0 +1,1 @@
+function parse_FilePassHeader(blob,length,oo){var o=oo||{};o.Info=blob.read_shift(2);blob.l-=2;if(o.Info===1)o.Data=parse_RC4Header(blob,length);else o.Data=parse_RC4CryptoHeader(blob,length);return o}

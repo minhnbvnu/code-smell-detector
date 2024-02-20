@@ -1,0 +1,1 @@
+function createGetKeys(names,length){return function(object){var O=toObject(object),i=0,result=[],key;for(key in O)if(key!=IE_PROTO)has(O,key)&&result.push(key);while(length>i)if(has(O,key=names[i++])){~indexOf.call(result,key)||result.push(key)}return result}}

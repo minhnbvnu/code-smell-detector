@@ -1,7 +1,1 @@
-function floor_(x) {
-	  var $x = convertToTensor(x, 'x', 'floor');
-	  var inputs = {
-	    x: $x
-	  };
-	  return ENGINE.runKernel(Floor, inputs);
-	}
+function floor_(e){var t=convertToTensor(e,"x","floor");return ENV.engine.runKernel(function(e){return e.floor(t)},{$x:t},function(e){return {$x:function(){return zerosLike(e)}}})}

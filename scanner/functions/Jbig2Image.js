@@ -1,1 +1,1 @@
-function Jbig2Image() {}
+function Jbig2Image(){_classCallCheck(this,Jbig2Image)}

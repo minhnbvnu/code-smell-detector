@@ -1,0 +1,1 @@
+function KH(n,t,e){var i=[],r=0,o=0;if(n.length!==t*e)throw new Error("Array dimensions must match input length.");for(var s=0;s<t;s++){for(var a=[],l=0;l<e;l++)a.push(n[o]),o+=1;i.push(a),r+=1}return i}

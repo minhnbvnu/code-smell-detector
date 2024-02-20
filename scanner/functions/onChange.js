@@ -1,19 +1,8 @@
-function onChange() {
-  removeInteractions();
-  switch (mode.value) {
-    case 'draw': {
-      map.addInteraction(draw);
-      map.addInteraction(snap);
-      break;
-    }
-    case 'modify': {
-      map.addInteraction(select);
-      map.addInteraction(modify);
-      map.addInteraction(snap);
-      break;
-    }
-    default: {
-      // pass
-    }
-  }
-}
+function onChange(cur, prev) {
+        t.ok(cur.mtime > prev.mtime, 'modified date incremented')
+        t.ok(cur.size > prev.size, 'content modified')
+
+        t.equal(agent.getTransaction(), trans, 'should preserve transaction')
+        t.equal(trans.trace.root.children.length, 0, 'should not create any segments')
+        fs.unwatchFile(name, onChange)
+      }

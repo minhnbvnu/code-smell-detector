@@ -1,0 +1,1 @@
+function removeInputValuePrefix(i,o){return o&&" "===(i=i.slice(o.length))[0]&&(i=i.slice(1)),i}

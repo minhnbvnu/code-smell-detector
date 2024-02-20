@@ -1,0 +1,1 @@
+function Oae(e){for(;e.attributes.length;)e.removeAttributeNode(e.attributes[0])}

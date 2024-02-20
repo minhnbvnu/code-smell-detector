@@ -1,35 +1,30 @@
 function wrapWithStateOrWrapper(oldVisitor, state, wrapper) {
-	  var newVisitor = {};
+  const newVisitor = {};
 
-	  var _loop = function _loop(key) {
-	    var fns = oldVisitor[key];
+  for (const key of Object.keys(oldVisitor)) {
+    let fns = oldVisitor[key];
+    if (!Array.isArray(fns)) continue;
+    fns = fns.map(function (fn) {
+      let newFn = fn;
 
-	    if (!Array.isArray(fns)) return "continue";
+      if (state) {
+        newFn = function (path) {
+          return fn.call(state, path, state);
+        };
+      }
 
-	    fns = fns.map(function (fn) {
-	      var newFn = fn;
+      if (wrapper) {
+        newFn = wrapper(state.key, key, newFn);
+      }
 
-	      if (state) {
-	        newFn = function newFn(path) {
-	          return fn.call(state, path, state);
-	        };
-	      }
+      if (newFn !== fn) {
+        newFn.toString = () => fn.toString();
+      }
 
-	      if (wrapper) {
-	        newFn = wrapper(state.key, key, newFn);
-	      }
+      return newFn;
+    });
+    newVisitor[key] = fns;
+  }
 
-	      return newFn;
-	    });
-
-	    newVisitor[key] = fns;
-	  };
-
-	  for (var key in oldVisitor) {
-	    var _ret = _loop(key);
-
-	    if (_ret === "continue") continue;
-	  }
-
-	  return newVisitor;
-	}
+  return newVisitor;
+}

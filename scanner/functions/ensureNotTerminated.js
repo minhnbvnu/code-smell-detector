@@ -1,5 +1,1 @@
-function ensureNotTerminated() {
-      if (terminated) {
-        throw new Error("Worker was terminated");
-      }
-    }
+function ensureNotTerminated(){if(_)throw new Error("Worker was terminated")}

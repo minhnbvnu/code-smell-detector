@@ -1,0 +1,3 @@
+function loadGroupsStateInfo() {
+        filters.getGroups();
+    }

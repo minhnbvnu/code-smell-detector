@@ -1,10 +1,1 @@
-function writeDict(dict, buffer, transform) {
-  buffer.push("<<");
-
-  for (const key of dict.getKeys()) {
-    buffer.push(` /${(0, _core_utils.escapePDFName)(key)} `);
-    writeValue(dict.getRaw(key), buffer, transform);
-  }
-
-  buffer.push(">>");
-}
+function writeDict(t,r,o){r.push("<<");var c,l=_createForOfIteratorHelper(t.getKeys());try{for(l.s();!(c=l.n()).done;){var h=c.value;r.push(" /".concat((0,u.escapePDFName)(h)," "));writeValue(t.getRaw(h),r,o)}}catch(t){l.e(t)}finally{l.f()}r.push(">>")}

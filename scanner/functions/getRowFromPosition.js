@@ -1,0 +1,1 @@
+function getRowFromPosition(e){return Math.floor((e+offset)/options.rowHeight)}

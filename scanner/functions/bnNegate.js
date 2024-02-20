@@ -1,0 +1,1 @@
+function bnNegate(){var r=nbi();BigInteger.ZERO.subTo(this,r);return r}

@@ -1,3 +1,1 @@
-function isType(type, expected) {
-  return type === expected;
-}
+function isType(i,o){var s={}.toString.call(i);return 0===s.indexOf("[object")&&s.indexOf(o+"]")>-1}

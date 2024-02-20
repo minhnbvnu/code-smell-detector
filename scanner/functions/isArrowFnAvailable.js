@@ -1,0 +1,3 @@
+function isArrowFnAvailable() {
+    return tryThis('[1 ,2, 3].map(x => x * x)', 'arrow function');
+}

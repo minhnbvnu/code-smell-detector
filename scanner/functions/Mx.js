@@ -1,0 +1,1 @@
+function Mx(t,e){return function(r){this.setAttributeNS(t.space,t.local,e.call(this,r))}}

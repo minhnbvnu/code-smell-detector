@@ -1,0 +1,1 @@
+function initTaskFilter(container){var tasks=initTaskFilterTasks(container);var input=initTaskFilterInput(container,tasks)}

@@ -1,3 +1,1 @@
-function save(_x, _x2) {
-	      return _save.apply(this, arguments);
-	    }
+function save() {textarea.value = cm.getValue();}

@@ -1,0 +1,1 @@
+function _updateTransform2(){var t=_classPrivateMethodGet(this,X,_getPadding2).call(this)/2;this.ctx.setTransform(this.scaleFactor,0,0,this.scaleFactor,this.translationX*this.scaleFactor+t,this.translationY*this.scaleFactor+t)}

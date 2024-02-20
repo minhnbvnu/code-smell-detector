@@ -1,0 +1,1 @@
+function setCSSVal(el,prop,val){try{el[LEXICON.s][prop]!==undefined$1&&(el[LEXICON.s][prop]=parseCSSVal(prop,val))}catch(e){}}

@@ -1,0 +1,1 @@
+function getIsDefaultRenderFn(){var i;return!(null==(i=ie.props.render)||!i.$$tippy)}

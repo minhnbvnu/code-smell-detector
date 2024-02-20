@@ -1,0 +1,1 @@
+function _JS_WebRequest_GetResponseMetaDataLengths(requestId,buffer){var response=wr.responses[requestId];if(!response){HEAPU32[buffer>>2]=0;HEAPU32[(buffer>>2)+1]=0;return}var headers=jsWebRequestGetResponseHeaderString(requestId);HEAPU32[buffer>>2]=lengthBytesUTF8(headers);HEAPU32[(buffer>>2)+1]=lengthBytesUTF8(response.url)}

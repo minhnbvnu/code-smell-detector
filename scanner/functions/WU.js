@@ -1,0 +1,1 @@
+function WU(n){return new Sr(n)}

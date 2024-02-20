@@ -1,0 +1,1 @@
+function LoopbackPort(){_classCallCheck(this,LoopbackPort);this._listeners=[];this._deferred=Promise.resolve()}

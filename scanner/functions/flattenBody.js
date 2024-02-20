@@ -1,7 +1,1 @@
-function flattenBody(body) {
-	      if (body.type === 'alternative') {
-	        return body.body;
-	      } else {
-	        return [body];
-	      }
-	    }
+function flattenBody(i){return"alternative"===i.type?i.body:[i]}

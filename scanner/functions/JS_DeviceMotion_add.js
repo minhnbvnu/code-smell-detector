@@ -1,0 +1,1 @@
+function JS_DeviceMotion_add(){if(JS_Accelerometer_callback==0&&JS_LinearAccelerationSensor_callback==0&&JS_GravitySensor_callback==0&&JS_Gyroscope_callback==0){JS_RequestDeviceSensorPermissions(2);window.addEventListener("devicemotion",JS_DeviceMotion_eventHandler)}}

@@ -1,0 +1,1 @@
+function IconLoading_createClass(Constructor, protoProps, staticProps) { if (protoProps) IconLoading_defineProperties(Constructor.prototype, protoProps); if (staticProps) IconLoading_defineProperties(Constructor, staticProps); return Constructor; }

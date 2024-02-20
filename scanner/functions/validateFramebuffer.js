@@ -1,7 +1,1 @@
-function validateFramebuffer(gl) {
-	  var status = gl.checkFramebufferStatus(gl.FRAMEBUFFER);
-
-	  if (status !== gl.FRAMEBUFFER_COMPLETE) {
-	    throw new Error('Error binding framebuffer: ' + getFramebufferErrorMessage(gl, status));
-	  }
-	}
+function validateFramebuffer(e){var t=e.checkFramebufferStatus(e.FRAMEBUFFER);if(t!==e.FRAMEBUFFER_COMPLETE)throw new Error("Error binding framebuffer: "+getFramebufferErrorMessage(e,t))}

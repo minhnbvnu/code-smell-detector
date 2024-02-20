@@ -1,0 +1,1 @@
+function _emscripten_glBufferData(target,size,data,usage){GLctx.bufferData(target,data?HEAPU8.subarray(data,data+size):size,usage)}

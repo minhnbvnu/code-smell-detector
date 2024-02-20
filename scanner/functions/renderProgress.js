@@ -6,7 +6,7 @@ function renderProgress(index, total, l10n) {
   progressBar.value = progress;
   l10n.get("print_progress_percent", {
     progress
-  }).then(msg => {
+  }, progress + "%").then(msg => {
     progressPerc.textContent = msg;
   });
 }

@@ -1,0 +1,1 @@
+function DJ(t,e){return t&&t.signal?e.signalRef(t.signal):t===false?false:true}

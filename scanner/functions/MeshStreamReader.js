@@ -1,10 +1,1 @@
-function MeshStreamReader(stream, context) {
-    this.stream = stream;
-    this.context = context;
-    this.buffer = 0;
-    this.bufferLength = 0;
-    const numComps = context.numComps;
-    this.tmpCompsBuf = new Float32Array(numComps);
-    const csNumComps = context.colorSpace.numComps;
-    this.tmpCsCompsBuf = context.colorFn ? new Float32Array(csNumComps) : this.tmpCompsBuf;
-  }
+function MeshStreamReader(t,r){_classCallCheck(this,MeshStreamReader);this.stream=t;this.context=r;this.buffer=0;this.bufferLength=0;var o=r.numComps;this.tmpCompsBuf=new Float32Array(o);var c=r.colorSpace.numComps;this.tmpCsCompsBuf=r.colorFn?new Float32Array(c):this.tmpCompsBuf}

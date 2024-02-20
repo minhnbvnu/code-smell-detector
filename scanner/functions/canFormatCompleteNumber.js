@@ -1,0 +1,1 @@
+function canFormatCompleteNumber(i,o){return"IS_POSSIBLE"===checkNumberLength(i,o)}

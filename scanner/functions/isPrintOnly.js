@@ -1,0 +1,1 @@
+function isPrintOnly(t){return t.relevant.length>0&&!t.relevant[0].excluded&&"print"===t.relevant[0].viewname}

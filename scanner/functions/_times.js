@@ -1,0 +1,1 @@
+function _times(buffer){if(buffer!==0){_memset(buffer,0,16)}return 0}

@@ -1,0 +1,1 @@
+function NSe(e,t){return new Jt(e,t).patch}

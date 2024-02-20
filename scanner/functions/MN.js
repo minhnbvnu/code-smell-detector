@@ -1,0 +1,1 @@
+function MN(t){var e=new sr({multigraph:!0,compound:!0}),r=g0(t.graph());return e.setGraph(o0({},TN,p0(r,wN),No(r,EN))),vt(t.nodes(),function(n){var i=g0(t.node(n));e.setNode(n,ka(p0(i,CN),SN)),e.setParent(n,t.parent(n))}),vt(t.edges(),function(n){var i=g0(t.edge(n));e.setEdge(n,o0({},LN,p0(i,AN),No(i,DN)))}),e}

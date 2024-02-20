@@ -1,7 +1,7 @@
-function tryRequire (name) {
-  try {
-    return require(name)
-  } catch (e) {
-    return {}
-  }
+function tryRequire(prefix, name) {
+	try {
+		return require(prefix + name);				
+	} catch (ex) {
+		return require(name);
+	}
 }

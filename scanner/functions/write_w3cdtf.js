@@ -1,0 +1,1 @@
+function write_w3cdtf(d,t){try{return d.toISOString().replace(/\.\d*/,"")}catch(e){if(t)throw e}}

@@ -1,5 +1,1 @@
-function generateTerm(node) {
-	    assertType(node.type, 'anchor|characterClass|characterClassEscape|empty|group|quantifier|reference|value');
-
-	    return generate(node);
-	  }
+function generateTerm(i){return assertType(i.type,"anchor|characterClass|characterClassEscape|empty|group|quantifier|reference|unicodePropertyEscape|value|dot"),generate(i)}

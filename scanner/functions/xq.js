@@ -1,1 +1,1 @@
-function Xq(a,b){a=a|0;b=b|0;var c=0;c=fa-16|0;fa=c;L[c+12>>2]=a;L[c+8>>2]=b;lg(L[c+12>>2],L[c+8>>2],1);fa=c+16|0}
+function xq(){return -1}

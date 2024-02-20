@@ -1,0 +1,1 @@
+function KAe(e){return e.join(" ").trim()}

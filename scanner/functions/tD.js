@@ -1,0 +1,1 @@
+function tD(t){t.eachSeriesByType("tree",(function(t){var e=t.getData();e.tree.eachNode((function(t){var n=t.getModel().getModel("itemStyle").getItemStyle();A(e.ensureUniqueItemVisual(t.dataIndex,"style"),n)}))}))}

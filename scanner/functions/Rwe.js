@@ -1,0 +1,1 @@
+function Rwe(e){return e===null?!1:AW.exec(e)!==null||IW.exec(e)!==null}

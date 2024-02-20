@@ -1,0 +1,1 @@
+function tye(){return O.useContext(Kne)}

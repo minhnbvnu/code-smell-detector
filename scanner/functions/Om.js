@@ -1,0 +1,1 @@
+function Om(a){a=a|0;var b=0;f[a>>2]=3588;b=f[a+20>>2]|0;if(b|0)Oq(b);b=f[a+8>>2]|0;if(!b){Oq(a);return}Oq(b);Oq(a);return}

@@ -1,0 +1,1 @@
+function RadialAxialShadingPattern(t){var a;_classCallCheck(this,RadialAxialShadingPattern);(a=r.call(this))._type=t[1];a._bbox=t[2];a._colorStops=t[3];a._p0=t[4];a._p1=t[5];a._r0=t[6];a._r1=t[7];a.matrix=null;return a}

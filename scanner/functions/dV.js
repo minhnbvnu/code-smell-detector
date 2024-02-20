@@ -1,0 +1,1 @@
+function dV(n){let t=Array.prototype.slice.call(n.labels||[]);if(!t.length){t=[];let e=n.getRootNode();if(n.id){let i=e.querySelectorAll(`label[for = ${n.id}]`);for(let r=0;r<i.length;r++)t.push(i[r])}}return t}

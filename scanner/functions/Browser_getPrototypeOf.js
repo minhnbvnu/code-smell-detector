@@ -1,0 +1,1 @@
+function Browser_getPrototypeOf(o) { Browser_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return Browser_getPrototypeOf(o); }

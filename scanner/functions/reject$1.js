@@ -1,0 +1,1 @@
+function reject$1(i){var o=new this(noop);return reject(o,i),o}

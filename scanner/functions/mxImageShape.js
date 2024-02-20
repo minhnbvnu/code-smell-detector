@@ -1,0 +1,1 @@
+function mxImageShape(a,b,c,d,e){mxShape.call(this);this.bounds=a;this.image=b;this.fill=c;this.stroke=d;this.strokewidth=null!=e?e:1;this.shadow=!1}

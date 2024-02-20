@@ -1,0 +1,1 @@
+function R6(t){return Math.max(0,-Hs(Math.abs(t)))}

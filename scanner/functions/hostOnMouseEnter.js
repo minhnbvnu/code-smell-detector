@@ -1,0 +1,1 @@
+function hostOnMouseEnter(){_scrollbarsAutoHideLeave&&refreshScrollbarsAutoHide(!0)}

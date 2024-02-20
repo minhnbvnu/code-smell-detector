@@ -1,0 +1,1 @@
+function WsdlAddress(t){var o;_classCallCheck(this,WsdlAddress);(o=r.call(this,u,"wsdlAddress")).id=t.id||"";o.name=t.name||"";o.use=t.use||"";o.usehref=t.usehref||"";return o}

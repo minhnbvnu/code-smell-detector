@@ -1,0 +1,1 @@
+function DMe(e){return"var default"+e+" = defaults["+e+"];"}

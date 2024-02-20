@@ -1,0 +1,1 @@
+function couldNumberBelongToCountry(i,o,s){for(var u=getInternationalPhoneNumberPrefix(o,s),C=0;C<i.length&&C<u.length;){if(i[C]!==u[C])return!1;C++}return!0}

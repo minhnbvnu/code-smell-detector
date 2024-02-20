@@ -1,0 +1,1 @@
+function WN(t){vt(t.nodes(),function(e){var r=t.node(e);if(r.dummy==="selfedge"){var n=t.node(r.e.v),i=n.x+n.width/2,s=n.y,a=r.x-i,o=n.height/2;t.setEdge(r.e,r.label),t.removeNode(e),r.label.points=[{x:i+2*a/3,y:s-o},{x:i+5*a/6,y:s-o},{x:i+a,y:s},{x:i+5*a/6,y:s+o},{x:i+2*a/3,y:s+o}],r.label.x=r.x,r.label.y=r.y}})}

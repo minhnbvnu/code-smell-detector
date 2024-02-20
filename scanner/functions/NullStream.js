@@ -1,3 +1,1 @@
-function NullStream() {
-    Stream.call(this, new Uint8Array(0));
-  }
+function NullStream(){_classCallCheck(this,NullStream);return r.call(this,new Uint8Array(0))}

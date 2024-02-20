@@ -1,0 +1,1 @@
+function baseProperty$1(key){return function(object){return null==object?void 0:object[key]}}

@@ -1,0 +1,1 @@
+function FontRendererFactory(){_classCallCheck(this,FontRendererFactory)}

@@ -1,0 +1,1 @@
+function G4(n){let t=n[0],e=n[1],i=n[2];try{e.apply(t,i)}catch(r){setTimeout(()=>{throw r})}}

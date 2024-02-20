@@ -1,0 +1,1 @@
+function rle(){return new $a(this.curve,this.x,this.y.negate(),this.z)}

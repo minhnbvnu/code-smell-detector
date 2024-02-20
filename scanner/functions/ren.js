@@ -1,0 +1,1 @@
+function ren(rn,na){var ne=ed.dom.create(na);each(rn.attributes,function(a){if(a.specified&&a.nodeValue)ne.setAttribute(a.nodeName.toLowerCase(),a.nodeValue);});each(rn.childNodes,function(n){ne.appendChild(n.cloneNode(true));});rn.parentNode.replaceChild(ne,rn);return ne;}

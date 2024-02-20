@@ -1,0 +1,1 @@
+function _classCheckPrivateStaticFieldDescriptor(t,r){if(void 0===t)throw new TypeError("attempted to "+r+" private static field before its declaration")}

@@ -1,4 +1,1 @@
-function or(conditions) {
-  const params = [null].concat(Array.prototype.slice.call(arguments));
-  return new (Function.prototype.bind.apply(Or, params))();
-}
+function or(i,a){return function(e,t){var r=ki(e)?Ds:Be,n=a?a():{};return r(e,i,zr(t,2),n)}}

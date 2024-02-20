@@ -1,0 +1,1 @@
+function tTe(e,t,r){let n=0,i;return a;function a(c){return e.enter("thematicBreak"),l(c)}function l(c){return i=c,s(c)}function s(c){return c===i?(e.enter("thematicBreakSequence"),u(c)):n>=3&&(c===null||ft(c))?(e.exit("thematicBreak"),t(c)):r(c)}function u(c){return c===i?(e.consume(c),n++,u):(e.exit("thematicBreakSequence"),Ht(c)?Or(e,s,"whitespace")(c):s(c))}}

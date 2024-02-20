@@ -1,0 +1,1 @@
+function fD(t,e){var n=t.visual,i=[];q(n)?hD(n,(function(t){i.push(t)})):null!=n&&i.push(n);e||1!==i.length||{color:1,symbol:1}.hasOwnProperty(t.type)||(i[1]=i[0]),wD(t,i)}

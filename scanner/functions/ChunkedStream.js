@@ -1,0 +1,1 @@
+function ChunkedStream(t,o,c){var l;_classCallCheck(this,ChunkedStream);(l=r.call(this,new Uint8Array(t),0,t,null)).chunkSize=o;l._loadedChunks=new Set;l.numChunks=Math.ceil(t/o);l.manager=c;l.progressiveDataLength=0;l.lastSuccessfulEnsureByteChunk=-1;return l}

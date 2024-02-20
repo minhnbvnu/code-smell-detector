@@ -1,0 +1,1 @@
+function CFF(){_classCallCheck(this,CFF);this.header=null;this.names=[];this.topDict=null;this.strings=new v;this.globalSubrIndex=null;this.encoding=null;this.charset=null;this.charStrings=null;this.fdArray=[];this.fdSelect=null;this.isCIDFont=!1}

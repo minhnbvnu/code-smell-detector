@@ -1,0 +1,3 @@
+function getBlueprintCommands() {
+  return buildBlueprintCommands();
+}

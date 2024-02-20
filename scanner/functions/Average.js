@@ -1,8 +1,3 @@
-function average(config) {
-	  if (Array.isArray(config)) {
-	    var layer = new Average({});
-	    return layer.apply(config);
-	  } else {
-	    return new Average(config);
+function Average(args) {
+	    return _Merge3.call(this, args) || this;
 	  }
-	}

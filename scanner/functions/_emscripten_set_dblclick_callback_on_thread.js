@@ -1,0 +1,1 @@
+function _emscripten_set_dblclick_callback_on_thread(target,userData,useCapture,callbackfunc,targetThread){JSEvents.registerMouseEventCallback(target,userData,useCapture,callbackfunc,7,"dblclick",targetThread);return 0}

@@ -1,0 +1,1 @@
+function testStorage (results) { this.initialize(results); }

@@ -1,0 +1,1 @@
+function yD(t){return function(e){return tu(e,t)}}

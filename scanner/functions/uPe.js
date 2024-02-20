@@ -1,0 +1,2 @@
+function uPe(e){return new Promise((t,r)=>{process.nextTick(()=>{if(yg){let a=new Error(Rte);e&&e(Rte),r(a)}let i="";Ht("echo $SHELL",function(a,n){a||(i=n.toString().split(`
+`)[0]),e&&e(i),t(i)})})})}

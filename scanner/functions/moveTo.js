@@ -1,6 +1,1 @@
-function moveTo(x, y) {
-      cmds.push({
-        cmd: "moveTo",
-        args: [x, y]
-      });
-    }
+function moveTo(t,o){r.push({cmd:"moveTo",args:[t,o]})}

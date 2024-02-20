@@ -1,1 +1,1 @@
-function vy(a,b,c,d){a=S(a);b=S(b);c=S(c);d=S(d);var e=0,f=0;e=fa-16|0;fa=e;P[e+12>>2]=a;P[e+8>>2]=b;P[e+4>>2]=c;P[e>>2]=d;f=sa(16);ie(f,e+12|0,e+8|0,e+4|0,e);fa=e+16|0;return f|0}
+function Vy(t,e,r){e=Jc(e,t);for(var n=-1,i=e.length,s=!1;++n<i;){var a=Ao(e[n]);if(!(s=t!=null&&r(t,a)))break;t=t[a]}return s||++n!=i?s:(i=t==null?0:t.length,!!i&&W1(i)&&qc(a,i)&&(nr(t)||ya(t)))}

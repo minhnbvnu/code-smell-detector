@@ -1,0 +1,1 @@
+function G0(f){return g=>{setTimeout(f,void 0,g)}}

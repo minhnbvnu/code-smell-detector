@@ -1,0 +1,1 @@
+function Manifest(t){var o;_classCallCheck(this,Manifest);(o=r.call(this,_,"manifest",!0)).action=(0,d.getStringOption)(t.action,["include","all","exclude"]);o.id=t.id||"";o.name=t.name||"";o.use=t.use||"";o.usehref=t.usehref||"";o.extras=null;o.ref=new c.XFAObjectArray;return o}

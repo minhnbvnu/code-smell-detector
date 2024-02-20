@@ -1,0 +1,1 @@
+function Hse(e){return e.path=void 0,!e.servername&&e.servername!==""&&(e.servername=hk.isIP(e.host)?"":e.host),Pse.connect(e)}

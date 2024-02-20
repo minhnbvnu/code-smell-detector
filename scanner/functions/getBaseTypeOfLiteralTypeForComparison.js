@@ -1,0 +1,3 @@
+function getBaseTypeOfLiteralTypeForComparison(type) {
+                return type.flags & (128 /* StringLiteral */ | 134217728 /* TemplateLiteral */ | 268435456 /* StringMapping */) ? stringType : type.flags & (256 /* NumberLiteral */ | 32 /* Enum */) ? numberType : type.flags & 2048 /* BigIntLiteral */ ? bigintType : type.flags & 512 /* BooleanLiteral */ ? booleanType : type.flags & 1048576 /* Union */ ? mapType(type, getBaseTypeOfLiteralTypeForComparison) : type;
+            }

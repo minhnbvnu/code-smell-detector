@@ -1,0 +1,1 @@
+function _emscripten_get_device_pixel_ratio(){return typeof devicePixelRatio==="number"&&devicePixelRatio||1}

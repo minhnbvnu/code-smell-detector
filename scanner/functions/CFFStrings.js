@@ -1,0 +1,1 @@
+function CFFStrings(){_classCallCheck(this,CFFStrings);this.strings=[]}

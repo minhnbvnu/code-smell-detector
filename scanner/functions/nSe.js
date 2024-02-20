@@ -1,0 +1,1 @@
+function nSe(e,t){if(!t.bubbles)return!0;if(t.defaultPrevented)return!1;for(let r=t.target,n;r!=e.contentDOM;r=r.parentNode)if(!r||r.nodeType==11||(n=Er.get(r))&&n.ignoreEvent(t))return!1;return!0}

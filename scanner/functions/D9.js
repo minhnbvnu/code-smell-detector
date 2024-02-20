@@ -1,0 +1,1 @@
+function D9(n,t,e,i){let r=R.sizeFromShape(t),s=R.sizeFromShape(n.shape)/r,a=Et({inputs:{x:n},attrs:{shape:[s,r]},backend:i}),l=ci(a,n.dtype,"max",i),c=Et({inputs:{x:l},attrs:{shape:e},backend:i});return i.disposeIntermediateTensorInfo(a),i.disposeIntermediateTensorInfo(l),c}

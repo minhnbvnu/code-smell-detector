@@ -1,4 +1,4 @@
-function to_canvas_coords({ clientX, clientY }) {
+function to_canvas_coords({clientX, clientY}) {
 	if (clientX === undefined || clientY === undefined) {
 		throw new TypeError("clientX and clientY must be defined (not {x, y} or x, y or [x, y])");
 	}

@@ -1,5 +1,5 @@
-function image_attributes() {
-	if (image_attributes.$window) {
+function image_attributes(){
+	if(image_attributes.$window){
 		image_attributes.$window.close();
 	}
 	const $w = image_attributes.$window = new $DialogWindow(localize("Attributes"));
@@ -15,7 +15,7 @@ function image_attributes() {
 		[localize("Resolution:")]: "72 x 72 dots per inch", // if localizing this, remove "direction" setting below
 	};
 	const $table = $(E("table")).appendTo($main);
-	for (const k in table) {
+	for(const k in table){
 		const $tr = $(E("tr")).appendTo($table);
 		const $key = $(E("td")).appendTo($tr).text(k);
 		const $value = $(E("td")).appendTo($tr).text(table[k]);
@@ -26,19 +26,19 @@ function image_attributes() {
 
 	// Dimensions
 
-	const unit_sizes_in_px = { px: 1, in: 72, cm: 28.3465 };
+	const unit_sizes_in_px = {px: 1, in: 72, cm: 28.3465};
 	let current_unit = image_attributes.unit = image_attributes.unit || "px";
 	let width_in_px = main_canvas.width;
 	let height_in_px = main_canvas.height;
 
-	const $width_label = $(E("label")).appendTo($main).html(display_hotkey(localize("&Width:")));
-	const $height_label = $(E("label")).appendTo($main).html(display_hotkey(localize("&Height:")));
-	const $width = $(E("input")).attr({ type: "number", min: 1, "aria-keyshortcuts": "Alt+W W W" }).addClass("no-spinner inset-deep").appendTo($width_label);
-	const $height = $(E("input")).attr({ type: "number", min: 1, "aria-keyshortcuts": "Alt+H H H" }).addClass("no-spinner inset-deep").appendTo($height_label);
+	const $width_label = $(E("label")).appendTo($main).text(localize("Width:"));
+	const $height_label = $(E("label")).appendTo($main).text(localize("Height:"));
+	const $width = $(E("input")).attr({type: "number", min: 1}).addClass("no-spinner inset-deep").appendTo($width_label);
+	const $height = $(E("input")).attr({type: "number", min: 1}).addClass("no-spinner inset-deep").appendTo($height_label);
 
 	$main.find("input")
-		.css({ width: "40px" })
-		.on("change keyup keydown keypress pointerdown pointermove paste drop", () => {
+		.css({width: "40px"})
+		.on("change keyup keydown keypress pointerdown pointermove paste drop", ()=> {
 			width_in_px = $width.val() * unit_sizes_in_px[current_unit];
 			height_in_px = $height.val() * unit_sizes_in_px[current_unit];
 		});
@@ -48,12 +48,12 @@ function image_attributes() {
 	const $units = $(E("fieldset")).appendTo($main).append(`
 		<legend>${localize("Units")}</legend>
 		<div class="fieldset-body">
-			<input type="radio" name="units" id="unit-in" value="in" aria-keyshortcuts="Alt+I I"><label for="unit-in">${display_hotkey(localize("&Inches"))}</label>
-			<input type="radio" name="units" id="unit-cm" value="cm" aria-keyshortcuts="Alt+M M"><label for="unit-cm">${display_hotkey(localize("C&m"))}</label>
-			<input type="radio" name="units" id="unit-px" value="px" aria-keyshortcuts="Alt+P P"><label for="unit-px">${display_hotkey(localize("&Pixels"))}</label>
+			<input type="radio" name="units" id="unit-in" value="in"><label for="unit-in">${localize("Inches")}</label>
+			<input type="radio" name="units" id="unit-cm" value="cm"><label for="unit-cm">${localize("Cm")}</label>
+			<input type="radio" name="units" id="unit-px" value="px"><label for="unit-px">${localize("Pixels")}</label>
 		</div>
 	`);
-	$units.find(`[value=${current_unit}]`).attr({ checked: true });
+	$units.find(`[value=${current_unit}]`).attr({checked: true});
 	$units.on("change", () => {
 		const new_unit = $units.find(":checked").val();
 		$width.val(width_in_px / unit_sizes_in_px[new_unit]);
@@ -64,11 +64,11 @@ function image_attributes() {
 	const $colors = $(E("fieldset")).appendTo($main).append(`
 		<legend>${localize("Colors")}</legend>
 		<div class="fieldset-body">
-			<input type="radio" name="colors" id="attribute-monochrome" value="monochrome" aria-keyshortcuts="Alt+B B"><label for="attribute-monochrome">${display_hotkey(localize("&Black and white"))}</label>
-			<input type="radio" name="colors" id="attribute-polychrome" value="polychrome" aria-keyshortcuts="Alt+L L"><label for="attribute-polychrome">${display_hotkey(localize("Co&lors"))}</label>
+			<input type="radio" name="colors" id="attribute-monochrome" value="monochrome"><label for="attribute-monochrome">${localize("Black and white")}</label>
+			<input type="radio" name="colors" id="attribute-polychrome" value="polychrome"><label for="attribute-polychrome">${localize("Colors")}</label>
 		</div>
 	`);
-	$colors.find(`[value=${monochrome ? "monochrome" : "polychrome"}]`).attr({ checked: true });
+	$colors.find(`[value=${monochrome ? "monochrome" : "polychrome"}]`).attr({checked: true});
 
 	const $transparency = $(E("fieldset")).appendTo($main).append(`
 		<legend>${localize("Transparency")}</legend>
@@ -77,7 +77,7 @@ function image_attributes() {
 			<input type="radio" name="transparency" id="attribute-opaque" value="opaque"><label for="attribute-opaque">${localize("Opaque")}</label>
 		</div>
 	`);
-	$transparency.find(`[value=${transparency ? "transparent" : "opaque"}]`).attr({ checked: true });
+	$transparency.find(`[value=${transparency ? "transparent" : "opaque"}]`).attr({checked: true});
 
 	// Buttons on the right
 
@@ -93,7 +93,7 @@ function image_attributes() {
 		transparency = (transparency_option == "transparent");
 		monochrome = (colors_option == "monochrome");
 
-		if (monochrome != was_monochrome) {
+		if(monochrome != was_monochrome){
 			if (selection) {
 				// want to detect monochrome based on selection + canvas
 				// simplest way to do that is to meld them together
@@ -101,13 +101,13 @@ function image_attributes() {
 			}
 			monochrome_info = detect_monochrome(main_ctx);
 
-			if (monochrome) {
-				if (monochrome_info.isMonochrome && monochrome_info.presentNonTransparentRGBAs.length === 2) {
+			if(monochrome){
+				if(monochrome_info.isMonochrome && monochrome_info.presentNonTransparentRGBAs.length === 2) {
 					palette = make_monochrome_palette(...monochrome_info.presentNonTransparentRGBAs);
-				} else {
+				}else{
 					palette = monochrome_palette;
 				}
-			} else {
+			}else{
 				palette = polychrome_palette;
 			}
 			selected_colors.foreground = palette[0];
@@ -132,32 +132,25 @@ function image_attributes() {
 		//   b) Consider the case where color is introduced to the canvas while in monochrome mode.
 		//      We only want to show this dialog if it would also change the palette (above), never leave you on an outdated palette.
 		//   c) And it's nice to be able to change other options without worrying about it trying to convert the document to monochrome.
-		if (monochrome != was_monochrome) {
+		if(monochrome != was_monochrome){
 			if (monochrome && !monochrome_info.isMonochrome) {
 				show_convert_to_black_and_white();
 			}
 		}
 
 		image_attributes.$window.close();
-	}, { type: "submit" });
+	})[0].focus();
 
 	$w.$Button(localize("Cancel"), () => {
 		image_attributes.$window.close();
 	});
 
-	// Parsing HTML with jQuery; $Button takes text (not HTML) or Node/DocumentFragment
-	$w.$Button($.parseHTML(display_hotkey(localize("&Default")))[0], () => {
+	$w.$Button(localize("Default"), () => {
 		width_in_px = default_canvas_width;
 		height_in_px = default_canvas_height;
 		$width.val(width_in_px / unit_sizes_in_px[current_unit]);
 		$height.val(height_in_px / unit_sizes_in_px[current_unit]);
-	}).attr("aria-keyshortcuts", "Alt+D D");
-
-	handle_keyshortcuts($w);
-
-	// Default focus
-
-	$width.select();
+	});
 
 	// Reposition the window
 

@@ -1,0 +1,1 @@
+function r4e(){return{namespaces:{}.DEBUG||"",colors:[6,2,3,4,5,1],useColors:!0,formatArgs:Xye}}

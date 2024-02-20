@@ -1,0 +1,1 @@
+function parse_ShrFmla(blob,length,opts){var ref=parse_RefU(blob,6);blob.l++;var cUse=blob.read_shift(1);length-=8;return[parse_SharedParsedFormula(blob,length,opts),cUse]}

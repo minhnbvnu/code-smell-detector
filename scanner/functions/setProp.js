@@ -1,6 +1,5 @@
-function setProp(prop, b, p, z) {
-    prop['{bearing}'] = b;
-    prop['{pitch}'] = p;
-    prop['{zoom}'] = z;
-    return prop;
+function setProp(xdNode, prop, value) {
+	let o = xdNode.pluginData || {};
+	o[prop] = value;
+	xdNode.pluginData = o;
 }

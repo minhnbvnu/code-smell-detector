@@ -1,0 +1,1 @@
+function parse_XLUnicodeStringNoCch(blob,cch,opts){var retval;var fHighByte=blob.read_shift(1);if(fHighByte===0){retval=blob.read_shift(cch,"sbcs-cont")}else{retval=blob.read_shift(cch,"dbcs-cont")}return retval}

@@ -1,0 +1,1 @@
+function setEx(eStr){ window.setExpressionDisplay(UTF8ToString(eStr)); }

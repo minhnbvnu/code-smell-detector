@@ -1,3 +1,8 @@
-function setLevel(l) {
-  level = levels[l];
-}
+function setLevel (level, val) {
+    data[level] = val
+
+    clearData(level)
+
+    emitUpdateModelValue(getData())
+    emitChange(getData())
+  }

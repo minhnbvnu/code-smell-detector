@@ -1,0 +1,1 @@
+function yPe(e,t){if(e==="")return t;for(var r=(t||"/").split("/").slice(0,-1).concat(e.split("/")),i=r.length,a=r[i-1],n=!1,s=0;i--;)r[i]==="."?r.splice(i,1):r[i]===".."?(r.splice(i,1),s++):s&&(i===0&&(n=!0),r.splice(i,1),s--);return n&&r.unshift(""),(a==="."||a==="..")&&r.push(""),r.join("/")}

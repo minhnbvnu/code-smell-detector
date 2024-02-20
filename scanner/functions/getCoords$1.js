@@ -1,13 +1,1 @@
-function getCoords$1(rank, name) {
-	  if (rank === 1) {
-	    return "" + name;
-	  } else if (rank === 2) {
-	    return name + ".x, " + name + ".y";
-	  } else if (rank === 3) {
-	    return name + ".x, " + name + ".y, " + name + ".z";
-	  } else if (rank === 4) {
-	    return name + ".x, " + name + ".y, " + name + ".z, " + name + ".w";
-	  } else {
-	    throw Error("Cumulative sum for rank " + rank + " is not yet supported");
-	  }
-	}
+function getCoords$1(e){if(1===e)return "sourceLoc";if(2===e)return "sourceLoc.x, sourceLoc.y";if(3===e)return "sourceLoc.x, sourceLoc.y, sourceLoc.z";if(4===e)return "sourceLoc.x, sourceLoc.y, sourceLoc.z, sourceLoc.w";throw Error("Slicing for rank "+e+" is not yet supported")}

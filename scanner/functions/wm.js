@@ -1,1 +1,1 @@
-function Wm(a,b){a=a|0;b=S(b);var c=0;c=fa-16|0;fa=c;L[c+12>>2]=a;P[c+8>>2]=b;b=P[c+8>>2];a=fa-16|0;L[a+12>>2]=L[c+12>>2];P[a+8>>2]=b;P[L[a+12>>2]+12>>2]=P[a+8>>2];fa=c+16|0}
+function wm(a,b){a=a|0;b=b|0;var c=0.0,d=0.0,e=0.0,f=0.0;if(!a){c=0.0;return +c}if((b|0)==0|(a|0)==(b|0)){c=0.0;return +c}d=+(b>>>0)/+(a>>>0);e=1.0-d;f=d*+Zg(d);c=-(f+e*+Zg(e));return +c}

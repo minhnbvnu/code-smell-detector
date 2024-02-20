@@ -1,0 +1,1 @@
+function Cye(e,t){let{children:r,role:n,...i}=e,a=Yr(t),{styleProps:l}=_t(i);return!n&&(e["aria-label"]||e["aria-labelledby"])&&console.warn("A labelled Well must have a role."),S.createElement("div",{...Kt(i,{labelable:!!n}),...l,role:n,ref:a,className:z(kye(Iu),"spectrum-Well",l.className)},r)}

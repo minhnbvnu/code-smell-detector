@@ -1,0 +1,1 @@
+function mxCompositeLayout(a,b,c){mxGraphLayout.call(this,a);this.layouts=b;this.master=c}

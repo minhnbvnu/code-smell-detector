@@ -1,0 +1,1 @@
+function f_e(e){for(var t in e._opts.formats){var r=e._opts.formats[t];e.addFormat(t,r)}}

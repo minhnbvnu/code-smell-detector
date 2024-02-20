@@ -1,0 +1,1 @@
+function Zmage_wrapper_createClass(Constructor, protoProps, staticProps) { if (protoProps) Zmage_wrapper_defineProperties(Constructor.prototype, protoProps); if (staticProps) Zmage_wrapper_defineProperties(Constructor, staticProps); return Constructor; }

@@ -1,0 +1,2 @@
+function mO(t,e){for(var r=t.append("text"),n=bO(e.label).split(`
+`),i=0;i<n.length;i++)r.append("tspan").attr("xml:space","preserve").attr("dy","1em").attr("x","1").text(n[i]);return qn(r,e.labelStyle),r}

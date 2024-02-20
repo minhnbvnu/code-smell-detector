@@ -1,0 +1,1 @@
+function invoke_fi(index,a1){var sp=stackSave();try{return dynCall_fi(index,a1)}catch(e){stackRestore(sp);if(e!==e+0)throw e;_setThrew(1,0)}}

@@ -1,0 +1,1 @@
+function l3(t,e,r){const i=e.height,s=i/4,a=e.width+2*s,o=[{x:s,y:0},{x:a-s,y:0},{x:a,y:-i/2},{x:a-s,y:-i},{x:s,y:-i},{x:0,y:-i/2}],l=ki(t,a,i,o);return r.intersect=function(u){return jn(r,o,u)},l}

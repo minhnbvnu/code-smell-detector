@@ -1,0 +1,1 @@
+function I4e(e){return!(e===null||!A4e.test(e)||e[e.length-1]==="_")}

@@ -1,0 +1,1 @@
+function e6e(e,t,r){function i(a,n){gc.link(a,n,s=>{if(s)return r(s);r(null)})}Mq(t,(a,n)=>{if(a)return r(a);if(n)return r(null);gc.lstat(e,s=>{if(s)return s.message=s.message.replace("lstat","ensureLink"),r(s);let o=qq.dirname(t);Mq(o,(u,l)=>{if(u)return r(u);if(l)return i(e,t);Uq.mkdirs(o,p=>{if(p)return r(p);i(e,t)})})})})}

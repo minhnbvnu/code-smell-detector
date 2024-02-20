@@ -1,0 +1,1 @@
+function compareStrings(i,o,s){return String.prototype.localeCompare?i.localeCompare(o,s):i<o?-1:i>o?1:0}

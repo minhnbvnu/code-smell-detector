@@ -1,0 +1,1 @@
+function networkSimplexRanker(g){networkSimplex(g)}

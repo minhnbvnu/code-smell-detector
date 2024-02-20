@@ -1,3 +1,3 @@
-function updateUrl(index) {
-  source.setUrl(urls[index]);
+function updateUrl () {
+  window.history.replaceState(null, '', '#' + url.export(state.colors));
 }

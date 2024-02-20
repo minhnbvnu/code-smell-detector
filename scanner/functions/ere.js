@@ -1,0 +1,1 @@
+function ere(e){let t=String(e).toLowerCase();return t==="none"||t==="lax"||t==="strict"?t:null}

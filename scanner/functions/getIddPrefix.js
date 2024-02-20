@@ -1,0 +1,1 @@
+function getIddPrefix(i,o,s){var u=new Y(s);return u.selectNumberingPlan(i,o),u.defaultIDDPrefix()?u.defaultIDDPrefix():be.test(u.IDDPrefix())?u.IDDPrefix():void 0}

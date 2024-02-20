@@ -1,0 +1,1 @@
+function aG(n,t,e,i){if(t==="linear")return n;if(t==="relu")return XA(n);if(t==="elu")return TA(n);if(t==="relu6")return KA(n);if(t==="prelu")return RA(n,e);if(t==="leakyrelu")return AA(n,i);throw new Error(`Unknown fused activation ${t}.`)}

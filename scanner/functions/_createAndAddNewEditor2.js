@@ -1,0 +1,1 @@
+function _createAndAddNewEditor2(t){var r=this.getNextId(),a=_classPrivateMethodGet(this,P,_createNewEditor2).call(this,{parent:this,id:r,x:t.offsetX,y:t.offsetY});a&&this.add(a);return a}

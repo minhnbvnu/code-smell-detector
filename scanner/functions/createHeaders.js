@@ -1,15 +1,1 @@
-function createHeaders(httpHeaders) {
-  const headers = new Headers();
-
-  for (const property in httpHeaders) {
-    const value = httpHeaders[property];
-
-    if (typeof value === "undefined") {
-      continue;
-    }
-
-    headers.append(property, value);
-  }
-
-  return headers;
-}
+function createHeaders(t){var r=new Headers;for(var a in t){var i=t[a];void 0!==i&&r.append(a,i)}return r}

@@ -1,0 +1,1 @@
+function _JS_FileSystem_Sync(){fs.sync(false)}

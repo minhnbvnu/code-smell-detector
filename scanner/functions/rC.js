@@ -1,0 +1,1 @@
+function rC(t){var e=t.seriesModel;return e?e.coordinateSystem:null}

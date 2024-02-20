@@ -1,0 +1,3 @@
+function getAssertionLevel() {
+                        return currentAssertionLevel;
+                    }

@@ -1,0 +1,1 @@
+function wP(n){if(n===0)return!1;let t=gi(n);if(n===1){if(!xi(t,"OES_texture_float"))return!1}else if(!xi(t,"EXT_color_buffer_float"))return!1;return Q_(t)}

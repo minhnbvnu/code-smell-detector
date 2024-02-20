@@ -1,0 +1,1 @@
+function qst(n,t){return function(){this[n]=t}}

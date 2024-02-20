@@ -1,0 +1,1 @@
+function _emscripten_set_touchend_callback_on_thread(target,userData,useCapture,callbackfunc,targetThread){registerTouchEventCallback(target,userData,useCapture,callbackfunc,23,"touchend",targetThread);return 0}

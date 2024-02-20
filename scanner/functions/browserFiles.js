@@ -1,0 +1,1 @@
+function browserFiles(e){return new BrowserFiles(e)}

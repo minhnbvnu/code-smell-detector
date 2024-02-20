@@ -1,0 +1,1 @@
+function refreshScrollbarsInteractive(isTrack,value){var action=value?"removeClass":"addClass",element2=isTrack?_scrollbarVerticalTrackElement:_scrollbarVerticalHandleElement,className=isTrack?_classNameScrollbarTrackOff:_classNameScrollbarHandleOff;(isTrack?_scrollbarHorizontalTrackElement:_scrollbarHorizontalHandleElement)[action](className),element2[action](className)}

@@ -1,0 +1,1 @@
+function Ge(t,e){z(t,0,0,(function(){var t=this.utcOffset(),i="+";return t<0&&(t=-t,i="-"),i+F(~~(t/60),2)+e+F(~~t%60,2)}))}

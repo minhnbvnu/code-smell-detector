@@ -1,0 +1,1 @@
+function Fle(e){Jr.buffer(e);var t=pA.box.keyPair.fromSeed(new Uint8Array(e));return In.from(t.publicKey)}

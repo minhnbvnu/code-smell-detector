@@ -1,0 +1,1 @@
+function testSecurity (results) { this.initialize(results); }

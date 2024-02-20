@@ -1,0 +1,1 @@
+function rads(x) { return Math.PI*x/180; }

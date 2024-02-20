@@ -1,0 +1,1 @@
+function Xst(n,t){return function(){var e=t.apply(this,arguments);e==null?delete this[n]:this[n]=e}}

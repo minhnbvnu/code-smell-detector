@@ -1,0 +1,1 @@
+function baseAssign$1(object,source){return object&&copyObject$3(source,keys$1(source),object)}

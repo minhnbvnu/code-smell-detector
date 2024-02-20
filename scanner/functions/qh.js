@@ -1,1 +1,2 @@
-function qh(a){a=a|0;return F[a+24|0]}
+function qh(a){a=Ue(a);if(!a)return null;for(var b=a;;){if(5===b.tag||6===b.tag)return b;
+if(b.child&&4!==b.tag)b.child.return=b,b=b.child;else{if(b===a)break;for(;!b.sibling;){if(!b.return||b.return===a)return null;b=b.return}b.sibling.return=b.return;b=b.sibling}}return null}

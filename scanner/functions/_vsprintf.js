@@ -1,0 +1,1 @@
+function _vsprintf($0,$1,$2){$0=$0|0;$1=$1|0;$2=$2|0;var $3=0,label=0,sp=0;sp=STACKTOP;$3=_vsnprintf($0,2147483647,$1,$2)|0;return $3|0}

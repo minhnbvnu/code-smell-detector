@@ -1,0 +1,1 @@
+function ohe(e){return()=>{}}

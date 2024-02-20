@@ -1,0 +1,1 @@
+function S6(n,t){if(n===In.UPLOAD)return xn.PACKED_2X2_FLOAT32;if(n===In.RENDER||n==null)return JK(t);if(n===In.DOWNLOAD||n===In.PIXELS)return xn.PACKED_4X1_UNSIGNED_BYTE;throw new Error(`Unknown logical texture type ${n}`)}

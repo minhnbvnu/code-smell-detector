@@ -1,0 +1,1 @@
+function SimpleDOMNode(t,r){_classCallCheck(this,SimpleDOMNode);this.nodeName=t;this.nodeValue=r;Object.defineProperty(this,"parentNode",{value:null,writable:!0})}

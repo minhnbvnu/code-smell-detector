@@ -1,0 +1,1 @@
+function getSnippet(i,o,s){void 0===s&&(s=1);var u=Math.max(o.line-5,0),C=o.line,_=String(C).length,w=i.split("\n").slice(u,C),P=w[w.length-1].slice(0,o.column).replace(/\t/g,"  ").length,B=w.map((function(i,o){return pad(o+u+1,_)+" : "+i.replace(/\t/g,"  ")})).join("\n");return B+="\n"+repeat(" ",_+3+P)+repeat("^",s)}

@@ -1,0 +1,1 @@
+function _wgpu_canvas_context_get_current_texture(canvasContext){canvasContext=wgpu[canvasContext]["getCurrentTexture"]();if(canvasContext!=wgpu[1]){_wgpu_object_destroy(1);wgpu[1]=canvasContext;canvasContext.wid=1;canvasContext.derivedObjects=[]}return 1}

@@ -1,0 +1,1 @@
+function setTextSelection(e){if(window.getSelection&&e){var o=window.getSelection();o.removeAllRanges(),o.addRange(e)}}

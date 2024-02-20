@@ -1,0 +1,1 @@
+function getNotebookVersion(){const e=getOption("notebookVersion");if(e===""){return[0,0,0]}return JSON.parse(e)}

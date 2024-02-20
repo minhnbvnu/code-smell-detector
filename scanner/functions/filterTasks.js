@@ -1,0 +1,1 @@
+function filterTasks(tasks,query){query=$.trim(query.replace(/[^a-z0-9\s]+/gi,""));tasks.removeClass("hidden");if(/^\s*$/.test(query)){return}var queryRegExp=new RegExp("("+query.replace(/\s+/gi,"|")+")","i");tasks.filter(function(){return!queryRegExp.test($(this).data("keywords"))}).addClass("hidden")}

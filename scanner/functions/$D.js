@@ -1,0 +1,1 @@
+function $D(t,e,r){for(var n=-1,i=t.criteria,s=e.criteria,a=i.length,o=r.length;++n<a;){var l=jD(i[n],s[n]);if(l){if(n>=o)return l;var u=r[n];return l*(u=="desc"?-1:1)}}return t.index-e.index}

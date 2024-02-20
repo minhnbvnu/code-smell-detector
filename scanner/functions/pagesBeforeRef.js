@@ -1,70 +1,44 @@
 function pagesBeforeRef(kidRef) {
-      let total = 0,
-          parentRef;
-      return xref.fetchAsync(kidRef).then(function (node) {
-        if ((0, _primitives.isRefsEqual)(kidRef, pageRef) && !(0, _primitives.isDict)(node, "Page") && !((0, _primitives.isDict)(node) && !node.has("Type") && node.has("Contents"))) {
-          throw new _util.FormatError("The reference does not point to a /Page dictionary.");
-        }
-
-        if (!node) {
-          return null;
-        }
-
-        if (!(0, _primitives.isDict)(node)) {
-          throw new _util.FormatError("Node must be a dictionary.");
-        }
-
-        parentRef = node.getRaw("Parent");
-        return node.getAsync("Parent");
-      }).then(function (parent) {
-        if (!parent) {
-          return null;
-        }
-
-        if (!(0, _primitives.isDict)(parent)) {
-          throw new _util.FormatError("Parent must be a dictionary.");
-        }
-
-        return parent.getAsync("Kids");
-      }).then(function (kids) {
-        if (!kids) {
-          return null;
-        }
-
-        const kidPromises = [];
-        let found = false;
-
-        for (let i = 0, ii = kids.length; i < ii; i++) {
-          const kid = kids[i];
-
-          if (!(0, _primitives.isRef)(kid)) {
-            throw new _util.FormatError("Kid must be a reference.");
+        var total = 0;
+        var parentRef;
+        return xref.fetchAsync(kidRef).then(function (node) {
+          if (!node) {
+            return null;
           }
-
-          if ((0, _primitives.isRefsEqual)(kid, kidRef)) {
-            found = true;
-            break;
+          parentRef = node.getRaw('Parent');
+          return node.getAsync('Parent');
+        }).then(function (parent) {
+          if (!parent) {
+            return null;
           }
-
-          kidPromises.push(xref.fetchAsync(kid).then(function (obj) {
-            if (!(0, _primitives.isDict)(obj)) {
-              throw new _util.FormatError("Kid node must be a dictionary.");
+          return parent.getAsync('Kids');
+        }).then(function (kids) {
+          if (!kids) {
+            return null;
+          }
+          var kidPromises = [];
+          var found = false;
+          for (var i = 0; i < kids.length; i++) {
+            var kid = kids[i];
+            assert(isRef(kid), 'kids must be a ref');
+            if (kid.num === kidRef.num) {
+              found = true;
+              break;
             }
-
-            if (obj.has("Count")) {
-              total += obj.get("Count");
-            } else {
-              total++;
-            }
-          }));
-        }
-
-        if (!found) {
-          throw new _util.FormatError("Kid reference not found in parent's kids.");
-        }
-
-        return Promise.all(kidPromises).then(function () {
-          return [total, parentRef];
+            kidPromises.push(xref.fetchAsync(kid).then(function (kid) {
+              if (kid.has('Count')) {
+                var count = kid.get('Count');
+                total += count;
+              } else { // page leaf node
+                total++;
+              }
+            }));
+          }
+          if (!found) {
+            error('kid ref not found in parents kids');
+          }
+          return Promise.all(kidPromises).then(function () {
+            return [total, parentRef];
+          });
         });
-      });
-    }
+      }

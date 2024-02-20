@@ -1,0 +1,1 @@
+function print(e,t){void 0===t&&(t=!1),console.log(e.toString(t));}

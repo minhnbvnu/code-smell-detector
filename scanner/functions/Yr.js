@@ -1,1 +1,1 @@
-function Yr(t){var n=qe();return Nr(t).then(function(t){t:{var e=ee(n),i=e.c;e=e.b;for(var r=0;r<t.length;r++){var o=t[r],a=e,s=i;if(0==o.indexOf("chrome-extension://")?a=ee(o).b==a&&"chrome-extension"==s:"http"!=s&&"https"!=s?a=!1:Qc.test(o)?a=a==o:(o=o.split(".").join("\\."),a=RegExp("^(.+\\."+o+"|"+o+")$","i").test(a)),a){t=!0;break t}}t=!1}if(!t)throw new lr(qe())})}
+function Yr(e,a,t){return e+(20<=e%100||100<=e&&e%100==0?" de ":" ")+{ss:"secunde",mm:"minute",hh:"ore",dd:"zile",ww:"s\u0103pt\u0103m\xe2ni",MM:"luni",yy:"ani"}[t]}

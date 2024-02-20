@@ -1,0 +1,1 @@
+function AJ(t){const e=t.role||"";return!e.indexOf("axis")||!e.indexOf("legend")||!e.indexOf("title")?e:t.type===XY?tX:e||ZW}

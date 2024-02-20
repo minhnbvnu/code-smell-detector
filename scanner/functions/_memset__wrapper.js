@@ -1,0 +1,1 @@
+function _memset__wrapper(p0,p1,p2){p0=p0|0;p1=p1|0;p2=p2|0;return _memset(p0|0,p1|0,p2|0)|0}

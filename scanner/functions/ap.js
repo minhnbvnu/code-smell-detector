@@ -1,1 +1,1 @@
-function Ap(a,b){a=a|0;b=b|0;var c=0;c=fa-16|0;fa=c;L[c+12>>2]=a;L[c+8>>2]=b;sc(L[c+12>>2]+868|0,L[c+8>>2]);fa=c+16|0}
+function ap(a){a=a|0;return ((f[a+100>>2]|0)-(f[a+96>>2]|0)|0)/12|0|0}

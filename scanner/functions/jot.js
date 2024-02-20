@@ -1,0 +1,1 @@
+function jot(n,t){return We(n.prev,n,t.prev)<0&&We(t.next,n,n.next)<0}

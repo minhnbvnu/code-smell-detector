@@ -1,0 +1,1 @@
+function IC(e,t){Array.isArray(e.illegal)&&(e.illegal=Go(...e.illegal))}

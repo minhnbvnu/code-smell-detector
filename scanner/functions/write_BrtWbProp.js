@@ -1,0 +1,1 @@
+function write_BrtWbProp(data,o){if(!o)o=new_buf(8);o.write_shift(4,0);o.write_shift(4,0);return o}

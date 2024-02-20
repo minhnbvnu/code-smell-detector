@@ -1,3 +1,3 @@
-function preventDefault(evt) {
-  evt.preventDefault();
-}
+function preventDefault(e) {
+	  e.preventDefault();
+	}

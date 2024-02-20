@@ -1,0 +1,1 @@
+function write_XLSBCell(cell,o){if(o==null)o=new_buf(8);o.write_shift(-4,cell.c);o.write_shift(3,cell.iStyleRef===undefined?cell.iStyleRef:cell.s);o.write_shift(1,0);return o}

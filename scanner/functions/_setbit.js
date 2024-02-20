@@ -1,0 +1,1 @@
+function _setbit(n,r,u){var d=r>>4,o=n[d];o+=(1<<(15&r))*u,n[d]=o}

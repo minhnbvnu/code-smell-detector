@@ -1,1 +1,1 @@
-function Et(t,e,a,i,n){this.good_length=t,this.max_lazy=e,this.nice_length=a,this.max_chain=i,this.func=n}
+function et(t,e){var i=this._relativeTime[t>0?"future":"past"];return E(i)?i(e):i.replace(/%s/i,e)}

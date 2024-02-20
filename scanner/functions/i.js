@@ -1,0 +1,1 @@
+function i(t){t.setWrapperTransition(e,y),0!==e&&(t.onTransitionStart(),t.wrapper.transitionEnd(function(){a&&(t.params.loop&&"slide"===y.params.controlBy&&t.fixLoop(),t.onTransitionEnd())}))}

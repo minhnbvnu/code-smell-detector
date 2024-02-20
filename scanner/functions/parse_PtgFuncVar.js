@@ -1,0 +1,1 @@
+function parse_PtgFuncVar(blob,length){blob.l++;var cparams=blob.read_shift(1),tab=parsetab(blob);return[cparams,(tab[0]===0?Ftab:Cetab)[tab[1]]]}

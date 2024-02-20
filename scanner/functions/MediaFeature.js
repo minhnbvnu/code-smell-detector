@@ -1,0 +1,1 @@
+function MediaFeature(e,t){SyntaxUnit.call(this,"("+e+(t!==null?":"+t:"")+")",e.startLine,e.startCol,Parser.MEDIA_FEATURE_TYPE),this.name=e,this.value=t}

@@ -1,0 +1,1 @@
+function _JS_Sound_SetPitch(channelInstance,v){if(WEBAudio.audioWebEnabled==0)return;try{var channel=WEBAudio.audioInstances[channelInstance];channel.setPitch(v)}catch(e){console.error("JS_Sound_SetPitch(channel="+channelInstance+", pitch="+v+") threw an exception: "+e)}}

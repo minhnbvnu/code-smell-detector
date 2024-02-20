@@ -1,0 +1,1 @@
+function ForInStatement(){i.apply(this,arguments)}

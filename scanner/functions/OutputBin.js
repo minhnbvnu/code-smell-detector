@@ -1,0 +1,1 @@
+function OutputBin(t){_classCallCheck(this,OutputBin);return r.call(this,d,"outputBin")}

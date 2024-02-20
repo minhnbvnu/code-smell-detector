@@ -1,0 +1,1 @@
+function watchKeys(){if(options.keySupport){$keymgr.show();$keymgr.focus()}}

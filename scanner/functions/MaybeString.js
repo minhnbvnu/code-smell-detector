@@ -1,0 +1,1 @@
+function MaybeString (s) { return s ? String(s) : undefined }

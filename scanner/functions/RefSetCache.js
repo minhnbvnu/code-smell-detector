@@ -1,0 +1,1 @@
+function RefSetCache(){_classCallCheck(this,RefSetCache);this._map=new Map}

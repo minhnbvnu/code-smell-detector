@@ -1,0 +1,1 @@
+function write_cellXfs(cellXfs){var o=[];o[o.length]=writextag("cellXfs",null);cellXfs.forEach(function(c){o[o.length]=writextag("xf",null,c)});o[o.length]="</cellXfs>";if(o.length===2)return"";o[0]=writextag("cellXfs",null,{count:o.length-2}).replace("/>",">");return o.join("")}

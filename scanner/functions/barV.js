@@ -1,0 +1,1 @@
+function barV(cm) { return byClassName(cm.getWrapperElement(), "CodeMirror-vscrollbar")[0]; }

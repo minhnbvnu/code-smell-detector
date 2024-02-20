@@ -1,0 +1,1 @@
+function CFFIndex(){_classCallCheck(this,CFFIndex);this.objects=[];this.length=0}

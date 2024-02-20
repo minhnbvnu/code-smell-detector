@@ -1,0 +1,1 @@
+function _wgpu_encoder_set_pipeline(encoder,pipeline){wgpu[encoder]["setPipeline"](wgpu[pipeline])}

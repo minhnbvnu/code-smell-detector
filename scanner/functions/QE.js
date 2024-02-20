@@ -1,0 +1,1 @@
+function QE(e){var t=JD.newInstance(e);return e.nodes&&(t.removeAllPoints(),e.nodes.forEach((function(e){var n=g(e,6),r=n[0],i=n[1],o=n[2],a=n[3],s=n[4],l=n[5];t.addRGBPointLong(r,i,o,a,s,l)}))),t}

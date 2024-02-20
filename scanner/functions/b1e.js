@@ -1,0 +1,1 @@
+function b1e(e,t){let{key:r}=e,n=t.selectionManager,i=nr(),a=!t.selectionManager.canSelectItem(r),l=t.selectionManager.isSelected(r),s=()=>n.select(r);const u=ar(JR(G1),"@react-aria/grid");return{checkboxProps:{id:i,"aria-label":u.format("select"),isSelected:l,isDisabled:a,onChange:s}}}

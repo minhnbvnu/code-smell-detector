@@ -1,1 +1,1 @@
-function Pi(t,n){this.code=dh+t,this.message=n||ph[t]||""}
+function pi(t,e){z(0,[t,t.length],0,e)}

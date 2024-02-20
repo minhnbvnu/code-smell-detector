@@ -1,0 +1,1 @@
+function Format(i,o){_classCallCheck(this,Format),this._format=i,this.metadata=o}

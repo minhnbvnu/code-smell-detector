@@ -1,0 +1,50 @@
+function ChatBotAlexaDirective(config) {
+    RED.nodes.createNode(this, config);
+    const node = this;
+    globalContextHelper.init(this.context().global);
+    this.directiveType = config.directiveType;
+    this.slot = config.slot;
+
+    this.on('input', function(msg, send, done) {
+      // send/done compatibility for node-red < 1.0
+      send = send || function() { node.send.apply(node, arguments) };
+      done = done || function(error) { node.error.call(node, error, msg) };
+
+      // check if valid message
+      if (!isValidMessage(msg, node)) {
+        return;
+      }
+      const chatId = getChatId(msg);
+      const template = MessageTemplate(msg, node);
+      const transport = getTransport(msg);
+
+      // check transport compatibility
+      if (!ChatExpress.isSupported(transport, 'directive')) {
+        done(`Node "directive" is not supported by ${transport} transport`);
+        return;
+      }
+
+      const directiveType = extractValue('string', 'directiveType', node, msg, false);
+      const slot = extractValue('string', 'slot', node, msg, false);
+      const payload = {
+        chatId,
+        type: 'directive',
+        directiveType: directiveType
+      };
+      switch(directiveType) {
+        case 'Dialog.ConfirmSlot':
+          payload.slotToConfirm = slot;
+          break;
+        case 'Dialog.ElicitSlot':
+          payload.slotToElicit = slot;
+          break;
+      }
+
+      template(payload)
+        .then(translated => {
+          append(msg, translated);
+          send(msg);
+          done();
+        });
+    });
+  }

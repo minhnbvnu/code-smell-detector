@@ -1,4 +1,1 @@
-function writeSignedInt16(bytes, index, value) {
-    bytes[index + 1] = value;
-    bytes[index] = value >>> 8;
-  }
+function writeSignedInt16(t,r,o){t[r+1]=o;t[r]=o>>>8}

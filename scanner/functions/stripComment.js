@@ -1,3 +1,3 @@
-function stripComment(sm) {
-	  return sm.split(',').pop();
+function stripComment(comment) {
+	  return comment.replace(/^\{\{~?\!-?-?/, '').replace(/-?-?~?\}\}$/, '');
 	}

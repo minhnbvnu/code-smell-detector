@@ -1,0 +1,1 @@
+function Ktt(n){return Math.pow(2,Math.floor(Math.log(n)/Math.LN2))}

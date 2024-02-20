@@ -1,0 +1,1 @@
+function IconDownload_possibleConstructorReturn(self, call) { if (call && (IconDownload_typeof(call) === "object" || typeof call === "function")) { return call; } return IconDownload_assertThisInitialized(self); }

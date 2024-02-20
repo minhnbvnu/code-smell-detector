@@ -1,0 +1,1 @@
+function setCaretPosition(i,o){void 0!==o&&(isAndroid()?setTimeout((function(){return i.setSelectionRange(o,o)}),0):i.setSelectionRange(o,o))}

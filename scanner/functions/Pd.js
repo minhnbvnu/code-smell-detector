@@ -1,0 +1,1 @@
+function Pd(a){if(a)for(var b in a)if(a.hasOwnProperty(b))return!1;return!0}

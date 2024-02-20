@@ -1,0 +1,1 @@
+function _emscripten_glDisableVertexAttribArray(index){GLctx.disableVertexAttribArray(index)}

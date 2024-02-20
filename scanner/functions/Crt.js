@@ -1,0 +1,1 @@
+function Crt(n,t){n.uniform1fv(this.addr,t)}

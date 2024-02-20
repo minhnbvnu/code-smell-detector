@@ -1,5 +1,5 @@
 function mergePair(dest, src) {
-	  for (var key in src) {
-	    dest[key] = [].concat(dest[key] || [], src[key]);
-	  }
-	}
+  for (const key of Object.keys(src)) {
+    dest[key] = [].concat(dest[key] || [], src[key]);
+  }
+}

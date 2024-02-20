@@ -1,0 +1,1 @@
+function FM(t){var e=Ta(t,"root",{},"_root"),r=PM(t),n=Cs(gi(r))-1,i=2*n+1;t.graph().nestingRoot=e,vt(t.edges(),function(a){t.edge(a).minlen*=i});var s=YM(t)+1;vt(t.children(),function(a){om(t,e,i,s,n,r,a)}),t.graph().nodeRankFactor=i}

@@ -1,0 +1,1 @@
+function Pat(){Ba=0}

@@ -1,0 +1,1 @@
+function isLine(doc, l) {return l >= doc.first && l < doc.first + doc.size}

@@ -1,0 +1,1 @@
+function parse_XFExt(blob,length){var end=blob.l+length;blob.l+=2;var ixfe=blob.read_shift(2);blob.l+=2;var cexts=blob.read_shift(2);var ext=[];while(cexts-->0)ext.push(parse_ExtProp(blob,end-blob.l));return{ixfe:ixfe,ext:ext}}

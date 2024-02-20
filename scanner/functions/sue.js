@@ -1,0 +1,1 @@
+function sue(e){if(e==="/")return["/"];e.lastIndexOf("/")===e.length-1&&(e=e.substr(0,e.length-1));for(var t=[e];e.length>1;){var r=e.lastIndexOf("/");if(r===0)break;e=e.substr(0,r),t.push(e)}return t.push("/"),t}

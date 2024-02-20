@@ -1,0 +1,1 @@
+function Su(e){return Fr(In(e,!0))}

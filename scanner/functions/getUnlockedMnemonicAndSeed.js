@@ -1,0 +1,3 @@
+function getUnlockedMnemonicAndSeed() {
+  return unlockedMnemonicAndSeed;
+}

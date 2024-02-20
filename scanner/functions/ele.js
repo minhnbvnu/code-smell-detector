@@ -1,0 +1,1 @@
+function ele(e){if(e==this)return!0;if(this.isInfinity())return e.isInfinity();if(e.isInfinity())return this.isInfinity();var t,r;return t=e.y.toBigInteger().multiply(this.z).subtract(this.y.toBigInteger().multiply(e.z)).mod(this.curve.q),t.equals($r.ZERO)?(r=e.x.toBigInteger().multiply(this.z).subtract(this.x.toBigInteger().multiply(e.z)).mod(this.curve.q),r.equals($r.ZERO)):!1}

@@ -1,0 +1,1 @@
+function write_num_cm2(type,fmt,val){var idx=fmt.length-1;while(fmt.charCodeAt(idx-1)===44)--idx;return write_num(type,fmt.substr(0,idx),val/Math.pow(10,3*(fmt.length-idx)))}

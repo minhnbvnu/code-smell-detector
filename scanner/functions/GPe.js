@@ -1,0 +1,1 @@
+function GPe(e){return new Promise(t=>{process.nextTick(()=>{let r=H3();e&&e(r),t(r)})})}

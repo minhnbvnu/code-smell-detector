@@ -1,0 +1,1 @@
+function layoutText(t,r,o,l,u,h){var g=new d.TextMeasure(r,o,l,u);"string"==typeof t?g.addString(t):t[c.$pushGlyphs](g);return g.compute(h)}

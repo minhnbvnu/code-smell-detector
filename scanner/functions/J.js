@@ -1,1 +1,1 @@
-function J(a){return a.b.e}
+function J(b){s.off("$destroy",ka);s.removeData("$$animationRunner");w(s,v);ha(s,v);v.domOperation();C&&a.removeClass(s,C);s.removeClass("ng-animate");D.complete(!b)}

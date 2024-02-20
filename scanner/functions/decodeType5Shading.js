@@ -1,20 +1,21 @@
 function decodeType5Shading(mesh, reader, verticesPerRow) {
-    const coords = mesh.coords;
-    const colors = mesh.colors;
-    const ps = [];
-
+    var coords = mesh.coords;
+    var colors = mesh.colors;
+    var ps = []; // not maintaining cs since that will match ps
     while (reader.hasData) {
-      const coord = reader.readCoordinate();
-      const color = reader.readComponents();
+      var coord = reader.readCoordinate();
+      var color = reader.readComponents();
       ps.push(coords.length);
       coords.push(coord);
       colors.push(color);
     }
 
+    var psPacked = new Int32Array(ps);
+
     mesh.figures.push({
-      type: "lattice",
-      coords: new Int32Array(ps),
-      colors: new Int32Array(ps),
-      verticesPerRow
+      type: 'lattice',
+      coords: psPacked,
+      colors: psPacked,
+      verticesPerRow: verticesPerRow
     });
   }

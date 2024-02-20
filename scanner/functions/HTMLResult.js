@@ -1,0 +1,1 @@
+function HTMLResult(t,r,o,c){!function _classCallCheck(t,r){if(!(t instanceof r))throw new TypeError("Cannot call a class as a function")}(this,HTMLResult);this.success=t;this.html=r;this.bbox=o;this.breakNode=c}

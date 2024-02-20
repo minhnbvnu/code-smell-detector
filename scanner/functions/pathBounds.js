@@ -1,0 +1,1 @@
+function pathBounds(o,path,bounds){if(path==null){bounds.set(0,0,0,0)}else{boundPath(path,bounds);if(o.stroke&&o.opacity!==0&&o.strokeWidth>0){bounds.expand(o.strokeWidth)}}return bounds}

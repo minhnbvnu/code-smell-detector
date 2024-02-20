@@ -1,0 +1,3 @@
+function char() {
+  return character;
+}

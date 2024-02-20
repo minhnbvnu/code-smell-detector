@@ -1,0 +1,1 @@
+function axes(spec,axes,scales){(spec||[]).forEach(function(def,index){axes[index]=axes[index]||vg.scene.axis();axis(def,index,axes[index],scales)})}

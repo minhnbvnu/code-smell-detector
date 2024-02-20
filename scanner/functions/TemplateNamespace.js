@@ -1,0 +1,1 @@
+function TemplateNamespace(){_classCallCheck(this,TemplateNamespace)}

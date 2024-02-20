@@ -1,0 +1,1 @@
+function S2(t){return+t}

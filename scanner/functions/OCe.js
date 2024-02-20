@@ -1,0 +1,1 @@
+function OCe(e){var t=Cr();return e.copyTo(t),this.reduce(t),t}

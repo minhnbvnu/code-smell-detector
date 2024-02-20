@@ -1,0 +1,1 @@
+function _xpt_mult_bytes(t,n){for(var e=[_ZERO,_ONE,_ONE,_ZERO],i=(n.length<<3)-1;i>=0;i--)e=_xpt_double(e),1===_bytesgetbit(n,i)&&(e=_x_pt_add(e,t));return e}

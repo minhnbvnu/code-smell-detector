@@ -1,0 +1,1 @@
+function My(t,n,e){var r=oy.exec(n.slice(e,e+3));return r?(t.m=0,t.d=+r[0],e+r[0].length):-1}

@@ -1,9 +1,1 @@
-function unbindTextureUnit(gl, textureUnit) {
-	  validateTextureUnit(gl, textureUnit);
-	  callAndCheck(gl, function () {
-	    return gl.activeTexture(gl.TEXTURE0 + textureUnit);
-	  });
-	  callAndCheck(gl, function () {
-	    return gl.bindTexture(gl.TEXTURE_2D, null);
-	  });
-	}
+function unbindTextureUnit(e,t){validateTextureUnit(e,t),callAndCheck(e,function(){return e.activeTexture(e.TEXTURE0+t)}),callAndCheck(e,function(){return e.bindTexture(e.TEXTURE_2D,null)});}

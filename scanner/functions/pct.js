@@ -1,0 +1,1 @@
+function pct(n){return""+parseInt(n)+"%"}

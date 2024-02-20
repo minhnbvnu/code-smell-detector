@@ -1,3 +1,6 @@
-function isLineTerminator(ch) {
-	        return ch === 0x0A || ch === 0x0D || ch === 0x2028 || ch === 0x2029;
-	    }
+function isLineTerminator(code) {
+        return (code === LINE_FEED ||
+            code === CARRIAGE_RETURN ||
+            code === LINE_SEPARATOR ||
+            code === PARAGRAPH_SEPARATOR);
+    }

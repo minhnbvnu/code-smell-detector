@@ -1,3 +1,1 @@
-function Import() {
-	  this.word("import");
-	}
+function Import(){i.apply(this,arguments)}

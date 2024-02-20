@@ -1,0 +1,1 @@
+function navigateLeft(){return navigate("left")}

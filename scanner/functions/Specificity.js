@@ -1,0 +1,1 @@
+function Specificity(e,t,n,r){this.a=e,this.b=t,this.c=n,this.d=r}

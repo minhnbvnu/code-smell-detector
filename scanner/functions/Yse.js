@@ -1,0 +1,1 @@
+function Yse(e){let t=this[Tn];t.pong(e,!t._isServer,vk),t.emit("ping",e)}

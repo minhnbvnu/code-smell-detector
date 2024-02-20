@@ -1,0 +1,1 @@
+function removeCssRules(){$style.remove(),stylesheet=null}

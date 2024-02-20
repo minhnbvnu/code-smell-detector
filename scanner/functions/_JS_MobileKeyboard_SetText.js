@@ -1,0 +1,1 @@
+function _JS_MobileKeyboard_SetText(text){if(!mobile_input)return;text=UTF8ToString(text);mobile_input.input.value=text}

@@ -1,0 +1,1 @@
+function SimpleXMLParser(t){var o,c=t.hasAttributes,u=void 0!==c&&c,h=t.lowerCaseName,d=void 0!==h&&h;_classCallCheck(this,SimpleXMLParser);(o=r.call(this))._currentFragment=null;o._stack=null;o._errorCode=l.NoError;o._hasAttributes=u;o._lowerCaseName=d;return o}

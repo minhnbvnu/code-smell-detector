@@ -1,0 +1,1 @@
+function uncapitalize(e){return e.charAt(0).toLowerCase()+e.slice(1)}

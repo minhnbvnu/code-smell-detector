@@ -1,0 +1,1 @@
+function Hu(t,e,i){return{x:e/t||0,y:i/t||0}}

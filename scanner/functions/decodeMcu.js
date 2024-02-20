@@ -1,8 +1,1 @@
-function decodeMcu(component, decode, mcu, row, col) {
-      var mcuRow = mcu / mcusPerLine | 0;
-      var mcuCol = mcu % mcusPerLine;
-      blockRow = mcuRow * component.v + row;
-      var blockCol = mcuCol * component.h + col;
-      const blockOffset = getBlockBufferOffset(component, blockRow, blockCol);
-      decode(component, blockOffset);
-    }
+function decodeMcu(t,r,o,c,l){var u=o%C;j=(o/C|0)*t.v+c;var h=u*t.h+l;r(t,getBlockBufferOffset(t,j,h))}

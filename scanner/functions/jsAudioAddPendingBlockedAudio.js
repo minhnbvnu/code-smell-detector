@@ -1,0 +1,1 @@
+function jsAudioAddPendingBlockedAudio(sourceNode,offset){WEBAudio.pendingAudioSources[sourceNode.mediaElement.src]={sourceNode:sourceNode,offset:offset}}

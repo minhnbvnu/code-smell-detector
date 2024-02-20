@@ -1,0 +1,1 @@
+function setLengthHeader(message){return message.length+":"+message}

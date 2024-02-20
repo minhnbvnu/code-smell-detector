@@ -1,8 +1,10 @@
-function HashTable(keyDType, valueDType) {
-	    this.keyDType = keyDType;
-	    this.valueDType = valueDType;
-	    this.handle = scalar(0); // tslint:disable-next-line: no-any
-
-	    this.tensorMap = new Map();
-	    keep(this.handle);
-	  }
+function HashTable(size, hashFn, equalsFn) {
+            this.size = size;
+            this.hashFn = hashFn;
+            this.equalsFn = equalsFn;
+            this.itemCount = 0;
+            this.table = new Array();
+            for(var i = 0; i < this.size; i++) {
+                this.table[i] = null;
+            }
+        }

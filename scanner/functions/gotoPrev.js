@@ -1,0 +1,1 @@
+function gotoPrev(e,o,t){if(null==e&&null==o&&canCellBeActive(e=getDataLengthIncludingAddNew()-1,o=t=columns.length-1))return{row:e,cell:o,posX:o};for(var n,l;!n&&!(n=gotoLeft(e,o,t));){if(--e<0)return null;o=0,null!==(l=findLastFocusableCell(e))&&(n={row:e,cell:l,posX:l})}return n}

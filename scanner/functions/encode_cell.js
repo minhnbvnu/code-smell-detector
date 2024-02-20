@@ -1,0 +1,1 @@
+function encode_cell(cell){return encode_col(cell.c)+encode_row(cell.r)}

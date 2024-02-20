@@ -1,0 +1,1 @@
+function Zot(n,t){let e=n;do{if(e.i!==n.i&&e.next.i!==n.i&&e.i!==t.i&&e.next.i!==t.i&&nF(e,e.next,n,t))return!0;e=e.next}while(e!==n);return!1}

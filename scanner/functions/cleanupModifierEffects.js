@@ -1,0 +1,1 @@
+function cleanupModifierEffects(){B.forEach((function(i){return i()})),B=[]}

@@ -1,0 +1,1 @@
+function Ga(a,b,c){q(c,function(c){a[c]=Y(a[c])?a[c]:b.style.getPropertyValue(c)})}

@@ -1,0 +1,1 @@
+function broadcastDimsAreOuter(e){for(var t=0;t<e.length;t++)if(e[t]!==t)return !1;return !0}

@@ -1,0 +1,4 @@
+function getJSDocCommentRanges(node, text) {
+            const commentRanges = node.kind === 166 /* Parameter */ || node.kind === 165 /* TypeParameter */ || node.kind === 215 /* FunctionExpression */ || node.kind === 216 /* ArrowFunction */ || node.kind === 214 /* ParenthesizedExpression */ || node.kind === 257 /* VariableDeclaration */ || node.kind === 278 /* ExportSpecifier */ ? concatenate(getTrailingCommentRanges(text, node.pos), getLeadingCommentRanges(text, node.pos)) : getLeadingCommentRanges(text, node.pos);
+            return filter(commentRanges, (comment) => text.charCodeAt(comment.pos + 1) === 42 /* asterisk */ && text.charCodeAt(comment.pos + 2) === 42 /* asterisk */ && text.charCodeAt(comment.pos + 3) !== 47 /* slash */);
+        }

@@ -1,0 +1,1 @@
+function _decodepoint(t){t=t.slice(0);var n=t[31]>>7;t[31]&=127;var e=_decodeint(t),i=_xrecover(e);(1&i.n[0])!==n&&(i=_Q.minus(i));var r=[i,e];if(!_isoncurve(r))throw"Point is not on curve";return r}

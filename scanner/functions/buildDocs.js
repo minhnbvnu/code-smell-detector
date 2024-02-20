@@ -1,38 +1,69 @@
 function buildDocs() {
-  let id = 0;
-  function getNewId() {
-    return ++id;
-  }
-  function getCurrentId() {
-    return id;
-  }
+    // console.log("buildDocs")
+    customizeContent.features.forEach((feature) => {
+        const sizes = [
+            [3, 4],
+            [1.5, 2],
+            [0.5, 1],
+        ]
+        const container = document.createElement("div")
+        const h2 = document.createElement("h2")
+        const featureDescriptionWithSpan = feature.description
+            .split("|")
+            .map((l) =>
+                l == "OFF" || l == "DEF"
+                    ? `<span class="span_off${
+                          !feature.on ? " active_feature" : ""
+                      }" onclick="changeFeatureDocs('disable')">[${l}]</span>`
+                    : l == "ON" || l == "ALT"
+                    ? `<span class="span_on${
+                          feature.on ? " active_feature" : ""
+                      }" onclick="changeFeatureDocs('enable')">[${l}]</span>`
+                    : l,
+            )
+            .join("")
+        h2.innerHTML = featureDescriptionWithSpan
+        h2.tabIndex = 0
+        h2.dataset.edit = "true"
+        const p = document.createElement("p")
+        p.textContent = `Default: ${feature.on ? "ON" : "OFF"}. Feature in variable font: "${feature.feature}".`
+        container.append(h2, p)
+        sizes.forEach((size) => {
+            const exampleText = document.createElement("p")
+            exampleText.textContent = feature.docsExample
+            exampleText.classList.add("docs_example", `docs_${feature.type}`)
+            exampleText.dataset.feature = feature.feature
+            exampleText.style.fontSize = `${size[0]}rem`
+            exampleText.style.lineHeight = `${size[1]}rem`
+            container.append(exampleText)
+        })
+        const br1 = document.createElement("br")
+        const br2 = document.createElement("br")
+        container.append(br1, br2)
+        if (feature.type == "feature") {
+            featuresContainerDocs.append(container)
+        }
+        if (feature.type == "alternate") {
+            alternatesContainerDocs.append(container)
+        }
+    })
+    const charset = document.querySelector("#charset")
+    const tunedCharset = docsContent.charset.split("").join(" ")
+    docsContent.charset.split("").forEach((char) => {
+        const span = document.createElement("p")
+        span.classList.add("charset_letter")
+        span.textContent = char
+        charset.append(span)
+    })
+    // charset.textContent = tunedCharset
 
-  const template = fs.readFileSync("docs/index.html.ejs", "utf-8");
-  function example(code) {
-    const magicBrackets = /\[\[(.*)\]\]/g;
-    const dedented = dedent(code);
-    const inline = dedented.replace(magicBrackets, "$1");
-    const escaped = hljs.highlight("html", dedented.replace(magicBrackets, ""))
-      .value;
+    const languageSupport = document.querySelector("#language_support")
+    docsContent.supportedLanguages.forEach((language) => {
+        const p = document.createElement("p")
+        p.classList.add("language_support")
+        p.textContent = language
+        languageSupport.append(p)
+    })
 
-    return `<div class="example">
-      ${inline}
-      <details>
-        <summary>Show code</summary>
-        <pre><code>${escaped}</code></pre>
-      </details>
-    </div>`;
-  }
-
-  glob("docs/*", (err, files) => {
-    if (!err) {
-      files.forEach((srcFile) =>
-        fs.copyFileSync(srcFile, path.join("dist", path.basename(srcFile)))
-      );
-    } else throw "error globbing dist directory.";
-  });
-  fs.writeFileSync(
-    path.join(__dirname, "/dist/index.html"),
-    ejs.render(template, { getNewId, getCurrentId, example })
-  );
+    updateDocs(null, docsForm)
 }

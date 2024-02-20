@@ -1,0 +1,1 @@
+function _draw2(t,r){var a=_slicedToArray(this.currentPath.at(-1),2),i=a[0],o=a[1];if(t!==i||r!==o){this.currentPath.push([t,r]);_classPrivateFieldSet(this,A,[t,r])}}

@@ -1,0 +1,1 @@
+function $Ae(e){var t=e==="error"||e==="warn",r=t?process.stderr:process.stdout;return r&&r.isTTY}

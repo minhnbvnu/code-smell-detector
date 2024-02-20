@@ -1,0 +1,1 @@
+function sliceSource(i,o,s){return i.slice(o,s)}

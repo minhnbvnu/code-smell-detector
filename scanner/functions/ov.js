@@ -1,1 +1,1 @@
-function Ov(a){a=a|0;var b=0;b=fa-16|0;L[b+12>>2]=a;return L[L[b+12>>2]+40>>2]}
+function ov(e){return e<=65535?String.fromCharCode(e):String.fromCharCode((e-65536>>10)+55296,(e-65536&1023)+56320)}

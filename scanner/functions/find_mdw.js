@@ -1,0 +1,1 @@
+function find_mdw(collw,coll){if(cycle_width(collw)!=collw){for(MDW=DEF_MDW;MDW>MIN_MDW;--MDW)if(cycle_width(collw)===collw)break;if(MDW===MIN_MDW)for(MDW=DEF_MDW+1;MDW<MAX_MDW;++MDW)if(cycle_width(collw)===collw)break;if(MDW===MAX_MDW)MDW=DEF_MDW}}

@@ -1,0 +1,1 @@
+function r_(t){return function(){this.textContent=t}}

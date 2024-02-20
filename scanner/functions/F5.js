@@ -1,0 +1,1 @@
+function F5(t){return function(){this.removeAttributeNS(t.space,t.local)}}

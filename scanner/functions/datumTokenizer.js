@@ -1,0 +1,1 @@
+function datumTokenizer(d) { return $.trim(d.value).split(/\s+/); }

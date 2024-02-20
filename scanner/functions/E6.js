@@ -1,0 +1,1 @@
+function E6(t,e){return fetch(t,e).then(T6)}

@@ -1,10 +1,1 @@
-function reshape_(x, shape) {
-	  var $x = convertToTensor(x, 'x', 'reshape', 'string_or_numeric');
-	  var inputs = {
-	    x: $x
-	  };
-	  var attrs = {
-	    shape: shape
-	  };
-	  return ENGINE.runKernel(Reshape, inputs, attrs);
-	}
+function reshape_(e,t){var n=convertToTensor(e,"x","reshape",null);t=inferFromImplicitShape(t,n.size),assert(n.size===sizeFromShape(t),"new shape and old shape must have the same number of elements.");return ENV.engine.runKernel(function(e){return e.reshape(n,t)},{$x:n},function(e){return {$x:function(){return e.reshape(n.shape)}}})}

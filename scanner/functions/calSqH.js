@@ -1,0 +1,1 @@
+function calSqH(d) { return min(Math.abs(d.py), 10) }

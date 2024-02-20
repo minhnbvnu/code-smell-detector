@@ -1,0 +1,3 @@
+function getProjectReferences() {
+                return projectReferences;
+            }

@@ -1,0 +1,1 @@
+function parseIdentifier(){var i,o=B,s=parseIdentifierAtom(isIdentifierStart);for(s||bail("Invalid identifier");i=parseIdentifierAtom(isIdentifierPart);)s+=i;return addRaw({type:"identifier",value:s,range:[o,B]})}

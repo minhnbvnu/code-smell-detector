@@ -1,0 +1,1 @@
+function CFFDict(t,r){_classCallCheck(this,CFFDict);this.keyToNameMap=t.keyToNameMap;this.nameToKeyMap=t.nameToKeyMap;this.defaults=t.defaults;this.types=t.types;this.opcodes=t.opcodes;this.order=t.order;this.strings=r;this.values=Object.create(null)}

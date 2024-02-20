@@ -1,3 +1,1 @@
-function fetchDestination(dest) {
-  return (0, _primitives.isDict)(dest) ? dest.get("D") : dest;
-}
+function fetchDestination(t){t instanceof u.Dict&&(t=t.get("D"));return Array.isArray(t)?t:null}

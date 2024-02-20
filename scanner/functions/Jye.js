@@ -1,0 +1,1 @@
+function Jye(e,t){if(e[0]=(t.useColors?"%c":"")+t.namespace,!!t.useColors){var r="color: "+t.color,n=0,i=0;e[0].replace(/%[a-zA-Z%]/g,function(a){a!=="%%"&&(n++,a==="%c"&&(i=n))}),e.splice(i,0,r)}}

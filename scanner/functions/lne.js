@@ -1,0 +1,1 @@
+function lne(e){return null}

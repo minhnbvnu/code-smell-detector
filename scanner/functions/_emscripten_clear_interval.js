@@ -1,0 +1,1 @@
+function _emscripten_clear_interval(id){clearInterval(id)}

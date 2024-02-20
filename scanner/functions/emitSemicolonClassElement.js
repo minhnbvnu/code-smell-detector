@@ -1,0 +1,3 @@
+function emitSemicolonClassElement() {
+                writeTrailingSemicolon();
+            }

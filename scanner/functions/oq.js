@@ -1,0 +1,1 @@
+function oq(a){a=a|0;return 2}

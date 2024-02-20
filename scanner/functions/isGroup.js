@@ -1,0 +1,1 @@
+function isGroup(item){return!!item&&(!item.isRoot&&!item.isLeaf)}

@@ -1,0 +1,4 @@
+function testString()
+    {
+        return true;
+    }

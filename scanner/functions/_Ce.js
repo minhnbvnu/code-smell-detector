@@ -1,0 +1,1 @@
+function _Ce(e){var t=Cr();return this.abs().divRemTo(e,null,t),this.s<0&&t.compareTo(Ie.ZERO)>0&&e.subTo(t,t),t}

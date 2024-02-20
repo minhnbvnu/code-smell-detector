@@ -1,0 +1,1 @@
+function d6e(e){return{left:0,right:e.innerWidth,top:0,bottom:e.innerHeight}}

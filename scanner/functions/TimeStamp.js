@@ -1,0 +1,1 @@
+function TimeStamp(t){var o;_classCallCheck(this,TimeStamp);(o=r.call(this,_,"timeStamp")).id=t.id||"";o.server=t.server||"";o.type=(0,d.getStringOption)(t.type,["optional","required"]);o.use=t.use||"";o.usehref=t.usehref||"";return o}

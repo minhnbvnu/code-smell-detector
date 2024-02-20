@@ -1,0 +1,1 @@
+function _emscripten_glGetBooleanv(name_,p){emscriptenWebGLGet(name_,p,4)}

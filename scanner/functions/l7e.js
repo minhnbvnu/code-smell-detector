@@ -1,0 +1,1 @@
+function l7e(){return!0}

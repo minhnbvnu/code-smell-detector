@@ -1,3 +1,1 @@
-function isSpecial(c) {
-    return c === 0x2f || c === 0x5b || c === 0x5d || c === 0x7b || c === 0x7d || c === 0x28 || c === 0x29;
-  }
+function isSpecial(t){return 47===t||91===t||93===t||123===t||125===t||40===t||41===t}

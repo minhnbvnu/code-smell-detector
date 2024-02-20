@@ -1,0 +1,3 @@
+function gc(a,b,d){kd(a,this);
+this.$$parse=function(c){var e=pa(a,c)||pa(b,c),f;x(e)||"#"!==e.charAt(0)?this.$$html5?f=e:(f="",x(e)&&(a=c,this.replace())):(f=pa(d,e),x(f)&&(f=e));ld(f,this);c=this.$$path;var e=a,g=/^\/[A-Z]:(\/.*)/;0===f.indexOf(e)&&(f=f.replace(e,""));g.exec(f)||(c=(f=g.exec(c))?f[1]:c);this.$$path=c;this.$$compose()};this.$$compose=function(){var b=Ub(this.$$search),e=this.$$hash?"#"+qb(this.$$hash):"";this.$$url=ec(this.$$path)+(b?"?"+b:"")+e;this.$$absUrl=a+(this.$$url?d+this.$$url:"")};this.$$parseLinkUrl=
+function(b,d){return Ia(a)==Ia(b)?(this.$$parse(b),!0):!1}}

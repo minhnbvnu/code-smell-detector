@@ -1,0 +1,1 @@
+function containsBlockSyntax(i){return tn.some((function(o){return o.test(i)}))}

@@ -1,0 +1,1 @@
+function Sifter(items,settings){this.items=items,this.settings=settings||{diacritics:!0}}

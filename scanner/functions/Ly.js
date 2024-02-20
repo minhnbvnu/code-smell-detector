@@ -1,0 +1,1 @@
+function Ly(t,n){return cy(og.count(xg(t)-1,t),n,2)}

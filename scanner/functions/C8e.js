@@ -1,0 +1,1 @@
+function C8e(e,t){let r=e.sliceString(t-2,t);return Xc(Tl(r,0))==r.length?r:r.slice(1)}

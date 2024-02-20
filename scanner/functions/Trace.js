@@ -1,0 +1,1 @@
+function Trace(t){var o;_classCallCheck(this,Trace);(o=r.call(this,d,"trace",!0)).area=new l.XFAObjectArray;return o}

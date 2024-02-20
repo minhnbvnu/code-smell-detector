@@ -1,1 +1,18 @@
-function doReadv(stream,iov,iovcnt,offset){var ret=0;for(var i=0;i<iovcnt;i++){var ptr=HEAPU32[iov>>2];var len=HEAPU32[iov+4>>2];iov+=8;var curr=FS.read(stream,HEAP8,ptr,len,offset);if(curr<0)return-1;ret+=curr;if(curr<len)break}return ret}
+function doReadv(stream, iov, iovcnt, offset) {
+          var ret = 0;
+          for (var i = 0; i < iovcnt; i++) {
+            var ptr = HEAPU32[iov >>> 2];
+            var len = HEAPU32[iov + 4 >>> 2];
+            iov += 8;
+            var curr = FS.read(stream, HEAP8, ptr, len, offset);
+            if (curr < 0)
+              return -1;
+            ret += curr;
+            if (curr < len)
+              break;
+            if (typeof offset !== "undefined") {
+              offset += curr;
+            }
+          }
+          return ret;
+        }

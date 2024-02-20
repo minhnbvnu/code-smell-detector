@@ -1,0 +1,1 @@
+function baseTimes$1(n,iteratee){for(var index=-1,result=Array(n);++index<n;)result[index]=iteratee(index);return result}

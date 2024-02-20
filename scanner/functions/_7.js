@@ -1,0 +1,1 @@
+function _7(t,e){var n;const r=t.match(Ap);if(r){const i=b7(r[1],{schema:m7});return i!=null&&i.title&&((n=e.setDiagramTitle)==null||n.call(e,i.title)),t.slice(r[0].length)}else return t}

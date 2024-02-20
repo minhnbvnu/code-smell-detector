@@ -1,0 +1,1 @@
+function aAe(e){return e.log!==void 0}

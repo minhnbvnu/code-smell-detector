@@ -1,0 +1,3 @@
+function invalidateCommitTrees() {
+  rootToCommitTreeMap.clear();
+}

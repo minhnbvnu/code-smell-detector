@@ -1,0 +1,3 @@
+function clearProgramCache() {
+        existingPrograms.clear();
+    }

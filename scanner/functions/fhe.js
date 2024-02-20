@@ -1,0 +1,1 @@
+function fhe(e,t,r){var i=t&&r||0;typeof e=="string"&&(t=e==="binary"?new Array(16):null,e=null),e=e||{};var a=e.random||(e.rng||phe)();if(a[6]=a[6]&15|64,a[8]=a[8]&63|128,t)for(var n=0;n<16;++n)t[i+n]=a[n];return t||che(a)}

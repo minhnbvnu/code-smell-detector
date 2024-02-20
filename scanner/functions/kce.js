@@ -1,0 +1,1 @@
+function kce(e){return e>>>=0,e===0?32:31-(Sce(e)/wce|0)|0}

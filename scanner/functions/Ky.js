@@ -1,1 +1,1 @@
-function ky(a){a=a|0;var b=S(0),c=0,d=0;c=fa-16|0;fa=c;L[c+12>>2]=a;a=fa-16|0;fa=a;L[a+12>>2]=L[c+12>>2];d=L[a+12>>2];a:{if(_b(d,d)<S(0)){b=uc(P[d+12>>2]);P[a+8>>2]=b+b;break a}b=uc(S(-P[d+12>>2]));P[a+8>>2]=b+b}fa=a+16|0;fa=c+16|0;return S(P[a+8>>2])}
+function Ky(t){var n=t.getTimezoneOffset();return(n>0?"-":(n*=-1,"+"))+cy(n/60|0,"0",2)+cy(n%60,"0",2)}

@@ -1,0 +1,1 @@
+function V4(){m2=document.documentElement.getAttribute("dir")}

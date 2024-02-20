@@ -1,0 +1,1 @@
+function p4(n){return n.hasAttribute(KB)}

@@ -1,0 +1,1 @@
+function jse(e,t="github.com"){return`${e.protocol||"https"}://${e.host||t}`}

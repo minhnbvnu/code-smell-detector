@@ -1,0 +1,1 @@
+function tryable() { return callback.call(target); }

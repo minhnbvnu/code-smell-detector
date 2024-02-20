@@ -1,0 +1,1 @@
+function posLess(a, b) {return a.line < b.line || (a.line == b.line && a.ch < b.ch);}

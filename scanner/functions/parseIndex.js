@@ -1,9 +1,1 @@
-function parseIndex(index) {
-  index = index.trim();
-
-  if (index === "*") {
-    return Infinity;
-  }
-
-  return parseInt(index, 10) || 0;
-}
+function parseIndex(t){return"*"===(t=t.trim())?1/0:parseInt(t,10)||0}

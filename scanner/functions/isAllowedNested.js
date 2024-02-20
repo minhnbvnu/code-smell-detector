@@ -1,0 +1,1 @@
+function isAllowedNested(i){return isProperty(i)||isParamTitle(i)}

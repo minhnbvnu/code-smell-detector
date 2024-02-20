@@ -1,1 +1,1 @@
-function kt(t,e,n){var r=L(n);return r.fullPath=t.path,r.size=e.size(),r.contentType||(r.contentType=St(null,e)),r}
+function kt(e,a,t,s){var n=ua(),r=c().set(s,a);return n[t](r,e)}

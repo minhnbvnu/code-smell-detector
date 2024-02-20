@@ -1,0 +1,1 @@
+function parse_XLUnicodeString2(blob,length,opts){if(opts.biff!==5&&opts.biff!==2)return parse_XLUnicodeString(blob,length,opts);var cch=blob.read_shift(1);if(cch===0){blob.l++;return""}return blob.read_shift(cch,"sbcs-cont")}

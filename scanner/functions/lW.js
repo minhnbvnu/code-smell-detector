@@ -1,0 +1,1 @@
+function lW(t){if(t.parent){var e=t.getComputedTransform();t.setLocalTransform(e),t.parent.remove(t)}}

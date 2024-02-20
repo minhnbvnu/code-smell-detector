@@ -1,0 +1,1 @@
+function reset_cp(){set_cp(1200)}

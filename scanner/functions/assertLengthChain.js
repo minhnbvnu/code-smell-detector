@@ -1,3 +1,3 @@
 function assertLengthChain () {
-      flag(this, 'doLength', true);
-    }
+        flag(this, 'doLength', true);
+      }

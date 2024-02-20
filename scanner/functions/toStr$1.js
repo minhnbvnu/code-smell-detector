@@ -1,0 +1,1 @@
+function toStr$1(obj){return objectToString.call(obj)}

@@ -1,0 +1,1 @@
+function Y5e(e){return function(r,i){return e!==Bw.browser?r:["color:"+J5e(i.level),"color:unset"].concat(r)}}

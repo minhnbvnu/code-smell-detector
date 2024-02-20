@@ -1,0 +1,1 @@
+function Ka(a){var b=a.indexOf("#");return-1==b?a:a.substr(0,b)}

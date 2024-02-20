@@ -1,0 +1,1 @@
+function parse_Rgce(blob,length){var target=blob.l+length;var R,id,ptgs=[];while(target!=blob.l){length=target-blob.l;id=blob[blob.l];R=PtgTypes[id];if(id===24||id===25){id=blob[blob.l+1];R=(id===24?Ptg18:Ptg19)[id]}if(!R||!R.f){ptgs.push(parsenoop(blob,length))}else{ptgs.push([R.n,R.f(blob,length)])}}return ptgs}

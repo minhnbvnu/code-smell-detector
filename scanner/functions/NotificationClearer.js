@@ -1,0 +1,1 @@
+function NotificationClearer(){return _classCallCheck2(this,NotificationClearer),_super7.apply(this,arguments)}

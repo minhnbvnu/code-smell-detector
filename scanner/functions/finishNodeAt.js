@@ -1,7 +1,1 @@
-function finishNodeAt(node, type, pos, loc) {
-	  node.type = type;
-	  node.end = pos;
-	  node.loc.end = loc;
-	  this.processComment(node);
-	  return node;
-	}
+function finishNodeAt(i,o,s,u){return i.type=o,i.end=s,this.options.locations&&(i.loc.end=u),this.options.ranges&&(i.range[1]=s),i}

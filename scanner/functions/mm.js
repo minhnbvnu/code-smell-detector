@@ -1,0 +1,1 @@
+function mm(a,b){a=a|0;b=b|0;var c=0;if(b>>>0>=2){c=0;return c|0}f[a+28>>2]=b;c=1;return c|0}

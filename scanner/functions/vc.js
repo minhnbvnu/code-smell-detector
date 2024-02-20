@@ -1,1 +1,1 @@
-function vc(a,b){a=a|0;b=b|0;var c=0;if(!(H[b+56>>2]|!b|I[b+24|0]!=3)){H[a+60>>2]=b;c=1}return c|0}
+function vc(a,b){a=a.replace(be,"");var d=Date.parse("Jan 01, 1970 00:00:00 "+a)/6E4;return isNaN(d)?b:d}

@@ -1,1 +1,1 @@
-function cc(a){a=a|0;if(a){ea[H[H[a>>2]+4>>2]](a)}}
+function cc(a){a=a.split("/");for(var b=a.length;b--;)a[b]=rb(a[b]);return a.join("/")}

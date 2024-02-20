@@ -1,1 +1,1 @@
-function Fr(t){for(var n in cf)if(cf[n].id===t)return t=cf[n],{firebaseEndpoint:t.Va,secureTokenEndpoint:t.ab};return null}
+function Fr(t,e,i){var n;return"#"+nr(n=((1<<24)+(t<<16)+(e<<8)+i).toString(16)).call(n,1)}

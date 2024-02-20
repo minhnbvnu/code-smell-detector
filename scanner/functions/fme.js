@@ -1,0 +1,1 @@
+function fme(e,t){var r;if(typeof e=="string"){if(r=this.getSchema(e),!r)throw new Error('no schema with key or ref "'+e+'"')}else{var i=this._addSchema(e);r=i.validate||this._compile(i)}var a=r(t);return r.$async!==!0&&(this.errors=r.errors),a}

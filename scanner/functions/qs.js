@@ -1,1 +1,1 @@
-function Qs(){return Lf||(Lf=new $s),Lf}
+function qs(e,t){for(var r=-1,n=null==e?0:e.length,i=0,a=[];++r<n;){var o=e[r];t(o,r,e)&&(a[i++]=o)}return a}

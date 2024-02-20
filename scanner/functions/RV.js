@@ -1,0 +1,1 @@
+function RV(t){return new ze(t[0][0],t[1][0],t[0][1]-t[0][0],t[1][1]-t[1][0])}

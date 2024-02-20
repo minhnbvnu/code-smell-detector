@@ -1,1 +1,2 @@
-function ClassHandle(){}
+function ClassHandle() {
+        }

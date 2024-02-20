@@ -1,0 +1,1 @@
+function Q4e(e){if(e===null)return!0;var t=[],r,i,a,n,s,o=e;for(r=0,i=o.length;r<i;r+=1){if(a=o[r],s=!1,Y4e.call(a)!=="[object Object]")return!1;for(n in a)if(X4e.call(a,n))if(!s)s=!0;else return!1;if(!s)return!1;if(t.indexOf(n)===-1)t.push(n);else return!1}return!0}

@@ -1,8 +1,5 @@
-function WithStatement(node) {
-	  this.word("with");
-	  this.space();
-	  this.token("(");
-	  this.print(node.object, node);
-	  this.token(")");
-	  this.printBlock(node);
-	}
+function WithStatement(object, body) {
+	        this.type = syntax_1.Syntax.WithStatement;
+	        this.object = object;
+	        this.body = body;
+	    }

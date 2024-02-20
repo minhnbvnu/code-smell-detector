@@ -1,0 +1,1 @@
+function OO(t,e,r){var n=e.width/2,i=e.height/2,s=t.insert("ellipse",":first-child").attr("x",-e.width/2).attr("y",-e.height/2).attr("rx",n).attr("ry",i);return r.intersect=function(a){return s3(r,n,i,a)},s}

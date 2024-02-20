@@ -1,0 +1,1 @@
+function Q_(t){return ArrayBuffer.isView(t)&&!(t instanceof DataView)}

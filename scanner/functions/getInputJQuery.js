@@ -1,0 +1,3 @@
+function getInputJQuery() {
+			return element;
+		}

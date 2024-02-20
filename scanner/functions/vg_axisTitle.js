@@ -1,0 +1,1 @@
+function vg_axisTitle(){return{type:"text",interactive:true,properties:{enter:{font:{value:vg.config.axis.titleFont},fontSize:{value:vg.config.axis.titleFontSize},fontWeight:{value:vg.config.axis.titleFontWeight},fill:{value:vg.config.axis.titleColor},align:{value:"center"},baseline:{value:"middle"},text:{field:"data"}},update:{}}}}

@@ -1,0 +1,1 @@
+function PIe(e){return e&&{}.toString.call(e)==="[object Function]"}

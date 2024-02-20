@@ -1,0 +1,1 @@
+function parse_RecalcId(blob,length){blob.read_shift(2);return blob.read_shift(4)}

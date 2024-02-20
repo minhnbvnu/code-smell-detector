@@ -1,0 +1,1 @@
+function c_m(_,$){_=makeInRange(_,0,59);if($||_!=$dt.m){$dt.m=_;dealRange("m")}}

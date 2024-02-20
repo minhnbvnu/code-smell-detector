@@ -1,0 +1,1 @@
+function FO(t,e,r){var n=e.width*Math.SQRT2/2,i=e.height*Math.SQRT2/2,s=[{x:0,y:-i},{x:-n,y:0},{x:0,y:i},{x:n,y:0}],a=t.insert("polygon",":first-child").attr("points",s.map(function(o){return o.x+","+o.y}).join(" "));return r.intersect=function(o){return jn(r,s,o)},a}

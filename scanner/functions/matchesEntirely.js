@@ -1,0 +1,1 @@
+function matchesEntirely(i,o){return i=i||"",new RegExp("^(?:"+o+")$").test(i)}

@@ -1,0 +1,1 @@
+function Pf(a,b,d){d.call(a,b)}

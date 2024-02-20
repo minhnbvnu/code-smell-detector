@@ -1,1 +1,1 @@
-function Ge(e){var t=k.cssProps[e]||Ve[e];return t||(e in Xe?e:Ve[e]=function(e){var t=e[0].toUpperCase()+e.slice(1),n=Ue.length;while(n--)if((e=Ue[n]+t)in Xe)return e}(e)||e)}
+function GE(t,e,n,i){var r=FE(n);return e.add(r),i.set(t,r),VE(r).id=t,VE(r).isNew=!0,r}

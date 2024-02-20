@@ -1,0 +1,1 @@
+function Traversal(t){var o;_classCallCheck(this,Traversal);(o=r.call(this,_,"traversal",!0)).id=t.id||"";o.use=t.use||"";o.usehref=t.usehref||"";o.extras=null;o.traverse=new c.XFAObjectArray;return o}

@@ -1,0 +1,1 @@
+function parse_PtgAttrGoto(blob,length){var bitGoto=blob[blob.l+1]&255?1:0;blob.l+=2;return[bitGoto,blob.read_shift(2)]}

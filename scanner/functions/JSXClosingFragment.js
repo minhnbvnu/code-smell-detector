@@ -1,0 +1,1 @@
+function JSXClosingFragment(){i.apply(this,arguments)}

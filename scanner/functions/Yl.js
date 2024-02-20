@@ -1,0 +1,1 @@
+function Yl(t,e,i){for(var n=0,r=0;r<t.length;r++){var o=t[r].start,s=t[r].end;o>=e&&s<i&&(n+=s-o)}return n}

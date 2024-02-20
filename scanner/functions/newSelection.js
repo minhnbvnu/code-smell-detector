@@ -1,0 +1,1 @@
+function newSelection(e){if(options.disabled){return false}if(!options.allowSelect){return false}btndown=true;docOffset=getPos($img);Selection.disableHandles();myCursor("crosshair");var pos=mouseAbs(e);Coords.setPressed(pos);Tracker.activateHandlers(selectDrag,doneSelect);KeyManager.watchKeys();Selection.update();e.stopPropagation();e.preventDefault();return false}

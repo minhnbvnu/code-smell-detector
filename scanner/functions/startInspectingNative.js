@@ -1,0 +1,3 @@
+function startInspectingNative() {
+    registerListenersOnWindow(window);
+  }

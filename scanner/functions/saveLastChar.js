@@ -1,0 +1,1 @@
+function saveLastChar(t){var r=(D+1)%2,o=" "!==j[D]&&" "===j[r];j[D]=t;D=r;return o}

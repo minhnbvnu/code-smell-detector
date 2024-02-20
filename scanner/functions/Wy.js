@@ -1,0 +1,1 @@
+function Wy(t,n){return cy(t.getFullYear()%1e4,n,4)}

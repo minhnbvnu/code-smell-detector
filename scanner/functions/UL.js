@@ -1,0 +1,1 @@
+function UL(t,e,n){E(t.slice().reverse(),(function(t){E(t,(function(t){if(t.outEdges.length){var i=QL(t.outEdges,ZL,n)/QL(t.outEdges,JL);if(isNaN(i)){var r=t.outEdges.length;i=r?QL(t.outEdges,jL,n)/r:0}if("vertical"===n){var o=t.getLayout().x+(i-$L(t,n))*e;t.setLayout({x:o},!0)}else{var a=t.getLayout().y+(i-$L(t,n))*e;t.setLayout({y:a},!0)}}}))}))}

@@ -1,0 +1,1 @@
+function getMatchData$1(object){for(var result=keys$2(object),length=result.length;length--;){var key=result[length],value=object[key];result[length]=[key,value,isStrictComparable$1(value)]}return result}

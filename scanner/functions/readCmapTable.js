@@ -1,39 +1,36 @@
-function readCmapTable(cmap, file, isSymbolicFont, hasEncoding) {
-        if (!cmap) {
-          (0, _util.warn)("No cmap table available.");
-          return {
-            platformId: -1,
-            encodingId: -1,
-            mappings: [],
-            hasShortCmap: false
-          };
-        }
-
+function readCmapTable(cmap, font, isSymbolicFont) {
         var segment;
-        var start = (file.start ? file.start : 0) + cmap.offset;
-        file.pos = start;
-        file.skip(2);
-        var numTables = file.getUint16();
+        var start = (font.start ? font.start : 0) + cmap.offset;
+        font.pos = start;
+
+        var version = font.getUint16();
+        var numTables = font.getUint16();
+
         var potentialTable;
         var canBreak = false;
-
+        // There's an order of preference in terms of which cmap subtable to
+        // use:
+        // - non-symbolic fonts the preference is a 3,1 table then a 1,0 table
+        // - symbolic fonts the preference is a 3,0 table then a 1,0 table
+        // The following takes advantage of the fact that the tables are sorted
+        // to work.
         for (var i = 0; i < numTables; i++) {
-          var platformId = file.getUint16();
-          var encodingId = file.getUint16();
-          var offset = file.getInt32() >>> 0;
+          var platformId = font.getUint16();
+          var encodingId = font.getUint16();
+          var offset = font.getInt32() >>> 0;
           var useTable = false;
 
-          if (potentialTable && potentialTable.platformId === platformId && potentialTable.encodingId === encodingId) {
-            continue;
-          }
-
-          if (platformId === 0 && (encodingId === 0 || encodingId === 1 || encodingId === 3)) {
+          if (platformId === 0 && encodingId === 0) {
             useTable = true;
+            // Continue the loop since there still may be a higher priority
+            // table.
           } else if (platformId === 1 && encodingId === 0) {
             useTable = true;
-          } else if (platformId === 3 && encodingId === 1 && (hasEncoding || !potentialTable)) {
+            // Continue the loop since there still may be a higher priority
+            // table.
+          } else if (platformId === 3 && encodingId === 1 &&
+                     (!isSymbolicFont || !potentialTable)) {
             useTable = true;
-
             if (!isSymbolicFont) {
               canBreak = true;
             }
@@ -44,23 +41,18 @@ function readCmapTable(cmap, file, isSymbolicFont, hasEncoding) {
 
           if (useTable) {
             potentialTable = {
-              platformId,
-              encodingId,
-              offset
+              platformId: platformId,
+              encodingId: encodingId,
+              offset: offset
             };
           }
-
           if (canBreak) {
             break;
           }
         }
 
-        if (potentialTable) {
-          file.pos = start + potentialTable.offset;
-        }
-
-        if (!potentialTable || file.peekByte() === -1) {
-          (0, _util.warn)("Could not find a preferred cmap table.");
+        if (!potentialTable) {
+          warn('Could not find a preferred cmap table.');
           return {
             platformId: -1,
             encodingId: -1,
@@ -69,55 +61,50 @@ function readCmapTable(cmap, file, isSymbolicFont, hasEncoding) {
           };
         }
 
-        var format = file.getUint16();
-        file.skip(2 + 2);
+        font.pos = start + potentialTable.offset;
+        var format = font.getUint16();
+        var length = font.getUint16();
+        var language = font.getUint16();
+
         var hasShortCmap = false;
         var mappings = [];
         var j, glyphId;
 
+        // TODO(mack): refactor this cmap subtable reading logic out
         if (format === 0) {
           for (j = 0; j < 256; j++) {
-            var index = file.getByte();
-
+            var index = font.getByte();
             if (!index) {
               continue;
             }
-
             mappings.push({
               charCode: j,
               glyphId: index
             });
           }
-
           hasShortCmap = true;
         } else if (format === 4) {
-          var segCount = file.getUint16() >> 1;
-          file.skip(6);
-          var segIndex,
-              segments = [];
-
+          // re-creating the table in format 4 since the encoding
+          // might be changed
+          var segCount = (font.getUint16() >> 1);
+          font.getBytes(6); // skipping range fields
+          var segIndex, segments = [];
           for (segIndex = 0; segIndex < segCount; segIndex++) {
-            segments.push({
-              end: file.getUint16()
-            });
+            segments.push({ end: font.getUint16() });
           }
-
-          file.skip(2);
-
+          font.getUint16();
           for (segIndex = 0; segIndex < segCount; segIndex++) {
-            segments[segIndex].start = file.getUint16();
+            segments[segIndex].start = font.getUint16();
           }
 
           for (segIndex = 0; segIndex < segCount; segIndex++) {
-            segments[segIndex].delta = file.getUint16();
+            segments[segIndex].delta = font.getUint16();
           }
 
           var offsetsCount = 0;
-
           for (segIndex = 0; segIndex < segCount; segIndex++) {
             segment = segments[segIndex];
-            var rangeOffset = file.getUint16();
-
+            var rangeOffset = font.getUint16();
             if (!rangeOffset) {
               segment.offsetIndex = -1;
               continue;
@@ -125,13 +112,13 @@ function readCmapTable(cmap, file, isSymbolicFont, hasEncoding) {
 
             var offsetIndex = (rangeOffset >> 1) - (segCount - segIndex);
             segment.offsetIndex = offsetIndex;
-            offsetsCount = Math.max(offsetsCount, offsetIndex + segment.end - segment.start + 1);
+            offsetsCount = Math.max(offsetsCount, offsetIndex +
+                                    segment.end - segment.start + 1);
           }
 
           var offsets = [];
-
           for (j = 0; j < offsetsCount; j++) {
-            offsets.push(file.getUint16());
+            offsets.push(font.getUint16());
           }
 
           for (segIndex = 0; segIndex < segCount; segIndex++) {
@@ -142,44 +129,48 @@ function readCmapTable(cmap, file, isSymbolicFont, hasEncoding) {
             offsetIndex = segment.offsetIndex;
 
             for (j = start; j <= end; j++) {
-              if (j === 0xffff) {
+              if (j === 0xFFFF) {
                 continue;
               }
 
-              glyphId = offsetIndex < 0 ? j : offsets[offsetIndex + j - start];
-              glyphId = glyphId + delta & 0xffff;
+              glyphId = (offsetIndex < 0 ?
+                         j : offsets[offsetIndex + j - start]);
+              glyphId = (glyphId + delta) & 0xFFFF;
+              if (glyphId === 0) {
+                continue;
+              }
               mappings.push({
                 charCode: j,
-                glyphId
+                glyphId: glyphId
               });
             }
           }
         } else if (format === 6) {
-          var firstCode = file.getUint16();
-          var entryCount = file.getUint16();
+          // Format 6 is a 2-bytes dense mapping, which means the font data
+          // lives glue together even if they are pretty far in the unicode
+          // table. (This looks weird, so I can have missed something), this
+          // works on Linux but seems to fails on Mac so let's rewrite the
+          // cmap table to a 3-1-4 style
+          var firstCode = font.getUint16();
+          var entryCount = font.getUint16();
 
           for (j = 0; j < entryCount; j++) {
-            glyphId = file.getUint16();
+            glyphId = font.getUint16();
             var charCode = firstCode + j;
+
             mappings.push({
-              charCode,
-              glyphId
+              charCode: charCode,
+              glyphId: glyphId
             });
           }
         } else {
-          (0, _util.warn)("cmap table has unsupported format: " + format);
-          return {
-            platformId: -1,
-            encodingId: -1,
-            mappings: [],
-            hasShortCmap: false
-          };
+          error('cmap table has unsupported format: ' + format);
         }
 
+        // removing duplicate entries
         mappings.sort(function (a, b) {
           return a.charCode - b.charCode;
         });
-
         for (i = 1; i < mappings.length; i++) {
           if (mappings[i - 1].charCode === mappings[i].charCode) {
             mappings.splice(i, 1);
@@ -190,7 +181,7 @@ function readCmapTable(cmap, file, isSymbolicFont, hasEncoding) {
         return {
           platformId: potentialTable.platformId,
           encodingId: potentialTable.encodingId,
-          mappings,
-          hasShortCmap
+          mappings: mappings,
+          hasShortCmap: hasShortCmap
         };
       }

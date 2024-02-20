@@ -1,0 +1,1 @@
+function receiveInstantiatedSource(output){receiveInstance(output["instance"])}

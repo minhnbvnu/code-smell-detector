@@ -1,0 +1,3 @@
+function createDefaultSuperCallOrThis() {
+                return factory2.createLogicalOr(factory2.createLogicalAnd(factory2.createStrictInequality(factory2.createUniqueName("_super", 16 /* Optimistic */ | 32 /* FileLevel */), factory2.createNull()), factory2.createFunctionApplyCall(factory2.createUniqueName("_super", 16 /* Optimistic */ | 32 /* FileLevel */), createActualThis(), factory2.createIdentifier("arguments"))), createActualThis());
+            }

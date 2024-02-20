@@ -1,3 +1,3 @@
 function webViewerPreviousPage() {
-  PDFViewerApplication.pdfViewer.previousPage();
+  PDFViewerApplication.page--;
 }

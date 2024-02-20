@@ -1,0 +1,4 @@
+function runNavierStokes()
+{
+    solver.update();
+}

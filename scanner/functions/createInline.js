@@ -1,0 +1,1 @@
+function createInline(pattern){return pattern=pattern.replace(/<inner>/g,(function(){return inner})),RegExp(/((?:^|[^\\])(?:\\{2})*)/.source+"(?:"+pattern+")")}

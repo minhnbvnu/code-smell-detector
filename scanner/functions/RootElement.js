@@ -1,0 +1,1 @@
+function RootElement(t){var o;_classCallCheck(this,RootElement);(o=r.call(this,u,"rootElement")).id=t.id||"";o.name=t.name||"";o.use=t.use||"";o.usehref=t.usehref||"";return o}

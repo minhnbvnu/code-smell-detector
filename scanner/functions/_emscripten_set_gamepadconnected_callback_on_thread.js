@@ -1,0 +1,1 @@
+function _emscripten_set_gamepadconnected_callback_on_thread(userData,useCapture,callbackfunc,targetThread){if(!navigator.getGamepads&&!navigator.webkitGetGamepads)return-1;registerGamepadEventCallback(2,userData,useCapture,callbackfunc,26,"gamepadconnected",targetThread);return 0}

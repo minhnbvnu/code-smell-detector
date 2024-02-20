@@ -1,1 +1,1 @@
-function Ei(t){var n,e={};for(n in t)t.hasOwnProperty(n)&&(e[n]=t[n]);return e}
+function eI(t){return t&&"category"!==t.type&&"time"!==t.type&&function(t){var e=t.scale.getExtent(),n=e[0],i=e[1];return!(n>0&&i>0||n<0&&i<0)}(t)}

@@ -1,0 +1,1 @@
+function StaticSegment(string) { this.string = string; }

@@ -1,0 +1,1 @@
+function listner(event){run.call(event.data)}

@@ -1,0 +1,1 @@
+function findSection(i,o){var s=us()(i,{name:o});if(s)return s;for(var u=0;u<i.length;u++){var C=i[u];if(C.sections&&0!==C.sections.length){var _=findSection(C.sections,o);if(_)return _}}}

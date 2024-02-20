@@ -1,0 +1,1 @@
+function _glGetBufferSubData(target,offset,size,data){if(!data){GL.recordError(1281);return}GLctx["getBufferSubData"](target,offset,HEAPU8,data,size)}

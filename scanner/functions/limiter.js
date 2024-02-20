@@ -1,0 +1,1 @@
+function limiter(fn) { return _.debounce(fn, 20); }

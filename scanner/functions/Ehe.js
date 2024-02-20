@@ -1,0 +1,1 @@
+function Ehe(e){return Intl.Locale?new Intl.Locale(e).language:e.split("-")[0]}

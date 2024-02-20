@@ -1,1 +1,1 @@
-function Nc(){return 2}
+function NC(e,t){e.input[e.index-1]==="."&&t.ignoreMatch()}

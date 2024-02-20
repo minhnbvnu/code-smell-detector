@@ -1,0 +1,1 @@
+function aRe(e){const t=jse(e),r=zse(e);if(t&&r)return{start:t,end:r}}

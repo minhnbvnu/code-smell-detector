@@ -1,3 +1,3 @@
 function MixedTypeAnnotation() {
-	  this.word("mixed");
-	}
+  this.word("mixed");
+}

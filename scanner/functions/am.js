@@ -1,1 +1,1 @@
-function am(p,t){return(p[t]<<24|p[t+1]<<16|p[t+2]<<8|p[t+3])>>>0}
+function am(a,c){a=a|0;c=c|0;var d=0,e=0;if((a|0)!=(c|0)){d=b[c+11>>0]|0;e=d<<24>>24<0;jj(a,e?f[c>>2]|0:c,e?f[c+4>>2]|0:d&255)|0}return a|0}

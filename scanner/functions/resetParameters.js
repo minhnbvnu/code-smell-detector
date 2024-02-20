@@ -1,10 +1,1 @@
-function resetParameters() {
-			first = true;
-			scoringHistory = [];
-			previousParameters = [];
-			currentPositions = [];
-			previousPositions = [];
-			for (var i = 0;i < currentParameters.length;i++) {
-				currentParameters[i] = 0;
-			}
-		}
+function resetParameters(){first=!0,scoringHistory=[],previousParameters=[],currentPositions=[],previousPositions=[];for(var i=0;i<currentParameters.length;i++)currentParameters[i]=0}

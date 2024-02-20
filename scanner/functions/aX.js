@@ -1,0 +1,1 @@
+function aX(e,t){for(var r=!0,i=e.slice(),a=i.pop();r&&i.length;)r=i.every(function(n){return a.intersects(n,t)}),a=i.pop();return r}

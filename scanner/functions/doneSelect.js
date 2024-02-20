@@ -1,0 +1,1 @@
+function doneSelect(pos){var c=Coords.getFixed();if(c.w>options.minSelect[0]&&c.h>options.minSelect[1]){Selection.enableHandles();Selection.done()}else{Selection.release()}Tracker.setCursor(options.allowSelect?"crosshair":"default")}

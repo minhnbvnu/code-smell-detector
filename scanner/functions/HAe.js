@@ -1,0 +1,1 @@
+function HAe(e){switch(e){case"error":return"red";case"warn":return"yellow";case"info":return"cyan";default:return"unset"}}

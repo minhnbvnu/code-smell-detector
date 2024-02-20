@@ -1,0 +1,1 @@
+function PageRange(t){_classCallCheck(this,PageRange);return r.call(this,d,"pageRange")}

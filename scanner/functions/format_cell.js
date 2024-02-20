@@ -1,0 +1,1 @@
+function format_cell(cell,v){if(cell==null||cell.t==null)return"";if(cell.w!==undefined)return cell.w;if(v===undefined)return safe_format_cell(cell,cell.v);return safe_format_cell(cell,v)}

@@ -1,0 +1,1 @@
+function DeviceRgbCS(){_classCallCheck(this,DeviceRgbCS);return r.call(this,"DeviceRGB",3)}

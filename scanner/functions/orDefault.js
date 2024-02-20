@@ -1,0 +1,1 @@
+function orDefault(fromStore,defaultState){return void 0===fromStore?defaultState:fromStore}

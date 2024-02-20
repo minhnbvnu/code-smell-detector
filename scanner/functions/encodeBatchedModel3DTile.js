@@ -1,0 +1,30 @@
+function encodeBatchedModel3DTile(tile, dataView, byteOffset, options) {
+    const { featuresLength = 0, batchTable } = tile;
+    const featureTableJson = {
+      BATCH_LENGTH: featuresLength
+    };
+    const featureTableJsonString = JSON.stringify(featureTableJson);
+    const batchTableJsonString = batchTable ? JSON.stringify(batchTable) : "";
+    const featureTableJsonByteLength = padToNBytes(featureTableJsonString.length, 8);
+    const batchTableJsonByteLength = batchTableJsonString ? padToNBytes(batchTableJsonString.length, 8) : 0;
+    tile = { magic: MAGIC_ARRAY.BATCHED_MODEL, ...tile };
+    const byteOffsetStart = byteOffset;
+    byteOffset = encode3DTileHeader(tile, dataView, byteOffset);
+    if (dataView) {
+      dataView.setUint32(12, featureTableJsonByteLength, true);
+      dataView.setUint32(16, 0, true);
+      dataView.setUint32(20, batchTableJsonByteLength, true);
+      dataView.setUint32(24, 0, true);
+    }
+    byteOffset += 16;
+    byteOffset = copyPaddedStringToDataView(dataView, byteOffset, featureTableJsonString, 8);
+    if (batchTable) {
+      byteOffset = copyPaddedStringToDataView(dataView, byteOffset, batchTableJsonString, 8);
+    }
+    const gltfEncoded = tile.gltfEncoded;
+    if (gltfEncoded) {
+      byteOffset = copyBinaryToDataView(dataView, byteOffset, gltfEncoded, gltfEncoded.byteLength);
+    }
+    encode3DTileByteLength(dataView, byteOffsetStart, byteOffset - byteOffsetStart);
+    return byteOffset;
+  }

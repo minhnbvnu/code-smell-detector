@@ -1,0 +1,1 @@
+function PointCloudBuilder(){this.ptr=_emscripten_bind_PointCloudBuilder_PointCloudBuilder_0();getCache(PointCloudBuilder)[this.ptr]=this}

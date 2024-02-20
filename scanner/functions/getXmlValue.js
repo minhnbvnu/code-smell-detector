@@ -1,0 +1,1 @@
+function getXmlValue(e,t){var r=e.indexOf("<"+t+">"),n=e.indexOf("</"+t+">",r);return-1!==r&&-1!==n?e.slice(r+t.length+2,n):""}

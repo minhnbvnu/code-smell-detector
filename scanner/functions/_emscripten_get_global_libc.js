@@ -1,0 +1,1 @@
+function _emscripten_get_global_libc(){var label=0,sp=0;sp=STACKTOP;return 36440|0}

@@ -1,1 +1,1 @@
-function Uj(a){var b=0;while(1){if(a){a=a-1&a;b=b+1|0;continue}break}return b}
+function Uj(a){a=a|0;var b=0,c=0,d=0,e=0,g=0,h=0;b=u;u=u+16|0;c=b+8|0;d=b+4|0;e=b;f[e>>2]=f[(f[a+4>>2]|0)+80>>2];g=f[a+44>>2]|0;a=g+16|0;h=f[a+4>>2]|0;if((h|0)>0|(h|0)==0&(f[a>>2]|0)>>>0>0){u=b;return 1}f[d>>2]=f[g+4>>2];f[c>>2]=f[d>>2];Me(g,c,e,e+4|0)|0;u=b;return 1}

@@ -1,0 +1,1 @@
+function k3e(e){return e===void 0?new Gy(Gl.LogLevel.Information):e===null?C3e.NullLogger.instance:e.log!==void 0?e:new Gy(e)}

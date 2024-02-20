@@ -1,0 +1,1 @@
+function $distanceSquared2D(u, v) { return $square(u.x - v.x) + $square(u.y - v.y); }

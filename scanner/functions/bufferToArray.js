@@ -1,0 +1,1 @@
+function bufferToArray(t){for(var e=t.length/4,i=new Array(e),r=-1;++r<e;)i[r]=t.readUInt32BE(4*r);return i}

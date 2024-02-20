@@ -1,0 +1,1 @@
+function ___sys_read(fd,buf,count){try{var stream=SYSCALLS.getStreamFromFD(fd);return FS.read(stream,HEAP8,buf,count)}catch(e){if(typeof FS==="undefined"||!(e instanceof FS.ErrnoError))abort(e);return-e.errno}}

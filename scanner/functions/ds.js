@@ -1,0 +1,1 @@
+function ds(e){return(lf(e)?jn:Qr)(e)}

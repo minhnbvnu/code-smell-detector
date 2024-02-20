@@ -1,0 +1,1 @@
+function Producer(t){_classCallCheck(this,Producer);return r.call(this,d,"producer")}

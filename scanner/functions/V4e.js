@@ -1,0 +1,1 @@
+function V4e(e){return e==="<<"||e===null}

@@ -1,0 +1,1 @@
+function Hfe(e){return typeof e=="number"}

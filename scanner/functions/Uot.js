@@ -1,0 +1,1 @@
+function Uot(n,t){return n.x-t.x}

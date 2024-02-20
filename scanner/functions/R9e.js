@@ -1,0 +1,1 @@
+function R9e(e){return new di(this.q,this.x.multiply(e.toBigInteger()).mod(this.q))}

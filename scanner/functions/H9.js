@@ -1,0 +1,1 @@
+function H9(e,a){const{pathname:r,search:c,hash:i}=a,s=e.indexOf("#");if(s>-1){let p=i.includes(e.slice(s))?e.slice(s).length:1,y=i.slice(p);return y[0]!=="/"&&(y="/"+y),P6(y,"")}return P6(r,e)+c+i}

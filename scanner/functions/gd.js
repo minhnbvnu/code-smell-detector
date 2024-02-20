@@ -1,0 +1,1 @@
+function gd(a){a=y(a)?sa(a):a;return a.protocol===wd.protocol&&a.host===wd.host}

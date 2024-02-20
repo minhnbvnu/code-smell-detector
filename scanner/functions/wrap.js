@@ -1,8 +1,7 @@
-function wrap(n, min, max) {
-    if (n === max || n === min) {
-        return n;
+function wrap(fn) {
+      return function(value) {
+        if (called) return;
+        called = true;
+        fn.call(self, value);
+      };
     }
-    const d = max - min;
-    const w = ((n - min) % d + d) % d + min;
-    return w;
-}

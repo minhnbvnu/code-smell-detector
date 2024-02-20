@@ -1,0 +1,1 @@
+function Vhe(e){let{locale:t,children:r}=e,n=KZ(),i=t?{locale:t,direction:qZ(t)?"rtl":"ltr"}:n;return S.createElement(YZ.Provider,{value:i},r)}

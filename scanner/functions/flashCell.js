@@ -1,0 +1,1 @@
+function flashCell(e,o,t){(t=t||100,rowsCache[e])&&function e(o,n){n&&setTimeout((function(){o.queue((function(){o.toggleClass(options.cellFlashingCssClass).dequeue(),e(o,n-1)}))}),t)}($(getCellNode(e,o)),4)}

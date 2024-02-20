@@ -1,0 +1,1 @@
+function t3(t,e){return!!t.children(e).length}

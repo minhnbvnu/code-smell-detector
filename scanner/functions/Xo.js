@@ -1,1 +1,1 @@
-function Xo(t){this.a=t,this.b=To()}
+function Xo(){return De(this.year(),1,4)}

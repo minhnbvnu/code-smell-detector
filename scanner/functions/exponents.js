@@ -1,15 +1,1 @@
-function exponents(n, inverse) {
-	  var real = new Float32Array(n / 2);
-	  var imag = new Float32Array(n / 2);
-
-	  for (var i = 0; i < Math.ceil(n / 2); i++) {
-	    var x = (inverse ? 2 : -2) * Math.PI * (i / n);
-	    real[i] = Math.cos(x);
-	    imag[i] = Math.sin(x);
-	  }
-
-	  return {
-	    real: real,
-	    imag: imag
-	  };
-	}
+function exponents(e,t){for(var n=new Float32Array(e/2),r=new Float32Array(e/2),o=0;o<Math.ceil(e/2);o++){var a=(t?2:-2)*Math.PI*(o/e);n[o]=Math.cos(a),r[o]=Math.sin(a);}return {real:n,imag:r}}

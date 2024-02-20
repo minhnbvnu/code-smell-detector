@@ -12,7 +12,7 @@ function initWebGL(canvas) {
 		}
 
 		window.WEBGL_lose_context = gl.getExtension("WEBGL_lose_context");
-
+		
 		const program = createShaderProgram();
 		positionLoc = gl.getAttribLocation(program, 'position');
 		gl.enableVertexAttribArray(positionLoc);

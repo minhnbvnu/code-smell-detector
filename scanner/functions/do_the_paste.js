@@ -1,7 +1,7 @@
-function do_the_paste() {
+function do_the_paste(){
 		deselect();
 		select_tool(get_tool_by_id(TOOL_SELECT));
-
+		
 		const x = Math.max(0, Math.ceil($canvas_area.scrollLeft() / magnification));
 		const y = Math.max(0, Math.ceil(($canvas_area.scrollTop()) / magnification));
 		// Nevermind, canvas, isn't aligned to the right in RTL layout!
@@ -18,7 +18,7 @@ function do_the_paste() {
 			name: localize("Paste"),
 			icon: get_help_folder_icon("p_paste.png"),
 			soft: true,
-		}, () => {
+		}, ()=> {
 			selection = new OnCanvasSelection(x, y, img_or_canvas.width, img_or_canvas.height, img_or_canvas);
 		});
 	}

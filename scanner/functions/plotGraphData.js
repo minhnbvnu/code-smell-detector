@@ -1,0 +1,1 @@
+function plotGraphData(){$.plot(graphContainer,getData(),graphOptions);exportGraph()}

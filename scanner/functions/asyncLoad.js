@@ -1,1 +1,17 @@
-function asyncLoad(url,onload,onerror,noRunDep){var dep=!noRunDep?getUniqueRunDependency("al "+url):"";readAsync(url,arrayBuffer=>{assert(arrayBuffer,'Loading data file "'+url+'" failed (no arrayBuffer).');onload(new Uint8Array(arrayBuffer));if(dep)removeRunDependency(dep)},event=>{if(onerror){onerror()}else{throw'Loading data file "'+url+'" failed.'}});if(dep)addRunDependency(dep)}
+function asyncLoad(url, onload, onerror, noRunDep) {
+          var dep = !noRunDep ? getUniqueRunDependency("al " + url) : "";
+          readAsync(url, (arrayBuffer) => {
+            assert(arrayBuffer, 'Loading data file "' + url + '" failed (no arrayBuffer).');
+            onload(new Uint8Array(arrayBuffer));
+            if (dep)
+              removeRunDependency();
+          }, (event) => {
+            if (onerror) {
+              onerror();
+            } else {
+              throw 'Loading data file "' + url + '" failed.';
+            }
+          });
+          if (dep)
+            addRunDependency();
+        }

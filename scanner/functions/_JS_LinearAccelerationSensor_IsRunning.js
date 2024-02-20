@@ -1,0 +1,1 @@
+function _JS_LinearAccelerationSensor_IsRunning(){return JS_LinearAccelerationSensor&&JS_LinearAccelerationSensor.activated||JS_LinearAccelerationSensor_callback!=0}

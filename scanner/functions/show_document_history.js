@@ -15,6 +15,8 @@ function show_document_history() {
 	$w.addClass("history-window squish");
 	$w.$content.html(`
 		<label>
+			<!--<input type="checkbox" id="history-show-all-branches" checked> Show all branches-->
+			<!--<input type="checkbox" id="history-view-linear" checked> Linear timeline-->
 			<select id="history-view-mode" class="inset-deep">
 				<option value="linear">Linear timeline</option>
 				<option value="tree">Tree</option>
@@ -31,6 +33,12 @@ function show_document_history() {
 	let rendered_$entries = [];
 	let current_$entry;
 
+	// let $linear_checkbox = $w.$content.find("#history-view-linear");
+	// let linear = $linear_checkbox.is(":checked");
+	// $linear_checkbox.on("change", () => {
+	// 	linear = $linear_checkbox.is(":checked");
+	// 	render_tree();
+	// });
 	let $mode_select = $w.$content.find("#history-view-mode");
 	$mode_select.css({
 		margin: "10px",
@@ -63,7 +71,7 @@ function show_document_history() {
 		if (node === current_history_node) {
 			$entry.addClass("current");
 			current_$entry = $entry;
-			requestAnimationFrame(() => {
+			requestAnimationFrame(()=> {
 				// scrollIntoView causes <html> to scroll when the window is partially offscreen,
 				// despite overflow: hidden on html and body, so it's not an option.
 				$history_view[0].scrollTop =
@@ -84,13 +92,13 @@ function show_document_history() {
 		for (const sub_node of node.futures) {
 			render_tree_from_node(sub_node);
 		}
-		$entry.on("click", () => {
+		$entry.on("click", ()=> {
 			go_to_history_node(node);
 		});
 		$entry.history_node = node;
 		rendered_$entries.push($entry);
 	}
-	const render_tree = () => {
+	const render_tree = ()=> {
 		previous_scroll_position = $history_view.scrollTop();
 		$history_view.empty();
 		rendered_$entries = [];
@@ -108,7 +116,7 @@ function show_document_history() {
 		} else {
 			rendered_$entries.reverse();
 		}
-		rendered_$entries.forEach(($entry) => {
+		rendered_$entries.forEach(($entry)=> {
 			$history_view.append($entry);
 		});
 	};
@@ -116,14 +124,14 @@ function show_document_history() {
 
 	// This is different from Ctrl+Z/Ctrl+Shift+Z because it goes over all branches of the history tree, chronologically,
 	// not just one branch.
-	const go_by = (index_delta) => {
+	const go_by = (index_delta)=> {
 		const from_index = rendered_$entries.indexOf(current_$entry);
 		const to_index = from_index + index_delta;
 		if (rendered_$entries[to_index]) {
 			rendered_$entries[to_index].click();
 		}
 	};
-	$history_view.on("keydown", (event) => {
+	$history_view.on("keydown", (event)=> {
 		if (!event.ctrlKey && !event.altKey && !event.shiftKey && !event.metaKey) {
 			if (event.key === "ArrowDown" || event.key === "Down") {
 				go_by(1);
@@ -136,7 +144,7 @@ function show_document_history() {
 	});
 
 	$G.on("history-update", render_tree);
-	$w.on("close", () => {
+	$w.on("close", ()=> {
 		$G.off("history-update", render_tree);
 	});
 

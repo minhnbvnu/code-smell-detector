@@ -1,0 +1,1 @@
+function lye(e,t){let r,i=rw(e);try{r=rw(t)}catch(a){if(a.code==="ENOENT")return{srcStat:i,destStat:null};throw a}return{srcStat:i,destStat:r}}

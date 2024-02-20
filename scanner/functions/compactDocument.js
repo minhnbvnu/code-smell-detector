@@ -1,0 +1,1 @@
+function compactDocument(e,t,n){customApi._getRevisionTree(e,function(r,o){if(r)return call(n);var i=computeHeight(o),a=[],s=[];Object.keys(i).forEach(function(e){i[e]>t&&a.push(e)}),merge.traverseRevTree(o,function(e,t,n,r,o){var i=t+"-"+n;"available"===o.status&&-1!==a.indexOf(i)&&(o.status="missing",s.push(i))}),customApi._doCompaction(e,o,s,n)})}

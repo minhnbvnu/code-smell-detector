@@ -1,0 +1,1 @@
+function ixe(e,t){for(var r=-1,i=e==null?0:e.length;++r<i;)if(t(e[r],r,e))return!0;return!1}

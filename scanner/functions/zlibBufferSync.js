@@ -1,0 +1,1 @@
+function zlibBufferSync(e,n){if("string"==typeof n&&(n=new Buffer(n)),!Buffer.isBuffer(n))throw new TypeError("Not a string or buffer");var i=binding.Z_FINISH;return e._processChunk(n,i)}

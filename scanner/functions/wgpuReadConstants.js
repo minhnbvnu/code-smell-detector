@@ -1,0 +1,1 @@
+function wgpuReadConstants(constants,numConstants){let c={};while(numConstants--){c[UTF8ToString(HEAPU32[constants>>2])]=HEAPF64[constants+8>>3];constants+=16}return c}

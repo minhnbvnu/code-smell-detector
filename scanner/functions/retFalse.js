@@ -1,0 +1,3 @@
+function retFalse() {
+  return FALSE;
+}

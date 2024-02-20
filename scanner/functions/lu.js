@@ -1,1 +1,1 @@
-function Lu(a){a=a|0;var b=0;b=fa-16|0;L[b+12>>2]=a;return S(P[L[b+12>>2]+112>>2])}
+function lu(t){var e=t.length;if(1===e)return{x:Ah(t[0].clientX),y:Ah(t[0].clientY)};for(var i=0,n=0,o=0;o<e;)i+=t[o].clientX,n+=t[o].clientY,o++;return{x:Ah(i/e),y:Ah(n/e)}}

@@ -1,0 +1,1 @@
+function FL(e){var t=e.tree,n=e.context,r=void 0===n?{}:n,o=e.renderFunction,i=void 0===o?a(97762).renderToStaticMarkup:o,s=new rl;return Promise.resolve().then((function e(){var n=oe(),o=i(h.createElement(n.Provider,{value:W(W({},r),{renderPromises:s})},t));return s.hasPromises()?s.consumeAndAwaitPromises().then(e):o}))}

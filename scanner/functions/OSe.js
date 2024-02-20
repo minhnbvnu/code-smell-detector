@@ -1,0 +1,1 @@
+function OSe(e,t,r){let n=[],i=e,a=0;return Xt.spans(r,e,t,{span(){},point(l,s){l>i&&(n.push({from:i,to:l}),a+=l-i),i=s}},20),i<t&&(n.push({from:i,to:t}),a+=t-i),{total:a,ranges:n}}

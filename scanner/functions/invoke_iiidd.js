@@ -1,0 +1,1 @@
+function invoke_iiidd(index,a1,a2,a3,a4){try{return Module["dynCall_iiidd"](index,a1,a2,a3,a4)}catch(e){if(typeof e!=="number"&&e!=="longjmp")throw e;Module["setThrew"](1,0)}}

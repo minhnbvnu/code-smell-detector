@@ -1,0 +1,1 @@
+function hideMobileKeyboard(){if(mobile_input&&mobile_input.input){mobile_input_text=mobile_input.input.value;mobile_input.input=null;if(mobile_input.parentNode&&mobile_input.parentNode){mobile_input.parentNode.removeChild(mobile_input)}}mobile_input=null;mobile_input_hide_delay=null;setTimeout(function(){mobile_input_ignore_blur_event=false},100)}

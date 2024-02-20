@@ -1,0 +1,1 @@
+function parse_MTRSettings(blob,length){var fMTREnabled=blob.read_shift(4)!==0;var fUserSetThreadCount=blob.read_shift(4)!==0;var cUserThreadCount=blob.read_shift(4);return[fMTREnabled,fUserSetThreadCount,cUserThreadCount]}

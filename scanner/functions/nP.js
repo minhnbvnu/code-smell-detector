@@ -1,0 +1,1 @@
+function nP(n,t){oa[n]=t}

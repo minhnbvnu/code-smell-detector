@@ -1,0 +1,1 @@
+function TagParser(i,o){this._options=i,this._title=o.toLowerCase(),this._tag={title:o,description:null},this._options.lineNumbers&&(this._tag.lineNumber=P),this._first=C-o.length-1,this._last=0,this._extra={}}

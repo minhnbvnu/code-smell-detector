@@ -1,0 +1,1 @@
+function maybeAddRange(i,o){return Z&&(i.range=[o[0]+$,o[1]+$]),i}

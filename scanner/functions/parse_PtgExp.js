@@ -1,0 +1,1 @@
+function parse_PtgExp(blob,length){blob.l++;var row=blob.read_shift(2);var col=blob.read_shift(2);return[row,col]}

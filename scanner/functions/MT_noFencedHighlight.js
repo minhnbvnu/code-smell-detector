@@ -1,0 +1,1 @@
+function MT_noFencedHighlight(name) { test.mode(name, modeMT_noFencedHighlight, Array.prototype.slice.call(arguments, 1)); }

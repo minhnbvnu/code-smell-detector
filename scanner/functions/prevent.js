@@ -1,0 +1,1 @@
+function prevent($e) { $e.preventDefault(); }

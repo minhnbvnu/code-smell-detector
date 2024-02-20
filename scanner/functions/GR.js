@@ -1,0 +1,1 @@
+function GR(t,e,n){var i=e&&e.style;return null==i&&n===vR&&t&&(i=t.styleEmphasis),i}

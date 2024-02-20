@@ -1,3 +1,1 @@
-function affine2d() {
-	        	// empty constructor
-	        }
+function affine2d(){}

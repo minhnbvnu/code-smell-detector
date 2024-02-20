@@ -1,0 +1,1 @@
+function qU(t){return t>=48&&t<=57}

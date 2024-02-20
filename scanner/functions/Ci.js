@@ -1,1 +1,1 @@
-function Ci(t){var n=t&&t.code;return n?new Pi(n.substring(dh.length),t.message):null}
+function Ci(t,e,i,n){var r=Ze(e,i);return t._milliseconds+=n*r._milliseconds,t._days+=n*r._days,t._months+=n*r._months,t._bubble()}

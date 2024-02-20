@@ -1,0 +1,1 @@
+function parse_BrtFmlaString(data,length,opts){var start=data.l;var cell=parse_XLSBCell(data);var value=parse_XLWideString(data);var o=[cell,value,"str"];if(opts.cellFormula){var formula=parse_XLSBCellParsedFormula(data,start+length-data.l)}else data.l=start+length;return o}

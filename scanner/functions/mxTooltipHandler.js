@@ -1,0 +1,1 @@
+function mxTooltipHandler(a,b){null!=a&&(this.graph=a,this.delay=b||500,this.graph.addMouseListener(this))}

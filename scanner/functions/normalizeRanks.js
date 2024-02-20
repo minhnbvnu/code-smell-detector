@@ -1,0 +1,1 @@
+function normalizeRanks(g){var min=_.min(_.map(g.nodes(),function(v){return g.node(v).rank}));_.forEach(g.nodes(),function(v){var node=g.node(v);if(_.has(node,"rank")){node.rank-=min}})}

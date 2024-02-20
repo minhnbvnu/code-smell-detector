@@ -1,0 +1,1 @@
+function createRule(i,o,s){void 0===i&&(i="unnamed");var u=s.jss,C=cloneStyle(o),_=u.plugins.onCreateRule(i,C,s);return _||(i[0],null)}

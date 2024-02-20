@@ -1,0 +1,1 @@
+function handleAriaExpandedAttribute(){!fe&&ie.props.aria.expanded&&normalizeToArray(ie.props.triggerTarget||i).forEach((function(i){ie.props.interactive?i.setAttribute("aria-expanded",ie.state.isVisible&&i===getCurrentTarget()?"true":"false"):i.removeAttribute("aria-expanded")}))}

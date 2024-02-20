@@ -1,0 +1,3 @@
+function showMovies() {
+	openWindow('movies');
+}

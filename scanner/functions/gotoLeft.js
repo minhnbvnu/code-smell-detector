@@ -1,0 +1,1 @@
+function gotoLeft(e,o,t){if(o<=0)return null;var n=findFirstFocusableCell(e);if(null===n||n>=o)return null;for(var l,r={row:e,cell:n,posX:n};;){if(!(l=gotoRight(r.row,r.cell,r.posX)))return null;if(l.cell>=o)return r;r=l}}

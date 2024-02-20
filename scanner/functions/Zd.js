@@ -1,0 +1,1 @@
+function Zd(a){return Qb(a,wa.call(arguments,1),!0)}

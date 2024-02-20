@@ -1,0 +1,1 @@
+function Cxe(e,t){switch(t){case"s":return e;case"d":case"i":return Number(e);case"j":return JSON.stringify(e);case"o":{if(typeof e=="string")return e;const r=JSON.stringify(e);return r==="{}"||r==="[]"||/^\[object .+?\]$/.test(r)?e:r}}}

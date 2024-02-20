@@ -1,0 +1,1 @@
+function getCountries(i){return new Y(i).getCountries()}

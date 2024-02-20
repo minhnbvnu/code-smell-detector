@@ -1,0 +1,1 @@
+function getTrueOffsetParent(i){return isHTMLElement(i)&&"fixed"!==getComputedStyle(i).position?i.offsetParent:null}

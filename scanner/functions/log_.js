@@ -1,7 +1,1 @@
-function log_(x) {
-	  var $x = convertToTensor(x, 'x', 'log');
-	  var inputs = {
-	    x: $x
-	  };
-	  return ENGINE.runKernel(Log, inputs);
-	}
+function log_(e){var t=convertToTensor(e,"x","log");return ENV.engine.runKernel(function(e){return e.log(t)},{$x:t},function(e){return {$x:function(){return e.divStrict(t.toFloat())}}})}

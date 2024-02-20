@@ -1,0 +1,1 @@
+function mxEventSource(a){this.setEventSource(a)}

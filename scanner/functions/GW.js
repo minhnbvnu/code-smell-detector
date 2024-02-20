@@ -1,0 +1,1 @@
+function GW(n){return n.map((t,e)=>[e,t]).sort((t,e)=>t[1]-e[1]).map(t=>t[0])}

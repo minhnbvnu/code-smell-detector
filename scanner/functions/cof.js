@@ -1,0 +1,1 @@
+function cof(it){return toString.call(it).slice(8,-1)}

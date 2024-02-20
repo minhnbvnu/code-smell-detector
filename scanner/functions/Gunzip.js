@@ -1,0 +1,1 @@
+function Gunzip(e){return this instanceof Gunzip?void Zlib.call(this,e,binding.GUNZIP):new Gunzip(e)}

@@ -1,0 +1,1 @@
+function parse_BrtCellRk(data,length){var cell=parse_XLSBCell(data);var value=parse_RkNumber(data);return[cell,value,"n"]}

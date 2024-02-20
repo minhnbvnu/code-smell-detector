@@ -1,1 +1,1 @@
-function Iv(a){a=a|0;var b=0;b=fa-16|0;L[b+12>>2]=a;return S(P[L[b+12>>2]+232>>2])}
+function iv(e,r){var t=za(r);if(t.s.r<=t.e.r&&t.s.c<=t.e.c&&t.s.r>=0&&t.s.c>=0)e["!ref"]=Ba(t)}

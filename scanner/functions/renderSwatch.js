@@ -1,0 +1,1 @@
+function renderSwatch(color,index){return react__WEBPACK_IMPORTED_MODULE_51___default.a.createElement(Swatch,{key:"".concat(color,"-").concat(index),title:color,background:color})}

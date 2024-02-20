@@ -1,0 +1,1 @@
+function resetOne(state) { stickySupport.reset(state); }

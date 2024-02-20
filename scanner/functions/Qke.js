@@ -1,0 +1,1 @@
+function Qke(e){for(;;){if(e.name=="JSXOpenTag"||e.name=="JSXSelfClosingTag"||e.name=="JSXFragmentTag")return e;if(e.name=="JSXEscape"||!e.parent)return null;e=e.parent}}

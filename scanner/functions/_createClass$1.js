@@ -1,0 +1,1 @@
+function _createClass$1(Constructor,protoProps,staticProps){return protoProps&&_defineProperties$1(Constructor.prototype,protoProps),staticProps&&_defineProperties$1(Constructor,staticProps),Constructor}

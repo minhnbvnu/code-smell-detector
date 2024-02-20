@@ -1,1 +1,3 @@
-function getUniqueRunDependency(id){return id}
+function getUniqueRunDependency(id) {
+          return id;
+        }

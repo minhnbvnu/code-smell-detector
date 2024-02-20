@@ -4,7 +4,7 @@ function translateElement(element) {
     var data = getL10nData(l10n.id, l10n.args);
 
     if (!data) {
-      console.warn('#' + l10n.id + ' is undefined.');
+      // console.warn('#' + l10n.id + ' is undefined.');
       return;
     }
 

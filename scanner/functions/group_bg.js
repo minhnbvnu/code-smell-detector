@@ -1,0 +1,1 @@
+function group_bg(o){var w=o.width||0,h=o.height||0;this.setAttribute("width",w);this.setAttribute("height",h)}

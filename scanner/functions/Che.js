@@ -1,0 +1,1 @@
+function Che(e,t,r="en-US"){if(t[e])return t[e];let n=Ehe(e);if(t[n])return t[n];for(let i in t)if(i.startsWith(n+"-"))return t[i];return t[r]}

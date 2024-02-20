@@ -1,0 +1,3 @@
+function enableVerbose() {
+  isVerbose = true;
+}

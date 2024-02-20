@@ -1,0 +1,1 @@
+function NDe(e,t,r){return n;function n(i){return e.enter("lineEnding"),e.consume(i),e.exit("lineEnding"),e.attempt(Cb,t,r)}}

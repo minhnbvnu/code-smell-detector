@@ -1,3 +1,7 @@
 function timeoutDefer(fn) {
-        return setTimeout(fn, timeToCall);
-    }
+    var time = +new Date(),
+        timeToCall = Math.max(0, 16 - (time - lastTime));
+
+    lastTime = time + timeToCall;
+    return window.setTimeout(fn, timeToCall);
+  }

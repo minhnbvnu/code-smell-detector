@@ -1,0 +1,1 @@
+function Ez(n){let t=n.length;t>2&&n[t-1].equals(n[0])&&n.pop()}

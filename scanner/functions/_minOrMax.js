@@ -1,0 +1,1 @@
+function _minOrMax(e,t){var n,r=_typeof(e),i=_typeof(t);if("number"===r&&"number"===i||2<arguments.length)return this.apply(Math,arguments);"Number"===r&&(n=t,e=t=e,n=i,_readOnlyError("tb"),i=r,_readOnlyError("ta"),r=n);var a=e.constructor();if("Number"===i)for(var s in e)a[s]=this(e[s],t);else for(var o in e)a[o]=this(e[o],t[o]);return Object.isFrozen(e)?Object.freeze(a):a}

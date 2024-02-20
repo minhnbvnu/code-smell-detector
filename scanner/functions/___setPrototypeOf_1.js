@@ -1,0 +1,1 @@
+function ___setPrototypeOf_1(e,t){return(___setPrototypeOf_1=Object.setPrototypeOf||function(e,t){return e.__proto__=t,e})(e,t)}

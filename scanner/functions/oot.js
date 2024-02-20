@@ -1,0 +1,1 @@
+function oot(n){let t="SHADOWMAP_TYPE_BASIC";return n.shadowMapType===Lz?t="SHADOWMAP_TYPE_PCF":n.shadowMapType===JQ?t="SHADOWMAP_TYPE_PCF_SOFT":n.shadowMapType===Dp&&(t="SHADOWMAP_TYPE_VSM"),t}

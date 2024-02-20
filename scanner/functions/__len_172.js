@@ -1,0 +1,1 @@
+function __len_172(e){return void 0===e?0:void 0!==e.size?e.size:e.length}

@@ -1,0 +1,1 @@
+function formatNationalNumber(i,o,s,u,C){var _=chooseFormatForNumber(u.formats(),i);return _?formatNationalNumberUsingFormat(i,_,{useInternationalFormat:"INTERNATIONAL"===s,withNationalPrefix:!_.nationalPrefixIsOptionalWhenFormattingInNationalFormat()||!C||!1!==C.nationalPrefix,carrierCode:o,metadata:u}):i}

@@ -1,0 +1,1 @@
+function testResponsive (results) { this.initialize(results); }

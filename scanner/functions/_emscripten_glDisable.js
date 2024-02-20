@@ -1,0 +1,1 @@
+function _emscripten_glDisable(x0){GLctx["disable"](x0)}

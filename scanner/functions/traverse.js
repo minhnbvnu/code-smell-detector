@@ -1,14 +1,11 @@
-function traverse(parent, opts, scope, state, parentPath) {
-	  if (!parent) return;
-	  if (!opts) opts = {};
-
-	  if (!opts.noScope && !scope) {
-	    if (parent.type !== "Program" && parent.type !== "File") {
-	      throw new Error(messages.get("traverseNeedsParent", parent.type));
-	    }
-	  }
-
-	  visitors.explode(opts);
-
-	  traverse.node(parent, opts, scope, state, parentPath);
-	}
+function traverse(el, hightlightTextNode) {
+                var childNode, TEXT_NODE_TYPE = 3;
+                for (var i = 0; i < el.childNodes.length; i++) {
+                    childNode = el.childNodes[i];
+                    if (childNode.nodeType === TEXT_NODE_TYPE) {
+                        i += hightlightTextNode(childNode) ? 1 : 0;
+                    } else {
+                        traverse(childNode, hightlightTextNode);
+                    }
+                }
+            }

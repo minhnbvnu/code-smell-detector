@@ -1,0 +1,1 @@
+function checkPropTypes$1(typeSpecs,values,location,componentName,getStack){}

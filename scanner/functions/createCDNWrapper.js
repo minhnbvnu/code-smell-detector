@@ -1,4 +1,1 @@
-function createCDNWrapper(url) {
-    const wrapper = "importScripts('" + url + "');";
-    return URL.createObjectURL(new Blob([wrapper]));
-  }
+function createCDNWrapper(t){const e="importScripts('"+t+"');";return URL.createObjectURL(new Blob([e]))}

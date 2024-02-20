@@ -1,0 +1,1 @@
+function BC(e){if(Array.isArray(e.begin)){if(e.skip||e.excludeBegin||e.returnBegin)throw xr("skip, excludeBegin, returnBegin not compatible with beginScope: {}"),ka;if(typeof e.beginScope!="object"||e.beginScope===null)throw xr("beginScope must be object"),ka;Su(e,e.begin,{key:"beginScope"}),e.begin=Yo(e.begin,{joinWith:""})}}

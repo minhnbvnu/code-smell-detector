@@ -1,0 +1,1 @@
+function buildLayerMatrix(g){var layering=_.map(_.range(maxRank(g)+1),function(){return[]});_.forEach(g.nodes(),function(v){var node=g.node(v),rank=node.rank;if(!_.isUndefined(rank)){layering[rank][node.order]=v}});return layering}

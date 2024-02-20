@@ -1,0 +1,1 @@
+function _emscripten_glFinish(){GLctx["finish"]()}

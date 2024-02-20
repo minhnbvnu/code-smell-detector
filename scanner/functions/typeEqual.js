@@ -1,3 +1,3 @@
 function typeEqual(a, b) {
-    return type(a) === type(b);
-  }
+  return type(a) === type(b);
+}

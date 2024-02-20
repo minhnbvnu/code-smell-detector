@@ -1,0 +1,1 @@
+function storeDatum(el,label){$.each(el.find("[data-label]"),function(){var type=$(this).attr("data-label");var value=$(this).html();if(typeof data[type]==="undefined"){data[type]=[]}data[type].push([label,+value])})}

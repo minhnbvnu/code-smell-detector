@@ -1,0 +1,1 @@
+function QH(n){for(var t=n[0],e=n[1],i=0;i<t.length;i++)for(var r=t[i],o=e[i],s=0;s<r.length-1;s++){var a=r.length-s-1,l=o.length-s-1,c=r[0];r[0]=r[a],r[a]=c;var u=o[0];o[0]=o[l],o[l]=u,t$(o,r,l,0)}return{indices:t,weights:e}}

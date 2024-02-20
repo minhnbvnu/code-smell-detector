@@ -1,0 +1,1 @@
+function parse_frtHeader(blob){var rt=blob.read_shift(2);var flags=blob.read_shift(2);blob.l+=8;return{type:rt,flags:flags}}

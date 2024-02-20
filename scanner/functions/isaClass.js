@@ -1,0 +1,1 @@
+function isaClass($) {return ($.is("CONSTRUCTOR") || $.isNamespace)}

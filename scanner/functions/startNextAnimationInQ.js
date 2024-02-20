@@ -1,0 +1,1 @@
+function startNextAnimationInQ(animObj,removeFromQ){var index,nextAnim;!1!==removeFromQ&&animObj.q.splice(0,1),animObj.q[LEXICON.l]>0?(nextAnim=animObj.q[0],_animate(animObj.el,nextAnim.props,nextAnim.duration,nextAnim.easing,nextAnim.complete,!0)):(index=inArray(animObj,_animations))>-1&&_animations.splice(index,1)}

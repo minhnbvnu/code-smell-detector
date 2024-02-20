@@ -1,0 +1,1 @@
+function ConfigNamespace(){_classCallCheck(this,ConfigNamespace)}

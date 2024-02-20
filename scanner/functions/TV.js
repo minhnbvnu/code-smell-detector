@@ -1,0 +1,1 @@
+function TV(){Uu&&Uu.takeRecords().length&&$4()}

@@ -1,0 +1,1 @@
+function _glFinish(){GLctx["finish"]()}

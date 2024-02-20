@@ -1,0 +1,3 @@
+function updateImportTypeNode(node, argument, assertions, qualifier, typeArguments, isTypeOf = node.isTypeOf) {
+                return node.argument !== argument || node.assertions !== assertions || node.qualifier !== qualifier || node.typeArguments !== typeArguments || node.isTypeOf !== isTypeOf ? update(createImportTypeNode(argument, assertions, qualifier, typeArguments, isTypeOf), node) : node;
+            }

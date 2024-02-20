@@ -1,0 +1,1 @@
+function JT(t){for(;!v1(_s());)_n();return wc(t,rn)}

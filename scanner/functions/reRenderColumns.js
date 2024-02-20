@@ -1,0 +1,1 @@
+function reRenderColumns(e){applyColumnHeaderWidths(),applyColumnGroupHeaderWidths(),updateCanvasWidth(!0),trigger(self.onAutosizeColumns,{columns}),e&&(invalidateAllRows(),render())}

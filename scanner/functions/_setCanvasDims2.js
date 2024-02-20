@@ -1,0 +1,1 @@
+function _setCanvasDims2(){if(_classPrivateFieldGet(this,b)){var t=_slicedToArray(this.parent.viewportBaseDimensions,2),r=t[0],a=t[1];this.canvas.width=Math.ceil(this.width*r);this.canvas.height=Math.ceil(this.height*a);_classPrivateMethodGet(this,W,_updateTransform2).call(this)}}

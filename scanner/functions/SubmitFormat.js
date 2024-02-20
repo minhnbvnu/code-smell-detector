@@ -1,0 +1,1 @@
+function SubmitFormat(t){_classCallCheck(this,SubmitFormat);return r.call(this,d,"submitFormat",["html","delegate","fdf","xml","pdf"])}

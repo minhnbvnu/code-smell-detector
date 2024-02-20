@@ -1,0 +1,1 @@
+function useGlobalTypes(){return useStorybookApi().getGlobalTypes()}

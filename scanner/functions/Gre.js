@@ -1,0 +1,1 @@
+function Gre(e){if(e.passiveListener!=null){typeof console!="undefined"&&typeof console.error=="function"&&console.error("Unable to preventDefault inside passive event listener invocation.",e.passiveListener);return}!e.event.cancelable||(e.canceled=!0,typeof e.event.preventDefault=="function"&&e.event.preventDefault())}

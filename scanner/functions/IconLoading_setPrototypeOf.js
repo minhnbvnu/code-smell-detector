@@ -1,0 +1,1 @@
+function IconLoading_setPrototypeOf(o, p) { IconLoading_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return IconLoading_setPrototypeOf(o, p); }

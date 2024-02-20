@@ -1,0 +1,1 @@
+function edit(i,o,s){switch(s){case"Backspace":o>0&&(i=i.slice(0,o-1)+i.slice(o),o--);break;case"Delete":i=i.slice(0,o)+i.slice(o+1)}return{value:i,caret:o}}

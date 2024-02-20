@@ -1,0 +1,1 @@
+function Mae(e){return[new Xo(0,e,0)]}

@@ -1,1 +1,1 @@
-function nz(a,b,c,d){a=a|0;b=b|0;c=c|0;d=d|0;a=L[b>>2];return lk(ha[L[L[a>>2]+56>>2]](a,156)|0,b,c,d,1)|0}
+function Nz(){var e={},t="default";return{getMTime:function(n){return e[n||t]||1},incrementMTime:function(n){var r=n||t;e[r]||(e[r]=1),e[r]+=1},setActiveViewId:function(e){t=e},getActiveViewId:function(){return t}}}

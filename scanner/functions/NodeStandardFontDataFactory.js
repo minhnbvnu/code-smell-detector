@@ -1,0 +1,1 @@
+function NodeStandardFontDataFactory(){_classCallCheck(this,NodeStandardFontDataFactory);return r.apply(this,arguments)}

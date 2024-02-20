@@ -1,0 +1,1 @@
+function $9(n,t,e,i){let r=new Zi(e,"max",!1),o=i.runWebGLProgram(r,[n],"float32");r=new Zi(e,"max",!0,!0,t);let s=i.runWebGLProgram(r,[n],"float32");return[o,s]}

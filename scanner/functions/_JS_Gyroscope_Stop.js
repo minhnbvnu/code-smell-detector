@@ -1,0 +1,1 @@
+function _JS_Gyroscope_Stop(){if(JS_Gyroscope){JS_Gyroscope.stop();JS_Gyroscope.removeEventListener("reading",JS_Gyroscope_eventHandler);JS_Gyroscope=null;JS_Gyroscope_callback=0}else if(JS_Gyroscope_callback!=0){JS_Gyroscope_callback=0;JS_DeviceMotion_remove()}}

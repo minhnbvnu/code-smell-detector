@@ -1,0 +1,1 @@
+function _name(){var o,s;return this===Function||this===Function.prototype.constructor?s="Function":this!==Function.prototype&&(s=(o=(""+this).match(i))&&o[1]),s||""}

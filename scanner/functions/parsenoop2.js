@@ -1,0 +1,1 @@
+function parsenoop2(blob,length){blob.read_shift(length);return null}

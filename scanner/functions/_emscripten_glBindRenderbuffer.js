@@ -1,0 +1,1 @@
+function _emscripten_glBindRenderbuffer(target,renderbuffer){GLctx.bindRenderbuffer(target,GL.renderbuffers[renderbuffer])}

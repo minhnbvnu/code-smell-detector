@@ -1,0 +1,1 @@
+function mxGeometry(a,b,c,d){mxRectangle.call(this,a,b,c,d)}

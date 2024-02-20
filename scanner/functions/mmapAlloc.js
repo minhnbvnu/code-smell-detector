@@ -1,1 +1,3 @@
-function mmapAlloc(size){abort()}
+function mmapAlloc(size) {
+          abort();
+        }

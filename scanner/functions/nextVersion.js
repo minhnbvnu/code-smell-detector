@@ -1,5 +1,4 @@
-async function nextVersion() {
-  const pkg = await fse.readJSON(join(baseDir, '../package.json'));
+function nextVersion() {
   const version = pkg.version;
   const s = semver.parse(version);
   if (!s) {

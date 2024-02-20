@@ -1,12 +1,5 @@
-function calculateScale(width, height, wantedWidth, wantedHeight) {
-  if (wantedWidth !== undefined && wantedHeight !== undefined) {
-    return [wantedWidth / width, wantedHeight / height];
+function calculateScale(start, end) {
+    var startDistance = getDistance(start[0], start[1]);
+    var endDistance = getDistance(end[0], end[1]);
+    return endDistance / startDistance;
   }
-  if (wantedWidth !== undefined) {
-    return wantedWidth / width;
-  }
-  if (wantedHeight !== undefined) {
-    return wantedHeight / height;
-  }
-  return 1;
-}

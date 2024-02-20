@@ -1,0 +1,1 @@
+function mxArrowConnector(a,b,c,d,e,f,g){mxShape.call(this);this.points=a;this.fill=b;this.stroke=c;this.strokewidth=null!=d?d:1;this.arrowWidth=null!=e?e:mxConstants.ARROW_WIDTH;this.arrowSpacing=null!=f?f:mxConstants.ARROW_SPACING;this.startSize=mxConstants.ARROW_SIZE/5;this.endSize=mxConstants.ARROW_SIZE/5}

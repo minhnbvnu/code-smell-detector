@@ -1,0 +1,1 @@
+function Tagged(t){_classCallCheck(this,Tagged);return r.call(this,d,"tagged")}

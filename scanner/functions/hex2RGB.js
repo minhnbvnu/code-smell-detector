@@ -1,0 +1,1 @@
+function hex2RGB(h){var o=h.substr(h[0]==="#"?1:0,6);return[parseInt(o.substr(0,2),16),parseInt(o.substr(0,2),16),parseInt(o.substr(0,2),16)]}

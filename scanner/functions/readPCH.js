@@ -1,0 +1,1 @@
+function readPCH(){return readBits('pch', 8);}

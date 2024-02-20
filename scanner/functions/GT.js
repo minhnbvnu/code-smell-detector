@@ -1,0 +1,1 @@
+function GT(t,e){return t.indexOf(e)}

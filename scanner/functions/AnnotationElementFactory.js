@@ -1,0 +1,1 @@
+function AnnotationElementFactory(){_classCallCheck(this,AnnotationElementFactory)}

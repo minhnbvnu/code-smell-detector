@@ -1,0 +1,1 @@
+function Zmage_wrapper_setPrototypeOf(o, p) { Zmage_wrapper_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return Zmage_wrapper_setPrototypeOf(o, p); }

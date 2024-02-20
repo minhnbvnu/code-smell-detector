@@ -1,0 +1,1 @@
+function fye(){return O.useContext(Yne)}

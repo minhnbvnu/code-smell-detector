@@ -1,0 +1,1 @@
+function getNextArg(type){var ret;argIndex=prepVararg(argIndex,type);if(type==="double"){ret=Number(HEAPF64[argIndex>>3]);argIndex+=8}else if(type=="i64"){ret=[HEAP32[argIndex>>2],HEAP32[argIndex+4>>2]];argIndex+=8}else{type="i32";ret=HEAP32[argIndex>>2];argIndex+=4}return ret}

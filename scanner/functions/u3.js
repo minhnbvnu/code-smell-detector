@@ -1,0 +1,1 @@
+function u3(t,e,r){const n=e.width,i=e.height,s=[{x:-2*i/6,y:0},{x:n-i/6,y:0},{x:n+2*i/6,y:-i},{x:i/6,y:-i}],a=ki(t,n,i,s);return r.intersect=function(o){return jn(r,s,o)},a}

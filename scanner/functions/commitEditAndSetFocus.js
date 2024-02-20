@@ -1,0 +1,1 @@
+function commitEditAndSetFocus(){getEditorLock().commitCurrentEdit()&&(setFocus(),options.autoEdit&&navigateDown())}

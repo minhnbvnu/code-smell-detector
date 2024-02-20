@@ -1,0 +1,1 @@
+function ValidationError(e,t,n){this.col=n,this.line=t,this.message=e}

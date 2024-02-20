@@ -1,0 +1,1 @@
+function execCallback(se,n,s){var f=se[n];if(!f)return;if(tinymce.is(f,'string')){s=f.replace(/\.\w+$/,'');s=s?tinymce.resolve(s):0;f=tinymce.resolve(f);}return f.apply(s||this,Array.prototype.slice.call(arguments,2));}

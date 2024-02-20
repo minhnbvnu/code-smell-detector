@@ -1,0 +1,1 @@
+function parsetab(blob,length){return[blob[blob.l+1]>>7,blob.read_shift(2)&32767]}

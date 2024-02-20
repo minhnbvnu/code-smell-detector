@@ -1,1 +1,1 @@
-function dx(a){a=a|0;var b=0,c=0;b=fa-16|0;fa=b;L[b+12>>2]=a;a=oa(56);c=Sg(a,L[b+12>>2]);L[c+52>>2]=2;L[c>>2]=14900;fa=b+16|0;return a|0}
+function Dx(t,e){return function(r){this.setAttribute(t,e.call(this,r))}}

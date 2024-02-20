@@ -1,0 +1,1 @@
+function b5(t){return function(){return t}}

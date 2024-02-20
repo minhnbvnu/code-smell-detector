@@ -1,0 +1,1 @@
+function Ey(t,e){var r=e?Q1(t.buffer):t.buffer;return new t.constructor(r,t.byteOffset,t.length)}

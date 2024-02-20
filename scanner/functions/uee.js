@@ -1,0 +1,1 @@
+function uee(e,t){return e.architectures.length-t.architectures.length}

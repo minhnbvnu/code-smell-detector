@@ -1,0 +1,4 @@
+function getFixesForAddImport(exportInfos, existingImports, program, sourceFile, usagePosition, isValidTypeOnlyUseSite, useRequire, host, preferences, fromCacheOnly) {
+            const existingDeclaration = firstDefined(existingImports, (info) => newImportInfoFromExistingSpecifier(info, isValidTypeOnlyUseSite, useRequire, program.getTypeChecker(), program.getCompilerOptions()));
+            return existingDeclaration ? { fixes: [existingDeclaration] } : getNewImportFixes(program, sourceFile, usagePosition, isValidTypeOnlyUseSite, useRequire, exportInfos, host, preferences, fromCacheOnly);
+        }

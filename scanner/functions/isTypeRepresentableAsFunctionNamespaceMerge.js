@@ -1,0 +1,6 @@
+function isTypeRepresentableAsFunctionNamespaceMerge(typeToSerialize, hostSymbol) {
+                        const ctxSrc = getSourceFileOfNode(context.enclosingDeclaration);
+                        return getObjectFlags(typeToSerialize) & (16 /* Anonymous */ | 32 /* Mapped */) && !length(getIndexInfosOfType(typeToSerialize)) && !isClassInstanceSide(typeToSerialize) && // While a class instance is potentially representable as a NS, prefer printing a reference to the instance type and serializing the class
+                            !!(length(filter(getPropertiesOfType(typeToSerialize), isNamespaceMember)) || length(getSignaturesOfType(typeToSerialize, 0 /* Call */))) && !length(getSignaturesOfType(typeToSerialize, 1 /* Construct */)) && // TODO: could probably serialize as function + ns + class, now that that's OK
+                            !getDeclarationWithTypeAnnotation(hostSymbol, enclosingDeclaration) && !(typeToSerialize.symbol && some(typeToSerialize.symbol.declarations, (d) => getSourceFileOfNode(d) !== ctxSrc)) && !some(getPropertiesOfType(typeToSerialize), (p) => isLateBoundName(p.escapedName)) && !some(getPropertiesOfType(typeToSerialize), (p) => some(p.declarations, (d) => getSourceFileOfNode(d) !== ctxSrc)) && every(getPropertiesOfType(typeToSerialize), (p) => isIdentifierText(symbolName(p), languageVersion));
+                    }

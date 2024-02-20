@@ -1,0 +1,1 @@
+function _classPrivateMethodInitSpec(t,r){_checkPrivateRedeclaration(t,r);r.add(t)}

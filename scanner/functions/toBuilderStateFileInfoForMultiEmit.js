@@ -1,0 +1,3 @@
+function toBuilderStateFileInfoForMultiEmit(fileInfo) {
+            return isString(fileInfo) ? { version: fileInfo, signature: fileInfo, affectsGlobalScope: void 0, impliedFormat: void 0 } : isString(fileInfo.signature) ? fileInfo : { version: fileInfo.version, signature: fileInfo.signature === false ? void 0 : fileInfo.version, affectsGlobalScope: fileInfo.affectsGlobalScope, impliedFormat: fileInfo.impliedFormat };
+        }

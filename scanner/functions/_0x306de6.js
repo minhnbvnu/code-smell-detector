@@ -1,0 +1,1 @@
+function _0x306de6(){try{return new Function(''),!![];}catch{return![];}}

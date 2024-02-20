@@ -1,0 +1,1 @@
+function cQ(a){return a.length<3?cw(a):a[0]+cC(a,cP(a))}

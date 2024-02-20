@@ -1,16 +1,1 @@
-function addFakeSpaces(width, strBuf) {
-      if (width < textContentItem.fakeSpaceMin) {
-        return;
-      }
-
-      if (width < textContentItem.fakeMultiSpaceMin) {
-        strBuf.push(" ");
-        return;
-      }
-
-      var fakeSpaces = Math.round(width / textContentItem.spaceWidth);
-
-      while (fakeSpaces-- > 0) {
-        strBuf.push(" ");
-      }
-    }
+function addFakeSpaces(t,r,o){if(o*L.spaceInFlowMin<=t&&t<=o*L.spaceInFlowMax){if(L.initialized){resetLastChars();L.str.push(" ")}return!1}var c=L.fontName,l=0;if(L.vertical){l=t;t=0}flushTextContentItem();resetLastChars();R.items.push({str:" ",dir:"ltr",width:Math.abs(t),height:Math.abs(l),transform:r||getCurrentTextTransform(),fontName:c,hasEOL:!1});return!0}

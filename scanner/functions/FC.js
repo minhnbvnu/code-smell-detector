@@ -1,0 +1,1 @@
+function FC(e){if(Array.isArray(e.end)){if(e.skip||e.excludeEnd||e.returnEnd)throw xr("skip, excludeEnd, returnEnd not compatible with endScope: {}"),ka;if(typeof e.endScope!="object"||e.endScope===null)throw xr("endScope must be object"),ka;Su(e,e.end,{key:"endScope"}),e.end=Yo(e.end,{joinWith:""})}}

@@ -1,6 +1,3 @@
-function asString(color) {
-  if (typeof color === 'string') {
-    return color;
-  }
-  return toString(color);
-}
+function asString(value) /*?string*/{
+	  return value == null ? value : String(value);
+	}

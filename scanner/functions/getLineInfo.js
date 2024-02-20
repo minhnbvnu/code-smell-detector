@@ -1,12 +1,1 @@
-function getLineInfo(input, offset) {
-	  for (var line = 1, cur = 0;;) {
-	    lineBreakG.lastIndex = cur;
-	    var match = lineBreakG.exec(input);
-	    if (match && match.index < offset) {
-	      ++line;
-	      cur = match.index + match[0].length;
-	    } else {
-	      return new Position(line, offset - cur);
-	    }
-	  }
-	}
+function getLineInfo(i,o){for(var s=1,u=0;;){ie.lastIndex=u;var C=ie.exec(i);if(!(C&&C.index<o))return new be(s,o-u);++s,u=C.index+C[0].length}}

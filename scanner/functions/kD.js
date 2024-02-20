@@ -1,0 +1,1 @@
+function kD(e,t){return QT()(new Date(e.getFullYear(),e.getMonth(),e.getDate()),new Date(t.getFullYear(),t.getMonth(),t.getDate()))}

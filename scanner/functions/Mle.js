@@ -1,0 +1,1 @@
+function Mle(e){for(let t=0;t<A4.length;t+=2)if(A4.charCodeAt(t)==e)return A4.charAt(t+1);return Uxe(e<128?e:e+1)}

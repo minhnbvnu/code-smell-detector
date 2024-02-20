@@ -1,0 +1,1 @@
+function N0(t,e,r){var n=e.label,i=t.append("g");e.labelType==="svg"?yO(i,e):typeof n!="string"||e.labelType==="html"?M0(i,e):mO(i,e);var s=i.node().getBBox(),a;switch(r){case"top":a=-e.height/2;break;case"bottom":a=e.height/2-s.height;break;default:a=-s.height/2}return i.attr("transform","translate("+-s.width/2+","+a+")"),i}

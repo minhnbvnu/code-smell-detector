@@ -1,3 +1,3 @@
-function diffArrays(oldArr, newArr, callback) {
-	  return arrayDiff.diff(oldArr, newArr, callback);
-	}
+function diffArrays(a, b) {
+  return a.filter((elem) => !b.includes(elem))
+}

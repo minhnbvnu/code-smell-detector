@@ -1,0 +1,1 @@
+function removeTrailingComma(i,o){for(;")"!==i.original[o];){if(","===i.original[o])return void i.remove(o,o+1);"/"===i.original[o]&&(o="/"===i.original[o+1]?i.original.indexOf("\n",o):i.original.indexOf("*/",o)+1),o+=1}}

@@ -1,0 +1,1 @@
+function Jr(t){$r(t),Kr(t),$r(t)}

@@ -1,0 +1,3 @@
+function CounterState() {
+            this.counters = {};
+        }

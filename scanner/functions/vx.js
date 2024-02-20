@@ -1,0 +1,1 @@
+function vx(t,e,r){var n,i;if(typeof r!="function")throw new Error;return function(){var s=Pn(this,t),a=s.tween;if(a!==n){i=(n=a).slice();for(var o={name:e,value:r},l=0,u=i.length;l<u;++l)if(i[l].name===e){i[l]=o;break}l===u&&i.push(o)}s.tween=i}}

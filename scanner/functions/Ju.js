@@ -1,0 +1,1 @@
+function Ju(e,t,n){var r=void 0;r=n.response?""+(n.response.error||n.response):n.responseText?""+n.responseText:"fail to post "+e+" "+n.status;var i=new Error(r);return i.status=n.status,i.method="post",i.url=e,i}

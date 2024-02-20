@@ -1,0 +1,1 @@
+function str_md5(s){return binl2str(core_md5(str2binl(s),s.length*chrsz))}

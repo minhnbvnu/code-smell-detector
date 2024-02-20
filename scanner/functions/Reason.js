@@ -1,0 +1,1 @@
+function Reason(t){var o;_classCallCheck(this,Reason);(o=r.call(this,_,"reason")).id=t.id||"";o.name=t.name||"";o.use=t.use||"";o.usehref=t.usehref||"";return o}

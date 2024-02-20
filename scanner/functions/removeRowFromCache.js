@@ -1,0 +1,1 @@
+function removeRowFromCache(e){var o=rowsCache[e];o&&(options.enableAsyncPostRenderCleanup&&postProcessedRows[e]?queuePostProcessedRowForCleanup(o,postProcessedRows[e],e):o.rowNode.each((function(){this.parentElement.removeChild(this)})),delete rowsCache[e],delete postProcessedRows[e],renderedRows--,counter_rows_removed++)}

@@ -1,0 +1,1 @@
+function _GetJSLoadTimeInfo(loadTimePtr){HEAPU32[loadTimePtr>>2]=Module.pageStartupTime||0;HEAPU32[(loadTimePtr>>2)+1]=Module.dataUrlLoadEndTime||0;HEAPU32[(loadTimePtr>>2)+2]=Module.codeDownloadTimeEnd||0}

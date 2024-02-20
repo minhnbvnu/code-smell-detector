@@ -1,0 +1,1 @@
+function t4e(){var e;try{e=localStorage.getItem("debug")}catch{}return!e&&typeof process<"u"&&"env"in process&&(e={}.DEBUG),{namespaces:e||"",colors:e4e,useColors:!0,formatArgs:Jye}}

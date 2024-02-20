@@ -1,0 +1,1 @@
+function s6e(e,t){let r;if(t)return t;try{r=Kq.lstatSync(e)}catch{return"file"}return r&&r.isDirectory()?"dir":"file"}

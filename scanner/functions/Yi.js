@@ -1,1 +1,1 @@
-function Yi(){Gi.call(this,"github.com")}
+function Yi(t){return t<0?Math.floor(t):Math.ceil(t)}

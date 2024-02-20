@@ -1,0 +1,1 @@
+function eme(){return process.platform==="win32"?sm=new(q9()).NsisUpdater:process.platform==="darwin"?sm=new(F9()).MacUpdater:sm=new(P9()).AppImageUpdater,sm}

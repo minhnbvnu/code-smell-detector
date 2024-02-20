@@ -1,17 +1,17 @@
 function prevent_selection($el) {
 	$el.on("mousedown selectstart contextmenu", (e) => {
-		if (e.isDefaultPrevented()) {
+		if(e.isDefaultPrevented()){
 			return;
 		}
-		if (
+		if(
 			e.target instanceof HTMLSelectElement ||
 			e.target instanceof HTMLTextAreaElement ||
 			(e.target instanceof HTMLLabelElement && e.type !== "contextmenu") ||
 			(e.target instanceof HTMLInputElement && e.target.type !== "color")
-		) {
+		){
 			return;
 		}
-		if (e.button === 1) {
+		if(e.button === 1){
 			return; // allow middle-click scrolling
 		}
 		e.preventDefault();

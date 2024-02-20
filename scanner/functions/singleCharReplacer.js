@@ -1,0 +1,1 @@
+function singleCharReplacer(c){return"&#x"+c.charCodeAt(0).toString(16).toUpperCase()+";"}

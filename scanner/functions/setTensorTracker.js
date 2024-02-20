@@ -1,3 +1,1 @@
-function setTensorTracker(fn) {
-	  trackerFn = fn;
-	}
+function setTensorTracker(e){trackerFn=e;}

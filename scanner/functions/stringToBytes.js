@@ -1,11 +1,1 @@
-function stringToBytes(str) {
-  assert(typeof str === "string", "Invalid argument for stringToBytes");
-  const length = str.length;
-  const bytes = new Uint8Array(length);
-
-  for (let i = 0; i < length; ++i) {
-    bytes[i] = str.charCodeAt(i) & 0xff;
-  }
-
-  return bytes;
-}
+function stringToBytes(t){"string"!=typeof t&&unreachable("Invalid argument for stringToBytes");for(var r=t.length,o=new Uint8Array(r),c=0;c<r;++c)o[c]=255&t.charCodeAt(c);return o}

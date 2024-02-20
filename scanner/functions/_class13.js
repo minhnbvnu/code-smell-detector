@@ -1,0 +1,1 @@
+function _class13(_ref113){var e=_ref113.type,t=_ref113.name,n=_ref113.pure;_classCallCheck(this,_class13),this.type=e,this.name=t,this.pure=!!n}

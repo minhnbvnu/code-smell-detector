@@ -1,0 +1,1 @@
+function goe(e,t){return Promise.all([Ak(e),Ak(t).catch(r=>{if(r.code==="ENOENT")return null;throw r})]).then(([r,i])=>({srcStat:r,destStat:i}))}

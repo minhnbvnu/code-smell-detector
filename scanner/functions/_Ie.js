@@ -1,0 +1,1 @@
+function _Ie(e){return Object.keys(e).map(t=>{let r=e[t];return Array.isArray(r)||(r=[r]),r.map(i=>[t].concat(Object.keys(i).map(a=>{let n=i[a];return Array.isArray(n)||(n=[n]),n.map(s=>s===!0?a:`${a}=${s}`).join("; ")})).join("; ")).join(", ")}).join(", ")}

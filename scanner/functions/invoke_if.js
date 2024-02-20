@@ -1,0 +1,1 @@
+function invoke_if(index,a1){var sp=stackSave();try{return Module["dynCall_if"](index,a1)}catch(e){stackRestore(sp);if(typeof e!=="number"&&e!=="longjmp")throw e;Module["setThrew"](1,0)}}

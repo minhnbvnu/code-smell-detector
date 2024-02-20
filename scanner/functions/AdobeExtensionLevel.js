@@ -1,0 +1,1 @@
+function AdobeExtensionLevel(t){_classCallCheck(this,AdobeExtensionLevel);return r.call(this,d,"adobeExtensionLevel",0,(function(t){return t>=1&&t<=8}))}

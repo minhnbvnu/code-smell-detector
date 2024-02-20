@@ -1,0 +1,1 @@
+function Gl(t){if(t)return function(t){for(var e in Gl.prototype)t[e]=Gl.prototype[e];return t}(t)}

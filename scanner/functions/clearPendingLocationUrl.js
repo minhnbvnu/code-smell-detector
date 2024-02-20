@@ -1,0 +1,3 @@
+function clearPendingLocationUrl() {
+        pendingLocationUrl = null;
+      }

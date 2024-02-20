@@ -1,5 +1,1 @@
-function setValues(arr, start, end, value) {
-  for (var j = start; j < end; ++j) {
-    arr[j] = value;
-  }
-}
+function setValues(t,r,o,c){for(var l=r;l<o;++l)t[l]=c}

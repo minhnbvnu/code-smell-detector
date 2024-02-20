@@ -1,0 +1,1 @@
+function scanJSDocDescription(i){var o,s,u="";for(s=!0;C<B&&(o=z.charCodeAt(C),!s||64!==o);)_.code.isLineTerminator(o)?s=!0:s&&!_.code.isWhiteSpace(o)&&(s=!1),u+=advance();return i?u:u.trim()}

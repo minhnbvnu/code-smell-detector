@@ -1,0 +1,1 @@
+function findOne(test,elems){var elem=null;for(var i=0,l=elems.length;i<l&&!elem;i++){if(!isTag(elems[i])){continue}else if(test(elems[i])){elem=elems[i]}else if(elems[i].children.length>0){elem=findOne(test,elems[i].children)}}return elem}

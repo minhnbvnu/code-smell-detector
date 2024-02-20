@@ -1,0 +1,1 @@
+function NameOrNumberTree(t,r,o){_classCallCheck(this,NameOrNumberTree);this.constructor===NameOrNumberTree&&(0,l.unreachable)("Cannot initialize NameOrNumberTree.");this.root=t;this.xref=r;this._type=o}

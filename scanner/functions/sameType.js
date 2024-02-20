@@ -1,3 +1,5 @@
 function sameType(a, b) {
-  return objToString.call(a) === objToString.call(b);
+  a = Object.prototype.toString.call(a);
+  b = Object.prototype.toString.call(b);
+  return a == b;
 }

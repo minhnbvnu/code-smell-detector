@@ -1,3 +1,1 @@
-function nonMaxSuppressionAsync_(_x, _x2, _x3, _x4, _x5) {
-	  return _nonMaxSuppressionAsync_.apply(this, arguments);
-	}
+function nonMaxSuppressionAsync_(e,t,n,r,o){return void 0===r&&(r=.5),void 0===o&&(o=Number.NEGATIVE_INFINITY),__awaiter(this,void 0,void 0,function(){var a,i,s,u,l,c;return __generator(this,function(p){switch(p.label){case 0:return a=convertToTensor(e,"boxes","nonMaxSuppressionAsync"),i=convertToTensor(t,"scores","nonMaxSuppressionAsync"),s=nonMaxSuppSanityCheck(a,i,n,r,o),n=s.maxOutputSize,r=s.iouThreshold,o=s.scoreThreshold,[4,a.data()];case 1:return u=p.sent(),[4,i.data()];case 2:return l=p.sent(),c=nonMaxSuppressionImpl(u,l,n,r,o),a!==e&&a.dispose(),i!==t&&i.dispose(),[2,c]}})})}

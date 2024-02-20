@@ -1,0 +1,1 @@
+function s1(t,e){return Nr.repeat(" ",e-t.length)+t}

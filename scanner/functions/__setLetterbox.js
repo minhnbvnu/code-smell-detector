@@ -1,0 +1,1 @@
+function __setLetterbox(element,topBottom,leftRight){if(JSEvents.isInternetExplorer()){element.style.marginLeft=element.style.marginRight=leftRight+"px";element.style.marginTop=element.style.marginBottom=topBottom+"px"}else{element.style.paddingLeft=element.style.paddingRight=leftRight+"px";element.style.paddingTop=element.style.paddingBottom=topBottom+"px"}}

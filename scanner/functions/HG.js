@@ -1,0 +1,1 @@
+function HG(t){for(var e=[],n=t.length,i=0;i<n;i+=2)e[i]=t[n-i-2],e[i+1]=t[n-i-1];return e}

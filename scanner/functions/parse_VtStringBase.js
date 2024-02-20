@@ -1,0 +1,1 @@
+function parse_VtStringBase(blob,stringType,pad){if(stringType===31)return parse_lpwstr(blob);return parse_lpstr(blob,stringType,pad)}

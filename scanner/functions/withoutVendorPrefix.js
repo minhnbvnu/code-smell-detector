@@ -1,0 +1,1 @@
+function withoutVendorPrefix(ident){return ident.replace(/^-(?:apple|css|epub|khtml|moz|mso?|o|rim|wap|webkit|xv)-(?=[a-z])/,"")}

@@ -1,0 +1,6 @@
+function replacePrimitivesWithLiterals(typeWithPrimitives, typeWithLiterals) {
+                if (maybeTypeOfKind(typeWithPrimitives, 4 /* String */ | 134217728 /* TemplateLiteral */ | 8 /* Number */ | 64 /* BigInt */) && maybeTypeOfKind(typeWithLiterals, 128 /* StringLiteral */ | 134217728 /* TemplateLiteral */ | 268435456 /* StringMapping */ | 256 /* NumberLiteral */ | 2048 /* BigIntLiteral */)) {
+                    return mapType(typeWithPrimitives, (t) => t.flags & 4 /* String */ ? extractTypesOfKind(typeWithLiterals, 4 /* String */ | 128 /* StringLiteral */ | 134217728 /* TemplateLiteral */ | 268435456 /* StringMapping */) : isPatternLiteralType(t) && !maybeTypeOfKind(typeWithLiterals, 4 /* String */ | 134217728 /* TemplateLiteral */ | 268435456 /* StringMapping */) ? extractTypesOfKind(typeWithLiterals, 128 /* StringLiteral */) : t.flags & 8 /* Number */ ? extractTypesOfKind(typeWithLiterals, 8 /* Number */ | 256 /* NumberLiteral */) : t.flags & 64 /* BigInt */ ? extractTypesOfKind(typeWithLiterals, 64 /* BigInt */ | 2048 /* BigIntLiteral */) : t);
+                }
+                return typeWithPrimitives;
+            }

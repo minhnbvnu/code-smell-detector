@@ -1,0 +1,1 @@
+function M3e(e){var t,r;if(r=e.input.charCodeAt(e.position),r!==38)return!1;for(e.anchor!==null&&It(e,"duplication of an anchor property"),r=e.input.charCodeAt(++e.position),t=e.position;r!==0&&!Ln(r)&&!qd(r);)r=e.input.charCodeAt(++e.position);return e.position===t&&It(e,"name of an anchor node must contain at least one character"),e.anchor=e.input.slice(t,e.position),!0}

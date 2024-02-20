@@ -1,0 +1,1 @@
+function JsDoc(i){var o=getMarkdown(i);return o?s.createElement(Kn,{text:o}):null}

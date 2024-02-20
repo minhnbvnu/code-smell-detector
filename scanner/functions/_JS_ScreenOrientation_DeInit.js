@@ -1,0 +1,1 @@
+function _JS_ScreenOrientation_DeInit(){JS_ScreenOrientation_callback=0;window.removeEventListener("resize",JS_ScreenOrientation_eventHandler);if(screen.orientation){screen.orientation.removeEventListener("change",JS_ScreenOrientation_eventHandler)}}

@@ -1,0 +1,1 @@
+function PPe(e){return Ite.every(function(t,r){return e[r]===t})}

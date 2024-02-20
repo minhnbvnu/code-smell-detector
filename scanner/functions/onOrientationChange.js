@@ -1,0 +1,4 @@
+function onOrientationChange() {
+                            updateContainerWidth();
+                            goToSlide();
+                        }

@@ -1,1 +1,1 @@
-function Bn(n,e,i){void 0===i&&(i=e.length);var r=0,o=n.c;if(t(e))for(;r<i;)n.f[o++]=e.charCodeAt(r++),o==n.b&&(Xn(n),o=0);else{if(!s(e))throw Error("message must be string or array");for(;r<i;){var a=e[r++];if(!("number"==typeof a&&0<=a&&255>=a&&a==(0|a)))throw Error("message must be a byte array");n.f[o++]=a,o==n.b&&(Xn(n),o=0)}}n.c=o,n.g+=i}
+function Bn(t,e){var i=D(t)?t:qi(t);return!(!this.isValid()||!i.isValid())&&("millisecond"===(e=ot(e)||"millisecond")?this.valueOf()>i.valueOf():i.valueOf()<this.clone().startOf(e).valueOf())}

@@ -1,0 +1,1 @@
+function getComponentBase(e){return e.base}

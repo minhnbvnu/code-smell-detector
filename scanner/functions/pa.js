@@ -1,1 +1,1 @@
-function pa(){}
+function pa(a,b){var c=b?"-"+b+"s":"";la(a,[ma,c]);return[ma,c]}

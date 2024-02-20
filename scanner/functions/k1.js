@@ -1,0 +1,1 @@
+function k1(t){return zp(wc(rn-1,w1(t===91?t+2:t===40?t+1:t)))}

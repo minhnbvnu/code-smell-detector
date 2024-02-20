@@ -1,0 +1,1 @@
+function _class7(e,_ref7){var t=_ref7.useClass,r=_ref7.useValue,n=_ref7.useExisting,s=_ref7.useFactory,i=_ref7.deps,o=_ref7.multi;_classCallCheck(this,_class7),this.token=e,this.useClass=t||null,this.useValue=r,this.useExisting=n,this.useFactory=s||null,this.dependencies=i||null,this.multi=!!o}

@@ -1,0 +1,1 @@
+function tV(t,e){if(!t)return e;e=dp(e,!0);var n=t.indexOf(e);return(t=-1===n?e:"-"+t.slice(0,n)+"-"+e).toLowerCase()}

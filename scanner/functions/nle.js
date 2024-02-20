@@ -1,0 +1,1 @@
+function nle(e){if(!lSe)return e.detail;let t=PL,r=FL;return PL=e,FL=Date.now(),AL=!t||r>Date.now()-400&&Math.abs(t.clientX-e.clientX)<2&&Math.abs(t.clientY-e.clientY)<2?(AL+1)%3:1}

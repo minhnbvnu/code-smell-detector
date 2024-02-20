@@ -1,29 +1,47 @@
-function objectEqual(leftHandOperand, rightHandOperand, options) {
-    var leftHandKeys = getEnumerableKeys(leftHandOperand);
-    var rightHandKeys = getEnumerableKeys(rightHandOperand);
-    if (leftHandKeys.length && leftHandKeys.length === rightHandKeys.length) {
-      leftHandKeys.sort();
-      rightHandKeys.sort();
-      if (iterableEqual(leftHandKeys, rightHandKeys) === false) {
-        return false;
-      }
-      return keysEqual(leftHandOperand, rightHandOperand, leftHandKeys, options);
-    }
-
-    var leftHandEntries = getIteratorEntries(leftHandOperand);
-    var rightHandEntries = getIteratorEntries(rightHandOperand);
-    if (leftHandEntries.length && leftHandEntries.length === rightHandEntries.length) {
-      leftHandEntries.sort();
-      rightHandEntries.sort();
-      return iterableEqual(leftHandEntries, rightHandEntries, options);
-    }
-
-    if (leftHandKeys.length === 0 &&
-        leftHandEntries.length === 0 &&
-        rightHandKeys.length === 0 &&
-        rightHandEntries.length === 0) {
-      return true;
-    }
-
+function objectEqual(a, b, m) {
+  if (!isValue(a) || !isValue(b)) {
     return false;
   }
+
+  if (a.prototype !== b.prototype) {
+    return false;
+  }
+
+  var i;
+  if (m) {
+    for (i = 0; i < m.length; i++) {
+      if ((m[i][0] === a && m[i][1] === b)
+      ||  (m[i][0] === b && m[i][1] === a)) {
+        return true;
+      }
+    }
+  } else {
+    m = [];
+  }
+
+  try {
+    var ka = enumerable(a);
+    var kb = enumerable(b);
+  } catch (ex) {
+    return false;
+  }
+
+  ka.sort();
+  kb.sort();
+
+  if (!iterableEqual(ka, kb)) {
+    return false;
+  }
+
+  m.push([ a, b ]);
+
+  var key;
+  for (i = ka.length - 1; i >= 0; i--) {
+    key = ka[i];
+    if (!deepEqual(a[key], b[key], m)) {
+      return false;
+    }
+  }
+
+  return true;
+}

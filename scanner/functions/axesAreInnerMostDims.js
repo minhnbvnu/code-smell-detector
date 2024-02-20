@@ -1,9 +1,1 @@
-function axesAreInnerMostDims(axes, rank) {
-	  for (var i = 0; i < axes.length; ++i) {
-	    if (axes[axes.length - i - 1] !== rank - 1 - i) {
-	      return false;
-	    }
-	  }
-
-	  return true;
-	}
+function axesAreInnerMostDims(e,t){for(var n=0;n<e.length;++n)if(e[e.length-n-1]!==t-1-n)return !1;return !0}

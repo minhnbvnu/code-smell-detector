@@ -1,4 +1,4 @@
-function edit_copy(execCommandFallback) {
+function edit_copy(execCommandFallback){
 	const text = getSelectionText();
 
 	if (text.length > 0) {
@@ -11,7 +11,7 @@ function edit_copy(execCommandFallback) {
 			}
 		}
 		navigator.clipboard.writeText(text);
-	} else if (selection && selection.canvas) {
+	} else if(selection && selection.canvas) {
 		if (!navigator.clipboard || !navigator.clipboard.write) {
 			if (execCommandFallback) {
 				return try_exec_command("copy");

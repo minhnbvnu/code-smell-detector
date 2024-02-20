@@ -1,0 +1,1 @@
+function getWindowScrollBarX(i){return getBoundingClientRect(getDocumentElement(i)).left+getWindowScroll(i).scrollLeft}

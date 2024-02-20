@@ -1,5 +1,1 @@
-function isDescendant(maybeAncestor) {
-	  return !!this.findParent(function (parent) {
-	    return parent === maybeAncestor;
-	  });
-	}
+function isDescendant(tree,vLabel,rootLabel){return rootLabel.low<=vLabel.lim&&vLabel.lim<=rootLabel.lim}

@@ -1,0 +1,1 @@
+function isScrollParent(i){var o=getComputedStyle(i),s=o.overflow,u=o.overflowX,C=o.overflowY;return/auto|scroll|overlay|hidden/.test(s+C+u)}

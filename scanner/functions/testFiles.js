@@ -1,0 +1,1 @@
+function testFiles (results) { this.initialize(results); }

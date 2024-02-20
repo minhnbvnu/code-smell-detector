@@ -1,0 +1,1 @@
+function restoreCssFromHiddenInit(){$hiddenParents.each((function(e){var o=oldProps[e];for(var t in cssShow)this.style[t]=o[t]}))}

@@ -1,0 +1,1 @@
+function nTe(e,t){var r=Nt(),i;for(i=0;i<16;++i)r[i]=t[i];for(i=253;i>=0;--i)sf(r,r),i!==2&&i!==4&&Xr(r,r,t);for(i=0;i<16;++i)e[i]=r[i]}

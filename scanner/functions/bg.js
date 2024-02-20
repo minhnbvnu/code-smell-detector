@@ -1,1 +1,2 @@
-function bg(){return-2}
+function bg(a,b){var c=b.source;null===b.stack&&null!==c&&Ie(c);null!==c&&Za(c);b=b.value;null!==
+a&&2===a.tag&&Za(a);try{b&&b.suppressReactErrorLogging||console.error(b)}catch(d){d&&d.suppressReactErrorLogging||console.error(d)}}

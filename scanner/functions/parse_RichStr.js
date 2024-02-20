@@ -1,0 +1,1 @@
+function parse_RichStr(data,length){var start=data.l;var flags=data.read_shift(1);var str=parse_XLWideString(data);var rgsStrRun=[];var z={t:str,h:str};if((flags&1)!==0){var dwSizeStrRun=data.read_shift(4);for(var i=0;i!=dwSizeStrRun;++i)rgsStrRun.push(parse_StrRun(data));z.r=rgsStrRun}else z.r="<t>"+escapexml(str)+"</t>";if((flags&2)!==0){}data.l=start+length;return z}

@@ -1,0 +1,1 @@
+function _llvm_copysign_f64(x,y){return y<0||y===0&&1/y<0?-Math_abs(x):Math_abs(x)}

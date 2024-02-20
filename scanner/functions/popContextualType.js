@@ -1,0 +1,3 @@
+function popContextualType() {
+                contextualTypeCount--;
+            }

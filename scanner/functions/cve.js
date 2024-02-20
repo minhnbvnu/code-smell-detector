@@ -1,0 +1,1 @@
+function cve(e){let t=Ab(e,e&&e.isTTY);return Tb(t)}

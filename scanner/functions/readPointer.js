@@ -1,1 +1,0 @@
-function readPointer(pointer){return this["fromWireType"](HEAPU32[pointer>>2])}

@@ -1,0 +1,1 @@
+function yee(e,t){let r=e.length;for(let i=0;i<r;i++)e[i]^=t[i&3]}

@@ -1,0 +1,1 @@
+function AsYouTypeFormatter(i){i.state;var o=i.metadata;AsYouTypeFormatter_classCallCheck(this,AsYouTypeFormatter),this.metadata=o,this.resetFormat()}

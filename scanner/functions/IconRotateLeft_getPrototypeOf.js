@@ -1,0 +1,1 @@
+function IconRotateLeft_getPrototypeOf(o) { IconRotateLeft_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return IconRotateLeft_getPrototypeOf(o); }

@@ -1,0 +1,1 @@
+function yi(){return T(li)}

@@ -1,0 +1,1 @@
+function HV(t){var e=t.itemStyle||(t.itemStyle={}),n=e.emphasis||(e.emphasis={}),i=t.label||t.label||{},r=i.normal||(i.normal={}),o={normal:1,emphasis:1};E(i,(function(t,e){o[e]||YV(r,e)||(r[e]=t)})),n.label&&!YV(i,"emphasis")&&(i.emphasis=n.label,delete n.label)}

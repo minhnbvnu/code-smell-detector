@@ -1,0 +1,1 @@
+function Vj(a,c,d){a=a|0;c=c|0;d=d|0;var e=0,g=0;e=u;u=u+16|0;g=e;ll(g,d&1);d=Ai(a,c)|0;c=d+11|0;if((b[c>>0]|0)<0){b[f[d>>2]>>0]=0;f[d+4>>2]=0}else{b[d>>0]=0;b[c>>0]=0}gh(d,0);f[d>>2]=f[g>>2];f[d+4>>2]=f[g+4>>2];f[d+8>>2]=f[g+8>>2];u=e;return}

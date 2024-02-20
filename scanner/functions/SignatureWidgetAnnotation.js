@@ -1,0 +1,1 @@
+function SignatureWidgetAnnotation(t){var o;_classCallCheck(this,SignatureWidgetAnnotation);(o=r.call(this,t)).data.fieldValue=null;return o}

@@ -1,0 +1,1 @@
+function getOppositeVariationPlacement(i){return i.replace(/start|end/g,(function(i){return Lt[i]}))}

@@ -1,0 +1,1 @@
+function demangle(func){return func}

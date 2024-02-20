@@ -1,0 +1,1 @@
+function _emscripten_glGetAttribLocation(program,name){return GLctx.getAttribLocation(GL.programs[program],UTF8ToString(name))}

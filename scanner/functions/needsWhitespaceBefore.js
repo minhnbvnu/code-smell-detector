@@ -1,3 +1,3 @@
 function needsWhitespaceBefore(node, parent) {
-	  return needsWhitespace(node, parent, "before");
-	}
+  return needsWhitespace(node, parent, "before");
+}

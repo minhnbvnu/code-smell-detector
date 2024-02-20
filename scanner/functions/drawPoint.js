@@ -1,14 +1,1 @@
-function drawPoint() {
-        var center = map.getCenter();
-
-        var domPosition = GET_PAGE_POSITION(container);
-        var point = map.coordinateToContainerPoint(center).add(domPosition);
-        happen.mousedown(eventContainer, {
-            'clientX':point.x,
-            'clientY':point.y
-        });
-        happen.click(eventContainer, {
-            'clientX':point.x,
-            'clientY':point.y
-        });
-    }
+function drawPoint(canvasContext,point,dp){var i,x,y,a,b;x=meanShape[(i=2*point)/2][0],y=meanShape[i/2][1];for(var j=0;j<numParameters;j++)x+=model.shapeModel.eigenVectors[i][j]*dp[j+4],y+=model.shapeModel.eigenVectors[i+1][j]*dp[j+4];a=dp[0]*x-dp[1]*y+dp[2],b=dp[0]*y+dp[1]*x+dp[3],x+=a,y+=b,canvasContext.beginPath(),canvasContext.arc(x,y,1,0,2*Math.PI,!0),canvasContext.closePath(),canvasContext.fill()}

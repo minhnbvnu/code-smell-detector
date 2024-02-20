@@ -1,7 +1,1 @@
-function sinh_(x) {
-	  var $x = convertToTensor(x, 'x', 'sinh');
-	  var inputs = {
-	    x: $x
-	  };
-	  return ENGINE.runKernel(Sinh, inputs);
-	}
+function sinh_(e){var t=convertToTensor(e,"x","sinh");return ENV.engine.runKernel(function(e){return e.sinh(t)},{$x:t},function(e){return {$x:function(){return t.toFloat().cosh().mulStrict(e)}}})}

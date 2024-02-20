@@ -1,0 +1,1 @@
+function swapXY(g){_.forEach(g.nodes(),function(v){swapXYOne(g.node(v))});_.forEach(g.edges(),function(e){var edge=g.edge(e);_.forEach(edge.points,swapXYOne);if(_.has(edge,"x")){swapXYOne(edge)}})}

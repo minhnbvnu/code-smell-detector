@@ -1,0 +1,1 @@
+function cloneArrayBuffer$3(arrayBuffer){var result=new arrayBuffer.constructor(arrayBuffer.byteLength);return new Uint8Array(result).set(new Uint8Array(arrayBuffer)),result}

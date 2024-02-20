@@ -1,0 +1,1 @@
+function FTe(e){const r=NFe([ATe,...(e||{}).extensions||[]]),n={defined:[],lazy:{},constructs:r,content:i(UFe),document:i(HFe),flow:i(dTe),string:i(pTe),text:i(mTe)};return n;function i(a){return l;function l(s){return vTe(n,a,s)}}}

@@ -1,0 +1,1 @@
+function eEe(e,t){try{return new gi(e,t).range||"*"}catch{return null}}

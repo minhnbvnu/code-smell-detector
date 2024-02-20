@@ -1,0 +1,1 @@
+function shape(o){return o.shape||"circle"}

@@ -1,0 +1,1 @@
+function R0(n){let{inputs:t,attrs:e,backend:i}=n,{dim:r}=e,{input:o}=t,s=o.shape.length,a=o.shape.slice(),l=r;return r<0&&(R.assert(-(s+1)<=r,()=>`Axis must be in the interval [${-(s+1)}, ${s}]`),l=s+r+1),a.splice(l,0,1),Et({inputs:{x:o},backend:i,attrs:{shape:a}})}

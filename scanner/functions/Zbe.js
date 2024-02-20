@@ -1,0 +1,1 @@
+function Zbe(e,t,r){let{node:n,isVirtualized:i}=e,a={role:"row"};return i&&!(Kc()&&"expandedKeys"in t)&&(a["aria-rowindex"]=n.index+1),{rowProps:a}}

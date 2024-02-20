@@ -1,0 +1,1 @@
+function setSelectedRows(e){if(!selectionModel)throw new Error("SlickGrid Selection model is not set");self&&self.getEditorLock&&!self.getEditorLock().isActive()&&selectionModel.setSelectedRanges(rowsToRanges(e))}

@@ -1,1 +1,1 @@
-function Gi(t){Wi.call(this,t,kh),this.a=[]}
+function gI(e,t,r){if(e==t)return!0;e||(e=pL),t||(t=pL);let n=Object.keys(e),i=Object.keys(t);if(n.length-(r&&n.indexOf(r)>-1?1:0)!=i.length-(r&&i.indexOf(r)>-1?1:0))return!1;for(let a of n)if(a!=r&&(i.indexOf(a)==-1||e[a]!==t[a]))return!1;return!0}

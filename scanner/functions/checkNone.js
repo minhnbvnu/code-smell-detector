@@ -1,0 +1,3 @@
+function checkNone() {
+  changeAll(false);
+}

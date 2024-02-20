@@ -1,0 +1,1 @@
+function dF(){var e=KR();return e.copy=function(){return WR(e,dF())},XR.apply(e,arguments),cF(e)}

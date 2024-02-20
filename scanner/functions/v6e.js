@@ -1,0 +1,1 @@
+function v6e(e){return Buffer.isBuffer(e)&&(e=e.toString("utf8")),e.replace(/^\uFEFF/,"")}

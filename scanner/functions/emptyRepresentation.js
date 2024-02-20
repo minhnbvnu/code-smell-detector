@@ -1,5 +1,7 @@
-function emptyRepresentation(value, typeHint) {
-  switch (typeHint) {
+function emptyRepresentation(value, type) {
+  type = type || exports.type(value);
+
+  switch (type) {
     case 'function':
       return '[Function]';
     case 'object':

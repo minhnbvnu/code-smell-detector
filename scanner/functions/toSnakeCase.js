@@ -1,14 +1,12 @@
-function toSnakeCase(name) {
-	  var intermediate = name.replace(/(.)([A-Z][a-z0-9]+)/g, '$1_$2');
-	  var insecure = intermediate.replace(/([a-z])([A-Z])/g, '$1_$2').toLowerCase();
-	  /*
-	   If the class is private the name starts with "_" which is not secure
-	   for creating scopes. We prefix the name with "private" in this case.
-	   */
+function toSnakeCase(object, exceptions) {
+  if (typeof object !== 'object' || assert.isArray(object) || object === null) {
+    return object;
+  }
+  exceptions = exceptions || [];
 
-	  if (insecure[0] !== '_') {
-	    return insecure;
-	  }
-
-	  return 'private' + insecure;
-	}
+  return Object.keys(object).reduce(function(p, key) {
+    var newKey = exceptions.indexOf(key) === -1 ? camelToSnake(key) : key;
+    p[newKey] = toSnakeCase(object[key]);
+    return p;
+  }, {});
+}

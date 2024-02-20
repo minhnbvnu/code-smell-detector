@@ -1,6 +1,1 @@
-function incr(amount) {
-	      amount = amount || 1;
-	      var res = str.substring(pos, pos + amount);
-	      pos += amount || 1;
-	      return res;
-	    }
+function incr(o){o=o||1;var s=i.substring(B,B+o);return B+=o||1,s}

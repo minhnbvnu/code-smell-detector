@@ -1,0 +1,1 @@
+function parse_XLSBCodeName(data,length){return parse_XLWideString(data,length)}

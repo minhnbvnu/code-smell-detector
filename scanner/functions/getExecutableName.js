@@ -1,1 +1,3 @@
-function getExecutableName(){return thisProgram||"./this.program"}
+function getExecutableName() {
+          return thisProgram || "./this.program";
+        }

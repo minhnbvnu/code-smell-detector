@@ -1,0 +1,1 @@
+function KM(t,e){var r=0,n=0;t.weight&&(r+=t.barycenter*t.weight,n+=t.weight),e.weight&&(r+=e.barycenter*e.weight,n+=e.weight),t.vs=e.vs.concat(t.vs),t.barycenter=r/n,t.weight=n,t.i=Math.min(e.i,t.i),e.merged=!0}

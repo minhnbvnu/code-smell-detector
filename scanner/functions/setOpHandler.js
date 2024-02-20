@@ -1,3 +1,1 @@
-function setOpHandler(handler) {
-	  opHandler = handler;
-	}
+function setOpHandler(e){opHandler=e;}

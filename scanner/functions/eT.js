@@ -1,0 +1,1 @@
+function eT(t){U(t)&&(t=(new DOMParser).parseFromString(t,"text/xml"));var e=t;for(9===e.nodeType&&(e=e.firstChild);"svg"!==e.nodeName.toLowerCase()||1!==e.nodeType;)e=e.nextSibling;return e}

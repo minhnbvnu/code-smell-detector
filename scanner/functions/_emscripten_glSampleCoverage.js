@@ -1,0 +1,1 @@
+function _emscripten_glSampleCoverage(value,invert){GLctx.sampleCoverage(value,!!invert)}

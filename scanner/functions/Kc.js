@@ -1,0 +1,1 @@
+function Kc(a){a=a.nodeType;return 1===a||!a||9===a}

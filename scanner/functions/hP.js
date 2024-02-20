@@ -1,0 +1,1 @@
+function hP(n,t){let e=ao(n,()=>n.createBuffer(),"Unable to create WebGLBuffer");return Gt(n,()=>n.bindBuffer(n.ELEMENT_ARRAY_BUFFER,e)),Gt(n,()=>n.bufferData(n.ELEMENT_ARRAY_BUFFER,t,n.STATIC_DRAW)),e}

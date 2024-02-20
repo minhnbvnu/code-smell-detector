@@ -1,0 +1,13 @@
+function arrayTo2DArray1(arr, size) {
+  const res = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (i % size === 0) {
+      // Push a new array containing the current value to the res array
+      res.push([arr[i]]);
+    } else {
+      // Push the current value to the current array
+      res[res.length - 1].push(arr[i]);
+    }
+  }
+  return res;
+}

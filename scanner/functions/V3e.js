@@ -1,0 +1,1 @@
+function V3e(){return o(oe,{children:o(Ee,{leftHeader:o(Q3e,{}),rightHeader:o("h3",{children:"Code:"}),left:o(N3e,{}),right:o(N,{links:!0,input1:L3e})})})}

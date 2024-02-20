@@ -1,0 +1,1 @@
+function H$(n,t){let e=n.x.length,i=new Array(e);for(let r=0;r<e;r++)i[r]=[n.y[r]-t[r]];return new $t(i)}

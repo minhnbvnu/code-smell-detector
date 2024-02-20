@@ -1,0 +1,1 @@
+function poe(e,t){for(let r of Object.keys(t))e.on(r,t[r]);return function(){for(let i of Object.keys(t))e.removeListener(i,t[i])}}

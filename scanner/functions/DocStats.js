@@ -1,0 +1,1 @@
+function DocStats(t){_classCallCheck(this,DocStats);this._handler=t;this._streamTypes=new Set;this._fontTypes=new Set}

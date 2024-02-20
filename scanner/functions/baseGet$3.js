@@ -1,0 +1,1 @@
+function baseGet$3(object,path){for(var index=0,length=(path=castPath$3(path,object)).length;null!=object&&index<length;)object=object[toKey$4(path[index++])];return index&&index==length?object:void 0}

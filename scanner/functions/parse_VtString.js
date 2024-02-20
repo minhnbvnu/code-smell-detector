@@ -1,0 +1,1 @@
+function parse_VtString(blob,t,pad){return parse_VtStringBase(blob,t,pad===false?0:4)}

@@ -1,0 +1,1 @@
+function _classCheckPrivateStaticAccess(t,r){if(t!==r)throw new TypeError("Private static access of wrong provenance")}

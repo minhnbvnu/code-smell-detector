@@ -1,3 +1,3 @@
 function NullLiteralTypeAnnotation() {
-	  this.word("null");
-	}
+  this.word("null");
+}

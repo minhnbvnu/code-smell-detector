@@ -1,0 +1,1 @@
+function AsYouType_arrayWithHoles(i){if(Array.isArray(i))return i}

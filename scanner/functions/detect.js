@@ -1,12 +1,10 @@
-function detect (hand) {
-        component.data.hand = hand;
-        el.sceneEl.systems['tracked-controls-webvr'].controllers = createMotionControllersList('', '');
-
-        // delete our previously created mock, so component behaves as if it's never
-        // checked for controller presence previously.
-        delete component.controllerPresent;
-
-        component.checkIfControllerPresent();
-
-        assert.notOk(component.controllerPresent, hand + ' controllers present');
+function detect(iterator, context) {
+    var result;
+    this.each(function(value, index) {
+      if (iterator.call(context, value, index)) {
+        result = value;
+        throw $break;
       }
+    });
+    return result;
+  }

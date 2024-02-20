@@ -1,0 +1,1 @@
+function mxAnimation(a){this.delay=null!=a?a:20}

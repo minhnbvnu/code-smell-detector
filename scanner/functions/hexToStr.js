@@ -1,11 +1,1 @@
-function hexToStr(a, size) {
-    if (size === 1) {
-      return String.fromCharCode(a[0], a[1]);
-    }
-
-    if (size === 3) {
-      return String.fromCharCode(a[0], a[1], a[2], a[3]);
-    }
-
-    return String.fromCharCode.apply(null, a.subarray(0, size + 1));
-  }
+function hexToStr(t,r){return 1===r?String.fromCharCode(t[0],t[1]):3===r?String.fromCharCode(t[0],t[1],t[2],t[3]):String.fromCharCode.apply(null,t.subarray(0,r+1))}

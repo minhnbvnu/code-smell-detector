@@ -1,0 +1,1 @@
+function tsip_header_Privacy(s_value){ tsip_header_StrArray.call(this, tsip_header_type_e.Privacy, s_value); }

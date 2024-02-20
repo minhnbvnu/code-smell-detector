@@ -1,0 +1,1 @@
+function _x_pt_add(t,n){var e=t[0],i=t[1],r=t[2],_=t[3],s=n[0],u=n[1],o=n[2],f=n[3],c=i.minus(e).times(u.plus(s)),a=i.plus(e).times(u.minus(s)),b=r.times(_TWO).times(f),d=_.times(_TWO).times(o),m=d.plus(b),h=a.minus(c),p=a.plus(c),l=d.minus(b);return[m.times(h),p.times(l),h.times(p),m.times(l)]}

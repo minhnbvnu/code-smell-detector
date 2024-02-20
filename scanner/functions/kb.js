@@ -1,0 +1,1 @@
+function kb(a){return a.replace(/(#.+)|#$/,"$1")}

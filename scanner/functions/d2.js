@@ -1,0 +1,1 @@
+function d2(n){Ps.push(n);for(let t=0;t<n.emits.length;t++)Hu[n.emits[t]]=n}

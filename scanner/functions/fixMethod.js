@@ -1,0 +1,1 @@
+function fixMethod(KEY,CHAIN){var method=proto[KEY];if($.FW)proto[KEY]=function(a,b){var result=method.call(this,a===0?0:a,b);return CHAIN?this:result}}

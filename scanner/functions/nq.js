@@ -1,1 +1,1 @@
-function Nq(a){a=a|0;var b=0;b=fa-16|0;L[b+12>>2]=a;return L[L[b+12>>2]+84>>2]}
+function nq(a,b,c){a=a|0;b=b|0;c=c|0;aa(2);return 0}

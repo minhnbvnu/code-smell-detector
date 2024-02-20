@@ -1,0 +1,1 @@
+function ste(e){return e==="darwin"?_p.join(g3(),"Library/Logs","{appName}"):_p.join(h3(e),"{appName}","logs")}

@@ -1,0 +1,1 @@
+function parseTopParamType(){var o;return B===u.REST?(consume(u.REST),maybeAddRange({type:i.RestType,expression:parseTop()},[0,w])):(o=parseTop(),B===u.EQUAL?(consume(u.EQUAL),maybeAddRange({type:i.OptionalType,expression:o},[0,w])):o)}

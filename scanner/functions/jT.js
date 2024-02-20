@@ -1,0 +1,1 @@
+function jT(){return er=rn>0?_c(ua,--rn):0,ca--,er===10&&(ca=1,vc--),er}

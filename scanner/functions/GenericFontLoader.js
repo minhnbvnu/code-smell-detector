@@ -1,0 +1,1 @@
+function GenericFontLoader(t){var a;_classCallCheck(this,GenericFontLoader);(a=r.call(this,t)).loadingContext={requests:[],nextRequestId:0};a.loadTestFontId=0;return a}

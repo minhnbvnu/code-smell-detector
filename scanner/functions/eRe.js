@@ -1,0 +1,1 @@
+function eRe(e){let t=!1;if(e.type==="list"){t=e.spread||!1;const r=e.children;let n=-1;for(;!t&&++n<r.length;)t=Vse(r[n])}return t}

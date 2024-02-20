@@ -1,11 +1,1 @@
-function applyBoundingBox(ctx, bbox) {
-  if (!bbox || typeof Path2D === "undefined") {
-    return;
-  }
-
-  const width = bbox[2] - bbox[0];
-  const height = bbox[3] - bbox[1];
-  const region = new Path2D();
-  region.rect(bbox[0], bbox[1], width, height);
-  ctx.clip(region);
-}
+function applyBoundingBox(t,r){if(r&&!o.isNodeJS){var a=r[2]-r[0],i=r[3]-r[1],l=new Path2D;l.rect(r[0],r[1],a,i);t.clip(l)}}

@@ -1,1 +1,1 @@
-function _o(t){return t.b.get(If,t.a).then(function(t){return fr(t)})}
+function _o(){return Math.floor(this.valueOf()/1e3)}

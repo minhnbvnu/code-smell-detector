@@ -1,0 +1,1 @@
+function _wgpu_encoder_end(encoder){wgpu[encoder]["end"]();_wgpu_object_destroy(encoder)}

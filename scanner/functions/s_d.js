@@ -1,0 +1,1 @@
+function s_d($){$sdt.d=$dt.d=$}

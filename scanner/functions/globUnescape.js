@@ -1,3 +1,3 @@
-function globUnescape(s) {
-	  return s.replace(/\\(.)/g, '$1');
-	}
+function globUnescape (s) {
+  return s.replace(/\\(.)/g, '$1')
+}

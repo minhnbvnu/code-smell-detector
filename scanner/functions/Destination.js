@@ -1,0 +1,1 @@
+function Destination(t){_classCallCheck(this,Destination);return r.call(this,d,"destination",["pdf","pcl","ps","webClient","zpl"])}

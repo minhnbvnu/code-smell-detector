@@ -1,0 +1,1 @@
+function ise(e){return e==="linux"&&gD.existsSync("/etc/alpine-release")}

@@ -1,12 +1,1 @@
-function registerClass(cls) {
-	  assert(cls.className != null, function () {
-	    return "Class being registered does not have the static className " + "property defined.";
-	  });
-	  assert(typeof cls.className === 'string', function () {
-	    return "className is required to be a string, but got type " + typeof cls.className;
-	  });
-	  assert(cls.className.length > 0, function () {
-	    return "Class being registered has an empty-string as its className, " + "which is disallowed.";
-	  });
-	  SerializationMap.register(cls);
-	}
+function registerClass(e){assert(null!=e.className,"Class being registered does not have the static className property defined."),assert("string"==typeof e.className,"className is required to be a string, but got type "+typeof e.className),assert(e.className.length>0,"Class being registered has an empty-string as its className, which is disallowed."),SerializationMap.register(e);}

@@ -1,0 +1,1 @@
+function mxStyleChange(a,b,c){this.model=a;this.cell=b;this.previous=this.style=c}

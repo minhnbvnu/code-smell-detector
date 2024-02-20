@@ -1,0 +1,1 @@
+function Kwe(e){let t=[],r=e.matched?qwe:Hwe;return t.push(r.range(e.start.from,e.start.to)),e.end&&t.push(r.range(e.end.from,e.end.to)),t}

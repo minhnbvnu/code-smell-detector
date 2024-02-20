@@ -1,0 +1,1 @@
+function zoe(e,t,r,i,a){if(i.overwrite)An.unlink(r,n=>n?a(n):$k(e,t,r,i,a));else return i.errorOnExist?a(new Error(`'${r}' already exists`)):a()}

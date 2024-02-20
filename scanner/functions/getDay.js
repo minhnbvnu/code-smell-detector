@@ -1,0 +1,1 @@
+function getDay($){var _=new Date($.y,$.M-1,$.d);return _.getDay()}

@@ -1,0 +1,1 @@
+function parse_PtgErr(blob,length){blob.l++;return BErr[blob.read_shift(1)]}

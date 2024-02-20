@@ -1,1 +1,0 @@
-function handleSuccess(data) { console.log(data); }

@@ -1,0 +1,1 @@
+function getFilterRegExp(i){return i=i.replace(/[^a-z0-9]/gi,"").split("").join(".*"),new RegExp(i,"i")}

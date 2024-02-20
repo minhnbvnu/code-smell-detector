@@ -1,0 +1,1 @@
+function isset(object){return void 0!==object}

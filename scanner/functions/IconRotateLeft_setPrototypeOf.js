@@ -1,0 +1,1 @@
+function IconRotateLeft_setPrototypeOf(o, p) { IconRotateLeft_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return IconRotateLeft_setPrototypeOf(o, p); }

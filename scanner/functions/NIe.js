@@ -1,0 +1,1 @@
+function NIe(){return X_===0&&(X_=_3.cpus().length),X_}

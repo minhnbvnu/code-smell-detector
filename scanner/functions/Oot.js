@@ -1,0 +1,1 @@
+function Oot(n){let t=n.prev,e=n,i=n.next;if(We(t,e,i)>=0)return!1;let r=n.next.next;for(;r!==n.prev;){if(Dc(t.x,t.y,e.x,e.y,i.x,i.y,r.x,r.y)&&We(r.prev,r,r.next)>=0)return!1;r=r.next}return!0}

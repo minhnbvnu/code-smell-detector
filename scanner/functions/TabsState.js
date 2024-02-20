@@ -1,0 +1,1 @@
+function TabsState(props){var _this3;return _classCallCheck(this,TabsState),(_this3=_super2.call(this,props)).handlers={onSelect:function onSelect(id){return _this3.setState({selected:id})}},_this3.state={selected:props.initial},_this3}

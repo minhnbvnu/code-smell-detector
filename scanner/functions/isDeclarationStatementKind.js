@@ -1,0 +1,3 @@
+function isDeclarationStatementKind(kind) {
+            return kind === 259 /* FunctionDeclaration */ || kind === 279 /* MissingDeclaration */ || kind === 260 /* ClassDeclaration */ || kind === 261 /* InterfaceDeclaration */ || kind === 262 /* TypeAliasDeclaration */ || kind === 263 /* EnumDeclaration */ || kind === 264 /* ModuleDeclaration */ || kind === 269 /* ImportDeclaration */ || kind === 268 /* ImportEqualsDeclaration */ || kind === 275 /* ExportDeclaration */ || kind === 274 /* ExportAssignment */ || kind === 267 /* NamespaceExportDeclaration */;
+        }

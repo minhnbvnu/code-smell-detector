@@ -1,5 +1,3 @@
 function cloneWithoutLoc(node) {
-	  var newNode = clone(node);
-	  delete newNode.loc;
-	  return newNode;
-	}
+  return (0, _cloneNode.default)(node, false, true);
+}

@@ -1,0 +1,1 @@
+function navigateUp(){return navigate("up")}

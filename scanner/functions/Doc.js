@@ -1,16 +1,17 @@
 function Doc(runner) {
   Base.call(this, runner);
 
-  var indents = 2;
+  var self = this
+    , stats = this.stats
+    , total = runner.total
+    , indents = 2;
 
   function indent() {
     return Array(indents).join('  ');
   }
 
-  runner.on('suite', function(suite) {
-    if (suite.root) {
-      return;
-    }
+  runner.on('suite', function(suite){
+    if (suite.root) return;
     ++indents;
     console.log('%s<section class="suite">', indent());
     ++indents;
@@ -18,34 +19,24 @@ function Doc(runner) {
     console.log('%s<dl>', indent());
   });
 
-  runner.on('suite end', function(suite) {
-    if (suite.root) {
-      return;
-    }
+  runner.on('suite end', function(suite){
+    if (suite.root) return;
     console.log('%s</dl>', indent());
     --indents;
     console.log('%s</section>', indent());
     --indents;
   });
 
-  runner.on('pass', function(test) {
+  runner.on('pass', function(test){
     console.log('%s  <dt>%s</dt>', indent(), utils.escape(test.title));
-    var code = utils.escape(utils.clean(test.body));
+    var code = utils.escape(utils.clean(test.fn.toString()));
     console.log('%s  <dd><pre><code>%s</code></pre></dd>', indent(), code);
   });
 
-  runner.on('fail', function(test, err) {
-    console.log(
-      '%s  <dt class="error">%s</dt>',
-      indent(),
-      utils.escape(test.title)
-    );
-    var code = utils.escape(utils.clean(test.body));
-    console.log(
-      '%s  <dd class="error"><pre><code>%s</code></pre></dd>',
-      indent(),
-      code
-    );
+  runner.on('fail', function(test, err){
+    console.log('%s  <dt class="error">%s</dt>', indent(), utils.escape(test.title));
+    var code = utils.escape(utils.clean(test.fn.toString()));
+    console.log('%s  <dd class="error"><pre><code>%s</code></pre></dd>', indent(), code);
     console.log('%s  <dd class="error">%s</dd>', indent(), utils.escape(err));
   });
 }

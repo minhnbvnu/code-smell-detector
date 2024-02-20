@@ -1,0 +1,1 @@
+function nlt(n,t,e){var i,r,o=elt(t)?Nd:ri;return function(){var s=o(this,n),a=s.on;a!==i&&(r=(i=a).copy()).on(t,e),s.on=r}}

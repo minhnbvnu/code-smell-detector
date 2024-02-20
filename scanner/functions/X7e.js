@@ -1,0 +1,1 @@
+function X7e(e){let t=null;for(let r of e){let n=r.p.stoppedAt;(r.pos==r.p.stream.end||n!=null&&r.pos>n)&&r.p.parser.stateFlag(r.state,2)&&(!t||t.score<r.score)&&(t=r)}return t}

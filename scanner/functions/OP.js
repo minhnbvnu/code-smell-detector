@@ -1,0 +1,1 @@
+function OP(n,t,e,i){let[r,o]=sa(t,e),s=4,a=new Uint8Array(iP(t*e,s));return Gt(n,()=>n.readPixels(0,0,r,o,i.downloadTextureFormat,n.UNSIGNED_BYTE,a)),new Float32Array(a.buffer)}

@@ -1,0 +1,1 @@
+function _emscripten_set_mousedown_callback_on_thread(target,userData,useCapture,callbackfunc,targetThread){registerMouseEventCallback(target,userData,useCapture,callbackfunc,5,"mousedown",targetThread);return 0}

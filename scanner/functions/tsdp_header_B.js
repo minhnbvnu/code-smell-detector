@@ -1,0 +1,1 @@
+function tsdp_header_B(s_value){ tsdp_header_Str.call(this, tsdp_header_type_e.B, s_value); }

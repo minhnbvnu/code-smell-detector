@@ -1,0 +1,1 @@
+function Assist(t){var o;_classCallCheck(this,Assist);(o=r.call(this,_,"assist",!0)).id=t.id||"";o.role=t.role||"";o.use=t.use||"";o.usehref=t.usehref||"";o.speak=null;o.toolTip=null;return o}

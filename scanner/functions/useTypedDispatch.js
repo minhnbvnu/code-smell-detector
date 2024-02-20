@@ -1,0 +1,3 @@
+function useTypedDispatch() {
+  return useDispatch();
+}

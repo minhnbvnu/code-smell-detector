@@ -1,0 +1,1 @@
+function mK(e,t=" KB"){return new Intl.NumberFormat("en").format((e/1024).toFixed(2))+t}

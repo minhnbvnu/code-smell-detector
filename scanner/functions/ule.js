@@ -1,0 +1,1 @@
+function ule(){return this.a}

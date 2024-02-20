@@ -1,0 +1,1 @@
+function pass1(elem){xs[elem]=blockG.inEdges(elem).reduce(function(acc,e){return Math.max(acc,xs[e.v]+blockG.edge(e))},0)}

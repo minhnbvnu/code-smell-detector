@@ -1,0 +1,1 @@
+function wE(t){var e=t.calendarModel,n=t.seriesModel;return e?e.coordinateSystem:n?n.coordinateSystem:null}

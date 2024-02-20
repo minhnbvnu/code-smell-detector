@@ -1,0 +1,1 @@
+function initFeatureMap(T){T._features?["tokens","stresses","phonemes","syllables","pos"].forEach(function(E){delete T._features[E]}):T._features={},T._features.text=T.text()}

@@ -1,0 +1,1 @@
+function xre(e){return i0.ucs2.decode(e).length}

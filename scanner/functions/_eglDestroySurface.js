@@ -1,0 +1,1 @@
+function _eglDestroySurface(display,surface){if(display!=62e3){EGL.setErrorCode(12296);return 0}if(surface!=62006){EGL.setErrorCode(12301);return 1}if(EGL.currentReadSurface==surface){EGL.currentReadSurface=0}if(EGL.currentDrawSurface==surface){EGL.currentDrawSurface=0}EGL.setErrorCode(12288);return 1}

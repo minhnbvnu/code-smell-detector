@@ -1,0 +1,1 @@
+function WIe(){let e=G1.existsSync("/Library/Developer/CommandLineTools/usr/bin/"),t=G1.existsSync("/Applications/Xcode.app/Contents/Developer/Tools"),r=G1.existsSync("/Library/Developer/Xcode/");return e||r||t}

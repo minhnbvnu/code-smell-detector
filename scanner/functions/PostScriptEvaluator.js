@@ -1,0 +1,1 @@
+function PostScriptEvaluator(t){_classCallCheck(this,PostScriptEvaluator);this.operators=t}

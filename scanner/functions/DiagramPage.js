@@ -1,0 +1,1 @@
+function DiagramPage(b,c){this.node=b;null!=c?this.node.setAttribute("id",c):null==this.getId()&&this.node.setAttribute("id",Editor.guid())}

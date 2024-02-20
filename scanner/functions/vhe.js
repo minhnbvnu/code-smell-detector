@@ -1,0 +1,1 @@
+function vhe(){return P1(/Chrome/i)}

@@ -1,0 +1,1 @@
+function tSe(e,t){let r=e.state.facet(Nae);return r.length?r[0](t):je.mac?!t.altKey:!t.ctrlKey}

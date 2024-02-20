@@ -1,0 +1,1 @@
+function FS_handledByPreloadPlugin(byteArray,fullname,finish,onerror){if(typeof Browser!="undefined")Browser.init();var handled=false;preloadPlugins.forEach(function(plugin){if(handled)return;if(plugin["canHandle"](fullname)){plugin["handle"](byteArray,fullname,finish,onerror);handled=true}});return handled}

@@ -1,0 +1,1 @@
+function Found(node, state) { this.node = node; this.state = state; }

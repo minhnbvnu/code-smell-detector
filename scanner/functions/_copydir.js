@@ -1,0 +1,1 @@
+function _copydir(i,n){try{fs.accessSync(n)}catch(i){fs.mkdirSync(n)}try{fs.readdirSync(i).forEach((function(o){let r=i+"/"+o,t=n+"/"+o;try{let i=fs.statSync(r);i.isFile()?fs.writeFileSync(t,fs.readFileSync(r)):i.isDirectory()&&"designs"!=o&&"packaged"!=o&&".git"!=o&&"output"!=o&&_copydir(r,t)}catch(i){console.log(i)}}))}catch(i){console.log(i)}}

@@ -1,0 +1,3 @@
+function boundsRingStart() {
+  areaStream.lineStart();
+}

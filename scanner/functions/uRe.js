@@ -1,0 +1,1 @@
+function uRe(e){const t=String(e),r=/\r?\n|\r/g;let n=r.exec(t),i=0;const a=[];for(;n;)a.push(LV(t.slice(i,n.index),i>0,!0),n[0]),i=n.index+n[0].length,n=r.exec(t);return a.push(LV(t.slice(i),i>0,!1)),a.join("")}

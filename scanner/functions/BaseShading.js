@@ -1,0 +1,1 @@
+function BaseShading(){_classCallCheck(this,BaseShading);this.constructor===BaseShading&&(0,c.unreachable)("Cannot initialize BaseShading.")}

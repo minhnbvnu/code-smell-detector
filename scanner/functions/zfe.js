@@ -1,0 +1,1 @@
+function zfe(e){let t=O.useContext(Tfe);return t||pn(!1),t}

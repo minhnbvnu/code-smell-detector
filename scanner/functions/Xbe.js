@@ -1,0 +1,1 @@
+function Xbe(e){let t=new(P7()).URL(e);return t.pathname.endsWith("/")||(t.pathname+="/"),t}

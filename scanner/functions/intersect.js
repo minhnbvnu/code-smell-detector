@@ -1,19 +1,10 @@
-function intersect (el) {
-        var intersected;
-        var mesh = el.getObject3D('mesh');
-        var elMin;
-        var elMax;
-        if (!mesh) { return; }
-        boundingBox.setFromObject(mesh);
-        elMin = boundingBox.min;
-        elMax = boundingBox.max;
-        // Bounding boxes are always aligned with the world coordinate system.
-        // The collision test checks for the conditions where cubes intersect.
-        // It's an extension to 3 dimensions of this approach (with the condition negated)
-        // https://www.youtube.com/watch?v=ghqD3e37R7E
-        intersected = (self.elMin.x <= elMax.x && self.elMax.x >= elMin.x) &&
-                      (self.elMin.y <= elMax.y && self.elMax.y >= elMin.y) &&
-                      (self.elMin.z <= elMax.z && self.elMax.z >= elMin.z);
-        if (!intersected) { return; }
-        collisions.push(el);
-      }
+function intersect(a, b) {
+      var pa = d3_geo_cartesian(a, 0), pb = d3_geo_cartesian(b, 0);
+      var n1 = [ 1, 0, 0 ], n2 = d3_geo_cartesianCross(pa, pb), n2n2 = d3_geo_cartesianDot(n2, n2), n1n2 = n2[0], determinant = n2n2 - n1n2 * n1n2;
+      if (!determinant) return a;
+      var c1 = cr * n2n2 / determinant, c2 = -cr * n1n2 / determinant, n1xn2 = d3_geo_cartesianCross(n1, n2), A = d3_geo_cartesianScale(n1, c1), B = d3_geo_cartesianScale(n2, c2);
+      d3_geo_cartesianAdd(A, B);
+      var u = n1xn2, w = d3_geo_cartesianDot(A, u), uu = d3_geo_cartesianDot(u, u), t = Math.sqrt(w * w - uu * (d3_geo_cartesianDot(A, A) - 1)), q = d3_geo_cartesianScale(u, (-w - t) / uu);
+      d3_geo_cartesianAdd(q, A);
+      return d3_geo_spherical(q);
+    }

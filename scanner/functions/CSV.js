@@ -1,0 +1,4 @@
+function CSV()
+    {
+        this.rows = [];
+    }

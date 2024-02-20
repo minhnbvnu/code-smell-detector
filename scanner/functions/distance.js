@@ -1,3 +1,5 @@
-function distance(coord1, coord2) {
-  return Math.sqrt(squaredDistance(coord1, coord2));
+function distance(a, b) {
+  let dx = b.x - a.x;
+  let dy = b.y - a.y;
+  return Math.sqrt(dx * dx + dy * dy);
 }

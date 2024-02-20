@@ -1,0 +1,1 @@
+function AnnotationBorderStyle(){_classCallCheck(this,AnnotationBorderStyle);this.width=1;this.style=c.AnnotationBorderStyleType.SOLID;this.dashArray=[3];this.horizontalCornerRadius=0;this.verticalCornerRadius=0}

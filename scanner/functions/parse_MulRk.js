@@ -1,0 +1,1 @@
+function parse_MulRk(blob,length){var target=blob.l+length-2;var rw=blob.read_shift(2),col=blob.read_shift(2);var rkrecs=[];while(blob.l<target)rkrecs.push(parse_RkRec(blob));if(blob.l!==target)throw"MulRK read error";var lastcol=blob.read_shift(2);if(rkrecs.length!=lastcol-col+1)throw"MulRK length mismatch";return{r:rw,c:col,C:lastcol,rkrec:rkrecs}}

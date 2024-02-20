@@ -1,0 +1,1 @@
+function trajRing_4x(u){return traj4_x(u-rRing*1.25*PI +ringArmOffset);}

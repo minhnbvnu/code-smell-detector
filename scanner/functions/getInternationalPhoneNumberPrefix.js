@@ -1,0 +1,1 @@
+function getInternationalPhoneNumberPrefix(i,o){var s="+"+getCountryCallingCode(i,o);return(o=new Y(o)).selectNumberingPlan(i),o.numberingPlan.leadingDigits()&&Ja.test(o.numberingPlan.leadingDigits())&&(s+=o.numberingPlan.leadingDigits()),s}

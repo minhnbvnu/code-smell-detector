@@ -1,0 +1,17 @@
+function toBeNaN() {
+    return {
+      compare: function(actual) {
+        var result = {
+          pass: (actual !== actual)
+        };
+
+        if (result.pass) {
+          result.message = 'Expected actual not to be NaN.';
+        } else {
+          result.message = function() { return 'Expected ' + j$.pp(actual) + ' to be NaN.'; };
+        }
+
+        return result;
+      }
+    };
+  }

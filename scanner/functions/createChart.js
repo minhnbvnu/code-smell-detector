@@ -1,22 +1,26 @@
 function createChart() {
-      return window.acquireChart({
-        type: 'bar',
-        data: {
-          labels: [0, 1, 2, 3, 4, 5, 6, 7, '7+'],
-          datasets: [{
-            data: [29.05, 4, 15.69, 11.69, 2.84, 4, 0, 3.84, 4],
-          }],
-        },
-        options: {
-          plugins: false,
-          layout: {
-            padding: {top: 30, left: 1, right: 1, bottom: 1}
-          }
+        const H = props.highcharts || (
+          typeof window === 'object' && window.Highcharts
+        );
+        const constructorType = props.constructorType || 'chart';
+  
+        if (!H) {
+          console.warn('The "highcharts" property was not passed.');
+  
+        } else if (!H[constructorType]) {
+          console.warn(
+            'The "constructorType" property is incorrect or some ' +
+              'required module is not imported.'
+          );
+        } else if (!props.options) {
+          console.warn('The "options" property was not passed.');
+  
+        } else {
+          // Create a chart
+          chartRef.current = H[constructorType](
+            containerRef.current,
+            props.options,
+            props.callback
+          );
         }
-      }, {
-        canvas: {
-          height: 0,
-          width: 0
-        }
-      });
-    }
+      }

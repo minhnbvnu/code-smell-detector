@@ -1,0 +1,3 @@
+function getNextTabId() {
+	return ++tabId;
+}

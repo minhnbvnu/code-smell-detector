@@ -1,4 +1,4 @@
 function getNative(object, key) {
-    var value = object == null ? undefined : object[key];
-    return isNative(value) ? value : undefined;
-  }
+      var value = getValue(object, key);
+      return baseIsNative(value) ? value : undefined;
+    }

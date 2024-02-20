@@ -1,0 +1,1 @@
+function paddingVert(display) {return display.mover.offsetHeight - display.lineSpace.offsetHeight}

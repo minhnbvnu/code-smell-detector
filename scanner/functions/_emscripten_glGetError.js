@@ -1,0 +1,1 @@
+function _emscripten_glGetError(){var error=GLctx.getError()||GL.lastError;GL.lastError=0;return error}

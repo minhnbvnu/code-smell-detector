@@ -1,0 +1,1 @@
+function GU(n){return n.startsWith(Sr.URL_SCHEME)?n.slice(Sr.URL_SCHEME.length):n}

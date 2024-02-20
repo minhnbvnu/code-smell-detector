@@ -1,0 +1,1 @@
+function hostOnResized(){if(!_sleeping){var changed,hostSize={w:_sizeObserverElementNative[LEXICON.sW],h:_sizeObserverElementNative[LEXICON.sH]};changed=checkCache(hostSize,_hostElementSizeChangeDetectedCache),_hostElementSizeChangeDetectedCache=hostSize,changed&&update({_hostSizeChanged:!0})}}

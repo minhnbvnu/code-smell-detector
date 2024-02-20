@@ -1,0 +1,1 @@
+function hostOnMouseMove(){_scrollbarsAutoHideMove&&(refreshScrollbarsAutoHide(!0),clearTimeout(_scrollbarsAutoHideMoveTimeoutId),_scrollbarsAutoHideMoveTimeoutId=setTimeout((function(){_scrollbarsAutoHideMove&&!_destroyed&&refreshScrollbarsAutoHide(!1)}),100))}

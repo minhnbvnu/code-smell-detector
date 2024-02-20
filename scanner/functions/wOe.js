@@ -1,0 +1,1 @@
+function wOe(e){let t=e,r=e.replace(/ +/g," ").split(" ");return r.length===5&&(t=r[4]+"-"+("0"+("JANFEBMARAPRMAYJUNJULAUGSEPOCTNOVDEC".indexOf(r[1].toUpperCase())/3+1)).slice(-2)+"-"+("0"+r[2]).slice(-2)+" "+r[3]),t}

@@ -1,1 +1,1 @@
-function Hx(a,b){a=a|0;b=b|0;var c=0;c=fa-16|0;fa=c;L[c+12>>2]=a;L[c+8>>2]=b;sc(L[c+12>>2]+20|0,L[c+8>>2]);fa=c+16|0}
+function hx(){ss=0}

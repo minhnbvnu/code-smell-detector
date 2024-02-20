@@ -1,0 +1,3 @@
+function clearCacheForTests() {
+  inspectedElementCache.reset();
+}

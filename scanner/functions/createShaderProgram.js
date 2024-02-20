@@ -1,46 +1,28 @@
-function createShaderProgram() {
-		// create vertex shader
-		const vertexSrc = [
-			'attribute vec4 position;',
-			'void main() {',
-			'	/* already in normalized coordinates, so just pass through */',
-			'	gl_Position = position;',
-			'}'
-		].join('');
-		const vertexShader = gl.createShader(gl.VERTEX_SHADER);
-		gl.shaderSource(vertexShader, vertexSrc);
-		gl.compileShader(vertexShader);
+function createShaderProgram(gl, vsText, fsText) {
+  var vs = gl.createShader(gl.VERTEX_SHADER);
+  var fs = gl.createShader(gl.FRAGMENT_SHADER);
 
-		if (!gl.getShaderParameter(vertexShader, gl.COMPILE_STATUS)) {
-			window.console && console.log(
-				`Vertex shader failed to compile. Log: ${gl.getShaderInfoLog(vertexShader)}`
-			);
-		}
+  gl.shaderSource(vs, vsText);
+  gl.shaderSource(fs, fsText);
 
-		// create fragment shader
-		const fragmentSrc = [
-			'precision mediump float;',
-			'void main() {',
-			'	gl_FragColor = vec4(0, 0, 0, 1);',
-			'}'
-		].join('');
-		const fragmentShader = gl.createShader(gl.FRAGMENT_SHADER);
-		gl.shaderSource(fragmentShader, fragmentSrc);
-		gl.compileShader(fragmentShader);
+  gl.compileShader(vs);
+  gl.compileShader(fs);
 
-		if (!gl.getShaderParameter(fragmentShader, gl.COMPILE_STATUS)) {
-			window.console && console.log(
-				`Fragment shader failed to compile. Log: ${gl.getShaderInfoLog(fragmentShader)}`
-			);
-		}
+  if (!gl.getShaderParameter(vs, gl.COMPILE_STATUS)) {
+    console.error('error compiling VS shaders:', gl.getShaderInfoLog(vs));
+    throw new Error('shader failure');
+  }
 
-		// link shaders to create our program
-		const program = gl.createProgram();
-		gl.attachShader(program, vertexShader);
-		gl.attachShader(program, fragmentShader);
-		gl.linkProgram(program);
+  if (!gl.getShaderParameter(fs, gl.COMPILE_STATUS)) {
+    console.error('error compiling FS shaders:', gl.getShaderInfoLog(fs));
+    throw new Error('shader failure');
+  }
 
-		gl.useProgram(program);
+  var program = gl.createProgram();
 
-		return program;
-	}
+  gl.attachShader(program, vs);
+  gl.attachShader(program, fs);
+  gl.linkProgram(program);
+
+  return program;
+}

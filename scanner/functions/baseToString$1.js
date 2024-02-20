@@ -1,0 +1,1 @@
+function baseToString$1(value){if("string"==typeof value)return value;if(isArray$4(value))return arrayMap$1(value,baseToString$1)+"";if(isSymbol$1(value))return symbolToString?symbolToString.call(value):"";var result=value+"";return"0"==result&&1/value==-INFINITY$2?"-0":result}

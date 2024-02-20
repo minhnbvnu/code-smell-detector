@@ -1,0 +1,1 @@
+function wgpuReadShaderModuleCompilationHints(index){let numHints=HEAP32[index],hints={},hintsIndex=HEAPU32[index+1]>>2,hint;while(numHints--){hint=HEAPU32[hintsIndex+1];hints[UTF8ToString(HEAPU32[hintsIndex])]=hint?{"layout":hint>1?wgpu[hint]:GPUAutoLayoutMode}:null;hintsIndex+=2}return hints}

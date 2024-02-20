@@ -1,0 +1,1 @@
+function pq(a){a=a|0;return 1}

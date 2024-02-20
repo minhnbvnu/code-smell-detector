@@ -1,0 +1,1 @@
+function rFe(e,t,r){t.setHeader("Content-Type","application/json"),t.statusCode=r?400:200,t.end(JSON.stringify({error:r},null,3)),e.close()}

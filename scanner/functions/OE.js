@@ -1,1 +1,1 @@
-function Oe(e,t){return A(e,"table")&&A(11!==t.nodeType?t:t.firstChild,"tr")&&k(e).children("tbody")[0]||e}
+function OE(n){let t=[];for(let e=0;e<n.columns;e++){let i=0;for(let r=0;r<n.rows;r++)i+=Math.pow(n.get(r,e),2)/(n.rows-1);t.push(Math.sqrt(i))}return t}

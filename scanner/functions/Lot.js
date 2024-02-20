@@ -1,0 +1,1 @@
+function Lot(n,t){let e=1-n;return 3*e*e*n*t}

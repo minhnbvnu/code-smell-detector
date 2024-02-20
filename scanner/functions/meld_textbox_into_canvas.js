@@ -5,7 +5,7 @@ function meld_textbox_into_canvas(going_to_history_node) {
 			name: localize("Text"),
 			icon: get_icon_for_tool(get_tool_by_id(TOOL_TEXT)),
 			soft: true,
-		}, () => { });
+		}, ()=> { });
 		undoable({
 			name: "Finish Text",
 			icon: get_icon_for_tool(get_tool_by_id(TOOL_TEXT)),

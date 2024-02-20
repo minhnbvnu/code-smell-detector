@@ -1,0 +1,1 @@
+function pU(n){let t=Math.ceil(Math.sqrt(n));return[t,Math.ceil(n/t)]}

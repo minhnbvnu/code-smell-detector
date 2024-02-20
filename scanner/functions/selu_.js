@@ -1,7 +1,1 @@
-function selu_(x) {
-	  var $x = convertToTensor(x, 'x', 'selu');
-	  var inputs = {
-	    x: $x
-	  };
-	  return ENGINE.runKernel(Selu, inputs);
-	}
+function selu_(e){var t=convertToTensor(e,"x","selu");return ENV.engine.runKernel(function(e){return e.selu(t)},{$x:t},function(e){return {$x:function(){var n=t.greater(scalar(0)),r=scalar(SELU_SCALEALPHA),o=scalar(SELU_SCALE),a=e.mul(o),i=e.mul(r).mul(t.toFloat().exp());return where(n,a,i)}}})}

@@ -1,0 +1,3 @@
+function MockContentWriter() {
+    this.str = '';
+}

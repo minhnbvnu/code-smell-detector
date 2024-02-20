@@ -1,0 +1,1 @@
+function popToTagName(stack,tagNameArray){return pop(stack,function(element){return $.inArray(element.tag.nameOriginal,tagNameArray)>-1})}

@@ -1,0 +1,1 @@
+function sSe(e,t){for(let r=0;r<e.ranges.length;r++){let{from:n,to:i}=e.ranges[r];if(n<=t&&i>=t)return ve.create(e.ranges.slice(0,r).concat(e.ranges.slice(r+1)),e.mainIndex==r?0:e.mainIndex-(e.mainIndex>r?1:0))}return null}

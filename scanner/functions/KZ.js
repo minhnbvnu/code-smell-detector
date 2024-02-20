@@ -1,0 +1,1 @@
+function KZ(){let e=Ds(),[t,r]=O.useState(u2);return O.useEffect(()=>(uf.size===0&&window.addEventListener("languagechange",GB),uf.add(r),()=>{uf.delete(r),uf.size===0&&window.removeEventListener("languagechange",GB)}),[]),e?{locale:"en-US",direction:"ltr"}:t}

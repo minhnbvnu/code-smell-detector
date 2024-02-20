@@ -1,0 +1,1 @@
+function setLetterbox(element,topBottom,leftRight){element.style.paddingLeft=element.style.paddingRight=leftRight+"px";element.style.paddingTop=element.style.paddingBottom=topBottom+"px"}

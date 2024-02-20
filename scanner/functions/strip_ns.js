@@ -1,0 +1,1 @@
+function strip_ns(x){return x.replace(nsregex2,"<$1")}

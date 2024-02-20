@@ -1,3 +1,11 @@
-function Plugin(alias) {
-	  throw new Error("The (" + alias + ") Babel 5 plugin is being run with Babel 6.");
-	}
+function Plugin(option) {
+    return this.each(function () {
+      var $this   = $(this)
+      var data    = $this.data('bs.tooltip')
+      var options = typeof option == 'object' && option
+
+      if (!data && /destroy|hide/.test(option)) return
+      if (!data) $this.data('bs.tooltip', (data = new Tooltip(this, options)))
+      if (typeof option == 'string') data[option]()
+    })
+  }

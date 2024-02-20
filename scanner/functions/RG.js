@@ -1,0 +1,1 @@
+function RG(t,e){var n=t[t.length-1];n&&n[0]===e[0]&&n[1]===e[1]||t.push(e)}

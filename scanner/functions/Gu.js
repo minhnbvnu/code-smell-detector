@@ -1,0 +1,1 @@
+function Gu(t,e,i){var n=i.pointers.length,r=i.changedPointers.length,o=e&gu&&n-r==0,s=e&(yu|_u)&&n-r==0;i.isFirst=!!o,i.isFinal=!!s,o&&(t.session={}),i.eventType=e,Wu(t,i),t.emit("hammer.input",i),t.recognize(i),t.session.prevInput=i}

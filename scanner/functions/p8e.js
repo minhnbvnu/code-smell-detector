@@ -1,0 +1,1 @@
+function p8e(){switch(process.type){case"renderer":return"renderer.log";case"worker":return"worker.log";default:return"main.log"}}

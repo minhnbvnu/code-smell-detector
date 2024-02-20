@@ -1,0 +1,1 @@
+function normalizeArrowKey(event){var key=event.key,keyCode=event.keyCode;return keyCode>=37&&keyCode<=40&&0!==key.indexOf("Arrow")?"Arrow"+key:key}

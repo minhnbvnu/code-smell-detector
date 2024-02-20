@@ -1,0 +1,1 @@
+function gG(n){return n<=d1?n:El(n,Math.floor(Math.sqrt(n)))}

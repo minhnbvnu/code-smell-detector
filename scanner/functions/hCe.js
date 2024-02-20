@@ -1,0 +1,1 @@
+function hCe(){return this.t<=0?0:this.DB*(this.t-1)+D4(this.data[this.t-1]^this.s&this.DM)}

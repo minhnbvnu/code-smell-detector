@@ -1,0 +1,1 @@
+function X5(t,e){return function(){var r=e.apply(this,arguments);r==null?delete this[t]:this[t]=r}}

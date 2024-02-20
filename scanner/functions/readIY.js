@@ -1,0 +1,1 @@
+function readIY(){return (readBits('reg_iyh', 8)<<8) + readBits('reg_iyl', 8);}

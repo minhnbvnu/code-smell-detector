@@ -1,0 +1,1 @@
+function invoke_f(index){var sp=stackSave();try{return dynCall_f(index)}catch(e){stackRestore(sp);if(e!==e+0)throw e;_setThrew(1,0)}}

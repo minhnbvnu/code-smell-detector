@@ -1,1 +1,1 @@
-function rf(a){a=a|0;var b=0;H[a>>2]=2232;b=H[a+16>>2];H[a+16>>2]=0;if(b){Ga(b)}oa(a)}
+function RF(t,e,n){var i=t.option,r=i.align;if(null!=r&&"auto"!==r)return r;for(var o={width:e.getWidth(),height:e.getHeight()},a="horizontal"===i.orient?1:0,s=OF[a],l=[0,null,10],u={},h=0;h<3;h++)u[OF[1-a][h]]=l[h],u[s[h]]=2===h?n[0]:i[s[h]];var c=[["x","width",3],["y","height",0]][a],p=Cp(u,o,i.padding);return s[(p.margin[c[2]]||0)+p[c[0]]+.5*p[c[1]]<.5*o[c[1]]?0:1]}

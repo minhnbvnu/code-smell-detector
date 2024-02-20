@@ -1,0 +1,1 @@
+function Mrt(n,t){let e=Qc(t,this.size,2);n.uniform2fv(this.addr,e)}

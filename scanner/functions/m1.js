@@ -1,0 +1,1 @@
+function m1(t){return"str"in t}

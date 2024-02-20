@@ -1,0 +1,1 @@
+function NullCipher(){_classCallCheck(this,NullCipher)}

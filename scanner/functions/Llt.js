@@ -1,0 +1,1 @@
+function Llt(n){return n<0?-n*n:n*n}

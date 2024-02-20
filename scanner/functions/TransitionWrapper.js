@@ -1,0 +1,1 @@
+function TransitionWrapper(e){return __h_99(_$preactCssTransitionGroup_54,{transitionName:"uppy-transition-slideDownUp",transitionEnterTimeout:250,transitionLeaveTimeout:250},e.children)}

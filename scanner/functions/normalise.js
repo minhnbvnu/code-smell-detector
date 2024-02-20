@@ -1,0 +1,1 @@
+function normalise(i,o){return o&&/\n/.test(i)&&(i=i.replace(/[ \f\n\r\t\v]+$/,"")),i=i.replace(/^\n\r?[ \f\n\r\t\v]+/,"").replace(/[ \f\n\r\t\v]*\n\r?[ \f\n\r\t\v]*/gm," "),JSON.stringify(i)}

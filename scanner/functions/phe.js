@@ -1,0 +1,1 @@
+function phe(){if(_p==null){_p=!1;try{var e=document.createElement("div");e.focus({get preventScroll(){return _p=!0,!0}})}catch{}}return _p}

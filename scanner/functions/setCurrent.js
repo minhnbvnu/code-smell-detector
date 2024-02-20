@@ -1,0 +1,1 @@
+function setCurrent(pos){var pos=rebound(pos);ox=pos[0]-x2;oy=pos[1]-y2;x2=pos[0];y2=pos[1]}

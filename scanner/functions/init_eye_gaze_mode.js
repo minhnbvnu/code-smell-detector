@@ -59,7 +59,7 @@ async function init_eye_gaze_mode() {
 		// tracky_mouse_container.querySelector(".tracky-mouse-canvas").classList.add("inset-deep");
 
 	}
-
+		
 	const circle_radius_max = 50; // dwell indicator size in pixels
 	const hover_timespan = 500; // how long between the dwell indicator appearing and triggering a click
 	const averaging_window_timespan = 500;
@@ -74,7 +74,7 @@ async function init_eye_gaze_mode() {
 	let hover_candidate;
 	let gaze_dragging = null;
 
-	const deactivate_for_at_least = (timespan) => {
+	const deactivate_for_at_least = (timespan)=> {
 		inactive_until_time = Math.max(inactive_until_time, Date.now() + timespan);
 	};
 	deactivate_for_at_least(inactive_at_startup_timespan);
@@ -90,27 +90,27 @@ async function init_eye_gaze_mode() {
 	dwell_indicator.style.display = "none";
 	document.body.appendChild(dwell_indicator);
 
-	const on_pointer_move = (e) => {
-		recent_points.push({ x: e.clientX, y: e.clientY, time: Date.now() });
+	const on_pointer_move = (e)=> {
+		recent_points.push({x: e.clientX, y: e.clientY, time: Date.now()});
 	};
-	const on_pointer_up_or_cancel = (e) => {
+	const on_pointer_up_or_cancel = (e)=> {
 		deactivate_for_at_least(inactive_after_release_timespan);
 		gaze_dragging = null;
 	};
 
 	let page_focused = document.visibilityState === "visible"; // guess/assumption
 	let mouse_inside_page = true; // assumption
-	const on_focus = () => {
+	const on_focus = ()=> {
 		page_focused = true;
 		deactivate_for_at_least(inactive_after_focused_timespan);
 	};
-	const on_blur = () => {
+	const on_blur = ()=> {
 		page_focused = false;
 	};
-	const on_mouse_leave_page = () => {
+	const on_mouse_leave_page = ()=> {
 		mouse_inside_page = false;
 	};
-	const on_mouse_enter_page = () => {
+	const on_mouse_enter_page = ()=> {
 		mouse_inside_page = true;
 	};
 
@@ -122,7 +122,7 @@ async function init_eye_gaze_mode() {
 	document.addEventListener("mouseleave", on_mouse_leave_page);
 	document.addEventListener("mouseenter", on_mouse_enter_page);
 
-	const get_hover_candidate = (clientX, clientY) => {
+	const get_hover_candidate = (clientX, clientY)=> {
 
 		if (!page_focused || !mouse_inside_page) return null;
 
@@ -130,24 +130,24 @@ async function init_eye_gaze_mode() {
 		if (!target) {
 			return null;
 		}
-
+		
 		let hover_candidate = {
 			x: clientX,
 			y: clientY,
 			time: Date.now(),
 		};
-
+		
 		let retargeted = false;
-		for (const { from, to, withinMargin = Infinity } of eye_gaze_mode_config.retarget) {
+		for (const {from, to, withinMargin=Infinity} of eye_gaze_mode_config.retarget) {
 			if (
 				from instanceof Element ? from === target :
-					typeof from === "function" ? from(target) :
-						target.matches(from)
+				typeof from === "function" ? from(target) :
+				target.matches(from)
 			) {
 				const to_element =
 					(to instanceof Element || to === null) ? to :
-						typeof to === "function" ? to(target) :
-							(target.closest(to) || target.querySelector(to));
+					typeof to === "function" ? to(target) :
+					(target.closest(to) || target.querySelector(to));
 				if (to_element === null) {
 					return null;
 				} else if (to_element) {
@@ -197,7 +197,7 @@ async function init_eye_gaze_mode() {
 		return hover_candidate;
 	};
 
-	const get_event_options = ({ x, y }) => {
+	const get_event_options = ({x, y})=> {
 		return {
 			view: window, // needed for offsetX/Y calculation
 			clientX: x,
@@ -210,12 +210,12 @@ async function init_eye_gaze_mode() {
 		};
 	};
 
-	const update = () => {
+	const update = ()=> {
 		const time = Date.now();
-		recent_points = recent_points.filter((point_record) => time < point_record.time + averaging_window_timespan);
+		recent_points = recent_points.filter((point_record)=> time < point_record.time + averaging_window_timespan);
 		if (recent_points.length) {
 			const latest_point = recent_points[recent_points.length - 1];
-			recent_points.push({ x: latest_point.x, y: latest_point.y, time });
+			recent_points.push({x: latest_point.x, y: latest_point.y, time});
 			const average_point = average_points(recent_points);
 			// debug
 			// const canvas_point = to_canvas_coords({clientX: average_point.x, clientY: average_point.y});
@@ -231,7 +231,7 @@ async function init_eye_gaze_mode() {
 			// (but TODO: just move the indicator off center in that case)
 			if (hover_candidate && !gaze_dragging) {
 				const apparent_hover_candidate = get_hover_candidate(hover_candidate.x, hover_candidate.y);
-				const show_occluder_indicator = (occluder) => {
+				const show_occluder_indicator = (occluder)=> {
 					const occluder_indicator = document.createElement("div");
 					const occluder_rect = occluder.getBoundingClientRect();
 					const outline_width = 4;
@@ -269,7 +269,7 @@ async function init_eye_gaze_mode() {
 					show_occluder_indicator(occluder || document.body);
 				}
 			}
-
+			
 			let circle_position = latest_point;
 			let circle_opacity = 0;
 			let circle_radius = 0;
@@ -326,13 +326,13 @@ async function init_eye_gaze_mode() {
 			dwell_indicator.style.display = "";
 			dwell_indicator.style.opacity = circle_opacity;
 			dwell_indicator.style.transform = `scale(${circle_radius / circle_radius_max})`;
-			dwell_indicator.style.left = `${circle_position.x - circle_radius_max / 2}px`;
-			dwell_indicator.style.top = `${circle_position.y - circle_radius_max / 2}px`;
+			dwell_indicator.style.left = `${circle_position.x - circle_radius_max/2}px`;
+			dwell_indicator.style.top = `${circle_position.y - circle_radius_max/2}px`;
 
 			let halo_target =
 				gaze_dragging ||
 				(hover_candidate || get_hover_candidate(latest_point.x, latest_point.y) || {}).target;
-
+			
 			if (halo_target && (!paused || eye_gaze_mode_config.dwellClickEvenIfPaused(halo_target))) {
 				let rect = halo_target.getBoundingClientRect();
 				const computed_style = getComputedStyle(halo_target);
@@ -416,7 +416,7 @@ async function init_eye_gaze_mode() {
 		}
 	};
 	let raf_id;
-	const animate = () => {
+	const animate = ()=> {
 		raf_id = requestAnimationFrame(animate);
 		update();
 	};
@@ -424,32 +424,64 @@ async function init_eye_gaze_mode() {
 
 	const $floating_buttons =
 		$("<div class='eye-gaze-mode-floating-buttons'/>")
-			.appendTo("body");
-
+		.appendTo("body")
+		.css({
+			position: "fixed",
+			bottom: 0,
+			left: 0,
+			transformOrigin: "bottom left",
+			transform: "scale(3)",
+		});
+	
 	$("<button title='Undo' class='eye-gaze-mode-undo-button'/>")
-		.on("click", undo)
-		.appendTo($floating_buttons)
-		.append(
-			$("<div class='button-icon'>")
-		);
+	.on("click", undo)
+	.appendTo($floating_buttons)
+	.css({
+		width: 28,
+		height: 28,
+		verticalAlign: "bottom",
+		position: "relative", // to make the icon's "absolute" relative to here
+	})
+	.append(
+		$("<div class='button-icon'>")
+		.css({
+			position: "absolute",
+			left: 0,
+			top: 0,
+			width: 24,
+			height: 24,
+		})
+	);
 
 	// These are matched on exactly, for code that provides speech command synonyms
 	const pause_button_text = "Pause Dwell Clicking";
 	const resume_button_text = "Resume Dwell Clicking";
 
-	const $pause_button = $(`<button class="toggle-dwell-clicking"/>`)
-		.attr("title", pause_button_text)
-		.on("click", () => {
-			paused = !paused;
-			$("body").toggleClass("eye-gaze-mode-paused", paused);
-			$pause_button.attr("title", paused ? resume_button_text : pause_button_text);
+	const $pause_button = $(`<button title="${pause_button_text}" class="toggle-dwell-clicking"/>`)
+	.on("click", ()=> {
+		paused = !paused;
+		$("body").toggleClass("eye-gaze-mode-paused", paused);
+		$pause_button.attr("title", paused ? resume_button_text : pause_button_text);
+	})
+	.appendTo($floating_buttons)
+	.css({
+		width: 28,
+		height: 28,
+		verticalAlign: "bottom",
+		position: "relative", // to make the icon's "absolute" relative to here
+	})
+	.append(
+		$("<div class='button-icon'>")
+		.css({
+			position: "absolute",
+			left: 0,
+			top: 0,
+			width: 24,
+			height: 24,
 		})
-		.appendTo($floating_buttons)
-		.append(
-			$("<div class='button-icon'>")
-		);
+	);
 
-	clean_up_eye_gaze_mode = () => {
+	clean_up_eye_gaze_mode = ()=> {
 		console.log("Cleaning up / disabling eye gaze mode");
 		cancelAnimationFrame(raf_id);
 		halo.remove();
@@ -462,6 +494,6 @@ async function init_eye_gaze_mode() {
 		window.removeEventListener("blur", on_blur);
 		document.removeEventListener("mouseleave", on_mouse_leave_page);
 		document.removeEventListener("mouseenter", on_mouse_enter_page);
-		clean_up_eye_gaze_mode = () => { };
+		clean_up_eye_gaze_mode = ()=> {};
 	};
 }

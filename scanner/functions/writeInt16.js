@@ -1,4 +1,1 @@
-function writeInt16(dest, offset, num) {
-    dest[offset] = num >> 8 & 0xff;
-    dest[offset + 1] = num & 0xff;
-  }
+function writeInt16(t,r,o){t[r]=o>>8&255;t[r+1]=255&o}

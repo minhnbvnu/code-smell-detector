@@ -1,0 +1,4 @@
+function WPe(){let e="",t="",r={};if(tl||Ap||Ip||Pp){if(typeof Tf=="undefined")try{let s=Mi("which ip").toString().split(`
+`);s.length&&s[0].indexOf(":")===-1&&s[0].indexOf("/")===0?Tf=s[0]:Tf=""}catch{Tf=""}let i="export LC_ALL=C; "+(Tf?Tf+" link show up":"/sbin/ifconfig")+"; unset LC_ALL",n=Mi(i).toString().split(`
+`);for(let s=0;s<n.length;s++)if(n[s]&&n[s][0]!==" "){if(Tf){let o=n[s+1].trim().split(" ");o[0]==="link/ether"&&(e=n[s].split(" ")[1],e=e.slice(0,e.length-1),t=o[1])}else e=n[s].split(" ")[0],t=n[s].split("HWaddr ")[1];e&&t&&(r[e]=t.trim(),e="",t="")}}if(Tp){let n=Mi("/sbin/ifconfig").toString().split(`
+`);for(let s=0;s<n.length;s++)n[s]&&n[s][0]!=="	"&&n[s].indexOf(":")>0?e=n[s].split(":")[0]:n[s].indexOf("	ether ")===0&&(t=n[s].split("	ether ")[1],e&&t&&(r[e]=t.trim(),e="",t=""))}return r}

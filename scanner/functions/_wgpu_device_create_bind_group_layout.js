@@ -1,0 +1,1 @@
+function _wgpu_device_create_bind_group_layout(device,entries,numEntries){device=wgpu[device];let desc=wgpuReadBindGroupLayoutDescriptor(entries,numEntries);let bgl=device["createBindGroupLayout"](desc);return wgpuStoreAndSetParent(bgl,device)}

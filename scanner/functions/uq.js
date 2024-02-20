@@ -1,0 +1,1 @@
+function uq(){return 3}

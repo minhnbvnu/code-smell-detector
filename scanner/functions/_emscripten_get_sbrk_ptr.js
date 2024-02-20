@@ -1,0 +1,1 @@
+function _emscripten_get_sbrk_ptr(){return 13664}

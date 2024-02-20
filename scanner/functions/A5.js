@@ -1,0 +1,1 @@
+function A5(t){t||(t=L5);function e(f,p){return f&&p?t(f.__data__,p.__data__):!f-!p}for(var r=this._groups,n=r.length,i=new Array(n),s=0;s<n;++s){for(var a=r[s],o=a.length,l=i[s]=new Array(o),u,d=0;d<o;++d)(u=a[d])&&(l[d]=u);l.sort(e)}return new Ar(i,this._parents).order()}

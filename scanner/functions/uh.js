@@ -1,0 +1,1 @@
+function uh(t){var e;switch(t.length){case 3:case 4:return(e=Qa.exec(t))?{r:parseInt(e[1]+e[1],16),g:parseInt(e[2]+e[2],16),b:parseInt(e[3]+e[3],16)}:null;case 6:case 7:return(e=Ka.exec(t))?{r:parseInt(e[1],16),g:parseInt(e[2],16),b:parseInt(e[3],16)}:null;default:return null}}

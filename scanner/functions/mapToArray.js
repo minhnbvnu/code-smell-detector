@@ -1,9 +1,9 @@
 function mapToArray(map) {
-	  var index = -1,
-	      result = Array(map.size);
+    var index = -1,
+        result = Array(map.size);
 
-	  map.forEach(function (value, key) {
-	    result[++index] = [key, value];
-	  });
-	  return result;
-	}
+    map.forEach(function(value, key) {
+      result[++index] = [key, value];
+    });
+    return result;
+  }

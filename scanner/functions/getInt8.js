@@ -1,0 +1,1 @@
+function getInt8(t,r){return t[r]<<24>>24}

@@ -1,0 +1,3 @@
+function xFactory() {
+                return x;
+            }

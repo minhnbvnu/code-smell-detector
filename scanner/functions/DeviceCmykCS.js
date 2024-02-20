@@ -1,0 +1,1 @@
+function DeviceCmykCS(){_classCallCheck(this,DeviceCmykCS);return r.call(this,"DeviceCMYK",4)}

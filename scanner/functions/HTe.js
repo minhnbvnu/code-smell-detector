@@ -1,0 +1,1 @@
+function HTe(e,t){const r=String(t.identifier).toUpperCase(),n=e.definitionById.get(r);if(!n)return Qse(e,t);const i={src:wd(n.url||""),alt:t.alt};n.title!==null&&n.title!==void 0&&(i.title=n.title);const a={type:"element",tagName:"img",properties:i,children:[]};return e.patch(t,a),e.applyData(t,a)}

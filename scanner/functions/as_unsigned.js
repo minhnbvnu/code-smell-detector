@@ -1,0 +1,1 @@
+function as_unsigned(value,bits){var s=32-bits;return value<<s>>>s}

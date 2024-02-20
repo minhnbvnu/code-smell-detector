@@ -1,0 +1,3 @@
+function shouldErrorFiberAlwaysNull() {
+    return null;
+  }

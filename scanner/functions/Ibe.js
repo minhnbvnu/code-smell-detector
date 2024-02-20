@@ -1,0 +1,1 @@
+function Ibe(e){let t=0,r=0,n=[];return e.forEach(function(i){let a=i.targetMainSize,l=Math.round(a+t)-r;t+=a,r+=l,n.push(l)}),n}

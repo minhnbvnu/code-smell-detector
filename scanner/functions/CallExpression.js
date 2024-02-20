@@ -1,3 +1,1 @@
-function CallExpression() {
-	  return resolveCall(this.get("callee"));
-	}
+function CallExpression(){i.apply(this,arguments)}

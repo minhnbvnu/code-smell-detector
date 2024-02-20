@@ -1,0 +1,1 @@
+function VersionControl(t){var o;_classCallCheck(this,VersionControl);(o=r.call(this,d,"VersionControl")).outputBelow=(0,u.getStringOption)(t.outputBelow,["warn","error","update"]);o.sourceAbove=(0,u.getStringOption)(t.sourceAbove,["warn","error"]);o.sourceBelow=(0,u.getStringOption)(t.sourceBelow,["update","maintain"]);return o}

@@ -1,0 +1,1 @@
+function MQ(e){e.widgetState.getText().setOrigin(kQ(e))}

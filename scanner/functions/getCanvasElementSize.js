@@ -1,0 +1,1 @@
+function getCanvasElementSize(target){return withStackSave(function(){var w=stackAlloc(8);var h=w+4;var targetInt=stackAlloc(target.id.length+1);stringToUTF8(target.id,targetInt,target.id.length+1);var ret=_emscripten_get_canvas_element_size(targetInt,w,h);var size=[HEAP32[w>>2],HEAP32[h>>2]];return size})}

@@ -1,0 +1,1 @@
+function PDFFetchStream(t){_classCallCheck(this,PDFFetchStream);this.source=t;this.isHttp=/^https?:/i.test(t.url);this.httpHeaders=this.isHttp&&t.httpHeaders||{};this._fullRequestReader=null;this._rangeRequestReaders=[]}

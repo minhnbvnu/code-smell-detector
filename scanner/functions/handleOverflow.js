@@ -1,0 +1,1 @@
+function handleOverflow(t,r,o){var l=t[c.$getTemplateRoot](),u=l[c.$extra].noLayoutFailure,h=r[c.$getSubformParent];r[c.$getSubformParent]=function(){return t};l[c.$extra].noLayoutFailure=!0;var d=r[c.$toHTML](o);t[c.$addHTML](d.html,d.bbox);l[c.$extra].noLayoutFailure=u;r[c.$getSubformParent]=h}

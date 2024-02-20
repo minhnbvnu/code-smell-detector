@@ -1,0 +1,1 @@
+function lineLeft(line) { var order = getOrder(line); return order ? bidiLeft(order[0]) : 0; }

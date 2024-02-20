@@ -1,0 +1,1 @@
+function _wgpu_device_create_shader_module(device,descriptor){return wgpuStoreAndSetParent(wgpu[device]["createShaderModule"](debugDir(wgpuReadShaderModuleDescriptor(descriptor),"device.createShaderModule() with desc")),wgpu[device])}

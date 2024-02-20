@@ -1,0 +1,1 @@
+function _JS_DOM_UnityCanvasSelector(){var canvasSelector=jsCanvasSelector();if(_JS_DOM_UnityCanvasSelector.selector!=canvasSelector){_free(_JS_DOM_UnityCanvasSelector.ptr);_JS_DOM_UnityCanvasSelector.ptr=stringToNewUTF8(canvasSelector);_JS_DOM_UnityCanvasSelector.selector=canvasSelector}return _JS_DOM_UnityCanvasSelector.ptr}

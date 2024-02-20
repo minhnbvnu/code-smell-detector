@@ -1,0 +1,1 @@
+function extractFormattedPhoneNumber(i){var o,s=i.search(ga);if(!(s<0))return"+"===(i=i.slice(s))[0]&&(o=!0,i=i.slice("+".length)),i=i.replace(ca,""),o&&(i="+"+i),i}

@@ -1,0 +1,1 @@
+function parse_XF(blob,length){var o={};o.ifnt=blob.read_shift(2);o.ifmt=blob.read_shift(2);o.flags=blob.read_shift(2);o.fStyle=o.flags>>2&1;length-=6;o.data=parse_CellStyleXF(blob,length,o.fStyle);return o}

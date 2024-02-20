@@ -1,0 +1,1 @@
+function KCe(e,t){this.fromInt(0),t==null&&(t=10);for(var r=this.chunkSize(t),i=Math.pow(t,r),a=!1,n=0,s=0,o=0;o<e.length;++o){var u=YQ(e,o);if(u<0){e.charAt(o)=="-"&&this.signum()==0&&(a=!0);continue}s=t*s+u,++n>=r&&(this.dMultiply(i),this.dAddOffset(s,0),n=0,s=0)}n>0&&(this.dMultiply(Math.pow(t,n)),this.dAddOffset(s,0)),a&&Ie.ZERO.subTo(this,this)}

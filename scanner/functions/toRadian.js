@@ -1,3 +1,3 @@
-function toRadian(d) {
-    return d * pi;
-}
+function toRadian(a) {
+        return a * degree;
+    }

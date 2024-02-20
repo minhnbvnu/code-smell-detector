@@ -1,0 +1,1 @@
+function commit() { lastPrevious = null; }

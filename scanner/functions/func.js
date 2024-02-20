@@ -1,0 +1,1 @@
+function func(name){return inverse[name]}

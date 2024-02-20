@@ -1,0 +1,2 @@
+function presize($obj,w,h){var nw=$obj.width(),nh=$obj.height();if((nw>w)&&w>0){nw=w;nh=(w/$obj.width())*$obj.height()}if((nh>h)&&h>0){nh=h;nw=(h/$obj.height())*$obj.width()}xscale=$obj.width()/nw;
+yscale=$obj.height()/nh;$obj.width(nw).height(nh)}

@@ -1,0 +1,1 @@
+function acc(prop) { return function(d) { return d[prop] } }

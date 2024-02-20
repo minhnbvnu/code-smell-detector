@@ -1,18 +1,1 @@
-function getWebGLDisjointQueryTimerVersion(webGLVersion) {
-	  if (webGLVersion === 0) {
-	    return 0;
-	  }
-
-	  var queryTimerVersion;
-	  var gl = getWebGLContext(webGLVersion);
-
-	  if (hasExtension(gl, 'EXT_disjoint_timer_query_webgl2') && webGLVersion === 2) {
-	    queryTimerVersion = 2;
-	  } else if (hasExtension(gl, 'EXT_disjoint_timer_query')) {
-	    queryTimerVersion = 1;
-	  } else {
-	    queryTimerVersion = 0;
-	  }
-
-	  return queryTimerVersion;
-	}
+function getWebGLDisjointQueryTimerVersion(e){if(0===e)return 0;var t=getWebGLContext(e);return hasExtension(t,"EXT_disjoint_timer_query_webgl2")&&2===e?2:hasExtension(t,"EXT_disjoint_timer_query")?1:0}

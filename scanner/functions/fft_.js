@@ -1,9 +1,1 @@
-function fft_(input) {
-	  assert(input.dtype === 'complex64', function () {
-	    return "The dtype for tf.spectral.fft() must be complex64 " + ("but got " + input.dtype + ".");
-	  });
-	  var inputs = {
-	    input: input
-	  };
-	  return ENGINE.runKernel(FFT, inputs);
-	}
+function fft_(e){assert("complex64"===e.dtype,"The dtype for tf.spectral.fft() must be complex64 but got "+e.dtype+".");var t=e.shape[e.shape.length-1],n=e.size/t,r=e.as2D(n,t);return ENV.engine.runKernel(function(e){return e.fft(r)},{input:e}).reshape(e.shape)}

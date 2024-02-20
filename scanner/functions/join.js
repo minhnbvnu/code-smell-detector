@@ -1,7 +1,12 @@
-function join(arr, seperator) {
-    if (arr.join) {
-        return arr.join(seperator || ',');
-    } else {
-        return Array.prototype.join.call(arr, seperator || ',');
-    }
-}
+function join( pre, arr, post ) {
+		var s = jsDump.separator(),
+			base = jsDump.indent(),
+			inner = jsDump.indent(1);
+		if ( arr.join ) {
+			arr = arr.join( "," + s + inner );
+		}
+		if ( !arr ) {
+			return pre + post;
+		}
+		return [ pre, inner + arr, base + post ].join(s);
+	}

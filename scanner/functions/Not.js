@@ -1,3 +1,1 @@
-function not(condition) {
-  return new Not(condition);
-}
+function Not(n,t){let e=1-n;return e*e*e*t}

@@ -1,0 +1,1 @@
+function baseIteratee$1(value){return"function"==typeof value?value:null==value?identity:"object"==_typeof(value)?isArray$1(value)?baseMatchesProperty(value[0],value[1]):baseMatches(value):property(value)}

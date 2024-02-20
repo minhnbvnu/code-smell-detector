@@ -1,5 +1,5 @@
 function setPathValue(obj, path, val) {
-    var parsed = parsePath(path);
-    internalSetPathValue(obj, val, parsed);
-    return obj;
-  }
+  var parsed = parsePath(path);
+  internalSetPathValue(obj, val, parsed);
+  return obj;
+}

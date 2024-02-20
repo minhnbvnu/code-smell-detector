@@ -1,0 +1,1 @@
+function A2(t){return Math.floor(+t/1e3)}

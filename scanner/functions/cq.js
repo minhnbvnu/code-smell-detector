@@ -1,1 +1,1 @@
-function Cq(a,b,c){a=a|0;b=b|0;c=c|0;var d=0;d=fa-16|0;L[d+12>>2]=a;L[d+8>>2]=b;L[d+4>>2]=c;L[(L[d+12>>2]+8|0)+(L[d+8>>2]<<2)>>2]=L[d+4>>2]}
+function cq(a){a=a|0;return 3}

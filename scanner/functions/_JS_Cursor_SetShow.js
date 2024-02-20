@@ -1,0 +1,1 @@
+function _JS_Cursor_SetShow(show){Module.canvas.style.cursor=show?"default":"none"}

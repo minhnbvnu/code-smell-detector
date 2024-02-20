@@ -1,0 +1,1 @@
+function depthwiseConv2dDerInput(e,t,n,r){var o=t,a=!1;3===t.rank&&(a=!0,o=t.as4D(1,t.shape[0],t.shape[1],t.shape[2]));var i=ENV.engine.runKernel(function(e){return e.depthwiseConv2DDerInput(o,n,r)},{dy4D:o});return a?i.as3D(i.shape[1],i.shape[2],i.shape[3]):i}

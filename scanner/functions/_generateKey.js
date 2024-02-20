@@ -1,0 +1,1 @@
+function _generateKey(n){var r=crypto.randomBytes(32);n===!0&&(r[0]&=248,r[31]=127&r[31]|64);for(var u=[],d=0;d<r.length;d++)u.push(String.fromCharCode(r[d]));return u.join("")}

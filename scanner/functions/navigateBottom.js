@@ -1,0 +1,1 @@
+function navigateBottom(){navigateToRow(getDataLength()-1)}

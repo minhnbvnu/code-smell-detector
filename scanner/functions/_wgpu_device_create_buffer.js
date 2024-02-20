@@ -1,0 +1,1 @@
+function _wgpu_device_create_buffer(device,descriptor){device=wgpu[device];descriptor>>=2;let buffer=device["createBuffer"](debugDir({"size":wgpuReadI53FromU64HeapIdx(descriptor),"usage":HEAPU32[descriptor+2],"mappedAtCreation":!!HEAPU32[descriptor+3]},"GPUDevice.createBuffer() with desc"));buffer.mappedRanges={};buffer.isBuffer=1;return wgpuStoreAndSetParent(buffer,device)}

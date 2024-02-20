@@ -1,7 +1,1 @@
-function squaredDifferenceStrict_(a, b) {
-	  deprecationWarn('strict variants of ops have been deprecated ' + 'and will be removed in future');
-	  var $a = convertToTensor(a, 'a', 'squaredDifferenceStrict');
-	  var $b = convertToTensor(b, 'b', 'squaredDifferenceStrict');
-	  assertShapesMatch($a.shape, $b.shape, 'Error in squaredDifferenceStrict: ');
-	  return squaredDifference($a, $b);
-	}
+function squaredDifferenceStrict_(e,t){var n=convertToTensor(e,"a","squaredDifferenceStrict"),r=convertToTensor(t,"b","squaredDifferenceStrict");return assertShapesMatch(n.shape,r.shape,"Error in squaredDifferenceStrict: "),n.squaredDifference(r)}

@@ -1,0 +1,1 @@
+function $Fe(e,t){if(t.data&&t.data.estree&&e.evaluater){const n=t.data.estree.body[0];return n.type,e.evaluater.evaluateExpression(n.expression)}Ah(e,t.position)}

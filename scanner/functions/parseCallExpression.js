@@ -1,9 +1,28 @@
-function parseCallExpression(encoded, context, typeHint) {
-  const operator = encoded[0];
+function parseCallExpression(base) {
+    if (Punctuator === token.type) {
+      switch (token.value) {
+        case '(':
+          next();
+          var expressions = [];
+          var expression = parseExpression();
+          if (null != expression) expressions.push(expression);
+          while (consume(',')) {
+            expression = parseExpectedExpression();
+            expressions.push(expression);
+          }
 
-  const parser = parsers[operator];
-  if (!parser) {
-    throw new Error(`Unknown operator: ${operator}`);
+          expect(')');
+          return finishNode(ast.callExpression(base, expressions));
+
+        case '{':
+          markLocation();
+          next();
+          var table = parseTableConstructor();
+          return finishNode(ast.tableCallExpression(base, table));
+      }
+    } else if (StringLiteral === token.type) {
+      return finishNode(ast.stringCallExpression(base, parsePrimaryExpression()));
+    }
+
+    raiseUnexpectedToken('function arguments', token);
   }
-  return parser(encoded, context, typeHint);
-}

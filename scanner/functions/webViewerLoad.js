@@ -1,16 +1,9 @@
 function webViewerLoad() {
   const config = getViewerConfiguration();
+  window.PDFViewerApplication = pdfjsWebApp.PDFViewerApplication;
+  window.PDFViewerApplicationOptions = pdfjsWebAppOptions.AppOptions;
   const event = document.createEvent("CustomEvent");
-  event.initCustomEvent("webviewerloaded", true, true, {
-    source: window
-  });
-
-  try {
-    parent.document.dispatchEvent(event);
-  } catch (ex) {
-    console.error(`webviewerloaded: ${ex}`);
-    document.dispatchEvent(event);
-  }
-
-  _app.PDFViewerApplication.run(config);
+  event.initCustomEvent("webviewerloaded", true, true, {});
+  document.dispatchEvent(event);
+  pdfjsWebApp.PDFViewerApplication.run(config);
 }

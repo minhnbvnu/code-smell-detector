@@ -1,0 +1,1 @@
+function _wgpu_device_create_render_pipeline(device,descriptor){return wgpuStoreAndSetParent(wgpu[device]["createRenderPipeline"](debugDir(wgpuReadRenderPipelineDescriptor(descriptor),"GPUDevice.createRenderPipeline() with desc")),wgpu[device])}

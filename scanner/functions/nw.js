@@ -1,0 +1,1 @@
+function nw(e,r,t){var a;var n=Lg(r.data);var i={name:((a=n[1])==null?void 0:a[0])?Sg(n[1][0].data):"",sheets:[]};var s=Ug(n[2],Jg);s.forEach(function(r){e[r].forEach(function(r){var a=Pg(r.meta[1][0].data);if(a==6e3)i.sheets.push(aw(e,r,t))})});return i}

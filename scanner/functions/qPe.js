@@ -1,0 +1,3 @@
+function qPe(e){return new Promise(t=>{process.nextTick(()=>{let r={max:-1,allocated:-1,available:-1};(ru||iu||au||_f)&&_n("sysctl -a | grep 'kern.*files'",function(a,n){if(!a){let s=n.toString().split(`
+`);r.max=parseInt(wt.getValue(s,"kern.maxfiles",":"),10),r.allocated=parseInt(wt.getValue(s,"kern.num_files",":"),10)}e&&e(r),t(r)}),As&&BPe.readFile("/proc/sys/fs/file-nr",function(i,a){if(!i){let n=a.toString().split(`
+`);if(n[0]){let s=n[0].replace(/\s+/g," ").split(" ");s.length===3&&(r.allocated=parseInt(s[0],10),r.available=parseInt(s[1],10),r.max=parseInt(s[2],10))}}e&&e(r),t(r)}),_g&&(e&&e(r),t(r)),Z1&&(e&&e(r),t(r))})})}

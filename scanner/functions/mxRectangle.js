@@ -1,0 +1,1 @@
+function mxRectangle(a,b,c,d){mxPoint.call(this,a,b);this.width=null!=c?c:0;this.height=null!=d?d:0}

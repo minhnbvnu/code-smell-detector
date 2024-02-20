@@ -1,0 +1,1 @@
+function _getpwuid(uid){return 0}

@@ -1,0 +1,1 @@
+function TU(a,b){a=a|0;b=b|0;var d=0,e=0;d=l;l=l+16|0;e=d;c[e>>2]=b;nb[c[a>>2]&63](a,e,1)|0;l=d;return}

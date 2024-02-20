@@ -1,0 +1,1 @@
+function oW(t){if(t.hostModel)return t.hostModel.getModel("universalTransition").get("divideShape")}

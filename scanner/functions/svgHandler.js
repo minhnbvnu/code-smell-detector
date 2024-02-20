@@ -1,0 +1,1 @@
+function svgHandler(handler){var that=this;return function(evt){var target=evt.target,item=target.__data__;if(item){item=item.mark?item:item[0];handler.call(that._obj,evt,item)}}}

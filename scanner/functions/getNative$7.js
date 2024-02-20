@@ -1,0 +1,1 @@
+function getNative$7(object,key){var value=getValue(object,key);return baseIsNative(value)?value:void 0}

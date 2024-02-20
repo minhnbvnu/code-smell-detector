@@ -1,7 +1,12 @@
-function outerHeight(element) {
-  let height = element.offsetHeight;
-  const style = getComputedStyle(element);
-  height += parseInt(style.marginTop, 10) + parseInt(style.marginBottom, 10);
+function outerHeight(includeMargins) {
+      if (this.length > 0) {
+        if (includeMargins) {
+          const styles = this.styles();
+          return this[0].offsetHeight + parseFloat(styles.getPropertyValue('margin-top')) + parseFloat(styles.getPropertyValue('margin-bottom'));
+        }
 
-  return height;
-}
+        return this[0].offsetHeight;
+      }
+
+      return null;
+    }

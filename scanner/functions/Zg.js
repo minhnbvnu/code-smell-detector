@@ -1,0 +1,1 @@
+function Zg(a){a instanceof this?void 0:m("223");a.destructor();10>this.eventPool.length&&this.eventPool.push(a)}

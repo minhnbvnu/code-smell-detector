@@ -1,0 +1,1 @@
+function stackClear$1(){this.__data__=new ListCache$3,this.size=0}

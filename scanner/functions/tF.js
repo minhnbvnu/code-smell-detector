@@ -1,0 +1,1 @@
+function tF(){return LC(QC).scale(124.75).clipAngle(180-.001)}

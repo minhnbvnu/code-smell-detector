@@ -1,0 +1,1 @@
+function RenderTask(t){_classCallCheck(this,RenderTask);_classPrivateFieldInitSpec(this,_internalRenderTask,{writable:!0,value:null});_classPrivateFieldSet(this,_internalRenderTask,t);this.onContinue=null}

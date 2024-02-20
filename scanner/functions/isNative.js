@@ -1,9 +1,6 @@
 function isNative(value) {
-    if (value == null) {
-      return false;
+      if (isMaskable(value)) {
+        throw new Error(CORE_ERROR_TEXT);
+      }
+      return baseIsNative(value);
     }
-    if (isFunction(value)) {
-      return reIsNative.test(fnToString.call(value));
-    }
-    return isObjectLike(value) && reIsHostCtor.test(value);
-  }

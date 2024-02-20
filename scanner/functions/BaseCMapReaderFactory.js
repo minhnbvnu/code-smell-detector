@@ -1,0 +1,1 @@
+function BaseCMapReaderFactory(t){var r=t.baseUrl,a=void 0===r?null:r,o=t.isCompressed,l=void 0!==o&&o;_classCallCheck(this,BaseCMapReaderFactory);this.constructor===BaseCMapReaderFactory&&(0,i.unreachable)("Cannot initialize BaseCMapReaderFactory.");this.baseUrl=a;this.isCompressed=l}

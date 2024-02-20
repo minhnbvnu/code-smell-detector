@@ -1,0 +1,1 @@
+function _emscripten_glIsProgram(program){program=GL.programs[program];if(!program)return 0;return GLctx.isProgram(program)}

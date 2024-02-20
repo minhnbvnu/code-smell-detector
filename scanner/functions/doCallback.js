@@ -1,1 +1,4 @@
-function doCallback(errCode){FS.syncFSRequests--;return callback(errCode)}
+function doCallback(errCode) {
+            FS.syncFSRequests--;
+            return callback(errCode);
+          }

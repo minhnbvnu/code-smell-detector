@@ -1,0 +1,1 @@
+function disableSelection(e){e&&e.jquery&&e.attr("unselectable","on").css("MozUserSelect","none").on("selectstart.ui",(function(){return!1}))}

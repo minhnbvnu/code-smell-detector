@@ -1,10 +1,19 @@
-function loadTexture (src) {
-  return new Promise(function (resolve, reject) {
-    new THREE.ImageLoader().load(src, function (image) {
-      resolve(image);
-    }, undefined, function () {
-      error('Error loading font image', src);
-      reject(null);
-    });
-  });
-}
+function loadTexture( i ) {
+
+    			loader.load( urls[ i ], function ( image ) {
+
+    				texture.images[ i ] = image;
+
+    				loaded ++;
+
+    				if ( loaded === 6 ) {
+
+    					texture.needsUpdate = true;
+
+    					if ( onLoad ) onLoad( texture );
+
+    				}
+
+    			}, undefined, onError );
+
+    		}

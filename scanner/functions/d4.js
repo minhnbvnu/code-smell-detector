@@ -1,0 +1,1 @@
+function d4(n){let t=n.localName,e="",i="";return t?t.indexOf("-")>-1?e=t:(i=t,e=n.getAttribute&&n.getAttribute("is")||""):(e=n.is,i=n.extends),{is:e,typeExtension:i}}

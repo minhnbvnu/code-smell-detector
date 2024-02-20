@@ -1,3 +1,3 @@
-function readInt8(data, offset) {
-  return data[offset] << 24 >> 24;
+function readInt8(data, start) {
+  return (data[start] << 24) >> 24;
 }

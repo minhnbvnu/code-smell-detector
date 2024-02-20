@@ -1,0 +1,1 @@
+function setSquelchDefault() { e("openwebrx-panel-squelch").value=0; }

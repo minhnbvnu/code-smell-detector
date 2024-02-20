@@ -1,0 +1,1 @@
+function mxCellTracker(a,b,c){mxCellMarker.call(this,a,b);this.graph.addMouseListener(this);null!=c&&(this.getCell=c);mxClient.IS_IE&&mxEvent.addListener(window,"unload",mxUtils.bind(this,function(){this.destroy()}))}

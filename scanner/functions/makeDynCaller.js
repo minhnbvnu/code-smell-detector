@@ -1,1 +1,6 @@
-function makeDynCaller(){if(signature.includes("j")){return getDynCaller(signature,rawFunction)}return getWasmTableEntry(rawFunction)}
+function makeDynCaller() {
+            if (signature.includes("j")) {
+              return getDynCaller(signature, rawFunction);
+            }
+            return getWasmTableEntry(rawFunction);
+          }

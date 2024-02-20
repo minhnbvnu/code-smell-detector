@@ -1,0 +1,1 @@
+function zee(e,t){return e.replace("{y}",String(t.getFullYear())).replace("{m}",el(t.getMonth()+1)).replace("{d}",el(t.getDate())).replace("{h}",el(t.getHours())).replace("{i}",el(t.getMinutes())).replace("{s}",el(t.getSeconds())).replace("{ms}",el(t.getMilliseconds(),3)).replace("{z}",$ee(t.getTimezoneOffset())).replace("{iso}",t.toISOString())}

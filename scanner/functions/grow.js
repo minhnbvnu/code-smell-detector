@@ -1,20 +1,22 @@
-function grow (count) {
-    var currentLength;
-    var i;
+function grow(spanningTree) {
+    const spanningGraph = spanningTree.getGraph()
 
-    count = count === undefined ? objPool.length : count;
-    if (count > 0 && nextFreeSlot == null) {
-      nextFreeSlot = 0;
+    const processed = new Set()
+    growAt(spanningTree.getRootId())
+
+    function growAt(nodeId) {
+      if (processed.has(nodeId)) return
+
+      processed.add(nodeId)
+
+      const rootPos = getRect(nodeId)
+
+      spanningGraph.forEachLinkedNode(nodeId, otherNode => {
+        if (processed.has(otherNode.id)) return
+
+        const childPos = getRect(otherNode.id)
+        removeOverlapsForRectangles(rootPos, childPos);
+        growAt(otherNode.id)
+      })
     }
-
-    if (count > 0) {
-      currentLength = objPool.length;
-      objPool.length += Number(count);
-      for (i = currentLength; i < objPool.length; i++) {
-        // Add new obj to pool.
-        objPool[i] = objectFactory();
-      }
-    }
-
-    return objPool.length;
   }

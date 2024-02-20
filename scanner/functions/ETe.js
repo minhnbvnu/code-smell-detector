@@ -1,0 +1,1 @@
+function ETe(){return B1.isNode?"NodeJS":"Browser"}

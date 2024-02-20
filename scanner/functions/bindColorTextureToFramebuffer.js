@@ -1,8 +1,1 @@
-function bindColorTextureToFramebuffer(gl, texture, framebuffer) {
-	  callAndCheck(gl, function () {
-	    return gl.bindFramebuffer(gl.FRAMEBUFFER, framebuffer);
-	  });
-	  callAndCheck(gl, function () {
-	    return gl.framebufferTexture2D(gl.FRAMEBUFFER, gl.COLOR_ATTACHMENT0, gl.TEXTURE_2D, texture, 0);
-	  });
-	}
+function bindColorTextureToFramebuffer(e,t,n){callAndCheck(e,function(){return e.bindFramebuffer(e.FRAMEBUFFER,n)}),callAndCheck(e,function(){return e.framebufferTexture2D(e.FRAMEBUFFER,e.COLOR_ATTACHMENT0,e.TEXTURE_2D,t,0)});}

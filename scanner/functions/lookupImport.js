@@ -1,0 +1,1 @@
+function lookupImport(mod,base){var lookup=info;if(mod.indexOf(".")<0){lookup=(lookup||{})[mod]}else{var parts=mod.split(".");lookup=(lookup||{})[parts[0]];lookup=(lookup||{})[parts[1]]}if(base){lookup=(lookup||{})[base]}if(lookup===undefined){abort("bad lookupImport to ("+mod+")."+base)}return lookup}

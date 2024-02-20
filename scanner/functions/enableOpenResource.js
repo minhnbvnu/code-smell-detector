@@ -1,0 +1,3 @@
+function enableOpenResource() {
+  resourcesEnabled = true;
+}

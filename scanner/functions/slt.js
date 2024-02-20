@@ -1,0 +1,1 @@
+function slt(n,t,e){var i,r=e+"",o;return function(){var s=bs(this,n);return s===r?null:s===i?o:o=t(i=s,e)}}

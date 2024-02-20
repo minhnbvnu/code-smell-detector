@@ -1,0 +1,1 @@
+function _JS_RequestDeviceSensorPermissionsOnTouch(){if(JS_DeviceSensorPermissions==0)return;JS_RequestDeviceSensorPermissions(JS_DeviceSensorPermissions)}

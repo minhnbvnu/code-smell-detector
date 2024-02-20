@@ -1,0 +1,1 @@
+function write_numFmts(NF,opts){var o=["<numFmts>"];[[5,8],[23,26],[41,44],[63,66],[164,392]].forEach(function(r){for(var i=r[0];i<=r[1];++i)if(NF[i]!==undefined)o[o.length]=writextag("numFmt",null,{numFmtId:i,formatCode:escapexml(NF[i])})});if(o.length===1)return"";o[o.length]="</numFmts>";o[0]=writextag("numFmts",null,{count:o.length-2}).replace("/>",">");return o.join("")}

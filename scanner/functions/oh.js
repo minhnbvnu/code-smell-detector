@@ -1,1 +1,1 @@
-function oh(a){a=a|0;return H[a+40>>2]}
+function oh(a){var b=this.nativeEvent;return b.getModifierState?b.getModifierState(a):(a=ph[a])?!!b[a]:!1}

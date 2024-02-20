@@ -1,0 +1,1 @@
+function _oe(e,t,r,i){let n=(i.dereference?$a.statSync:$a.lstatSync)(t);if(n.isDirectory())return Poe(n,e,t,r,i);if(n.isFile()||n.isCharacterDevice()||n.isBlockDevice())return Coe(n,e,t,r,i);if(n.isSymbolicLink())return Noe(e,t,r,i)}

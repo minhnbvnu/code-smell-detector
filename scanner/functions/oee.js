@@ -1,0 +1,1 @@
+function oee(e,t){return function(r){return r==null||r.platform!==e?!1:r.architectures.includes(t)}}

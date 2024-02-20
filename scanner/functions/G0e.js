@@ -1,0 +1,1 @@
+function G0e(e){var t=e.split(W0e);return t.length==2&&gF(t[0])&&vF(t[1],!0)}

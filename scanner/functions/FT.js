@@ -1,0 +1,1 @@
+function FT(n){wr=n}

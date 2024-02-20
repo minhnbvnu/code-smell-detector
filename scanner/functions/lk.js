@@ -1,0 +1,1 @@
+function lk(a,b,c){a=a|0;b=b|0;c=c|0;var d=0,e=0;f[a>>2]=0;d=a+4|0;f[d>>2]=0;f[a+8>>2]=0;if(!b)return;if(b>>>0>357913941)aq(a);e=ln(b*12|0)|0;f[d>>2]=e;f[a>>2]=e;f[a+8>>2]=e+(b*12|0);a=b;b=e;do{fk(b,c);b=(f[d>>2]|0)+12|0;f[d>>2]=b;a=a+-1|0}while((a|0)!=0);return}

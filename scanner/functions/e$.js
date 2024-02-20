@@ -1,0 +1,1 @@
+function e$(n,t){for(var e=n[0][t],i=n[1][t],r=n[2][t],o=1/0,s=-1,a=0;a>e.length;a++)r[a]===1&&i[a]<o&&(o=i[a],s=a);return s>=0?(r[s]=0,Math.floor(e[s])):-1}

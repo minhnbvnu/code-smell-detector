@@ -1,0 +1,1 @@
+function $Z(){let e="X-SignalR-User-Agent";return B1.isNode&&(e="User-Agent"),[e,HZ(Ir.VERSION,wTe(),ETe(),STe())]}

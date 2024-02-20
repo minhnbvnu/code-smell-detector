@@ -1,0 +1,3 @@
+function scheduleWork(callback) {
+              callback();
+            }

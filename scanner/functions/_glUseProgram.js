@@ -1,0 +1,1 @@
+function _glUseProgram(program){program=GL.programs[program];GLctx.useProgram(program);if(GLctx.currentProgram=program){webglApplyExplicitProgramBindings()}}

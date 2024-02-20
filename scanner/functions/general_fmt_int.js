@@ -1,0 +1,1 @@
+function general_fmt_int(v,opts){return""+v}

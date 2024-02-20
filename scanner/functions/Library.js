@@ -1,3 +1,3 @@
 function Library () {
-    this.tests = {};
-  }
+  this.tests = {};
+}

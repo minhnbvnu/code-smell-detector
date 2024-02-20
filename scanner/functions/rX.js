@@ -1,0 +1,1 @@
+function rX(n){let{inputs:t,backend:e,attrs:i}=n,{indices:r}=t,{depth:o,onValue:s,offValue:a}=i;ut(r,"oneHot");let l=R.sizeFromShape(r.shape),c=new Float32Array(l*o);c.fill(a);let u=e.data.get(r.dataId).values;for(let h=0;h<l;++h)u[h]>=0&&u[h]<o&&(c[h*o+u[h]]=s);return e.makeTensorInfo([...r.shape,o],"int32",c)}

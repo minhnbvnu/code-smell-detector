@@ -1,0 +1,1 @@
+function lat(){var n=this.cloneNode(!1),t=this.parentNode;return t?t.insertBefore(n,this.nextSibling):n}

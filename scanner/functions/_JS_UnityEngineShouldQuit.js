@@ -1,0 +1,1 @@
+function _JS_UnityEngineShouldQuit(){return!!Module.shouldQuit}

@@ -1,27 +1,20 @@
-function getLine() {
-            const offset = 0.001;
-            function randomOffset() {
-                return offset / 2 + offset * Math.random()
-            }
-            const c1 = center.add(-randomOffset(), 0), c2 = center.add(randomOffset(), 0);
-            const p1 = map.coordinateToContainerPoint(c1), p2 = map.coordinateToContainerPoint(c2);
-            const pixel = {
-                x: p1.x / 2 + p2.x / 2,
-                y: p1.y / 2 + p2.y / 2
-            };
+function getLine(buffer, lineStart, lineEnd, position, maxLineLength) {
+  var head = '';
+  var tail = '';
+  var maxHalfLength = Math.floor(maxLineLength / 2) - 1;
 
-            const size = map.getSize();
-            const cx = size.width / 2, cy = size.height / 2;
-            const x = pixel.x - cx, y = pixel.y - cy;
-            p = { x: Math.round(x), y: Math.round(y) };
+  if (position - lineStart > maxHalfLength) {
+    head = ' ... ';
+    lineStart = position - maxHalfLength + head.length;
+  }
 
-            c1.z = 50 + Math.random() * 10;
-            c2.z = 50 + Math.random() * 10;
-            const line = new maptalks.LineString([c1, c2], {
-                symbol: symbol,
-                properties: {
-                    altitude: [c1.z, c2.z]
-                }
-            })
-            return line;
-        }
+  if (lineEnd - position > maxHalfLength) {
+    tail = ' ...';
+    lineEnd = position + maxHalfLength - tail.length;
+  }
+
+  return {
+    str: head + buffer.slice(lineStart, lineEnd).replace(/\t/g, '→') + tail,
+    pos: position - lineStart + head.length // relative position
+  };
+}

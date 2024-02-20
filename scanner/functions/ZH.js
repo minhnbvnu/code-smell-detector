@@ -1,0 +1,1 @@
+function ZH(n,t,e){for(var i=Ku.zeros(n),r=0;r<n;r++){for(var o=!0,s=0;o;){s=Ku.tauRandInt(t,e);for(var a=!1,l=0;l<r;l++)if(s===i[l]){a=!0;break}a||(o=!1)}i[r]=s}return i}

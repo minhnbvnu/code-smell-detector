@@ -1,0 +1,1 @@
+function Bpe(e,t){switch(e.startSequence(),t.type){case"rsa":wl.isPrivateKey(t)?qpe(e,t):Rpe(e,t);break;case"dsa":wl.isPrivateKey(t)?Upe(e,t):Mpe(e,t);break;case"ecdsa":wl.isPrivateKey(t)?zpe(e,t):Vpe(e,t);break;case"ed25519":wl.isPrivateKey(t)?$pe(e,t):Hpe(e,t);break;default:throw new Error("Unknown key algo: "+t.type)}e.endSequence()}

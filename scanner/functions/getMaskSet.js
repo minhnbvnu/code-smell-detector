@@ -1,0 +1,3 @@
+function getMaskSet() {
+                return maskset;
+            }

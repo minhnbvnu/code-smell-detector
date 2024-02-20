@@ -1,0 +1,1 @@
+function qCe(){var e=Cr();return this.copyTo(e),e}

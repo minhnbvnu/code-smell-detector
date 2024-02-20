@@ -1,0 +1,1 @@
+function _get_hasTextLayer(){return!!this.div.parentNode.querySelector(".textLayer .endOfContent")}

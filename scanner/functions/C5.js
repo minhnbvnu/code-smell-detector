@@ -1,0 +1,1 @@
+function C5(t){for(var e=t.selection?t.selection():t,r=this._groups,n=e._groups,i=r.length,s=n.length,a=Math.min(i,s),o=new Array(i),l=0;l<a;++l)for(var u=r[l],d=n[l],f=u.length,p=o[l]=new Array(f),g,b=0;b<f;++b)(g=u[b]||d[b])&&(p[b]=g);for(;l<i;++l)o[l]=r[l];return new Ar(o,this._parents)}

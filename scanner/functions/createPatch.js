@@ -1,3 +1,3 @@
-function createPatch(fileName, oldStr, newStr, oldHeader, newHeader, options) {
-	  return createTwoFilesPatch(fileName, fileName, oldStr, newStr, oldHeader, newHeader, options);
-	}
+function createPatch(fileName, a, b) {
+  console.log(diff.createPatch(fileName, a, b, '', ''))
+}

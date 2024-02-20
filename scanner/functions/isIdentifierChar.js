@@ -1,10 +1,1 @@
-function isIdentifierChar(code) {
-	  if (code < 48) return code === 36;
-	  if (code < 58) return true;
-	  if (code < 65) return false;
-	  if (code < 91) return true;
-	  if (code < 97) return code === 95;
-	  if (code < 123) return true;
-	  if (code <= 0xffff) return code >= 0xaa && nonASCIIidentifier.test(String.fromCharCode(code));
-	  return isInAstralSet(code, astralIdentifierStartCodes) || isInAstralSet(code, astralIdentifierCodes);
-	}
+function isIdentifierChar(i,o){return i<48?36===i:i<58||!(i<65)&&(i<91||(i<97?95===i:i<123||(i<=65535?i>=170&&U.test(String.fromCharCode(i)):!1!==o&&(isInAstralSet(i,V)||isInAstralSet(i,$)))))}

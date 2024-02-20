@@ -1,0 +1,1 @@
+function Uoe(e){var t=qoe.getPublicSuffix(e);if(!t)return null;if(t==e)return[e];for(var r=e.slice(0,-(t.length+1)),i=r.split(".").reverse(),a=t,n=[a];i.length;)a=i.shift()+"."+a,n.push(a);return n}

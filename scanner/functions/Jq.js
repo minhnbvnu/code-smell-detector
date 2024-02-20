@@ -1,1 +1,1 @@
-function jq(a){a=a|0;var b=0;b=fa-16|0;L[b+12>>2]=a;return L[L[b+12>>2]+100>>2]}
+function Jq(){return Yq()|0}

@@ -1,0 +1,1 @@
+function nbv(i){var r=nbi();r.fromInt(i);return r}

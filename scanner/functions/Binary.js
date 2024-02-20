@@ -1,19 +1,26 @@
 function Binary(node, parent) {
-	  if ((t.isCallExpression(parent) || t.isNewExpression(parent)) && parent.callee === node || t.isUnaryLike(parent) || t.isMemberExpression(parent) && parent.object === node || t.isAwaitExpression(parent)) {
-	    return true;
-	  }
+  if (node.operator === "**" && t.isBinaryExpression(parent, {
+    operator: "**"
+  })) {
+    return parent.left === node;
+  }
 
-	  if (t.isBinary(parent)) {
-	    var parentOp = parent.operator;
-	    var parentPos = PRECEDENCE[parentOp];
+  if (isClassExtendsClause(node, parent)) {
+    return true;
+  }
 
-	    var nodeOp = node.operator;
-	    var nodePos = PRECEDENCE[nodeOp];
+  if (hasPostfixPart(node, parent) || t.isUnaryLike(parent) || t.isAwaitExpression(parent)) {
+    return true;
+  }
 
-	    if (parentPos === nodePos && parent.right === node && !t.isLogicalExpression(parent) || parentPos > nodePos) {
-	      return true;
-	    }
-	  }
+  if (t.isBinary(parent)) {
+    const parentOp = parent.operator;
+    const parentPos = PRECEDENCE[parentOp];
+    const nodeOp = node.operator;
+    const nodePos = PRECEDENCE[nodeOp];
 
-	  return false;
-	}
+    if (parentPos === nodePos && parent.right === node && !t.isLogicalExpression(parent) || parentPos > nodePos) {
+      return true;
+    }
+  }
+}

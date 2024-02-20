@@ -1,10 +1,1 @@
-function linkProgram(gl, program) {
-	  callAndCheck(gl, function () {
-	    return gl.linkProgram(program);
-	  });
-
-	  if (gl.getProgramParameter(program, gl.LINK_STATUS) === false) {
-	    console.log(gl.getProgramInfoLog(program));
-	    throw new Error('Failed to link vertex and fragment shaders.');
-	  }
-	}
+function linkProgram(e,t){if(callAndCheck(e,function(){return e.linkProgram(t)}),!1===e.getProgramParameter(t,e.LINK_STATUS))throw console.log(e.getProgramInfoLog(t)),new Error("Failed to link vertex and fragment shaders.")}

@@ -1,0 +1,1 @@
+function Yst(n){return function(){HF(this,n)}}

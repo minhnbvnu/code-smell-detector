@@ -1,0 +1,1 @@
+function xP(t,e,n,i){var r=e.getItemModel(n);t.useStyle(e.getItemVisual(n,"style")),t.style.strokeNoScale=!0,t.__simpleBox=i,jl(t,r)}

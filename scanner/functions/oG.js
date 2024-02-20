@@ -1,0 +1,1 @@
+function oG(n,t,e){if(e==null||e==="linear")return n;if(e==="relu")return SA(n,YA(t));throw new Error(`Cannot compute gradient for fused activation ${e}.`)}

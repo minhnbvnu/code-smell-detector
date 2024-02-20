@@ -1,5 +1,10 @@
-function sendResponse(res, statusCode, body) {
-  res.writeHead(statusCode);
-  res.write(body);
-  res.end();
+function sendResponse(res, code, data, message, error = null) {
+  return res
+    // .status(code)
+    .json({
+      code,
+      message,
+      error,
+      data,
+    });
 }

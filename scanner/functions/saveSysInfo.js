@@ -1,0 +1,95 @@
+function saveSysInfo(callback) {
+    var sqls = new Array();
+    sqls.push("SELECT starttime, endtime, successcount, failcount, idchangedcount, namechangedcount, avatarchangedcount FROM snapshots where tid='" + sid + "'");
+    sqls.push("SELECT successcount, failcount FROM snapshots where tid='" + ysid + "'");
+    sqls.push("SELECT successcount, failcount FROM snapshots where tid='" + wsid + "'");
+    sqls.push("SELECT sum(answer+post) answer, sum(agree) agree FROM usersnapshots where sid='" + sid + "'");
+    sqls.push("SELECT sum(answer+post) answer, sum(agree) agree FROM usersnapshots where sid='" + ysid + "'");
+    sqls.push("SELECT sum(answer+post) answer, sum(agree) agree FROM usersnapshots where sid='" + wsid + "'");
+    sqls.push("SELECT count(*) count FROM usersnapshots where sid=" + sid + " and agree>=1000");
+    sqls.push("SELECT count(*) count FROM usersnapshots where sid=" + ysid + " and agree>=1000");
+    sqls.push("SELECT count(*) count FROM usersnapshots where sid=" + wsid + " and agree>=1000");
+    sqls.push("SELECT count(*) count FROM usersnapshots where sid=" + sid + " and follower>=1000");
+    sqls.push("SELECT count(*) count FROM usersnapshots where sid=" + ysid + " and follower>=1000");
+    sqls.push("SELECT count(*) count FROM usersnapshots where sid=" + wsid + " and follower>=1000");
+    sqls.push("SELECT count(*) count FROM usersnapshots where sid=" + sid + " and agree>=5000");
+    sqls.push("SELECT count(*) count FROM usersnapshots where sid=" + ysid + " and agree>=5000");
+    sqls.push("SELECT count(*) count FROM usersnapshots where sid=" + wsid + " and agree>=5000");
+    sqls.push("SELECT count(*) count FROM usersnapshots where sid=" + sid + " and follower>=5000");
+    sqls.push("SELECT count(*) count FROM usersnapshots where sid=" + ysid + " and follower>=5000");
+    sqls.push("SELECT count(*) count FROM usersnapshots where sid=" + wsid + " and follower>=5000");
+    sqls.push("SELECT count(*) count FROM usersnapshots where sid=" + sid + " and agree>=10000");
+    sqls.push("SELECT count(*) count FROM usersnapshots where sid=" + ysid + " and agree>=10000");
+    sqls.push("SELECT count(*) count FROM usersnapshots where sid=" + wsid + " and agree>=10000");
+    sqls.push("SELECT count(*) count FROM usersnapshots where sid=" + sid + " and follower>=10000");
+    sqls.push("SELECT count(*) count FROM usersnapshots where sid=" + ysid + " and follower>=10000");
+    sqls.push("SELECT count(*) count FROM usersnapshots where sid=" + wsid + " and follower>=10000");
+
+    db.mutliquerywithresults(sqls, function (err, results) {
+        if (err) {
+            callback(err);
+            return;
+        }
+        var s = results[0][0];
+        var ys = results[1][0];
+        var ws = results[2][0];
+        var us = results[3][0];
+        var yus = results[4][0];
+        var wus = results[5][0];
+
+        var strinfo = "属性名,值";
+        strinfo += "\r\n最近更新时间," + tools.getDateTimeString(s.endtime);
+        strinfo += "\r\n监控用户数量," + (s.successcount + s.failcount);
+        strinfo += "\r\n&nbsp;&nbsp;&nbsp;&nbsp;比昨日增加," + (s.successcount + s.failcount - ys.successcount - ys.failcount);
+        strinfo += " （" + ((s.successcount + s.failcount - ys.successcount - ys.failcount) / (ys.successcount + ys.failcount) * 100).toFixed(2) + "%）";
+        strinfo += "\r\n&nbsp;&nbsp;&nbsp;&nbsp;比7日前增加," + (s.successcount + s.failcount - ws.successcount - ws.failcount);
+        strinfo += " （" + ((s.successcount + s.failcount - ws.successcount - ws.failcount) / (ws.successcount + ws.failcount) * 100).toFixed(2) + "%）";
+        strinfo += "\r\n<b>（以下数据均来自这" + (s.successcount + s.failcount) + "名用户）</b>,";
+        strinfo += "\r\n总回答数（包括专栏文章）," + us.answer;
+        strinfo += "\r\n&nbsp;&nbsp;&nbsp;&nbsp;比昨日增加," + (us.answer - yus.answer);
+        strinfo += " （" + ((us.answer - yus.answer) / yus.answer * 100).toFixed(2) + "%）";
+        strinfo += "\r\n&nbsp;&nbsp;&nbsp;&nbsp;比7日前增加," + (us.answer - wus.answer);
+        strinfo += " （" + ((us.answer - wus.answer) / wus.answer * 100).toFixed(2) + "%）";
+        strinfo += "\r\n总赞同数," + us.agree;
+        strinfo += "\r\n&nbsp;&nbsp;&nbsp;&nbsp;比昨日增加," + (us.agree - yus.agree);
+        strinfo += " （" + ((us.agree - yus.agree) / yus.agree * 100).toFixed(2) + "%）";
+        strinfo += "\r\n&nbsp;&nbsp;&nbsp;&nbsp;比7日前增加," + (us.agree - wus.agree);
+        strinfo += " （" + ((us.agree - wus.agree) / wus.agree * 100).toFixed(2) + "%）";
+        strinfo += "\r\n收到超过1000个赞同的人数," + results[6][0].count;
+        strinfo += "\r\n&nbsp;&nbsp;&nbsp;&nbsp;比昨日增加," + (results[6][0].count - results[7][0].count);
+        strinfo += " （" + ((results[6][0].count - results[7][0].count) / results[7][0].count * 100).toFixed(2) + "%）";
+        strinfo += "\r\n&nbsp;&nbsp;&nbsp;&nbsp;比7日前增加," + (results[6][0].count - results[8][0].count);
+        strinfo += " （" + ((results[6][0].count - results[8][0].count) / results[8][0].count * 100).toFixed(2) + "%）";
+        strinfo += "\r\n被超过1000人关注的人数," + results[9][0].count;
+        strinfo += "\r\n&nbsp;&nbsp;&nbsp;&nbsp;比昨日增加," + (results[9][0].count - results[10][0].count);
+        strinfo += " （" + ((results[9][0].count - results[10][0].count) / results[10][0].count * 100).toFixed(2) + "%）";
+        strinfo += "\r\n&nbsp;&nbsp;&nbsp;&nbsp;比7日前增加," + (results[9][0].count - results[11][0].count);
+        strinfo += " （" + ((results[9][0].count - results[11][0].count) / results[11][0].count * 100).toFixed(2) + "%）";
+        strinfo += "\r\n收到超过5000个赞同的人数," + results[12][0].count;
+        strinfo += "\r\n&nbsp;&nbsp;&nbsp;&nbsp;比昨日增加," + (results[12][0].count - results[13][0].count);
+        strinfo += " （" + ((results[12][0].count - results[13][0].count) / results[13][0].count * 100).toFixed(2) + "%）";
+        strinfo += "\r\n&nbsp;&nbsp;&nbsp;&nbsp;比7日前增加," + (results[12][0].count - results[14][0].count);
+        strinfo += " （" + ((results[12][0].count - results[14][0].count) / results[14][0].count * 100).toFixed(2) + "%）";
+        strinfo += "\r\n被超过5000人关注的人数," + results[15][0].count;
+        strinfo += "\r\n&nbsp;&nbsp;&nbsp;&nbsp;比昨日增加," + (results[15][0].count - results[16][0].count);
+        strinfo += " （" + ((results[15][0].count - results[16][0].count) / results[16][0].count * 100).toFixed(2) + "%）";
+        strinfo += "\r\n&nbsp;&nbsp;&nbsp;&nbsp;比7日前增加," + (results[15][0].count - results[17][0].count);
+        strinfo += " （" + ((results[15][0].count - results[17][0].count) / results[17][0].count * 100).toFixed(2) + "%）";
+        strinfo += "\r\n收到超过10000个赞同的人数," + results[18][0].count;
+        strinfo += "\r\n&nbsp;&nbsp;&nbsp;&nbsp;比昨日增加," + (results[18][0].count - results[19][0].count);
+        strinfo += " （" + ((results[18][0].count - results[19][0].count) / results[19][0].count * 100).toFixed(2) + "%）";
+        strinfo += "\r\n&nbsp;&nbsp;&nbsp;&nbsp;比7日前增加," + (results[18][0].count - results[20][0].count);
+        strinfo += " （" + ((results[18][0].count - results[20][0].count) / results[20][0].count * 100).toFixed(2) + "%）";
+        strinfo += "\r\n被超过10000人关注的人数," + results[21][0].count;
+        strinfo += "\r\n&nbsp;&nbsp;&nbsp;&nbsp;比昨日增加," + (results[21][0].count - results[22][0].count);
+        strinfo += " （" + ((results[21][0].count - results[22][0].count) / results[22][0].count * 100).toFixed(2) + "%）";
+        strinfo += "\r\n&nbsp;&nbsp;&nbsp;&nbsp;比7日前增加," + (results[21][0].count - results[23][0].count);
+        strinfo += " （" + ((results[21][0].count - results[23][0].count) / results[23][0].count * 100).toFixed(2) + "%）";
+        strinfo += "\r\n昨日修改昵称的人数," + (s.namechangedcount);
+        strinfo += "\r\n昨日修改个性网址的人数," + (s.idchangedcount);
+        strinfo += "\r\n昨日上传新头像的人数," + (s.avatarchangedcount - (s.successcount + s.failcount - ys.successcount - ys.failcount));
+        strinfo += "\r\n反刷榜模式,Level 0";
+        fs.writeFileSync(path + "sysinfo.csv", strinfo, "utf-8");
+        callback();
+    })
+}

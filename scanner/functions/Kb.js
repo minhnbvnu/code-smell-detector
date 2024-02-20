@@ -1,0 +1,1 @@
+function Kb(a,b,d){var c="";0>a&&(c="-",a=-a);for(a=""+a;a.length<b;)a=lc+a;d&&(a=a.substr(a.length-b));return c+a}

@@ -1,3 +1,1 @@
-function addGetter(C, key, internal) {
-  dP(C[PROTOTYPE], key, { get: function () { return this[internal]; } });
-}
+function addGetter(t,n,r){d(t[m],n,{get:function(){return this[r]}})}

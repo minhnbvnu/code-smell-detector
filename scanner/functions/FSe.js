@@ -1,0 +1,1 @@
+function FSe(e){let t=[];if(e.root.activeElement!=e.contentDOM)return t;let{anchorNode:r,anchorOffset:n,focusNode:i,focusOffset:a}=e.observer.selectionRange;return r&&(t.push(new NL(r,n)),(i!=r||a!=n)&&t.push(new NL(i,a))),t}

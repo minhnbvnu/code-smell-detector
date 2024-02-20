@@ -1,0 +1,1 @@
+function _JS_Sound_SetLoopPoints(channelInstance,loopStart,loopEnd){if(WEBAudio.audioWebEnabled==0)return;var channel=WEBAudio.audioInstances[channelInstance];channel.setLoopPoints(loopStart,loopEnd)}

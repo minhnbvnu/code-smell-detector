@@ -1,1 +1,1 @@
-function eu(t,n,e,i){t[n]=iu(n,e,i)}
+function eu(t,e){for(var i,n,r=e[0].toUpperCase()+e.slice(1),o=0;o<Zl.length;){if((n=(i=Zl[o])?i+r:e)in t)return n;o++}}

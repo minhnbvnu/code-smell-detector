@@ -1,0 +1,1 @@
+function CJ(n){let{inputs:t,backend:e,attrs:i}=n,{x:r}=t,{filterSize:o,strides:s,pad:a,dataFormat:l,dimRoundingMode:c}=i,u=[1,1,1],h=F.computePool3DInfo(r.shape,o,s,u,a,c,l),p=new Xo(h,"max",!1);return e.runWebGLProgram(p,[r],r.dtype)}

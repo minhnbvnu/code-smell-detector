@@ -1,0 +1,1 @@
+function kB(t,e){var n=e.coord[0],i=e.coord[1],r={coord:n,x:e.x0,y:e.y0},o={coord:i,x:e.x1,y:e.y1};return MS(t,"cartesian2d")?!(!n||!i||!AB(1,n,i)&&!AB(0,n,i))||function(t,e,n){return!(t&&t.containZone&&e.coord&&n.coord&&!oB(e)&&!oB(n))||t.containZone(e.coord,n.coord)}(t,r,o):hB(t,r)||hB(t,o)}

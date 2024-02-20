@@ -1,0 +1,1 @@
+function getAst(i){try{return Cd.Parser.parse(i,Object.assign({},ns))}catch(i){return}}

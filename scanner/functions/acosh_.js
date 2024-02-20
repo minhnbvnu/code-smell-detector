@@ -1,7 +1,1 @@
-function acosh_(x) {
-	  var $x = convertToTensor(x, 'x', 'acosh');
-	  var inputs = {
-	    x: $x
-	  };
-	  return ENGINE.runKernel(Acosh, inputs);
-	}
+function acosh_(e){var t=convertToTensor(e,"x","acosh");return ENV.engine.runKernel(function(e){return e.acosh(t)},{$x:t},function(e){return {$x:function(){return e.divStrict(t.toFloat().square().sub(1).sqrt())}}})}

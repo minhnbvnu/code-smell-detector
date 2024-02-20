@@ -1,0 +1,1 @@
+function mxCellState(a,b,c){this.view=a;this.cell=b;this.style=null!=c?c:{};this.origin=new mxPoint;this.absoluteOffset=new mxPoint}

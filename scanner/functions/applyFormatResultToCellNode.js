@@ -1,0 +1,1 @@
+function applyFormatResultToCellNode(e,o,t){null==e&&(e=""),"[object Object]"===Object.prototype.toString.call(e)?(o.innerHTML=e.text,e.removeClasses&&!t&&$(o).removeClass(e.removeClasses),e.addClasses&&$(o).addClass(e.addClasses),e.toolTip&&$(o).attr("title",e.toolTip)):o.innerHTML=e}

@@ -1,1 +1,1 @@
-function Ot(t,e,n,r){var o=e.fullServerUrl(),i=Q(o),a=st(n,r),s={"Content-Type":"application/json; charset=utf-8"},u=t.maxOperationRetryTime(),c=new _e(i,"PATCH",Ut(t,r),u);return c.headers=s,c.body=a,c.errorHandler=At(e),c}
+function Ot(e,t,r){var n=0,i=null==e?n:e.length;if("number"==typeof t&&t==t&&i<=2147483647){for(;n<i;){var a=n+i>>>1,o=e[a];null!==o&&!Li(o)&&(r?o<=t:o<t)?n=1+a:i=a}return i}return Ft(e,t,Pa,r)}

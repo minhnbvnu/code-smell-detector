@@ -1,0 +1,1 @@
+function notime(name,fn){return fn()}

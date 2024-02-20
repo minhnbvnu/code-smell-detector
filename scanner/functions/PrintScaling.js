@@ -1,0 +1,1 @@
+function PrintScaling(t){_classCallCheck(this,PrintScaling);return r.call(this,d,"printScaling",["appdefault","noScaling"])}

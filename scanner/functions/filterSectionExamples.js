@@ -1,0 +1,1 @@
+function filterSectionExamples(i,o){void 0===o&&(o=-1);var s=Array.isArray(i.content)?[i.content[o]]:[];return Object.assign({},i,{content:s})}

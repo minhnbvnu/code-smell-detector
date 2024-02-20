@@ -1,3 +1,3 @@
 function isBlockScoped(node) {
-	  return t.isFunctionDeclaration(node) || t.isClassDeclaration(node) || t.isLet(node);
-	}
+  return (0, _generated.isFunctionDeclaration)(node) || (0, _generated.isClassDeclaration)(node) || (0, _isLet.default)(node);
+}

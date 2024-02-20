@@ -1,0 +1,1 @@
+function highlightAutomaticallyCallback(){C.manual||C.highlightAll()}

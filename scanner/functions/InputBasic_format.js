@@ -1,0 +1,1 @@
+function InputBasic_format(i,o,s,u){return removeInputValuePrefix(formatIncompletePhoneNumber(i+o,s,u),i)}

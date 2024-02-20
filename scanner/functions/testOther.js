@@ -1,0 +1,1 @@
+function testOther (results) { this.initialize(results); }

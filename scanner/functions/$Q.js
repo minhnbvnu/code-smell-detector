@@ -1,0 +1,1 @@
+function $Q(n){let t=n.length;if(t>5)throw Error(`Tile for rank ${t} is not yet supported`);if(t===1)return`imod(resRC, ${n[0]})`;let e=["resRC.x","resRC.y","resRC.z","resRC.w","resRC.u"],i=[];for(let r=0;r<n.length;r++)i.push(`imod(${e[r]}, ${n[r]})`);return i.join()}

@@ -1,0 +1,1 @@
+function parseValues(data,types){var cols=vg.keys(types),p=cols.map(function(col){return parsers[types[col]]}),tree=vg.isTree(data);vg_parseArray(tree?[data]:data,cols,p,tree)}

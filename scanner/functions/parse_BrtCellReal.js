@@ -1,0 +1,1 @@
+function parse_BrtCellReal(data,length){var cell=parse_XLSBCell(data);var value=parse_Xnum(data);return[cell,value,"n"]}

@@ -1,0 +1,1 @@
+function cle(){return this.infinity}

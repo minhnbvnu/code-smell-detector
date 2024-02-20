@@ -1,0 +1,1 @@
+function Background_createClass(Constructor, protoProps, staticProps) { if (protoProps) Background_defineProperties(Constructor.prototype, protoProps); if (staticProps) Background_defineProperties(Constructor, staticProps); return Constructor; }

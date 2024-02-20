@@ -1,0 +1,1 @@
+function copyString(element,value){var offset=layout[element];writeAsciiToMemory(value,buf+offset)}

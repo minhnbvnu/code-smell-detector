@@ -1,1 +1,1 @@
-function $u(a,b,c,d,e){a=a|0;b=b|0;c=c|0;d=d|0;e=e|0;var f=0;f=fa-32|0;fa=f;L[f+28>>2]=a;L[f+24>>2]=b;L[f+20>>2]=c;L[f+16>>2]=d;J[f+15|0]=e;a=oa(116);Ld(a,L[f+28>>2],L[f+24>>2],L[f+20>>2]&65535,L[f+16>>2],J[f+15|0]&1);fa=f+32|0;return a|0}
+function $u(e){return"string"==typeof e||!au(e)&&ku(e)&&Di(e)==ae}

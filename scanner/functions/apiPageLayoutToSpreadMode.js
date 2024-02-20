@@ -2,16 +2,16 @@ function apiPageLayoutToSpreadMode(layout) {
   switch (layout) {
     case "SinglePage":
     case "OneColumn":
-      return SpreadMode.NONE;
+      return _ui_utils.SpreadMode.NONE;
 
     case "TwoColumnLeft":
     case "TwoPageLeft":
-      return SpreadMode.ODD;
+      return _ui_utils.SpreadMode.ODD;
 
     case "TwoColumnRight":
     case "TwoPageRight":
-      return SpreadMode.EVEN;
+      return _ui_utils.SpreadMode.EVEN;
   }
 
-  return SpreadMode.NONE;
+  return _ui_utils.SpreadMode.NONE;
 }

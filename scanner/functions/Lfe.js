@@ -1,0 +1,1 @@
+function Lfe(e){let{routeContext:t,match:r,children:n}=e,i=O.useContext(bR);return i&&i.static&&i.staticContext&&(r.route.errorElement||r.route.ErrorBoundary)&&(i.staticContext._deepestRenderedBoundaryId=r.route.id),O.createElement(Pu.Provider,{value:t},n)}

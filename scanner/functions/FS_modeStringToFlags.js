@@ -1,0 +1,1 @@
+function FS_modeStringToFlags(str){var flagModes={"r":0,"r+":2,"w":512|64|1,"w+":512|64|2,"a":1024|64|1,"a+":1024|64|2};var flags=flagModes[str];if(typeof flags=="undefined"){throw new Error("Unknown file open mode: "+str)}return flags}

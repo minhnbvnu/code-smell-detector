@@ -1,8 +1,1 @@
-function isIdentifierStart(code) {
-	  if (code < 65) return code === 36;
-	  if (code < 91) return true;
-	  if (code < 97) return code === 95;
-	  if (code < 123) return true;
-	  if (code <= 0xffff) return code >= 0xaa && nonASCIIidentifierStart.test(String.fromCharCode(code));
-	  return isInAstralSet(code, astralIdentifierStartCodes);
-	}
+function isIdentifierStart(i,o){return i<65?36===i:i<91||(i<97?95===i:i<123||(i<=65535?i>=170&&z.test(String.fromCharCode(i)):!1!==o&&isInAstralSet(i,V)))}

@@ -1,8 +1,8 @@
-function setClass(el, name) {
-    if (isNil(el.className.baseVal)) {
-        el.className = name;
+function setClass(el, cls) {
+    /* istanbul ignore if */
+    if (isIE9 && !/svg$/.test(el.namespaceURI)) {
+      el.className = cls;
     } else {
-        el.className.baseVal = name;
+      el.setAttribute('class', cls);
     }
-    return this;
-}
+  }

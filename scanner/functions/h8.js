@@ -1,0 +1,1 @@
+function h8(n,t,e,i){return i<=0?n=t=e=NaN:e<=0||e>=1?n=t=NaN:t<=0&&(n=NaN),new Fr(n,t,e,i)}

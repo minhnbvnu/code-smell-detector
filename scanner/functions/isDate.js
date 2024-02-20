@@ -1,3 +1,3 @@
-function isDate(d) {
-  return isObject(d) && objectToString(d) === '[object Date]';
+function isDate(value) {
+  return toString.call(value) === '[object Date]';
 }

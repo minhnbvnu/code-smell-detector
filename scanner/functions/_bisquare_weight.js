@@ -1,0 +1,1 @@
+function _bisquare_weight(u){return _pow_weight(u,2);}

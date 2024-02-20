@@ -1,15 +1,1 @@
-function HuffmanTable(lines, prefixCodesDone) {
-    if (!prefixCodesDone) {
-      this.assignPrefixCodes(lines);
-    }
-
-    this.rootNode = new HuffmanTreeNode(null);
-
-    for (let i = 0, ii = lines.length; i < ii; i++) {
-      const line = lines[i];
-
-      if (line.prefixLength > 0) {
-        this.rootNode.buildTree(line, line.prefixLength - 1);
-      }
-    }
-  }
+function HuffmanTable(t,r){_classCallCheck(this,HuffmanTable);r||this.assignPrefixCodes(t);this.rootNode=new O(null);for(var o=0,c=t.length;o<c;o++){var l=t[o];l.prefixLength>0&&this.rootNode.buildTree(l,l.prefixLength-1)}}

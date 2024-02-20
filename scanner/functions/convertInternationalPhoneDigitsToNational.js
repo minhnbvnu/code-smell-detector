@@ -1,0 +1,1 @@
+function convertInternationalPhoneDigitsToNational(i,o,s){if(0===i.indexOf(getInternationalPhoneNumberPrefix(o,s))){var u=new va(o,s);u.input(i);var C=u.getNumber();return C?C.formatNational().replace(/\D/g,""):""}return i.replace(/\D/g,"")}

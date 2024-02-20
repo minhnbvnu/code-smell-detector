@@ -1,0 +1,1 @@
+function Zmage_typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { Zmage_typeof = function _typeof(obj) { return typeof obj; }; } else { Zmage_typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return Zmage_typeof(obj); }

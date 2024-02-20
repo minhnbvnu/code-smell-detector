@@ -1,0 +1,1 @@
+function write_cc_xml(data,opts){}

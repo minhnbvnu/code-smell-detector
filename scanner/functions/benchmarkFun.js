@@ -1,0 +1,5 @@
+function benchmarkFun()
+{
+    encrypt();
+    decrypt();
+}

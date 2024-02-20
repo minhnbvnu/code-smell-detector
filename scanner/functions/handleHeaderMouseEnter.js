@@ -1,0 +1,1 @@
+function handleHeaderMouseEnter(e){trigger(self.onHeaderMouseEnter,{column:$(this).data("column"),grid:self},e)}

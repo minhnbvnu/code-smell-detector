@@ -1,5 +1,1 @@
-function skipWs() {
-      while (pos < s.length && isWhitespace(s, pos)) {
-        ++pos;
-      }
-    }
+function skipWs(){for(;c<t.length&&isWhitespace(t,c);)++c}

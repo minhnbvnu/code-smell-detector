@@ -1,0 +1,3 @@
+function DoubleDict() {
+	return this;
+}

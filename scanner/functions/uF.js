@@ -1,0 +1,1 @@
+function uF(n){if(!n)return{};let t=n.indexOf("?")!==-1?n.split("?")[1]:n;t.indexOf("#")&&(t=t.split("#")[0]);let e=t.split("&"),i={};for(let r=0;r<e.length;r++){let o=e[r].split("=");i[o[0].toLowerCase()]=decodeURIComponent(o[1])}return i}

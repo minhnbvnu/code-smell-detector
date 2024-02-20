@@ -1,0 +1,5 @@
+function clamp$1( value, min, max ) {
+
+    	return Math.max( min, Math.min( max, value ) );
+
+    }

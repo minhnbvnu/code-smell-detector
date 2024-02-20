@@ -1,0 +1,1 @@
+function rB(t){switch(t.graph().ranker){case"network-simplex":km(t);break;case"tight-tree":iB(t);break;case"longest-path":nB(t);break;default:km(t)}}

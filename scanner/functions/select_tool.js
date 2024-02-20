@@ -1,14 +1,14 @@
-function select_tool(tool, toggle) {
+function select_tool(tool, toggle){
 	deselect();
 
-	if (!(selected_tools.length === 1 && selected_tool.deselect)) {
+	if(!(selected_tools.length === 1 && selected_tool.deselect)){
 		return_to_tools = [...selected_tools];
 	}
 	if (toggle) {
 		const index = selected_tools.indexOf(tool);
 		if (index === -1) {
 			selected_tools.push(tool);
-			selected_tools.sort((a, b) => {
+			selected_tools.sort((a, b)=> {
 				if (tools.indexOf(a) < tools.indexOf(b)) {
 					return -1;
 				}
@@ -30,11 +30,11 @@ function select_tool(tool, toggle) {
 		selected_tool = tool;
 		selected_tools = [tool];
 	}
-
-	if (tool.preload) {
+	
+	if(tool.preload){
 		tool.preload();
 	}
-
+	
 	$toolbox.update_selected_tool();
 	// $toolbox2.update_selected_tool();
 }

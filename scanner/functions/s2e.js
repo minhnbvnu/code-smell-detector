@@ -1,0 +1,1 @@
+function s2e(e){let t=10;return e.length>=2&&e.charAt(0)==="0"&&e.charAt(1).toLowerCase()==="x"?(e=e.substring(2),t=16):e.length>=2&&e.charAt(0)==="0"&&(e=e.substring(1),t=8),e===""?0:(t===10?/[^0-9]/:t===16?/[^0-9A-Fa-f]/:/[^0-7]/).test(e)?ir:parseInt(e,t)}

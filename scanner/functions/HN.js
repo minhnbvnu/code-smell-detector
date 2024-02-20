@@ -1,0 +1,1 @@
+function HN(t){t.graph().dummyChains=[],vt(t.edges(),function(e){GN(t,e)})}

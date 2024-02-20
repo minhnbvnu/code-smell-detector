@@ -1,0 +1,1 @@
+function parse_Format(blob,length,opts){var ifmt=blob.read_shift(2);var fmtstr=parse_XLUnicodeString2(blob,0,opts);return[ifmt,fmtstr]}

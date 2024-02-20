@@ -1,0 +1,1 @@
+function unsetFirstUnsplittable(t){var r=t[c.$getTemplateRoot]();r[c.$extra].firstUnsplittable===t&&(r[c.$extra].noLayoutFailure=!1)}

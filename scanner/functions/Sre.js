@@ -1,0 +1,1 @@
+function Sre(e){return e.length===2&&wg(e.codePointAt(0))&&(e[1]===":"||e[1]==="|")}

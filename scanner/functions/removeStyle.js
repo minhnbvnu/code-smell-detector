@@ -1,0 +1,1 @@
+function removeStyle(n){if(n.nodeType==1){each(at.style,function(v,k){dom.setStyle(n,k,'');});if(at['class']&&n.className&&op){each(op.check_classes,function(c){if(dom.hasClass(n,c))dom.removeClass(n,c);});}}}

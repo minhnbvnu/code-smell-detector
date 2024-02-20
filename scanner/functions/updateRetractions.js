@@ -1,0 +1,3 @@
+function updateRetractions() {
+            ++retractions;
+        }

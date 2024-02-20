@@ -1,0 +1,1 @@
+function rbe(e){return!!V$&&V$ in e}

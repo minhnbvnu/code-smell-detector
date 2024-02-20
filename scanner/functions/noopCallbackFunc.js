@@ -1,0 +1,3 @@
+function noopCallbackFunc() {
+        return noopFunc;
+      }

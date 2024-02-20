@@ -1,0 +1,1 @@
+function _emscripten_glAttachShader(program,shader){GLctx.attachShader(GL.programs[program],GL.shaders[shader])}

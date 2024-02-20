@@ -1,0 +1,1 @@
+function _eglCreateWindowSurface(display,config,win,attrib_list){if(display!=62e3){EGL.setErrorCode(12296);return 0}if(config!=62002){EGL.setErrorCode(12293);return 0}EGL.setErrorCode(12288);return 62006}

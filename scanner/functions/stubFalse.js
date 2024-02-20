@@ -1,3 +1,3 @@
 function stubFalse() {
-	  return false;
-	}
+      return false;
+    }

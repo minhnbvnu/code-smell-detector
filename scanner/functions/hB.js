@@ -1,0 +1,1 @@
+function hB(t,e){return!(t&&t.containData&&e.coord&&!oB(e))||t.containData(e.coord)}

@@ -1,0 +1,1 @@
+function encode_row(row){return""+(row+1)}

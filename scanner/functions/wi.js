@@ -1,0 +1,1 @@
+function wi(t,e){e[Dt]=D(1e3*("0."+t))}

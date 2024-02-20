@@ -1,0 +1,1 @@
+function bot(n,t){let e=new WeakMap;function i(o,s=0){let a;return e.has(o)===!1?(a=new lz(n,t),e.set(o,[a])):s>=e.get(o).length?(a=new lz(n,t),e.get(o).push(a)):a=e.get(o)[s],a}function r(){e=new WeakMap}return{get:i,dispose:r}}

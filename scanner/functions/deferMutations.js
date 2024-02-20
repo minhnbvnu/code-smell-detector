@@ -1,0 +1,3 @@
+function deferMutations() {
+  isCollecting = true;
+}

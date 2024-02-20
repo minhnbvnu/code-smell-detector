@@ -1,0 +1,1 @@
+function _wgpu_queue_write_texture(queue,destination,data,bytesPerBlockRow,blockRowsPerImage,writeWidth,writeHeight,writeDepthOrArrayLayers){wgpu[queue]["writeTexture"](wgpuReadGpuImageCopyTexture(destination),HEAPU8,{"offset":data,"bytesPerRow":bytesPerBlockRow,"rowsPerImage":blockRowsPerImage},[writeWidth,writeHeight,writeDepthOrArrayLayers])}

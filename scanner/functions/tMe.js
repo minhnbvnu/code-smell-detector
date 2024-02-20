@@ -1,0 +1,1 @@
+function tMe(e,t,r){return t+="([^0-9])",r=r.replace(/\$/g,"$$$$"),e.replace(new RegExp(t,"g"),r+"$1")}

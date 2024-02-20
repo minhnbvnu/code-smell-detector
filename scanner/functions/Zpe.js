@@ -1,0 +1,1 @@
+function Zpe(e){return{top:e.scrollTop,left:e.scrollLeft,width:e.scrollWidth,height:e.scrollHeight}}

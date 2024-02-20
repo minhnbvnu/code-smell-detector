@@ -1,0 +1,1 @@
+function j9e(){return new di(this.q,this.x.negate().mod(this.q))}

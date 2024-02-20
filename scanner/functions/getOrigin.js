@@ -1,7 +1,10 @@
-function getOrigin(image) {
-  try {
-    return image.getOrigin().slice(0, 2);
-  } catch (_) {
-    return [0, image.getHeight()];
+function getOrigin() {
+  var location = getWindow().location;
+  var origin = location.origin;
+
+  if (!origin) {
+    origin = objectHelper.getOriginFromUrl(location.href);
   }
+
+  return origin;
 }

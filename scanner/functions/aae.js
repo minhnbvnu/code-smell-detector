@@ -1,0 +1,1 @@
+function aae(e){return e>=55296&&e<56320}

@@ -1,0 +1,1 @@
+function Z6e(e,t){let r=e.lineBlockAt(t);if(Array.isArray(r.type)){for(let n of r.type)if(n.to>t||n.to==t&&(n.to==r.to||n.type==Ha.Text))return n}return r}

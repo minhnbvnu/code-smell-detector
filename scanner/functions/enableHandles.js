@@ -1,0 +1,1 @@
+function enableHandles(){seehandles=true;if(options.allowResize){moveHandles(Coords.getFixed());$hdl_holder.show();return true}}

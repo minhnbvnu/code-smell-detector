@@ -1,10 +1,1 @@
-function createShuffledIndices(n) {
-	  var shuffledIndices = new Uint32Array(n);
-
-	  for (var i = 0; i < n; ++i) {
-	    shuffledIndices[i] = i;
-	  }
-
-	  shuffle(shuffledIndices);
-	  return shuffledIndices;
-	}
+function createShuffledIndices(e){for(var t=new Uint32Array(e),n=0;n<e;++n)t[n]=n;return shuffle(t),t}

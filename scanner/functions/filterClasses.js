@@ -1,0 +1,1 @@
+function filterClasses(classes,allowed){if(!allowed){return classes}classes=classes.split(/\s+/);return classes.filter(function(clss){return allowed.indexOf(clss)!==-1}).join(" ")}

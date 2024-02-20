@@ -1,4 +1,4 @@
-function set_all_url_params(params, { replace_history_state = false } = {}) {
+function set_all_url_params(params, {replace_history_state=false}={}) {
 
 	let new_hash = "";
 	for (const [param_name, param_type] of Object.entries(param_types)) {
@@ -23,7 +23,7 @@ function set_all_url_params(params, { replace_history_state = false } = {}) {
 		} else {
 			history.pushState(null, document.title, new_url);
 		}
-	} catch (error) {
+	} catch(error) {
 		location.hash = new_hash;
 	}
 

@@ -1,0 +1,1 @@
+function ConnectionSetNamespace(){_classCallCheck(this,ConnectionSetNamespace)}

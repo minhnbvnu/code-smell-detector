@@ -1,3 +1,3 @@
-function regExpEscape(s) {
-	  return s.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&');
-	}
+function regExpEscape (s) {
+  return s.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&')
+}

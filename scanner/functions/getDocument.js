@@ -1,6 +1,9 @@
-function getDocument() {
-  if (document_ === undefined && typeof document !== 'undefined') {
-    document_ = document.implementation.createDocument('', '', null);
+function getDocument(node) {
+  if (isWindow(node)) {
+    return node.document;
   }
-  return document_;
+  if (node.nodeType === 9) {
+    return node;
+  }
+  return node.ownerDocument;
 }

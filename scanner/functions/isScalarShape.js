@@ -1,3 +1,1 @@
-function isScalarShape(shape) {
-	  return shape.length === 0;
-	}
+function isScalarShape(e){return 0===e.length}

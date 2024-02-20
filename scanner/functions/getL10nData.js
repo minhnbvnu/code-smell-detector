@@ -2,7 +2,7 @@ function getL10nData(key, args, fallback) {
     var data = gL10nData[key];
 
     if (!data) {
-      console.warn('#' + key + ' is undefined.');
+      // console.warn('#' + key + ' is undefined.');
 
       if (!fallback) {
         return null;

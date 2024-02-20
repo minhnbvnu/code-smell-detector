@@ -1,0 +1,3 @@
+function printNewline() {
+      print('\n');
+    }

@@ -1,1 +1,1 @@
-function Ar(t){if(!Yc.test(t.email))throw new Pi("invalid-email")}
+function Ar(t){var e=er(t);return"object"===e?null===t?"null":t instanceof Boolean?"Boolean":t instanceof Number?"Number":t instanceof String?"String":Jo(t)?"Array":t instanceof Date?"Date":"Object":"number"===e?"Number":"boolean"===e?"Boolean":"string"===e?"String":void 0===e?"undefined":e}

@@ -1,0 +1,1 @@
+function Vwe({closing:e,align:t=!0,units:r=1}){return n=>Cle(n,t,r,e)}

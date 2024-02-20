@@ -1,0 +1,1 @@
+function yxe(e){for(Zr.buffer(e);e.length>1&&e[0]===0;)e=e.slice(1);return e}

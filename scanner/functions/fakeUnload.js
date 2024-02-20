@@ -1,0 +1,1 @@
+function fakeUnload(){var d=document;if(d.readyState=='interactive'){function stop(){d.detachEvent('onstop',stop);unload();d=null;};d.attachEvent('onstop',stop);window.setTimeout(function(){d.detachEvent('onstop',stop);},0);}}

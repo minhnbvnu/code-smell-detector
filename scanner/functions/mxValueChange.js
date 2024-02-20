@@ -1,0 +1,1 @@
+function mxValueChange(a,b,c){this.model=a;this.cell=b;this.previous=this.value=c}

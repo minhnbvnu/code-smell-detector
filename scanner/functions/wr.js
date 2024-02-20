@@ -1,1 +1,1 @@
-function Wr(t,n,e){this.i=t,this.g=n,this.h=e,this.f=null,this.a=ie(this.i,"/__/auth/iframe"),te(this.a,"apiKey",this.g),te(this.a,"appName",this.h),this.b=null,this.c=[]}
+function wr(t){for(var e=0,i=Vo(t);e<i.length;e++){var n=i[e];t[n]===vr?delete t[n]:"object"===er(t[n])&&null!==t[n]&&wr(t[n])}}

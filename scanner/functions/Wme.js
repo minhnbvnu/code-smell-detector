@@ -1,0 +1,1 @@
+function Wme(e){let[t,r]=O.useState(0);return St(()=>{if(e.current){let n=window.getComputedStyle(e.current).borderRadius;n!==""&&r(parseInt(n,10))}},[e]),t}

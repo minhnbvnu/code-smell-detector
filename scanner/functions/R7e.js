@@ -1,0 +1,7 @@
+function R7e(e,t){var r,i,a=q7,n=!1,s=!1,o=t,u=0,l=!1,p,c;if(c=e.input.charCodeAt(e.position),c===124)i=!1;else if(c===62)i=!0;else return!1;for(e.kind="scalar",e.result="";c!==0;)if(c=e.input.charCodeAt(++e.position),c===43||c===45)q7===a?a=c===43?iG:C7e:Bt(e,"repeat of a chomping mode identifier");else if((p=P7e(c))>=0)p===0?Bt(e,"bad explicit indentation width of a block scalar; it cannot be less than one"):s?Bt(e,"repeat of an indentation width identifier"):(o=t+p-1,s=!0);else break;if($c(c)){do c=e.input.charCodeAt(++e.position);while($c(c));if(c===35)do c=e.input.charCodeAt(++e.position);while(!qo(c)&&c!==0)}for(;c!==0;){for(U7(e),e.lineIndent=0,c=e.input.charCodeAt(e.position);(!s||e.lineIndent<o)&&c===32;)e.lineIndent++,c=e.input.charCodeAt(++e.position);if(!s&&e.lineIndent>o&&(o=e.lineIndent),qo(c)){u++;continue}if(e.lineIndent<o){a===iG?e.result+=Ro.repeat(`
+`,n?1+u:u):a===q7&&n&&(e.result+=`
+`);break}for(i?$c(c)?(l=!0,e.result+=Ro.repeat(`
+`,n?1+u:u)):l?(l=!1,e.result+=Ro.repeat(`
+`,u+1)):u===0?n&&(e.result+=" "):e.result+=Ro.repeat(`
+`,u):e.result+=Ro.repeat(`
+`,n?1+u:u),n=!0,s=!0,u=0,r=e.position;!qo(c)&&c!==0;)c=e.input.charCodeAt(++e.position);rp(e,r,e.position,!1)}return!0}

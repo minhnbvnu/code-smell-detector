@@ -1,0 +1,1 @@
+function testPerformance (results) { this.initialize(results); }

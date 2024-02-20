@@ -1,0 +1,1 @@
+function Reasons(t){var o;_classCallCheck(this,Reasons);(o=r.call(this,_,"reasons",!0)).id=t.id||"";o.type=(0,d.getStringOption)(t.type,["optional","required"]);o.use=t.use||"";o.usehref=t.usehref||"";o.reason=new c.XFAObjectArray;return o}

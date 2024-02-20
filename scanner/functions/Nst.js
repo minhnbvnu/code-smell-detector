@@ -1,0 +1,1 @@
+function Nst(){return[]}

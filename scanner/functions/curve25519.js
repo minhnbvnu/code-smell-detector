@@ -1,0 +1,1 @@
+function curve25519(e,r){return r||(r=core.BASE()),e[0]&=65528,e[15]=32767&e[15]|16384,curve25519_raw(e,r)}

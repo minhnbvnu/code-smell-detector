@@ -1,0 +1,1 @@
+function WorkerMessageHandler(){_classCallCheck(this,WorkerMessageHandler)}

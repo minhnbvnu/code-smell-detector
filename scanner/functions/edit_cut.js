@@ -1,4 +1,4 @@
-function edit_cut(execCommandFallback) {
+function edit_cut(execCommandFallback){
 	if (!navigator.clipboard || !navigator.clipboard.write) {
 		if (execCommandFallback) {
 			return try_exec_command("cut");

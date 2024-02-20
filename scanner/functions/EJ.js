@@ -1,0 +1,1 @@
+function EJ(n){let{inputs:t,backend:e,attrs:i}=n,{dy:r,input:o,output:s}=t,a=o;Tr([o,s],"maxPoolGrad");let{filterSize:l,strides:c,pad:u,dimRoundingMode:h}=i,p=F.computePool2DInfo(a.shape,l,c,1,u,h),d=!0,f=new Zi(p,"max",d),m=e.runWebGLProgram(f,[a],a.dtype),x=new $0(p),g=e.runWebGLProgram(x,[r,m],a.dtype);return e.disposeIntermediateTensorInfo(m),g}

@@ -1,3 +1,1 @@
-function packF32(it) {
-  return packIEEE754(it, 23, 4);
-}
+function packF32(t){return packIEEE754(t,23,4)}

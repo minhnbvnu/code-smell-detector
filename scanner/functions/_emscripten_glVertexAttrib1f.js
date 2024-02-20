@@ -1,0 +1,1 @@
+function _emscripten_glVertexAttrib1f(x0,x1){GLctx["vertexAttrib1f"](x0,x1)}

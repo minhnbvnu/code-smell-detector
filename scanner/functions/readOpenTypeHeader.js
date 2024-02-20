@@ -1,9 +1,1 @@
-function readOpenTypeHeader(ttf) {
-        return {
-          version: (0, _util.bytesToString)(ttf.getBytes(4)),
-          numTables: ttf.getUint16(),
-          searchRange: ttf.getUint16(),
-          entrySelector: ttf.getUint16(),
-          rangeShift: ttf.getUint16()
-        };
-      }
+function readOpenTypeHeader(t){return{version:t.getString(4),numTables:t.getUint16(),searchRange:t.getUint16(),entrySelector:t.getUint16(),rangeShift:t.getUint16()}}

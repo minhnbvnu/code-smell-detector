@@ -1,0 +1,1 @@
+function Gr(e){return"function"!=typeof e.constructor||en(e)?{}:be(I(e))}

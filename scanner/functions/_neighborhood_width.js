@@ -1,0 +1,1 @@
+function _neighborhood_width(x0,xis){return Array.max(xis.map(function(xi){return Math.abs(x0-xi)}))}

@@ -1,0 +1,1 @@
+function write_BrtCellBlank(cell,val,o){if(o==null)o=new_buf(8);return write_XLSBCell(val,o)}

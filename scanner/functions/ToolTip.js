@@ -1,0 +1,1 @@
+function ToolTip(t){var o;_classCallCheck(this,ToolTip);(o=r.call(this,_,"toolTip")).id=t.id||"";o.rid=t.rid||"";o.use=t.use||"";o.usehref=t.usehref||"";return o}

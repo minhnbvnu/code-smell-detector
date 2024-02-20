@@ -1,0 +1,1 @@
+function baseIsTypedArray$1(value){return isObjectLike$4(value)&&isLength$2(value.length)&&!!typedArrayTags[baseGetTag$2(value)]}

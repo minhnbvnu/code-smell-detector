@@ -1,0 +1,1 @@
+function s6(t,e){var r,n,i,s="style."+e,a="end."+s,o;return function(){var l=Pn(this,t),u=l.on,d=l.value[s]==null?o||(o=zf(e)):void 0;(u!==r||i!==d)&&(n=(r=u).copy()).on(a,i=d),l.on=n}}

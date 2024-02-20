@@ -1,0 +1,1 @@
+function s$1(t,e){t.prototype=Object.create(e.prototype),t.prototype.constructor=t,c$2(t,e)}

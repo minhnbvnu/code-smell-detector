@@ -1,0 +1,1 @@
+function StatTimer(){_classCallCheck(this,StatTimer);this.started=Object.create(null);this.times=[]}

@@ -1,0 +1,1 @@
+function w9e(e){for(let t=e;;){if(t.type.isTop)return t;if(!(t=t.parent))return e}}

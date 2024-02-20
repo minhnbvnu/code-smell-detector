@@ -10,10 +10,10 @@ function showDiffView(originalImg) {
 		img.style.left = "0";
 		img.style.pointerEvents = "all";
 		img.draggable = false;
-		img.addEventListener("mouseenter", () => {
+		img.addEventListener("mouseenter", ()=> {
 			img.style.left = `${-2 * screenshotWidth}px`;
 		});
-		img.addEventListener("mouseleave", () => {
+		img.addEventListener("mouseleave", ()=> {
 			img.style.left = "0";
 		});
 		var container = document.createElement("div");
@@ -36,13 +36,13 @@ function showDiffView(originalImg) {
 		container.appendChild(img);
 		document.body.appendChild(outerContainer);
 
-		cleanUp = () => {
+		cleanUp = ()=> {
 			originalImg.style.opacity = "";
 			container.style.transformOrigin = "center center";
 			container.style.transition = "opacity 0.2s ease, transform 0.2s ease";
 			container.style.opacity = 0;
 			container.style.transform = "scale(0.9)";
-			setTimeout(() => {
+			setTimeout(()=> {
 				outerContainer.remove();
 			}, 500);
 			cleanUp = null;

@@ -1,0 +1,1 @@
+function prop(attr) { return function(obj) { return obj[attr]; } }

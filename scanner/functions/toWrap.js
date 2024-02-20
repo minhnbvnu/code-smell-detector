@@ -1,0 +1,1 @@
+function toWrap(a, b) {}

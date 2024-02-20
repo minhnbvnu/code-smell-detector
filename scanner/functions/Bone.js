@@ -1,32 +1,7 @@
-function Bone(data, skeleton, parent) {
-	      this.children = new Array();
-	      this.x = 0;
-	      this.y = 0;
-	      this.rotation = 0;
-	      this.scaleX = 0;
-	      this.scaleY = 0;
-	      this.shearX = 0;
-	      this.shearY = 0;
-	      this.ax = 0;
-	      this.ay = 0;
-	      this.arotation = 0;
-	      this.ascaleX = 0;
-	      this.ascaleY = 0;
-	      this.ashearX = 0;
-	      this.ashearY = 0;
-	      this.appliedValid = false;
-	      this.a = 0;
-	      this.b = 0;
-	      this.c = 0;
-	      this.d = 0;
-	      this.worldY = 0;
-	      this.worldX = 0;
-	      this.sorted = false;
-	      this.active = false;
-	      if (data == null) throw new Error("data cannot be null.");
-	      if (skeleton == null) throw new Error("skeleton cannot be null.");
-	      this.data = data;
-	      this.skeleton = skeleton;
-	      this.parent = parent;
-	      this.setToSetupPose();
-	    }
+function Bone() {
+
+  Object3D.call(this);
+
+  this.type = 'Bone';
+
+}

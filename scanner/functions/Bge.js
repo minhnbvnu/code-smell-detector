@@ -1,0 +1,1 @@
+function Bge(e){let t=Kt(e,{labelable:!0}),r;return e.orientation==="vertical"&&(r="vertical"),e.elementType!=="hr"?{separatorProps:{...t,role:"separator","aria-orientation":r}}:{separatorProps:t}}

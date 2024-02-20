@@ -1,0 +1,1 @@
+function _emscripten_set_devicemotion_callback_on_thread(userData,useCapture,callbackfunc,targetThread){JSEvents.registerDeviceMotionEventCallback(window,userData,useCapture,callbackfunc,17,"devicemotion",targetThread);return 0}

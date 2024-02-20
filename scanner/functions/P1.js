@@ -1,0 +1,1 @@
+function P1(n){let t=[1,1,1];return n.length===0||n.length===1&&n[0]===1||(t=[Uo(n),...Wo(n)]),t}

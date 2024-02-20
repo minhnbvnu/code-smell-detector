@@ -1,0 +1,1 @@
+function mxObjectCodec(a,b,c,d){this.template=a;this.exclude=null!=b?b:[];this.idrefs=null!=c?c:[];this.mapping=null!=d?d:[];this.reverse={};for(var e in this.mapping)this.reverse[this.mapping[e]]=e}

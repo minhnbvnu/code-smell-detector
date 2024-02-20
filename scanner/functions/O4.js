@@ -1,0 +1,1 @@
+function O4(){return v2()|0}

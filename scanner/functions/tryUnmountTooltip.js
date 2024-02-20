@@ -1,0 +1,1 @@
+function tryUnmountTooltip(){if(a===e||d.element===e)return;if(d.model.persistent)d.hide(function(){d.unmount()});else d.unmount()}

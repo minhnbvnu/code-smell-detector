@@ -1,0 +1,1 @@
+function TableOfContents(){for(var o,s=arguments.length,u=new Array(s),C=0;C<s;C++)u[C]=arguments[C];return TableOfContents_defineProperty(TableOfContents_assertThisInitialized(o=i.call.apply(i,[this].concat(u))||this),"state",{searchTerm:""}),o}

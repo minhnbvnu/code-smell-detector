@@ -1,6 +1,10 @@
-function filter(pattern, options) {
-	  options = options || {};
-	  return function (p, i, list) {
-	    return minimatch(p, pattern, options);
-	  };
-	}
+function filter(collection, callback) {
+  var array = isArray(collection);
+  var result = array ? [] : {};
+  forEach(collection, function(val, i) {
+    if (callback(val, i)) {
+      result[array ? result.length : i] = val;
+    }
+  });
+  return result;
+}

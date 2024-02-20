@@ -1,0 +1,1 @@
+function stackDelete$1(key){var data=this.__data__,result=data.delete(key);return this.size=data.size,result}

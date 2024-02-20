@@ -1,3 +1,1 @@
-function unreachable(msg) {
-  throw new Error(msg);
-}
+function unreachable(t){throw new Error(t)}

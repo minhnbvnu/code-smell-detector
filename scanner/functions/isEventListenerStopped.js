@@ -1,0 +1,1 @@
+function isEventListenerStopped(i){return!!Xt.isTouch&&getIsCustomTouchBehavior()!==i.type.indexOf("touch")>=0}

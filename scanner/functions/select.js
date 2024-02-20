@@ -1,28 +1,65 @@
-function select(args) {
-	  var inputs = args.inputs,
-	      backend = args.backend;
-	  var condition = inputs.condition,
-	      t = inputs.t,
-	      e = inputs.e;
-	  assertNotComplex([condition, t, e], 'select');
-	  var conditionRank = condition.shape.length;
-	  var values = backend.data.get(condition.dataId).values;
-	  var tValues = backend.data.get(t.dataId).values;
-	  var eValues = backend.data.get(e.dataId).values;
-	  var resultDtype = upcastType(t.dtype, e.dtype);
-	  var newValues = makeZerosTypedArray(sizeFromShape(t.shape), resultDtype);
-	  var index = 0;
-	  var offset = conditionRank === 0 || conditionRank > 1 || t.shape.length === 1 ? 1 : sizeFromShape(t.shape.slice(1));
+function select( selector, context, results, seed, xml ) {
+	var i, tokens, token, type, find,
+		match = tokenize( selector ),
+		j = match.length;
 
-	  for (var i = 0; i < values.length; i++) {
-	    for (var j = 0; j < offset; j++) {
-	      if (values[i] === 1) {
-	        newValues[index++] = tValues[i];
-	      } else {
-	        newValues[index++] = eValues[i];
-	      }
-	    }
-	  }
+	if ( !seed ) {
+		// Try to minimize operations if there is only one group
+		if ( match.length === 1 ) {
 
-	  return backend.makeTensorInfo(t.shape, resultDtype, newValues);
+			// Take a shortcut and set the context if the root selector is an ID
+			tokens = match[0] = match[0].slice( 0 );
+			if ( tokens.length > 2 && (token = tokens[0]).type === "ID" &&
+					context.nodeType === 9 && !xml &&
+					Expr.relative[ tokens[1].type ] ) {
+
+				context = Expr.find["ID"]( token.matches[0].replace( rbackslash, "" ), context, xml )[0];
+				if ( !context ) {
+					return results;
+				}
+
+				selector = selector.slice( tokens.shift().length );
+			}
+
+			// Fetch a seed set for right-to-left matching
+			for ( i = matchExpr["POS"].test( selector ) ? -1 : tokens.length - 1; i >= 0; i-- ) {
+				token = tokens[i];
+
+				// Abort if we hit a combinator
+				if ( Expr.relative[ (type = token.type) ] ) {
+					break;
+				}
+				if ( (find = Expr.find[ type ]) ) {
+					// Search, expanding context for leading sibling combinators
+					if ( (seed = find(
+						token.matches[0].replace( rbackslash, "" ),
+						rsibling.test( tokens[0].type ) && context.parentNode || context,
+						xml
+					)) ) {
+
+						// If seed is empty or no tokens remain, we can return early
+						tokens.splice( i, 1 );
+						selector = seed.length && tokens.join("");
+						if ( !selector ) {
+							push.apply( results, slice.call( seed, 0 ) );
+							return results;
+						}
+
+						break;
+					}
+				}
+			}
+		}
 	}
+
+	// Compile and execute a filtering function
+	// Provide `match` to avoid retokenization if we modified the selector above
+	compile( selector, match )(
+		seed,
+		context,
+		xml,
+		results,
+		rsibling.test( selector )
+	);
+	return results;
+}

@@ -1,0 +1,1 @@
+function LogColWidths(){for(var e="Col Widths:",o=0;o<columns.length;o++)e+=" "+columns[o].width;console.log(e)}

@@ -1,0 +1,1 @@
+function _eglInitialize(display,majorVersion,minorVersion){if(display==62e3){if(majorVersion){HEAP32[majorVersion>>2]=1}if(minorVersion){HEAP32[minorVersion>>2]=4}EGL.defaultDisplayInitialized=true;EGL.setErrorCode(12288);return 1}else{EGL.setErrorCode(12296);return 0}}

@@ -1,0 +1,3 @@
+function Family(/**Object*/persons) {
+
+}

@@ -1,0 +1,1 @@
+function Q3(n){return Oy[n]||tM[n.toLowerCase()]}

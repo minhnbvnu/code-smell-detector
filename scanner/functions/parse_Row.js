@@ -1,0 +1,1 @@
+function parse_Row(blob,length){var rw=blob.read_shift(2),col=blob.read_shift(2),Col=blob.read_shift(2),rht=blob.read_shift(2);blob.read_shift(4);var flags=blob.read_shift(1);blob.read_shift(1);blob.read_shift(2);return{r:rw,c:col,cnt:Col-col}}

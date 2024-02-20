@@ -1,0 +1,1 @@
+function wD(t){return{applyVisual:function(e,n,i){var r=this.mapValueToVisual(e);i("color",t(n("color"),r))},_normalizedToVisual:CD([0,1])}}

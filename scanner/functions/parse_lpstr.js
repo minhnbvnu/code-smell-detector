@@ -1,0 +1,1 @@
+function parse_lpstr(blob,type,pad){var str=blob.read_shift(0,"lpstr");if(pad)blob.l+=4-(str.length+1&3)&3;return str}

@@ -1,0 +1,1 @@
+function parse_PtgInt(blob,length){blob.l++;return blob.read_shift(2)}

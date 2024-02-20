@@ -1,0 +1,1 @@
+function applyInverseRotation(t,r,o){var c=Math.hypot(o[0],o[1]);return[(o[0]*t+o[1]*r)/c,(o[2]*t+o[3]*r)/c]}

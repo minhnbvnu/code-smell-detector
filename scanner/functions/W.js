@@ -1,1 +1,1 @@
-function w(t,e){var n=Math.cos(t),o=Math.sin(t),r=[[n,-o,0],[o,n,0],[0,0,1]],i=v(g(e[0],e[1]),r);return v(i,g(-e[0],-e[1]))}
+function W(a,b){return a?b?a+" "+b:a:b}

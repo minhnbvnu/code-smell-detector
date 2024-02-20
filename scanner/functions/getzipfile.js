@@ -1,0 +1,1 @@
+function getzipfile(zip,file){var o=safegetzipfile(zip,file);if(o==null)throw new Error("Cannot find file "+file+" in zip");return o}

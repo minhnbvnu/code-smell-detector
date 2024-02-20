@@ -1,0 +1,1 @@
+function jE(t){var e=t.ecModel,n={infoList:[],infoMap:yt()};return t.eachTargetAxis((function(t,i){var r=e.getComponent(UE(t),i);if(r){var o=r.getCoordSysModel();if(o){var a=o.uid,s=n.infoMap.get(a);s||(s={model:o,axisModels:[]},n.infoList.push(s),n.infoMap.set(a,s)),s.axisModels.push(r)}}})),n}

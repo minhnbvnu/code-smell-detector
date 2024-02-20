@@ -1,0 +1,1 @@
+function iq(a,b){a=a|0;b=b|0;Va[a&127](b|0)}

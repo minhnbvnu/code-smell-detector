@@ -1,0 +1,1 @@
+function mxAutoSaveManager(a){this.changeHandler=mxUtils.bind(this,function(a,c){this.isEnabled()&&this.graphModelChanged(c.getProperty("edit").changes)});this.setGraph(a)}

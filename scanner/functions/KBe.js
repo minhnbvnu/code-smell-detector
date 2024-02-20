@@ -1,0 +1,1 @@
+function KBe(e,t,r,n){if(Array.isArray(e)){for(var i=0;i<e.length;i++)this.addSchema(e[i],void 0,r,n);return this}var a=this._getId(e);if(a!==void 0&&typeof a!="string")throw new Error("schema id must be string");return t=cu.normalizeId(t||a),Aue(this,t),this._schemas[t]=this._addSchema(e,r,n,!0),this}

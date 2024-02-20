@@ -1,4 +1,1 @@
-function squeeze_(x, axis) {
-	  var $x = convertToTensor(x, 'x', 'squeeze');
-	  return reshape($x, squeezeShape($x.shape, axis).newShape);
-	}
+function squeeze_(e,t){var n=convertToTensor(e,"x","squeeze");return reshape(n,squeezeShape(n.shape,t).newShape)}

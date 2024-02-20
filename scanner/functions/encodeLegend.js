@@ -1,0 +1,1 @@
+function encodeLegend(group,scene,def,trans,request){encodeGroup.call(this,scene,def,group,trans,request);encodeItems.call(this,group,scene.items,def,trans,request);vg.scene.bounds.mark(scene,null,true)}

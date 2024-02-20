@@ -1,8 +1,1 @@
-function BaseException(message) {
-    if (this.constructor === BaseException) {
-      unreachable("Cannot initialize BaseException.");
-    }
-
-    this.message = message;
-    this.name = this.constructor.name;
-  }
+function BaseException(t,r){this.constructor===BaseException&&unreachable("Cannot initialize BaseException.");this.message=t;this.name=r}

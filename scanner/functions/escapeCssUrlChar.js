@@ -1,0 +1,1 @@
+function escapeCssUrlChar(ch){return cssUrlChars[ch]||(cssUrlChars[ch]=(ch<""?"%0":"%")+ch.charCodeAt(0).toString(16))}

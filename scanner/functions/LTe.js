@@ -1,0 +1,1 @@
+function LTe(e){const t=this;t.parser=r;function r(n){return BTe(n,{...t.data("settings"),...e,extensions:t.data("micromarkExtensions")||[],mdastExtensions:t.data("fromMarkdownExtensions")||[]})}}

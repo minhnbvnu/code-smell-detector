@@ -1,0 +1,1 @@
+function S_(t,e){return function(){return uf(this,t,e)}}

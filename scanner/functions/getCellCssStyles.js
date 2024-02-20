@@ -1,0 +1,1 @@
+function getCellCssStyles(e){return cellCssClasses[e]}

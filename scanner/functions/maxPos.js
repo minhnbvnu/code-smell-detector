@@ -1,0 +1,1 @@
+function maxPos(a, b) { return cmp(a, b) < 0 ? b : a }

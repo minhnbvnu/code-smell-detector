@@ -1,0 +1,1 @@
+function bge(e){return xge.get(e)}

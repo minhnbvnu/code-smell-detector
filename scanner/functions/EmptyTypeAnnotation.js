@@ -1,3 +1,3 @@
 function EmptyTypeAnnotation() {
-	  this.word("empty");
-	}
+  this.word("empty");
+}

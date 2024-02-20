@@ -1,0 +1,1 @@
+function JY(n){let{inputs:t,backend:e,attrs:i}=n,{dy:r,filter:o}=t,{inputShape:s,strides:a,pad:l,dataFormat:c,dimRoundingMode:u}=i,h=F.convertConv2DDataFormat(c),p=F.computeConv2DInfo(s,o.shape,a,1,l,u,!1,h),d=new w0(p);return e.runWebGLProgram(d,[r,o],"float32")}

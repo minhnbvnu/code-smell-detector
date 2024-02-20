@@ -1,0 +1,1 @@
+function SignatureNamespace(){_classCallCheck(this,SignatureNamespace)}

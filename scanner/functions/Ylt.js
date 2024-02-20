@@ -1,0 +1,1 @@
+function Ylt(n,t){return Ud(n,t)/Math.sqrt($d(n)*$d(t))}

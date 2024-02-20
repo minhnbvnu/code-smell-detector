@@ -1,0 +1,1 @@
+function gxe(e,t){t===void 0&&(t=dH.Ber.BitString);var r=e.readString(t,!0);return Zr.strictEqual(r[0],0,"bit strings with unused bits are not supported (0x"+r[0].toString(16)+")"),r.slice(1)}

@@ -1,0 +1,1 @@
+function escapeCssStrChar(ch){return cssStrChars[ch]||(cssStrChars[ch]="\\"+ch.charCodeAt(0).toString(16)+" ")}

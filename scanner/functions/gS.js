@@ -1,0 +1,1 @@
+function gS(t,e){return isNaN(t)||isNaN(e)}

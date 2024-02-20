@@ -1,1 +1,1 @@
-function hh(){return _d(pa(84))|0}
+function hH(t,e){return{source:t.signal?e.signalRef(t.signal):t.scale?e.scaleRef(t.scale):iH(t,e)}}

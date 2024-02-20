@@ -1,0 +1,1 @@
+function HD(t,e,r,n){if(!Gr(t))return t;e=Jc(e,t);for(var i=-1,s=e.length,a=s-1,o=t;o!=null&&++i<s;){var l=Ao(e[i]),u=r;if(l==="__proto__"||l==="constructor"||l==="prototype")return t;if(i!=a){var d=o[l];u=n?n(d,l,o):void 0,u===void 0&&(u=Gr(d)?d:qc(e[i+1])?[]:{})}$c(o,l,u),o=o[l]}return t}

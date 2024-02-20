@@ -1,0 +1,1 @@
+function assembleLineNumberStyles(lineNumberStyle,lineNumber,largestLineNumber){return _objectSpread({},{display:"inline-block",minWidth:getEmWidthOfNumber(largestLineNumber),paddingRight:"1em",textAlign:"right",userSelect:"none"},"function"==typeof lineNumberStyle?lineNumberStyle(lineNumber):lineNumberStyle)}

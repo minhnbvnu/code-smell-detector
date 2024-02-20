@@ -1,0 +1,1 @@
+function tightTree(t,g){function dfs(v){_.forEach(g.nodeEdges(v),function(e){var edgeV=e.v,w=v===edgeV?e.w:edgeV;if(!t.hasNode(w)&&!slack(g,e)){t.setNode(w,{});t.setEdge(v,w,{});dfs(w)}})}_.forEach(t.nodes(),dfs);return t.nodeCount()}

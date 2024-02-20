@@ -1,0 +1,1 @@
+function Z5(t){return function(){lf(this,t)}}

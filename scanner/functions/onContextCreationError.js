@@ -1,0 +1,1 @@
+function onContextCreationError(event){errorInfo=event.statusMessage||errorInfo}

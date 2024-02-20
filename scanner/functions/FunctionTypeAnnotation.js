@@ -1,26 +1,27 @@
 function FunctionTypeAnnotation(node, parent) {
-	  this.print(node.typeParameters, node);
-	  this.token("(");
-	  this.printList(node.params, node);
+  this.print(node.typeParameters, node);
+  this.token("(");
+  this.printList(node.params, node);
 
-	  if (node.rest) {
-	    if (node.params.length) {
-	      this.token(",");
-	      this.space();
-	    }
-	    this.token("...");
-	    this.print(node.rest, node);
-	  }
+  if (node.rest) {
+    if (node.params.length) {
+      this.token(",");
+      this.space();
+    }
 
-	  this.token(")");
+    this.token("...");
+    this.print(node.rest, node);
+  }
 
-	  if (parent.type === "ObjectTypeCallProperty" || parent.type === "DeclareFunction") {
-	    this.token(":");
-	  } else {
-	    this.space();
-	    this.token("=>");
-	  }
+  this.token(")");
 
-	  this.space();
-	  this.print(node.returnType, node);
-	}
+  if (parent.type === "ObjectTypeCallProperty" || parent.type === "DeclareFunction" || parent.type === "ObjectTypeProperty" && parent.method) {
+    this.token(":");
+  } else {
+    this.space();
+    this.token("=>");
+  }
+
+  this.space();
+  this.print(node.returnType, node);
+}

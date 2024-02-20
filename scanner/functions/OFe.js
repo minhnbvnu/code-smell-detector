@@ -1,0 +1,1 @@
+function OFe(e,t){if(t.data&&t.data.estree&&e.evaluater)return e.evaluater.evaluateProgram(t.data.estree);Ah(e,t.position)}

@@ -1,0 +1,1 @@
+function BinaryCMapReader(){_classCallCheck(this,BinaryCMapReader)}

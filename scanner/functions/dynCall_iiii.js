@@ -1,0 +1,1 @@
+function dynCall_iiii(index,a1,a2,a3){index=index|0;a1=a1|0;a2=a2|0;a3=a3|0;return FUNCTION_TABLE_iiii[index&3](a1|0,a2|0,a3|0)|0}

@@ -1,3 +1,3 @@
-function switch_to_polychrome_palette() {
+function switch_to_polychrome_palette(){
 
 }

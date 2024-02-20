@@ -1,0 +1,1 @@
+function WidgetAnnotationElement(){_classCallCheck(this,WidgetAnnotationElement);return r.apply(this,arguments)}

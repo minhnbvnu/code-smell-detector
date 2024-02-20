@@ -1,0 +1,1 @@
+function Sk(a,b,c,d,e,g){a=a|0;b=b|0;c=c|0;d=d|0;e=e|0;g=g|0;var h=0;if(fp(a,f[b+8>>2]|0,g)|0)qj(0,b,c,d,e);else{h=f[a+8>>2]|0;_a[f[(f[h>>2]|0)+20>>2]&3](h,b,c,d,e,g)}return}

@@ -1,0 +1,1 @@
+function ZAe(e){return"-"+e.toLowerCase()}

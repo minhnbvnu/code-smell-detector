@@ -1,0 +1,1 @@
+function im(a,c,d){a=a|0;c=c|0;d=d|0;var e=0;if((c|0)<(a|0)&(a|0)<(c+d|0)){e=a;c=c+d|0;a=a+d|0;while((d|0)>0){a=a-1|0;c=c-1|0;d=d-1|0;b[a>>0]=b[c>>0]|0}a=e}else kh(a,c,d)|0;return a|0}

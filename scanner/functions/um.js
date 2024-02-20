@@ -1,1 +1,1 @@
-function Um(a){a=a|0;return L[a+24>>2]}
+function um(a,b,c,d,e,f){a=a|0;b=b|0;c=c|0;d=d|0;e=e|0;f=f|0;return Wf(a,b,c,d,e,f,1)|0}

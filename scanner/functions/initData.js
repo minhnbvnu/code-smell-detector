@@ -1,6 +1,7 @@
-function initData(data) {
-  data = data || {};
-  data.datasets = data.datasets || [];
-  data.labels = data.labels || [];
-  return data;
-}
+function initData(context, data) {
+	  if (!data || !('root' in data)) {
+	    data = data ? _base.createFrame(data) : {};
+	    data.root = context;
+	  }
+	  return data;
+	}

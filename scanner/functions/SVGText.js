@@ -1,0 +1,1 @@
+function SVGText(){this._parts=[]}

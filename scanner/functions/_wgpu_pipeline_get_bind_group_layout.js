@@ -1,0 +1,1 @@
+function _wgpu_pipeline_get_bind_group_layout(pipelineBase,index){return wgpuStore(debugDir(wgpu[pipelineBase]["getBindGroupLayout"](index),"returned"))}

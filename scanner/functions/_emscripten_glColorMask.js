@@ -1,0 +1,1 @@
+function _emscripten_glColorMask(red,green,blue,alpha){GLctx.colorMask(!!red,!!green,!!blue,!!alpha)}

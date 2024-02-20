@@ -1,0 +1,1 @@
+function Ihe(e){return Object.prototype.toString.call(e)==="[object Function]"}

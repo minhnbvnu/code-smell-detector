@@ -1,0 +1,1 @@
+function EQ(e,t){var n=arguments.length>2&&void 0!==arguments[2]?arguments[2]:{};Object.assign(t,DQ(n)),sZ.extend(e,t,n),Se.get(e,t,["glyph","mapper","actor"]),Se.setGetArray(e,t,["visibilityFlagArray"],2),Se.setGetArray(e,t,["orientation"],3),Se.setGetArray(e,t,["viewMatrix"],16),Se.setGet(e,t,["faceCamera"]),TQ(e,t)}

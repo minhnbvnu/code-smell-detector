@@ -1,0 +1,1 @@
+function testForm (results) { this.initialize(results); }

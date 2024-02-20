@@ -1,0 +1,1 @@
+function Mwe(e,t,r){let n=t.resolveStack(r),i=n.node.enterUnfinishedNodesBefore(r);if(i!=n.node){let a=[];for(let l=i;l!=n.node;l=l.parent)a.push(l);for(let l=a.length-1;l>=0;l--)n={node:a[l],next:n}}return kle(n,e,r)}

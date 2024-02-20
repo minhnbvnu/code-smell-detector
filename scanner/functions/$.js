@@ -1,1 +1,1 @@
-function $(t){return Vt+Jt+t}
+function $(){n[0].classList.add("refreshing");var t=e.$onRefresh();t&&t.then&&t["finally"](function(){e.$broadcast("scroll.refreshComplete")})}

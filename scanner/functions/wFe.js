@@ -1,0 +1,1 @@
+function wFe(e,t){return t.value}

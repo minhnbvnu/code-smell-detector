@@ -1,0 +1,1 @@
+function Bt(t,e,i,n,r){var o,s,a=1+7*(e-1)+(7+i-n)%7+Vt(t,n,r);return a<=0?s=Mt(o=t-1)+a:a>Mt(t)?(o=t+1,s=a-Mt(t)):(o=t,s=a),{year:o,dayOfYear:s}}

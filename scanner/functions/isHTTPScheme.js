@@ -1,3 +1,1 @@
-function isHTTPScheme(url) {
-	  return url.match(HTTPRequest.URL_SCHEME_REGEX) != null;
-	}
+function isHTTPScheme(e){return null!=e.match(BrowserHTTPRequest.URL_SCHEME_REGEX)}

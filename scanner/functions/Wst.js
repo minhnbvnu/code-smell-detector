@@ -1,0 +1,1 @@
+function Wst(n,t,e){return function(){this.style.setProperty(n,t,e)}}

@@ -1,0 +1,1 @@
+function drt(n,t){let e=this.cache;ii(e,t)||(n.uniform3iv(this.addr,t),Kn(e,t))}

@@ -1,0 +1,3 @@
+function updateContainerWidth() {
+                            elWidth = getContainerWidth();
+                        }

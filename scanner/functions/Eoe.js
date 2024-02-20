@@ -1,0 +1,1 @@
+function Eoe(e){(!e||typeof e!="function")&&(e=Xg.stringify);var t,r=this,i=r.protocol;i&&i.charAt(i.length-1)!==":"&&(i+=":");var a=i+(r.slashes||wu(r.protocol)?"//":"");return r.username&&(a+=r.username,r.password&&(a+=":"+r.password),a+="@"),a+=r.host+r.pathname,t=typeof r.query=="object"?e(r.query):r.query,t&&(a+=t.charAt(0)!=="?"?"?"+t:t),r.hash&&(a+=r.hash),a}

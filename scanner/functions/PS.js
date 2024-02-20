@@ -1,0 +1,1 @@
+function PS(t){return nr(t)||ya(t)||!!(sy&&t&&t[sy])}

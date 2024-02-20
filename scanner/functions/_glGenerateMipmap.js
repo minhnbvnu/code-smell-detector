@@ -1,0 +1,1 @@
+function _glGenerateMipmap(x0){GLctx["generateMipmap"](x0)}

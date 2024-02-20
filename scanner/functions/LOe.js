@@ -1,0 +1,1 @@
+function LOe(e){return S.createElement(da,e,S.createElement(BOe,null))}

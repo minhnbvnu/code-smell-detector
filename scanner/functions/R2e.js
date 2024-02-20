@@ -1,0 +1,1 @@
+function R2e(e,t){let r=SB(Object.getPrototypeOf(t));return new r(e,t)}

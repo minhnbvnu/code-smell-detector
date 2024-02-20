@@ -1,0 +1,1 @@
+function xE(a,b){a=a|0;b=b|0;if(!(_A(a,b)|0))a=(XA(a,b)|0)==0&1;else a=0;return a|0}

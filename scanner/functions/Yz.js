@@ -1,0 +1,1 @@
+function Yz(n){this.id=n,this.seq=[],this.map={}}

@@ -1,0 +1,1 @@
+function addRemoveClass(el,classes,doAdd){return doAdd?addClass(el,classes):removeClass(el,classes)}

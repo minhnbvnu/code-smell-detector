@@ -1,0 +1,1 @@
+function CA(t){return Ty?Object(Ty.call(t)):{}}

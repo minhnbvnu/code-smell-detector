@@ -1,3 +1,1 @@
-function keep(result) {
-	  return ENGINE.keep(result);
-	}
+function Keep(t){var o;_classCallCheck(this,Keep);(o=r.call(this,_,"keep",!0)).id=t.id||"";var c=["none","contentArea","pageArea"];o.intact=(0,d.getStringOption)(t.intact,c);o.next=(0,d.getStringOption)(t.next,c);o.previous=(0,d.getStringOption)(t.previous,c);o.use=t.use||"";o.usehref=t.usehref||"";o.extras=null;return o}

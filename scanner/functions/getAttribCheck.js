@@ -1,0 +1,1 @@
+function getAttribCheck(attrib,value){if(typeof value==="function"){return function(elem){return elem.attribs&&value(elem.attribs[attrib])}}else{return function(elem){return elem.attribs&&elem.attribs[attrib]===value}}}

@@ -1,3 +1,1 @@
-function getUnpackedMatrixTextureShapeWidthHeight(rows, columns) {
-	  return [columns, rows];
-	}
+function getUnpackedMatrixTextureShapeWidthHeight(e,t){return [t,e]}

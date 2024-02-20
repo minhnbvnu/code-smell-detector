@@ -1,0 +1,1 @@
+function unwrapComment(i){return i.replace(/^\/\*\*?/,"").replace(/\*\/$/,"").replace(new RegExp(z,"g"),"$2").replace(/\s*$/,"")}

@@ -1,0 +1,1 @@
+function _S(t,e){var n=xS(t),i=n[0],r=n[1],o=xS(e),a=o[0],s=o[1];return Math.max(Math.abs(i[0]-a[0]),Math.abs(i[1]-a[1]),Math.abs(r[0]-s[0]),Math.abs(r[1]-s[1]))}

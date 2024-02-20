@@ -1,0 +1,1 @@
+function wle(e,t){e instanceof Gt&&(e=new mb(e));for(let n of e.state.facet(Iwe)){let i=n(e,t);if(i!==void 0)return i}let r=Bn(e.state);return r.length>=t?Mwe(e,r,t):null}

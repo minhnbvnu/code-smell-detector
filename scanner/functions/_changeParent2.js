@@ -1,0 +1,1 @@
+function _changeParent2(t){var r;if(t.parent!==this){this.attach(t);t.pageIndex=this.pageIndex;null===(r=t.parent)||void 0===r||r.detach(t);t.parent=this;if(t.div&&t.isAttachedToDOM){t.div.remove();this.div.append(t.div)}}}

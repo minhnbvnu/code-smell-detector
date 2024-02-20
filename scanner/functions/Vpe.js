@@ -1,0 +1,1 @@
+function Vpe(e,t){e=Ta(e,"heading");let{children:r,level:n=3,...i}=e,{styleProps:a}=_t(i),l=Yr(t),s=`h${n}`;return S.createElement(s,{...Kt(i),...a,ref:l},r)}

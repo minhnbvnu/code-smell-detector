@@ -1,0 +1,1 @@
+function animateStart(){window.setTimeout(animator,interv)}

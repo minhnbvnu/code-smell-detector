@@ -1,0 +1,1 @@
+function i8e(e){let t=Object.create(null),r=Object.create(null);for(let{label:i}of e){t[i[0]]=!0;for(let a=1;a<i.length;a++)r[i[a]]=!0}let n=dQ(t)+dQ(r)+"*$";return[new RegExp("^"+n),new RegExp(n)]}

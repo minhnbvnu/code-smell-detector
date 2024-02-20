@@ -1,0 +1,3 @@
+function defaultPostLayout() {
+  // Do nothing
+}

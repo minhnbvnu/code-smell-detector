@@ -1,0 +1,1 @@
+function Solid(t){var o;_classCallCheck(this,Solid);(o=r.call(this,_,"solid",!0)).id=t.id||"";o.use=t.use||"";o.usehref=t.usehref||"";o.extras=null;return o}

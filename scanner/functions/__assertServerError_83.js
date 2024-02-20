@@ -1,0 +1,1 @@
+function __assertServerError_83(e){if(e&&e.error){var t=new Error(e.message);throw ___extends_83(t,e.error),t}return e}

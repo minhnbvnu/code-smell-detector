@@ -1,11 +1,5 @@
 function trim_prefix(layer, layerError, layerPath, path) {
     if (layerPath.length !== 0) {
-      // Validate path is a prefix match
-      if (layerPath !== path.slice(0, layerPath.length)) {
-        next(layerError)
-        return
-      }
-
       // Validate path breaks on a path separator
       var c = path[layerPath.length]
       if (c && c !== '/' && c !== '.') return next(layerError)
@@ -14,7 +8,7 @@ function trim_prefix(layer, layerError, layerPath, path) {
       // middleware (.use stuff) needs to have the path stripped
       debug('trim prefix (%s) from url %s', layerPath, req.url);
       removed = layerPath;
-      req.url = protohost + req.url.slice(protohost.length + removed.length)
+      req.url = protohost + req.url.substr(protohost.length + removed.length);
 
       // Ensure leading slash
       if (!protohost && req.url[0] !== '/') {

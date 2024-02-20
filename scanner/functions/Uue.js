@@ -1,0 +1,1 @@
+function Uue(e,t){return{$$typeof:Fh,type:e.type,key:t,ref:e.ref,props:e.props,_owner:e._owner}}

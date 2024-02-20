@@ -1,0 +1,1 @@
+function Stipple(t){var o;_classCallCheck(this,Stipple);(o=r.call(this,_,"stipple",!0)).id=t.id||"";o.rate=(0,d.getInteger)({data:t.rate,defaultValue:50,validate:function validate(t){return t>=0&&t<=100}});o.use=t.use||"";o.usehref=t.usehref||"";o.color=null;o.extras=null;return o}

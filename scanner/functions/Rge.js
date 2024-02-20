@@ -1,0 +1,1 @@
+function Rge(e,t){e=Bge(e);let r=e.indexOf("=");if(t)r===0&&(e=e.substr(1),r=e.indexOf("="));else if(r<=0)return;let i,a;if(r<=0?(i="",a=e.trim()):(i=e.substr(0,r).trim(),a=e.substr(r+1).trim()),EL.test(i)||EL.test(a))return;let n=new Ri;return n.key=i,n.value=a,n}

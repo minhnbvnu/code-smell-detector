@@ -1,1 +1,1 @@
-function lz(a){a=a|0;var b=0;b=fa-16|0;L[b+12>>2]=a;return L[b+12>>2]+48|0}
+function Lz(a,b,d){a=a|0;b=b|0;d=d|0;d=KK(12)|0;c[d+8>>2]=c[b+8>>2];return d|0}

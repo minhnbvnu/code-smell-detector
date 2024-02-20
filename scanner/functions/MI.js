@@ -1,0 +1,1 @@
+function MI(t){return[t.cx,t.cy]}

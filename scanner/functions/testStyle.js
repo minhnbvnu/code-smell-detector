@@ -1,75 +1,29 @@
-function testStyle(style, hitIndex, symbols) {
-            layer.clear();
-            var points = [
-                new maptalks.Marker([0, 0], {
-                    properties : {
-                        'foo1' : 1,
-                        'foo2' : 'test1',
-                        'foo3' : true
-                    }
-                }),
-                new maptalks.Marker([0, 0], {
-                    properties : {
-                        'foo1' : 2,
-                        'foo2' : 'test2',
-                        'foo3' : false
-                    }
-                }),
-                new maptalks.Marker([0, 0], {
-                    properties : {
-                        'foo1' : 3,
-                        'foo2' : 'test3',
-                        'foo3' : true
-                    }
-                }),
-                new maptalks.Marker([0, 0], {
-                    properties : {
-                        'foo1' : 4,
-                        'foo2' : 'test4',
-                        'foo3' : true
-                    }
-                }),
-                new maptalks.Circle([0, 0], 100, {
-                    properties : {
-                        'foo1' : 5,
-                        'foo2' : 'test5',
-                        'foo3' : true
-                    }
-                })
-            ];
+function testStyle(viewName, opts) {
+	opts = opts || {};
+	var paths;
 
-            var defaultSymbols = [];
-            layer.addGeometry(points).forEach(function (geometry) {
-                defaultSymbols.push(geometry.getSymbol());
-            }).setStyle(style);
+	if (!opts.widgetId) {
+		paths = {
+			style: path.join(appPath,CONST.DIR.STYLE,viewName + '.' + CONST.FILE_EXT.STYLE),
+			template: path.join(templatePath,'style.tss')
+		};
+	} else {
+		var widgetPath = path.join(appPath,CONST.DIR.WIDGET,opts.widgetId);
+		paths = {
+			style: path.join(widgetPath,CONST.DIR.STYLE,viewName + '.' + CONST.FILE_EXT.STYLE),
+			template: path.join(templatePath,'widget','style.tss')
+		};
+	}
 
-            expect(layer.getStyle()).to.be.eql(style);
-            var i;
-            for (i = 0; i < points.length; i++) {
-                var hit = hitIndex.indexOf(i);
-                if (hitIndex.indexOf(i) >= 0) {
-                    expect(points[i]._getInternalSymbol()).to.be.eql(symbols[hit]);
-                } else {
-                    expect(points[i].getSymbol()).to.be.eql(defaultSymbols[i]);
-                }
-            }
+	it('generate a style named "' + viewName + '"', function() {
+		expect(path.existsSync(paths.style)).toBe(true);
+	});
 
-            var geoAddLater = points[hitIndex[0]].copy();
-            geoAddLater.setSymbol(null);
-            layer.addGeometry(geoAddLater);
-            expect(geoAddLater._getInternalSymbol()).to.be.eql(symbols[0]);
+	// it('generated style matches the one in the alloy distribution', function() {
+	// 	expect(paths.style).toHaveSameContentAs(paths.template);
+	// });
 
-            var profile = layer.toJSON();
-            for (i = 0; i < profile.geometries.length; i++) {
-                expect(profile.geometries[i].symbol).not.to.be.ok();
-            }
-
-            layer.removeStyle();
-
-            expect(layer.getStyle()).not.to.be.ok();
-
-            for (i = 0; i < points.length; i++) {
-                expect(points[i].getSymbol()).to.be.eql(defaultSymbols[i]);
-            }
-            expect(geoAddLater.getSymbol()).to.be.eql(defaultSymbols[0]);
-        }
+	it('style is valid TSS', function() {
+		expect(paths.style).toBeTssFile();
+	});
+}

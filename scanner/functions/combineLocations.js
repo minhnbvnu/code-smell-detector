@@ -1,16 +1,1 @@
-function combineLocations(outputLoc, reduceLoc, axes) {
-	  var rank = outputLoc.length + reduceLoc.length;
-	  var loc = [];
-	  var outIdx = 0;
-	  var reduceIdx = 0;
-
-	  for (var dim = 0; dim < rank; dim++) {
-	    if (axes.indexOf(dim) === -1) {
-	      loc.push(outputLoc[outIdx++]);
-	    } else {
-	      loc.push(reduceLoc[reduceIdx++]);
-	    }
-	  }
-
-	  return loc;
-	}
+function combineLocations(e,t,n){for(var r=e.length+t.length,o=[],a=0,i=0,s=0;s<r;s++)-1===n.indexOf(s)?o.push(e[a++]):o.push(t[i++]);return o}

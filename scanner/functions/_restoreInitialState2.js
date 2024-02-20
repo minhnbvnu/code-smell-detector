@@ -1,0 +1,1 @@
+function _restoreInitialState2(){for(;this.stateStack.length||this.inSMaskMode;)this.restore();this.ctx.restore();if(this.transparentCanvas){this.ctx=this.compositeCtx;this.ctx.save();this.ctx.setTransform(1,0,0,1,0,0);this.ctx.drawImage(this.transparentCanvas,0,0);this.ctx.restore();this.transparentCanvas=null}}

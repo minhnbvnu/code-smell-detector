@@ -1,0 +1,1 @@
+function g1e(){return{rowGroupProps:{role:"rowgroup"}}}

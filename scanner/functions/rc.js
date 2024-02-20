@@ -1,0 +1,1 @@
+function rc(a){return D(a.toString)&&a.toString!==ka}

@@ -1,0 +1,1 @@
+function $ke(e,t,r){var i=mp.hmac.create();return i.start("SHA1",e),i.update(t),t=i.digest().getBytes(),i.start(null,null),i.update(r),r=i.digest().getBytes(),t===r}

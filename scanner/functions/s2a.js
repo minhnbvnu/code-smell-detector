@@ -1,0 +1,1 @@
+function s2a(s){if(has_buf)return new Buffer(s,"binary");return s.split("").map(function(x){return x.charCodeAt(0)&255})}

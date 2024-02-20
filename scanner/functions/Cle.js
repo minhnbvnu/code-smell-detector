@@ -1,0 +1,1 @@
+function Cle(e,t,r,n,i){let a=e.textAfter,l=a.match(/^\s*/)[0].length,s=n&&a.slice(l,l+n.length)==n||i==e.pos+l,u=t?Qwe(e):null;return u?s?e.column(u.from):e.column(u.to):e.baseIndent+(s?0:e.unit*r)}

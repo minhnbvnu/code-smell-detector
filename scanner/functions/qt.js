@@ -1,0 +1,1 @@
+function qt(t,e,i){var n=Vt(t,e,i),r=Vt(t+1,e,i);return(Mt(t)-n+r)/7}

@@ -1,1 +1,1 @@
-function Gq(a){a=a|0;var b=0;b=fa-16|0;L[b+12>>2]=a;return L[L[b+12>>2]+36>>2]}
+function gq(a){a=a|0;return f[a>>2]|0}

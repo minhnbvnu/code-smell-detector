@@ -1,0 +1,1 @@
+function Z4(n,t){return Ft(n).getRootNode()===t}

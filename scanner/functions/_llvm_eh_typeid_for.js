@@ -1,0 +1,1 @@
+function _llvm_eh_typeid_for(type){return type}

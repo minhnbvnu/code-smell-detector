@@ -1,10 +1,8 @@
-function isSorted(arr, func, strict) {
-  const compare = func || ascending;
-  return arr.every(function (currentVal, index) {
-    if (index === 0) {
-      return true;
-    }
-    const res = compare(arr[index - 1], currentVal);
-    return !(res > 0 || (strict && res === 0));
-  });
-}
+function isSorted(line) {
+            for (let j = 1; j < line.length; j++) {
+                if (line[j][COLUMN$1] < line[j - 1][COLUMN$1]) {
+                    return false;
+                }
+            }
+            return true;
+        }

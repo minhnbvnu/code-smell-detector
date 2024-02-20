@@ -1,0 +1,1 @@
+function AnnotationStorage(){_classCallCheck(this,AnnotationStorage);!function _classPrivateMethodInitSpec(t,r){_checkPrivateRedeclaration(t,r);r.add(t)}(this,c);this._storage=new Map;this._modified=!1;this.onSetModified=null;this.onResetModified=null}

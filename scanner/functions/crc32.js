@@ -1,11 +1,12 @@
-function crc32(data, start, end) {
-      let crc = -1;
+function crc32(crc, buf, len, pos) {
+  var t = crcTable,
+      end = pos + len;
 
-      for (let i = start; i < end; i++) {
-        const a = (crc ^ data[i]) & 0xff;
-        const b = crcTable[a];
-        crc = crc >>> 8 ^ b;
-      }
+  crc ^= -1;
 
-      return crc ^ -1;
-    }
+  for (var i = pos; i < end; i++) {
+    crc = (crc >>> 8) ^ t[(crc ^ buf[i]) & 0xFF];
+  }
+
+  return (crc ^ (-1)); // >>> 0;
+}

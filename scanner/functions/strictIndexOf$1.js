@@ -1,0 +1,1 @@
+function strictIndexOf$1(array,value,fromIndex){for(var index=fromIndex-1,length=array.length;++index<length;)if(array[index]===value)return index;return-1}

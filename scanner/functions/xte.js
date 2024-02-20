@@ -1,0 +1,1 @@
+function xte(e){try{return encodeURIComponent(e)}catch{return null}}

@@ -1,0 +1,1 @@
+function Overflow(t){var o;_classCallCheck(this,Overflow);(o=r.call(this,_,"overflow")).id=t.id||"";o.leader=t.leader||"";o.target=t.target||"";o.trailer=t.trailer||"";o.use=t.use||"";o.usehref=t.usehref||"";return o}

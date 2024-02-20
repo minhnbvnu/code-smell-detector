@@ -1,0 +1,1 @@
+function Speak(t){var o;_classCallCheck(this,Speak);(o=r.call(this,_,"speak")).disable=(0,d.getInteger)({data:t.disable,defaultValue:0,validate:function validate(t){return 1===t}});o.id=t.id||"";o.priority=(0,d.getStringOption)(t.priority,["custom","caption","name","toolTip"]);o.rid=t.rid||"";o.use=t.use||"";o.usehref=t.usehref||"";return o}

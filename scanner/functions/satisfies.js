@@ -1,8 +1,8 @@
-function satisfies(version, rawRange) {
-  let parsedRange;
-  if (!(parsedRange = cache.ranges[rawRange])) {
-    parsedRange = new Range(rawRange);
-    cache.ranges[rawRange] = parsedRange;
+function satisfies(check) {
+  try {
+    return semver.satisfies(process.version, check)
+  } catch (e) {
+    _logWarn(e, 'Bad process version for satisfies check.')
+    return false
   }
-  return parsedRange.test(version);
 }

@@ -1,0 +1,1 @@
+function handleHeaderClick(e){if(!columnResizeDragging){var o=$(e.target).closest(".slick-header-column",".slick-header-columns"),t=o&&o.data("column");t&&trigger(self.onHeaderClick,{column:t},e)}}

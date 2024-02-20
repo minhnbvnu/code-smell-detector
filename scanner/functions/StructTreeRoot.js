@@ -1,0 +1,1 @@
+function StructTreeRoot(t){_classCallCheck(this,StructTreeRoot);this.dict=t;this.roleMap=new Map}

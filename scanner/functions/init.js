@@ -1,65 +1,140 @@
-function init(me, seed) {
-	        var t,
-	            v,
-	            i,
-	            j,
-	            w,
-	            X = [],
-	            limit = 128;
+function init() {
+            self.debug('queuing');
 
-	        if (seed === (seed | 0)) {
-	          // Numeric seeds initialize v, which is used to generates X.
-	          v = seed;
-	          seed = null;
-	        } else {
-	          // String seeds are mixed into v and X one character at a time.
-	          seed = seed + '\0';
-	          v = 0;
-	          limit = Math.max(limit, seed.length);
-	        } // Initialize circular array and weyl value.
+            browser.init(init_conf, function(err) {
+                if (err) {
+                    if (err.data) {
+                        err.message += ': ' + err.data.split('\n').slice(0, 1);
+                    }
+                    return self.shutdown(err);
+                }
 
+                var reporter = new EventEmitter();
 
-	        for (i = 0, j = -32; j < limit; ++j) {
-	          // Put the unicode characters into the array, and shuffle them.
-	          if (seed) v ^= seed.charCodeAt((j + 32) % seed.length); // After 32 shuffles, take v as the starting w value.
+                reporter.on('test_end', function(test) {
+                    if (!test.passed) {
+                        return self.stats.failed++;
+                    }
+                    self.stats.passed++;
+                });
 
-	          if (j === 0) w = v;
-	          v ^= v << 10;
-	          v ^= v >>> 15;
-	          v ^= v << 4;
-	          v ^= v >>> 13;
+                reporter.on('done', function(results) {
+                    clearTimeout(self.noOutputTimeout);
+                    self.debug('done');
+                    var passed = results.passed;
+                    var called = false;
+                    browser.sauceJobStatus(passed, function(err) {
+                        if (called) {
+                            return;
+                        }
 
-	          if (j >= 0) {
-	            w = w + 0x61c88647 | 0; // Weyl.
+                        called = true;
+                        self.shutdown();
 
-	            t = X[j & 127] ^= v + w; // Combine xor and weyl to init array.
+                        if (err) {
+                            return;
+                            // don't let this error fail us
+                        }
+                    });
 
-	            i = 0 == t ? i + 1 : 0; // Count zeroes.
-	          }
-	        } // We have detected all zeroes; make the key nonzero.
+                    reporter.removeAllListeners();
+                });
 
+                self.debug('open %s', url);
+                self.emit('start', reporter);
 
-	        if (i >= 128) {
-	          X[(seed && seed.length || 0) & 127] = -1;
-	        } // Run the generator 512 times to further mix the state before using it.
-	        // Factoring this as a function slows the main generator, so it is just
-	        // unrolled here.  The weyl generator is not advanced while warming up.
+                var timeout = false;
+                var get_timeout = setTimeout(function() {
+                    self.debug('timed out waiting for open %s', url);
+                    timeout = true;
+                    self.shutdown(new Error('Timeout opening url after ' + Math.round(self._opt.browser_open_timeout/1000) + 's'));
+                }, self._opt.browser_open_timeout);
 
+                browser.get(url, function(err) {
+                    self.debug('browser opened url');
 
-	        i = 127;
+                    if (timeout) {
+                        return;
+                    }
 
-	        for (j = 4 * 128; j > 0; --j) {
-	          v = X[i + 34 & 127];
-	          t = X[i = i + 1 & 127];
-	          v ^= v << 13;
-	          t ^= t << 17;
-	          v ^= v >>> 15;
-	          t ^= t >>> 12;
-	          X[i] = v ^ t;
-	        } // Storing state as object members is faster than using closure variables.
+                    clearTimeout(get_timeout);
+                    if (err) {
+                        return self.shutdown(err);
+                    }
 
+                    // no new output for 30s => error
+                    watchOutput();
 
-	        me.w = w;
-	        me.X = X;
-	        me.i = i;
-	      }
+                    function watchOutput() {
+                        if (self._opt.browser_output_timeout === -1) {
+                            return;
+                        }
+
+                        clearTimeout(self.noOutputTimeout);
+
+                        self.noOutputTimeout = setTimeout(function() {
+                            self.shutdown(new Error('Did not receive any new output from browser for ' + Math.round(self._opt.browser_output_timeout/1000) + 's, shutting down'));
+                        }, self._opt.browser_output_timeout);
+                    }
+
+                    (function wait() {
+                        if (self.stopped) {
+                            return;
+                        }
+
+                        self.debug('waiting for test results from %s', url);
+                        // take the last 1000 log lines
+                        // careful, the less you log lines, the slower your test
+                        // result will be. The test could be finished in the browser
+                        // but not in your console since it can take a lot
+                        // of time to get a lot of results
+                        var js = '(window.zuul_msg_bus ? window.zuul_msg_bus.splice(0, 1000) : []);'
+                        browser.eval(js, function(err, res) {
+                            if (err) {
+                                self.debug('err: %s', err.message);
+                                return self.shutdown(err);
+                            }
+
+                            res = res || [];
+                            //When testing with microsoft edge:
+                            //Adds length property to array-like object if not defined to execute filter properly
+                            if (res.length === undefined) {
+                                res.length = Object.keys(res).length;
+                            }
+                            self.debug('res.length: %s', res.length);
+
+                            // if we received some data, reset the no output watch timeout
+                            if (res.length > 0) {
+                                watchOutput();
+                            }
+
+                            var has_done = false;
+                            Array.prototype.filter.call(res, Boolean).forEach(function(msg) {
+                                if (msg.type === 'done') {
+                                    has_done = true;
+                                }
+
+                                reporter.emit(msg.type, msg);
+                            });
+
+                            if (has_done) {
+                                self.debug('finished tests for %s', url);
+                                return;
+                            }
+
+                            self.debug('fetching more results');
+
+                            // if we found results, let's not wait
+                            // to get more
+                            if (res.length > 0) {
+                                process.nextTick(wait);
+                            } else {
+                                // otherwise, let's wait a little so that we do not
+                                // spam saucelabs
+                                setTimeout(wait, 2000);
+                            }
+                        });
+                    })();
+                });
+            });
+        }

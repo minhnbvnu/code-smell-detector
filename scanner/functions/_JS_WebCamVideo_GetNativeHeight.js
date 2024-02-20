@@ -1,0 +1,1 @@
+function _JS_WebCamVideo_GetNativeHeight(deviceId){return activeWebCams[deviceId]&&activeWebCams[deviceId].video.videoHeight}

@@ -1,0 +1,1 @@
+function Jf(a,b){"function"!==typeof a?m("191",a):void 0;a.call(b)}

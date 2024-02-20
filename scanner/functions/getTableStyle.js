@@ -1,0 +1,1 @@
+function getTableStyle(i,o){return null==i.align[o]?{}:{textAlign:i.align[o]}}

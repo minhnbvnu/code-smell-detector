@@ -1,0 +1,1 @@
+function el(e){return ol(e)&&e!=+e}

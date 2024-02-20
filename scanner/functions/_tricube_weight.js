@@ -1,0 +1,1 @@
+function _tricube_weight(u){return _pow_weight(u,3);}

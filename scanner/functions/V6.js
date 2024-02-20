@@ -1,0 +1,1 @@
+function V6(t){return+t}

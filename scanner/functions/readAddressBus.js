@@ -1,0 +1,1 @@
+function readAddressBus(){return readBits('ab', 16);}

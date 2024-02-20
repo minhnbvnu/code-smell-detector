@@ -1,0 +1,1 @@
+function _dispatchUpdateUI2(t){_classPrivateFieldGet(this,T).dispatch("annotationeditorparamschanged",{source:this,details:t})}

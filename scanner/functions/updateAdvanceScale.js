@@ -1,0 +1,1 @@
+function updateAdvanceScale(){if(L.initialized){var t=Math.hypot(N.textLineMatrix[0],N.textLineMatrix[1]),r=Math.hypot(N.ctm[0],N.ctm[1])*t;if(r!==L.textAdvanceScale){if(L.vertical){L.totalHeight+=L.height*L.textAdvanceScale;L.height=0}else{L.totalWidth+=L.width*L.textAdvanceScale;L.width=0}L.textAdvanceScale=r}}}

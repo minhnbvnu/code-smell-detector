@@ -1,0 +1,1 @@
+function sortChanges(a, b) {return a.action - b.action || a.index - b.index}

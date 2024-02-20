@@ -1,0 +1,1 @@
+function _emscripten_glGenTextures(n,textures){__glGenObject(n,textures,"createTexture",GL.textures)}

@@ -1,0 +1,1 @@
+function expandSingleElementArray(i){return 1===i.length?i[0]:i}

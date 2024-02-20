@@ -1,0 +1,1 @@
+function CV(a){a=a|0;var b=0.0;b=+(a|0);a=0;while(1){if(!(b>=1.0))break;b=+x2(b);a=a+1|0}return a+-1|0}

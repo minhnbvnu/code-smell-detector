@@ -1,0 +1,1 @@
+function cellExists(e,o){return!(e<0||e>=getDataLength()||o<0||o>=columns.length)}

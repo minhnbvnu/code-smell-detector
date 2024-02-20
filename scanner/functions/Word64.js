@@ -1,0 +1,1 @@
+function Word64(t,r){_classCallCheck(this,Word64);this.high=0|t;this.low=0|r}

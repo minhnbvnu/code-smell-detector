@@ -1,0 +1,1 @@
+function _eglGetDisplay(nativeDisplayType){EGL.setErrorCode(12288);return 62e3}

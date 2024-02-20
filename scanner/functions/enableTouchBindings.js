@@ -1,0 +1,3 @@
+function enableTouchBindings() {
+	blockTouchTriggers = false;
+}

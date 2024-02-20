@@ -1,14 +1,11 @@
-function transformData(fns, response) {
-  const config = this || defaults;
-  const context = response || config;
-  const headers = AxiosHeaders.from(context.headers);
-  let data = context.data;
+function transformData(data, headers, status, fns) {
+  if (isFunction(fns)) {
+    return fns(data, headers, status);
+  }
 
-  utils.forEach(fns, function transform(fn) {
-    data = fn.call(config, data, headers.normalize(), response ? response.status : undefined);
+  forEach(fns, function(fn) {
+    data = fn(data, headers, status);
   });
-
-  headers.normalize();
 
   return data;
 }

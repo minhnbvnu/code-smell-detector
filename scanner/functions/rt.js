@@ -1,1 +1,1 @@
-function Rt(t){return Array.prototype.slice.call(t)}
+function rt(t){var e,i,n={};for(i in t)l(t,i)&&(e=ot(i))&&(n[e]=t[i]);return n}

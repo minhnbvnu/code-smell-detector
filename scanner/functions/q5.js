@@ -1,0 +1,1 @@
+function q5(t,e,r){return arguments.length>1?this.each((e==null?W5:typeof e=="function"?G5:H5)(t,e,r==null?"":r)):Vs(this.node(),t)}

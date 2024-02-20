@@ -1,7 +1,1 @@
-function getNumChannels() {
-	  if (env().getNumber('WEBGL_VERSION') === 2) {
-	    return 1;
-	  }
-
-	  return 4;
-	}
+function getNumChannels(){return 2===ENV.get("WEBGL_VERSION")?1:4}

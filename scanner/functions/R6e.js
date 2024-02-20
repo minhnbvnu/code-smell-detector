@@ -1,0 +1,1 @@
+function R6e(e){return e.node.nodeType==1&&e.node.firstChild&&(e.offset==0||e.node.childNodes[e.offset-1].contentEditable=="false")&&(e.offset==e.node.childNodes.length||e.node.childNodes[e.offset].contentEditable=="false")}

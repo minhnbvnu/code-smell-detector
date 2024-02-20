@@ -1,0 +1,1 @@
+function MapElement(t){var o;_classCallCheck(this,MapElement);(o=r.call(this,d,"map",!0)).equate=new l.XFAObjectArray;o.equateRange=new l.XFAObjectArray;return o}

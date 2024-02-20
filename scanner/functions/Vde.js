@@ -1,0 +1,1 @@
+function Vde(e){return Dl(e),Math.floor(e[0]*1e3+e[1]/1e6)}

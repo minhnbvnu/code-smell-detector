@@ -1,0 +1,1 @@
+function t8e(){return v6(require.main&&require.main.filename)||v6(process.resourcesPath,"app.asar")||v6(process.cwd())||{name:null,version:null}}

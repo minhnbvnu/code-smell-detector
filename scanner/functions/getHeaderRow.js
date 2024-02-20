@@ -1,0 +1,1 @@
+function getHeaderRow(){return hasFrozenColumns()?$headerRow:$headerRow[0]}

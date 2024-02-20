@@ -1,0 +1,1 @@
+function checkSettingsStringValue(currValue,allowedValues){for(i=0;i<allowedValues[strLength];i++)if(currValue===allowedValues[i])return!0;return!1}

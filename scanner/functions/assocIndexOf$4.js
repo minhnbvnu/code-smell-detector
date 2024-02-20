@@ -1,0 +1,1 @@
+function assocIndexOf$4(array,key){for(var length=array.length;length--;)if(eq$2(array[length][0],key))return length;return-1}

@@ -1,0 +1,1 @@
+function wxe(e){Zr.buffer(e);var t=mH.sign.keyPair.fromSeed(new Uint8Array(e));return Bn.from(t.publicKey)}

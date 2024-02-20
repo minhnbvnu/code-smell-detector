@@ -1,0 +1,1 @@
+function wO(t,e){var r=t.edge(e),n=t.node(e.v),i=t.node(e.w),s=r.points.slice(1,r.points.length-1);return s.unshift(n3(n,s[0])),s.push(n3(i,s[s.length-1])),i3(r,s)}

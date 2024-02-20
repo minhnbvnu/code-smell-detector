@@ -1,0 +1,1 @@
+function _emscripten_date_now(){return Date.now()}

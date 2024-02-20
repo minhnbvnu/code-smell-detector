@@ -1,0 +1,1 @@
+function i1(t,e,r,n,i){var s="",a="",o=Math.floor(i/2)-1;return n-e>o&&(s=" ... ",e=n-o+s.length),r-n>o&&(a=" ...",r=n+o-a.length),{str:s+t.slice(e,r).replace(/\t/g,"\u2192")+a,pos:n-e+s.length}}

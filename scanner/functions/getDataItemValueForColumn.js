@@ -1,0 +1,1 @@
+function getDataItemValueForColumn(e,o){return options.dataItemColumnValueExtractor?options.dataItemColumnValueExtractor(e,o):e[o.field]}

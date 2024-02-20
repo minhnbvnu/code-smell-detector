@@ -1,0 +1,1 @@
+function ignore(_node, _st, _c) {}

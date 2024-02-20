@@ -1,0 +1,1 @@
+function Jle(e,t){return Ma(e,r=>e.moveByChar(r,t))}

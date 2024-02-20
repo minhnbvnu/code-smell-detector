@@ -1,0 +1,1 @@
+function _pe(e,t){let r=t==null?void 0:t.isDisabled,[n,i]=O.useState(!1);return St(()=>{if(e!=null&&e.current&&!r){let a=()=>{if(e.current){let s=ta(e.current,{tabbable:!0});i(!!s.nextNode())}};a();let l=new MutationObserver(a);return l.observe(e.current,{subtree:!0,childList:!0,attributes:!0,attributeFilter:["tabIndex","disabled"]}),()=>{l.disconnect()}}}),r?!1:n}

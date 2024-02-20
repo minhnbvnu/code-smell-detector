@@ -1,0 +1,331 @@
+function _ZN21btConeTwistConstraint13buildJacobianEv(sp)
+{
+	var i7;
+	var fp = sp>>2;
+	var r0;
+	var r1;
+	var r2;
+	var r3;
+	var r4;
+	var r5;
+	var r6;
+	var r7;
+	var r8;
+	var r9;
+	var r10;
+	var r11;
+	var r12;
+	var f0;
+	var f1;
+	var f2;
+	var f3;
+	var f4;
+	var f5;
+	var f6;
+	var f7;
+	var f8;
+	var f9;
+	var f10;
+	var f11;
+	var f12;
+	var f13;
+	var f14;
+	var f15;
+	var f16;
+	var f17;
+	var f18;
+	var f19;
+	var f20;
+	var f21;
+	var f22;
+	var f23;
+var __label__ = 0;
+	i7 = sp + -216;var g0 = i7>>2; // save stack
+	r0 = heap32[(fp)];
+	r1 = heapU8[r0+515];
+if(!(r1 ==0)) //_LBB579_14
+{
+	r1 = r0 >> 2;
+	heap32[(r1+7)] = 0;
+	heap32[(r1+127)] = 0;
+	heap32[(r1+126)] = 0;
+	heap32[(r1+141)] = 0;
+	heap32[(r1+142)] = 0;
+	heap32[(r1+143)] = 0;
+	heap32[(r1+144)] = 0;
+	r2 = heapU8[r0+512];
+if(!(r2 !=0)) //_LBB579_13
+{
+	r2 = heap32[(r1+6)];
+	r3 = heap32[(r1+5)];
+	r2 = r2 >> 2;
+	r3 = r3 >> 2;
+	f0 = heapFloat[(r2+5)];
+	f1 = heapFloat[(r1+100)];
+	f2 = heapFloat[(r2+1)];
+	f3 = heapFloat[(r2+6)];
+	f4 = heapFloat[(r1+101)];
+	f5 = heapFloat[(r2+2)];
+	f6 = heapFloat[(r3+5)];
+	f7 = heapFloat[(r1+84)];
+	f8 = heapFloat[(r3+1)];
+	f9 = heapFloat[(r3+6)];
+	f10 = heapFloat[(r1+85)];
+	f11 = heapFloat[(r3+2)];
+	f12 = heapFloat[(r2+9)];
+	f13 = heapFloat[(r2+10)];
+	f14 = heapFloat[(r3+9)];
+	f15 = heapFloat[(r3+10)];
+	f0 = f0*f1;
+	f3 = f3*f4;
+	f16 = heapFloat[(r2+7)];
+	f17 = heapFloat[(r1+102)];
+	f18 = heapFloat[(r2+3)];
+	f6 = f6*f7;
+	f9 = f9*f10;
+	f19 = heapFloat[(r3+7)];
+	f20 = heapFloat[(r1+86)];
+	f21 = heapFloat[(r3+3)];
+	f2 = f2*f1;
+	f5 = f5*f4;
+	f8 = f8*f7;
+	f11 = f11*f10;
+	f22 = heapFloat[(r2+11)];
+	f23 = heapFloat[(r3+11)];
+	f1 = f12*f1;
+	f4 = f13*f4;
+	f7 = f14*f7;
+	f10 = f15*f10;
+	f0 = f0+f3;
+	f3 = f16*f17;
+	f6 = f6+f9;
+	f9 = f19*f20;
+	f2 = f2+f5;
+	f5 = f18*f17;
+	f8 = f8+f11;
+	f11 = f21*f20;
+	f1 = f1+f4;
+	f4 = f22*f17;
+	f7 = f7+f10;
+	f10 = f23*f20;
+	f0 = f0+f3;
+	f3 = heapFloat[(r2+14)];
+	f6 = f6+f9;
+	f9 = heapFloat[(r3+14)];
+	f2 = f2+f5;
+	f5 = heapFloat[(r2+13)];
+	f8 = f8+f11;
+	f11 = heapFloat[(r3+13)];
+	f0 = f0+f3;
+	f3 = f6+f9;
+	f2 = f2+f5;
+	f5 = f8+f11;
+	f1 = f1+f4;
+	f4 = heapFloat[(r2+15)];
+	f6 = f7+f10;
+	f7 = heapFloat[(r3+15)];
+	f8 = f0-f3;
+	f9 = f2-f5;
+	f1 = f1+f4;
+	f4 = f6+f7;
+	f6 = f1-f4;
+	f7 = f9*f9;
+	f10 = f8*f8;
+	f7 = f7+f10;
+	f10 = f6*f6;
+	f7 = f7+f10;
+	f10 =   1.1920928955078125e-007;
+	if(f7 >f10) //_LBB579_4
+{
+	heapFloat[(g0)] = f7;
+	f10 =                         1;
+	sqrtf(i7);
+	f11 = f10/f_g0;
+	r2 = sp + -176;
+	f7 = f9*f11;
+	f8 = f8*f11;
+	r3 = r2 >> 2;
+	heapFloat[(fp+-44)] = f7;
+	f6 = f6*f11;
+	heapFloat[(r3+1)] = f8;
+	r2 = (r2 + 8)|0;
+	heapFloat[(r3+2)] = f6;
+	heap32[(r3+3)] = 0;
+	f9 =                         0;
+	if(f6 <f9) //_LBB579_6
+{
+	f9 = -f6;
+}
+else{
+	f9 = f6;
+}
+	f11 =       0.70710676908493042;
+	if(f9 >f11) //_LBB579_9
+{
+	f7 = f8*f8;
+	f8 = f6*f6;
+	f7 = f7+f8;
+	heapFloat[(g0)] = f7;
+	sqrtf(i7);
+	heap32[(r3+4)] = 0;
+	f6 = heapFloat[(r3+2)];
+	f8 = f10/f_g0;
+	f6 = -f6;
+	f6 = f8*f6;
+	heapFloat[(r3+5)] = f6;
+	f9 = heapFloat[(r3+1)];
+	f9 = f9*f8;
+	f7 = f7*f8;
+	heapFloat[(r3+6)] = f9;
+	heapFloat[(r3+8)] = f7;
+	f7 = heapFloat[(fp+-44)];
+	f8 = -f7;
+	f8 = f9*f8;
+	f7 = f7*f6;
+	heapFloat[(r3+9)] = f8;
+	heapFloat[(r3+10)] = f7;
+__label__ = 10;
+}
+else{
+__label__ = 9;
+}
+}
+else{
+	r2 = sp + -176;
+	r3 = r2 >> 2;
+	heap32[(fp+-44)] = 1065353216;
+	heap32[(r3+1)] = 0;
+	r2 = (r2 + 8)|0;
+	f7 =                         1;
+	f8 =                         0;
+	heap32[(r3+2)] = 0;
+	heap32[(r3+3)] = 0;
+__label__ = 9;
+}
+if (__label__ == 9){
+	f6 = f7*f7;
+	f7 = f8*f8;
+	f6 = f6+f7;
+	r3 = sp + -176;
+	heapFloat[(g0)] = f6;
+	r3 = r3 >> 2;
+	sqrtf(i7);
+	f8 =                         1;
+	f9 = heapFloat[(r3+1)];
+	f7 = f8/f_g0;
+	f8 = -f9;
+	f8 = f7*f8;
+	heapFloat[(r3+4)] = f8;
+	f9 = heapFloat[(fp+-44)];
+	f9 = f9*f7;
+	heapFloat[(r3+5)] = f9;
+	r2 = r2 >> 2;
+	heap32[(r3+6)] = 0;
+	f10 = heapFloat[(r2)];
+	f11 = -f10;
+	f9 = f9*f11;
+	f8 = f10*f8;
+	heapFloat[(r3+8)] = f9;
+	f6 = f6*f7;
+	heapFloat[(r3+9)] = f8;
+	heapFloat[(r3+10)] = f6;
+}
+	r2 = (r0 + 36)|0;
+	r3 = 0;
+_16: while(true){
+	r4 = heap32[(r1+5)];
+	r5 = r4 >> 2;
+	r6 = sp + -128;
+	r7 = r6 >> 2;
+	heap32[(fp+-32)] = heap32[(r5+1)];
+	heap32[(r7+1)] = heap32[(r5+5)];
+	heap32[(r7+2)] = heap32[(r5+9)];
+	heap32[(r7+3)] = 0;
+	heap32[(r7+4)] = heap32[(r5+2)];
+	heap32[(r7+5)] = heap32[(r5+6)];
+	heap32[(r7+6)] = heap32[(r5+10)];
+	heap32[(r7+7)] = 0;
+	heap32[(r7+8)] = heap32[(r5+3)];
+	heap32[(r7+9)] = heap32[(r5+7)];
+	heap32[(r7+10)] = heap32[(r5+11)];
+	heap32[(r7+11)] = 0;
+	r7 = heap32[(r1+6)];
+	r8 = sp + -80;
+	r9 = r7 >> 2;
+	r10 = r8 >> 2;
+	heap32[(fp+-20)] = heap32[(r9+1)];
+	heap32[(r10+1)] = heap32[(r9+5)];
+	heap32[(r10+2)] = heap32[(r9+9)];
+	heap32[(r10+3)] = 0;
+	heap32[(r10+4)] = heap32[(r9+2)];
+	heap32[(r10+5)] = heap32[(r9+6)];
+	heap32[(r10+6)] = heap32[(r9+10)];
+	heap32[(r10+7)] = 0;
+	heap32[(r10+8)] = heap32[(r9+3)];
+	heap32[(r10+9)] = heap32[(r9+7)];
+	heap32[(r10+10)] = heap32[(r9+11)];
+	heap32[(r10+11)] = 0;
+	f6 = heapFloat[(r5+13)];
+	f7 = heapFloat[(r5+15)];
+	f8 = heapFloat[(r5+14)];
+	r10 = sp + -32;
+	f6 = f5-f6;
+	r11 = r10 >> 2;
+	f8 = f3-f8;
+	heapFloat[(fp+-8)] = f6;
+	f6 = f4-f7;
+	heapFloat[(r11+1)] = f8;
+	heapFloat[(r11+2)] = f6;
+	heap32[(r11+3)] = 0;
+	f6 = heapFloat[(r9+13)];
+	f7 = heapFloat[(r9+15)];
+	f8 = heapFloat[(r9+14)];
+	r11 = sp + -16;
+	f6 = f2-f6;
+	r12 = r11 >> 2;
+	f8 = f0-f8;
+	heapFloat[(fp+-4)] = f6;
+	f6 = f1-f7;
+	heapFloat[(r12+1)] = f8;
+	heapFloat[(r12+2)] = f6;
+	heap32[(r12+3)] = 0;
+	f6 = heapFloat[(r9+84)];
+	f7 = heapFloat[(r5+84)];
+	r5 = sp + -176;
+	r5 = (r5 + r3)|0;
+	r4 = (r4 + 388)|0;
+	r7 = (r7 + 388)|0;
+	heap32[(g0)] = r2;
+	heap32[(g0+1)] = r6;
+	heap32[(g0+2)] = r8;
+	heap32[(g0+3)] = r10;
+	heap32[(g0+4)] = r11;
+	heap32[(g0+5)] = r5;
+	heap32[(g0+6)] = r4;
+	heapFloat[(g0+7)] = f7;
+	heap32[(g0+8)] = r7;
+	heapFloat[(g0+9)] = f6;
+	r3 = (r3 + 16)|0;
+	r2 = (r2 + 84)|0;
+	_ZN15btJacobianEntryC2ERK11btMatrix3x3S2_RK9btVector3S5_S5_S5_fS5_f(i7);
+if(!(r3 !=48)) //_LBB579_12
+{
+break _16;
+}
+}
+}
+	r2 = heap32[(r1+6)];
+	r1 = heap32[(r1+5)];
+	r3 = (r1 + 4)|0;
+	r4 = (r2 + 4)|0;
+	r1 = (r1 + 256)|0;
+	r2 = (r2 + 256)|0;
+	heap32[(g0)] = r0;
+	heap32[(g0+1)] = r3;
+	heap32[(g0+2)] = r4;
+	heap32[(g0+3)] = r1;
+	heap32[(g0+4)] = r2;
+	_ZN21btConeTwistConstraint14calcAngleInfo2ERK11btTransformS2_RK11btMatrix3x3S5_(i7);
+}
+	return;
+}

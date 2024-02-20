@@ -1,0 +1,1 @@
+function InitializeGyroscope(frequency){JS_Gyroscope=new Gyroscope({frequency:frequency,referenceFrame:"device"});JS_Gyroscope.addEventListener("reading",JS_Gyroscope_eventHandler);JS_Gyroscope.addEventListener("error",function(e){warnOnce(e.error?e.error:e)});JS_Gyroscope.start()}

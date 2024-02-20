@@ -1,0 +1,1 @@
+function JH(n,t,e,i,r){for(var o=iE(t,i),s=0;s<t;s++)for(var a=0;a<e;a++)if(!(n[0][s][a]<0)){var l=n[0][s][a],c=n[2][s][a],u=Ku.tauRand(r);Y2(o,s,u,l,c),Y2(o,l,u,s,c),n[2][s][a]=0}return o}

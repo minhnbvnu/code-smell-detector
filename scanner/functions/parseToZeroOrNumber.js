@@ -1,0 +1,1 @@
+function parseToZeroOrNumber(value,toFloat){var num=toFloat?parseFloat(value):parseInt(value,10);return isNaN(num)?0:num}

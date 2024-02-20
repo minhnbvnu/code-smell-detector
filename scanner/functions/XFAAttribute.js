@@ -1,0 +1,1 @@
+function XFAAttribute(t,r,o){_classCallCheck(this,XFAAttribute);this[Ve]=t;this[de]=r;this[x]=o;this[C]=!1;this[Re]="attribute".concat(Ze++)}

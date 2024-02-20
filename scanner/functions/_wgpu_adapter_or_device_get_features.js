@@ -1,0 +1,1 @@
+function _wgpu_adapter_or_device_get_features(adapterOrDevice){let id=1,featuresBitMask=0;for(let feature of _wgpuFeatures){if(wgpu[adapterOrDevice]["features"].has(feature))featuresBitMask|=id;id*=2}return featuresBitMask}

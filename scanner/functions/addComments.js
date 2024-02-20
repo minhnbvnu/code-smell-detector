@@ -1,14 +1,17 @@
-function addComments(type, comments) {
-	  if (!comments) return;
-
-	  var node = this.node;
-	  if (!node) return;
-
-	  var key = type + "Comments";
-
-	  if (node[key]) {
-	    node[key] = node[key].concat(comments);
-	  } else {
-	    node[key] = comments;
-	  }
-	}
+function addComments(pr, positive, negative) {
+        var i;
+        for (i = 0; i < positive; i++) {
+          pr.comments.push({
+            user: { login: 'positive' + i },
+            body: ':+1:',
+            id: 1,
+          });
+        }
+        for (i = 0; i < negative; i++) {
+          pr.comments.push({
+            user: { login: 'negative' + i },
+            body: ':-1:',
+            id: 1,
+          });
+        }
+      }

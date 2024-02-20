@@ -1,0 +1,1 @@
+function getCountryFromPossiblyIncompleteInternationalPhoneNumber(i,o){var s=new va(null,o);return s.input(i),s.getCountry()}

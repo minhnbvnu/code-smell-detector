@@ -1,1 +1,1 @@
-function No(t,n,e,i){n=ko(t,n,e),t.v&&(t.b[n]=uu.localStorage.getItem(n)),D(t.a)&&(Ao(t,"local").ia(t.h),t.u||Ke()||!t.v||Oo(t)),t.a[n]||(t.a[n]=[]),t.a[n].push(i)}
+function no(t){return this.from(qi(),t)}

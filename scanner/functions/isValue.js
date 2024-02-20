@@ -1,3 +1,3 @@
 function isValue(a) {
-    return a !== null && a !== undefined;
-  }
+  return a !== null && a !== undefined;
+}

@@ -1,0 +1,1 @@
+function getCellValue(n){return cellEl(n).val;}

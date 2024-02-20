@@ -1,0 +1,1 @@
+function parse_cmnt(data,name,opts){return(name.substr(-4)===".bin"?parse_comments_bin:parse_comments_xml)(data,opts)}

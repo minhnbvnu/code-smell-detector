@@ -1,0 +1,1 @@
+function tokenCommentToEOF(stream){return stream.skipToEnd(),"comment";}

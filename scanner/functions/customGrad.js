@@ -1,3 +1,1 @@
-function customGrad(f) {
-	  return ENGINE.customGrad(f);
-	}
+function customGrad(e){return ENV.engine.customGrad(e)}

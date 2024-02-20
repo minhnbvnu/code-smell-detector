@@ -1,3 +1,3 @@
 function stubArray() {
-	  return [];
-	}
+      return [];
+    }

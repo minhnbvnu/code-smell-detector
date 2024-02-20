@@ -1,0 +1,1 @@
+function vg_load_file(file,callback){vg.log("LOAD FILE: "+file);var idx=file.indexOf(vg_load_fileProtocol);if(idx>=0)file=file.slice(vg_load_fileProtocol.length);require("fs").readFile(file,callback)}

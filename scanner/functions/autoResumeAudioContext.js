@@ -1,0 +1,1 @@
+function autoResumeAudioContext(ctx,elements){if(!elements){elements=[document,document.getElementById("canvas")]}["keydown","mousedown","touchstart"].forEach(function(event){elements.forEach(function(element){if(element){listenOnce(element,event,function(){if(ctx.state==="suspended")ctx.resume()})}})})}

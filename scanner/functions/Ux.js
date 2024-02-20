@@ -1,1 +1,1 @@
-function ux(){var a=0,b=0,c=0,d=0;b=sa(8);L[b>>2]=0;L[b+4>>2]=0;c=fa-16|0;fa=c;L[c+12>>2]=b;a=fa-16|0;d=L[c+12>>2];L[a+12>>2]=d;a=L[a+12>>2];L[a>>2]=1836;K[a+4>>1]=1;K[a+6>>1]=65535;L[d>>2]=1716;fa=c+16|0;return b|0}
+function Ux(t,e){if(typeof e!="function")throw new Error;return function(){Pn(this,t).ease=e}}

@@ -1,0 +1,1 @@
+function _wgpu_render_commands_mixin_draw_indexed_indirect(passEncoder,indirectBuffer,indirectOffset){wgpu[passEncoder]["drawIndexedIndirect"](wgpu[indirectBuffer],indirectOffset)}

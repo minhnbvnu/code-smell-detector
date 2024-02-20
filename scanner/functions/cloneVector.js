@@ -1,0 +1,1 @@
+function cloneVector(e){if(Array.isArray(e)){var t=e.slice(0);return Object.isFrozen(e)?Object.freeze(t):t}if("object"!==_typeof(e))return e;t=Object.assign(e.constructor(),e);return Object.isFrozen(e)?Object.freeze(t):t}

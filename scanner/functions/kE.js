@@ -1,0 +1,1 @@
+function kE(n,t,e){let i=n.rows,r=n.columns,o=[];for(let s=0;s<i;s++){let a=0,l=0,c=0;for(let u=0;u<r;u++)c=n.get(s,u)-e[s],a+=c,l+=c*c;t?o.push((l-a*a/r)/(r-1)):o.push((l-a*a/r)/r)}return o}

@@ -1,0 +1,22 @@
+function _32(e){
+if(e.touches.length!=1){
+return;
+}
+if(!_31){
+_31=true;
+dblClickTimer=setTimeout(function(){
+_31=false;
+},500);
+}else{
+clearTimeout(dblClickTimer);
+_31=false;
+_33(e,"dblclick");
+}
+_2f=setTimeout(function(){
+_33(e,"contextmenu",3);
+},1000);
+_33(e,"mousedown");
+if($.fn.draggable.isDragging||$.fn.resizable.isResizing){
+e.preventDefault();
+}
+}

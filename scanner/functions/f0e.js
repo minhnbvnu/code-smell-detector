@@ -1,0 +1,1 @@
+function f0e(e){return typeof e=="string"?e.replace(/\s*/g,""):""+e}

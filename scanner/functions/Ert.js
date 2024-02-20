@@ -1,0 +1,1 @@
+function Ert(n,t){let e=Qc(t,this.size,3);n.uniform3fv(this.addr,e)}

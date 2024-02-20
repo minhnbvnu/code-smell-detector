@@ -1,3 +1,1 @@
-function maybeStripScheme$1(key) {
-	  return key.startsWith(BrowserLocalStorage.URL_SCHEME) ? key.slice(BrowserLocalStorage.URL_SCHEME.length) : key;
-	}
+function maybeStripScheme$1(e){return e.startsWith(BrowserLocalStorage.URL_SCHEME)?e.slice(BrowserLocalStorage.URL_SCHEME.length):e}

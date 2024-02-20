@@ -1,0 +1,1 @@
+function Klass() { this.valueOf = 0; }

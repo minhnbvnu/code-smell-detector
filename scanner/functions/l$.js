@@ -1,0 +1,1 @@
+function l$(n,t){return lm(n,t,function(e,i){return e-i})}

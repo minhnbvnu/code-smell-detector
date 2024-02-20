@@ -1,0 +1,1 @@
+function dragDiv(ord,zi){var jq=$("<div />").mousedown(createDragger(ord)).css({cursor:ord+"-resize",position:"absolute",zIndex:zi});$hdl_holder.append(jq);return jq}

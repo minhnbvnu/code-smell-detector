@@ -1,0 +1,1 @@
+function fU(n,t=i=>0,e){return new Promise((i,r)=>{let o=0,s=()=>{if(n()){i();return}o++;let a=t(o);if(e!=null&&o>=e){r();return}setTimeout(s,a)};s()})}

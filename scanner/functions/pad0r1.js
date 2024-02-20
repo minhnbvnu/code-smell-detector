@@ -1,0 +1,1 @@
+function pad0r1(v,d){var t=""+Math.round(v);return t.length>=d?t:fill("0",d-t.length)+t}

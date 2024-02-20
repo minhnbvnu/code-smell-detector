@@ -1,0 +1,1 @@
+function _fromString(r){if(Buffer.isBuffer(r)){var e=new Uint8Array(r);return new Uint16Array(e.buffer)}for(var n=new Array(16),t=0,u=0;t<r.length;t+=2)n[u]=r.charCodeAt(t+1)<<8|r.charCodeAt(t),u++;return n}

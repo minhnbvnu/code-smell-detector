@@ -1,0 +1,3 @@
+function ErrorListener() {
+	return this;
+}

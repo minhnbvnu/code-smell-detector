@@ -1,7 +1,1 @@
-function zerosLike_(x) {
-	  var $x = convertToTensor(x, 'x', 'zerosLike');
-	  var inputs = {
-	    x: $x
-	  };
-	  return ENGINE.runKernel(ZerosLike, inputs);
-	}
+function zerosLike_(e){var t=convertToTensor(e,"x","zerosLike");return zeros(t.shape,t.dtype)}

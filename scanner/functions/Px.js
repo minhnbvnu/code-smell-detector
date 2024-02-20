@@ -1,0 +1,1 @@
+function Px(t,e){return function(){Pn(this,t).duration=+e.apply(this,arguments)}}

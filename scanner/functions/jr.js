@@ -1,1 +1,1 @@
-function Jr(t,n,e,i,r){this.u=t,this.f=n,this.b=e,this.c=i||null,this.h=r||null,this.m=this.o=this.v=null,this.g=[],this.l=this.a=null}
+function jr(t){var e;switch(t.length){case 3:case 4:return(e=Mr.exec(t))?{r:In(e[1]+e[1],16),g:In(e[2]+e[2],16),b:In(e[3]+e[3],16)}:null;case 6:case 7:return(e=Sr.exec(t))?{r:In(e[1],16),g:In(e[2],16),b:In(e[3],16)}:null;default:return null}}

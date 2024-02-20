@@ -1,3 +1,3 @@
-function getElement(entity) {
-    return entity.element;
-}
+function getElement() {
+    return el;
+  }

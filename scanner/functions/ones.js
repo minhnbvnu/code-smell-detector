@@ -1,3 +1,1 @@
-function Ones() {
-	    return _Initializer2.apply(this, arguments) || this;
-	  }
+function ones(e){var t=makeOnesTypedArray(sizeFromShape(e),"float32");return Tensor.make(e,{values:t})}

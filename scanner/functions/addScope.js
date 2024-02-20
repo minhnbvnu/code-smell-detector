@@ -1,0 +1,1 @@
+function addScope(i,o){for(var s=i.split(Ba),u="",C=0;C<s.length;C++)u+=o+" "+s[C].trim(),s[C+1]&&(u+=", ");return u}

@@ -1,0 +1,1 @@
+function getStoryId(children){if(1===react__WEBPACK_IMPORTED_MODULE_51__.Children.count(children)){var elt=children;if(elt.props)return elt.props.id}return null}

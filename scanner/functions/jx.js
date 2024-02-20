@@ -1,0 +1,1 @@
+function jx(t){return(t+"").trim().split(/^|\s+/).every(function(e){var r=e.indexOf(".");return r>=0&&(e=e.slice(0,r)),!e||e==="start"})}

@@ -1,0 +1,1 @@
+function k8e(e,t){let r=Ble(e,e.selection.main.head),n=r.brackets||wh.brackets;for(let i of n){let a=Mle(Tl(i,0));if(t==i)return a==i?A8e(e,i,n.indexOf(i+i+i)>-1,r):E8e(e,i,a,r.before||wh.before);if(t==a&&_le(e,e.selection.main.from))return P8e(e,i,a)}return null}

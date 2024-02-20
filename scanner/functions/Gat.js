@@ -1,0 +1,1 @@
+function Gat(n,t,e){var i,r,o;return function(){var s,a=e(this),l;return a==null?void this.removeAttributeNS(n.space,n.local):(s=this.getAttributeNS(n.space,n.local),l=a+"",s===l?null:s===i&&l===r?o:(r=l,o=t(i=s,a)))}}

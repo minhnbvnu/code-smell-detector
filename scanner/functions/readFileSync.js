@@ -1,0 +1,1 @@
+function readFileSync(data,opts){var o=opts||{};o.type="file";return readSync(data,o)}

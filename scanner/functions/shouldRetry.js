@@ -1,0 +1,1 @@
+function shouldRetry(e,t,r){var n,i=e.originalResponse?e.originalResponse.getStatus():0,o=!inStatusCategory(i,400)||409===i||423===i;return null!=r.retryDelays&&t<r.retryDelays.length&&null!=e.originalRequest&&o&&(n=!0,"undefined"!=typeof window&&"navigator"in window&&!1===window.navigator.onLine&&(n=!1),n)}

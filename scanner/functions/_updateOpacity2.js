@@ -1,0 +1,1 @@
+function _updateOpacity2(t){var r=this;t/=100;var a=this.opacity;this.parent.addCommands({cmd:function cmd(){r.opacity=t;_classPrivateMethodGet(r,D,_redraw2).call(r)},undo:function undo(){r.opacity=a;_classPrivateMethodGet(r,D,_redraw2).call(r)},mustExec:!0,type:i.AnnotationEditorParamsType.INK_OPACITY,overwriteIfSameType:!0,keepUndo:!0})}

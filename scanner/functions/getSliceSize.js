@@ -1,9 +1,1 @@
-function getSliceSize(uncroppedShape, crops, blockShape) {
-	  var sliceSize = uncroppedShape.slice(0, 1);
-
-	  for (var i = 0; i < blockShape; ++i) {
-	    sliceSize.push(uncroppedShape[i + 1] - crops[i][0] - crops[i][1]);
-	  }
-
-	  return sliceSize;
-	}
+function getSliceSize(e,t,n){for(var r=e.slice(0,1),o=0;o<n;++o)r.push(e[o+1]-t[o][0]-t[o][1]);return r}

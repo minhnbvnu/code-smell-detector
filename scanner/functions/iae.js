@@ -1,0 +1,1 @@
+function iae(e){return e>=56320&&e<57344}

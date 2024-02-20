@@ -1,0 +1,1 @@
+function Ike(e,t,r){for(let i=0;i<e.length;i++)if(e[i][t]===r)return i;return-1}

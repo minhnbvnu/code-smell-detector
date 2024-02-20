@@ -1,0 +1,1 @@
+function Var(name, next) { this.name = name; this.next = next }

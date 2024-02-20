@@ -1,0 +1,1 @@
+function cPe(e){return new Promise(t=>{process.nextTick(()=>{let r=aC();if(r.avg===0&&J1!=="0.00"){let i=parseFloat(J1);r={min:i,max:i,avg:i,cores:[]}}e&&e(r),t(r)})})}

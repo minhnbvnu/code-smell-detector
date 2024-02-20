@@ -1,0 +1,4 @@
+function checkPageForReact() {
+  syncSavedPreferences();
+  createPanelIfReactLoaded();
+}

@@ -1,0 +1,1 @@
+function y$1(a){if("object"===_typeof2(a)&&null!==a){var t=a.$$typeof;switch(t){case b$1:switch(a=a.type){case d$1:case f$1:case e$2:case l$1:case m$1:return a;default:switch(a=a&&a.$$typeof){case h$1:case k$1:case p$1:case n$2:case g$1:return a;default:return t}}case c$1:return t}}}

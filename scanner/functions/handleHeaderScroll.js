@@ -1,0 +1,1 @@
+function handleHeaderScroll(){handleElementScroll($headerScrollContainer[0])}

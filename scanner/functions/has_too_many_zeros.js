@@ -1,0 +1,1 @@
+function has_too_many_zeros(data,accessor,zero_count){return number_of_values(data,accessor,0)>=zero_count;}

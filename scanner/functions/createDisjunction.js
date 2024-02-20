@@ -1,7 +1,1 @@
-function createDisjunction(alternatives, from, to) {
-	      return addRaw({
-	        type: 'disjunction',
-	        body: alternatives,
-	        range: [from, to]
-	      });
-	    }
+function createDisjunction(i,o,s){return addRaw({type:"disjunction",body:i,range:[o,s]})}

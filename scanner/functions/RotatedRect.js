@@ -1,0 +1,1 @@
+function RotatedRect(){switch(arguments.length){case 0:{this.center={x:0,y:0};this.size={width:0,height:0};this.angle=0;break}case 3:{this.center=arguments[0];this.size=arguments[1];this.angle=arguments[2];break}default:{throw new Error("Invalid arguments")}}}

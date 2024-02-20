@@ -1,0 +1,1 @@
+function Garden(a,b){this.blooms=[];this.element=b;this.ctx=a}

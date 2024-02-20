@@ -1,0 +1,1 @@
+function handleNestedGlobalContainerRule(i,o){var s=i.options,u=i.style,C=u?u[ka]:null;if(C){for(var _ in C)o.addRule(_,C[_],_extends({},s,{selector:addScope(_,i.selector)}));delete u[ka]}}

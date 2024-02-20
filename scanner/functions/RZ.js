@@ -1,0 +1,1 @@
+function RZ(e){let[t,r]=O.useState(e),n=O.useRef(null),i=Lr(()=>{let l=n.current.next();if(l.done){n.current=null;return}t===l.value?i():r(l.value)});St(()=>{n.current&&i()});let a=Lr(l=>{n.current=l(t),i()});return[t,a]}

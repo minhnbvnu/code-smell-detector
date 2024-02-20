@@ -1,0 +1,1 @@
+function lTe(e,t,r){const n=this;return Or(e,i,"listItemIndent",n.containerState.size+1);function i(a){const l=n.events[n.events.length-1];return l&&l[1].type==="listItemIndent"&&l[2].sliceSerialize(l[1],!0).length===n.containerState.size?t(a):r(a)}}

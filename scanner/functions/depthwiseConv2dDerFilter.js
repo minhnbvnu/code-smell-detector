@@ -1,0 +1,1 @@
+function depthwiseConv2dDerFilter(e,t,n,r){var o=e;3===e.rank&&(o=e.as4D(1,e.shape[0],e.shape[1],e.shape[2]));var a=t;return 3===a.rank&&(a=t.as4D(1,t.shape[0],t.shape[1],t.shape[2])),ENV.engine.runKernel(function(e){return e.depthwiseConv2DDerFilter(o,a,r)},{x4D:o,dy4D:a})}

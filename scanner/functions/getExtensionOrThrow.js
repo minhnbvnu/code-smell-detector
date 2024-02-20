@@ -1,5 +1,1 @@
-function getExtensionOrThrow(gl, extensionName) {
-	  return throwIfNull(gl, function () {
-	    return gl.getExtension(extensionName);
-	  }, 'Extension "' + extensionName + '" not supported on this browser.');
-	}
+function getExtensionOrThrow(e,t){return throwIfNull(e,function(){return e.getExtension(t)},'Extension "'+t+'" not supported on this browser.')}

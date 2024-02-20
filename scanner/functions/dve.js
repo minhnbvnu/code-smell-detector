@@ -1,0 +1,1 @@
+function dve(){return"colors"in Fa.inspectOpts?Boolean(Fa.inspectOpts.colors):fve.isatty(process.stderr.fd)}

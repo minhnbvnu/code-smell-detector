@@ -1,0 +1,1 @@
+function Token(i,o,s,u){this.type=i,this.content=o,this.alias=s,this.length=0|(u||"").length}

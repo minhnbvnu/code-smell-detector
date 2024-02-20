@@ -1,36 +1,40 @@
 function _getTypeAnnotation() {
-	  var node = this.node;
+  var _inferer;
 
-	  if (!node) {
-	    if (this.key === "init" && this.parentPath.isVariableDeclarator()) {
-	      var declar = this.parentPath.parentPath;
-	      var declarParent = declar.parentPath;
+  const node = this.node;
 
-	      if (declar.key === "left" && declarParent.isForInStatement()) {
-	        return t.stringTypeAnnotation();
-	      }
+  if (!node) {
+    if (this.key === "init" && this.parentPath.isVariableDeclarator()) {
+      const declar = this.parentPath.parentPath;
+      const declarParent = declar.parentPath;
 
-	      if (declar.key === "left" && declarParent.isForOfStatement()) {
-	        return t.anyTypeAnnotation();
-	      }
+      if (declar.key === "left" && declarParent.isForInStatement()) {
+        return t.stringTypeAnnotation();
+      }
 
-	      return t.voidTypeAnnotation();
-	    } else {
-	      return;
-	    }
-	  }
+      if (declar.key === "left" && declarParent.isForOfStatement()) {
+        return t.anyTypeAnnotation();
+      }
 
-	  if (node.typeAnnotation) {
-	    return node.typeAnnotation;
-	  }
+      return t.voidTypeAnnotation();
+    } else {
+      return;
+    }
+  }
 
-	  var inferer = inferers[node.type];
-	  if (inferer) {
-	    return inferer.call(this, node);
-	  }
+  if (node.typeAnnotation) {
+    return node.typeAnnotation;
+  }
 
-	  inferer = inferers[this.parentPath.type];
-	  if (inferer && inferer.validParent) {
-	    return this.parentPath.getTypeAnnotation();
-	  }
-	}
+  let inferer = inferers[node.type];
+
+  if (inferer) {
+    return inferer.call(this, node);
+  }
+
+  inferer = inferers[this.parentPath.type];
+
+  if ((_inferer = inferer) == null ? void 0 : _inferer.validParent) {
+    return this.parentPath.getTypeAnnotation();
+  }
+}

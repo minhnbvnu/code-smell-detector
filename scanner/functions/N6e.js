@@ -1,0 +1,1 @@
+function N6e(e,t){for(let r=e;r&&r!=t;r=r.assignedSlot||r.parentNode)if(r.nodeType==1&&r.contentEditable=="false")return!0;return!1}

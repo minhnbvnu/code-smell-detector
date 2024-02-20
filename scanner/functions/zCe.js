@@ -1,0 +1,1 @@
+function zCe(e){return Math.floor(Math.LN2*this.DB/Math.log(e))}

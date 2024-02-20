@@ -1,0 +1,1 @@
+function getNormalizedTouchSettings(){var i=ie.props.touch;return Array.isArray(i)?i:[i,0]}

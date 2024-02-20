@@ -1,0 +1,1 @@
+function proxyMethods(){for(var e=arguments.length,t=new Array(e),r=0;r<e;r++)t[r]=arguments[r];t.map(function(e){Swipe.prototype[e]=function(){if(this.instance)return this.instance[e].apply(this.instance,arguments)}})}

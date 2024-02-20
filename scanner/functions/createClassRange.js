@@ -1,13 +1,1 @@
-function createClassRange(min, max, from, to) {
-	      // See 15.10.2.15:
-	      if (min.codePoint > max.codePoint) {
-	        bail('invalid range in character class', min.raw + '-' + max.raw, from, to);
-	      }
-
-	      return addRaw({
-	        type: 'characterClassRange',
-	        min: min,
-	        max: max,
-	        range: [from, to]
-	      });
-	    }
+function createClassRange(i,o,s,u){return i.codePoint>o.codePoint&&bail("invalid range in character class",i.raw+"-"+o.raw,s,u),addRaw({type:"characterClassRange",min:i,max:o,range:[s,u]})}

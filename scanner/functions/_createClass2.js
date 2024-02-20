@@ -1,0 +1,1 @@
+function _createClass2(Constructor,protoProps,staticProps){return protoProps&&__defineProperties(Constructor.prototype,protoProps),staticProps&&__defineProperties(Constructor,staticProps),Object.defineProperty(Constructor,"prototype",{writable:!1}),Constructor}

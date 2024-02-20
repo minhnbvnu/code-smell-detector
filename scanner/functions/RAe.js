@@ -1,0 +1,1 @@
+function RAe(e,t){var r=e[0],i=t.variables;if(typeof r!="string"||!t.variables)return e;for(var a in i)!Object.prototype.hasOwnProperty.call(i,a)||(r=r.replace("{"+a+"}",i[a]));return r=r.replace("{level}",t.level),e[0]=r,e}

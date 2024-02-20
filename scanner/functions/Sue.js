@@ -1,0 +1,1 @@
+function Sue(e,t,r,i){i=typeof r=="function"?r:i,r=typeof r=="function"?!1:r,NT(t,(a,n)=>{if(a)return i(a);if(n)return i(null);yue(e,t,(s,o)=>{if(s)return i(s);e=o.toDst,bue(o.toCwd,r,(u,l)=>{if(u)return i(u);let p=IT.dirname(t);NT(p,(c,f)=>{if(c)return i(c);if(f)return Wf.symlink(e,t,l,i);gue(p,d=>{if(d)return i(d);Wf.symlink(e,t,l,i)})})})})})}

@@ -1,0 +1,3 @@
+function isUntypedFunctionCall(funcType, apparentFuncType, numCallSignatures, numConstructSignatures) {
+                return isTypeAny(funcType) || isTypeAny(apparentFuncType) && !!(funcType.flags & 262144 /* TypeParameter */) || !numCallSignatures && !numConstructSignatures && !(apparentFuncType.flags & 1048576 /* Union */) && !(getReducedType(apparentFuncType).flags & 131072 /* Never */) && isTypeAssignableTo(funcType, globalFunctionType);
+            }

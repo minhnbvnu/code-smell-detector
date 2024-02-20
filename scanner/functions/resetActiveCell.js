@@ -1,0 +1,1 @@
+function resetActiveCell(){setActiveCellInternal(null,!1)}

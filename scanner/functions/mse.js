@@ -1,0 +1,1 @@
+function mse(e){try{e?zn.storage.setItem("debug",e):zn.storage.removeItem("debug")}catch{}}

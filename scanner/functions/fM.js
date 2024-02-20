@@ -1,0 +1,1 @@
+function fM(t,e,r){for(var n=-1,i=t.length,s=e.length,a={};++n<i;){var o=n<s?e[n]:void 0;r(a,t[n],o)}return a}

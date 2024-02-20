@@ -1,1 +1,1 @@
-function St(t,e){return t&&t.contentType||e&&e.type()||"application/octet-stream"}
+function st(){return this._locale}

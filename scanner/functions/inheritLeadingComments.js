@@ -1,3 +1,3 @@
 function inheritLeadingComments(child, parent) {
-	  _inheritComments("leadingComments", child, parent);
-	}
+  (0, _inherit.default)("leadingComments", child, parent);
+}

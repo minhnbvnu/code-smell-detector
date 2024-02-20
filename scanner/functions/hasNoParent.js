@@ -1,0 +1,1 @@
+function hasNoParent($) {return ($.memberOf == "")}

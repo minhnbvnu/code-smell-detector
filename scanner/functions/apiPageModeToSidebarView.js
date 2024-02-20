@@ -1,20 +1,19 @@
 function apiPageModeToSidebarView(mode) {
   switch (mode) {
     case "UseNone":
-      return SidebarView.NONE;
+      return _pdf_sidebar.SidebarView.NONE;
 
     case "UseThumbs":
-      return SidebarView.THUMBS;
+      return _pdf_sidebar.SidebarView.THUMBS;
 
     case "UseOutlines":
-      return SidebarView.OUTLINE;
+      return _pdf_sidebar.SidebarView.OUTLINE;
 
     case "UseAttachments":
-      return SidebarView.ATTACHMENTS;
+      return _pdf_sidebar.SidebarView.ATTACHMENTS;
 
     case "UseOC":
-      return SidebarView.LAYERS;
   }
 
-  return SidebarView.NONE;
+  return _pdf_sidebar.SidebarView.NONE;
 }

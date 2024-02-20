@@ -1,0 +1,1 @@
+function t_(t,e){var r=af(t+"");if(arguments.length<2){for(var n=ch(this.node()),i=-1,s=r.length;++i<s;)if(!n.contains(r[i]))return!1;return!0}return this.each((typeof e=="function"?J5:e?Z5:Q5)(r,e))}

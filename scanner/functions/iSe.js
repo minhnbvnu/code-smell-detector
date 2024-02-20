@@ -1,0 +1,1 @@
+function iSe(e){let t=e.dom.parentNode;if(!t)return;let r=t.appendChild(document.createElement("textarea"));r.style.cssText="position: fixed; left: -10000px; top: 10px",r.focus(),setTimeout(()=>{e.focus(),r.remove(),tle(e,r.value)},50)}

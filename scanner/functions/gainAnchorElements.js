@@ -1,0 +1,1 @@
+function gainAnchorElements(a,b){var c;for(var i=0;i<a.length;i++){for(var j=0;j<a[i].attributes.length;j++){c=a[i].attributes.item(j).name.replace(/-([a-z])/g,function(g){return g[1].toUpperCase()});b[c]=b[c]||[];b[c].push(a[i])}gainAnchorElements(a[i].children,b)}}

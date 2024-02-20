@@ -1,0 +1,1 @@
+function Tfe(e){return e.replace(/(.{2})(?=.)/g,"$1:")}

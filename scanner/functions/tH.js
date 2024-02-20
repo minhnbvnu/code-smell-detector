@@ -1,1 +1,1 @@
-function Th(a){a=a|0;var b=0;H[a>>2]=12620;b=H[a+36>>2];if(b){oa(b)}b=H[a+24>>2];if(b){oa(b)}oa(a)}
+function tH(n,t){return function(i,r,o){t.call(i.__templatizeOwner,i,r,o[r])}}

@@ -1,6 +1,9 @@
-function relocate(event) {
-  const data = event.target.dataset;
-  const view = map.getView();
-  view.setCenter(fromLonLat(data.center.split(',').map(Number)));
-  view.setZoom(Number(data.zoom));
-}
+function relocate() {
+        var touches = d3.touches(target);
+        scale0 = scale;
+        locations0 = {};
+        touches.forEach(function(t) {
+          locations0[t.identifier] = location(t);
+        });
+        return touches;
+      }

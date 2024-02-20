@@ -1,0 +1,1 @@
+function foldObject(i,o,s){return Object.keys(o).sort().reduce((function foldKey(i,u){return foldValue(i,o[u],u,s)}),i)}

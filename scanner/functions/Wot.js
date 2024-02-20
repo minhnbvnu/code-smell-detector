@@ -1,0 +1,1 @@
+function Wot(n,t){if(t=Got(n,t),t){let e=iF(t,n);ms(t,t.next),ms(e,e.next)}}

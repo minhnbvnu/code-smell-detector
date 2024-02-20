@@ -1,0 +1,1 @@
+function reEsc(str) { return str.replace(/[^\s\w]/g, "\\$&"); }

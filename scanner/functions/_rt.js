@@ -1,0 +1,1 @@
+function _rt(n,t,e){let i=this.cache,r=e.allocateTextureUnit();i[0]!==r&&(n.uniform1i(this.addr,r),i[0]=r),e.safeSetTextureCube(t||Xz,r)}

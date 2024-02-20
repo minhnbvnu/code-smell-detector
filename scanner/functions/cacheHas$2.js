@@ -1,0 +1,1 @@
+function cacheHas$2(cache,key){return cache.has(key)}

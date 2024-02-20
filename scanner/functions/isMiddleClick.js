@@ -1,0 +1,1 @@
+function isMiddleClick(event) { return _isButton(event, 1) }

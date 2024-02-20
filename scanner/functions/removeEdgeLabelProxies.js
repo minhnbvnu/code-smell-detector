@@ -1,0 +1,1 @@
+function removeEdgeLabelProxies(g){_.forEach(g.nodes(),function(v){var node=g.node(v);if(node.dummy==="edge-proxy"){g.edge(node.e).labelRank=node.rank;g.removeNode(v)}})}

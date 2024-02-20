@@ -1,0 +1,1 @@
+function find_t(t,r,a,i){if(r<0)return 0;if(r>1)return 1;for(var o,l,c,u,d=1;d<=i;d++)if(r<=a[d]){c=(d-1)/i;l=d/i;u=(r-(o=a[d-1]))/(a[d]-o)*(l-c)+c;break}return u}

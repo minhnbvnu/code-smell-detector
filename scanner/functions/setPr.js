@@ -1,0 +1,1 @@
+function setPr(dStr){ window.setPrimaryDisplay(UTF8ToString(dStr)); }

@@ -1,0 +1,3 @@
+function getDefaultData () {
+    return defaultdata
+}

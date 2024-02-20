@@ -1,0 +1,1 @@
+function CalendarSymbols(t){var o;_classCallCheck(this,CalendarSymbols);(o=r.call(this,h,"calendarSymbols",!0)).name="gregorian";o.dayNames=new l.XFAObjectArray(2);o.eraNames=null;o.meridiemNames=null;o.monthNames=new l.XFAObjectArray(2);return o}

@@ -1,0 +1,1 @@
+function binop(i,o){return new Z(i,{beforeExpr:!0,binop:o})}

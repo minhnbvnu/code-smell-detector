@@ -1,13 +1,1 @@
-function tile_(x, reps) {
-	  var $x = convertToTensor(x, 'x', 'tile', 'string_or_numeric');
-	  assert($x.rank === reps.length, function () {
-	    return "Error in transpose: rank of input " + $x.rank + " " + ("must match length of reps " + reps + ".");
-	  });
-	  var inputs = {
-	    x: $x
-	  };
-	  var attrs = {
-	    reps: reps
-	  };
-	  return ENGINE.runKernel(Tile, inputs, attrs);
-	}
+function tile_(e,t){var n=convertToTensor(e,"x","tile");assert(n.rank===t.length,"Error in transpose: rank of input "+n.rank+" must match length of reps "+t+".");return ENV.engine.runKernel(function(e){return e.tile(n,t)},{$x:n},function(e){return {$x:function(){var r=zerosLike(n);if(1===n.rank)for(var o=0;o<t[0];++o)r=r.add(e.slice([o*n.shape[0]],[n.shape[0]]));else if(2===n.rank)for(o=0;o<t[0];++o)for(var a=0;a<t[1];++a)r=r.add(e.slice([o*n.shape[0],a*n.shape[1]],[n.shape[0],n.shape[1]]));else if(3===n.rank)for(o=0;o<t[0];++o)for(a=0;a<t[1];++a)for(var i=0;i<t[2];++i)r=r.add(e.slice([o*n.shape[0],a*n.shape[1],i*n.shape[2]],[n.shape[0],n.shape[1],n.shape[2]]));else{if(4!==n.rank)throw new Error("Gradient for tile operation is not implemented for rank-"+n.rank+" tensors yet.");for(o=0;o<t[0];++o)for(a=0;a<t[1];++a)for(i=0;i<t[2];++i)for(var s=0;s<t[3];++s)r=r.add(e.slice([o*n.shape[0],a*n.shape[1],i*n.shape[2],s*n.shape[3]],[n.shape[0],n.shape[1],n.shape[2],n.shape[3]]));}return r}}})}

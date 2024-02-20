@@ -1,0 +1,3 @@
+function updateParameterDeclaration(node, modifiers, dotDotDotToken, name, questionToken, type, initializer) {
+                return node.modifiers !== modifiers || node.dotDotDotToken !== dotDotDotToken || node.name !== name || node.questionToken !== questionToken || node.type !== type || node.initializer !== initializer ? update(createParameterDeclaration(modifiers, dotDotDotToken, name, questionToken, type, initializer), node) : node;
+            }

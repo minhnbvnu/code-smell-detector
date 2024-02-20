@@ -1,0 +1,1 @@
+function hOe(e){return yre[e]}

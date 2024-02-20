@@ -8,13 +8,13 @@ function get_uris(text) {
 	}
 	// parse URLs, discarding anything that parses as a relative URL
 	const uris = [];
-	for (let i = 0; i < lines.length; i++) {
+	for (let i=0; i<lines.length; i++) {
 		// Relative URLs will throw when no base URL is passed to the URL constructor.
 		try {
 			const url = new URL(lines[i]);
 			uris.push(url.href);
-			// eslint-disable-next-line no-empty
-		} catch (e) { }
+		// eslint-disable-next-line no-empty
+		} catch(e) {}
 	}
 	return uris;
 }

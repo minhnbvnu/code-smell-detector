@@ -1,0 +1,1 @@
+function _JS_SystemInfo_GetBrowserVersionString(buffer,bufferSize){var browserVer=Module.SystemInfo.browserVersion;if(buffer)stringToUTF8(browserVer,buffer,bufferSize);return lengthBytesUTF8(browserVer)}

@@ -1,0 +1,1 @@
+function PEe(e){let t=IEe(),r=[e];for(t[e].distance=0;r.length;){let i=r.pop(),a=Object.keys(e4[i]);for(let n=a.length,s=0;s<n;s++){let o=a[s],u=t[o];u.distance===-1&&(u.distance=t[i].distance+1,u.parent=i,r.unshift(o))}}return t}

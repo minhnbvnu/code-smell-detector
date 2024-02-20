@@ -1,6 +1,5 @@
-function getExtension( type, name ){
-  return util.getMap( {
-    map: extensions,
-    keys: [ type, name ]
-  } );
-}
+function getExtension(name) {
+    return name === 'OES_texture_float_linear'
+      ? getOESTextureFloatLinear(this)
+      : oldGetExtension.call(this, name);
+  }

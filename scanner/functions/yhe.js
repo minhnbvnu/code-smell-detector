@@ -1,0 +1,1 @@
+function yhe(e,t){QZ(e,r=>ps(r,t))}

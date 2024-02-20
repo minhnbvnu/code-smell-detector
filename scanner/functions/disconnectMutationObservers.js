@@ -1,0 +1,1 @@
+function disconnectMutationObservers(){_supportMutationObserver&&_mutationObserversConnected&&(_mutationObserverHost.disconnect(),_mutationObserverContent.disconnect(),_mutationObserversConnected=!1)}

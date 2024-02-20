@@ -1,0 +1,1 @@
+function _glCompileShader(shader){GLctx.compileShader(GL.shaders[shader])}

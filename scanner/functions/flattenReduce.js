@@ -1,0 +1,1 @@
+function flattenReduce(memo, list) { return memo.concat(list); }

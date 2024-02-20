@@ -1,1 +1,1 @@
-function Oy(a){a=a|0;var b=0;b=fa-32|0;fa=b;L[b+28>>2]=a;if(!M[29624]){L[(fa-16|0)+12>>2]=29608;J[29624]=1}a=L[b+28>>2];ha[L[L[a>>2]+76>>2]](b+12|0,a);a=L[b+16>>2];L[7402]=L[b+12>>2];L[7403]=a;a=L[b+24>>2];L[7404]=L[b+20>>2];L[7405]=a;fa=b+32|0;return 29608}
+function oy(t){if(!Hn(t)||ps(t)!=US)return!1;var e=j1(t);if(e===null)return!0;var r=HS.call(e,"constructor")&&e.constructor;return typeof r=="function"&&r instanceof r&&ay.call(r)==GS}

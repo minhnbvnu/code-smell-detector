@@ -1,0 +1,3 @@
+function alwaysTrue() {
+        return true;
+    }

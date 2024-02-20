@@ -1,0 +1,1 @@
+function _JS_MobileKeyboard_GetTextSelection(outStart,outLength){if(!mobile_input){HEAP32[outStart>>2]=0;HEAP32[outLength>>2]=0;return}HEAP32[outStart>>2]=mobile_input.input.selectionStart;HEAP32[outLength>>2]=mobile_input.input.selectionEnd-mobile_input.input.selectionStart}

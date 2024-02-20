@@ -2,7 +2,7 @@ function binarySearchFirstItem(items, condition) {
   let minIndex = 0;
   let maxIndex = items.length - 1;
 
-  if (maxIndex < 0 || !condition(items[maxIndex])) {
+  if (items.length === 0 || !condition(items[maxIndex])) {
     return items.length;
   }
 

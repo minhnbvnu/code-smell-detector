@@ -1,0 +1,1 @@
+function HB(t){var e=t.findComponents({mainType:"legend"});e&&e.length&&t.filterSeries((function(t){for(var n=0;n<e.length;n++)if(!e[n].isSelected(t.name))return!1;return!0}))}

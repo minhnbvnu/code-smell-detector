@@ -4,16 +4,10 @@ function Runner(suite, delay) {
   this._abort = false;
   this._delay = delay;
   this.suite = suite;
-  this.started = false;
   this.total = suite.total();
   this.failures = 0;
-  this.on('test end', function(test) {
-    self.checkGlobals(test);
-  });
-  this.on('hook end', function(hook) {
-    self.checkGlobals(hook);
-  });
-  this._defaultGrep = /.*/;
-  this.grep(this._defaultGrep);
+  this.on('test end', function(test){ self.checkGlobals(test); });
+  this.on('hook end', function(hook){ self.checkGlobals(hook); });
+  this.grep(/.*/);
   this.globals(this.globalProps().concat(extraGlobals()));
 }

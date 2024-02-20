@@ -1,0 +1,1 @@
+function O(){le=!1,ae=G(),ionic.keyboard.isLandscape&&!se?se=ae:ionic.keyboard.isLandscape||oe||(oe=ae),ee&&ionic.trigger("resetScrollView",{target:ee},!0),ionic.keyboard.isOpen&&ionic.tap.isTextInput(ee)&&I()}

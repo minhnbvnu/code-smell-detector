@@ -1,1 +1,3 @@
-function getHeapMax(){return 2147483648}
+function getHeapMax() {
+          return 4294901760;
+        }

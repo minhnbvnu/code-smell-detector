@@ -1,0 +1,1 @@
+function reversePointsForReversedEdges(g){_.forEach(g.edges(),function(e){var edge=g.edge(e);if(edge.reversed){edge.points.reverse()}})}

@@ -1,0 +1,3 @@
+function Slugger() {
+      this.seen = {};
+    }

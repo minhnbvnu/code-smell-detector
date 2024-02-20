@@ -1,0 +1,1 @@
+function IconArrowRight_setPrototypeOf(o, p) { IconArrowRight_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return IconArrowRight_setPrototypeOf(o, p); }

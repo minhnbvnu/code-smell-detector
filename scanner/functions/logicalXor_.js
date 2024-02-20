@@ -1,7 +1,1 @@
-function logicalXor_(a, b) {
-	  var $a = convertToTensor(a, 'a', 'logicalXor', 'bool');
-	  var $b = convertToTensor(b, 'b', 'logicalXor', 'bool');
-	  assertAndGetBroadcastShape($a.shape, $b.shape); // x ^ y = (x | y) & ~(x & y)
-
-	  return logicalAnd(logicalOr(a, b), logicalNot(logicalAnd(a, b)));
-	}
+function logicalXor_(e,t){var n=convertToTensor(e,"a","logicalXor","bool"),r=convertToTensor(t,"b","logicalXor","bool");return assertAndGetBroadcastShape(n.shape,r.shape),logicalOr(e,t).logicalAnd(logicalAnd(e,t).logicalNot())}

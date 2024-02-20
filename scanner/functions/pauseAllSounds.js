@@ -1,0 +1,3 @@
+function pauseAllSounds() {
+    audioContext.suspend();
+}

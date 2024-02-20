@@ -1,14 +1,1 @@
-function splitRealAndImagArrays(complex) {
-	  var real = new Float32Array(complex.length / 2);
-	  var imag = new Float32Array(complex.length / 2);
-
-	  for (var i = 0; i < complex.length; i += 2) {
-	    real[i / 2] = complex[i];
-	    imag[i / 2] = complex[i + 1];
-	  }
-
-	  return {
-	    real: real,
-	    imag: imag
-	  };
-	}
+function splitRealAndImagArrays(e){for(var t=new Float32Array(e.length/2),n=new Float32Array(e.length/2),r=0;r<e.length;r+=2)t[r/2]=e[r],n[r/2]=e[r+1];return {real:t,imag:n}}

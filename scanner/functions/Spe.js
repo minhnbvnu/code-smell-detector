@@ -1,0 +1,1 @@
+function Spe(e){const t=ah(e);if(!(e instanceof t.HTMLElement)&&!(e instanceof t.SVGElement))return!1;let{display:r,visibility:n}=e.style,i=r!=="none"&&n!=="hidden"&&n!=="collapse";if(i){const{getComputedStyle:a}=e.ownerDocument.defaultView;let{display:l,visibility:s}=a(e);i=l!=="none"&&s!=="hidden"&&s!=="collapse"}return i}

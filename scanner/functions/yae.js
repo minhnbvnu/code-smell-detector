@@ -1,0 +1,1 @@
+function yae(e,t){let r=t.width/e.offsetWidth,n=t.height/e.offsetHeight;return(r>.995&&r<1.005||!isFinite(r)||Math.abs(t.width-e.offsetWidth)<1)&&(r=1),(n>.995&&n<1.005||!isFinite(n)||Math.abs(t.height-e.offsetHeight)<1)&&(n=1),{scaleX:r,scaleY:n}}

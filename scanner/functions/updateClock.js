@@ -1,0 +1,3 @@
+function updateClock() {
+  updateQrCode(getCurrentTimeString());
+}

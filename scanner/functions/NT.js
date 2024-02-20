@@ -1,0 +1,1 @@
+function NT(t){return t.length===1?t[0]:MT(t)}

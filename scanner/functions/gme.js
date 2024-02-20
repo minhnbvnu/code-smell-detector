@@ -1,0 +1,1 @@
+function gme(e){return`var(--spectrum-semantic-${e}-color-icon)`}

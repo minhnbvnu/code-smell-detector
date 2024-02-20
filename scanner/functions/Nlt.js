@@ -1,0 +1,1 @@
+function Nlt(n){return n<0?-Math.sqrt(-n):Math.sqrt(n)}

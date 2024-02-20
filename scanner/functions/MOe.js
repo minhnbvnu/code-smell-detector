@@ -1,0 +1,1 @@
+function MOe(e,t){if(ROe){let r=a0.nanoSeconds(),i=0;if(CC>0){let a=r-CC,n=e.cpu_usage.total_usage-t.cpu_usage.total_usage;a>0&&(i=100*n/a)}return CC=r,i}else{let r=0,i=e.cpu_usage.total_usage-t.cpu_usage.total_usage,a=e.system_cpu_usage-t.system_cpu_usage;return a>0&&i>0&&(r=i/a*e.cpu_usage.percpu_usage.length*100),r}}

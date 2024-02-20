@@ -1,0 +1,1 @@
+function drawAll(pathFunc){return function(g,scene,bounds){drawPathAll(pathFunc,g,scene,bounds)}}

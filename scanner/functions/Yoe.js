@@ -1,0 +1,1 @@
+function Yoe(e,t,r,i,a,n){let s=E0.join(r,t),o=E0.join(i,t);_0.checkPaths(s,o,"copy",(u,l)=>{if(u)return n(u);let{destStat:p}=l;h8(p,s,o,a,c=>c?n(c):Wk(e,r,i,a,n))})}

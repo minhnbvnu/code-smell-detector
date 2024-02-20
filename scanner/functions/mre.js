@@ -1,0 +1,1 @@
+function mre(){let e=Rt.getWmic()+" nic get MACAddress, name, NetEnabled, Speed, NetConnectionStatus, AdapterTypeId /value",t=Rt.getWmic()+" nicconfig get dhcpEnabled /value";try{let r=Mi(e,Rt.execOptsWin).split(/\n\s*\n/),i=Mi(t,Rt.execOptsWin).split(/\n\s*\n/);return XPe(r,i)}catch{return[]}}

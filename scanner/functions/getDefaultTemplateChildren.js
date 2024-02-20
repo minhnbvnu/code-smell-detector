@@ -1,0 +1,1 @@
+function getDefaultTemplateChildren(){return getChildren(ce)}

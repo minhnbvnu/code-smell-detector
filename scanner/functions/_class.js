@@ -1,7 +1,1 @@
-function _class() {
-	      var _this;
-
-	      _this = _Dataset.apply(this, arguments) || this;
-	      _this.size = size;
-	      return _this;
-	    }
+function _class(obj) { return Object.prototype.toString.call(obj); }

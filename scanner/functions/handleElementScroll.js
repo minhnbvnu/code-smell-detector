@@ -1,0 +1,1 @@
+function handleElementScroll(e){var o=e.scrollLeft;o!=$viewportScrollContainerX[0].scrollLeft&&($viewportScrollContainerX[0].scrollLeft=o)}

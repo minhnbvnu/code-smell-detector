@@ -1,0 +1,1 @@
+function _bytehash(t){var n=crypto.createHash("sha512").update(t).digest();return _bi2bytes(_bi(n),64).reverse()}

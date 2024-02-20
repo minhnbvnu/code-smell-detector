@@ -1,0 +1,3 @@
+function shouldUseExportsAgainByDefault() {
+	dialogs.confirm();
+}

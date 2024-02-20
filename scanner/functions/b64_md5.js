@@ -1,0 +1,1 @@
+function b64_md5(s)    { return rstr2b64(rstr_md5(str2rstr_utf8(s))); }

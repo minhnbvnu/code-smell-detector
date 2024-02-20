@@ -1,0 +1,1 @@
+function XAe(e,t){for(var r=t;;){var i=z1.parse(r),a=i.root,n=i.dir;if(rte.existsSync(z1.join(r,e)))return z1.resolve(z1.join(r,e));if(r===a)return null;r=n}}

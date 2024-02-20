@@ -1,0 +1,1 @@
+function setAnimationValue(el,prop,value){prop===_strScrollLeft||prop===_strScrollTop?el[prop]=value:setCSSVal(el,prop,value)}

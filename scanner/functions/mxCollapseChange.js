@@ -1,0 +1,1 @@
+function mxCollapseChange(a,b,c){this.model=a;this.cell=b;this.previous=this.collapsed=c}

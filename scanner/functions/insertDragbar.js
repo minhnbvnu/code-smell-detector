@@ -1,0 +1,1 @@
+function insertDragbar(ord){var s=options.handleSize,o=hhs,h=s,w=s,t=o,l=o;switch(ord){case"n":case"s":w=pct(100);break;case"e":case"w":h=pct(100);break}return dragDiv(ord,hdep++).width(w).height(h).css({top:px(-t+1),left:px(-l+1)})}

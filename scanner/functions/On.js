@@ -1,0 +1,1 @@
+function On(t,e){var i=t&&parseFloat(t.replace(",","."));return(isNaN(i)?0:i)*e}

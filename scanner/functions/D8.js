@@ -1,0 +1,1 @@
+function D8(t){return typeof t=="object"&&t!==null}

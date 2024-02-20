@@ -1,0 +1,1 @@
+function Fq(a){a=a|0;Ha()}

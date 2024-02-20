@@ -1,0 +1,1 @@
+function getRelativePath(i,o){var s=i.split(/[/\\]/),u=o.split(/[/\\]/);for(s.pop();s[0]===u[0];)s.shift(),u.shift();if(s.length)for(var C=s.length;C--;)s[C]="..";return s.concat(u).join("/")}

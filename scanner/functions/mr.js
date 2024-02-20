@@ -1,1 +1,1 @@
-function Mr(t){return Vr({error:{errors:[{message:t}],code:400,message:t}})}
+function mr(t,e){(null==e||e>t.length)&&(e=t.length);for(var i=0,n=new Array(e);i<e;i++)n[i]=t[i];return n}

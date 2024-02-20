@@ -1,3 +1,3 @@
 function ThisTypeAnnotation() {
-	  this.word("this");
-	}
+  this.word("this");
+}

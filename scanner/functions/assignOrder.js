@@ -1,0 +1,1 @@
+function assignOrder(g,layering){_.forEach(layering,function(layer){_.forEach(layer,function(v,i){g.node(v).order=i})})}

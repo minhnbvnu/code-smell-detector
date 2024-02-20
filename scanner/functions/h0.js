@@ -1,0 +1,1 @@
+function h0(t,e,r){r.out?r.in?t[r.out-r.in+e].enqueue(r):t[t.length-1].enqueue(r):t[0].enqueue(r)}

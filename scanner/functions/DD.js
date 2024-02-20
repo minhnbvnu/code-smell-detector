@@ -1,0 +1,1 @@
+function DD(t){var e=this.option,n=e.pieceList;if(e.hasSpecialVisual){var i=n[_D.findPieceIndex(t,n)];if(i&&i.visual)return i.visual[this.type]}}

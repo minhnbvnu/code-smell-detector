@@ -1,0 +1,1 @@
+function x$(t,e,n){const i=new Zz(bU);i.computed=t==="[";i.object=e;i.property=n;if(!i.computed)n.member=true;return i}

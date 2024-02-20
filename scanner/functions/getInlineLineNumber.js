@@ -1,0 +1,1 @@
+function getInlineLineNumber(lineNumber,inlineLineNumberStyle){return{type:"element",tagName:"span",properties:{key:"line-number--".concat(lineNumber),className:["comment","linenumber","react-syntax-highlighter-line-number"],style:inlineLineNumberStyle},children:[{type:"text",value:lineNumber}]}}

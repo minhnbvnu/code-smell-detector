@@ -1,0 +1,1 @@
+function Tw(e,r){if(!e)return 0;try{e=r.map(function a(r){if(!r.id)r.id=r.strRelID;return[r.name,e["!id"][r.id].Target,kw(e["!id"][r.id].Type)]})}catch(t){return null}return!e||e.length===0?null:e}

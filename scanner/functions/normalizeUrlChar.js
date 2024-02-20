@@ -1,0 +1,1 @@
+function normalizeUrlChar(ch){return NORM_URL_REPLACEMENTS[ch]}

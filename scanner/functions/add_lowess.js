@@ -1,0 +1,1 @@
+function add_lowess(args){var svg=d3.select($(args.target).find('svg').get(0));var lowess=args.lowess_line;var line=d3.svg.line().x(function(d){return args.scales.X(d.x)}).y(function(d){return args.scales.Y(d.y)}).interpolate(args.interpolate);svg.append('path').attr('d',line(lowess)).attr('class','lowess-line')}

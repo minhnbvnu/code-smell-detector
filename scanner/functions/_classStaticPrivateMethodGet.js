@@ -1,7 +1,1 @@
-function _classStaticPrivateMethodGet(receiver, classConstructor, method) {
-	  if (receiver !== classConstructor) {
-	    throw new TypeError("Private static access of wrong provenance");
-	  }
-
-	  return method;
-	}
+function _classStaticPrivateMethodGet(t,r,a){!function _classCheckPrivateStaticAccess(t,r){if(t!==r)throw new TypeError("Private static access of wrong provenance")}(t,r);return a}

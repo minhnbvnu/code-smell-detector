@@ -1,7 +1,7 @@
-function text(el, contents) {
+function text(el, str) {
   if (el.textContent) {
-    el.textContent = contents;
+    el.textContent = str;
   } else {
-    el.innerText = contents;
+    el.innerText = str;
   }
 }

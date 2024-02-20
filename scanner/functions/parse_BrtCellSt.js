@@ -1,0 +1,1 @@
+function parse_BrtCellSt(data,length){var cell=parse_XLSBCell(data);var value=parse_XLWideString(data);return[cell,value,"str"]}

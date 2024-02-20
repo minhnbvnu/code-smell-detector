@@ -1,0 +1,1 @@
+function Ist(n,t){for(var e=0,i=n.length,r;e<i;++e)if((r=n[e]).name===t)return r.value}

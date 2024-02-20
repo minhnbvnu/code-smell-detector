@@ -1,0 +1,1 @@
+function A8(e){for(Jr.buffer(e);e.length>1&&e[0]===0&&(e[1]&128)==0;)e=e.slice(1);if((e[0]&128)==128){var t=In.alloc(e.length+1);t[0]=0,e.copy(t,1),e=t}return e}

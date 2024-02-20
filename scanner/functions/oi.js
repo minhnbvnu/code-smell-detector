@@ -1,1 +1,1 @@
-function Oi(t){var n={},e=t[ah],i=t[sh];if(t=t[uh],!e||!t)throw Error("Invalid provider user info!");n[hh]=i||null,n[ch]=e,Ti(this,lh,t),Ti(this,fh,Si(n))}
+function oi(){return this._locale}

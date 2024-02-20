@@ -1,0 +1,1 @@
+function WX(n){let{inputs:t,attrs:e,backend:i}=n,{axis:r}=e,{x:o}=t;ut(o,"unique");let s=i.data.get(o.dataId).values,{outputValues:a,outputShape:l,indices:c}=S1(s,r,o.shape,o.dtype);return[i.makeTensorInfo(l,o.dtype,a),i.makeTensorInfo([c.length],"int32",c)]}

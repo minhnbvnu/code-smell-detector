@@ -1,0 +1,1 @@
+function _subMutate(e,t){return"object"===_typeof(e)&&null!==e?(Object.isFrozen(e)?_objectSub:_objectSubMutate)(e,t):e-=t}

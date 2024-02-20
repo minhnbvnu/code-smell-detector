@@ -1,0 +1,1 @@
+function vg_axisSubdivide(scale,ticks,m){subticks=[];if(m&&ticks.length>1){var extent=vg_axisScaleExtent(scale.domain()),subticks,i=-1,n=ticks.length,d=(ticks[1]-ticks[0])/++m,j,v;while(++i<n){for(j=m;--j>0;){if((v=+ticks[i]-j*d)>=extent[0]){subticks.push(v)}}}for(--i,j=0;++j<m&&(v=+ticks[i]+j*d)<extent[1];){subticks.push(v)}}return subticks}

@@ -1,0 +1,1 @@
+function extendDeep(){return FRAMEWORK.extend.apply(this,[!0].concat([].slice.call(arguments)))}

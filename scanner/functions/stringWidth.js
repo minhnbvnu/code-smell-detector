@@ -1,7 +1,5 @@
-function stringWidth(text, font) {
-    if (stringWidth.node) {
-        return stringWidth.node(text, font);
+function stringWidth(str) {
+      measure.innerHTML = "<pre><span>x</span></pre>";
+      measure.firstChild.firstChild.firstChild.nodeValue = str;
+      return measure.firstChild.firstChild.offsetWidth || 10;
     }
-    rulerCtx.font = font;
-    return rulerCtx.measureText(text).width;
-}

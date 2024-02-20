@@ -1,0 +1,1 @@
+function zS(t,e,n){return e*Math.sin(t)*(n?-1:1)}

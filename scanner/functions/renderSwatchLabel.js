@@ -1,0 +1,1 @@
+function renderSwatchLabel(color,index,colorDescription){return react__WEBPACK_IMPORTED_MODULE_51___default.a.createElement(SwatchLabel,{key:"".concat(color,"-").concat(index),title:color},react__WEBPACK_IMPORTED_MODULE_51___default.a.createElement("div",null,color,colorDescription&&react__WEBPACK_IMPORTED_MODULE_51___default.a.createElement("span",null,colorDescription)))}

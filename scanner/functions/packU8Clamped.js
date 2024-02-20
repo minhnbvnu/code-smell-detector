@@ -1,0 +1,1 @@
+function packU8Clamped(n){n=round(Number(n));return[n<0?0:n>255?255:n&255]}

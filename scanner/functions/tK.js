@@ -1,0 +1,1 @@
+function tK(){let e=p6();return tK=function(){return e},e}

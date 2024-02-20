@@ -1,13 +1,14 @@
-function show_resource_load_error_message(error) {
+function show_resource_load_error_message(error){
 	const { $window, $message } = showMessageBox({});
 	const firefox = navigator.userAgent.toLowerCase().indexOf("firefox") > -1;
 	// @TODO: copy & paste vs download & open, more specific guidance
 	if (error.code === "cross-origin-blob-uri") {
 		$message.html(`
 			<p>Can't load image from address starting with "blob:".</p>
-			${firefox ?
-				`<p>Try "Copy Image" instead of "Copy Image Location".</p>` :
-				`<p>Try "Copy image" instead of "Copy image address".</p>`
+			${
+				firefox ?
+					`<p>Try "Copy Image" instead of "Copy Image Location".</p>` :
+					`<p>Try "Copy image" instead of "Copy image address".</p>`
 			}
 		`);
 	} else if (error.code === "html-not-image") {
@@ -27,7 +28,7 @@ function show_resource_load_error_message(error) {
 				<p>Try copying and pasting an image instead of a URL.</p>
 			`);
 			if (error.fails) {
-				$("<ul>").append(error.fails.map(({ status, statusText, url }) =>
+				$("<ul>").append(error.fails.map(({status, statusText, url})=>
 					$("<li>").text(url).prepend($("<b>").text(`${status || ""} ${statusText || "Failed"} `))
 				)).appendTo($message);
 			}

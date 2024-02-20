@@ -1,0 +1,1 @@
+function Signing(t){var o;_classCallCheck(this,Signing);(o=r.call(this,_,"signing",!0)).id=t.id||"";o.type=(0,d.getStringOption)(t.type,["optional","required"]);o.use=t.use||"";o.usehref=t.usehref||"";o.certificate=new c.XFAObjectArray;return o}

@@ -1,3 +1,3 @@
 function isRestrictedWord(id) {
-	        return id === 'eval' || id === 'arguments';
-	    }
+            return id === 'eval' || id === 'arguments';
+        }

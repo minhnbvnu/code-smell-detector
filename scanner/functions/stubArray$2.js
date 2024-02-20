@@ -1,0 +1,1 @@
+function stubArray$2(){return[]}

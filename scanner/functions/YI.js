@@ -1,0 +1,1 @@
+function YI(t,e){return!!XI(t)[e]}

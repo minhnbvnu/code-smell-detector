@@ -1,4 +1,1 @@
-function updateRawStart(node, start) {
-	      node.range[0] = start;
-	      return addRaw(node);
-	    }
+function updateRawStart(i,o){return i.range[0]=o,addRaw(i)}

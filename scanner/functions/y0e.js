@@ -1,0 +1,1 @@
+function y0e(e,t,r,n,i){let a=!1,l,s=new Promise(u=>{let c=jy(),d=t.x-e.x,f=t.y-e.y;l=requestAnimationFrame(function h(p){Wy==null&&(Wy=p>1e12!=jy()>1e12),Wy&&(p=jy());let m=p-c;m>r?(i(t),u()):i(new gi(e.x+d*n(m/r),e.y+f*n(m/r)))!==!1&&!a&&(l=requestAnimationFrame(h))})});return s.cancel=function(){a=!0,cancelAnimationFrame(l)},s}

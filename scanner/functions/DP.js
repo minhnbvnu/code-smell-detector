@@ -1,0 +1,1 @@
+function DP(n,t,e){Gt(n,()=>n.bindTexture(n.TEXTURE_2D,t)),e.data instanceof Uint8Array?Gt(n,()=>n.texImage2D(n.TEXTURE_2D,0,n.RGBA,e.width,e.height,0,n.RGBA,n.UNSIGNED_BYTE,e.data)):Gt(n,()=>n.texImage2D(n.TEXTURE_2D,0,n.RGBA,n.RGBA,n.UNSIGNED_BYTE,e)),Gt(n,()=>n.bindTexture(n.TEXTURE_2D,null))}

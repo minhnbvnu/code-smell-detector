@@ -1,0 +1,1 @@
+function write_ws_bin(idx,opts,wb){var ba=buf_array();var s=wb.SheetNames[idx],ws=wb.Sheets[s]||{};var r=safe_decode_range(ws["!ref"]||"A1");write_record(ba,"BrtBeginSheet");write_record(ba,"BrtWsDim",write_BrtWsDim(r));write_CELLTABLE(ba,ws,idx,opts,wb);write_record(ba,"BrtEndSheet");return ba.end()}

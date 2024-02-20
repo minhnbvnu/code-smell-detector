@@ -1,0 +1,4 @@
+function checkJsxElement(node, _checkMode) {
+                checkNodeDeferred(node);
+                return getJsxElementTypeAt(node) || anyType;
+            }

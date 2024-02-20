@@ -1,0 +1,1 @@
+function getFlatIndex(e){return "\n    int getFlatIndex(ivec3 coords) {\n      return round("+dotify(["coords.x","coords.y","coords.z"],computeStrides(e).map(function(e){return e.toString()}).concat(["1."]))+");\n    }\n  "}

@@ -1,0 +1,1 @@
+function Pwe(e){let t=[[]];for(let r=0;r<e.length;r++)for(let n=0,i=t.length;n<i;n++)t.push(t[n].concat(e[r]));return t.sort((r,n)=>n.length-r.length)}

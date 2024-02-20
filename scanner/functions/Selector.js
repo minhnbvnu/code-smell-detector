@@ -1,0 +1,1 @@
+function Selector(e,t,n){SyntaxUnit.call(this,e.join(" "),t,n,Parser.SELECTOR_TYPE),this.parts=e,this.specificity=Specificity.calculate(this)}

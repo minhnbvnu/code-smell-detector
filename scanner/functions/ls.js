@@ -1,1 +1,1 @@
-function Ls(n,e){return{name:n||"",K:"a valid string",optional:!!e,M:t}}
+function ls(t){return(t>0)-(t<0)||+t}

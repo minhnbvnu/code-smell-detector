@@ -1,0 +1,2 @@
+function class_3() {
+                }

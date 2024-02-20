@@ -1,0 +1,1 @@
+function createPostscriptName(t){return t.replace(/[^\x21-\x7E]|[[\](){}<>/%]/g,"").slice(0,63)}

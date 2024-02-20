@@ -1,0 +1,1 @@
+function parseRegExpUnicodeEscapeSequence(){var i;return(i=matchReg(/^u([0-9a-fA-F]{4})/))?parseUnicodeSurrogatePairEscape(createEscaped("unicodeEscape",parseInt(i[1],16),i[1],2)):P&&(i=matchReg(/^u\{([0-9a-fA-F]+)\}/))?createEscaped("unicodeCodePointEscape",parseInt(i[1],16),i[1],4):void 0}

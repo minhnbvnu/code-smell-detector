@@ -1,0 +1,1 @@
+function _buildPath2D(t){for(var r=new Path2D,a=0,i=t.length;a<i;a++){var o=_slicedToArray(t[a],4),l=o[0],c=o[1],u=o[2],d=o[3];0===a&&r.moveTo.apply(r,_toConsumableArray(l));r.bezierCurveTo(c[0],c[1],u[0],u[1],d[0],d[1])}return r}

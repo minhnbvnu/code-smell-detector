@@ -1,20 +1,12 @@
-function Scope(path, parentScope) {
-	    (0, _classCallCheck3.default)(this, Scope);
-
-	    if (parentScope && parentScope.block === path.node) {
-	      return parentScope;
-	    }
-
-	    var cached = getCache(path, parentScope, this);
-	    if (cached) return cached;
-
-	    this.uid = uid++;
-	    this.parent = parentScope;
-	    this.hub = path.hub;
-
-	    this.parentBlock = path.parent;
-	    this.block = path.node;
-	    this.path = path;
-
-	    this.labels = new _map2.default();
-	  }
+function Scope() {
+      this.$id = nextUid();
+      this.$$phase = this.$parent = this.$$watchers =
+                     this.$$nextSibling = this.$$prevSibling =
+                     this.$$childHead = this.$$childTail = null;
+      this.$root = this;
+      this.$$destroyed = false;
+      this.$$listeners = {};
+      this.$$listenerCount = {};
+      this.$$watchersCount = 0;
+      this.$$isolateBindings = null;
+    }

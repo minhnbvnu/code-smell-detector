@@ -1,0 +1,1 @@
+function JS_DefineAccelerometerMultiplier(){var g=9.80665;JS_Accelerometer_multiplier=/(iPhone|iPad|Macintosh)/i.test(navigator.userAgent)?1/g:-1/g}

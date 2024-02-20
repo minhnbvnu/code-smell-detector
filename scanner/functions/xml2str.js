@@ -1,0 +1,1 @@
+function xml2str(str) { return serializer.serializeToString(str); }

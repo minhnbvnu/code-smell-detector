@@ -1,0 +1,1 @@
+function VP(n,t,e){let i=new Float32Array(t*e*4);return Gt(n,()=>n.readPixels(0,0,e,t,n.RGBA,n.FLOAT,i)),i}

@@ -1,0 +1,1 @@
+function nT(t,e){for(var n=t.firstChild;n;){if(1===n.nodeType&&"stop"===n.nodeName.toLocaleLowerCase()){var i=n.getAttribute("offset"),r=void 0;r=i&&i.indexOf("%")>0?parseInt(i,10)/100:i?parseFloat(i):0;var o={};dT(n,o,o);var a=o.stopColor||n.getAttribute("stop-color")||"#000000";e.colorStops.push({offset:r,color:a})}n=n.nextSibling}}

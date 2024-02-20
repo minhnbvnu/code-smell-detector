@@ -1,0 +1,1 @@
+function _emscripten_longjmp(env,value){_longjmp(env,value)}

@@ -1,0 +1,1 @@
+function C4(b,d,e){b=b|0;d=d|0;e=e|0;var f=0;if(!b){b=c[e>>2]|0;if(!b)b=0;else f=3}else f=3;do if((f|0)==3){b=b+(k4(b,d)|0)|0;if(!(a[b>>0]|0)){c[e>>2]=0;b=0;break}d=b+(z4(b,d)|0)|0;c[e>>2]=d;if(!(a[d>>0]|0)){c[e>>2]=0;break}else{c[e>>2]=d+1;a[d>>0]=0;break}}while(0);return b|0}

@@ -1,0 +1,1 @@
+function Unzip(e){return this instanceof Unzip?void Zlib.call(this,e,binding.UNZIP):new Unzip(e)}

@@ -1,0 +1,1 @@
+function createHandles(li){for(i in li){handle[li[i]]=insertHandle(li[i])}}

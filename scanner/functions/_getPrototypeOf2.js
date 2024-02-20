@@ -1,0 +1,1 @@
+function _getPrototypeOf2(o){return _getPrototypeOf2=Object.setPrototypeOf?Object.getPrototypeOf:function _getPrototypeOf(o){return o.__proto__||Object.getPrototypeOf(o)},_getPrototypeOf2(o)}

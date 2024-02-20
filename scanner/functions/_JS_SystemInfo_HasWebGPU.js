@@ -1,0 +1,1 @@
+function _JS_SystemInfo_HasWebGPU(){return Module.SystemInfo.hasWebGPU}

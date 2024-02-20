@@ -1,0 +1,1 @@
+function Vot(n,t,e){let i=n;do{let r=i.prev,o=i.next.next;!Cv(r,o)&&nF(r,i,i.next,o)&&sd(r,o)&&sd(o,r)&&(t.push(r.i/e),t.push(i.i/e),t.push(o.i/e),ad(i),ad(i.next),i=n=o),i=i.next}while(i!==n);return ms(i)}

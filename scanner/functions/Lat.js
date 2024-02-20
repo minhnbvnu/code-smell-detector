@@ -1,0 +1,1 @@
+function Lat(){for(var n,t=Hv,e,i=1/0;t;)t._call?(i>t._time&&(i=t._time),n=t,t=t._next):(e=t._next,t._next=null,t=n?n._next=e:Hv=e);Id=n,t3(i)}

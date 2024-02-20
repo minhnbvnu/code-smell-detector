@@ -1,24 +1,27 @@
-function shallowEqual(actual, expected) {
-	  var keys = (0, _keys2.default)(expected);
+function shallowEqual(objA, objB) {
+  if (objA === objB) {
+    return true;
+  }
 
-	  for (var _iterator3 = keys, _isArray3 = Array.isArray(_iterator3), _i3 = 0, _iterator3 = _isArray3 ? _iterator3 : (0, _getIterator3.default)(_iterator3);;) {
-	    var _ref3;
+  if (__WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_typeof___default()(objA) !== 'object' || objA === null || __WEBPACK_IMPORTED_MODULE_0__babel_runtime_helpers_typeof___default()(objB) !== 'object' || objB === null) {
+    return false;
+  }
 
-	    if (_isArray3) {
-	      if (_i3 >= _iterator3.length) break;
-	      _ref3 = _iterator3[_i3++];
-	    } else {
-	      _i3 = _iterator3.next();
-	      if (_i3.done) break;
-	      _ref3 = _i3.value;
-	    }
+  var keysA = Object.keys(objA);
+  var keysB = Object.keys(objB);
 
-	    var key = _ref3;
+  if (keysA.length !== keysB.length) {
+    return false;
+  } // Test for A's keys different from B.
 
-	    if (actual[key] !== expected[key]) {
-	      return false;
-	    }
-	  }
 
-	  return true;
-	}
+  var bHasOwnProperty = Object.prototype.hasOwnProperty.bind(objB);
+
+  for (var i = 0; i < keysA.length; i++) {
+    if (!bHasOwnProperty(keysA[i]) || objA[keysA[i]] !== objB[keysA[i]]) {
+      return false;
+    }
+  }
+
+  return true;
+}

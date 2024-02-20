@@ -1,0 +1,1 @@
+function mxCellStatePreview(a){this.deltas=new mxDictionary;this.graph=a}

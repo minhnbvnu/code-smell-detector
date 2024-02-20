@@ -1,0 +1,1 @@
+function differenceIsBiggerThanOne(valOne,valTwo){var absValOne=abs(valOne),absValTwo=abs(valTwo);return!(absValOne===absValTwo||absValOne+1===absValTwo||absValOne-1===absValTwo)}

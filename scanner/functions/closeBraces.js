@@ -1,0 +1,1 @@
+function closeBraces(i,o){for(var s=arguments.length>2&&void 0!==arguments[2]?arguments[2]:"x",u=arguments.length>3&&void 0!==arguments[3]?arguments[3]:" ",C=i.length,_=count_occurences("(",i),w=count_occurences(")",i),P=_-w;P>0&&C<o.length;)i+=o[C].replace(s,u),")"===o[C]&&P--,C++;return i}

@@ -1,0 +1,1 @@
+function CFFFDSelect(t,r){_classCallCheck(this,CFFFDSelect);this.format=t;this.fdSelect=r}

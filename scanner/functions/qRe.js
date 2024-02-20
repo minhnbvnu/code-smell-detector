@@ -1,0 +1,1 @@
+function qRe(){return"/"}

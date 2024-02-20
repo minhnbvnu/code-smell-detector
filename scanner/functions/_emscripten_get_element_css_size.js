@@ -1,0 +1,1 @@
+function _emscripten_get_element_css_size(target,width,height){target=findEventTarget(target);if(!target)return-4;var rect=getBoundingClientRect(target);HEAPF64[width>>3]=rect.width;HEAPF64[height>>3]=rect.height;return 0}

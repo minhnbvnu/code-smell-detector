@@ -1,0 +1,1 @@
+function filterComponentsByExactName(i,o){return i.filter((function(i){return i.name===o}))}

@@ -1,0 +1,3 @@
+function swipeLeft() {
+  nextStep();
+}

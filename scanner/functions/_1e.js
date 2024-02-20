@@ -1,0 +1,1 @@
+function _1e(e){var t=o0({},e);return Q_.default.createElement("svg",o0({viewBox:"0 0 36 36"},t,t),Q_.default.createElement("path",{fillRule:"evenodd",d:"M29,16H20V7a1,1,0,0,0-1-1H17a1,1,0,0,0-1,1v9H7a1,1,0,0,0-1,1v2a1,1,0,0,0,1,1h9v9a1,1,0,0,0,1,1h2a1,1,0,0,0,1-1V20h9a1,1,0,0,0,1-1V17A1,1,0,0,0,29,16Z"}))}

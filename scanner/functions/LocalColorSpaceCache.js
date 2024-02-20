@@ -1,0 +1,1 @@
+function LocalColorSpaceCache(){_classCallCheck(this,LocalColorSpaceCache);return r.apply(this,arguments)}

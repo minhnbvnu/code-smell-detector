@@ -1,0 +1,1 @@
+function _emscripten_glShaderSource(shader,count,string,length){var source=GL.getSource(shader,count,string,length);GLctx.shaderSource(GL.shaders[shader],source)}

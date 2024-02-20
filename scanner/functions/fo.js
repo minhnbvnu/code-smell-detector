@@ -1,0 +1,1 @@
+function fo(t,e){return(t%e+e)%e}

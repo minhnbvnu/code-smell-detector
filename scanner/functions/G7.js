@@ -1,0 +1,1 @@
+function G7(a){a=a|0;S(13)}

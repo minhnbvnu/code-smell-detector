@@ -1,0 +1,1 @@
+function B3(t,e,r){let n=!0;for(;n;)n=!1,r.forEach(function(i){const s="^\\s*"+i+"\\s*$",a=new RegExp(s);t[0].match(a)&&(e[i]=!0,t.shift(1),n=!0)})}

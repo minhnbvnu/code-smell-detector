@@ -1,0 +1,1 @@
+function MonthNames(t){var o;_classCallCheck(this,MonthNames);(o=r.call(this,h,"monthNames",!0)).abbr=(0,u.getInteger)({data:t.abbr,defaultValue:0,validate:function validate(t){return 1===t}});o.month=new l.XFAObjectArray(12);return o}

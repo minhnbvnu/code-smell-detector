@@ -1,4 +1,4 @@
-function replace_colors_with_swatch(ctx, swatch, x_offset_from_global_canvas = 0, y_offset_from_global_canvas = 0) {
+function replace_colors_with_swatch(ctx, swatch, x_offset_from_global_canvas=0, y_offset_from_global_canvas=0){
 	// USAGE NOTE: Context MUST be untranslated! (for the rectangle to cover the exact area of the canvas, and presumably for the pattern alignment as well)
 	// This function is mainly for patterns support (for black & white mode) but naturally handles solid colors as well.
 	ctx.globalCompositeOperation = "source-in";

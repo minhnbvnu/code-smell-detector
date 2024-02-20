@@ -1,0 +1,1 @@
+function getOwnPropertyDescriptor(it,key){var D=getDesc(it=toObject(it),key);if(D&&has(AllSymbols,key)&&!(has(it,HIDDEN)&&it[HIDDEN][key]))D.enumerable=true;return D}

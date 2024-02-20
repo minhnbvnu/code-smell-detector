@@ -1,21 +1,21 @@
 function toExpression(node) {
-	  if (t.isExpressionStatement(node)) {
-	    node = node.expression;
-	  }
+  if ((0, _generated.isExpressionStatement)(node)) {
+    node = node.expression;
+  }
 
-	  if (t.isExpression(node)) {
-	    return node;
-	  }
+  if ((0, _generated.isExpression)(node)) {
+    return node;
+  }
 
-	  if (t.isClass(node)) {
-	    node.type = "ClassExpression";
-	  } else if (t.isFunction(node)) {
-	    node.type = "FunctionExpression";
-	  }
+  if ((0, _generated.isClass)(node)) {
+    node.type = "ClassExpression";
+  } else if ((0, _generated.isFunction)(node)) {
+    node.type = "FunctionExpression";
+  }
 
-	  if (!t.isExpression(node)) {
-	    throw new Error("cannot turn " + node.type + " to an expression");
-	  }
+  if (!(0, _generated.isExpression)(node)) {
+    throw new Error(`cannot turn ${node.type} to an expression`);
+  }
 
-	  return node;
-	}
+  return node;
+}

@@ -1,0 +1,3 @@
+function getGraphReady() {
+    return isGraphReady;
+  }

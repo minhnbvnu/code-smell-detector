@@ -1,0 +1,1 @@
+function _emscripten_glUniform3f(location,v0,v1,v2){GLctx.uniform3f(webglGetUniformLocation(location),v0,v1,v2)}

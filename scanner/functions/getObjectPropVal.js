@@ -1,0 +1,1 @@
+function getObjectPropVal(obj,path){for(var val,splits=path.split(_strDot),i=0;i<splits.length;i++){if(!obj[LEXICON.hOP](splits[i]))return;val=obj[splits[i]],i<splits.length&&type(val)==TYPES.o&&(obj=val)}return val}

@@ -1,1 +1,1 @@
-function Ox(a,b){a=a|0;b=b|0;var c=0;c=fa-16|0;fa=c;L[c+12>>2]=a;L[c+8>>2]=b;a=oa(200);Pf(a,L[c+12>>2],L[c+8>>2]);fa=c+16|0;return a|0}
+function ox(t){return!(t.ctrlKey&&"wheel"!==t.type||t.button)}

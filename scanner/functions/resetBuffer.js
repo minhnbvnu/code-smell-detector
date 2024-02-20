@@ -1,0 +1,3 @@
+function resetBuffer() {
+            inputBuffer = [];
+        }

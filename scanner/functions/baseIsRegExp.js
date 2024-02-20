@@ -1,3 +1,3 @@
 function baseIsRegExp(value) {
-	  return isObjectLike(value) && baseGetTag(value) == regexpTag;
-	}
+      return isObjectLike(value) && baseGetTag(value) == regexpTag;
+    }

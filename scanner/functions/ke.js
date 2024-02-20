@@ -1,0 +1,1 @@
+function ke(t,e,i,n,o){var r,s,a=1+7*(e-1)+(7+i-n)%7+we(t,n,o);return a<=0?s=ve(r=t-1)+a:a>ve(t)?(r=t+1,s=a-ve(t)):(r=t,s=a),{year:r,dayOfYear:s}}

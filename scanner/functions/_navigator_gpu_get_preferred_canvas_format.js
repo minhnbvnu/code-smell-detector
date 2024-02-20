@@ -1,0 +1,1 @@
+function _navigator_gpu_get_preferred_canvas_format(){return GPUTextureAndVertexFormats.indexOf(navigator["gpu"]["getPreferredCanvasFormat"]())}

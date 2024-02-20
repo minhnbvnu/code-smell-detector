@@ -1,0 +1,1 @@
+function woRangeBand(i) { return (i === 0) ? col1Width : _wo.rangeBand() }

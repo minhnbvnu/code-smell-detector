@@ -1,0 +1,1 @@
+function removeUndefinedProps(i){return Object.keys(i).reduce((function(o,s){return void 0!==i[s]&&(o[s]=i[s]),o}),{})}

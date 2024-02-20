@@ -1,0 +1,1 @@
+function sL(t){var e=t._covers,n=e.length;return E(e,(function(e){t.group.remove(e)}),t),e.length=0,!!n}

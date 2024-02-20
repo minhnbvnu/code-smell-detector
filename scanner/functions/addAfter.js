@@ -1,0 +1,1 @@
+function addAfter(i,o,s){var u=o.next,C={value:s,prev:o,next:u};return o.next=C,u.prev=C,i.length++,C}

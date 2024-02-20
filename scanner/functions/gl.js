@@ -1,1 +1,1 @@
-function Gl(a,b,c,d,e){if(Hl(a,30024,b,c,d,e)){a=1}else{a=Bg(a,30024,b,c,d,e,0)}return a}
+function gl(t){for(var e=1;e<arguments.length;e++){var i,n=null!=arguments[e]?arguments[e]:{};if(e%2)Cn(i=vl(Object(n),!0)).call(i,(function(e){on(t,e,n[e])}));else if(yt)ut(t,yt(n));else{var o;Cn(o=vl(Object(n))).call(o,(function(e){X(t,e,kt(n,e))}))}}return t}

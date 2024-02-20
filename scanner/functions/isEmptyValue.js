@@ -1,0 +1,1 @@
+function isEmptyValue(i){return null==i}

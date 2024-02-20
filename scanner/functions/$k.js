@@ -1,1 +1,1 @@
-function $k(a){var b=0,c=0;b=fa-16|0;fa=b;L[b+8>>2]=a;a=L[b+8>>2];L[b+12>>2]=a;c=a+48|0;while(1){L[(fa-16|0)+12>>2]=a;a=a+16|0;if((c|0)!=(a|0)){continue}break}fa=b+16|0}
+function $k(a,b){a=a|0;b=b|0;var c=0,d=0,e=0;c=f[a+16>>2]|0;if(((f[a+20>>2]|0)-c>>2|0)<=(b|0)){d=0;return d|0}e=f[c+(b<<2)>>2]|0;if((e|0)<0){d=0;return d|0}b=f[(f[a+36>>2]|0)+(e<<2)>>2]|0;e=f[b+32>>2]|0;if(e|0){d=e;return d|0}d=f[b+8>>2]|0;return d|0}

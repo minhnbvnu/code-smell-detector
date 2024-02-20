@@ -1,0 +1,1 @@
+function zRe(e){up(e);let t=e.length,r=-1,n=0,i=-1,a=0,l;for(;t--;){const s=e.codePointAt(t);if(s===47){if(l){n=t+1;break}continue}r<0&&(l=!0,r=t+1),s===46?i<0?i=t:a!==1&&(a=1):i>-1&&(a=-1)}return i<0||r<0||a===0||a===1&&i===r-1&&i===n+1?"":e.slice(i,r)}

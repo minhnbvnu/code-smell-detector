@@ -1,0 +1,1 @@
+function _JS_WebRequest_GetResponseHeaders(request,buffer,bufferSize){var headers=wr.requestInstances[request].getAllResponseHeaders();if(buffer)stringToUTF8(headers,buffer,bufferSize);return lengthBytesUTF8(headers)}

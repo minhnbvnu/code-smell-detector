@@ -1,0 +1,1 @@
+function getOwnPropertySymbols(it){var names=getNames(toObject(it)),result=[],i=0,key;while(names.length>i)if(has(AllSymbols,key=names[i++]))result.push(AllSymbols[key]);return result}

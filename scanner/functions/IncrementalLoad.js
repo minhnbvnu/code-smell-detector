@@ -1,0 +1,1 @@
+function IncrementalLoad(t){_classCallCheck(this,IncrementalLoad);return r.call(this,d,"incrementalLoad",["none","forwardOnly"])}

@@ -1,0 +1,1 @@
+function iye({children:e,...t}){let{rowGroupProps:r}=Wne();return S.createElement("div",{...r,...t,className:z(Ne(me),"spectrum-Table-head")},e)}

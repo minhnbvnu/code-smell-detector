@@ -1,0 +1,1 @@
+function cL(){try{return new a.ActiveXObject("Microsoft.XMLHTTP")}catch(b){}}

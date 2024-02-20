@@ -1,0 +1,1 @@
+function RU(n,t,e){if(t!=="float32")return!1;for(let i=0;i<n.length;i++){let r=n[i];if(isNaN(r)||!isFinite(r))return console.warn(`Found ${r} in the result of '${e}'`),!0}return!1}

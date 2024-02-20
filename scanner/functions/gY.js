@@ -1,0 +1,1 @@
+function gY(t,e){wa(e)||t.attr("aria-roledescription",e)}

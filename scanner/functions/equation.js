@@ -1,0 +1,16 @@
+function equation(cL, eq, num, denom) {
+      var t = cL.append('text').attr('class', 'symbols')
+      t.append('tspan').text(eq)
+      t.append('tspan').text(' = ').attr('x', 70).attr('y', 0)
+      var t = cL.append('text').attr('class', 'values')
+        .attr('transform', 'translate(45,0)')
+      t.append('tspan').attr('class', 'numerator')
+        .text('').attr('x', 0).attr('y', -10)
+      t.append('tspan').text('—').attr('x', 0).attr('y', 0)
+      t.append('tspan').attr('class', 'denominator')
+        .text(function(d) { return d.r })
+        .attr('x', 0).attr('y', 12)
+      t.append('tspan')
+        .attr('class', 'value')
+        .text('100').attr('x', 60).attr('y', 0)
+    }

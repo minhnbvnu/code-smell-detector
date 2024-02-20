@@ -1,0 +1,1 @@
+function orderModifiers(i){var o=order(i);return Pt.reduce((function(i,s){return i.concat(o.filter((function(i){return i.phase===s})))}),[])}

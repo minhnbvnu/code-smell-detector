@@ -1,1 +1,1 @@
-function In(t){return t.c?t.c:t.a?In(t.a):(I("Root logger has no level set."),null)}
+function In(t,e,i,n){var r=e._milliseconds,s=ln(e._days),a=ln(e._months);t.isValid()&&(n=null==n||n,a&&ue(t,pt(t,"Month")+a*i),s&&ft(t,"Date",pt(t,"Date")+s*i),r&&t._d.setTime(t._d.valueOf()+r*i),n&&o.updateOffset(t,s||a))}

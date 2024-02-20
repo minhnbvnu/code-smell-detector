@@ -1,0 +1,1 @@
+function _createObserver2(){var t=this;_classPrivateFieldSet(this,k,new ResizeObserver((function(r){var a=r[0].contentRect;a.width&&a.height&&t.setDimensions(a.width,a.height)})));_classPrivateFieldGet(this,k).observe(this.div)}

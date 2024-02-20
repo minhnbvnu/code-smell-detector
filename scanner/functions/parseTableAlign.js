@@ -1,0 +1,1 @@
+function parseTableAlign(i){return i.replace(Da,"").split("|").map(parseTableAlignCapture)}

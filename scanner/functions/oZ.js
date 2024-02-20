@@ -1,0 +1,1 @@
+function oZ(e,t){t.classHierarchy.push("vtkHandleRepresentation")}

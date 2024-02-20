@@ -1,0 +1,1 @@
+function Gme(e,t){let{children:r,state:n,...i}=e,a=Yr(t),l=O.useRef(null);return S.createElement(L1,{...i,isOpen:n.isOpen,nodeRef:l},S.createElement(Xme,{...e,wrapperRef:l,ref:a},r))}

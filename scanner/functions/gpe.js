@@ -1,0 +1,1 @@
+function gpe(e){e.peek()===0&&e.readByte(),e.readSequence(ct.Ber.OctetString);var t=e.readString(ct.Ber.OctetString,!0);t=Rr.zeroPadToLength(t,32);var r=Rr.calculateX25519Public(t),i={type:"curve25519",parts:[{name:"A",data:Rr.zeroPadToLength(r,32)},{name:"k",data:Rr.zeroPadToLength(t,32)}]};return new _o(i)}

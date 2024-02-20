@@ -1,0 +1,1 @@
+function sc_cadr(p) { return p.cdr.car; }

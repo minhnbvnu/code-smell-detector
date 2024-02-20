@@ -1,0 +1,1 @@
+function _nimiq_argon2($0,$1,$2,$3){$0=$0|0;$1=$1|0;$2=$2|0;$3=$3|0;var $4=0,label=0,sp=0;sp=STACKTOP;$4=_nimiq_argon2_flags($0,$1,$2,$3,0)|0;return $4|0}

@@ -1,0 +1,1 @@
+function isComponentWillChange(oldValue,newValue){var oldType=getObjectType(oldValue),newType=getObjectType(newValue);return("Function"===oldType||"Function"===newType)&&newType!==oldType}

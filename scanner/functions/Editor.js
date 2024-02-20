@@ -1,0 +1,1 @@
+function Editor(){for(var o,s=arguments.length,u=new Array(s),C=0;C<s;C++)u[C]=arguments[C];return _defineProperty(_assertThisInitialized(o=i.call.apply(i,[this].concat(u))||this),"state",{code:o.props.code,prevCode:o.props.code}),_defineProperty(_assertThisInitialized(o),"handleChange",(function(i){o.setState({code:i}),o.props.onChange(i)})),o}

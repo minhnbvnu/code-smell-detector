@@ -1,0 +1,1 @@
+function matchesSelector(el,selector){return matchesSelectorFunc||(matchesSelectorFunc=(0,_shims$2.findInArray)(["matches","webkitMatchesSelector","mozMatchesSelector","msMatchesSelector","oMatchesSelector"],(function(method){return(0,_shims$2.isFunction)(el[method])}))),!!(0,_shims$2.isFunction)(el[matchesSelectorFunc])&&el[matchesSelectorFunc](selector)}

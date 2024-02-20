@@ -1,1 +1,1 @@
-function Ex(a){a=a|0;var b=0;b=fa-16|0;L[b+12>>2]=a;return L[b+12>>2]+112|0}
+function ex(t,e){var r={},n={},i;(t===null||typeof t!="object")&&(t={}),(e===null||typeof e!="object")&&(e={});for(i in e)i in t?r[i]=vh(t[i],e[i]):n[i]=e[i];return function(s){for(i in r)n[i]=r[i](s);return n}}

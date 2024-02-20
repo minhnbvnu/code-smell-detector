@@ -1,0 +1,1 @@
+function zlibBuffer(e,n,i){function t(){for(var n;null!==(n=e.read());)o.push(n),s+=n.length;e.once("readable",t)}function r(n){e.removeListener("end",f),e.removeListener("readable",t),i(n)}function f(){var n=Buffer.concat(o,s);o=[],i(null,n),e.close()}var o=[],s=0;e.on("error",r),e.on("end",f),e.end(n),t()}

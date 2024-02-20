@@ -1,1 +1,1 @@
-function Kn(){this.b=-1}
+function Kn(t,e){if(t.date()<e.date())return-Kn(e,t);var i=12*(e.year()-t.year())+(e.month()-t.month()),n=t.clone().add(i,"months");return-(i+(e-n<0?(e-n)/(n-t.clone().add(i-1,"months")):(e-n)/(t.clone().add(i+1,"months")-n)))||0}

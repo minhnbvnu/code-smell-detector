@@ -1,0 +1,1 @@
+function $A(t){return Hn(t)&&va(t)==jA}

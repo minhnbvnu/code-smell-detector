@@ -1,0 +1,3 @@
+function isInitialized() {
+        return initialized;
+    }

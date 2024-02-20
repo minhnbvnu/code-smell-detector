@@ -1,0 +1,1 @@
+function isInCodeBlock(state) { return isIn(state, "codeblock"); }

@@ -1,1 +1,1 @@
-function Hn(){qn.call(this,8,jc)}
+function Hn(t,e){var i=t.diff(e,"days",!0);return i<-6?"sameElse":i<-1?"lastWeek":i<0?"lastDay":i<1?"sameDay":i<2?"nextDay":i<7?"nextWeek":"sameElse"}

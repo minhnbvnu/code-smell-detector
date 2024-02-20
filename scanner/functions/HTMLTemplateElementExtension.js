@@ -1,0 +1,1 @@
+function HTMLTemplateElementExtension() { return newInstance; }

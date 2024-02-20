@@ -1,0 +1,1 @@
+function isCountrySupportedWithError(i,o){return!!isSupportedCountry(i,o)||(console.error("Country not found: ".concat(i)),!1)}

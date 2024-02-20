@@ -1,0 +1,1 @@
+function mul2scalar(a,f) { return [a[0]*f, a[1]*f];}

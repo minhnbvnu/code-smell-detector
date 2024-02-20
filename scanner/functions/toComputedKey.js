@@ -1,8 +1,18 @@
-function toComputedKey(node) {
-	  var key = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : node.key || node.property;
+function toComputedKey() {
+  const node = this.node;
+  let key;
 
-	  if (!node.computed) {
-	    if (t.isIdentifier(key)) key = t.stringLiteral(key.name);
-	  }
-	  return key;
-	}
+  if (this.isMemberExpression()) {
+    key = node.property;
+  } else if (this.isProperty() || this.isMethod()) {
+    key = node.key;
+  } else {
+    throw new ReferenceError("todo");
+  }
+
+  if (!node.computed) {
+    if (t.isIdentifier(key)) key = t.stringLiteral(key.name);
+  }
+
+  return key;
+}

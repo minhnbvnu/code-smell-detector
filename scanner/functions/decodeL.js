@@ -1,11 +1,1 @@
-function decodeL(L) {
-    if (L < 0) {
-      return -decodeL(-L);
-    }
-
-    if (L > 8.0) {
-      return ((L + 16) / 116) ** 3;
-    }
-
-    return L * DECODE_L_CONSTANT;
-  }
+function decodeL(t){return t<0?-decodeL(-t):t>8?Math.pow((t+16)/116,3):t*y}

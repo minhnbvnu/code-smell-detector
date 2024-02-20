@@ -1,6 +1,6 @@
-function removeFromArray(obj, array) {
-    const i = array.indexOf(obj);
-    if (i > -1) {
-        array.splice(i, 1);
-    }
+function removeFromArray(arr, val) {
+  var index = arr.indexOf(val);
+  if (val >= 0) {
+    arr.splice(index, 1);
+  }
 }

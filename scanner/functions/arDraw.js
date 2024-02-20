@@ -1,0 +1,3 @@
+function arDraw(positions, cp) {
+
+	}

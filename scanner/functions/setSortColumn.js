@@ -1,0 +1,1 @@
+function setSortColumn(e,o){setSortColumns([{columnId:e,sortAsc:o}])}

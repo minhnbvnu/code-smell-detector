@@ -1,0 +1,1 @@
+function NumberingPlan(i,o){_classCallCheck(this,NumberingPlan),this.globalMetadataObject=o,this.metadata=i,setVersion.call(this,o.metadata)}

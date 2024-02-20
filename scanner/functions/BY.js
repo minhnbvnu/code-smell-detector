@@ -1,0 +1,1 @@
+function BY(n){let{inputs:t,backend:e,attrs:i}=n,{a:r,b:o}=t,{transposeA:s,transposeB:a}=i;return pa({a:r,b:o,transposeA:s,transposeB:a,backend:e})}

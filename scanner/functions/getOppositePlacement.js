@@ -1,0 +1,1 @@
+function getOppositePlacement(i){return i.replace(/left|right|bottom|top/g,(function(i){return Nt[i]}))}

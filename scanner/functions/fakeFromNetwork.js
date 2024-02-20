@@ -1,0 +1,1 @@
+function fakeFromNetwork(cb) { cb(null, []); }

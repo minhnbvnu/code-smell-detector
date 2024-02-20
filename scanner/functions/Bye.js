@@ -1,0 +1,1 @@
+function Bye(e){return(e&128)==0}

@@ -1,0 +1,1 @@
+function jle(e,t){if(e.length){let r=e[e.length-1],n=r.selectionsAfter.slice(Math.max(0,r.selectionsAfter.length-Z8e));return n.length&&n[n.length-1].eq(t)?e:(n.push(t),V0(e,e.length-1,1e9,r.setSelAfter(n)))}else return[_i.selection([t])]}

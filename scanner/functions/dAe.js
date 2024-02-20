@@ -1,0 +1,1 @@
+function dAe(){var e=lg();return e?"name"in e?e.name:e.getName():null}

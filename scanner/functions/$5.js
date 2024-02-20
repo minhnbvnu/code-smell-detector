@@ -1,0 +1,1 @@
+function $5(t,e){return function(){this[t]=e}}

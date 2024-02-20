@@ -1,9 +1,1 @@
-function makeOnesTypedArray(size, dtype) {
-	  var array = makeZerosTypedArray(size, dtype);
-
-	  for (var i = 0; i < array.length; i++) {
-	    array[i] = 1;
-	  }
-
-	  return array;
-	}
+function makeOnesTypedArray(e,t){for(var n=makeZerosTypedArray(e,t),r=0;r<n.length;r++)n[r]=1;return n}

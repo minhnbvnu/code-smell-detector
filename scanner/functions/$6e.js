@@ -1,0 +1,1 @@
+function $6e(e){let t=Object.create(null);for(let r=0;r<e.attributes.length;r++){let n=e.attributes[r];t[n.name]=n.value}return t}

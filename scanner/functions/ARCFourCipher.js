@@ -1,0 +1,1 @@
+function ARCFourCipher(t){_classCallCheck(this,ARCFourCipher);this.a=0;this.b=0;for(var r=new Uint8Array(256),o=t.length,c=0;c<256;++c)r[c]=c;for(var l=0,u=0;l<256;++l){var h=r[l];u=u+h+t[l%o]&255;r[l]=r[u];r[u]=h}this.s=r}

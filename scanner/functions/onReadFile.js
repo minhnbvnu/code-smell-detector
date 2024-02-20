@@ -1,15 +1,21 @@
-function onReadFile(err, str) {
-    if (err) {
-      callback(err);
-      return;
-    }
+function onReadFile(e) {
+    var file = e.target.files[0];
+    var reader = new FileReader();
 
-    try {
-      str = str.replace(variableRegExp, generateVariableLookup(options));
-    } catch (e) {
-      err = e;
-      err.name = 'RenderError'
-    }
+    reader.onload = function (e) {
+        try {
+            font = opentype.parse(e.target.result);
+            // fontFamily.innerHTML = font.familyName || this.files[0].name.replace(/\.[^/.]+$/, "");
+            showErrorMessage('');
+            onFontLoaded(font);
+        } catch (err) {
+            showErrorMessage(err.toString());
+            throw (err);
+        }
+    };
+    reader.onerror = function (err) {
+        showErrorMessage(err.toString());
+    };
 
-    callback(err, str);
-  }
+    reader.readAsArrayBuffer(file);
+}

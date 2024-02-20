@@ -1,0 +1,1 @@
+function EncryptData(t){var o;_classCallCheck(this,EncryptData);(o=r.call(this,_,"encryptData",!0)).id=t.id||"";o.operation=(0,d.getStringOption)(t.operation,["encrypt","decrypt"]);o.target=t.target||"";o.use=t.use||"";o.usehref=t.usehref||"";o.filter=null;o.manifest=null;return o}

@@ -1,0 +1,1 @@
+function CompressObjectStream(t){_classCallCheck(this,CompressObjectStream);return r.call(this,d,"compressObjectStream")}

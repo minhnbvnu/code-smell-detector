@@ -1,0 +1,1 @@
+function HT(t){var e=t.getItemStyle(),n=t.get("areaColor");return null!=n&&(e.fill=n),e}

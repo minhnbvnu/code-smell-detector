@@ -5,6 +5,8 @@
     "test",
     "dist",
     "**/*spec.ts",
-    "src/splitter/codes/**"
+    "src/splitter/codes/**",
+    "src/splitter/projects/**",
+    "scanner/**"
   ]
 }

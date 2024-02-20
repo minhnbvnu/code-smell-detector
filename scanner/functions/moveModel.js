@@ -1,3 +1,1 @@
-function moveModel(_x7, _x8) {
-	  return _moveModel.apply(this, arguments);
-	}
+function moveModel(e,t){return __awaiter(this,void 0,void 0,function(){return __generator(this,function(n){switch(n.label){case 0:return [4,cloneModelInternal(e,t,!0)];case 1:return [2,n.sent()]}})})}

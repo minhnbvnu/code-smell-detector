@@ -1,0 +1,1 @@
+function eq$3(value,other){return value===other||value!=value&&other!=other}

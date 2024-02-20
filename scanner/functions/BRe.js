@@ -1,0 +1,1 @@
+function BRe(e,t){return e&&"run"in e?async function(r,n){const i=ZV(r,{file:n,...t});await e.run(i,n)}:function(r,n){return ZV(r,{file:n,...t||e})}}

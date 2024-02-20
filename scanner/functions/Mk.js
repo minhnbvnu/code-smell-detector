@@ -1,0 +1,1 @@
+function Mk(a,c){a=a|0;c=c|0;var d=0,e=0,g=0;d=Rg(a,c)|0;if((d|0)==(a+4|0)){e=-1;return e|0}a=d+28|0;if((b[a+11>>0]|0)<0)g=f[a>>2]|0;else g=a;e=Sj(g)|0;return e|0}

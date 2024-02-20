@@ -1,0 +1,1 @@
+function promptBeforeUnload(event){event.preventDefault(),event.returnValue=""}

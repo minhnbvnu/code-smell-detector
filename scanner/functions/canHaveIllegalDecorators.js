@@ -1,0 +1,4 @@
+function canHaveIllegalDecorators(node) {
+            const kind = node.kind;
+            return kind === 299 /* PropertyAssignment */ || kind === 300 /* ShorthandPropertyAssignment */ || kind === 259 /* FunctionDeclaration */ || kind === 173 /* Constructor */ || kind === 178 /* IndexSignature */ || kind === 172 /* ClassStaticBlockDeclaration */ || kind === 279 /* MissingDeclaration */ || kind === 240 /* VariableStatement */ || kind === 261 /* InterfaceDeclaration */ || kind === 262 /* TypeAliasDeclaration */ || kind === 263 /* EnumDeclaration */ || kind === 264 /* ModuleDeclaration */ || kind === 268 /* ImportEqualsDeclaration */ || kind === 269 /* ImportDeclaration */ || kind === 267 /* NamespaceExportDeclaration */ || kind === 275 /* ExportDeclaration */ || kind === 274 /* ExportAssignment */;
+        }

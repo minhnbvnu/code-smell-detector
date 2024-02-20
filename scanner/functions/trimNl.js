@@ -1,0 +1,1 @@
+function trimNl(s){return s.replace(/[\n\r]+/g,'');}

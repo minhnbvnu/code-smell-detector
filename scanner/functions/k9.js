@@ -1,0 +1,1 @@
+function k9(e){var t,r,i="__deepCopy";if(e&&e[i])throw new Error("attempted deep copy of cyclic object");if(e&&e.constructor==Object){t={},e[i]=!0;for(r in e)r!=i&&(t[r]=k9(e[r]));return delete e[i],t}if(e&&e.constructor==Array){for(t=[],e[i]=!0,r=0;r<e.length;r++)t.push(k9(e[r]));return delete e[i],t}return e}

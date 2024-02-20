@@ -1,3 +1,1 @@
-function decodeParam(params, name, value) {
-	  params[decodeURIComponent(name)] = decodeURIComponent(value || '');
-	}
+function decodeParam(e,t,n){e[decodeURIComponent(t)]=decodeURIComponent(n||"");}

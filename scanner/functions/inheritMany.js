@@ -1,0 +1,1 @@
+function inheritMany(a,b){for(var u=0;u<b.length;u++)inherit(b[u],a)}

@@ -1,19 +1,18 @@
 function buildChildren(node) {
-	  var elems = [];
+  const elements = [];
 
-	  for (var i = 0; i < node.children.length; i++) {
-	    var child = node.children[i];
+  for (let i = 0; i < node.children.length; i++) {
+    let child = node.children[i];
 
-	    if (t.isJSXText(child)) {
-	      cleanJSXElementLiteralChild(child, elems);
-	      continue;
-	    }
+    if ((0, _generated.isJSXText)(child)) {
+      (0, _cleanJSXElementLiteralChild.default)(child, elements);
+      continue;
+    }
 
-	    if (t.isJSXExpressionContainer(child)) child = child.expression;
-	    if (t.isJSXEmptyExpression(child)) continue;
+    if ((0, _generated.isJSXExpressionContainer)(child)) child = child.expression;
+    if ((0, _generated.isJSXEmptyExpression)(child)) continue;
+    elements.push(child);
+  }
 
-	    elems.push(child);
-	  }
-
-	  return elems;
-	}
+  return elements;
+}

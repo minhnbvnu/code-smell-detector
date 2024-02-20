@@ -1,0 +1,1 @@
+function y8e(e,t,r){var i=h8e.parse(e),a=i.protocol==="https:"?m8e:d8e,n=JSON.stringify(r),s={hostname:i.hostname,port:i.port,path:i.path,method:"POST",headers:{"Content-Length":n.length,"Content-Type":"application/json"}};Object.assign(s,t);var o=a.request(s);return o.write(n),o.end(),o}

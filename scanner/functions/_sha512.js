@@ -1,0 +1,1 @@
+function _sha512($0,$1,$2){$0=$0|0;$1=$1|0;$2=$2|0;var $$0=0,$3=0,$4=0,$5=0,$6=0,$7=0,$8=0,label=0,sp=0;sp=STACKTOP;STACKTOP=STACKTOP+208|0;$3=sp;$4=_sha512_init($3)|0;$5=($4|0)==0;if($5){$6=_sha512_update($3,$0,$1)|0;$7=($6|0)==0;if($7){$8=_sha512_final($3,$2)|0;$$0=$8}else{$$0=$6}}else{$$0=$4}STACKTOP=sp;return $$0|0}

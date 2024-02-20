@@ -1,11 +1,10 @@
-function createContainer(name, className, cssText, enableSelect) {
-            const c = createEl('div', className);
-            if (cssText) {
-                c.style.cssText = cssText;
+function createContainer(options) {
+                $container = $('<div/>')
+                    .attr('id', options.containerId)
+                    .addClass(options.positionClass)
+                    .attr('aria-live', 'polite')
+                    .attr('role', 'alert');
+
+                $container.appendTo($(options.target));
+                return $container;
             }
-            panels[name] = c;
-            if (!enableSelect) {
-                preventSelection(c);
-            }
-            return c;
-        }

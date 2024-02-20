@@ -1,0 +1,1 @@
+function Qx(t){var e=this._name,r=this._id;typeof t!="function"&&(t=lh(t));for(var n=this._groups,i=n.length,s=new Array(i),a=0;a<i;++a)for(var o=n[a],l=o.length,u=s[a]=new Array(l),d,f,p=0;p<l;++p)(d=o[p])&&(f=t.call(d,d.__data__,p,o))&&("__data__"in d&&(f.__data__=d.__data__),u[p]=f,Ml(u[p],e,r,p,u,dn(d,r)));return new ri(s,this._parents,e,r)}

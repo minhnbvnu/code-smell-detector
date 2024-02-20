@@ -1,0 +1,1 @@
+function XmlConnection(t){var o;_classCallCheck(this,XmlConnection);(o=r.call(this,u,"xmlConnection",!0)).dataDescription=t.dataDescription||"";o.name=t.name||"";o.uri=null;return o}

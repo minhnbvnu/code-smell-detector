@@ -1,0 +1,3 @@
+function inferTypesFromTemplateLiteralType(source, target) {
+                return source.flags & 128 /* StringLiteral */ ? inferFromLiteralPartsToTemplateLiteral([source.value], emptyArray, target) : source.flags & 134217728 /* TemplateLiteral */ ? arraysEqual(source.texts, target.texts) ? map(source.types, getStringLikeTypeForType) : inferFromLiteralPartsToTemplateLiteral(source.texts, source.types, target) : void 0;
+            }

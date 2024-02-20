@@ -1,0 +1,1 @@
+function ole(){return this.q}

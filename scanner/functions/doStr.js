@@ -1,0 +1,1 @@
+function doStr($,_){$=$+"";while($.length<_)$="0"+$;return $}

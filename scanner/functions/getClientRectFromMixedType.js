@@ -1,0 +1,1 @@
+function getClientRectFromMixedType(i,o,s){return o===At?rectToClientRect(getViewportRect(i,s)):isElement(o)?getInnerBoundingClientRect(o,s):rectToClientRect(getDocumentRect(getDocumentElement(i)))}

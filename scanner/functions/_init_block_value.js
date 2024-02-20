@@ -1,0 +1,1 @@
+function _init_block_value($0,$1){$0=$0|0;$1=$1|0;var label=0,sp=0;sp=STACKTOP;_memset($0|0,$1|0,1024)|0;return}

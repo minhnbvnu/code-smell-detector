@@ -1,0 +1,1 @@
+function _emscripten_glGetBufferParameteriv(target,value,data){if(!data){GL.recordError(1281);return}HEAP32[data>>2]=GLctx.getBufferParameter(target,value)}

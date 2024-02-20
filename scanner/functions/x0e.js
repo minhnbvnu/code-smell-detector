@@ -1,0 +1,1 @@
+function*x0e(...e){for(let t of e)yield*t}

@@ -1,0 +1,1 @@
+function mandreel_wheel(event) { imandreel_onMouseWheel(event);event.preventDefault(); event.returnValue=false; }

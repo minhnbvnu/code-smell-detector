@@ -1,0 +1,1 @@
+function fetchBody(url) { return fetch(url).then(r => r.text()); }

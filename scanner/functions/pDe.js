@@ -1,0 +1,1 @@
+function pDe(e){return e!==96||this.events[this.events.length-1][1].type==="characterEscape"}

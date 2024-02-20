@@ -1,0 +1,1 @@
+function Nce(e){for(var t=0;t<e.length&&(e[t]===32||e[t]===10);)++t;if(e[t]!==45)return!1;for(;t<e.length&&e[t]===45;)++t;for(;t<e.length&&e[t]===32;)++t;return!(t+5>e.length||e.slice(t,t+5).toString("ascii")!=="BEGIN")}

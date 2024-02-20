@@ -1,0 +1,1 @@
+function checkNumberLength(i,o){return checkNumberLengthForType(i,void 0,o)}

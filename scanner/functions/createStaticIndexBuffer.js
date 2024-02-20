@@ -1,12 +1,1 @@
-function createStaticIndexBuffer(gl, data) {
-	  var buffer = throwIfNull(gl, function () {
-	    return gl.createBuffer();
-	  }, 'Unable to create WebGLBuffer');
-	  callAndCheck(gl, function () {
-	    return gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, buffer);
-	  });
-	  callAndCheck(gl, function () {
-	    return gl.bufferData(gl.ELEMENT_ARRAY_BUFFER, data, gl.STATIC_DRAW);
-	  });
-	  return buffer;
-	}
+function createStaticIndexBuffer(e,t){var n=throwIfNull(e,function(){return e.createBuffer()},"Unable to create WebGLBuffer");return callAndCheck(e,function(){return e.bindBuffer(e.ELEMENT_ARRAY_BUFFER,n)}),callAndCheck(e,function(){return e.bufferData(e.ELEMENT_ARRAY_BUFFER,t,e.STATIC_DRAW)}),n}

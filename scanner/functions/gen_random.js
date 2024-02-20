@@ -1,0 +1,1 @@
+function gen_random(max) { return(max * (last = (last * IA + IC) % IM) / IM); }

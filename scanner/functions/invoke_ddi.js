@@ -1,0 +1,1 @@
+function invoke_ddi(index,a1,a2){var sp=stackSave();try{return Module["dynCall_ddi"](index,a1,a2)}catch(e){stackRestore(sp);if(typeof e!=="number"&&e!=="longjmp")throw e;Module["setThrew"](1,0)}}

@@ -1,0 +1,1 @@
+function _emscripten_glIsEnabled(x0){return GLctx["isEnabled"](x0)}

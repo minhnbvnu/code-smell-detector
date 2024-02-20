@@ -1,0 +1,1 @@
+function Ske(e){return e&&{}.toString.call(e)==="[object Function]"}

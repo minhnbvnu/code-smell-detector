@@ -1,0 +1,1 @@
+function JBe(e){var t=Pue(this,e);switch(typeof t){case"object":return t.validate||this._compile(t);case"string":return this.getSchema(t);case"undefined":return e_e(this,e)}}

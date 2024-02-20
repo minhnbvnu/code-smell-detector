@@ -1,0 +1,1 @@
+function nMe(e,t,r){if(typeof e=="boolean")return!e&&r!="not";for(var n in e)if(n!=r&&t[n])return!0}

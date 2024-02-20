@@ -1,0 +1,1 @@
+function testStreams (results) { this.initialize(results); }

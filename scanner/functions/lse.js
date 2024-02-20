@@ -1,0 +1,1 @@
+function lse(e){var t=Math.abs(e);return t>=$p?Math.round(e/$p)+"d":t>=Mf?Math.round(e/Mf)+"h":t>=Uf?Math.round(e/Uf)+"m":t>=qf?Math.round(e/qf)+"s":e+"ms"}

@@ -1,14 +1,20 @@
-function deepEqual(leftHandOperand, rightHandOperand, options) {
-    // If we have a comparator, we can't assume anything; so bail to its check first.
-    if (options && options.comparator) {
-      return extensiveDeepEqual(leftHandOperand, rightHandOperand, options);
-    }
-
-    var simpleResult = simpleEqual(leftHandOperand, rightHandOperand);
-    if (simpleResult !== null) {
-      return simpleResult;
-    }
-
-    // Deeper comparisons are pushed through to a larger function
-    return extensiveDeepEqual(leftHandOperand, rightHandOperand, options);
+function deepEqual(a, b, m) {
+  if (sameValue(a, b)) {
+    return true;
+  } else if ('date' === type(a)) {
+    return dateEqual(a, b);
+  } else if ('regexp' === type(a)) {
+    return regexpEqual(a, b);
+  } else if (Buffer.isBuffer(a)) {
+    return bufferEqual(a, b);
+  } else if ('arguments' === type(a)) {
+    return argumentsEqual(a, b, m);
+  } else if (!typeEqual(a, b)) {
+    return false;
+  } else if (('object' !== type(a) && 'object' !== type(b))
+  && ('array' !== type(a) && 'array' !== type(b))) {
+    return sameValue(a, b);
+  } else {
+    return objectEqual(a, b, m);
   }
+}

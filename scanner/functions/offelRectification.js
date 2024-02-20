@@ -1,0 +1,1 @@
+function offelRectification(){if(!currelRectification)return;for(let item of document.querySelectorAll(currelRectification)){item.style.width=``;item.style.height=``;item.style.transform=``}}

@@ -1,0 +1,1 @@
+function bezier(){_classCallCheck(this,bezier)}

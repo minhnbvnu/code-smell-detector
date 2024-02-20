@@ -1,1 +1,1 @@
-function ___cxa_allocate_exception(size){return _malloc(size+24)+24}
+function ___cxa_allocate_exception(size){return _malloc(size)}

@@ -1,7 +1,1 @@
-function tanh_(x) {
-	  var $x = convertToTensor(x, 'x', 'tanh');
-	  var inputs = {
-	    x: $x
-	  };
-	  return ENGINE.runKernel(Tanh, inputs);
-	}
+function tanh_(e){var t=convertToTensor(e,"x","tanh");return ENV.engine.runKernel(function(e,n){return n(e.tanh(t))},{$x:t},function(e,t){var n=t[0];return {$x:function(){return scalar(1).sub(n.square()).mulStrict(e)}}})}

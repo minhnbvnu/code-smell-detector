@@ -1,0 +1,1 @@
+function rect(o,bounds){var x=o.x||0,y=o.y||0,w=x+o.width||0,h=y+o.height||0;bounds.set(x,y,w,h);if(o.stroke&&o.opacity!==0&&o.strokeWidth>0){bounds.expand(o.strokeWidth)}return bounds}

@@ -1,0 +1,1 @@
+function zP(n,t,e,i){let r=n.createBuffer();Gt(n,()=>n.bindBuffer(n.PIXEL_PACK_BUFFER,r));let a=4*4*t*e;return Gt(n,()=>n.bufferData(n.PIXEL_PACK_BUFFER,a,n.STREAM_READ)),Gt(n,()=>n.readPixels(0,0,e,t,n.RGBA,n.FLOAT,0)),Gt(n,()=>n.bindBuffer(n.PIXEL_PACK_BUFFER,null)),r}

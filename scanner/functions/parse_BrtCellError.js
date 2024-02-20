@@ -1,0 +1,1 @@
+function parse_BrtCellError(data,length){var cell=parse_XLSBCell(data);var fBool=data.read_shift(1);return[cell,fBool,"e"]}

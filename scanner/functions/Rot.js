@@ -1,0 +1,1 @@
+function Rot(n,t){return 2*(1-n)*n*t}

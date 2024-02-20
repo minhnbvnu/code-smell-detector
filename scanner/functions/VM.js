@@ -1,0 +1,1 @@
+function VM(t){var e=t.graph();t.removeNode(e.nestingRoot),delete e.nestingRoot,vt(t.edges(),function(r){var n=t.edge(r);n.nestingEdge&&t.removeEdge(r)})}

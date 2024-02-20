@@ -1,0 +1,3 @@
+function braceRegex() {
+  return /.*(\\?\{([^}]+)\})/;
+}

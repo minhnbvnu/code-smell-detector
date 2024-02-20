@@ -1,0 +1,4 @@
+function RegExpAlternative ()
+{
+    this.terms = [];
+}

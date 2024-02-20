@@ -1,0 +1,1 @@
+function parseTupleParam$1(e){return "number"==typeof e?[e,e,e]:2===e.length?[e[0],e[1],1]:e}

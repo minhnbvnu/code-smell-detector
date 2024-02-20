@@ -1,0 +1,1 @@
+function _emscripten_glDrawArrays(mode,first,count){GLctx.drawArrays(mode,first,count)}

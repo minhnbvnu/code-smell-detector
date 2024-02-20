@@ -1,0 +1,1 @@
+function alltruthy(val, memo) { return val && memo; }

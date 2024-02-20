@@ -1,0 +1,1 @@
+function renderUnion(i){if(!Array.isArray(i.value))return s.createElement("span",null,i.value);var o=i.value.map((function(i,o){return s.createElement(Yn,{key:i.name+"-"+o},renderType(i))}));return s.createElement("span",null,"One of type: ",s.createElement(et(),{separator:", "},o))}

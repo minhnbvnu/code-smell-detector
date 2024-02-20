@@ -1,0 +1,1 @@
+function updateOnLoadCallback(event){var elm=FRAMEWORK(event.target);eachUpdateOnLoad((function(i,updateOnLoadSelector){elm.is(updateOnLoadSelector)&&update({_contentSizeChanged:!0})}))}

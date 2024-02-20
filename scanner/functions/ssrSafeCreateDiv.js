@@ -1,0 +1,1 @@
+function ssrSafeCreateDiv(){return ir&&document.createElement("div")}

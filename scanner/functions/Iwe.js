@@ -1,0 +1,1 @@
+function Iwe(e){return!(e===null||!Awe.test(e)||e[e.length-1]==="_")}

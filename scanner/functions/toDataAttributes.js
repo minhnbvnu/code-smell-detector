@@ -1,0 +1,1 @@
+function toDataAttributes(i){var o={"data-placement":i.placement};return i.referenceHidden&&(o["data-reference-hidden"]=""),i.escaped&&(o["data-escaped"]=""),o}

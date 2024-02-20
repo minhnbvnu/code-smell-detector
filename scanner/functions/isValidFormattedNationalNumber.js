@@ -1,0 +1,1 @@
+function isValidFormattedNationalNumber(i,o){return parseDigits(i)===o.getNationalDigits()}

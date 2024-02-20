@@ -1,0 +1,1 @@
+function hash_key(value){return null==value?null:"boolean"==typeof value?value?"1":"0":value+""}

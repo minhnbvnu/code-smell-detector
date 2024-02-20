@@ -1,0 +1,1 @@
+function getSideOffsets(i,o,s){return void 0===s&&(s={x:0,y:0}),{top:i.top-o.height-s.y,right:i.right-o.width+s.x,bottom:i.bottom-o.height+s.y,left:i.left-o.width-s.x}}

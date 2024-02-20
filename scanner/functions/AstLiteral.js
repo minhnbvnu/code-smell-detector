@@ -1,0 +1,1 @@
+function AstLiteral(t){var o;_classCallCheck(this,AstLiteral);(o=r.call(this,"literal")).number=t;o.min=t;o.max=t;return o}

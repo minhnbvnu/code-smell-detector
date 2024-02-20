@@ -1,0 +1,1 @@
+function cSe(e){let t=[],r=[],n=!1;for(let i of e.selection.ranges)i.empty||(t.push(e.sliceDoc(i.from,i.to)),r.push(i));if(!t.length){let i=-1;for(let{from:a}of e.selection.ranges){let l=e.doc.lineAt(a);l.number>i&&(t.push(l.text),r.push({from:l.from,to:Math.min(e.doc.length,l.to+1)})),i=l.number}n=!0}return{text:t.join(e.lineBreak),ranges:r,linewise:n}}

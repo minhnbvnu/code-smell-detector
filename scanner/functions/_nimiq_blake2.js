@@ -1,0 +1,1 @@
+function _nimiq_blake2($0,$1,$2){$0=$0|0;$1=$1|0;$2=$2|0;var $3=0,label=0,sp=0;sp=STACKTOP;$3=_blake2b($0,32,$1,$2,0,0)|0;return $3|0}

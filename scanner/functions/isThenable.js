@@ -1,0 +1,1 @@
+function isThenable(it){var then;if(isObject(it))then=it.then;return isFunction(then)?then:false}

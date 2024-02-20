@@ -1,0 +1,1 @@
+function typeIs(type) { return function(obj) { return obj.type === type; } }

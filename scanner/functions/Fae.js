@@ -1,0 +1,1 @@
+function Fae(e,t,r){let n=null,i=-1,a=null,l=-1;function s(c,d){for(let f=0,h=0;f<c.children.length&&h<=d;f++){let p=c.children[f],m=h+p.length;m>=d&&(p.children.length?s(p,d-h):(!a||a.isHidden&&r>0)&&(m>d||h==m&&p.getSide()>0)?(a=p,l=d-h):(h<d||h==m&&p.getSide()<0&&!p.isHidden)&&(n=p,i=d-h)),h=m}}s(e,t);let u=(r<0?n:a)||n||a;return u?u.coordsAt(Math.max(0,u==n?i:l),r):y6e(e)}

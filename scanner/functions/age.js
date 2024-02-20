@@ -1,0 +1,1 @@
+function age(e){let t=Hh(e),[r,n]=O.useState(null),[i,a]=O.useState([]),l=()=>{a([]),t.close()};return{focusStrategy:r,...t,open(c=null){n(c),t.open()},toggle(c=null){n(c),t.toggle()},close(){l()},UNSTABLE_expandedKeysStack:i,UNSTABLE_openSubmenu:(c,d)=>{a(f=>d>f.length?f:[...f.slice(0,d),c])},UNSTABLE_closeSubmenu:(c,d)=>{a(f=>f[d]===c?f.slice(0,d):f)}}}

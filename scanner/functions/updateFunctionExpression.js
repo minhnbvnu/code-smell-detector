@@ -1,0 +1,3 @@
+function updateFunctionExpression(node, modifiers, asteriskToken, name, typeParameters, parameters, type, body) {
+                return node.name !== name || node.modifiers !== modifiers || node.asteriskToken !== asteriskToken || node.typeParameters !== typeParameters || node.parameters !== parameters || node.type !== type || node.body !== body ? finishUpdateBaseSignatureDeclaration(createFunctionExpression(modifiers, asteriskToken, name, typeParameters, parameters, type, body), node) : node;
+            }

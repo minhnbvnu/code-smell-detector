@@ -1,1 +1,1 @@
-function Gf(a,b,c,d,e,f){a=a|0;b=b|0;c=c|0;d=d|0;e=e|0;f=f|0;if(Ya(a,H[b+8>>2],f)){Cd(b,c,d,e)}}
+function Gf(){this.$get=xd}

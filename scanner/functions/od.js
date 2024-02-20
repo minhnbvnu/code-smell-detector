@@ -1,0 +1,1 @@
+function od(a){return a.type===s.Identifier||a.type===s.MemberExpression}

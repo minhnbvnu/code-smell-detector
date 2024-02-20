@@ -1,0 +1,1 @@
+function PDFNodeStreamFsRangeReader(t,a,i){var o;_classCallCheck(this,PDFNodeStreamFsRangeReader);o=r.call(this,t);var c=decodeURIComponent(o._url.path);h.test(o._url.href)&&(c=c.replace(/^\//,""));o._setReadableStream(l.createReadStream(c,{start:a,end:i-1}));return o}

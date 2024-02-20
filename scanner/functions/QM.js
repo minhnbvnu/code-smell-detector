@@ -1,0 +1,1 @@
+function QM(t){return function(e,r){return e.barycenter<r.barycenter?-1:e.barycenter>r.barycenter?1:t?r.i-e.i:e.i-r.i}}

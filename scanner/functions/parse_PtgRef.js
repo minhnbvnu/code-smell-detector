@@ -1,0 +1,1 @@
+function parse_PtgRef(blob,length){var ptg=blob[blob.l]&31;var type=(blob[blob.l]&96)>>5;blob.l+=1;var loc=parse_RgceLoc(blob,4);return[type,loc]}

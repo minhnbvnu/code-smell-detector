@@ -1,9 +1,1 @@
-function enqueueChunk() {
-      const length = textContent.items.length;
-
-      if (length > 0) {
-        sink.enqueue(textContent, length);
-        textContent.items = [];
-        textContent.styles = Object.create(null);
-      }
-    }
+function enqueueChunk(){var t=arguments.length>0&&void 0!==arguments[0]&&arguments[0],r=R.items.length;if(0!==r&&!(t&&r<10)){k.enqueue(R,r);R.items=[];R.styles=Object.create(null)}}

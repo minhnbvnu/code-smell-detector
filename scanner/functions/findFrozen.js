@@ -1,0 +1,1 @@
+function findFrozen(store,key){return find.call(store.array,function(it){return it[0]===key})}

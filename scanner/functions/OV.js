@@ -1,0 +1,1 @@
+function OV(n,t){for(let e=0;e<t.length;e++){let i=t[e];n[i]=function(){return this.node[i].apply(this.node,arguments)}}}

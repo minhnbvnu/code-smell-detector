@@ -1,0 +1,1 @@
+function safe_parse_wbrels(wbrels,sheets){if(!wbrels)return 0;try{wbrels=sheets.map(function pwbr(w){return[w.name,wbrels["!id"][w.id].Target]})}catch(e){return null}return!wbrels||wbrels.length===0?null:wbrels}

@@ -1,0 +1,1 @@
+function Gxe(e,t){let r=[];for(let n=0,i=0;;){let a,l;if(n<e.length&&(i==t.length||t[i]>=e[n]))a=e[n++],l=e[n++];else if(i<t.length)a=t[i++],l=t[i++];else return r;!r.length||r[r.length-1]<a?r.push(a,l):r[r.length-1]<l&&(r[r.length-1]=l)}}

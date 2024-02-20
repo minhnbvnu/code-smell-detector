@@ -1,0 +1,1 @@
+function Ewe(e,t){return e.length==t.length&&e.every((r,n)=>r==t[n])}

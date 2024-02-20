@@ -1,0 +1,1 @@
+function rat(){this.nextSibling&&this.parentNode.appendChild(this)}

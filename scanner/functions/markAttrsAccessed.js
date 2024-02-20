@@ -1,0 +1,3 @@
+function markAttrsAccessed() {
+    accessedAttrs = true;
+  }

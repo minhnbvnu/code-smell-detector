@@ -1,0 +1,1 @@
+function getFloat214(t,r){return getInt16(t,r)/16384}

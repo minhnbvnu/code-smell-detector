@@ -16,7 +16,7 @@ function go_to_history_node(target_history_node, canceling, discard_document_sta
 	}
 	*/
 	current_history_node = target_history_node;
-
+	
 	deselect(true);
 	if (!canceling) {
 		cancel(true);
@@ -53,7 +53,7 @@ function go_to_history_node(target_history_node, canceling, discard_document_sta
 		for (const [k, v] of Object.entries(target_history_node.text_tool_font)) {
 			text_tool_font[k] = v;
 		}
-
+		
 		selected_colors.foreground = target_history_node.foreground_color;
 		selected_colors.background = target_history_node.background_color;
 		tool_transparent_mode = target_history_node.tool_transparent_mode;
@@ -87,11 +87,11 @@ function go_to_history_node(target_history_node, canceling, discard_document_sta
 	let latest_node = target_history_node;
 	while (latest_node.futures.length > 0) {
 		const futures = [...latest_node.futures];
-		futures.sort((a, b) => {
-			if (old_history_path.indexOf(a) > -1) {
+		futures.sort((a, b)=> {
+			if(old_history_path.indexOf(a) > -1) {
 				return -1;
 			}
-			if (old_history_path.indexOf(b) > -1) {
+			if(old_history_path.indexOf(b) > -1) {
 				return +1;
 			}
 			return 0;

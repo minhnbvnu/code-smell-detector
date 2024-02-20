@@ -1,0 +1,3 @@
+function Music() {
+    this.init();
+}

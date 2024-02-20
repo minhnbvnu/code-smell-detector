@@ -1,0 +1,1 @@
+function documentOnSelectStart(event){return COMPATIBILITY.prvD(event),!1}

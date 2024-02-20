@@ -1,0 +1,1 @@
+function process_point(args){'use strict';var data=args.data[0];var x=data.map(function(d){return d[args.x_accessor]});var y=data.map(function(d){return d[args.y_accessor]});if(args.least_squares){args.ls_line=least_squares(x,y);};return this;}

@@ -1,4 +1,1 @@
-function isTrueTypeCollectionFile(file) {
-    const header = file.peekBytes(4);
-    return (0, _util.bytesToString)(header) === "ttcf";
-  }
+function isTrueTypeCollectionFile(t){var r=t.peekBytes(4);return"ttcf"===(0,c.bytesToString)(r)}

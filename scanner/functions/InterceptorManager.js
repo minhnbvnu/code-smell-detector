@@ -1,0 +1,3 @@
+function InterceptorManager() {
+  this.handlers = [];
+}

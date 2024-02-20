@@ -1,0 +1,1 @@
+function Yme(e){return e==="<<"||e===null}

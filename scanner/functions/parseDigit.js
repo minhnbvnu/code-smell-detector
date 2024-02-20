@@ -1,0 +1,1 @@
+function parseDigit(i){return Xe[i]}

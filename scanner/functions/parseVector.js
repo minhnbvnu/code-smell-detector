@@ -1,0 +1,1 @@
+function parseVector(data){var h=parsexmltag(data);var matches=data.match(vtregex(h.baseType))||[];if(matches.length!=h.size)throw"unexpected vector length "+matches.length+" != "+h.size;var res=[];matches.forEach(function(x){var v=x.replace(vtvregex,"").match(vtmregex);res.push({v:v[2],t:v[1]})});return res}

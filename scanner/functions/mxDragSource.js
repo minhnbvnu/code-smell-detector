@@ -1,0 +1,1 @@
+function mxDragSource(a,b){this.element=a;this.dropHandler=b;mxEvent.addGestureListeners(a,mxUtils.bind(this,function(a){this.mouseDown(a)}));mxEvent.addListener(a,"dragstart",function(a){mxEvent.consume(a)});this.eventConsumer=function(a,b){var c=b.getProperty("eventName"),d=b.getProperty("event");c!=mxEvent.MOUSE_DOWN&&d.consume()}}

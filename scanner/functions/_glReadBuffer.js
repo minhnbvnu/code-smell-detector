@@ -1,0 +1,1 @@
+function _glReadBuffer(x0){GLctx["readBuffer"](x0)}

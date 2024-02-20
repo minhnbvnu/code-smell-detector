@@ -1,3 +1,3 @@
-function stopPropagation(evt) {
-  evt.stopPropagation();
-}
+function stopPropagation(e) {
+    e.stopPropagation();
+  }

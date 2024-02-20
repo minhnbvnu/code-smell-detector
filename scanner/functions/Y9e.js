@@ -1,0 +1,1 @@
+function Y9e(){return this.q}

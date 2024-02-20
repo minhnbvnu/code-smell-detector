@@ -1,0 +1,1 @@
+function AA(t){return"_"+t+"Type"}

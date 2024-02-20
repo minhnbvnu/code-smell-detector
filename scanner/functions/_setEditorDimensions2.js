@@ -1,0 +1,1 @@
+function _setEditorDimensions2(){var t=_slicedToArray(this.parent.viewportBaseDimensions,2),r=t[0],a=t[1],i=this.div.getBoundingClientRect();this.width=i.width/r;this.height=i.height/a}

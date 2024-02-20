@@ -1,0 +1,1 @@
+function getCellFromPoint(e,o){for(var t=getRowFromPosition(o),n=0,l=0,r=0;r<columns.length&&l<e;r++)l+=columns[r].width,n++;return n<0&&(n=0),{row:t,cell:n-1}}

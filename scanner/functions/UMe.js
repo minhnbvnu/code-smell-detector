@@ -1,0 +1,1 @@
+function UMe(e){return ZMe.test(e)&&LMe.test(e)}

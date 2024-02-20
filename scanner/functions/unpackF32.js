@@ -1,0 +1,1 @@
+function unpackF32(b){return unpackIEEE754(b,8,23)}

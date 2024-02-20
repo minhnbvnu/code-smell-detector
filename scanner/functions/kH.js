@@ -1,0 +1,1 @@
+function kH(n,t,e){if(!(!t&&!e))for(var i=Math.abs(e)>=Math.abs(t),r=0;r<n.length;r++){var o=n[r],s=!1;if(i?s=e<0?o.scrollTop>0:o.scrollTop<o.scrollHeight-o.clientHeight:s=t<0?o.scrollLeft>0:o.scrollLeft<o.scrollWidth-o.clientWidth,s)return o}}

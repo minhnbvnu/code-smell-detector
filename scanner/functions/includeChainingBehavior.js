@@ -1,3 +1,3 @@
 function includeChainingBehavior () {
-      flag(this, 'contains', true);
-    }
+        flag(this, 'contains', true);
+      }

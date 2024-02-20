@@ -1,0 +1,1 @@
+function ZY(n){let{inputs:t,backend:e,attrs:i}=n,{x:r,dy:o}=t,{strides:s,pad:a,dataFormat:l,dimRoundingMode:c,filterShape:u}=i,h=F.convertConv2DDataFormat(l),p=F.computeConv2DInfo(r.shape,u,s,1,a,c,!1,h),d=new _0(p);return e.runWebGLProgram(d,[r,o],"float32")}

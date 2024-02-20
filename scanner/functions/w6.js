@@ -1,0 +1,1 @@
+function w6(n,t,e,i,r){let o=ZK(t,i),s;if(r){let[l,c]=Er(n[0],n[1]);s=l*c}else{let[l,c]=sa(n[0],n[1]);s=l*c}let a=YK(e,o);return s*a}

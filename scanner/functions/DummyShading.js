@@ -1,0 +1,1 @@
+function DummyShading(){_classCallCheck(this,DummyShading);return r.apply(this,arguments)}

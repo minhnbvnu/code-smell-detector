@@ -1,0 +1,1 @@
+function Tge(e){return typeof e=="boolean"?e?"wrap":"nowrap":e}

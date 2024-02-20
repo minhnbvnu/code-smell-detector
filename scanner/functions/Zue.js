@@ -1,0 +1,1 @@
+function Zue(e){return e===null||typeof e!="object"?null:(e=OM&&e[OM]||e["@@iterator"],typeof e=="function"?e:null)}

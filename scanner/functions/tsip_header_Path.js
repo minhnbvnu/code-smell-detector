@@ -1,0 +1,1 @@
+function tsip_header_Path(o_uri){ tsip_header_NameAddr.call(this, tsip_header_type_e.Path, o_uri); }

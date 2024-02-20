@@ -20,7 +20,7 @@ function render_tree_from_node(node) {
 		if (node === current_history_node) {
 			$entry.addClass("current");
 			current_$entry = $entry;
-			requestAnimationFrame(() => {
+			requestAnimationFrame(()=> {
 				// scrollIntoView causes <html> to scroll when the window is partially offscreen,
 				// despite overflow: hidden on html and body, so it's not an option.
 				$history_view[0].scrollTop =
@@ -41,7 +41,7 @@ function render_tree_from_node(node) {
 		for (const sub_node of node.futures) {
 			render_tree_from_node(sub_node);
 		}
-		$entry.on("click", () => {
+		$entry.on("click", ()=> {
 			go_to_history_node(node);
 		});
 		$entry.history_node = node;

@@ -1,0 +1,3 @@
+function ArgumentPlaceholder() {
+  this.token("?");
+}

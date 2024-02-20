@@ -1,0 +1,1 @@
+function _emscripten_glGenVertexArraysOES(n,arrays){__glGenObject(n,arrays,"createVertexArray",GL.vaos)}

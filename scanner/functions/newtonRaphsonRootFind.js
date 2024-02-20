@@ -1,0 +1,1 @@
+function newtonRaphsonRootFind(t,r,o){var l=a.subtract(i.q(t,o),r),c=i.qprime(t,o),u=a.mulMatrix(l,c),d=a.sum(a.squareItems(c))+2*a.mulMatrix(l,i.qprimeprime(t,o));return 0===d?o:o-u/d}

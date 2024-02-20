@@ -1,1 +1,1 @@
-function v(){var e=D.elements;return"string"==typeof e?e.split(" "):e}
+function v(e){return arguments.length&&(F=e),F||document.activeElement}

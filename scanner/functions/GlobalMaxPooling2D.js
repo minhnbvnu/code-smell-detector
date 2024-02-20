@@ -1,3 +1,3 @@
-function globalMaxPooling2d(args) {
-	  return new GlobalMaxPooling2D(args);
-	}
+function GlobalMaxPooling2D() {
+	    return _GlobalPooling2D2.apply(this, arguments) || this;
+	  }

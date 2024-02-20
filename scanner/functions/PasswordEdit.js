@@ -1,0 +1,1 @@
+function PasswordEdit(t){var o;_classCallCheck(this,PasswordEdit);(o=r.call(this,_,"passwordEdit",!0)).hScrollPolicy=(0,d.getStringOption)(t.hScrollPolicy,["auto","off","on"]);o.id=t.id||"";o.passwordChar=t.passwordChar||"*";o.use=t.use||"";o.usehref=t.usehref||"";o.border=null;o.extras=null;o.margin=null;return o}

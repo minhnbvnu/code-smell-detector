@@ -1,0 +1,1 @@
+function _emscripten_glUniform1iv(location,count,value){if(count<=288){var view=__miniTempWebGLIntBuffers[count-1];for(var i=0;i<count;++i){view[i]=HEAP32[value+4*i>>2]}}else{var view=HEAP32.subarray(value>>2,value+count*4>>2)}GLctx.uniform1iv(webglGetUniformLocation(location),view)}

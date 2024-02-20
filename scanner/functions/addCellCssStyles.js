@@ -1,0 +1,1 @@
+function addCellCssStyles(e,o){if(cellCssClasses[e])throw new Error("SlickGrid addCellCssStyles: cell CSS hash with key '"+e+"' already exists.");cellCssClasses[e]=o,updateCellCssStylesOnRenderedRows(o,null),trigger(self.onCellCssStylesChanged,{key:e,hash:o,grid:self})}

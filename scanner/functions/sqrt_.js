@@ -1,7 +1,1 @@
-function sqrt_(x) {
-	  var $x = convertToTensor(x, 'x', 'sqrt');
-	  var inputs = {
-	    x: $x
-	  };
-	  return ENGINE.runKernel(Sqrt, inputs);
-	}
+function sqrt_(e){var t=convertToTensor(e,"x","sqrt");return ENV.engine.runKernel(function(e){return e.sqrt(t)},{$x:t},function(e){return {$x:function(){return e.div(t.toFloat().sqrt().mul(2))}}})}

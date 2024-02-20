@@ -1,3 +1,3 @@
 function baseHasIn(object, key) {
-	  return object != null && key in Object(object);
-	}
+      return object != null && key in Object(object);
+    }

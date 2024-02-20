@@ -1,0 +1,1 @@
+function x7(a){a=a|0;S(4);return 0}

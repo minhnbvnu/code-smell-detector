@@ -1,0 +1,1 @@
+function findAll(test,elems){var result=[];for(var i=0,j=elems.length;i<j;i++){if(!isTag(elems[i]))continue;if(test(elems[i]))result.push(elems[i]);if(elems[i].children.length>0){result=result.concat(findAll(test,elems[i].children))}}return result}

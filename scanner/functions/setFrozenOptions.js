@@ -1,0 +1,1 @@
+function setFrozenOptions(){if(options.frozenColumn=options.frozenColumn>=0&&options.frozenColumn<columns.length?parseInt(options.frozenColumn):-1,options.frozenRow>-1){hasFrozenRows=!0,frozenRowsHeight=options.frozenRow*options.rowHeight;var e=getDataLength();actualFrozenRow=options.frozenBottom?e-options.frozenRow:options.frozenRow}else hasFrozenRows=!1}

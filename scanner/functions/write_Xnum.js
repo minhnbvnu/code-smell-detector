@@ -1,0 +1,1 @@
+function write_Xnum(data,o){return(o||new_buf(8)).write_shift(8,"f",data)}

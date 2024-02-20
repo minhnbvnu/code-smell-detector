@@ -1,0 +1,1 @@
+function Rlt(n,t,e){var i=Math.min(n.length,t.length)-1,r=new Array(i),o=new Array(i),s=-1;for(n[i]<n[0]&&(n=n.slice().reverse(),t=t.slice().reverse());++s<i;)r[s]=g3(n[s],n[s+1]),o[s]=e(t[s],t[s+1]);return function(a){var l=ys(n,a,1,i)-1;return o[l](r[l](a))}}

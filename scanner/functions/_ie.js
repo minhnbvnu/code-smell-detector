@@ -1,0 +1,1 @@
+function _ie(){return w(oe,{children:[o("h1",{children:o("code",{children:"useFieldState"})}),w(de,{children:["You can gain access to any fields state via the"," ",o("code",{children:"useFieldState"})," hook."]}),o(Ee,{leftHeader:o("h3",{children:"Example: "}),rightHeader:o("h3",{children:"Code:"}),left:o(p2e,{}),right:o(N,{links:!0,input1:m2e})})]})}

@@ -1,0 +1,1 @@
+function nm(a){a=a|0;var b=0,c=0;f[a>>2]=3408;b=a+56|0;c=f[b>>2]|0;f[b>>2]=0;if(!c){mj(a);return}Va[f[(f[c>>2]|0)+4>>2]&127](c);mj(a);return}

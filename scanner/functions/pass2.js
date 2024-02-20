@@ -1,0 +1,1 @@
+function pass2(elem){var min=blockG.outEdges(elem).reduce(function(acc,e){return Math.min(acc,xs[e.w]-blockG.edge(e))},Number.POSITIVE_INFINITY);var node=g.node(elem);if(min!==Number.POSITIVE_INFINITY&&node.borderType!==borderType){xs[elem]=Math.max(xs[elem],min)}}

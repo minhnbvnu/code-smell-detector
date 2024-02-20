@@ -1,0 +1,1 @@
+function SG(t,e,n,i,r,o,a,s){var l=n-t,u=i-e,h=a-r,c=s-o,p=wG(h,c,l,u);if(Math.abs(p)<1e-6)return null;var d=wG(t-r,e-o,h,c)/p;return d<0||d>1?null:new Ce(d*l+t,d*u+e)}

@@ -1,0 +1,1 @@
+function getCurrentHashPath(i,o,s){return/^#[a-zA-Z0-9_]/.test(s)?"":s&&!/^#!\//.test(s)?s.replace(i,"").replace(o,"")+"/":""}

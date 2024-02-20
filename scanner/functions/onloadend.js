@@ -3,18 +3,16 @@ function onloadend() {
         return;
       }
       // Prepare the response
-      const responseHeaders = AxiosHeaders.from(
-        'getAllResponseHeaders' in request && request.getAllResponseHeaders()
-      );
-      const responseData = !responseType || responseType === 'text' || responseType === 'json' ?
+      var responseHeaders = 'getAllResponseHeaders' in request ? parseHeaders(request.getAllResponseHeaders()) : null;
+      var responseData = !responseType || responseType === 'text' ||  responseType === 'json' ?
         request.responseText : request.response;
-      const response = {
+      var response = {
         data: responseData,
         status: request.status,
         statusText: request.statusText,
         headers: responseHeaders,
-        config,
-        request
+        config: config,
+        request: request
       };
 
       settle(function _resolve(value) {

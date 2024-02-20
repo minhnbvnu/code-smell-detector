@@ -1,0 +1,1 @@
+function R$(){const t=[];A$("(");if(!E$(")")){while(nU<iU){t.push(W$());if(E$(")")){break}A$(",")}}A$(")");return t}

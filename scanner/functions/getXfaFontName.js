@@ -1,0 +1,1 @@
+function getXfaFontName(t){var r=(0,m.normalizeFontName)(t);return v()[r]}

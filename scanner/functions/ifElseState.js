@@ -1,0 +1,1 @@
+function ifElseState(upper,SUCCESS,FAILURE){var lower=upper.toLowerCase();if(upper===lower){return function(c){if(c===lower){this._state=SUCCESS}else{this._state=FAILURE;this._index--}}}else{return function(c){if(c===lower||c===upper){this._state=SUCCESS}else{this._state=FAILURE;this._index--}}}}

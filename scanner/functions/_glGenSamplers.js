@@ -1,0 +1,1 @@
+function _glGenSamplers(n,samplers){__glGenObject(n,samplers,"createSampler",GL.samplers)}

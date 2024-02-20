@@ -1,0 +1,1 @@
+function Hz(t){if(r.domSupported)for(var e=document.documentElement.style,n=0,i=t.length;n<i;n++)if(t[n]in e)return t[n]}

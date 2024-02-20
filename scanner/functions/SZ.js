@@ -1,0 +1,1 @@
+function SZ(b,d){b=b|0;d=d|0;var e=0,f=0,g=0,h=0,i=0;f=b+12|0;g=b+8|0;while(1){e=c[f>>2]|0;if((e|0)==(c[g>>2]|0)){if(!((vZ(b)|0)<<24>>24)){d=0;break}e=c[f>>2]|0}i=a[d>>0]|0;c[f>>2]=e+1;a[e>>0]=i;if(!(a[d>>0]|0)){h=6;break}else d=d+1|0}if((h|0)==6){i=b+16|0;d=c[i>>2]|0;c[i>>2]=c[f>>2]}return d|0}

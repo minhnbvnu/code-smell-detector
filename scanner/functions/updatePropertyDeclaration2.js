@@ -1,0 +1,3 @@
+function updatePropertyDeclaration2(node, modifiers, name, questionOrExclamationToken, type, initializer) {
+                return node.modifiers !== modifiers || node.name !== name || node.questionToken !== (questionOrExclamationToken !== void 0 && isQuestionToken(questionOrExclamationToken) ? questionOrExclamationToken : void 0) || node.exclamationToken !== (questionOrExclamationToken !== void 0 && isExclamationToken(questionOrExclamationToken) ? questionOrExclamationToken : void 0) || node.type !== type || node.initializer !== initializer ? update(createPropertyDeclaration(modifiers, name, questionOrExclamationToken, type, initializer), node) : node;
+            }

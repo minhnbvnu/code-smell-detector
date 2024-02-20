@@ -1,7 +1,7 @@
-function defineGetter(obj, name, getter) {
-  Object.defineProperty(obj, name, {
-    configurable: true,
-    enumerable: true,
-    get: getter
-  });
-}
+function defineGetter(obj, key, getter) {
+        Object.defineProperty(obj, key, {
+            configurable: true,
+            enumerable: true,
+            get: getter,
+        });
+    }

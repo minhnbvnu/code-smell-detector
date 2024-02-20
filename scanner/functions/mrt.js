@@ -1,0 +1,1 @@
+function mrt(n,t){let e=this.cache;e[0]!==t&&(n.uniform1ui(this.addr,t),e[0]=t)}

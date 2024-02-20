@@ -1,0 +1,1 @@
+function testParsing (results) { this.initialize(results); }

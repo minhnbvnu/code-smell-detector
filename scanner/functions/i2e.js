@@ -1,0 +1,1 @@
+function i2e(e){let t=new Buffer(e),r=[];for(let i=0;i<t.length;++i)t[i]!==37?r.push(t[i]):t[i]===37&&Zs(t[i+1])&&Zs(t[i+2])?(r.push(parseInt(t.slice(i+1,i+3).toString(),16)),i+=2):r.push(t[i]);return new Buffer(r).toString()}

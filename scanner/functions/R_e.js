@@ -1,0 +1,1 @@
+function R_e(e){var t=e.split(B_e);return t.length==2&&bX(t[0])&&wX(t[1],!0)}

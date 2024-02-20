@@ -1,0 +1,1 @@
+function f2e(){return O.useEffect(()=>{window.scrollTo(0,0)},[]),w(oe,{children:[o("h1",{children:"Getting Started"}),o("h2",{children:"Install"}),o("code",{className:"code-block",children:"npm install informed"}),o("hr",{}),o(d2e,{})]})}

@@ -1,3 +1,1 @@
-function ToUnicodeMap(cmap = []) {
-    this._map = cmap;
-  }
+function ToUnicodeMap(){var t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:[];_classCallCheck(this,ToUnicodeMap);this._map=t}

@@ -1,0 +1,1 @@
+function Mde(e){return Dl(e),Math.floor(e[0]*1e6+e[1]/1e3)}

@@ -1,0 +1,1 @@
+function qBe(e,t){var r;if(typeof e=="string"){if(r=this.getSchema(e),!r)throw new Error('no schema with key or ref "'+e+'"')}else{var n=this._addSchema(e);r=n.validate||this._compile(n)}var i=r(t);return r.$async!==!0&&(this.errors=r.errors),i}

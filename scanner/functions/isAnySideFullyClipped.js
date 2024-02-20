@@ -1,0 +1,1 @@
+function isAnySideFullyClipped(i){return[vt,Ct,bt,xt].some((function(o){return i[o]>=0}))}

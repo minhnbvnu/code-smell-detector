@@ -1,0 +1,1 @@
+function wo(){return new Date(this.valueOf())}

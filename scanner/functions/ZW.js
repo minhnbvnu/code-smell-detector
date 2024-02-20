@@ -1,0 +1,1 @@
+function ZW(e){O.useContext(Mh).static||O.useLayoutEffect(e)}

@@ -1,0 +1,1 @@
+function Qot(n,t,e,i){let r=0;for(let o=t,s=e-i;o<e;o+=i)r+=(n[s]-n[o])*(n[o+1]+n[s+1]),s=o;return r}

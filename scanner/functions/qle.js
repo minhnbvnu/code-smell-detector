@@ -1,0 +1,1 @@
+function qle(e,t){return nl(e,r=>r.empty?e.moveByGroup(r,t):$b(r,t))}

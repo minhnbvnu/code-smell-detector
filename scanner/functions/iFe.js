@@ -1,0 +1,1 @@
+function iFe(){let e=Object.create(Pf.prototype);return UC.EventTarget.call(e),r5.set(e,!1),e}

@@ -1,0 +1,1 @@
+function unfix_row(cstr){return cstr.replace(/\$(\d+)$/,"$1")}

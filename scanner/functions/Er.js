@@ -1,1 +1,1 @@
-function Er(t,n){return jr(t,Kh,{identifier:n,continueUri:ui()?qe():"http://localhost"}).then(function(t){return t.allProviders||[]})}
+function Er(t){return t instanceof String||"string"==typeof t}

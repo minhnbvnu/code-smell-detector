@@ -1,0 +1,1 @@
+function _glBlendEquation(x0){GLctx["blendEquation"](x0)}

@@ -1,0 +1,1 @@
+function pCe(){for(var e=this.s&this.DM;this.t>0&&this.data[this.t-1]==e;)--this.t}

@@ -1,17 +1,13 @@
-function getConfig() {
-  const config = new Config();
-
-  let configFilePath;
-  if (fs.existsSync(path.join(process.env.ATOM_HOME, 'config.json'))) {
-    configFilePath = path.join(process.env.ATOM_HOME, 'config.json');
-  } else if (fs.existsSync(path.join(process.env.ATOM_HOME, 'config.cson'))) {
-    configFilePath = path.join(process.env.ATOM_HOME, 'config.cson');
-  }
-
-  if (configFilePath) {
-    const configFileData = CSON.readFileSync(configFilePath);
-    config.resetUserSettings(configFileData);
-  }
-
-  return config;
+function getConfig(editingConfigKey) {
+  return new Promise(function (resolve) {
+    if (false) {}
+    csmInstance.get(defineProperty_default()({}, constants["y" /* JSONC_CONFIG */], {
+      0: ''
+    }), function (result) {
+      if (typeof result[constants["y" /* JSONC_CONFIG */]] === 'string') {
+        return resolve(result[constants["y" /* JSONC_CONFIG */]]);
+      }
+      resolve(result[constants["y" /* JSONC_CONFIG */]][editingConfigKey]);
+    });
+  });
 }

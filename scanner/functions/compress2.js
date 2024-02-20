@@ -1,0 +1,1 @@
+function compress2(ta,a,b,c){var t;t=o[a];if(!t)return;t=o[b];if(!t)return;t=o[c];if(!t)return;o[ta]=o[a]+' '+o[b]+' '+o[c];delete o[a];delete o[b];delete o[c];}

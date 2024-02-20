@@ -1,0 +1,1 @@
+function Cq(){return 2}

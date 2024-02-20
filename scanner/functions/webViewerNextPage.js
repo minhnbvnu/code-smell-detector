@@ -1,3 +1,3 @@
 function webViewerNextPage() {
-  PDFViewerApplication.pdfViewer.nextPage();
+  PDFViewerApplication.page++;
 }

@@ -1,0 +1,1 @@
+function V$(n,t,e,i,r){let o=e.length,s=n.x.length,a=new Array(o);for(let l=0;l<o;l++){a[l]=new Array(s);let c=e.slice();c[l]+=i;let u=r(c);for(let h=0;h<s;h++)a[l][h]=t[h]-u(n.x[h])}return new $t(a)}

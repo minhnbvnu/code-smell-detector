@@ -1,0 +1,1 @@
+function lw(e,r){return{meta:[[],[{type:0,data:Ig(e)}]],data:r}}

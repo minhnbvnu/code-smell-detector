@@ -1,3 +1,1 @@
-function a4($){var z=UTIF._binBE.readUshort,v={m:z($,0),f:$[2],r:$[3],a:$[4],d:z($,5),t:z($,7),h:z($,9),n:z($,11),v:$[13],p:z($,14)};
-if(v.m!=18771||v.f>1||v.d<6||v.d%6||v.h<768||v.h%24||v.n!=768||v.t<v.n||v.t%v.n||v.t-v.h>=v.n||v.v>16||v.v!=v.t/v.n||v.v!=Math.ceil(v.h/v.n)||v.p!=v.d/6||v.a!=12&&v.a!=14&&v.a!=16||v.r!=16&&v.r!=0){throw"Invalid data"}if(v.f==0){throw"Not implemented. We need this file!"}v.o=v.r==16;
-v.c=(v.o?v.n*2/3:v.n>>>1)|0;v.g=v.c+2;v.q=64;v.j=(1<<v.a)-1;v.w=4*v.a;return v}
+function a4(a){a=a|0;return b4(a)|0}

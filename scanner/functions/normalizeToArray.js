@@ -1,0 +1,1 @@
+function normalizeToArray(i){return[].concat(i)}

@@ -1,1 +1,1 @@
-function mm(a,b){a=a|0;b=b|0;var c=0;c=fa-16|0;L[c+12>>2]=a;K[c+10>>1]=b;K[L[c+12>>2]+8>>1]=N[c+10>>1]}
+function Mm(a){a=a|0;var b=0,c=0,d=0;b=f[a>>2]|0;c=a+4|0;d=f[c>>2]|0;if((d|0)!=(b|0))f[c>>2]=d+(~((d+-4-b|0)>>>2)<<2);f[a+12>>2]=0;f[a+16>>2]=0;return}

@@ -1,0 +1,1 @@
+function allCommands (ev) {}

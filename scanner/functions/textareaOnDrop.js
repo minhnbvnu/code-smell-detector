@@ -1,0 +1,1 @@
+function textareaOnDrop(event){setTimeout((function(){_destroyed||updateTextarea()}),50)}

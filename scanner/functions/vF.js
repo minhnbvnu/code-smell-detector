@@ -1,0 +1,1 @@
+function vF(n){typeof n!="function"&&(n=vd(n));for(var t=this._groups,e=t.length,i=[],r=[],o=0;o<e;++o)for(var s=t[o],a=s.length,l,c=0;c<a;++c)(l=s[c])&&(i.push(n.call(l,l.__data__,c,s)),r.push(l));return new wn(i,r)}

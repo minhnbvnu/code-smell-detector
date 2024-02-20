@@ -1,0 +1,1 @@
+function sortCountryOptions(i,o){if(!o)return i;for(var s,u=[],C=[],_=u,w=countries_createForOfIteratorHelperLoose(o);!(s=w()).done;){var P=s.value;"|"===P?_.push({divider:!0}):"..."===P||"…"===P?_=C:function(){var o=void 0;o="🌐"===P?void 0:P;var s=i.indexOf(i.filter((function(i){return i.value===o}))[0]),u=i[s];i.splice(s,1),_.push(u)}()}return u.concat(i).concat(C)}

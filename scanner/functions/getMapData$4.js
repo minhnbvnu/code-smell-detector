@@ -1,0 +1,1 @@
+function getMapData$4(map,key){var data=map.__data__;return isKeyable(key)?data["string"==typeof key?"string":"hash"]:data.map}

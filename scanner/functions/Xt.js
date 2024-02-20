@@ -1,0 +1,1 @@
+function Xt(t,e,i){var n,r,o=Vt(t.year(),e,i),s=Math.floor((t.dayOfYear()-o-1)/7)+1;return s<1?n=s+qt(r=t.year()-1,e,i):s>qt(t.year(),e,i)?(n=s-qt(t.year(),e,i),r=t.year()+1):(r=t.year(),n=s),{week:n,year:r}}

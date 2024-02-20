@@ -1,19 +1,25 @@
-function normalizeArray(value, n, name) {
-	  if (typeof value === 'number') {
-	    return pyListRepeat(value, n);
-	  } else {
-	    if (value.length !== n) {
-	      throw new ValueError("The " + name + " argument must be an integer or tuple of " + n + " integers." + (" Received: " + value.length + " elements."));
-	    }
+function normalizeArray(parts, allowAboveRoot) {
+  // if the path tries to go above the root, `up` ends up > 0
+  var up = 0;
+  for (var i = parts.length; i >= 0; i--) {
+    var last = parts[i];
+    if (last == '.') {
+      parts.splice(i, 1);
+    } else if (last === '..') {
+      parts.splice(i, 1);
+      up++;
+    } else if (up) {
+      parts.splice(i, 1);
+      up--;
+    }
+  }
 
-	    for (var i = 0; i < n; ++i) {
-	      var singleValue = value[i];
+  // if the path is allowed to go above the root, restore leading ..s
+  if (allowAboveRoot) {
+    for (; up--; up) {
+      parts.unshift('..');
+    }
+  }
 
-	      if (!isInteger$1(singleValue)) {
-	        throw new ValueError("The " + name + " argument must be an integer or tuple of " + n + (" integers. Received: " + JSON.stringify(value) + " including a") + (" non-integer number " + singleValue));
-	      }
-	    }
-
-	    return value;
-	  }
-	}
+  return parts;
+}

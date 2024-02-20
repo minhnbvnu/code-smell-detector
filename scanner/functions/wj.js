@@ -1,0 +1,1 @@
+function wj(a,b,c,d){a=a|0;b=b|0;c=c|0;d=d|0;var e=0,g=0,h=0,i=0;if((d|0)<0){e=0;return e|0}do if(!b){d=a+4|0;g=f[d>>2]|0;h=f[a>>2]|0;i=g-h|0;if(i>>>0<c>>>0){Fi(a,c-i|0);break}if(i>>>0>c>>>0?(i=h+c|0,(i|0)!=(g|0)):0)f[d>>2]=i}else Cg(a,b,b+c|0);while(0);c=a+24|0;a=c;b=Vn(f[a>>2]|0,f[a+4>>2]|0,1,0)|0;a=c;f[a>>2]=b;f[a+4>>2]=I;e=1;return e|0}

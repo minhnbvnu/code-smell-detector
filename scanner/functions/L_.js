@@ -1,0 +1,1 @@
+function L_(t,e){return this.each((typeof e=="function"?A_:S_)(t,e))}

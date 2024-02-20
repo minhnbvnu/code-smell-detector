@@ -1,0 +1,1 @@
+function _ed25519_public_key_derive($0,$1){$0=$0|0;$1=$1|0;var $2=0,$3=0,label=0,sp=0;sp=STACKTOP;STACKTOP=STACKTOP+224|0;$2=sp+160|0;$3=sp;_ed25519_private_key_decompress($2,$1);_ge_scalarmult_base($3,$2);_ge_p3_tobytes($0,$3);STACKTOP=sp;return}

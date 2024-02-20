@@ -1,0 +1,1 @@
+function hre(e){let t=[],r=[];return e.forEach(function(i){!i.startsWith("	")&&!i.startsWith(" ")&&r.length&&(t.push(r),r=[]),r.push(i)}),r.length&&t.push(r),t}

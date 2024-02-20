@@ -1,0 +1,1 @@
+function CCe(e){return e.s<0||e.compareTo(this.m)>=0?e.mod(this.m):e}

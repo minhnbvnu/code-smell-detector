@@ -1,0 +1,1 @@
+function g2e(e){return/^[A-Za-z]:$/.test(e)}

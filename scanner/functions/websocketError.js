@@ -1,0 +1,3 @@
+function websocketError() {
+    this.dispose();
+}

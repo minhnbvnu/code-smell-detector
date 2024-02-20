@@ -1,0 +1,1 @@
+function Rke(){let e=U1.existsSync("/Library/Developer/CommandLineTools/usr/bin/"),t=U1.existsSync("/Applications/Xcode.app/Contents/Developer/Tools"),r=U1.existsSync("/Library/Developer/Xcode/");return e||r||t}

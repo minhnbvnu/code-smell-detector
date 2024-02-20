@@ -1,0 +1,1 @@
+function getValue$1(object,key){return null==object?void 0:object[key]}

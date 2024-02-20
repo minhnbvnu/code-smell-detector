@@ -1,0 +1,1 @@
+function JO(e){const n=jA(e)?KO(e):tw(e);e.component.legends=n;return n}

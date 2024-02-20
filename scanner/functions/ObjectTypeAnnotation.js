@@ -1,42 +1,45 @@
 function ObjectTypeAnnotation(node) {
-	  var _this = this;
+  if (node.exact) {
+    this.token("{|");
+  } else {
+    this.token("{");
+  }
 
-	  if (node.exact) {
-	    this.token("{|");
-	  } else {
-	    this.token("{");
-	  }
+  const props = node.properties.concat(node.callProperties || [], node.indexers || [], node.internalSlots || []);
 
-	  var props = node.properties.concat(node.callProperties, node.indexers);
+  if (props.length) {
+    this.space();
+    this.printJoin(props, node, {
+      addNewlines(leading) {
+        if (leading && !props[0]) return 1;
+      },
 
-	  if (props.length) {
-	    this.space();
+      indent: true,
+      statement: true,
+      iterator: () => {
+        if (props.length !== 1 || node.inexact) {
+          this.token(",");
+          this.space();
+        }
+      }
+    });
+    this.space();
+  }
 
-	    this.printJoin(props, node, {
-	      addNewlines: function addNewlines(leading) {
-	        if (leading && !props[0]) return 1;
-	      },
+  if (node.inexact) {
+    this.indent();
+    this.token("...");
 
-	      indent: true,
-	      statement: true,
-	      iterator: function iterator() {
-	        if (props.length !== 1) {
-	          if (_this.format.flowCommaSeparator) {
-	            _this.token(",");
-	          } else {
-	            _this.semicolon();
-	          }
-	          _this.space();
-	        }
-	      }
-	    });
+    if (props.length) {
+      this.newline();
+    }
 
-	    this.space();
-	  }
+    this.dedent();
+  }
 
-	  if (node.exact) {
-	    this.token("|}");
-	  } else {
-	    this.token("}");
-	  }
-	}
+  if (node.exact) {
+    this.token("|}");
+  } else {
+    this.token("}");
+  }
+}

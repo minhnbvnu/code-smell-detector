@@ -1,3 +1,1 @@
-function Zeros() {
-	    return _Initializer.apply(this, arguments) || this;
-	  }
+function zeros(e,t){if(void 0===t&&(t="float32"),"complex64"===t){var n=zeros(e,"float32"),r=zeros(e,"float32");return complex(n,r)}var o=makeZerosTypedArray(sizeFromShape(e),t);return Tensor.make(e,{values:o},t)}

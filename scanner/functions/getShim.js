@@ -1,0 +1,3 @@
+function getShim() {
+	    return shim;
+	  }

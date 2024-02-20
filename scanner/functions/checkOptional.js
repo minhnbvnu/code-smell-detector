@@ -1,0 +1,3 @@
+function checkOptional(block) {
+            block();
+        }

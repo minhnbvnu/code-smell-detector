@@ -1,0 +1,1 @@
+function any_md5(s, e) { return rstr2any(rstr_md5(str2rstr_utf8(s)), e); }

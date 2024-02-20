@@ -1,1 +1,1 @@
-function Bj(a,b){a=a|0;b=b|0;return 2}
+function bj(a,b,c){var d,e,f=0;for(;d=a[f];f++)$.relative[d.part]?e=bh(e,$.relative[d.part],b):(d.captures.push(b,c),e=bi(e,$.filter[d.part].apply(null,d.captures)));return e}

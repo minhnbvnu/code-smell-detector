@@ -1,0 +1,1 @@
+function isTypeParameterRequired(i){return isParamTitle(i)||isReturnTitle(i)||"define"===i||"enum"===i||"implements"===i||"this"===i||"type"===i||"typedef"===i||isProperty(i)}

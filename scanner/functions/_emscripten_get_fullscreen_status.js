@@ -1,0 +1,1 @@
+function _emscripten_get_fullscreen_status(fullscreenStatus){if(!JSEvents.fullscreenEnabled())return-1;fillFullscreenChangeEventData(fullscreenStatus);return 0}

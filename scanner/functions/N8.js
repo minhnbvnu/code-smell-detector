@@ -1,0 +1,1 @@
+function N8(t,e){var r,n,i,s;if(e)for(s=Object.keys(e),r=0,n=s.length;r<n;r+=1)i=s[r],t[i]=e[i];return t}

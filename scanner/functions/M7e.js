@@ -1,0 +1,1 @@
+function M7e(e){var t,r;if(r=e.input.charCodeAt(e.position),r!==38)return!1;for(e.anchor!==null&&Bt(e,"duplication of an anchor property"),r=e.input.charCodeAt(++e.position),t=e.position;r!==0&&!Bn(r)&&!r1(r);)r=e.input.charCodeAt(++e.position);return e.position===t&&Bt(e,"name of an anchor node must contain at least one character"),e.anchor=e.input.slice(t,e.position),!0}

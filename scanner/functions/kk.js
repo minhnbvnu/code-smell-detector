@@ -1,0 +1,1 @@
+function kk(a,b){a=a|0;b=b|0;var c=0,d=0;c=f[a+72>>2]|0;if(!c){d=0;return d|0}f[c+4>>2]=a+60;if(!(Qa[f[(f[c>>2]|0)+12>>2]&127](c)|0)){d=0;return d|0}if(!(Qa[f[(f[a>>2]|0)+40>>2]&127](a)|0)){d=0;return d|0}if(!(Ra[f[(f[a>>2]|0)+44>>2]&127](a,b)|0)){d=0;return d|0}d=Ra[f[(f[a>>2]|0)+48>>2]&127](a,b)|0;return d|0}

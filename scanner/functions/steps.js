@@ -1,6 +1,5 @@
-function steps(min, max, rangeExp) {
-  const rangeStep = Math.pow(10, rangeExp);
-  const start = Math.floor(min / rangeStep);
-  const end = Math.ceil(max / rangeStep);
-  return end - start;
-}
+function steps(start, step) {
+      return d3.range(domain.length).map(function(i) {
+        return start + step * i;
+      });
+    }

@@ -1,0 +1,3 @@
+function triggerChange() {
+            triggerEvent("onChange");
+        }

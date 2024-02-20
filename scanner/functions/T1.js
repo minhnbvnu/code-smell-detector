@@ -1,0 +1,1 @@
+function T1(t,e){for(var r="",n=Wp(t),i=0;i<n;i++)r+=e(t[i],i,t,e)||"";return r}

@@ -1,14 +1,1 @@
-function isWebGLVersionEnabled(webGLVersion) {
-	  try {
-	    var gl = getWebGLContext(webGLVersion);
-
-	    if (gl != null) {
-	      return true;
-	    }
-	  } catch (e) {
-	    console.log('Error when getting WebGL context: ', e);
-	    return false;
-	  }
-
-	  return false;
-	}
+function isWebGLVersionEnabled(e){try{if(null!=getWebGLContext(e))return !0}catch(e){return !1}return !1}

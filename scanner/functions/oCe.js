@@ -1,0 +1,1 @@
+function oCe(e){for(var t=this.t-1;t>=0;--t)e.data[t]=this.data[t];e.t=this.t,e.s=this.s}

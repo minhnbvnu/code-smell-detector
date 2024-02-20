@@ -1,55 +1,68 @@
-function loadScripts(transformFn, scripts) {
-	  var result = [];
-	  var count = scripts.length;
+function loadScripts(scripts) {
+  var result = [];
+  var count = scripts.length;
 
-	  function check() {
-	    var script, i;
+  function check() {
+    var script, i;
 
-	    for (i = 0; i < count; i++) {
-	      script = result[i];
+    for (i = 0; i < count; i++) {
+      script = result[i];
 
-	      if (script.loaded && !script.executed) {
-	        script.executed = true;
-	        run(transformFn, script);
-	      } else if (!script.loaded && !script.error && !script.async) {
-	        break;
-	      }
-	    }
-	  }
+      if (script.loaded && !script.executed) {
+        script.executed = true;
+        run(script.content, script.url, script.options);
+      } else if (!script.loaded && !script.error && !script.async) {
+        break;
+      }
+    }
+  }
 
-	  scripts.forEach(function (script, i) {
-	    var scriptData = {
-	      // script.async is always true for non-JavaScript script tags
-	      async: script.hasAttribute('async'),
-	      error: false,
-	      executed: false,
-	      plugins: getPluginsOrPresetsFromScript(script, 'data-plugins'),
-	      presets: getPluginsOrPresetsFromScript(script, 'data-presets')
-	    };
+  scripts.forEach(function(script, i) {
+    var options = {
+      // @philix: sourceMap support breaks r.js optimization. Leave it off by default
+      sourceMap: false
+    };
+    if (/;harmony=true(;|$)/.test(script.type)) {
+      options.harmony = true;
+    }
+    if (/;stripTypes=true(;|$)/.test(script.type)) {
+      options.stripTypes = true;
+    }
 
-	    if (script.src) {
-	      result[i] = _extends({}, scriptData, {
-	        content: null,
-	        loaded: false,
-	        url: script.src
-	      });
+    // script.async is always true for non-javascript script tags
+    var async = script.hasAttribute('async');
 
-	      load(script.src, function (content) {
-	        result[i].loaded = true;
-	        result[i].content = content;
-	        check();
-	      }, function () {
-	        result[i].error = true;
-	        check();
-	      });
-	    } else {
-	      result[i] = _extends({}, scriptData, {
-	        content: script.innerHTML,
-	        loaded: true,
-	        url: null
-	      });
-	    }
-	  });
+    if (script.src) {
+      result[i] = {
+        async: async,
+        error: false,
+        executed: false,
+        content: null,
+        loaded: false,
+        url: script.src,
+        options: options
+      };
 
-	  check();
-	}
+      load(script.src, function(content) {
+        result[i].loaded = true;
+        result[i].content = content;
+        check();
+      }, function() {
+        result[i].error = true;
+        check();
+      });
+    } else {
+      result[i] = {
+        async: async,
+        error: false,
+        executed: false,
+        content: script.innerHTML,
+        loaded: true,
+        url: null,
+        options: options
+      };
+    }
+  });
+
+  check();
+}

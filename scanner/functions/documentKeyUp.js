@@ -1,0 +1,1 @@
+function documentKeyUp(event){inArray(event.keyCode,increaseDecreaseScrollAmountKeyCodes)>-1&&decreaseTrackScrollAmount()}

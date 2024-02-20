@@ -1,16 +1,38 @@
-function transformCode(transformFn, script) {
-	  var source = void 0;
-	  if (script.url != null) {
-	    source = script.url;
-	  } else {
-	    source = 'Inline Babel script';
-	    inlineScriptCount++;
-	    if (inlineScriptCount > 1) {
-	      source += ' (' + inlineScriptCount + ')';
-	    }
-	  }
+function transformCode(transform, filename, sourceCode, options, callback) {
+  const params = makeTransformParams(filename, sourceCode, options.transform);
+  const isJson = filename.endsWith('.json');
 
-	  return transformFn(script.content, _extends({
-	    filename: source
-	  }, buildBabelOptions(script))).code;
-	}
+  transform(params, (error, transformed) => {
+    if (error) {
+      callback(error);
+      return;
+    }
+
+    var code, map;
+    if (options.minify) {
+      const optimized =
+        constantFolding(filename, inline(filename, transformed, options));
+      code = optimized.code;
+      map = optimized.map;
+    } else {
+      code = transformed.code;
+      map = transformed.map;
+    }
+
+    if (isJson) {
+      code = code.replace(/^\w+\.exports=/, '');
+    } else {
+      // Remove shebang
+      code = code.replace(/^#!.*/, '');
+    }
+
+    const result = isJson || options.extern
+      ? {dependencies: [], dependencyOffsets: []}
+      : extractDependencies(code);
+
+    result.code = code;
+    result.map = map;
+
+    callback(null, result);
+  });
+}

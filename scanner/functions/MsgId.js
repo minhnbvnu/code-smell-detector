@@ -1,0 +1,1 @@
+function MsgId(t){_classCallCheck(this,MsgId);return r.call(this,d,"msgId",1,(function(t){return t>=1}))}

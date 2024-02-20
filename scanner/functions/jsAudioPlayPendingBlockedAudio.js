@@ -1,0 +1,1 @@
+function jsAudioPlayPendingBlockedAudio(soundId){var pendingAudio=WEBAudio.pendingAudioSources[soundId];pendingAudio.sourceNode._startPlayback(pendingAudio.offset);delete WEBAudio.pendingAudioSources[soundId]}

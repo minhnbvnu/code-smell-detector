@@ -1,0 +1,1 @@
+function VOe(e){let t,r;for(let i in e){if(!{}.hasOwnProperty.call(e,i))continue;let a=e[i];t=+a.rx_bytes,r=+a.tx_bytes}return{rx:t,tx:r}}

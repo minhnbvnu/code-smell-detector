@@ -1,0 +1,1 @@
+function Yue(){return new ci(this.q,this.x.square().mod(this.q))}

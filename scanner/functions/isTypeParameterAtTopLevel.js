@@ -1,0 +1,3 @@
+function isTypeParameterAtTopLevel(type, tp, depth = 0) {
+                return !!(type === tp || type.flags & 3145728 /* UnionOrIntersection */ && some(type.types, (t) => isTypeParameterAtTopLevel(t, tp, depth)) || depth < 3 && type.flags & 16777216 /* Conditional */ && (isTypeParameterAtTopLevel(getTrueTypeFromConditionalType(type), tp, depth + 1) || isTypeParameterAtTopLevel(getFalseTypeFromConditionalType(type), tp, depth + 1)));
+            }

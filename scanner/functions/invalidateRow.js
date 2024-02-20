@@ -1,0 +1,1 @@
+function invalidateRow(e){(e||0===e)&&invalidateRows([e])}

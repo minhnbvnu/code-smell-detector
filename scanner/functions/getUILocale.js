@@ -1,0 +1,3 @@
+function getUILocale() {
+            return uiLocale;
+        }

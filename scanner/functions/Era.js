@@ -1,0 +1,1 @@
+function Era(t){_classCallCheck(this,Era);return r.call(this,h,"era")}

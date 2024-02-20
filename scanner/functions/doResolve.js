@@ -1,18 +1,1 @@
-function doResolve(fn, self) {
-    var done = false;
-    try {
-      fn(function (value) {
-        if (done) return;
-        done = true;
-        resolve(self, value);
-      }, function (reason) {
-        if (done) return;
-        done = true;
-        reject(self, reason);
-      });
-    } catch (ex) {
-      if (done) return;
-      done = true;
-      reject(self, ex);
-    }
-  }
+function doResolve(fn,self){var done=!1;try{fn(function(value){done||(done=!0,resolve(self,value))},function(reason){done||(done=!0,reject(self,reason))})}catch(ex){if(done)return;done=!0,reject(self,ex)}}

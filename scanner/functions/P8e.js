@@ -1,0 +1,1 @@
+function P8e(e,t,r){let n=null,i=e.changeByRange(a=>a.empty&&bb(e.doc,a.head)==r?{changes:{from:a.head,to:a.head+r.length,insert:r},range:ve.cursor(a.head+r.length)}:n={range:a});return n?null:e.update(i,{scrollIntoView:!0,userEvent:"input.type"})}

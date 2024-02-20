@@ -1,0 +1,1 @@
+function VB(n){return n.replace(Yr.comments,"").replace(Yr.port,"")}

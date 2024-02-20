@@ -1,16 +1,22 @@
-function isBinding(node, parent) {
-	  var keys = _retrievers.getBindingIdentifiers.keys[parent.type];
-	  if (keys) {
-	    for (var i = 0; i < keys.length; i++) {
-	      var key = keys[i];
-	      var val = parent[key];
-	      if (Array.isArray(val)) {
-	        if (val.indexOf(node) >= 0) return true;
-	      } else {
-	        if (val === node) return true;
-	      }
-	    }
-	  }
+function isBinding(node, parent, grandparent) {
+  if (grandparent && node.type === "Identifier" && parent.type === "ObjectProperty" && grandparent.type === "ObjectExpression") {
+    return false;
+  }
 
-	  return false;
-	}
+  const keys = _getBindingIdentifiers.default.keys[parent.type];
+
+  if (keys) {
+    for (let i = 0; i < keys.length; i++) {
+      const key = keys[i];
+      const val = parent[key];
+
+      if (Array.isArray(val)) {
+        if (val.indexOf(node) >= 0) return true;
+      } else {
+        if (val === node) return true;
+      }
+    }
+  }
+
+  return false;
+}

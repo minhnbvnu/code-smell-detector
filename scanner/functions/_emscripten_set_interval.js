@@ -1,0 +1,1 @@
+function _emscripten_set_interval(cb,msecs,userData){return setInterval(function(){callUserCallback(function(){(function(a1){dynCall_vi.apply(null,[cb,a1])})(userData)})},msecs)}

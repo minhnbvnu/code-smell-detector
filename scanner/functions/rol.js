@@ -1,0 +1,1 @@
+function rol(t,i){return t<<i|t>>>32-i}

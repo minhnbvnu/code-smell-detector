@@ -1,0 +1,1 @@
+function ti(t,e,i,n){var o=e._milliseconds,s=We(e._days),a=We(e._months);t.isValid()&&(n=null==n||n,a&&jt(t,Yt(t,"Month")+a*i),s&&Pt(t,"Date",Yt(t,"Date")+s*i),o&&t._d.setTime(t._d.valueOf()+o*i),n&&r.updateOffset(t,s||a))}

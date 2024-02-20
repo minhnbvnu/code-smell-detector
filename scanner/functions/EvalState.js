@@ -1,0 +1,1 @@
+function EvalState(){_classCallCheck(this,EvalState);this.ctm=new Float32Array(c.IDENTITY_MATRIX);this.font=null;this.textRenderingMode=c.TextRenderingMode.FILL;this.fillColorSpace=E.ColorSpace.singletons.gray;this.strokeColorSpace=E.ColorSpace.singletons.gray}

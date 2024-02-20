@@ -1,0 +1,1 @@
+function oB(t){return!(isNaN(parseFloat(t.x))&&isNaN(parseFloat(t.y)))}

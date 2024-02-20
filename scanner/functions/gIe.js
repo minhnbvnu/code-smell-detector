@@ -1,0 +1,1 @@
+function gIe(e){const t=e.indexOf(":"),r=e.indexOf("?"),n=e.indexOf("#"),i=e.indexOf("/");return t<0||i>-1&&t>i||r>-1&&t>r||n>-1&&t>n||pIe.test(e.slice(0,t))?e:""}

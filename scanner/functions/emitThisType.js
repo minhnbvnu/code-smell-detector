@@ -1,0 +1,3 @@
+function emitThisType() {
+                writeKeyword("this");
+            }

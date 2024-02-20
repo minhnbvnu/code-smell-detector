@@ -1,0 +1,1 @@
+function _wgpu_render_commands_mixin_set_vertex_buffer(passEncoder,slot,buffer,offset,size){size<0?wgpu[passEncoder]["setVertexBuffer"](slot,wgpu[buffer],offset):wgpu[passEncoder]["setVertexBuffer"](slot,wgpu[buffer],offset,size)}

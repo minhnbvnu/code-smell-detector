@@ -1,0 +1,1 @@
+function mxEdgeLabelLayout(a,b){mxGraphLayout.call(this,a)}

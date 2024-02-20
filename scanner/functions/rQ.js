@@ -1,0 +1,1 @@
+function rQ(e,t){let r=null,n=t;for(let i=1,a=0;i<e.length;i++){let l=e[i-1].to,s=e[i].from;for(;a<n.length;a++){let u=n[a];if(u.from>=s)break;u.to<=l||(r||(n=r=t.slice()),u.from<l?(r[a]=new Sa(u.from,l),u.to>s&&r.splice(a+1,0,new Sa(s,u.to))):u.to>s?r[a--]=new Sa(s,u.to):r.splice(a--,1))}}return n}

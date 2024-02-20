@@ -1,3 +1,3 @@
 function indent() {
-    return Array(indents).join('  ');
+    return Array(indents).join('  ')
   }

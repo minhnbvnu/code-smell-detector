@@ -1,0 +1,1 @@
+function NPe(e){return FPe.get(e)}

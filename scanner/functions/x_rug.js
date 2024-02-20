@@ -1,0 +1,3 @@
+function x_rug(args){'use strict';var buffer_size=args.chart_type=='point'?args.buffer/2:args.buffer;var svg=d3.select($(args.target).find('svg').get(0));var all_data=[];for(var i=0;i<args.data.length;i++){for(var j=0;j<args.data[i].length;j++){all_data.push(args.data[i][j]);}}
+var rug=svg.selectAll('line.x_rug').data(all_data).enter().append('svg:line').attr('x1',args.scalefns.xf).attr('x2',args.scalefns.xf).attr('y1',args.height-args.top+buffer_size).attr('y2',args.height-args.top).attr('class','x-rug').attr('opacity',0.3);if(args.color_accessor){rug.attr('stroke',args.scalefns.color);}
+else{rug.classed('x-rug-mono',true);}}

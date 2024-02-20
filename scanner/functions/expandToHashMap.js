@@ -1,0 +1,1 @@
+function expandToHashMap(i,o){return o.reduce((function(o,s){return o[s]=i,o}),{})}

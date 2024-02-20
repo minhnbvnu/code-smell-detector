@@ -1,0 +1,1 @@
+function pageScrollX() { return window.pageXOffset || (document.documentElement || document.body).scrollLeft }

@@ -1,0 +1,1 @@
+function createDragger(ord){return function(e){if(options.disabled){return false}if((ord=="move")&&!options.allowMove){return false}btndown=true;startDragMode(ord,mouseAbs(e));e.stopPropagation();e.preventDefault();return false}}

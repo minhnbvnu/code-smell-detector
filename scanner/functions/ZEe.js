@@ -1,0 +1,1 @@
+function ZEe(e,t){e=e.trim();let r=Uo(e);return r>=t?e:" ".repeat(t-r>>1)+e}

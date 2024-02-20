@@ -1,0 +1,1 @@
+function _JS_Gyroscope_IsRunning(){return JS_Gyroscope&&JS_Gyroscope.activated||JS_Gyroscope_callback!=0}

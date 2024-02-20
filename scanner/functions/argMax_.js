@@ -1,14 +1,1 @@
-function argMax_(x, axis) {
-	  if (axis === void 0) {
-	    axis = 0;
-	  }
-
-	  var $x = convertToTensor(x, 'x', 'argMax');
-	  var inputs = {
-	    x: $x
-	  };
-	  var attrs = {
-	    axis: axis
-	  };
-	  return ENGINE.runKernel(ArgMax, inputs, attrs);
-	}
+function argMax_(e,t){void 0===t&&(t=0);var n=convertToTensor(e,"x","argMax");null==t&&(t=0);var r=parseAxisParam(t,n.shape),o=getAxesPermutation(r,n.rank);null!=o&&(n=n.transpose(o),r=getInnerMostAxes(r.length,n.rank));return ENV.engine.runKernel(function(e){return e.argMax(n,r[0])},{$x:n},function(e){return {$x:function(){return zerosLike(n)}}})}

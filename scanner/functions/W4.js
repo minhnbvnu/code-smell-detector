@@ -1,0 +1,1 @@
+function W4(a,b,d){a=a|0;b=b|0;d=d|0;var e=0,f=0;e=l;l=l+16|0;f=e;c[f>>2]=a;c[f+4>>2]=b;c[f+8>>2]=d;d=c2(Fa(3,f|0)|0)|0;l=e;return d|0}

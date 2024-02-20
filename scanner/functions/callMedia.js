@@ -1,0 +1,3 @@
+function callMedia(){
+		applyMedia( true );
+	}

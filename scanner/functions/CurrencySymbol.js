@@ -1,0 +1,1 @@
+function CurrencySymbol(t){var o;_classCallCheck(this,CurrencySymbol);(o=r.call(this,h,"currencySymbol")).name=(0,u.getStringOption)(t.name,["symbol","isoname","decimal"]);return o}

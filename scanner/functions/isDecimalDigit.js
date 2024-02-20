@@ -1,3 +1,1 @@
-function isDecimalDigit(ch) {
-	        return 0x30 <= ch && ch <= 0x39; // 0..9
-	    }
+function isDecimalDigit(i){return i>=48&&i<=57}

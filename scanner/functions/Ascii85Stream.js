@@ -1,11 +1,1 @@
-function Ascii85Stream(str, maybeLength) {
-    this.str = str;
-    this.dict = str.dict;
-    this.input = new Uint8Array(5);
-
-    if (maybeLength) {
-      maybeLength = 0.8 * maybeLength;
-    }
-
-    DecodeStream.call(this, maybeLength);
-  }
+function Ascii85Stream(t,o){var c;!function _classCallCheck(t,r){if(!(t instanceof r))throw new TypeError("Cannot call a class as a function")}(this,Ascii85Stream);o&&(o*=.8);(c=r.call(this,o)).str=t;c.dict=t.dict;c.input=new Uint8Array(5);return c}

@@ -1,0 +1,1 @@
+function kY(e,t){let r={},i=a=>a&&typeof a=="object"&&!Array.isArray(a);Object.assign(r,e);for(let a of Object.keys(t))i(t[a])&&i(r[a])?r[a]=kY(e[a],t[a]):r[a]=t[a];return r}

@@ -1,0 +1,1 @@
+function jH(n){for(var t=0,e=0;e<n.length;e++)t=n[e]>t?n[e]:t;return t}

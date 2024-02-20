@@ -1,0 +1,1 @@
+function RefSet(){var t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:null;_classCallCheck(this,RefSet);this._set=new Set(t&&t._set)}

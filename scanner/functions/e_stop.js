@@ -1,0 +1,1 @@
+function e_stop(e) {e_preventDefault(e); e_stopPropagation(e);}

@@ -1,0 +1,3 @@
+function clearGlobalKey () {
+  globalShortcut.unregisterAll()
+}

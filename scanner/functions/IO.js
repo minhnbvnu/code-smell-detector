@@ -1,0 +1,1 @@
+function IO(t,e,r){var n=t.insert("rect",":first-child").attr("rx",r.rx).attr("ry",r.ry).attr("x",-e.width/2).attr("y",-e.height/2).attr("width",e.width).attr("height",e.height);return r.intersect=function(i){return F0(r,i)},n}

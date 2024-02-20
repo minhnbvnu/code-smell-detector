@@ -1,0 +1,1 @@
+function initTaskFilterInput(container,tasks){var input=container.find("[data-role=input]");input.on("keyup",function(){filterTasks(tasks,input.val())});return input}

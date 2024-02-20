@@ -1,0 +1,1 @@
+function write_vt(s){switch(typeof s){case"string":return writextag("vt:lpwstr",s);case"number":return writextag((s|0)==s?"vt:i4":"vt:r8",String(s));case"boolean":return writextag("vt:bool",s?"true":"false")}if(s instanceof Date)return writextag("vt:filetime",write_w3cdtf(s));throw new Error("Unable to serialize "+s)}

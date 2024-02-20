@@ -1,3 +1,1 @@
-function maybeStripScheme(key) {
-	  return key.startsWith(BrowserIndexedDB.URL_SCHEME) ? key.slice(BrowserIndexedDB.URL_SCHEME.length) : key;
-	}
+function maybeStripScheme(e){return e.startsWith(BrowserIndexedDB.URL_SCHEME)?e.slice(BrowserIndexedDB.URL_SCHEME.length):e}

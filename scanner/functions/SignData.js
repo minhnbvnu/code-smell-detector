@@ -1,0 +1,1 @@
+function SignData(t){var o;_classCallCheck(this,SignData);(o=r.call(this,_,"signData",!0)).id=t.id||"";o.operation=(0,d.getStringOption)(t.operation,["sign","clear","verify"]);o.ref=t.ref||"";o.target=t.target||"";o.use=t.use||"";o.usehref=t.usehref||"";o.filter=null;o.manifest=null;return o}

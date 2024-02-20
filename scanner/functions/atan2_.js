@@ -1,14 +1,1 @@
-function atan2_(a, b) {
-	  var $a = convertToTensor(a, 'a', 'atan2');
-	  var $b = convertToTensor(b, 'b', 'atan2');
-
-	  var _makeTypesMatch = makeTypesMatch($a, $b);
-
-	  $a = _makeTypesMatch[0];
-	  $b = _makeTypesMatch[1];
-	  var inputs = {
-	    a: $a,
-	    b: $b
-	  };
-	  return ENGINE.runKernel(Atan2, inputs);
-	}
+function atan2_(e,t){var n,r=convertToTensor(e,"a","atan2"),o=convertToTensor(t,"b","atan2");n=makeTypesMatch(r,o),r=n[0],o=n[1];var a=assertAndGetBroadcastShape(r.shape,o.shape);return ENV.engine.runKernel(function(e){return e.atan2(r,o)},{$a:r,$b:o},function(e){return {$a:function(){var t=add(r.square(),o.square()),n=e.mul(o.div(t)),i=getReductionAxes(r.shape,a);return i.length>0&&(n=n.sum(i)),n.reshape(r.shape)},$b:function(){var t=add(r.square(),o.square()),n=neg(e.mul(r.div(t))),i=getReductionAxes(o.shape,a);return i.length>0&&(n=n.sum(i)),n.reshape(o.shape)}}})}

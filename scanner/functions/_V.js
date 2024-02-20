@@ -1,0 +1,1 @@
+function _V(t){if(t)for(var e in t)if(t.hasOwnProperty(e))return!0}

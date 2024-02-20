@@ -1,4 +1,4 @@
 function ArraySet() {
-	  this._array = [];
-	  this._set = Object.create(null);
-	}
+    this._array = [];
+    this._set = {};
+  }

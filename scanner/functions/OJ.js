@@ -1,0 +1,1 @@
+function OJ(n){let{inputs:t,backend:e}=n,{x:i}=t;if(e.shouldExecuteOnCPU([i])){let o=e.texData.get(i.dataId),[s,a]=h6(o.values,i.shape,i.dtype);return e.makeTensorInfo(a,i.dtype,s)}let r;return ot().getBool("WEBGL_PACK_UNARY_OPERATIONS")?r=new Fi(i.shape,eL):r=new jn(i.shape,eL),e.runWebGLProgram(r,[i],i.dtype)}

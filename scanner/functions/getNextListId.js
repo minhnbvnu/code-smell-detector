@@ -1,0 +1,3 @@
+function getNextListId() {
+	return ++listId;
+}

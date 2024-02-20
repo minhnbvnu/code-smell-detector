@@ -1,3 +1,1 @@
-function arrayFrom(arrayLike, forceCopy) {
-        return !forceCopy && is(arrayLike, Array) ? arrayLike : Array.prototype.slice.call(arrayLike);
-    }
+function arrayFrom(i){return[].slice.call(i)}

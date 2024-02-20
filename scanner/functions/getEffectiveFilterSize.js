@@ -1,7 +1,1 @@
-function getEffectiveFilterSize(filterSize, dilation) {
-	  if (dilation <= 1) {
-	    return filterSize;
-	  }
-
-	  return filterSize + (filterSize - 1) * (dilation - 1);
-	}
+function getEffectiveFilterSize(e,t){return t<=1?e:e+(e-1)*(t-1)}

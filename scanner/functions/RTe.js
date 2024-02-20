@@ -1,0 +1,4 @@
+function RTe(){let e="",t="",r={};if($u||Sp||Ep||_p){if(typeof xf=="undefined")try{let s=qi("which ip").toString().split(`
+`);s.length&&s[0].indexOf(":")===-1&&s[0].indexOf("/")===0?xf=s[0]:xf=""}catch{xf=""}let i="export LC_ALL=C; "+(xf?xf+" link show up":"/sbin/ifconfig")+"; unset LC_ALL",n=qi(i).toString().split(`
+`);for(let s=0;s<n.length;s++)if(n[s]&&n[s][0]!==" "){if(xf){let o=n[s+1].trim().split(" ");o[0]==="link/ether"&&(e=n[s].split(" ")[1],e=e.slice(0,e.length-1),t=o[1])}else e=n[s].split(" ")[0],t=n[s].split("HWaddr ")[1];e&&t&&(r[e]=t.trim(),e="",t="")}}if(wp){let n=qi("/sbin/ifconfig").toString().split(`
+`);for(let s=0;s<n.length;s++)n[s]&&n[s][0]!=="	"&&n[s].indexOf(":")>0?e=n[s].split(":")[0]:n[s].indexOf("	ether ")===0&&(t=n[s].split("	ether ")[1],e&&t&&(r[e]=t.trim(),e="",t=""))}return r}

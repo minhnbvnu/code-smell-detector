@@ -1,0 +1,1 @@
+function Bst(n,t){return function(){this.setAttribute(n,t)}}

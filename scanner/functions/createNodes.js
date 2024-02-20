@@ -1,18 +1,11 @@
-function createNodes(root, path) {
-  let node = null;
-
-  for (const {
-    name,
-    index
-  } of path) {
-    for (let i = 0; i <= index; i++) {
-      node = new _xfa_object.XmlObject(root[_xfa_object.$namespaceId], name);
-
-      root[_xfa_object.$appendChild](node);
-    }
-
-    root = node;
-  }
-
-  return node;
-}
+function createNodes(ownerID, entries, key, value) {
+	    if (!ownerID) {
+	      ownerID = new OwnerID();
+	    }
+	    var node = new ValueNode(ownerID, hash(key), [key, value]);
+	    for (var ii = 0; ii < entries.length; ii++) {
+	      var entry = entries[ii];
+	      node = node.update(ownerID, 0, undefined, entry[0], entry[1]);
+	    }
+	    return node;
+	  }

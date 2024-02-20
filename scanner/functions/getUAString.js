@@ -1,0 +1,1 @@
+function getUAString(){var i=navigator.userAgentData;return null!=i&&i.brands?i.brands.map((function(i){return i.brand+"/"+i.version})).join(" "):navigator.userAgent}

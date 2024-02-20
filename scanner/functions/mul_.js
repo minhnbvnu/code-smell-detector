@@ -1,14 +1,1 @@
-function mul_(a, b) {
-	  var $a = convertToTensor(a, 'a', 'mul');
-	  var $b = convertToTensor(b, 'b', 'mul');
-
-	  var _makeTypesMatch = makeTypesMatch($a, $b);
-
-	  $a = _makeTypesMatch[0];
-	  $b = _makeTypesMatch[1];
-	  var inputs = {
-	    a: $a,
-	    b: $b
-	  };
-	  return ENGINE.runKernel(Multiply, inputs);
-	}
+function mul_(e,t){var n,r=convertToTensor(e,"a","mul"),o=convertToTensor(t,"b","mul");n=makeTypesMatch(r,o),r=n[0],o=n[1];var a=assertAndGetBroadcastShape(r.shape,o.shape);return ENV.engine.runKernel(function(e){return e.multiply(r,o)},{$a:r,$b:o},function(e){return {$a:function(){var t=e.mul(o.toFloat()),n=getReductionAxes(r.shape,a);return n.length>0?t.sum(n).reshape(r.shape):t},$b:function(){var t=e.mul(r.toFloat()),n=getReductionAxes(o.shape,a);return n.length>0?t.sum(n).reshape(o.shape):t}}})}

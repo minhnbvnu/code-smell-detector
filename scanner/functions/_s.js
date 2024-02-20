@@ -1,1 +1,1 @@
-function _s(t,n){return t.N.push(n),at(n,function(){E(t.N,n)}),n}
+function _s(e,t,n){return t=n?oe:t,t=e&&null==t?e.length:t,ii(e,ye,oe,oe,oe,oe,t)}

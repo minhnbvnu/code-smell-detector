@@ -1,21 +1,22 @@
 function processIndex() {
-	    var index = uniDiff[currentIndex++];
-	    if (!index) {
-	      return options.complete();
-	    }
+      var index = uniDiff[currentIndex++];
 
-	    options.loadFile(index, function (err, data) {
-	      if (err) {
-	        return options.complete(err);
-	      }
+      if (!index) {
+        return options.complete();
+      }
 
-	      var updatedContent = applyPatch(data, index, options);
-	      options.patched(index, updatedContent, function (err) {
-	        if (err) {
-	          return options.complete(err);
-	        }
+      options.loadFile(index, function (err, data) {
+        if (err) {
+          return options.complete(err);
+        }
 
-	        processIndex();
-	      });
-	    });
-	  }
+        var updatedContent = applyPatch(data, index, options);
+        options.patched(index, updatedContent, function (err) {
+          if (err) {
+            return options.complete(err);
+          }
+
+          processIndex();
+        });
+      });
+    }

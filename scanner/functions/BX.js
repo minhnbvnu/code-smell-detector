@@ -1,0 +1,1 @@
+function BX(n,t){let e=n;if(e<0)if(t<=1)e=0;else{let i=t-1;e+=t*(Math.trunc(-e/i)+1)}else if(e>t-1)if(t<=1)e=0;else{let i=t-1;e-=t*Math.trunc(e/i)}return R.clamp(0,e,t-1)}

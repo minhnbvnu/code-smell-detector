@@ -1,0 +1,1 @@
+function trimNumber(i,o,s){var u=getNationalSignificantNumberDigits(i,o,s);if(u){var C=u.length-getMaxNumberLength(o,s);if(C>0)return i.slice(0,i.length-C)}return i}

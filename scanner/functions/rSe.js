@@ -1,0 +1,1 @@
+function rSe(e,t){let{main:r}=e.state.selection;if(r.empty)return!1;let n=D0(e.root);if(!n||n.rangeCount==0)return!0;let i=n.getRangeAt(0).getClientRects();for(let a=0;a<i.length;a++){let l=i[a];if(l.left<=t.clientX&&l.right>=t.clientX&&l.top<=t.clientY&&l.bottom>=t.clientY)return!0}return!1}

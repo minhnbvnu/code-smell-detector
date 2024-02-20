@@ -1,13 +1,11 @@
-function tryCatch(fn, obj, arg) {
-	      try {
-	        return {
-	          type: "normal",
-	          arg: fn.call(obj, arg)
-	        };
-	      } catch (err) {
-	        return {
-	          type: "throw",
-	          arg: err
-	        };
-	      }
-	    }
+function tryCatch(func, value) {
+  var out = {};
+  try {
+    out.value = func(value);
+    out.status = 'success';
+  } catch (e) {
+    out.status = 'error';
+    out.value = e;
+  }
+  return out;
+}

@@ -1,0 +1,1 @@
+function Group(i){var o=u.Children.toArray(i.children).filter(Boolean);if(1===o.length)return o;var s=i.separator,C=u.isValidElement(s),_=[o.shift()];return o.forEach((function(i,o){if(C){var w="separator-"+(i.key||o);s=u.cloneElement(s,{key:w})}_.push(s,i)})),_}

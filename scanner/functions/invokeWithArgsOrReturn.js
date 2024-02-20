@@ -1,0 +1,1 @@
+function invokeWithArgsOrReturn(i,o){return"function"==typeof i?i.apply(void 0,o):i}

@@ -1,1 +1,1 @@
-function _(){return new te(ee.NO_DOWNLOAD_URL,"The given file does not have any download URLs.")}
+function _(e){if(!e||1!==e.target.nodeType||!q||0===q.x&&0===q.y)return!1;var t=ionic.tap.pointerCoord(e),n=!(!e.target.classList||!e.target.classList.contains||"function"!=typeof e.target.classList.contains),i=n&&e.target.classList.contains("button")?Q:Z;return Math.abs(q.x-t.x)>i||Math.abs(q.y-t.y)>i}

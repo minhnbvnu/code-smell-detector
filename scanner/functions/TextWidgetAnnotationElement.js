@@ -1,0 +1,1 @@
+function TextWidgetAnnotationElement(t){_classCallCheck(this,TextWidgetAnnotationElement);var a=t.renderForms||!t.data.hasAppearance&&!!t.data.fieldValue;return r.call(this,t,{isRenderable:a})}

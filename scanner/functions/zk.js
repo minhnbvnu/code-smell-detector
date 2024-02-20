@@ -1,0 +1,1 @@
+function zk(a){a=a|0;var b=0,c=0,d=0,e=0,g=0,h=0;b=f[a+32>>2]|0;c=f[a+36>>2]|0;if((b|0)==(c|0)){d=1;return d|0}e=a+8|0;g=a+44|0;a=b;while(1){b=f[(f[e>>2]|0)+(f[a>>2]<<2)>>2]|0;a=a+4|0;if(!(Ra[f[(f[b>>2]|0)+20>>2]&127](b,f[g>>2]|0)|0)){d=0;h=5;break}if((a|0)==(c|0)){d=1;h=5;break}}if((h|0)==5)return d|0;return 0}

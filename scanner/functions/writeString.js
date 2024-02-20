@@ -1,5 +1,1 @@
-function writeString(string, offset, buffer) {
-  for (let i = 0, len = string.length; i < len; i++) {
-    buffer[offset + i] = string.charCodeAt(i) & 0xff;
-  }
-}
+function writeString(t,r,o){for(var c=0,l=t.length;c<l;c++)o[r+c]=255&t.charCodeAt(c)}

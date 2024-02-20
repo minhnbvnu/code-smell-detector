@@ -1,0 +1,1 @@
+function getShareUrl(){return url_1.URLExt.normalize(getOption("shareUrl")||getBaseUrl())}

@@ -1,11 +1,1 @@
-function bytesPerElement(dtype) {
-	  if (dtype === 'float32' || dtype === 'int32') {
-	    return 4;
-	  } else if (dtype === 'complex64') {
-	    return 8;
-	  } else if (dtype === 'bool') {
-	    return 1;
-	  } else {
-	    throw new Error("Unknown dtype " + dtype);
-	  }
-	}
+function bytesPerElement(e){if("float32"===e||"int32"===e)return 4;if("complex64"===e)return 8;if("bool"===e)return 1;throw new Error("Unknown dtype "+e)}

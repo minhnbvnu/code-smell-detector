@@ -1,0 +1,1 @@
+function DB(t){return!isNaN(t)&&!isFinite(t)}

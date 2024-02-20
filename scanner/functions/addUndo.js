@@ -1,0 +1,1 @@
+function addUndo(){t.undoManager.typing=0;t.undoManager.add();}

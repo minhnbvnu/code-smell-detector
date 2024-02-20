@@ -1,7 +1,1 @@
-function logicalNot_(x) {
-	  var $x = convertToTensor(x, 'x', 'logicalNot', 'bool');
-	  var inputs = {
-	    x: $x
-	  };
-	  return ENGINE.runKernel(LogicalNot, inputs);
-	}
+function logicalNot_(e){var t=convertToTensor(e,"x","logicalNot","bool");return ENV.engine.runKernel(function(e){return e.logicalNot(t)},{$x:t})}

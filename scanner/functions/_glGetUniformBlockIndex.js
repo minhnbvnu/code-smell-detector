@@ -1,0 +1,1 @@
+function _glGetUniformBlockIndex(program,uniformBlockName){return GLctx["getUniformBlockIndex"](GL.programs[program],UTF8ToString(uniformBlockName))}

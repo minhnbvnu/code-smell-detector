@@ -1,0 +1,1 @@
+function _bytes2string(e){return _map(_chr,e).join("")}

@@ -1,0 +1,23 @@
+function awaitMediaLoaded(media) {
+        return new Promise(function (resolve, reject) {
+            if (media instanceof env.getEnv().Canvas || isMediaLoaded(media)) {
+                return resolve();
+            }
+            function onLoad(e) {
+                if (!e.currentTarget)
+                    return;
+                e.currentTarget.removeEventListener('load', onLoad);
+                e.currentTarget.removeEventListener('error', onError);
+                resolve(e);
+            }
+            function onError(e) {
+                if (!e.currentTarget)
+                    return;
+                e.currentTarget.removeEventListener('load', onLoad);
+                e.currentTarget.removeEventListener('error', onError);
+                reject(e);
+            }
+            media.addEventListener('load', onLoad);
+            media.addEventListener('error', onError);
+        });
+    }

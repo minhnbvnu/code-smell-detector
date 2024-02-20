@@ -1,0 +1,1 @@
+function mxEdgeHandler(a){null!=a&&null!=a.shape&&(this.state=a,this.init(),this.escapeHandler=mxUtils.bind(this,function(b,c){var d=null!=this.index;this.reset();d&&this.graph.cellRenderer.redraw(this.state,!1,a.view.isRendering())}),this.state.view.graph.addListener(mxEvent.ESCAPE,this.escapeHandler))}

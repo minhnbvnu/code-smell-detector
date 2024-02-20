@@ -1,0 +1,1 @@
+function _JS_SystemInfo_HasFullscreen(){return Module.SystemInfo.hasFullscreen}

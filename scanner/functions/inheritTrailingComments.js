@@ -1,3 +1,3 @@
 function inheritTrailingComments(child, parent) {
-	  _inheritComments("trailingComments", child, parent);
-	}
+  (0, _inherit.default)("trailingComments", child, parent);
+}

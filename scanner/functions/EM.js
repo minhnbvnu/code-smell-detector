@@ -1,0 +1,1 @@
+function EM(t){vt(t.edges(),function(e){var r=t.edge(e);if(r.reversed){t.removeEdge(e);var n=r.forwardName;delete r.reversed,delete r.forwardName,t.setEdge(e.w,e.v,r,n)}})}

@@ -1,0 +1,1 @@
+function rM(t){return function(t){var e=t?"Arc":"Angle";return function(t){switch(t){case"start":case"insideStart":case"end":case"insideEnd":return t+e;default:return t}}}(t)}

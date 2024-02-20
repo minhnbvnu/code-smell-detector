@@ -1,11 +1,1 @@
-function mixkey(seed, key) {
-	      var stringseed = seed + '',
-	          smear,
-	          j = 0;
-
-	      while (j < stringseed.length) {
-	        key[mask & j] = mask & (smear ^= key[mask & j] * 19) + stringseed.charCodeAt(j++);
-	      }
-
-	      return tostring(key);
-	    }
+function mixkey(seed,key,smear,j){for(seed+="",smear=0,j=0;j<seed.length;j++)key[lowbits(j)]=lowbits((smear^=19*key[lowbits(j)])+seed.charCodeAt(j));seed="";for(j in key)seed+=String.fromCharCode(key[j]);return seed}

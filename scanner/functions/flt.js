@@ -1,0 +1,1 @@
+function flt(n){var t,e;function i(){var r=n.apply(this,arguments);return r!==e&&(t=(e=r)&&dlt(r)),t}return i._value=n,i}

@@ -1,0 +1,1 @@
+function Ghe(e){return e?"none":void 0}

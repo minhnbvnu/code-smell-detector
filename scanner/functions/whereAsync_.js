@@ -1,3 +1,1 @@
-function whereAsync_(_x) {
-	  return _whereAsync_.apply(this, arguments);
-	}
+function whereAsync_(e){return __awaiter(this,void 0,void 0,function(){var t,n,r;return __generator(this,function(o){switch(o.label){case 0:return [4,(t=convertToTensor(e,"condition","whereAsync","bool")).data()];case 1:return n=o.sent(),r=whereImpl(t.shape,n),e!==t&&t.dispose(),[2,r]}})})}

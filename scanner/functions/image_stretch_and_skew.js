@@ -1,4 +1,4 @@
-function image_stretch_and_skew() {
+function image_stretch_and_skew(){
 	const $w = new $DialogWindow(localize("Stretch and Skew"));
 	$w.addClass("stretch-and-skew");
 
@@ -41,10 +41,10 @@ function image_stretch_and_skew() {
 	const skew_y = $RowInput($fieldset_skew.find("table"), "skew-y", localize("V&ertical:"), 0, localize("Degrees"), -90, 90);
 
 	$w.$Button(localize("OK"), () => {
-		const x_scale = parseFloat(stretch_x.val()) / 100;
-		const y_scale = parseFloat(stretch_y.val()) / 100;
-		const h_skew = parseFloat(skew_x.val()) / 360 * TAU;
-		const v_skew = parseFloat(skew_y.val()) / 360 * TAU;
+		const x_scale = parseFloat(stretch_x.val())/100;
+		const y_scale = parseFloat(stretch_y.val())/100;
+		const h_skew = parseFloat(skew_x.val())/360*TAU;
+		const v_skew = parseFloat(skew_y.val())/360*TAU;
 		if (isNaN(x_scale) || isNaN(y_scale) || isNaN(h_skew) || isNaN(v_skew)) {
 			please_enter_a_number();
 			return;
@@ -63,15 +63,13 @@ function image_stretch_and_skew() {
 		}
 		$canvas_area.trigger("resize");
 		$w.close();
-	}, { type: "submit" });
+	})[0].focus();
 
 	$w.$Button(localize("Cancel"), () => {
 		$w.close();
 	});
 
-	$w.$main.find("input").first().focus().select();
-
 	$w.center();
 
-	handle_keyshortcuts($w);
+	handle_keyshortcuts_alt_only($w);
 }

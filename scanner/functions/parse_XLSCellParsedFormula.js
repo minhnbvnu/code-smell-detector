@@ -1,0 +1,1 @@
+function parse_XLSCellParsedFormula(blob,length,opts){var target=blob.l+length;var rgcb,cce=blob.read_shift(2);if(cce==65535)return[[],parsenoop(blob,length-2)];var rgce=parse_Rgce(blob,cce);if(length!==cce+2)rgcb=parse_RgbExtra(blob,length-cce-2,rgce,opts);return[rgce,rgcb]}

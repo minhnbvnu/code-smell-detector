@@ -1,0 +1,1 @@
+function _emscripten_glDrawElementsInstancedANGLE(mode,count,type,indices,primcount){GLctx["drawElementsInstanced"](mode,count,type,indices,primcount)}

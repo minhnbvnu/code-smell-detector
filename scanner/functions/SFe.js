@@ -1,0 +1,1 @@
+function SFe(e,t,r){const n={};return XI(n,JI(e,t)),e.create(t,e.Fragment,n,r)}

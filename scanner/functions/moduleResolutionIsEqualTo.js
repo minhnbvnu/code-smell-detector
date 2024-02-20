@@ -1,0 +1,3 @@
+function moduleResolutionIsEqualTo(oldResolution, newResolution) {
+            return oldResolution === newResolution || oldResolution.resolvedModule === newResolution.resolvedModule || !!oldResolution.resolvedModule && !!newResolution.resolvedModule && oldResolution.resolvedModule.isExternalLibraryImport === newResolution.resolvedModule.isExternalLibraryImport && oldResolution.resolvedModule.extension === newResolution.resolvedModule.extension && oldResolution.resolvedModule.resolvedFileName === newResolution.resolvedModule.resolvedFileName && oldResolution.resolvedModule.originalPath === newResolution.resolvedModule.originalPath && packageIdIsEqual(oldResolution.resolvedModule.packageId, newResolution.resolvedModule.packageId);
+        }

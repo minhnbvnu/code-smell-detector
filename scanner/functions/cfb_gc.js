@@ -1,0 +1,1 @@
+function cfb_gc(cfb) { rebuild_cfb(cfb, true); }

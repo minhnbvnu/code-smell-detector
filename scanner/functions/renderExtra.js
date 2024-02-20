@@ -1,0 +1,1 @@
+function renderExtra(i){var o=(0,cr.oL)(i);if(!o)return null;switch(o.name){case"enum":return renderEnum(o);case"union":return renderUnion(o);case"shape":case"exact":return i.type&&renderShape(i.type.value);case"arrayOf":case"objectOf":return"shape"===o.value.name||"exact"===o.value.name?i.type&&renderShape(i.type.value.value):null;default:return null}}

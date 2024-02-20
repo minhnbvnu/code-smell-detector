@@ -1,1 +1,1 @@
-function Tb(a){a=a|0;return 2}
+function tB(t,e){var r=s0(t.nodes(),function(i){return!e.node(i).parent}),n=QN(t,r);n=n.slice(1),vt(n,function(i){var s=t.node(i).parent,a=e.edge(i,s),o=!1;a||(a=e.edge(s,i),o=!0),e.node(i).rank=e.node(s).rank+(o?a.minlen:-a.minlen)})}

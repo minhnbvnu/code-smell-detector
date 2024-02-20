@@ -1,14 +1,6 @@
-function getType(arr) {
-    if (arr instanceof Float32Array) {
-        return 'FLOAT';
-    } else if (arr instanceof Int16Array) {
-        return 'SHORT';
-    } else if (arr instanceof Uint16Array) {
-        return 'UNSIGNED_SHORT';
-    } else if (arr instanceof Int8Array) {
-        return 'BYTE';
-    } else if (arr instanceof Uint8Array || arr instanceof Uint8ClampedArray) {
-        return 'UNSIGNED_BYTE';
+function getType(config, urlType, location) {
+      if (config.type && urlType) throw new Error("Param '"+id+"' has two type configurations.");
+      if (urlType) return urlType;
+      if (!config.type) return (location === "config" ? $types.any : $types.string);
+      return config.type instanceof Type ? config.type : new Type(config.type);
     }
-    return 'FLOAT';
-}

@@ -1,0 +1,1 @@
+function ote(){var e=$1.getName(),t=$1.getVersion();if(e&&t)return{name:e,version:t};var r=YAe.readPackageJson();return e||(e=r.name),t||(t=r.version),{name:e,version:t}}

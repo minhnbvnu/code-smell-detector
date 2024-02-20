@@ -1,0 +1,1 @@
+function CFFOffsetTracker(){_classCallCheck(this,CFFOffsetTracker);this.offsets=Object.create(null)}

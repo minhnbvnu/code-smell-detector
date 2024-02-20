@@ -1,0 +1,1 @@
+function testVideo (results) { this.initialize(results); }

@@ -1,0 +1,1 @@
+function BO(t){P0=t}

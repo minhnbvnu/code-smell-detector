@@ -1,0 +1,1 @@
+function mle(e){if(e.isInfinity())return"00";var t=e.getX().toBigInteger().toString(16),r=e.getY().toBigInteger().toString(16),i=this.getQ().toString(16).length;for(i%2!=0&&i++;t.length<i;)t="0"+t;for(;r.length<i;)r="0"+r;return"04"+t+r}

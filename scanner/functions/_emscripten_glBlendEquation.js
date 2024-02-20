@@ -1,0 +1,1 @@
+function _emscripten_glBlendEquation(x0){GLctx["blendEquation"](x0)}

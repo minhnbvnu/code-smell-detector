@@ -1,0 +1,1 @@
+function resolveUri(baseUri,uri){if(baseUri){return URI.utils.resolve(baseUri,uri)}return uri}

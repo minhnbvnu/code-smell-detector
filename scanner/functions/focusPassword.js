@@ -1,0 +1,3 @@
+function focusPassword() {
+	$.password.focus();
+}

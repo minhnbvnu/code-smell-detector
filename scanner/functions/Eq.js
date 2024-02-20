@@ -1,0 +1,1 @@
+function Eq(a,b){a=a|0;b=b|0;aa(1);return 0}

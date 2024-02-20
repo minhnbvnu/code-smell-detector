@@ -1,0 +1,1 @@
+function handleContextMenu(e){var o=$(e.target).closest(".slick-cell",$canvas);0!==o.length&&(activeCellNode===o[0]&&null!==currentEditor||trigger(self.onContextMenu,{},e))}

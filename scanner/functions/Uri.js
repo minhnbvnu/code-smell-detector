@@ -1,0 +1,1 @@
+function Uri(t){var o;_classCallCheck(this,Uri);(o=r.call(this,u,"uri")).id=t.id||"";o.name=t.name||"";o.use=t.use||"";o.usehref=t.usehref||"";return o}

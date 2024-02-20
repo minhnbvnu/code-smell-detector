@@ -1,0 +1,1 @@
+function moveOffset(offset){var ox=offset[0],oy=offset[1];if(0>x1+ox){ox-=ox+x1}if(0>y1+oy){oy-=oy+y1}if(boundy<y2+oy){oy+=boundy-(y2+oy)}if(boundx<x2+ox){ox+=boundx-(x2+ox)}x1+=ox;x2+=ox;y1+=oy;y2+=oy}

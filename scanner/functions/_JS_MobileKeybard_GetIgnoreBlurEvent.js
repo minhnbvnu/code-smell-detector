@@ -1,0 +1,1 @@
+function _JS_MobileKeybard_GetIgnoreBlurEvent(){return mobile_input_ignore_blur_event}

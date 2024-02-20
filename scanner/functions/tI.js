@@ -1,0 +1,1 @@
+function tI(t,e,n,i){n.getAxesOnZeroOf=function(){return r?[r]:[]};var r,o=t[e],a=n.model,s=a.get(["axisLine","onZero"]),l=a.get(["axisLine","onZeroAxisIndex"]);if(s){if(null!=l)eI(o[l])&&(r=o[l]);else for(var u in o)if(o.hasOwnProperty(u)&&eI(o[u])&&!i[h(o[u])]){r=o[u];break}r&&(i[h(r)]=!0)}function h(t){return t.dim+"_"+t.index}}

@@ -1,0 +1,1 @@
+function dH(t){return{signal:"["+t.map((t=>t.scale?'scale("'+t.scale+'")':t.signal))+"]"}}

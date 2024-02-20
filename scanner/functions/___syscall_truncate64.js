@@ -1,0 +1,1 @@
+function ___syscall_truncate64(path,low,high){try{path=SYSCALLS.getStr(path);var length=SYSCALLS.get64(low,high);FS.truncate(path,length);return 0}catch(e){if(typeof FS=="undefined"||!(e instanceof FS.ErrnoError))throw e;return-e.errno}}

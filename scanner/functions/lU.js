@@ -1,0 +1,1 @@
+function lU(n,t){let e=0;for(let i=0;i<n.length;i++){let r=Number(n[i])-Number(t[i]);e+=r*r}return e}

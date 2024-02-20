@@ -1,0 +1,1 @@
+function StarSegment(name) { this.name = name; }

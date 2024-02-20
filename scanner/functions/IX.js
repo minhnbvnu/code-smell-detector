@@ -1,0 +1,1 @@
+function IX(n){let{inputs:t,backend:e,attrs:i}=n,{x:r}=t,{numOrSizeSplits:o,axis:s}=i,a=R.parseAxisParam(s,r.shape)[0],l=F.prepareSplitSize(r,o,a),c=new Array(r.shape.length).fill(0),u=r.shape.slice();return l.map(h=>{let p=[...u];p[a]=h;let d=zi({inputs:{x:r},backend:e,attrs:{begin:c,size:p}});return c[a]+=h,d})}

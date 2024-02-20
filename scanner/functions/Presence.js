@@ -1,0 +1,1 @@
+function Presence(t){_classCallCheck(this,Presence);return r.call(this,d,"presence",["preserve","dissolve","dissolveStructure","ignore","remove"])}

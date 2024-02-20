@@ -1,0 +1,1 @@
+function SetProperty(t){var o;_classCallCheck(this,SetProperty);(o=r.call(this,_,"setProperty")).connection=t.connection||"";o.ref=t.ref||"";o.target=t.target||"";return o}

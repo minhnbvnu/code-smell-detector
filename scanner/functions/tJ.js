@@ -1,0 +1,1 @@
+function tJ(e,t){t.classHierarchy.push("vtkShapeWidget"),t.methodsToLink=["scaleInPixels","textProps","fontProperties"]}

@@ -1,0 +1,1 @@
+function positionY(g){var layering=util.buildLayerMatrix(g),rankSep=g.graph().ranksep,prevY=0;_.forEach(layering,function(layer){var maxHeight=_.max(_.map(layer,function(v){return g.node(v).height}));_.forEach(layer,function(v){g.node(v).y=prevY+maxHeight/2});prevY+=maxHeight+rankSep})}

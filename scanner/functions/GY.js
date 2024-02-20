@@ -1,0 +1,1 @@
+function GY(e,t){var n=arguments.length>2&&void 0!==arguments[2]?arguments[2]:{};Object.assign(t,jY,n),Se.obj(e,t),Se.setGetArray(e,t,["normal"],3),VY(e,t)}

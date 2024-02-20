@@ -1,10 +1,1 @@
-function isDataScheme(url) {
-  const ii = url.length;
-  let i = 0;
-
-  while (i < ii && url[i].trim() === "") {
-    i++;
-  }
-
-  return url.substring(i, i + 5).toLowerCase() === "data:";
-}
+function isDataScheme(t){for(var r=t.length,a=0;a<r&&""===t[a].trim();)a++;return"data:"===t.substring(a,a+5).toLowerCase()}

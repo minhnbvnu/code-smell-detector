@@ -1,0 +1,1 @@
+function _setenv(envname,envval,overwrite){if(envname===0){___setErrNo(ERRNO_CODES.EINVAL);return-1}var name=Pointer_stringify(envname);var val=Pointer_stringify(envval);if(name===""||name.indexOf("=")!==-1){___setErrNo(ERRNO_CODES.EINVAL);return-1}if(ENV.hasOwnProperty(name)&&!overwrite)return 0;ENV[name]=val;___buildEnvironment(__get_environ());return 0}

@@ -1,0 +1,1 @@
+function EncryptionMethods(t){var o;_classCallCheck(this,EncryptionMethods);(o=r.call(this,_,"encryptionMethods",!0)).id=t.id||"";o.type=(0,d.getStringOption)(t.type,["optional","required"]);o.use=t.use||"";o.usehref=t.usehref||"";o.encryptionMethod=new c.XFAObjectArray;return o}

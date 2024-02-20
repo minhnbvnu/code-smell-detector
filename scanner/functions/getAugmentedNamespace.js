@@ -1,0 +1,1 @@
+function getAugmentedNamespace(n){if(n.__esModule)return n;var a=Object.defineProperty({},"__esModule",{value:!0});return Object.keys(n).forEach((function(k){var d=Object.getOwnPropertyDescriptor(n,k);Object.defineProperty(a,k,d.get?d:{enumerable:!0,get:function get(){return n[k]}})})),a}

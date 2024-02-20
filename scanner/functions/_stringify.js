@@ -1,5 +1,5 @@
 function _stringify(val) {
-    switch (type(val)) {
+    switch (exports.type(val)) {
       case 'null':
       case 'undefined':
         val = '[' + val + ']';
@@ -10,16 +10,13 @@ function _stringify(val) {
         break;
       case 'boolean':
       case 'regexp':
-      case 'symbol':
       case 'number':
-        val =
-          val === 0 && 1 / val === -Infinity // `-0`
-            ? '-0'
-            : val.toString();
+        val = val === 0 && (1/val) === -Infinity // `-0`
+          ? '-0'
+          : val.toString();
         break;
       case 'date':
-        var sDate = isNaN(val.getTime()) ? val.toString() : val.toISOString();
-        val = '[Date: ' + sDate + ']';
+        val = '[Date: ' + val.toISOString() + ']';
         break;
       case 'buffer':
         var json = val.toJSON();
@@ -28,10 +25,9 @@ function _stringify(val) {
         val = '[Buffer: ' + jsonStringify(json, 2, depth + 1) + ']';
         break;
       default:
-        val =
-          val === '[Function]' || val === '[Circular]'
-            ? val
-            : JSON.stringify(val); // string
+        val = (val == '[Function]' || val == '[Circular]')
+          ? val
+          : '"' + val + '"'; //string
     }
     return val;
   }

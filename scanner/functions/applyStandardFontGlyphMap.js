@@ -1,0 +1,1 @@
+function applyStandardFontGlyphMap(t,r){for(var o in r)t[+o]=r[o]}

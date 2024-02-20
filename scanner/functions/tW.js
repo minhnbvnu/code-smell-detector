@@ -1,0 +1,1 @@
+function tW(t){return Y(t[0])}

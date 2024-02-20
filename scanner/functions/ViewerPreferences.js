@@ -1,0 +1,1 @@
+function ViewerPreferences(t){var o;_classCallCheck(this,ViewerPreferences);(o=r.call(this,d,"viewerPreferences",!0)).ADBE_JSConsole=null;o.ADBE_JSDebugger=null;o.addViewerPreferences=null;o.duplexOption=null;o.enforce=null;o.numberOfCopies=null;o.pageRange=null;o.pickTrayByPDFSize=null;o.printScaling=null;return o}

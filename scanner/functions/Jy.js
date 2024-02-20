@@ -1,0 +1,1 @@
+function Jy(t){t._prev._next=t._next,t._next._prev=t._prev,delete t._next,delete t._prev}

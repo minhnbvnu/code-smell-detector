@@ -1,0 +1,1 @@
+function p9(){let e=K5();return p9=function(){return e},e}

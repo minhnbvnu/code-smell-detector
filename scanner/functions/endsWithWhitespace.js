@@ -1,0 +1,1 @@
+function endsWithWhitespace(item){while(isElement(item)&&item.children.length>0){item=item.children[item.children.length-1]}if(!isText(item)){return false}var text=textClean(item);return text.length>0&&$.htmlClean.isWhitespace(text.charAt(text.length-1))}

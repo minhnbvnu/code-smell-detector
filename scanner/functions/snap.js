@@ -1,3 +1,6 @@
-function snap(value, tolerance) {
-  return tolerance * Math.round(value / tolerance);
+function snap(x, min, max, step) {
+  if (step > 0) {
+    x = Math.round((x - min) / step) * step + min;
+  }
+  return clamp(x, min, max);
 }

@@ -1,0 +1,1 @@
+function TokenStream(e){TokenStreamBase.call(this,e,Tokens)}

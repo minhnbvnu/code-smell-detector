@@ -1,4 +1,4 @@
-function image_invert_colors() {
+function image_invert_colors(){
 	apply_image_transformation({
 		name: localize("Invert Colors"),
 		icon: get_help_folder_icon("p_invert.png"),

@@ -1,5 +1,3 @@
-function ParenthesizedExpression(node) {
-	  this.token("(");
-	  this.print(node.expression, node);
-	  this.token(")");
-	}
+function ParenthesizedExpression() {
+  return this.get("expression").getTypeAnnotation();
+}

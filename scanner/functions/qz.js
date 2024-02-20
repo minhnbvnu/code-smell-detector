@@ -1,0 +1,1 @@
+function qz(t){var e={xAxisIndex:t.get("xAxisIndex",!0),yAxisIndex:t.get("yAxisIndex",!0),xAxisId:t.get("xAxisId",!0),yAxisId:t.get("yAxisId",!0)};return null==e.xAxisIndex&&null==e.xAxisId&&(e.xAxisIndex="all"),null==e.yAxisIndex&&null==e.yAxisId&&(e.yAxisIndex="all"),e}

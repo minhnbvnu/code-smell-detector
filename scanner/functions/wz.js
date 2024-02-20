@@ -1,0 +1,1 @@
+function wz(t){return t.replace(/^\s\s*/,"").replace(/\s\s*$/,"")}

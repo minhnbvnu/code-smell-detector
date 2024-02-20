@@ -1,3 +1,5 @@
-function onError(event) {
-      reject(new ClientError(event.target));
-    }
+function onError(error) {
+          $ionicLoading.hide();
+          NVR.debug("Error: " + error);
+
+        }

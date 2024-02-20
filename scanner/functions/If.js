@@ -1,0 +1,1 @@
+function If(){this.$get=Ad}

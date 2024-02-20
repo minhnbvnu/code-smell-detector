@@ -1,0 +1,1 @@
+function BaseStandardFontDataFactory(t){var r=t.baseUrl,a=void 0===r?null:r;_classCallCheck(this,BaseStandardFontDataFactory);this.constructor===BaseStandardFontDataFactory&&(0,i.unreachable)("Cannot initialize BaseStandardFontDataFactory.");this.baseUrl=a}

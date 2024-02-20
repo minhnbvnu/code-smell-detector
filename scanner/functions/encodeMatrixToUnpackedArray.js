@@ -1,0 +1,1 @@
+function encodeMatrixToUnpackedArray(e,t,n){var r=getUnpackedArraySizeFromMatrixSize(e.length,n);if(t.length<r)throw new Error("unpackedArray length ("+t.length+") must be >= "+r);for(var o=0,a=0;a<e.length;++a)t[o]=e[a],o+=n;}

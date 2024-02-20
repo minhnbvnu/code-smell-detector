@@ -1,0 +1,1 @@
+function F6(t,e){return Math.max(0,Math.max(-8,Math.min(8,Math.floor(Hs(e)/3)))*3-Hs(Math.abs(t)))}

@@ -1,13 +1,1 @@
-function receiveAndExtend(length) {
-      if (length === 1) {
-        return readBit() === 1 ? 1 : -1;
-      }
-
-      var n = receive(length);
-
-      if (n >= 1 << length - 1) {
-        return n;
-      }
-
-      return n + (-1 << length) + 1;
-    }
+function receiveAndExtend(t){if(1===t)return 1===readBit()?1:-1;var r=receive(t);return r>=1<<t-1?r:r+(-1<<t)+1}

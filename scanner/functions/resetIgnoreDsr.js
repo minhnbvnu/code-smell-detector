@@ -1,0 +1,3 @@
+function resetIgnoreDsr() {
+  ignoreDsr = undefined;
+}

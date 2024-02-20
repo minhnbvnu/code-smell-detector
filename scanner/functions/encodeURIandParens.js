@@ -1,0 +1,1 @@
+function encodeURIandParens(uri){return encodeURI(uri).replace('(','%28').replace(')','%29')}

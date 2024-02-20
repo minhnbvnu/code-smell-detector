@@ -1,0 +1,1 @@
+function columnPositionValidInGroup(e){var o=currentPositionInHeader(e[0].id),t=limitPositionInGroup(e.data("column").id),n=t.start<=o&&o<=t.end;return{limit:t,valid:n,message:n?"":'Column "'.concat(e.text(),'" can be reordered only within the "',t.group.name,'" group!')}}

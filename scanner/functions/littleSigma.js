@@ -1,10 +1,1 @@
-function littleSigma(result, x, tmp) {
-    result.assign(x);
-    result.rotateRight(1);
-    tmp.assign(x);
-    tmp.rotateRight(8);
-    result.xor(tmp);
-    tmp.assign(x);
-    tmp.shiftRight(7);
-    result.xor(tmp);
-  }
+function littleSigma(t,r,o){t.assign(r);t.rotateRight(1);o.assign(r);o.rotateRight(8);t.xor(o);o.assign(r);o.shiftRight(7);t.xor(o)}

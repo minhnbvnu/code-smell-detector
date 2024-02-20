@@ -1,0 +1,1 @@
+function extractFormattedDigitsAndPlus(i){var o=AsYouTypeParser_slicedToArray(_extractFormattedDigitsAndPlus(i),2),s=o[0],u=o[1];return la.test(s)||(s=""),[s,u]}

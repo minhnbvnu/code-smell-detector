@@ -1,0 +1,1 @@
+function Tf(a){for(a=a.return;null!==a&&5!==a.tag&&3!==a.tag;)a=a.return;Z=a}

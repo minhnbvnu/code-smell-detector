@@ -1,0 +1,1 @@
+function B$(n,t){if(typeof t!="object")throw new TypeError("unexpected type for column indices");if(t.some(i=>i<0||i>=n.columns))throw new RangeError("column indices are out of range");return Array.isArray(t)||(t=Array.from(t)),t}

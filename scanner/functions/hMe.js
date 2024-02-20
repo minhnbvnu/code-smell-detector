@@ -1,0 +1,1 @@
+function hMe(e){fMe.copy(e,this)}

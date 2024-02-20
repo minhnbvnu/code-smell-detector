@@ -1,0 +1,1 @@
+function __emval_new(handle,argCount,argTypes,args){handle=requireHandle(handle);var newer=emval_newers[argCount];if(!newer){newer=craftEmvalAllocator(argCount);emval_newers[argCount]=newer}return newer(handle,argTypes,args)}

@@ -1,3 +1,1 @@
-function JpxImage() {
-    this.failOnCorruptedImage = false;
-  }
+function JpxImage(){_classCallCheck(this,JpxImage);this.failOnCorruptedImage=!1}

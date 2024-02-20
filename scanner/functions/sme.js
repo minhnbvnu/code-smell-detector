@@ -1,0 +1,1 @@
+function sme(e){return c2("(any-pointer: fine)")&&e.medium?"medium":e.large?"large":"medium"}

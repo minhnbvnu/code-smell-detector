@@ -1,0 +1,1 @@
+function nH(n,t,e){let i=e.constructor._properties,{propertyEffects:r}=n,{instanceProps:o}=t;for(let s in r)if(!i[s]&&!(o&&o[s])){let a=r[s];for(let l=0;l<a.length;l++){let{part:c}=a[l].info;if(!(c.signature&&c.signature.static)){console.warn(`Property '${s}' used in template but not declared in 'properties'; attribute will not be observed.`);break}}}}

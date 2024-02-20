@@ -1,0 +1,1 @@
+function Bind(t){var o;_classCallCheck(this,Bind);(o=r.call(this,_,"bind",!0)).match=(0,d.getStringOption)(t.match,["once","dataRef","global","none"]);o.ref=t.ref||"";o.picture=null;return o}

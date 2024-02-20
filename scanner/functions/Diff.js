@@ -1,1 +1,3 @@
-function Diff() {}
+function Diff(ignoreWhitespace) {
+    this.ignoreWhitespace = ignoreWhitespace;
+  }

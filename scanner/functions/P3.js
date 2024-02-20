@@ -1,0 +1,1 @@
+function P3(e){return e=e.pendingLanes&-1073741825,e!==0?e:e&1073741824?1073741824:0}

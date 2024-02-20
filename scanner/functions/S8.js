@@ -1,0 +1,1 @@
+function S8(e,t,r){Error.captureStackTrace&&Error.captureStackTrace(this,S8),this.name="CertificateParseError",this.format=t,this.certName=e,this.innerErr=r,this.message="Failed to parse "+e+" as a valid "+t+" format certificate: "+r.message}

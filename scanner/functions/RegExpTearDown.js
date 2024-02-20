@@ -1,0 +1,3 @@
+function RegExpTearDown() {
+  regExpBenchmark = null;
+}

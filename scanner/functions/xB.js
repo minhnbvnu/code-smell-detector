@@ -1,0 +1,1 @@
+function xB(n){return Boolean(n.target)&&n.kind!="attribute"&&n.kind!="text"&&!n.isCompound&&n.parts[0].mode==="{"}

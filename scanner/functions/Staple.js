@@ -1,0 +1,1 @@
+function Staple(t){var o;_classCallCheck(this,Staple);(o=r.call(this,d,"staple")).mode=(0,u.getStringOption)(t.mode,["usePrinterSetting","on","off"]);return o}

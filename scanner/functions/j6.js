@@ -1,0 +1,1 @@
+function j6(t,e){t=t.slice();var r=0,n=t.length-1,i=t[r],s=t[n],a;return s<i&&(a=r,r=n,n=a,a=i,i=s,s=a),t[r]=e.floor(i),t[n]=e.ceil(s),t}

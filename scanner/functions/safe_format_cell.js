@@ -1,0 +1,1 @@
+function safe_format_cell(cell,v){if(cell.z!==undefined)try{return cell.w=SSF.format(cell.z,v)}catch(e){}if(!cell.XF)return v;try{return cell.w=SSF.format(cell.XF.ifmt||0,v)}catch(e){return""+v}}

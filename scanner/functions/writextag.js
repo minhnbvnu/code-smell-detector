@@ -1,0 +1,1 @@
+function writextag(f,g,h){return"<"+f+(isval(h)?wxt_helper(h):"")+(isval(g)?(g.match(wtregex)?' xml:space="preserve"':"")+">"+g+"</"+f:"/")+">"}

@@ -1,0 +1,1 @@
+function qpe(e,t,r,n,i,a){return e.top!=null?Math.max(0,t.height+t.top+t.scroll.top-(r.top+e.top)-(i.top+i.bottom+a)):Math.max(0,n.top+r.top-(t.top+t.scroll.top)-(i.top+i.bottom+a))}

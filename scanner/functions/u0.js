@@ -1,0 +1,1 @@
+function u0(t,e,r,n,i){var s=i?[]:void 0;return vt(t.inEdges(n.v),function(a){var o=t.edge(a),l=t.node(a.v);i&&s.push({v:a.v,w:a.w}),l.out-=o,h0(e,r,l)}),vt(t.outEdges(n.v),function(a){var o=t.edge(a),l=a.w,u=t.node(l);u.in-=o,h0(e,r,u)}),t.removeNode(n.v),s}

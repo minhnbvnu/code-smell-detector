@@ -1,0 +1,1 @@
+function _glAttachShader(program,shader){program=GL.programs[program];shader=GL.shaders[shader];program[shader.shaderType]=shader;GLctx.attachShader(program,shader)}

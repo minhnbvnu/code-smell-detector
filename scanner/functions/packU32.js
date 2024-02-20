@@ -1,0 +1,1 @@
+function packU32(n){return[n>>24&255,n>>16&255,n>>8&255,n&255]}

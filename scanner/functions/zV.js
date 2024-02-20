@@ -1,0 +1,1 @@
+function zV(t,e){return C({brushType:t.brushType,brushMode:t.brushMode,transformable:t.transformable,brushStyle:new Mc(t.brushStyle).getItemStyle(),removeOnClick:t.removeOnClick,z:t.z},e,!0)}

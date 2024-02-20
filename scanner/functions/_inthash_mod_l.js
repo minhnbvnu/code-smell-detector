@@ -1,0 +1,1 @@
+function _inthash_mod_l(t){return _inthash(t).mod(_L_BI)}

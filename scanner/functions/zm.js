@@ -1,0 +1,1 @@
+function zm(a,c){a=a|0;c=c|0;var d=0;b[c+84>>0]=1;a=f[c+68>>2]|0;d=c+72|0;c=f[d>>2]|0;if((c|0)==(a|0))return 1;f[d>>2]=c+(~((c+-4-a|0)>>>2)<<2);return 1}

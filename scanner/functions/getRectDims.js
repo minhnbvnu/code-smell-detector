@@ -1,0 +1,1 @@
+function getRectDims(t){return{width:t[2]-t[0],height:t[3]-t[1]}}

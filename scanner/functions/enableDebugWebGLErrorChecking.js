@@ -1,0 +1,1 @@
+function enableDebugWebGLErrorChecking(e){webGLDebugErrorCheckingEnabled=e;}

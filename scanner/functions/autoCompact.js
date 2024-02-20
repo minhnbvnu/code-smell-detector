@@ -1,0 +1,1 @@
+function autoCompact(e){return auto_compaction?function(t,n){if(t)call(e,t);else{var r=n.length,o=function(){r--,r||call(e,null,n)};n.forEach(function(e){e.ok?compactDocument(e.id,1,o):o()})}}:e}

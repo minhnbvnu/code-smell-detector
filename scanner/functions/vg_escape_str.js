@@ -1,0 +1,1 @@
+function vg_escape_str(x){return x.replace(escape_str_re,"$1\\'")}

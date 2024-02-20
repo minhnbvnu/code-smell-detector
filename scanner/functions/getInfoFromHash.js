@@ -1,0 +1,1 @@
+function getInfoFromHash(i){var o=Kr(i,"#!/");if(o||Kr(i,"#/")){var s=Xr(i,o?"#!/":"#/"),u=s[s.length-1];return{isolate:o,hashArray:s.filter((function(i){return!hasDigitsOnly(i)})),targetName:s[0],targetIndex:hasDigitsOnly(u)?parseInt(u,10):void 0}}return{}}

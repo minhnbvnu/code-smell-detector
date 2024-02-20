@@ -1,0 +1,1 @@
+function KSe(e={}){return[Jm.of(e),YSe()]}

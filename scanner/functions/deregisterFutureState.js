@@ -1,0 +1,1 @@
+function deregisterFutureState() { delete(futureStates[futureState.name]); }

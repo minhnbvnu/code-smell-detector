@@ -1,0 +1,1 @@
+function posMin(a, b) { return (a.line - b.line || a.ch - b.ch) < 0 ? a : b; }

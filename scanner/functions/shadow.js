@@ -1,9 +1,1 @@
-function shadow(obj, prop, value) {
-  Object.defineProperty(obj, prop, {
-    value,
-    enumerable: true,
-    configurable: true,
-    writable: false
-  });
-  return value;
-}
+function shadow(t,r,o){Object.defineProperty(t,r,{value:o,enumerable:!0,configurable:!0,writable:!1});return o}

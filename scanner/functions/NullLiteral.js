@@ -1,3 +1,3 @@
 function NullLiteral() {
-	  return t.nullLiteralTypeAnnotation();
-	}
+  return t.nullLiteralTypeAnnotation();
+}

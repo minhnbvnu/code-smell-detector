@@ -1,0 +1,1 @@
+function lF(t){return function(e,n,i,r){var o=this.range,a=o.slice(),s=e.axisModels[0];if(s)return Ck(t(a,s,e,n,i,r),a,[0,100],"all"),this.range=a,o[0]!==a[0]||o[1]!==a[1]?a:void 0}}

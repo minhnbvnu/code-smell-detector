@@ -1,0 +1,1 @@
+function e8(n,t,e){var i=hat(n+""),r,o=i.length,s;if(arguments.length<2){var a=this.node().__on;if(a){for(var l=0,c=a.length,u;l<c;++l)for(r=0,u=a[l];r<o;++r)if((s=i[r]).type===u.type&&s.name===u.name)return u.value}return}for(a=t?dat:pat,e==null&&(e=!1),r=0;r<o;++r)this.each(a(i[r],t,e));return this}

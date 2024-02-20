@@ -1,0 +1,1 @@
+function escapeCssString(s,replacer){return'"'+s.replace(/[\u0000-\u001f\\\"<>]/g,replacer)+'"'}

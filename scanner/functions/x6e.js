@@ -1,0 +1,1 @@
+function x6e(e,t){var r=Ie.ONE.shiftLeft(e);return this.bitwiseTo(r,t,r),r}

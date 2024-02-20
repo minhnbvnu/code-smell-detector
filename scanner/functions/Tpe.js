@@ -1,0 +1,1 @@
+function Tpe(e){let t=cn.getTreeNode(br);for(;t&&t.scopeRef!==e;){if(t.nodeToRestore)return!1;t=t.parent}return(t==null?void 0:t.scopeRef)===e}

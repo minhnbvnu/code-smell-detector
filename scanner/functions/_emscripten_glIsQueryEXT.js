@@ -1,0 +1,1 @@
+function _emscripten_glIsQueryEXT(id){var query=GL.queries[id];if(!query)return 0;return GLctx.disjointTimerQueryExt["isQueryEXT"](query)}

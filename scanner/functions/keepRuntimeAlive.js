@@ -1,1 +1,3 @@
-function keepRuntimeAlive(){return noExitRuntime}
+function keepRuntimeAlive() {
+          return noExitRuntime;
+        }

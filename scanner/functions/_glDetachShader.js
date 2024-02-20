@@ -1,0 +1,1 @@
+function _glDetachShader(program,shader){GLctx.detachShader(GL.programs[program],GL.shaders[shader])}

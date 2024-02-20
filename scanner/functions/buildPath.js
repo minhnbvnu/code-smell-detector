@@ -1,7 +1,1 @@
-function buildPath(fontChar) {
-      if (font.renderer.hasBuiltPath(fontChar)) {
-        return;
-      }
-
-      handler.send("commonobj", [`${font.loadedName}_path_${fontChar}`, "FontPath", font.renderer.getPathJs(fontChar)]);
-    }
+function buildPath(r){var u="".concat(t.loadedName,"_path_").concat(r);try{if(t.renderer.hasBuiltPath(r))return;o.send("commonobj",[u,"FontPath",t.renderer.getPathJs(r)])}catch(t){if(l.ignoreErrors){o.send("UnsupportedFeature",{featureId:c.UNSUPPORTED_FEATURES.errorFontBuildPath});(0,c.warn)("buildFontPaths - ignoring ".concat(u,' glyph: "').concat(t,'".'));return}throw t}}

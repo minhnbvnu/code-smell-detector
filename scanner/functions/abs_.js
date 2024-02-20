@@ -1,15 +1,1 @@
-function abs_(x) {
-	  var $x = convertToTensor(x, 'x', 'abs');
-
-	  if ($x.dtype === 'complex64') {
-	    var inputs = {
-	      x: $x
-	    };
-	    return ENGINE.runKernel(ComplexAbs, inputs);
-	  } else {
-	    var _inputs = {
-	      x: $x
-	    };
-	    return ENGINE.runKernel(Abs, _inputs);
-	  }
-	}
+function abs_(e){var t=convertToTensor(e,"x","abs");if("complex64"===t.dtype)return ENV.engine.runKernel(function(e){return e.complexAbs(t)},{$x:t});return ENV.engine.runKernel(function(e){return e.abs(t)},{$x:t},function(e){return {$x:function(){return e.mulStrict(t.toFloat().step(-1))}}})}

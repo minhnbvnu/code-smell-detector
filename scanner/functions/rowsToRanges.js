@@ -1,0 +1,1 @@
+function rowsToRanges(e){for(var o=[],t=columns.length-1,n=0;n<e.length;n++)o.push(new Slick.Range(e[n],0,e[n],t));return o}

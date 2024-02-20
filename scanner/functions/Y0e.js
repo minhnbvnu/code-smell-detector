@@ -1,0 +1,1 @@
+function Y0e(e,t){return e=En(e),e=To(e),e.placeholder&&console.warn("Placeholders are deprecated due to accessibility issues. Please use help text instead. See the docs for details: https://react-spectrum.adobe.com/react-spectrum/ComboBox.html#help-text"),Vh()?S.createElement(q0e,{...e,menuTrigger:"input",ref:t}):S.createElement(G0e,{...e,ref:t})}

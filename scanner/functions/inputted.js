@@ -1,0 +1,1 @@
+function inputted() { change(valueof(input)); }

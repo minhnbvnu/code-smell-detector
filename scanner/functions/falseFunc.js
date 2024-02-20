@@ -1,0 +1,3 @@
+function falseFunc() {
+        return false;
+      }

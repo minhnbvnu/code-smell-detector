@@ -1,3 +1,1 @@
-function browserHTTPRequest(path, loadOptions) {
-	  return http(path, loadOptions);
-	}
+function browserHTTPRequest(e,t,n,r){return new BrowserHTTPRequest(e,t,n,r)}

@@ -1,1 +1,16 @@
-function writeChunks(stream,buffer,offset,length,position){var contents=stream.node.contents;if(position>=contents.length)return 0;var size=Math.min(contents.length-position,length);if(contents.slice){for(var i=0;i<size;i++){buffer[offset+i]=contents[position+i]}}else{for(var i=0;i<size;i++){buffer[offset+i]=contents.get(position+i)}}return size}
+function writeChunks(stream, buffer, offset, length, position) {
+            var contents = stream.node.contents;
+            if (position >= contents.length)
+              return 0;
+            var size = Math.min(contents.length - position, length);
+            if (contents.slice) {
+              for (var i = 0; i < size; i++) {
+                buffer[offset + i] = contents[position + i];
+              }
+            } else {
+              for (var i = 0; i < size; i++) {
+                buffer[offset + i] = contents.get(position + i);
+              }
+            }
+            return size;
+          }

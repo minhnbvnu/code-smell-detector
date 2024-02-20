@@ -1,0 +1,1 @@
+function MetadataParser(t){!function _classCallCheck(t,r){if(!(t instanceof r))throw new TypeError("Cannot call a class as a function")}(this,MetadataParser);t=this._repair(t);var r=new c.SimpleXMLParser({lowerCaseName:!0}).parseFromString(t);this._metadataMap=new Map;this._data=t;r&&this._parse(r)}

@@ -1,0 +1,1 @@
+function randomInt(x) { return floor(random() * x); }

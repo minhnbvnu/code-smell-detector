@@ -1,1 +1,1 @@
-function Km(a){a=a|0;return 6}
+function km(a){a=a|0;var b=0;f[a>>2]=3204;b=f[a+56>>2]|0;if(!b){Oq(a);return}Oq(b);Oq(a);return}

@@ -1,0 +1,1 @@
+function getIsCustomTouchBehavior(){return"hold"===getNormalizedTouchSettings()[0]}

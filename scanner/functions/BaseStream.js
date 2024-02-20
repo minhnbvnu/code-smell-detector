@@ -1,0 +1,1 @@
+function BaseStream(){!function _classCallCheck(t,r){if(!(t instanceof r))throw new TypeError("Cannot call a class as a function")}(this,BaseStream);this.constructor===BaseStream&&(0,c.unreachable)("Cannot initialize BaseStream.")}

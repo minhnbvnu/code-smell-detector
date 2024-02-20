@@ -1,0 +1,1 @@
+function sc(a){return function(b,d){a(d,b)}}

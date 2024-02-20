@@ -1,0 +1,1 @@
+function CompiledFont(t){_classCallCheck(this,CompiledFont);this.constructor===CompiledFont&&(0,c.unreachable)("Cannot initialize CompiledFont.");this.fontMatrix=t;this.compiledGlyphs=Object.create(null);this.compiledCharCodeToGlyphId=Object.create(null)}

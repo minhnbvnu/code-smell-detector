@@ -1,0 +1,1 @@
+function parse_ColRelU(blob,length){var c=blob.read_shift(2);return[c&16383,c>>14&1,c>>15&1]}

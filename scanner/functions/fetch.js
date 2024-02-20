@@ -1,3 +1,1 @@
-function fetch(_x, _x2) {
-	      return _fetch.apply(this, arguments);
-	    }
+function fetch(what,where,recurse){return DomUtils.getText(DomUtils.getElementsByTagName(what,where,recurse,1)).trim()}

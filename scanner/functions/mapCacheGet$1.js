@@ -1,0 +1,1 @@
+function mapCacheGet$1(key){return getMapData$2(this,key).get(key)}

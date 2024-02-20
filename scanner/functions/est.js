@@ -1,0 +1,1 @@
+function est(n,t,e){if(e.shapes=[],Array.isArray(n))for(let i=0,r=n.length;i<r;i++){let o=n[i];e.shapes.push(o.uuid)}else e.shapes.push(n.uuid);return t.extrudePath!==void 0&&(e.options.extrudePath=t.extrudePath.toJSON()),e}

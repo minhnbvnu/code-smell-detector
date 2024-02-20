@@ -1,1 +1,1 @@
-function En(t,n){return Object.prototype.hasOwnProperty.call(t,n)}
+function en(t){return(t>0)-(t<0)||+t}

@@ -1,0 +1,1 @@
+function cloneDataView$1(dataView,isDeep){var buffer=isDeep?cloneArrayBuffer$2(dataView.buffer):dataView.buffer;return new dataView.constructor(buffer,dataView.byteOffset,dataView.byteLength)}

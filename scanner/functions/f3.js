@@ -1,0 +1,3 @@
+function f3(x, y, z) {
+	        return (((x) | (~(y))) ^ (z));
+	    }

@@ -1,0 +1,1 @@
+function handlePrefixedGlobalRule(i,o){var s=i.options,u=i.style;for(var C in u)if("@"===C[0]&&C.substr(0,ka.length)===ka){var _=addScope(C.substr(ka.length),i.selector);o.addRule(_,u[C],_extends({},s,{selector:_})),delete u[C]}}

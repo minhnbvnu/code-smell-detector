@@ -1,0 +1,1 @@
+function tellScaled(){return Coords.getFixed()}

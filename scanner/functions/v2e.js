@@ -1,0 +1,1 @@
+function v2e(e,t,r,i){let a=new Error("middleware cannot return a promise when applyBeforeValidation is true");return r.reduce((n,s)=>{if(s.applyBeforeValidation!==i)return n;if(Ex(n))return n.then(o=>Promise.all([o,s(o,t)])).then(([o,u])=>Object.assign(o,u));{let o=s(e,t);if(i&&Ex(o))throw a;return Ex(o)?o.then(u=>Object.assign(n,u)):Object.assign(n,o)}},e)}

@@ -1,0 +1,1 @@
+function i6(t,e,r){var n,i,s;return function(){var a=Vs(this,t),o=r(this),l=o+"";return o==null&&(l=o=(this.style.removeProperty(t),Vs(this,t))),a===l?null:a===n&&l===i?s:(i=l,s=e(n=a,o))}}

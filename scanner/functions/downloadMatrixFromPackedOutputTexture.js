@@ -1,7 +1,1 @@
-function downloadMatrixFromPackedOutputTexture(gl, physicalRows, physicalCols) {
-	  var packedRGBA = new Float32Array(physicalRows * physicalCols * 4);
-	  callAndCheck(gl, function () {
-	    return gl.readPixels(0, 0, physicalCols, physicalRows, gl.RGBA, gl.FLOAT, packedRGBA);
-	  });
-	  return packedRGBA;
-	}
+function downloadMatrixFromPackedOutputTexture(e,t,n,r,o,a,i){var s=getPackedMatrixTextureShapeWidthHeight(o,a),u=s[0],l=s[1],c=new Float32Array(getPackedRGBAArraySizeFromMatrixShape(o,a));callAndCheck(e,function(){return e.readPixels(0,0,u,l,e.RGBA,e.FLOAT,c)});var p=new Float32Array(sizeFromShape([t,n,r]));return decodeMatrixFromPackedRGBA(c,t,n,r,p)}

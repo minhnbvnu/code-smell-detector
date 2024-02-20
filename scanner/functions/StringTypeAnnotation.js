@@ -1,3 +1,3 @@
 function StringTypeAnnotation() {
-	  this.word("string");
-	}
+  this.word("string");
+}

@@ -1,0 +1,1 @@
+function _eglWaitClient(){EGL.setErrorCode(12288);return 1}

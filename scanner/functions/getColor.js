@@ -1,28 +1,6 @@
-function getColor(data, def = [0, 0, 0]) {
-  let [r, g, b] = def;
-
-  if (!data) {
-    return {
-      r,
-      g,
-      b
-    };
-  }
-
-  const color = data.trim().split(/\s*,\s*/).map(c => Math.min(Math.max(0, parseInt(c.trim(), 10)), 255)).map(c => isNaN(c) ? 0 : c);
-
-  if (color.length < 3) {
-    return {
-      r,
-      g,
-      b
-    };
-  }
-
-  [r, g, b] = color;
-  return {
-    r,
-    g,
-    b
-  };
+function getColor(value, domain) {
+  const h = lerp(180, 0, clamp((value - domain[0]) / (domain[1] - domain[0]), 0, 1));
+  return Color.hsl(h, 100, 50)
+    .rgb()
+    .array();
 }

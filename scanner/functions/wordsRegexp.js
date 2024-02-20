@@ -1,0 +1,1 @@
+function wordsRegexp(i){return new RegExp("^(?:"+i.replace(/ /g,"|")+")$")}

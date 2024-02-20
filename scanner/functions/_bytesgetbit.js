@@ -1,0 +1,1 @@
+function _bytesgetbit(t,n){return t[t.length-(n>>>3)-1]>>(7&n)&1}

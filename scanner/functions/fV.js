@@ -1,0 +1,1 @@
+function fV(t,e,n){var i,r=e.ecModel;n?(i=new Mc(n,r,r),i=new Mc(e.option,i,r)):i=e;for(var o=t.length-1;o>=0;o--){var a=t[o];a&&(a instanceof Mc&&(a=a.get("tooltip",!0)),U(a)&&(a={formatter:a}),a&&(i=new Mc(a,i,r)))}return i}

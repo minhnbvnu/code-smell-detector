@@ -1,0 +1,1 @@
+function Whe(e){let t;return typeof e=="string"?t=S.createElement("span",null,e):t=S.Children.only(e),t}

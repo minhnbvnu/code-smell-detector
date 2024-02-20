@@ -1,0 +1,1 @@
+function parse_PtgAttrSemi(blob,length){var bitSemi=blob[blob.l+1]&255?1:0;blob.l+=4;return[bitSemi]}

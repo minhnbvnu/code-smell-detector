@@ -1,0 +1,1 @@
+function Jke(e,t){var r=[Nt(),Nt(),Nt(),Nt()],i,a=Kh(t,32);for(a[0]&=248,a[31]&=127,a[31]|=64,QE(r,a),YE(e,r),i=0;i<32;++i)t[i+32]=e[i];return 0}

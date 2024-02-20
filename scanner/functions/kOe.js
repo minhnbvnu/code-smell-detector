@@ -1,0 +1,1 @@
+function kOe(e){return e.replace(/^[\u0000-\u001F\u0020]+|[\u0000-\u001F\u0020]+$/g,"")}

@@ -3,9 +3,7 @@ function stringifyTOC(obj, level) {
     var buf = '';
     var link;
     for (var key in obj) {
-      if (key === 'suite') {
-        continue;
-      }
+      if ('suite' == key) continue;
       if (key !== SUITE_PREFIX) {
         link = ' - [' + key.substring(1) + ']';
         link += '(#' + utils.slug(obj[key].suite.fullTitle()) + ')\n';

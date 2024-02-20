@@ -1,4 +1,7 @@
-function popContext() {
-	  this.contexts.pop();
-	  this.setContext(this.contexts[this.contexts.length - 1]);
-	}
+function popContext(state, currentIndent) {
+      var contextIndent = state.context.indent - indentUnit;
+      currentIndent = currentIndent || false;
+      state.context = state.context.prev;
+      if (currentIndent) { state.context.indent = contextIndent; }
+      return state.context.type;
+    }

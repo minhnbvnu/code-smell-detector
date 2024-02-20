@@ -1,0 +1,1 @@
+function Mode(t){_classCallCheck(this,Mode);return r.call(this,d,"mode",["append","overwrite"])}

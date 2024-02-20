@@ -1,1 +1,1 @@
-function Ev(a){a=a|0;var b=0;b=fa-16|0;L[b+12>>2]=a;return L[L[b+12>>2]+48>>2]}
+function ev(e,r){var t={min:e+1,max:e+1};var a=-1;if(r.MDW)Po=r.MDW;if(r.width!=null)t.customWidth=1;else if(r.wpx!=null)a=Mo(r.wpx);else if(r.wch!=null)a=r.wch;if(a>-1){t.width=Uo(a);t.customWidth=1}else if(r.width!=null)t.width=r.width;if(r.hidden)t.hidden=true;if(r.level!=null){t.outlineLevel=t.level=r.level}return t}

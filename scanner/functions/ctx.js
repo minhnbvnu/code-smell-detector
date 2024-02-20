@@ -1,0 +1,1 @@
+function ctx(fn,that){return function(){return fn.apply(that,arguments)}}

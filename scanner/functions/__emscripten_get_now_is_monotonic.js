@@ -1,0 +1,1 @@
+function __emscripten_get_now_is_monotonic(){return nowIsMonotonic}

@@ -1,0 +1,1 @@
+function _wgpu_render_pass_encoder_set_viewport(encoder,x,y,width,height,minDepth,maxDepth){wgpu[encoder]["setViewport"](x,y,width,height,minDepth,maxDepth)}

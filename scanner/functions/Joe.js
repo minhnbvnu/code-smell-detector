@@ -1,0 +1,1 @@
+function Joe(e,t,r){An.unlink(t,i=>i?r(i):An.symlink(e,t,r))}

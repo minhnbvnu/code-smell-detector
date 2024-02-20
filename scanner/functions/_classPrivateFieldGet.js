@@ -1,13 +1,1 @@
-function _classPrivateFieldGet(receiver, privateMap) {
-	  var descriptor = privateMap.get(receiver);
-
-	  if (!descriptor) {
-	    throw new TypeError("attempted to get private field on non-instance");
-	  }
-
-	  if (descriptor.get) {
-	    return descriptor.get.call(receiver);
-	  }
-
-	  return descriptor.value;
-	}
+function _classPrivateFieldGet(t,r){return function _classApplyDescriptorGet(t,r){if(r.get)return r.get.call(t);return r.value}(t,_classExtractFieldDescriptor(t,r,"get"))}

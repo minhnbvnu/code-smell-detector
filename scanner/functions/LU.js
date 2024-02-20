@@ -1,0 +1,1 @@
+function LU(){return ah("Tensor",()=>Mn)}

@@ -1,0 +1,1 @@
+function compileModeKeywords(mode){if(!mode.keywordGroups){for(var key in mode.keywords){if(!mode.keywords.hasOwnProperty(key))continue;if(mode.keywords[key]instanceof Object)mode.keywordGroups=mode.keywords;else mode.keywordGroups={'keyword':mode.keywords};break}}}

@@ -1,0 +1,3 @@
+function fireBeforeCallbackAsync() {
+          fireDOMCallback('before');
+        }

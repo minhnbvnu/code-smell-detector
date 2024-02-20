@@ -1,0 +1,1 @@
+function seekContent(){var i,o,s=C;for(o=!1;s<B;){if(i=z.charCodeAt(s),!_.code.isLineTerminator(i)||13===i&&10===z.charCodeAt(s+1)){if(o){if(64===i)break;_.code.isWhiteSpace(i)||(o=!1)}}else o=!0;s+=1}return s}

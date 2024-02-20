@@ -1,0 +1,1 @@
+function hG(n,t,e){let i=0,r=n.length,o=0,s=!1;for(;i<r;){o=i+(r-i>>>1);let a=e(t,n[o]);a>0?i=o+1:(r=o,s=!a)}return s?i:-i-1}

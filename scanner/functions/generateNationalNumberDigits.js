@@ -1,0 +1,1 @@
+function generateNationalNumberDigits(i){return i.formatNational().replace(/\D/g,"")}

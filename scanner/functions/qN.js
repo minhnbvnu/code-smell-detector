@@ -1,0 +1,1 @@
+function qN(t){vt(t.graph().dummyChains,function(e){var r=t.node(e),n=r.edgeLabel,i;for(t.setEdge(r.edgeObj,n);r.dummy;)i=t.successors(e)[0],t.removeNode(e),n.points.push({x:r.x,y:r.y}),r.dummy==="edge-label"&&(n.x=r.x,n.y=r.y,n.width=r.width,n.height=r.height),e=i,r=t.node(e)})}

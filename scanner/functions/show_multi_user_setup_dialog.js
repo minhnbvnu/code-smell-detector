@@ -1,4 +1,4 @@
-function show_multi_user_setup_dialog(from_current_document) {
+function show_multi_user_setup_dialog(from_current_document){
 	const $w = $DialogWindow().title("Multi-User Setup").addClass("horizontal-buttons");
 	$w.$main.html(`
 		${from_current_document ? "<p>This will make the current document public.</p>" : ""}
@@ -21,15 +21,19 @@ function show_multi_user_setup_dialog(from_current_document) {
 		</p>
 	`);
 	const $session_name = $w.$main.find("#session-name");
-	$w.$main.css({ maxWidth: "500px" });
+	$w.$main.css({maxWidth: "500px"});
 	$w.$Button("Start", () => {
 		let name = $session_name.val().trim();
 
-		if (name == "") {
+		if(name == ""){
 			show_error_message("The session name cannot be empty.");
-		} else if ($session_name.is(":invalid")) {
+		// }else if(name.match(/[./[\]#$]/)){
+		// 	show_error_message("The session name cannot contain any of ./[]#$");
+		// }else if(name.match(/\s/)){
+		// 	show_error_message("The session name cannot contain spaces.");
+		}else if($session_name.is(":invalid")){
 			show_error_message("The session name must be made from only numbers, letters, and hyphens.");
-		} else {
+		}else{
 			if (from_current_document) {
 				change_url_param("session", name);
 			} else {
@@ -39,7 +43,7 @@ function show_multi_user_setup_dialog(from_current_document) {
 			}
 			$w.close();
 		}
-	}, { type: "submit" });
+	});
 	$w.$Button(localize("Cancel"), () => {
 		$w.close();
 	});

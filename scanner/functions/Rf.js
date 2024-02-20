@@ -1,0 +1,1 @@
+function Rf(a,b,d){d.call(a,b)}

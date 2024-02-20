@@ -1,0 +1,1 @@
+function Rve(e){return Bve.test(e)}

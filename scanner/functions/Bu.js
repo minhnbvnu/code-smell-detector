@@ -1,0 +1,1 @@
+function Bu(t){var e=t.ownerDocument||t;return e.defaultView||e.parentWindow||window}

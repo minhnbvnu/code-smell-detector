@@ -1,0 +1,1 @@
+function getElements(what,where){return DomUtils.getElementsByTagName(what,where,true)}

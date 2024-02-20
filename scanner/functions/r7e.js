@@ -1,0 +1,1 @@
+function r7e(e){if(e===null)return[];var t,r,i,a,n,s=e;for(n=new Array(s.length),t=0,r=s.length;t<r;t+=1)i=s[t],a=Object.keys(i),n[t]=[a[0],i[a[0]]];return n}

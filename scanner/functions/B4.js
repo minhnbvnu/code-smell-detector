@@ -1,0 +1,1 @@
+function B4(e,t,r){let n;for(let i of r)if(!i.attrs||i.attrs(n||(n=Foe(e.node.parent.firstChild,t))))return{parser:i.parser};return null}

@@ -1,4 +1,4 @@
 function commaSeparator() {
-	  this.token(",");
-	  this.space();
-	}
+  this.token(",");
+  this.space();
+}

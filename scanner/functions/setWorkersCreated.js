@@ -1,3 +1,0 @@
-function setWorkersCreated() {
-    workersCreated = true;
-}

@@ -1,0 +1,1 @@
+function _wgpu_queue_submit_one_and_destroy(queue,commandBuffer){_wgpu_queue_submit_one(queue,commandBuffer);_wgpu_object_destroy(commandBuffer)}

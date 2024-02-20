@@ -1,0 +1,1 @@
+function CanvasRenderingContext2D() {}

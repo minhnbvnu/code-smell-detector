@@ -1,0 +1,1 @@
+function _JS_Init_ContextMenuHandler(){const _handleContextMenu=function(event){if(event.target.localName!=="canvas")_ReleaseKeys()};document.addEventListener("contextmenu",_handleContextMenu);Module.deinitializers.push(function(){document.removeEventListener("contextmenu",_handleContextMenu)})}

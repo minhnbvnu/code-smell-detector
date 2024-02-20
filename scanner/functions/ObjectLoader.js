@@ -1,6 +1,1 @@
-function ObjectLoader(dict, keys, xref) {
-    this.dict = dict;
-    this.keys = keys;
-    this.xref = xref;
-    this.refSet = null;
-  }
+function ObjectLoader(t,r,o){!function _classCallCheck(t,r){if(!(t instanceof r))throw new TypeError("Cannot call a class as a function")}(this,ObjectLoader);this.dict=t;this.keys=r;this.xref=o;this.refSet=null}

@@ -1,0 +1,1 @@
+function lC(t){var e=t.geoModel,n=t.seriesModel;return e?e.coordinateSystem:n?n.coordinateSystem||(n.getReferringComponents("geo",zo).models[0]||{}).coordinateSystem:null}

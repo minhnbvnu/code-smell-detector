@@ -1,0 +1,1 @@
+function scrub_vec(t){for(var e=0;e<t.length;t++)t[e]=0;return!1}

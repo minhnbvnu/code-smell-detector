@@ -1,0 +1,1 @@
+function _wgpu_command_encoder_begin_compute_pass(commandEncoder,descriptor){commandEncoder=wgpu[commandEncoder];descriptor>>=2;let desc={"timestampWrites":wgpuReadTimestampWrites(descriptor)};let computePassEncoder=commandEncoder["beginComputePass"](desc);return wgpuStore(computePassEncoder)}

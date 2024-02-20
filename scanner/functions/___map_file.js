@@ -1,0 +1,1 @@
+function ___map_file(pathname,size){___setErrNo(ERRNO_CODES.EPERM);return-1}

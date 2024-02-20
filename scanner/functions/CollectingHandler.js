@@ -1,0 +1,1 @@
+function CollectingHandler(cbs){this._cbs=cbs||{};this.events=[]}

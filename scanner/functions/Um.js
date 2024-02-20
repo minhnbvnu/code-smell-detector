@@ -1,0 +1,1 @@
+function Um(a){a=a|0;f[a>>2]=3260;Fj(a+88|0);Oq(a);return}

@@ -1,0 +1,1 @@
+function handleFooterContextMenu(e){var o=$(e.target).closest(".slick-footerrow-column",".slick-footerrow-columns"),t=o&&o.data("column");trigger(self.onFooterContextMenu,{column:t},e)}

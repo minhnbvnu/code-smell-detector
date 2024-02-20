@@ -1,0 +1,1 @@
+function XTe(e,t){const r={href:wd(t.url)};t.title!==null&&t.title!==void 0&&(r.title=t.title);const n={type:"element",tagName:"a",properties:r,children:e.all(t)};return e.patch(t,n),e.applyData(t,n)}

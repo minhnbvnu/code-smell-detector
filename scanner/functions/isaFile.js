@@ -1,0 +1,1 @@
+function isaFile($) {return ($.is("FILE"))}

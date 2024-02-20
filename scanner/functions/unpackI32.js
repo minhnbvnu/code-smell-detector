@@ -1,3 +1,1 @@
-function unpackI32(bytes) {
-  return bytes[3] << 24 | bytes[2] << 16 | bytes[1] << 8 | bytes[0];
-}
+function unpackI32(t){return t[3]<<24|t[2]<<16|t[1]<<8|t[0]}

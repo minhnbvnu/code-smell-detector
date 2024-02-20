@@ -1,0 +1,1 @@
+function zoomInTotal ()    { zoom_set(zoom_levels.length-1); }

@@ -1,0 +1,1 @@
+function dN(t,e,r,n){var i=new sr,s=t.graph(),a=mN(s.nodesep,s.edgesep,n);return vt(e,function(o){var l;vt(o,function(u){var d=r[u];if(i.setNode(d),l){var f=r[l],p=i.edge(f,d);i.setEdge(f,d,Math.max(a(t,u,l),p||0))}l=u})}),i}

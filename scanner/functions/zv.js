@@ -1,1 +1,1 @@
-function Zv(){var a=0;a=oa(192);dj(a,1);return a|0}
+function zv(t,e){return Ae(t.getFullYear()%1e4,e,4)}

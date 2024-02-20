@@ -1,1 +1,22 @@
-function __addDays(date,days){var newDate=new Date(date.getTime());while(days>0){var leap=__isLeapYear(newDate.getFullYear());var currentMonth=newDate.getMonth();var daysInCurrentMonth=(leap?__MONTH_DAYS_LEAP:__MONTH_DAYS_REGULAR)[currentMonth];if(days>daysInCurrentMonth-newDate.getDate()){days-=daysInCurrentMonth-newDate.getDate()+1;newDate.setDate(1);if(currentMonth<11){newDate.setMonth(currentMonth+1)}else{newDate.setMonth(0);newDate.setFullYear(newDate.getFullYear()+1)}}else{newDate.setDate(newDate.getDate()+days);return newDate}}return newDate}
+function __addDays(date, days) {
+          var newDate = new Date(date.getTime());
+          while (days > 0) {
+            var leap = __isLeapYear(newDate.getFullYear());
+            var currentMonth = newDate.getMonth();
+            var daysInCurrentMonth = (leap ? __MONTH_DAYS_LEAP : __MONTH_DAYS_REGULAR)[currentMonth];
+            if (days > daysInCurrentMonth - newDate.getDate()) {
+              days -= daysInCurrentMonth - newDate.getDate() + 1;
+              newDate.setDate(1);
+              if (currentMonth < 11) {
+                newDate.setMonth(currentMonth + 1);
+              } else {
+                newDate.setMonth(0);
+                newDate.setFullYear(newDate.getFullYear() + 1);
+              }
+            } else {
+              newDate.setDate(newDate.getDate() + days);
+              return newDate;
+            }
+          }
+          return newDate;
+        }

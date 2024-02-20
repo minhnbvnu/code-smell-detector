@@ -1,3 +1,3 @@
 function baseIsArguments(value) {
-	  return isObjectLike(value) && baseGetTag(value) == argsTag;
-	}
+      return isObjectLike(value) && baseGetTag(value) == argsTag;
+    }

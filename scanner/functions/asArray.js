@@ -1,6 +1,5 @@
-function asArray(color) {
-  if (Array.isArray(color)) {
-    return color;
+function asArray(value) {
+    if (Array.isArray(value))
+      return value;
+    return [value];
   }
-  return fromString(color);
-}

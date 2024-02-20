@@ -1,1 +1,1 @@
-function Fq(a,b){a=a|0;b=b|0;var c=0;c=fa-16|0;L[c+12>>2]=a;L[c+8>>2]=b;L[L[c+12>>2]+36>>2]=L[c+8>>2]}
+function fq(a){a=a|0;return f[a+80>>2]|0}

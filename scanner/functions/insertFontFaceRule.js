@@ -1,0 +1,1 @@
+function insertFontFaceRule(inlineStyle){var head=document.head||document.getElementsByTagName("head")[0];var style=head.appendChild(document.createElement("style"));return style.appendChild(document.createTextNode("@font-face{"+inlineStyle+"}"))}

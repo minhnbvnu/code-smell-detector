@@ -1,0 +1,1 @@
+function f0(t){var e=t.x;t.x=t.y,t.y=e}

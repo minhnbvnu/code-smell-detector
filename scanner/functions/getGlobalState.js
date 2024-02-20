@@ -1,0 +1,3 @@
+function getGlobalState() {
+  return globalState;
+}

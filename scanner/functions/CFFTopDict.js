@@ -1,0 +1,1 @@
+function CFFTopDict(o){var l;_classCallCheck(this,CFFTopDict);null===r&&(r=_.createTables(t));(l=c.call(this,r,o)).privateDict=null;return l}

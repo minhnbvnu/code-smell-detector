@@ -1,0 +1,1 @@
+function VE(n){let t=n.size-1,e=0;for(let i=0;i<n.columns;i++)for(let r=0;r<n.rows;r++)e+=Math.pow(n.get(r,i),2)/t;return Math.sqrt(e)}

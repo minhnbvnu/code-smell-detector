@@ -1,1 +1,1 @@
-function yy(){var a=0;a=oa(16);Ka(a);return a|0}
+function Yy(t,e){return function(r){return r==null?!1:r[t]===e&&(e!==void 0||t in Object(r))}}

@@ -1,0 +1,1 @@
+function P$(){var t,e;if(rU.type!==cU&&rU.type!==uU){e=q$()}else if(E$("++")||E$("--")){throw new Error(zU)}else if(E$("+")||E$("-")||E$("~")||E$("!")){t=c$();e=P$();e=w$(t.value,e)}else if(D$("delete")||D$("void")||D$("typeof")){throw new Error(zU)}else{e=q$()}return e}

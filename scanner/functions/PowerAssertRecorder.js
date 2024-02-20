@@ -1,0 +1,1 @@
+function PowerAssertRecorder() { this.captured = []; }

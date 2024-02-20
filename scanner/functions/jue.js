@@ -1,0 +1,1 @@
+function jue(e,t,r,i){typeof r=="function"&&(i=r,r="utf8");let a=WT.dirname(e);Nue(a,(n,s)=>{if(n)return i(n);if(s)return T0.writeFile(e,t,r,i);GT.mkdirs(a,o=>{if(o)return i(o);T0.writeFile(e,t,r,i)})})}

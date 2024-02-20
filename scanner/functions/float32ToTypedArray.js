@@ -1,15 +1,1 @@
-function float32ToTypedArray(a, dtype) {
-	  if (dtype === 'float32' || dtype === 'complex64') {
-	    return a;
-	  } else if (dtype === 'int32' || dtype === 'bool') {
-	    var result = dtype === 'int32' ? new Int32Array(a.length) : new Uint8Array(a.length);
-
-	    for (var i = 0; i < result.length; ++i) {
-	      result[i] = Math.round(a[i]);
-	    }
-
-	    return result;
-	  } else {
-	    throw new Error("Unknown dtype " + dtype);
-	  }
-	}
+function float32ToTypedArray(e,t){if("float32"===t||"complex64"===t)return e;if("int32"===t||"bool"===t){for(var n="int32"===t?new Int32Array(e.length):new Uint8Array(e.length),r=0;r<n.length;++r)n[r]=Math.round(e[r]);return n}throw new Error("Unknown dtype "+t)}

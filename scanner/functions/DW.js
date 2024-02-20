@@ -1,0 +1,1 @@
+function DW(n,t){let e=[],i=Math.max(n.length,t.length);for(let r=0;r<i;r++){let o=n[n.length-r-1];o==null&&(o=1);let s=t[t.length-r-1];if(s==null&&(s=1),o===1)e.unshift(s);else if(s===1)e.unshift(o);else if(o!==s){let a=`Operands could not be broadcast together with shapes ${n} and ${t}.`;throw Error(a)}else e.unshift(o)}return e}

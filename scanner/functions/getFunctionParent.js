@@ -1,5 +1,3 @@
 function getFunctionParent() {
-	  return this.findParent(function (path) {
-	    return path.isFunction() || path.isProgram();
-	  });
-	}
+  return this.findParent(p => p.isFunction());
+}

@@ -1,0 +1,1 @@
+function typeStr(obj){return isArray(obj)?"array":typeof obj}

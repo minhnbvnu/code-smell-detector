@@ -1,0 +1,1 @@
+function isFunction$2(value){if(!isObject$6(value))return!1;var tag=baseGetTag$4(value);return tag==funcTag$2||tag==genTag$1||tag==asyncTag||tag==proxyTag}

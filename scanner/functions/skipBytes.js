@@ -1,3 +1,1 @@
-function skipBytes(count) {
-      position += count;
-    }
+function skipBytes(t){d+=t}

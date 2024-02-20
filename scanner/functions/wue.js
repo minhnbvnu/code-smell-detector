@@ -1,0 +1,1 @@
+function wue(){var e=process.version.replace("v","").split(".");return{major:parseInt(e[0],10),minor:parseInt(e[1],10),patch:parseInt(e[2],10)}}

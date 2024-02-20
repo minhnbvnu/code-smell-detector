@@ -1,0 +1,1 @@
+function mxMouseEvent(a,b){this.evt=a;this.sourceState=this.state=b}

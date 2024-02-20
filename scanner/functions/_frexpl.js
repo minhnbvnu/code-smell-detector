@@ -1,0 +1,1 @@
+function _frexpl($0,$1){$0=+$0;$1=$1|0;var $2=0,label=0,sp=0;sp=STACKTOP;$2=+_frexp($0,$1);return+$2}

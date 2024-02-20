@@ -1,0 +1,1 @@
+function parse_DefaultRowHeight(blob,length){var f=blob.read_shift(2),miyRw;miyRw=blob.read_shift(2);var fl={Unsynced:f&1,DyZero:(f&2)>>1,ExAsc:(f&4)>>2,ExDsc:(f&8)>>3};return[fl,miyRw]}

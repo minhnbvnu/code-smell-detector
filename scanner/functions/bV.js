@@ -1,0 +1,1 @@
+function bV(t,e,n){var i={};return xV(e,(function(e){var r,o=i[e]=((r=function(){}).prototype.__hidden=r.prototype,new r);xV(t[e],(function(t,i){if(_D.isValidType(i)){var r={type:i,visual:t};n&&n(r,e),o[i]=new _D(r),"opacity"===i&&((r=T(r)).type="colorAlpha",o.__hidden.__alphaForOpacity=new _D(r))}}))})),i}

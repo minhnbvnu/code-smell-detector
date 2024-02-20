@@ -1,0 +1,1 @@
+function results (parent) { this.initialize(parent); }

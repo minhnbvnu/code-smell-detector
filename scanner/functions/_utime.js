@@ -1,0 +1,1 @@
+function _utime(path,times){var time;if(times){var offset=4;time=HEAP32[times+offset>>2];time*=1e3}else{time=Date.now()}path=Pointer_stringify(path);try{FS.utime(path,time,time);return 0}catch(e){FS.handleFSError(e);return-1}}

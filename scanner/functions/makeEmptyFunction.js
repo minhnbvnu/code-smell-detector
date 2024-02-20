@@ -1,0 +1,1 @@
+function makeEmptyFunction(arg){return function(){return arg}}

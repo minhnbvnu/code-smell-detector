@@ -1,0 +1,1 @@
+function GDe(e,t,r){const n=this;return i;function i(s){return e.enter("labelImage"),e.enter("labelImageMarker"),e.consume(s),e.exit("labelImageMarker"),a}function a(s){return s===91?(e.enter("labelMarker"),e.consume(s),e.exit("labelMarker"),e.exit("labelImage"),l):r(s)}function l(s){return s===94&&"_hiddenFootnoteSupport"in n.parser.constructs?r(s):t(s)}}

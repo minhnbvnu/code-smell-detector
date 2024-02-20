@@ -1,0 +1,1 @@
+function setCurrentXml(a,b){null!=window.parent&&null!=window.parent.openFile&&window.parent.openFile.setData(a,b)}

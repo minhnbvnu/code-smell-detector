@@ -1,0 +1,1 @@
+function ts(t,e,i,n){var o;return e.hasOwnProperty(t)?e[t].redundant.length>0?(o=e[t].redundant[0],e[t].redundant.shift()):(o=document.createElement(t),void 0!==n?i.insertBefore(o,n):i.appendChild(o)):(o=document.createElement(t),e[t]={used:[],redundant:[]},void 0!==n?i.insertBefore(o,n):i.appendChild(o)),e[t].used.push(o),o}

@@ -1,0 +1,1 @@
+function isNameChar(e){return e!==null&&(isNameStart(e)||/[0-9\-\\]/.test(e))}

@@ -1,0 +1,1 @@
+function _InitViewerHitTestPoseArray(byteOffset){Module.ViewerHitTestPoseArrayOffset=byteOffset/4}

@@ -1,1 +1,1 @@
-function Co(t){Ao(t,"local").da(t.h),Po(t)}
+function co(e){return(Ni(e)?Ne:ft)(e)}

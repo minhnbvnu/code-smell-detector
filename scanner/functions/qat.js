@@ -1,0 +1,1 @@
+function qat(n,t){return function(e){this.setAttributeNS(n.space,n.local,t.call(this,e))}}

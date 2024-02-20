@@ -1,0 +1,1 @@
+function sampleCurveX(t) {return ((ax * t + bx) * t + cx) * t;}

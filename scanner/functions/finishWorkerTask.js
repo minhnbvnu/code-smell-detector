@@ -1,5 +1,1 @@
-function finishWorkerTask(task) {
-      task.finish();
-      var i = WorkerTasks.indexOf(task);
-      WorkerTasks.splice(i, 1);
-    }
+function finishWorkerTask(t){t.finish();var r=S.indexOf(t);S.splice(r,1)}

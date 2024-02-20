@@ -1,0 +1,1 @@
+function SVGPath(){this._path=''}

@@ -1,0 +1,1 @@
+function s3(t,e,r,n){var i=t.x,s=t.y,a=i-n.x,o=s-n.y,l=Math.sqrt(e*e*o*o+r*r*a*a),u=Math.abs(e*r*a/l);n.x<i&&(u=-u);var d=Math.abs(e*r*o/l);return n.y<s&&(d=-d),{x:i+u,y:s+d}}

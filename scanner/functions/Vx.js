@@ -1,1 +1,1 @@
-function vx(a,b){a=a|0;b=b|0;var c=0;c=fa-16|0;L[c+12>>2]=a;L[c+8>>2]=b;L[L[c+12>>2]+112>>2]=L[c+8>>2]}
+function Vx(t){var e=this._id;return arguments.length?this.each((typeof t=="function"?Px:Yx)(e,t)):dn(this.node(),e).duration}

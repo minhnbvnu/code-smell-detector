@@ -1,7 +1,4 @@
-function ImportNamespaceSpecifier(node) {
-	  this.token("*");
-	  this.space();
-	  this.word("as");
-	  this.space();
-	  this.print(node.local, node);
-	}
+function ImportNamespaceSpecifier(local) {
+	        this.type = syntax_1.Syntax.ImportNamespaceSpecifier;
+	        this.local = local;
+	    }

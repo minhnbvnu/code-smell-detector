@@ -1,0 +1,1 @@
+function JSXOpeningFragment(){i.apply(this,arguments)}

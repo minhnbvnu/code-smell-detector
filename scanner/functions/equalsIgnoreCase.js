@@ -1,0 +1,1 @@
+function equalsIgnoreCase(T,E){return is(T,S)&&is(E,S)?T.toLowerCase()===E.toLowerCase():!1}

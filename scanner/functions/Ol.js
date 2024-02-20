@@ -1,0 +1,1 @@
+function Ol(t,e,i){for(var n=!1,r=e.current.valueOf(),o=0;o<e.hiddenDates.length;o++){var s=e.hiddenDates[o].start,a=e.hiddenDates[o].end;if(r>=s&&r<a){n=!0;break}}if(1==n&&r<e._end.valueOf()&&r!=i){var h=t(i),l=t(a);h.year()!=l.year()?e.switchedYear=!0:h.month()!=l.month()?e.switchedMonth=!0:h.dayOfYear()!=l.dayOfYear()&&(e.switchedDay=!0),e.current=l}}

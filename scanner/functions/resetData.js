@@ -1,0 +1,3 @@
+function resetData() {
+  _values = {};
+}

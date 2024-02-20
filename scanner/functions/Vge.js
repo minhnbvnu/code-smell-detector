@@ -1,0 +1,1 @@
+function Vge(){return O.useContext(Qge)}

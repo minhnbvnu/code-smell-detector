@@ -1,0 +1,1 @@
+function solveEpsilon(duration) {return 1.0 / (200.0 * duration);}

@@ -1,6 +1,5 @@
-function LabeledStatement(node) {
-	  this.print(node.label, node);
-	  this.token(":");
-	  this.space();
-	  this.print(node.body, node);
-	}
+function LabeledStatement(label, body) {
+	        this.type = syntax_1.Syntax.LabeledStatement;
+	        this.label = label;
+	        this.body = body;
+	    }

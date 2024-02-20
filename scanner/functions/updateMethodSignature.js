@@ -1,0 +1,3 @@
+function updateMethodSignature(node, modifiers, name, questionToken, typeParameters, parameters, type) {
+                return node.modifiers !== modifiers || node.name !== name || node.questionToken !== questionToken || node.typeParameters !== typeParameters || node.parameters !== parameters || node.type !== type ? finishUpdateBaseSignatureDeclaration(createMethodSignature(modifiers, name, questionToken, typeParameters, parameters, type), node) : node;
+            }

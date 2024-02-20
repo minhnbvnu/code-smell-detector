@@ -1,0 +1,1 @@
+function lX(n){let{backend:t,attrs:e}=n,{start:i,stop:r,dtype:o,step:s}=e,a=y1(i,r,s,o);return t.makeTensorInfo([a.length],o,a)}

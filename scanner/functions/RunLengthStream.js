@@ -1,5 +1,1 @@
-function RunLengthStream(str, maybeLength) {
-    this.str = str;
-    this.dict = str.dict;
-    DecodeStream.call(this, maybeLength);
-  }
+function RunLengthStream(t,o){var c;!function _classCallCheck(t,r){if(!(t instanceof r))throw new TypeError("Cannot call a class as a function")}(this,RunLengthStream);(c=r.call(this,o)).str=t;c.dict=t.dict;return c}

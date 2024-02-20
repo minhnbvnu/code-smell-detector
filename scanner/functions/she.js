@@ -1,0 +1,1 @@
+function she(e){return e!==null?e:[]}

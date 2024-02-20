@@ -1,0 +1,1 @@
+function l4(a){a=a|0;var b=0,d=0;b=l;l=l+16|0;d=b;c[d>>2]=e2(a)|0;a=Ja(6,d|0)|0;a=c2((a|0)==-4?0:a)|0;l=b;return a|0}

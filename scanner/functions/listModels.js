@@ -1,3 +1,1 @@
-function listModels() {
-	  return _listModels.apply(this, arguments);
-	}
+function listModels(){return __awaiter(this,void 0,void 0,function(){var e,t,n,r,o,a,i;return __generator(this,function(s){switch(s.label){case 0:e=ModelStoreManagerRegistry.getSchemes(),t={},n=0,r=e,s.label=1;case 1:return n<r.length?(o=r[n],[4,ModelStoreManagerRegistry.getManager(o).listModels()]):[3,4];case 2:for(i in a=s.sent())t[o+URL_SCHEME_SUFFIX+i]=a[i];s.label=3;case 3:return n++,[3,1];case 4:return [2,t]}})})}

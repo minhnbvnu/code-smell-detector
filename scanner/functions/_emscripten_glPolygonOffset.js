@@ -1,0 +1,1 @@
+function _emscripten_glPolygonOffset(x0,x1){GLctx["polygonOffset"](x0,x1)}

@@ -1,1 +1,1 @@
-function Vn(){v.call(this)}
+function Vn(t,e){var i=D(t)?t:qi(t);return!(!this.isValid()||!i.isValid())&&("millisecond"===(e=ot(e)||"millisecond")?this.valueOf()<i.valueOf():this.clone().endOf(e).valueOf()<i.valueOf())}

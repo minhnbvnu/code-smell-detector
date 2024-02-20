@@ -1,51 +1,80 @@
-function defineType(type) {
-	  var opts = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+function defineType(type, opts = {}) {
+  const inherits = opts.inherits && store[opts.inherits] || {};
+  let fields = opts.fields;
 
-	  var inherits = opts.inherits && store[opts.inherits] || {};
+  if (!fields) {
+    fields = {};
 
-	  opts.fields = opts.fields || inherits.fields || {};
-	  opts.visitor = opts.visitor || inherits.visitor || [];
-	  opts.aliases = opts.aliases || inherits.aliases || [];
-	  opts.builder = opts.builder || inherits.builder || opts.visitor || [];
+    if (inherits.fields) {
+      const keys = Object.getOwnPropertyNames(inherits.fields);
 
-	  if (opts.deprecatedAlias) {
-	    DEPRECATED_KEYS[opts.deprecatedAlias] = type;
-	  }
+      for (const key of keys) {
+        const field = inherits.fields[key];
+        const def = field.default;
 
-	  for (var _iterator4 = opts.visitor.concat(opts.builder), _isArray4 = Array.isArray(_iterator4), _i4 = 0, _iterator4 = _isArray4 ? _iterator4 : (0, _getIterator3.default)(_iterator4);;) {
-	    var _ref4;
+        if (Array.isArray(def) ? def.length > 0 : def && typeof def === "object") {
+          throw new Error("field defaults can only be primitives or empty arrays currently");
+        }
 
-	    if (_isArray4) {
-	      if (_i4 >= _iterator4.length) break;
-	      _ref4 = _iterator4[_i4++];
-	    } else {
-	      _i4 = _iterator4.next();
-	      if (_i4.done) break;
-	      _ref4 = _i4.value;
-	    }
+        fields[key] = {
+          default: Array.isArray(def) ? [] : def,
+          optional: field.optional,
+          validate: field.validate
+        };
+      }
+    }
+  }
 
-	    var _key5 = _ref4;
+  const visitor = opts.visitor || inherits.visitor || [];
+  const aliases = opts.aliases || inherits.aliases || [];
+  const builder = opts.builder || inherits.builder || opts.visitor || [];
 
-	    opts.fields[_key5] = opts.fields[_key5] || {};
-	  }
+  for (const k of Object.keys(opts)) {
+    if (validTypeOpts.indexOf(k) === -1) {
+      throw new Error(`Unknown type option "${k}" on ${type}`);
+    }
+  }
 
-	  for (var key in opts.fields) {
-	    var field = opts.fields[key];
+  if (opts.deprecatedAlias) {
+    DEPRECATED_KEYS[opts.deprecatedAlias] = type;
+  }
 
-	    if (opts.builder.indexOf(key) === -1) {
-	      field.optional = true;
-	    }
-	    if (field.default === undefined) {
-	      field.default = null;
-	    } else if (!field.validate) {
-	      field.validate = assertValueType(getType(field.default));
-	    }
-	  }
+  for (const key of visitor.concat(builder)) {
+    fields[key] = fields[key] || {};
+  }
 
-	  VISITOR_KEYS[type] = opts.visitor;
-	  BUILDER_KEYS[type] = opts.builder;
-	  NODE_FIELDS[type] = opts.fields;
-	  ALIAS_KEYS[type] = opts.aliases;
+  for (const key of Object.keys(fields)) {
+    const field = fields[key];
 
-	  store[type] = opts;
-	}
+    if (field.default !== undefined && builder.indexOf(key) === -1) {
+      field.optional = true;
+    }
+
+    if (field.default === undefined) {
+      field.default = null;
+    } else if (!field.validate && field.default != null) {
+      field.validate = assertValueType(getType(field.default));
+    }
+
+    for (const k of Object.keys(field)) {
+      if (validFieldKeys.indexOf(k) === -1) {
+        throw new Error(`Unknown field key "${k}" on ${type}.${key}`);
+      }
+    }
+  }
+
+  VISITOR_KEYS[type] = opts.visitor = visitor;
+  BUILDER_KEYS[type] = opts.builder = builder;
+  NODE_FIELDS[type] = opts.fields = fields;
+  ALIAS_KEYS[type] = opts.aliases = aliases;
+  aliases.forEach(alias => {
+    FLIPPED_ALIAS_KEYS[alias] = FLIPPED_ALIAS_KEYS[alias] || [];
+    FLIPPED_ALIAS_KEYS[alias].push(type);
+  });
+
+  if (opts.validate) {
+    NODE_PARENT_VALIDATIONS[type] = opts.validate;
+  }
+
+  store[type] = opts;
+}

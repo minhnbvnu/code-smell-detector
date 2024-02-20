@@ -1,0 +1,1 @@
+function gotoRowStart(e,o,t){var n=findFirstFocusableCell(e);return null===n?null:{row:e,cell:n,posX:n}}

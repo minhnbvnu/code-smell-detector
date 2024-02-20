@@ -1,0 +1,1 @@
+function AstNode(t){_classCallCheck(this,AstNode);this.type=t}

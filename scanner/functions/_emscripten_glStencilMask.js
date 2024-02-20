@@ -1,0 +1,1 @@
+function _emscripten_glStencilMask(x0){GLctx["stencilMask"](x0)}

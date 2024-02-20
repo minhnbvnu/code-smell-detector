@@ -1,0 +1,1 @@
+function w0e(e){b0e.copy(e,this)}

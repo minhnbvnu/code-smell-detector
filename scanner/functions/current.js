@@ -1,3 +1,1 @@
-function current(value) {
-	      return str.indexOf(value, pos) === pos;
-	    }
+function current(o){return i.indexOf(o,B)===B}

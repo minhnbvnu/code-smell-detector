@@ -1,0 +1,1 @@
+function parse_ExternSheet(blob,length,opts){if(opts.biff<8)return parse_ShortXLUnicodeString(blob,length,opts);var o=parslurp2(blob,length,parse_XTI);var oo=[];if(opts.sbcch===1025){for(var i=0;i!=o.length;++i)oo.push(opts.snames[o[i][1]]);return oo}else return o}

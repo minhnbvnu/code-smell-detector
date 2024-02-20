@@ -1,0 +1,3 @@
+function requestInput() {
+    updateKeyboardPending = true;
+}

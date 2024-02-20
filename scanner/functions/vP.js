@@ -1,0 +1,1 @@
+function vP(t,e,n){var i=t.ends;return new yP({shape:{points:n?_P(i,t):i},z2:100})}

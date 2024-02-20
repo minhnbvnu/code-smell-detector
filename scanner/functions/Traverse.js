@@ -1,0 +1,1 @@
+function Traverse(t){var o;_classCallCheck(this,Traverse);(o=r.call(this,_,"traverse",!0)).id=t.id||"";o.operation=(0,d.getStringOption)(t.operation,["next","back","down","first","left","right","up"]);o.ref=t.ref||"";o.use=t.use||"";o.usehref=t.usehref||"";o.extras=null;o.script=null;return o}

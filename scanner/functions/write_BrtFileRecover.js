@@ -1,0 +1,1 @@
+function write_BrtFileRecover(data,o){if(!o)o=new_buf(1);o.write_shift(1,0);return o}

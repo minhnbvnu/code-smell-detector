@@ -1,28 +1,9 @@
-function insertAfter(nodes) {
-	  this._assertUnremoved();
-
-	  nodes = this._verifyNodeList(nodes);
-
-	  if (this.parentPath.isExpressionStatement() || this.parentPath.isLabeledStatement()) {
-	    return this.parentPath.insertAfter(nodes);
-	  } else if (this.isNodeType("Expression") || this.parentPath.isForStatement() && this.key === "init") {
-	    if (this.node) {
-	      var temp = this.scope.generateDeclaredUidIdentifier();
-	      nodes.unshift(t.expressionStatement(t.assignmentExpression("=", temp, this.node)));
-	      nodes.push(t.expressionStatement(temp));
-	    }
-	    this.replaceExpressionWithStatements(nodes);
-	  } else {
-	    this._maybePopFromStatements(nodes);
-	    if (Array.isArray(this.container)) {
-	      return this._containerInsertAfter(nodes);
-	    } else if (this.isStatementOrBlock()) {
-	      if (this.node) nodes.unshift(this.node);
-	      this._replaceWith(t.blockStatement(nodes));
-	    } else {
-	      throw new Error("We don't know what to do with this node type. " + "We were previously a Statement but we can't fit in here?");
-	    }
-	  }
-
-	  return [this];
-	}
+function insertAfter(node, precedingNode) {
+        var nextNode = precedingNode.nextSibling, parent = precedingNode.parentNode;
+        if (nextNode) {
+            parent.insertBefore(node, nextNode);
+        } else {
+            parent.appendChild(node);
+        }
+        return node;
+    }

@@ -1,0 +1,2 @@
+function sPe(){return new Promise(e=>{process.nextTick(()=>{try{Ht('findstr /C:"Detected boot environment" "%windir%\\Panther\\setupact.log"',Mr.execOptsWin,function(t,r){if(!t){let i=r.toString().split(`
+\r`)[0];e(i.toLowerCase().indexOf("uefi")>=0)}e(!1)})}catch{e(!1)}})})}

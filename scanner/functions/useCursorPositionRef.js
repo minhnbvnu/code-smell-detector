@@ -1,0 +1,3 @@
+function useCursorPositionRef() {
+  return cursorPositionRef;
+}

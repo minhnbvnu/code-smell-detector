@@ -1,0 +1,1 @@
+function attributeValueToJSXPropValue(i,o){return"style"===i?o.split(/;\s?/).reduce((function(i,o){var s=o.slice(0,o.indexOf(":")),u=s.replace(/(-[a-z])/g,(function(i){return i[1].toUpperCase()}));return i[u]=o.slice(s.length+1).trim(),i}),{}):"href"===i?sanitizeUrl(o):(o.match(na)&&(o=o.slice(1,o.length-1)),"true"===o||"false"!==o&&o)}

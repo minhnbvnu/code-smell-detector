@@ -1,0 +1,1 @@
+function textareaOnKeyUp(event){var keyCode=event.keyCode,index=inArray(keyCode,textareaKeyDownKeyCodesList);inArray(keyCode,textareaKeyDownRestrictedKeyCodes)<0&&(index>-1&&textareaKeyDownKeyCodesList.splice(index,1),textareaKeyDownKeyCodesList[LEXICON.l]||updateTextarea(!0))}

@@ -1,7 +1,1 @@
-function createUnsignedBytesMatrixTexture(gl, rows, columns, textureConfig) {
-	  var _tex_util$getUnpacked3 = getUnpackedMatrixTextureShapeWidthHeight(rows, columns),
-	      width = _tex_util$getUnpacked3[0],
-	      height = _tex_util$getUnpacked3[1];
-
-	  return createAndConfigureTexture(gl, width, height, getInternalFormatForUnsignedBytesMatrixTexture(textureConfig), gl.RGBA, gl.UNSIGNED_BYTE);
-	}
+function createUnsignedBytesMatrixTexture(e,t,n,r){var o=getUnpackedMatrixTextureShapeWidthHeight(t,n);return createAndConfigureTexture(e,o[0],o[1],e.RGBA,e.RGBA,e.UNSIGNED_BYTE)}

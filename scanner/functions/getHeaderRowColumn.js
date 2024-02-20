@@ -1,0 +1,1 @@
+function getHeaderRowColumn(e){var o,t="number"==typeof e?e:getColumnIndex(e);hasFrozenColumns()?t<=options.frozenColumn?o=$headerRowL:(o=$headerRowR,t-=options.frozenColumn+1):o=$headerRowL;var n=o.children().eq(t);return n&&n[0]}

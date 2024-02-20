@@ -1,0 +1,1 @@
+function _xpt_mult(t,n){if(n.equals(_ZERO))return[_ZERO,_ONE,_ONE,_ZERO];var e=n.isOdd();n.shiftRight(1);var i=_xpt_double(_xpt_mult(t,n));return e?_x_pt_add(i,t):i}

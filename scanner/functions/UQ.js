@@ -1,0 +1,1 @@
+function UQ(n){let{inputs:t,backend:e,attrs:i}=n,{x:r}=t,{k:o,sorted:s}=i,a=e.readSync(r.dataId),[l,c]=y6(a,r.shape,r.dtype,o,s);return[e.makeTensorInfo(l.shape,l.dtype,l.values),e.makeTensorInfo(c.shape,c.dtype,c.values)]}

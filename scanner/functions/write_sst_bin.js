@@ -1,0 +1,1 @@
+function write_sst_bin(sst,opts){var ba=buf_array();write_record(ba,"BrtBeginSst",write_BrtBeginSst(sst));for(var i=0;i<sst.length;++i)write_record(ba,"BrtSSTItem",write_BrtSSTItem(sst[i]));write_record(ba,"BrtEndSst");return ba.end()}

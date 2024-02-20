@@ -1,1 +1,1 @@
-function Tr(t,n,e,i,r,o){var a=ee(t.g+n);te(a,"key",t.b),o&&te(a,"cb",""+fu());var s="GET"==e;if(s)for(var u in i)i.hasOwnProperty(u)&&te(a,u,i[u]);return new Z(function(n,o){wr(t,""+a,function(t){t?t.error?o(Vr(t,r||{})):n(t):o(new Pi("network-request-failed"))},e,s?void 0:Mt(li(i)),t.a,t.h.get())})}
+function Tr(t){return t<0?Math.floor(t):Math.ceil(t)}

@@ -1,0 +1,1 @@
+function ___syscall193(which,varargs){SYSCALLS.varargs=varargs;try{var path=SYSCALLS.getStr(),zero=SYSCALLS.getZero(),length=SYSCALLS.get64();FS.truncate(path,length);return 0}catch(e){if(typeof FS==="undefined"||!(e instanceof FS.ErrnoError))abort(e);return-e.errno}}

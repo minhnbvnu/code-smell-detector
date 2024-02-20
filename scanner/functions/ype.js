@@ -1,0 +1,1 @@
+function ype(){if(!(typeof document>"u"))return typeof PointerEvent<"u"?document.addEventListener("pointerup",l_):document.addEventListener("touchend",p2),wy++,()=>{wy--,!(wy>0)&&(typeof PointerEvent<"u"?document.removeEventListener("pointerup",l_):document.removeEventListener("touchend",p2))}}

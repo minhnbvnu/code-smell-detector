@@ -1,7 +1,1 @@
-function log1p_(x) {
-	  var $x = convertToTensor(x, 'x', 'log1p');
-	  var inputs = {
-	    x: $x
-	  };
-	  return ENGINE.runKernel(Log1p, inputs);
-	}
+function log1p_(e){var t=convertToTensor(e,"x","log1p");return ENV.engine.runKernel(function(e){return e.log1p(t)},{$x:t},function(e){return {$x:function(){return e.div(t.add(1))}}})}

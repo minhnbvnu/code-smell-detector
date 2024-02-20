@@ -1,0 +1,1 @@
+function LT(t,e){const r=t.trim();if(r)return e.securityLevel!=="loose"?ti(r):r}

@@ -1,1 +1,1 @@
-function ContextCache() {}
+function ContextCache(){_classCallCheck(this,ContextCache)}

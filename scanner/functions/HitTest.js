@@ -1,15 +1,5 @@
-function HitTest (renderer, hitTestSourceDetails) {
-  this.renderer = renderer;
-  this.xrHitTestSource = null;
-
-  renderer.xr.addEventListener('sessionend', function () {
-    this.xrHitTestSource = null;
-  }.bind(this));
-  renderer.xr.addEventListener('sessionstart', function () {
-    this.sessionStart(hitTestSourceDetails);
-  }.bind(this));
-
-  if (this.renderer.xr.isPresenting) {
-    this.sessionStart(hitTestSourceDetails);
-  }
+function HitTest(t, hit, normal) {
+  this.t = arguments.length ? t : Number.MAX_VALUE;
+  this.hit = hit;
+  this.normal = normal;
 }

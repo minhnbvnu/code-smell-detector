@@ -1,0 +1,1 @@
+function Dre(e){return e.username!==""||e.password!==""}

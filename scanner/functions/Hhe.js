@@ -1,0 +1,1 @@
+function Hhe(e,t){var r=e.proxy,i={proxy:{host:r.hostname,port:+r.port,proxyAuth:r.auth,headers:t},headers:e.headers,ca:e.ca,cert:e.cert,key:e.key,passphrase:e.passphrase,pfx:e.pfx,ciphers:e.ciphers,rejectUnauthorized:e.rejectUnauthorized,secureOptions:e.secureOptions,secureProtocol:e.secureProtocol};return i}

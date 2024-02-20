@@ -1,0 +1,1 @@
+function applyInternationalSeparatorStyle(i){return i.replace(new RegExp("[".concat(fe,"]+"),"g")," ").trim()}

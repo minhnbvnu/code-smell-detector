@@ -1,0 +1,1 @@
+function tY(t,e,n){const i=t.data,r=t.fields.reduce(((t,e)=>{e=(0,g.HD)(e)?{data:i,field:e}:(0,g.kJ)(e)||e.signal?eY(e,n):e;t.push(e);return t}),[]);return(hm(e.type)?nY:ym(e.type)?rY:aY)(t,n,r)}

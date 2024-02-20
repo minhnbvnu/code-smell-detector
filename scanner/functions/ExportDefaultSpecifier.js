@@ -1,3 +1,3 @@
 function ExportDefaultSpecifier(node) {
-	  this.print(node.exported, node);
-	}
+  this.print(node.exported, node);
+}

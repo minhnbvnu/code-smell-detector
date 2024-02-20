@@ -1,0 +1,1 @@
+function _endDrawing2(t){_classPrivateMethodGet(this,R,_stopDrawing2).call(this,t.offsetX,t.offsetY);this.canvas.removeEventListener("pointerleave",_classPrivateFieldGet(this,y));this.canvas.removeEventListener("pointermove",_classPrivateFieldGet(this,v));this.parent.addToAnnotationStorage(this)}

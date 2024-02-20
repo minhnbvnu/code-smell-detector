@@ -1,6 +1,3 @@
-function error(...args) {
-  if (level > levels.error) {
-    return;
-  }
-  console.error(...args); // eslint-disable-line no-console
+function error(msg) {
+  document.body.appendChild(fragment('<div id="mocha-error">%s</div>', msg));
 }

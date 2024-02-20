@@ -1,1 +1,1 @@
-function Yw(a,b,c){a=a|0;b=b|0;c=S(c);var d=0;d=fa-16|0;L[d+12>>2]=a;L[d+8>>2]=b;P[d+4>>2]=c;P[(L[d+12>>2]+20|0)+(L[d+8>>2]<<2)>>2]=P[d+4>>2]}
+function yw(e){return e.charAt(0)=="/"?e.slice(1):e}

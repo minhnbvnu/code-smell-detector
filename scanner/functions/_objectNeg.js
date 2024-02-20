@@ -1,0 +1,1 @@
+function _objectNeg(e){var t,n=e.constructor();for(t in e)n[t]=-e[t];return Object.isFrozen(e)?Object.freeze(n):n}

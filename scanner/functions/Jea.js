@@ -1,0 +1,1 @@
+function Jea(e){var t=e-47,n=Input.getCurrentOctave();Input.handleNoteOff(t+12*n,"enabled"===SETTINGS.midi)}

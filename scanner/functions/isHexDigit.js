@@ -1,3 +1,1 @@
-function isHexDigit(code) {
-    return code >= 48 && code <= 57 || code >= 65 && code <= 70 || code >= 97 && code <= 102;
-  }
+function isHexDigit(i){return i>=48&&i<=57||i>=65&&i<=70||i>=97&&i<=102}

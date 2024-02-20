@@ -1,0 +1,1 @@
+function removeDocumentPress(){var i=getDocument();i.removeEventListener("mousedown",onDocumentPress,!0),i.removeEventListener("touchend",onDocumentPress,Kt),i.removeEventListener("touchstart",onTouchStart,Kt),i.removeEventListener("touchmove",onTouchMove,Kt)}

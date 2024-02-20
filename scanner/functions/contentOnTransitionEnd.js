@@ -1,0 +1,1 @@
+function contentOnTransitionEnd(event){!0!==_autoUpdateCache&&isSizeAffectingCSSProperty((event=event.originalEvent||event).propertyName)&&_base.update(_strAuto)}

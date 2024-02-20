@@ -1,0 +1,1 @@
+function parseDigits(i){for(var o,s="",u=parseDigits_createForOfIteratorHelperLoose(i.split(""));!(o=u()).done;){var C=parseDigit(o.value);C&&(s+=C)}return s}

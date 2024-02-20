@@ -1,0 +1,1 @@
+function _emscripten_glGetQueryObjectuivEXT(id,pname,params){if(!params){GL.recordError(1281);return}var query=GL.queries[id];var param=GLctx.disjointTimerQueryExt["getQueryObjectEXT"](query,pname);var ret;if(typeof param=="boolean"){ret=param?1:0}else{ret=param}HEAP32[params>>2]=ret}

@@ -1,0 +1,1 @@
+function _emscripten_glDrawArraysInstancedANGLE(mode,first,count,primcount){GLctx["drawArraysInstanced"](mode,first,count,primcount)}

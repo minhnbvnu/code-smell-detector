@@ -1,1 +1,1 @@
-function Az(a){a=a|0;return 32}
+function az(t){oz||(oz=!0,t.registerProcessor(t.PRIORITY.PROCESSOR.FILTER,rz),function(t){t.registerAction("dataZoom",(function(t,e){E(ZE(e,t),(function(e){e.setRawRange({start:t.start,end:t.end,startValue:t.startValue,endValue:t.endValue})}))}))}(t),t.registerSubTypeDefaulter("dataZoom",(function(){return"slider"})))}

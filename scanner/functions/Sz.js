@@ -1,1 +1,1 @@
-function sz(a){a=a|0;hk(a);ra(a)}
+function Sz(n,t,e,i,r,o,s){let a=NS.distanceSqToPoint(n);if(a<e){let l=new j;NS.closestPointToPoint(n,l),l.applyMatrix4(i);let c=r.ray.origin.distanceTo(l);if(c<r.near||c>r.far)return;o.push({distance:c,distanceToRay:Math.sqrt(a),point:l,index:t,face:null,object:s})}}

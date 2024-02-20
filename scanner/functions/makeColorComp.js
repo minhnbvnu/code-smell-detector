@@ -1,3 +1,1 @@
-function makeColorComp(n) {
-  return Math.floor(Math.max(0, Math.min(1, n)) * 255).toString(16).padStart(2, "0");
-}
+function makeColorComp(t){return Math.floor(255*Math.max(0,Math.min(1,t))).toString(16).padStart(2,"0")}

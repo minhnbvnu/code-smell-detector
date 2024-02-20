@@ -1,0 +1,1 @@
+function _JS_Sound_ReleaseInstance(instance){var object=WEBAudio.audioInstances[instance];if(object){object.release()}delete WEBAudio.audioInstances[instance]}

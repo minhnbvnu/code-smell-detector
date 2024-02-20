@@ -1,0 +1,1 @@
+function N2(t){return typeof t=="object"&&"length"in t?t:Array.from(t)}

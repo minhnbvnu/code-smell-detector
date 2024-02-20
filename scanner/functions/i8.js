@@ -1,0 +1,1 @@
+function i8(n,t){return this.each((typeof t=="function"?mat:fat)(n,t))}

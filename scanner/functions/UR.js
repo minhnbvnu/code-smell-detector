@@ -1,0 +1,1 @@
+function UR(t){return t&&(t.pathData||t.d)}

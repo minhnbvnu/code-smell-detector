@@ -1,3 +1,1 @@
-function isNumber(val) {
-    return (typeof val === 'number') && !isNaN(val);
-}
+function isNumber(value) {return typeof value === 'number';}

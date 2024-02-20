@@ -1,0 +1,1 @@
+function formatIDD(i,o,s,u,C){if(getCountryCallingCode(u,C.metadata)===s){var _=formatNationalNumber(i,o,"NATIONAL",C);return"1"===s?s+" "+_:_}var w=getIddPrefix(u,void 0,C.metadata);if(w)return"".concat(w," ").concat(s," ").concat(formatNationalNumber(i,null,"INTERNATIONAL",C))}

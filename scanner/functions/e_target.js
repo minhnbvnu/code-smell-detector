@@ -1,0 +1,1 @@
+function e_target(e) {return e.target || e.srcElement}

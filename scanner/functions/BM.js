@@ -1,0 +1,1 @@
+function BM(t){var e=t.graph().rankdir.toLowerCase();(e==="lr"||e==="rl")&&sm(t)}

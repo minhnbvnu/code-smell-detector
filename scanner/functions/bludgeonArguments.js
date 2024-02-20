@@ -1,0 +1,1 @@
+function bludgeonArguments() { if (0) arguments; return function g() {} }

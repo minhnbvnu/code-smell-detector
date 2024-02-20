@@ -1,3 +1,1 @@
-function getKeyFromTextureShape(shapeRowsCol, physicalTexType, isPacked) {
-	  return shapeRowsCol[0] + "_" + shapeRowsCol[1] + "_" + physicalTexType + "_" + isPacked;
-	}
+function getKeyFromTextureShape(e,t,n){return e[0]+"_"+e[1]+"_"+t+"_"+n}

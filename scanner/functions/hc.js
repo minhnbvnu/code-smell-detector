@@ -1,0 +1,1 @@
+function hc(t,e,i,n){if(i)for(var o=0;o<t.length;o++)t[o].top=null;for(o=0;o<t.length;o++){var r=t[o];if(r.stack&&null===r.top){r.top=e.axis;var s=!1;do{for(var a=null,l=0,h=t.length;l<h;l++){var u=t[l];if(s=n()||!1)return!0;if(null!==u.top&&u!==r&&u.stack&&fc(r,u,e.item,u.options.rtl)){a=u;break}}null!=a&&(r.top=a.top+a.height+e.item.vertical)}while(a)}}return s}

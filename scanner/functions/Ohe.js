@@ -1,0 +1,1 @@
+function Ohe(){return typeof window.ResizeObserver<"u"}

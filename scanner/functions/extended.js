@@ -1,0 +1,3 @@
+function extended() {
+            return getExtended();
+        }

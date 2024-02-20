@@ -1,1 +1,46 @@
-function RegisteredPointer_fromWireType(ptr){var rawPointer=this.getPointee(ptr);if(!rawPointer){this.destructor(ptr);return null}var registeredInstance=getInheritedInstance(this.registeredClass,rawPointer);if(undefined!==registeredInstance){if(0===registeredInstance.$$.count.value){registeredInstance.$$.ptr=rawPointer;registeredInstance.$$.smartPtr=ptr;return registeredInstance["clone"]()}else{var rv=registeredInstance["clone"]();this.destructor(ptr);return rv}}function makeDefaultHandle(){if(this.isSmartPointer){return makeClassHandle(this.registeredClass.instancePrototype,{ptrType:this.pointeeType,ptr:rawPointer,smartPtrType:this,smartPtr:ptr})}else{return makeClassHandle(this.registeredClass.instancePrototype,{ptrType:this,ptr:ptr})}}var actualType=this.registeredClass.getActualType(rawPointer);var registeredPointerRecord=registeredPointers[actualType];if(!registeredPointerRecord){return makeDefaultHandle.call(this)}var toType;if(this.isConst){toType=registeredPointerRecord.constPointerType}else{toType=registeredPointerRecord.pointerType}var dp=downcastPointer(rawPointer,this.registeredClass,toType.registeredClass);if(dp===null){return makeDefaultHandle.call(this)}if(this.isSmartPointer){return makeClassHandle(toType.registeredClass.instancePrototype,{ptrType:toType,ptr:dp,smartPtrType:this,smartPtr:ptr})}else{return makeClassHandle(toType.registeredClass.instancePrototype,{ptrType:toType,ptr:dp})}}
+function RegisteredPointer_fromWireType(ptr) {
+          var rawPointer = this.getPointee(ptr);
+          if (!rawPointer) {
+            this.destructor(ptr);
+            return null;
+          }
+          var registeredInstance = getInheritedInstance(this.registeredClass, rawPointer);
+          if (registeredInstance !== void 0) {
+            if (registeredInstance.$$.count.value === 0) {
+              registeredInstance.$$.ptr = rawPointer;
+              registeredInstance.$$.smartPtr = ptr;
+              return registeredInstance["clone"]();
+            } else {
+              var rv = registeredInstance["clone"]();
+              this.destructor(ptr);
+              return rv;
+            }
+          }
+          function makeDefaultHandle() {
+            if (this.isSmartPointer) {
+              return makeClassHandle(this.registeredClass.instancePrototype, { ptrType: this.pointeeType, ptr: rawPointer, smartPtrType: this, smartPtr: ptr });
+            } else {
+              return makeClassHandle(this.registeredClass.instancePrototype, { ptrType: this, ptr });
+            }
+          }
+          var actualType = this.registeredClass.getActualType(rawPointer);
+          var registeredPointerRecord = registeredPointers[actualType];
+          if (!registeredPointerRecord) {
+            return makeDefaultHandle.call(this);
+          }
+          var toType;
+          if (this.isConst) {
+            toType = registeredPointerRecord.constPointerType;
+          } else {
+            toType = registeredPointerRecord.pointerType;
+          }
+          var dp = downcastPointer(rawPointer, this.registeredClass, toType.registeredClass);
+          if (dp === null) {
+            return makeDefaultHandle.call(this);
+          }
+          if (this.isSmartPointer) {
+            return makeClassHandle(toType.registeredClass.instancePrototype, { ptrType: toType, ptr: dp, smartPtrType: this, smartPtr: ptr });
+          } else {
+            return makeClassHandle(toType.registeredClass.instancePrototype, { ptrType: toType, ptr: dp });
+          }
+        }

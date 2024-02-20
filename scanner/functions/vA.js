@@ -1,1 +1,1 @@
-function va(a,b){for(var c=a.d,d=a.e,e=a.c,f=b,g=c[f];;){var h=f>>1,k=c[h];if(0===h||u(d[k],d[g])){c[f]=g;e[g]=f;break}c[f]=k;e[k]=f;f=h}}
+function vA(t){var e=t.length,r=new t.constructor(e);return e&&typeof t[0]=="string"&&xA.call(t,"index")&&(r.index=t.index,r.input=t.input),r}

@@ -1,0 +1,1 @@
+function parse_RkRec(blob,length){var ixfe=blob.read_shift(2);var RK=parse_RkNumber(blob);return[ixfe,RK]}

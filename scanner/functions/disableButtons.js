@@ -1,4 +1,3 @@
 function disableButtons() {
-  geolocateBtn.disabled = 'disabled';
-  simulateBtn.disabled = 'disabled';
-}
+    setButtonsDisabled(this, ['confirmButton', 'cancelButton'], true);
+  }

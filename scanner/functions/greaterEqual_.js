@@ -1,15 +1,1 @@
-function greaterEqual_(a, b) {
-	  var $a = convertToTensor(a, 'a', 'greaterEqual');
-	  var $b = convertToTensor(b, 'b', 'greaterEqual');
-
-	  var _makeTypesMatch = makeTypesMatch($a, $b);
-
-	  $a = _makeTypesMatch[0];
-	  $b = _makeTypesMatch[1];
-	  assertAndGetBroadcastShape($a.shape, $b.shape);
-	  var inputs = {
-	    a: $a,
-	    b: $b
-	  };
-	  return ENGINE.runKernel(GreaterEqual, inputs);
-	}
+function greaterEqual_(e,t){var n,r=convertToTensor(e,"a","greaterEqual"),o=convertToTensor(t,"b","greaterEqual");n=makeTypesMatch(r,o),r=n[0],o=n[1],assertAndGetBroadcastShape(r.shape,o.shape);return ENV.engine.runKernel(function(e){return e.greaterEqual(r,o)},{$a:r,$b:o},function(e){return {$a:function(){return zerosLike(r)},$b:function(){return zerosLike(o)}}})}

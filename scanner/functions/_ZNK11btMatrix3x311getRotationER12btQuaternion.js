@@ -1,0 +1,151 @@
+function _ZNK11btMatrix3x311getRotationER12btQuaternion(sp)
+{
+	var i7;
+	var fp = sp>>2;
+	var r0;
+	var r1;
+	var r2;
+	var r3;
+	var r4;
+	var r5;
+	var r6;
+	var r7;
+	var r8;
+	var r9;
+	var r10;
+	var f0;
+	var f1;
+	var f2;
+	var f3;
+	var f4;
+	var f5;
+var __label__ = 0;
+	i7 = sp + -24;var g0 = i7>>2; // save stack
+	r0 = heap32[(fp)];
+	r1 = r0 >> 2;
+	f0 = heapFloat[(r1)];
+	f1 = heapFloat[(r1+5)];
+	f2 = heapFloat[(r1+10)];
+	f3 = f0+f1;
+	f3 = f3+f2;
+	r2 = heap32[(fp+1)];
+	f4 =                         0;
+	if(f3 <=f4) //_LBB236_2
+{
+	if(f0 >=f1) //_LBB236_4
+{
+	r1 = 2;
+	r3 = 0;
+	r1 = f0 < f2 ? r1 : r3;
+}
+else{
+	r1 = 2;
+	r3 = 1;
+	r1 = f1 < f2 ? r1 : r3;
+}
+	r3 = (r1 + 1)|0;
+	r3 = (r3 % 3)|0;
+	r4 = (r1 + 2)|0;
+	r4 = (r4 % 3)|0;
+	r5 = r1 << 4;
+	r6 = r3 << 4;
+	r7 = r4 << 4;
+	r5 = (r0 + r5)|0;
+	r1 = r1 << 2;
+	r6 = (r0 + r6)|0;
+	r3 = r3 << 2;
+	r0 = (r0 + r7)|0;
+	r4 = r4 << 2;
+	r7 = (r5 + r1)|0;
+	r8 = (r6 + r3)|0;
+	r7 = r7 >> 2;
+	r8 = r8 >> 2;
+	r9 = (r0 + r4)|0;
+	r9 = r9 >> 2;
+	f0 = heapFloat[(r7)];
+	f1 = heapFloat[(r8)];
+	f2 = heapFloat[(r9)];
+	f0 = f0-f1;
+	f0 = f0-f2;
+	f1 =                         1;
+	f0 = f0+f1;
+	r7 = sp + -16;
+	heapFloat[(g0)] = f0;
+	r8 = (r7 + r1)|0;
+	f0 =                       0.5;
+	sqrtf(i7);
+	r9 = (r0 + r3)|0;
+	r10 = (r6 + r4)|0;
+	r8 = r8 >> 2;
+	f2 = f_g0*f0;
+	r9 = r9 >> 2;
+	heapFloat[(r8)] = f2;
+	r8 = r10 >> 2;
+	f2 = heapFloat[(r9)];
+	f3 = heapFloat[(r8)];
+	f2 = f2-f3;
+	f0 = f0/f_g0;
+	r6 = (r6 + r1)|0;
+	r8 = (r5 + r3)|0;
+	r9 = r7 >> 2;
+	f1 = f2*f0;
+	r6 = r6 >> 2;
+	heapFloat[(r9+3)] = f1;
+	r8 = r8 >> 2;
+	f1 = heapFloat[(r6)];
+	f2 = heapFloat[(r8)];
+	r3 = (r7 + r3)|0;
+	f1 = f1+f2;
+	r0 = (r0 + r1)|0;
+	r1 = (r5 + r4)|0;
+	r3 = r3 >> 2;
+	f1 = f1*f0;
+	r0 = r0 >> 2;
+	heapFloat[(r3)] = f1;
+	r1 = r1 >> 2;
+	f1 = heapFloat[(r0)];
+	f2 = heapFloat[(r1)];
+	r0 = (r7 + r4)|0;
+	f1 = f1+f2;
+	r0 = r0 >> 2;
+	f0 = f1*f0;
+	heapFloat[(r0)] = f0;
+	f1 = heapFloat[(fp+-4)];
+	f3 = heapFloat[(r9+1)];
+	f0 = heapFloat[(r9+2)];
+	f2 = heapFloat[(r9+3)];
+}
+else{
+	f0 =                         1;
+	f0 = f3+f0;
+	heapFloat[(g0)] = f0;
+	r0 = sp + -16;
+	f0 =                       0.5;
+	sqrtf(i7);
+	f2 = f_g0*f0;
+	r0 = r0 >> 2;
+	heapFloat[(r0+3)] = f2;
+	f3 = heapFloat[(r1+9)];
+	f4 = heapFloat[(r1+6)];
+	f3 = f3-f4;
+	f0 = f0/f_g0;
+	f1 = f3*f0;
+	heapFloat[(fp+-4)] = f1;
+	f3 = heapFloat[(r1+2)];
+	f4 = heapFloat[(r1+8)];
+	f3 = f3-f4;
+	f3 = f3*f0;
+	heapFloat[(r0+1)] = f3;
+	f4 = heapFloat[(r1+4)];
+	f5 = heapFloat[(r1+1)];
+	f4 = f4-f5;
+	f0 = f4*f0;
+	heapFloat[(r0+2)] = f0;
+}
+	r0 = r2 >> 2;
+	heapFloat[(r0)] = f1;
+	heapFloat[(r0+1)] = f3;
+	heapFloat[(r0+2)] = f0;
+	heapFloat[(r0+3)] = f2;
+	return;
+}

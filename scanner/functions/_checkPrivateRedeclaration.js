@@ -1,0 +1,1 @@
+function _checkPrivateRedeclaration(t,r){if(r.has(t))throw new TypeError("Cannot initialize the same private elements twice on an object")}

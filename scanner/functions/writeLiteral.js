@@ -1,3 +1,6 @@
-function writeLiteral(version, node, value) {
-  writeExpression(getFilterNS(version), 'Literal', node, value);
-}
+function writeLiteral(s) {
+                writer.writeLiteral(s);
+                setLastNonTriviaPosition(s, 
+                /*force*/
+                true);
+            }

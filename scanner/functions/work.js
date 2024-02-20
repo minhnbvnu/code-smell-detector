@@ -1,0 +1,3 @@
+function work() {
+					throw 'world';
+				}

@@ -1,14 +1,1 @@
-function add_(a, b) {
-	  var $a = convertToTensor(a, 'a', 'add');
-	  var $b = convertToTensor(b, 'b', 'add');
-
-	  var _makeTypesMatch = makeTypesMatch($a, $b);
-
-	  $a = _makeTypesMatch[0];
-	  $b = _makeTypesMatch[1];
-	  var inputs = {
-	    a: $a,
-	    b: $b
-	  };
-	  return ENGINE.runKernel(Add, inputs);
-	}
+function add_(e,t){var n,r=convertToTensor(e,"a","add"),o=convertToTensor(t,"b","add");n=makeTypesMatch(r,o),r=n[0],o=n[1];var a=assertAndGetBroadcastShape(r.shape,o.shape);return ENV.engine.runKernel(function(e){return e.add(r,o)},{$a:r,$b:o},function(e){return {$a:function(){var t=e,n=getReductionAxes(r.shape,a);return n.length>0&&(t=t.sum(n)),t.reshape(r.shape)},$b:function(){var t=e,n=getReductionAxes(o.shape,a);return n.length>0&&(t=t.sum(n)),t.reshape(o.shape)}}})}

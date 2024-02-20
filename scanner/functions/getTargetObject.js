@@ -1,0 +1,3 @@
+function getTargetObject() {
+			return targetObject;
+		}

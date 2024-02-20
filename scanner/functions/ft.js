@@ -1,1 +1,1 @@
-function ft(e,t){var n,r=0,i={height:e};for(t=t?1:0;r<4;r+=2-t)i["margin"+(n=re[r])]=i["padding"+n]=e;return t&&(i.opacity=i.width=e),i}
+function ft(t,e){var i,n=e;for("string"==typeof t&&(t=[t]),a(e)&&(n=function(t,i){i[e]=k(t)}),i=0;i<t.length;i++)ct[t[i]]=n}

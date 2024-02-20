@@ -1,5 +1,6 @@
 import { Injectable } from "@nestjs/common";
 import { ESLint } from "eslint";
+import * as fs from "fs";
 
 @Injectable()
 export class EslintService {
@@ -29,8 +30,9 @@ export class EslintService {
     // const detectionResult = {};
     const positive = [];
     const negative = [];
-    lintResult.forEach((res) => {
+    lintResult.forEach((res, index) => {
       const fileName = this.extractAfterLastSlash(res.filePath);
+      fs.writeFileSync('eslint-log.txt',`${index} ${fileName}\n`, {flag: 'a'})
       const hasError = res.errorCount > 0;
       if (hasError) {
         positive.push(fileName);

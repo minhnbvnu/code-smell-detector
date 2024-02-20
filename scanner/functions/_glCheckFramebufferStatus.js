@@ -1,0 +1,1 @@
+function _glCheckFramebufferStatus(x0){return GLctx["checkFramebufferStatus"](x0)}

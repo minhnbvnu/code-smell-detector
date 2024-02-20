@@ -1,0 +1,1 @@
+function xlml_format(format,value){var fmt=XLMLFormatMap[format]||unescapexml(format);if(fmt==="General")return SSF._general(value);return SSF.format(fmt,value)}

@@ -1,0 +1,3 @@
+function Proc() {
+    this.bytecodes = [];
+}

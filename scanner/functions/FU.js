@@ -1,0 +1,1 @@
+function FU(n){let t=bb(gn(n),"float32");return Kt.makeTensor(t,n,"float32")}

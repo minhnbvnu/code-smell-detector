@@ -1,0 +1,1 @@
+function _emscripten_has_threading_support(){return 0}

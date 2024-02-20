@@ -1,0 +1,1 @@
+function eW(t,e){for(var n=[],i=t.length,r=0;r<i;r++)n.push({one:t[r],many:[]});for(r=0;r<e.length;r++){var o=e[r].length,a=void 0;for(a=0;a<o;a++)n[a%i].many.push(e[r][a])}var s=0;for(r=i-1;r>=0;r--)if(!n[r].many.length){var l=n[s].many;if(l.length<=1){if(!s)return n;s=0}o=l.length;var u=Math.ceil(o/2);n[r].many=l.slice(u,o),n[s].many=l.slice(0,u),s++}return n}

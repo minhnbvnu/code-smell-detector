@@ -1,3 +1,1 @@
-function isEven(n) {
-	  return n % 2 === 0;
-	}
+function isEven(e){return e%2==0}

@@ -1,0 +1,1 @@
+function oae(e,t){for(let r of e.ranges)if(r.to>t)throw new RangeError("Selection points outside of document")}

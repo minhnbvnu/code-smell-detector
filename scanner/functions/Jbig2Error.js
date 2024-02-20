@@ -1,0 +1,1 @@
+function Jbig2Error(t){_classCallCheck(this,Jbig2Error);return r.call(this,"JBIG2 error: ".concat(t),"Jbig2Error")}

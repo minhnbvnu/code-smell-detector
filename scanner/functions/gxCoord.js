@@ -1,0 +1,1 @@
+function gxCoord(v) { return numarray(v.split(' ')); }

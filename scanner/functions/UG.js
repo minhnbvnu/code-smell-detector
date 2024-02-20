@@ -1,0 +1,1 @@
+function UG(t,e,n){var i=XG+e,r=t[i]||t[e];t[i]||(t[i]=t[e]);var o=n.replace,a=n.after,s=n.before;t[e]=function(){var t,e=arguments;return s&&s.apply(this,e),t=o?o.apply(this,e):r.apply(this,e),a&&a.apply(this,e),t}}

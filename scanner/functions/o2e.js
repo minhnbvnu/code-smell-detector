@@ -1,0 +1,1 @@
+function o2e(e){let t=e.split(".");if(t[t.length-1]===""&&t.length>1&&t.pop(),t.length>4)return e;let r=[];for(let n of t){if(n==="")return e;let s=s2e(n);if(s===ir)return e;r.push(s)}for(let n=0;n<r.length-1;++n)if(r[n]>255)return ir;if(r[r.length-1]>=Math.pow(256,5-r.length))return ir;let i=r.pop(),a=0;for(let n of r)i+=n*Math.pow(256,3-a),++a;return i}

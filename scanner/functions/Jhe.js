@@ -1,0 +1,1 @@
+function Jhe(e,t,r,n){let i={};for(let a in e){let l=t[a];if(!l||e[a]==null)continue;let[s,u]=l;typeof s=="function"&&(s=s(r));let c=ER(e[a],n),d=u(c,e.colorVersion);if(Array.isArray(s))for(let f of s)i[f]=d;else i[s]=d}for(let a in JB)i[a]&&(i[JB[a]]="solid",i.boxSizing="border-box");return i}

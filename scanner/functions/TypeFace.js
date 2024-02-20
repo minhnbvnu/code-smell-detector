@@ -1,0 +1,1 @@
+function TypeFace(t){var o;_classCallCheck(this,TypeFace);(o=r.call(this,h,"typeFace",!0)).name=""|t.name;return o}

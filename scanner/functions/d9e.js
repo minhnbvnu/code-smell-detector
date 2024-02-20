@@ -1,0 +1,1 @@
+function d9e(e){return e>=48&&e<=57}

@@ -1,0 +1,1 @@
+function PN(t){vt(t.edges(),function(e){var r=t.edge(e);if(me(r,"x"))switch((r.labelpos==="l"||r.labelpos==="r")&&(r.width-=r.labeloffset),r.labelpos){case"l":r.x-=r.width/2+r.labeloffset;break;case"r":r.x+=r.width/2+r.labeloffset;break}})}

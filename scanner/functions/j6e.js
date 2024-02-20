@@ -1,0 +1,1 @@
+function j6e(e,t,r){let n;if(e.nodeType!=3||t!=(n=e.nodeValue.length))return!1;for(let i=e.nextSibling;i;i=i.nextSibling)if(i.nodeType!=1||i.nodeName!="BR")return!1;return xu(e,n-1,n).getBoundingClientRect().left>r}

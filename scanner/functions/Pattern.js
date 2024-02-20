@@ -1,3 +1,7 @@
-function Pattern() {
-    (0, _util.unreachable)("should not call Pattern constructor");
-  }
+function Pattern(gState, matrix) {
+  this.gState = gState;
+  this.matrix = matrix;
+
+  this.id = ""; // set by addPattern()
+  this.objectNumber = -1; // will be set by putPattern()
+}

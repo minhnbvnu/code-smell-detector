@@ -1,0 +1,1 @@
+function nx(t){return function(e){return t(e)+""}}

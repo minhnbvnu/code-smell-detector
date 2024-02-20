@@ -1,0 +1,1 @@
+function _stringhash(t){var n=crypto.createHash("sha512").update(t).digest();return _map(_chr,_bi2bytes(_bi(n),64)).join("")}

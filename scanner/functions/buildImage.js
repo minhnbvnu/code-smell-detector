@@ -1,15 +1,30 @@
-function buildImage(flatStyle, context) {
-  if ('icon-src' in flatStyle) {
-    return buildIcon(flatStyle, context);
-  }
+function buildImage(dockerBuildDir, dockerfilePath, imageTag) {
 
-  if ('shape-points' in flatStyle) {
-    return buildShape(flatStyle, context);
-  }
+  return new Promise((resolve, reject) => {
+    var tarStream = tar.pack(dockerBuildDir);
 
-  if ('circle-radius' in flatStyle) {
-    return buildCircle(flatStyle, context);
-  }
+    docker.buildImage(tarStream, {
+      dockerfile: path.relative(dockerBuildDir, dockerfilePath),
+      t: imageTag
+    }, (error, stream) => {
+      containers.add(stream);
 
-  return null;
+      if (error) {
+        reject(error);
+        return;
+      }
+      stream.on('error', (e) => {
+        containers.delete(stream);
+        reject(e);
+        return;
+      });
+      stream.on('end', function () {
+        containers.delete(stream);
+        resolve(imageTag);
+        return;
+      });
+
+      followProgress(stream, (err, res) => err ? reject(err) : resolve(res));
+    });
+  });
 }

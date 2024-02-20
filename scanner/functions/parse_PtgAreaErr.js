@@ -1,0 +1,1 @@
+function parse_PtgAreaErr(blob,length){var type=(blob[blob.l++]&96)>>5;blob.l+=8;return[type]}

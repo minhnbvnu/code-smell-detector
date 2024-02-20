@@ -1,0 +1,1 @@
+function oIe(e){return e!==null&&typeof e=="object"&&"type"in e}

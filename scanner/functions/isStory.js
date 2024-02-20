@@ -1,0 +1,1 @@
+function isStory(item){return!!item&&item.isLeaf}

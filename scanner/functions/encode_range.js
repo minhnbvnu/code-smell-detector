@@ -1,0 +1,1 @@
+function encode_range(cs,ce){if(ce===undefined||typeof ce==="number")return encode_range(cs.s,cs.e);if(typeof cs!=="string")cs=encode_cell(cs);if(typeof ce!=="string")ce=encode_cell(ce);return cs==ce?cs:cs+":"+ce}

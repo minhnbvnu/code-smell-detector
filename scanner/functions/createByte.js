@@ -1,0 +1,1 @@
+function createByte(codePoint,shift){return stringFromCharCode(codePoint>>shift&63|128)}

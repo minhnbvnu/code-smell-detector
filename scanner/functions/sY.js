@@ -1,0 +1,1 @@
+function sY(){return ot().global.screen==null?1024:ot().global.screen.height*ot().global.screen.width*window.devicePixelRatio*oY/1024/1024}

@@ -1,0 +1,4 @@
+function resetGame() {
+    destroy();
+    strapiParticles();
+  }

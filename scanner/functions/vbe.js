@@ -1,0 +1,1 @@
+function vbe(){let e=require("os").homedir(),t;return process.platform==="win32"?t=process.env.LOCALAPPDATA||Gw.join(e,"AppData","Local"):process.platform==="darwin"?t=Gw.join(e,"Library","Application Support","Caches"):t=process.env.XDG_CACHE_HOME||Gw.join(e,".cache"),t}

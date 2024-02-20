@@ -1,0 +1,1 @@
+function VI(t){return t[EI]||(t[EI]={})}

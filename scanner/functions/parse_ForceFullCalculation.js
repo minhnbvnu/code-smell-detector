@@ -1,0 +1,1 @@
+function parse_ForceFullCalculation(blob,length){var header=parse_frtHeader(blob);if(header.type!=2211)throw"Invalid Future Record "+header.type;var fullcalc=blob.read_shift(4);return fullcalc!==0}

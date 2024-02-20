@@ -1,0 +1,1 @@
+function IconRefresh_possibleConstructorReturn(self, call) { if (call && (IconRefresh_typeof(call) === "object" || typeof call === "function")) { return call; } return IconRefresh_assertThisInitialized(self); }

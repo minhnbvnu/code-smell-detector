@@ -1,0 +1,1 @@
+function settings_asyncToGenerator(fn){return function(){var self=this,args=arguments;return new Promise((function(resolve,reject){var gen=fn.apply(self,args);function _next(value){settings_asyncGeneratorStep(gen,resolve,reject,_next,_throw,"next",value)}function _throw(err){settings_asyncGeneratorStep(gen,resolve,reject,_next,_throw,"throw",err)}_next(void 0)}))}}

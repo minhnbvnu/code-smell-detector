@@ -1,16 +1,5 @@
-function SwitchCase(node) {
-	  if (node.test) {
-	    this.word("case");
-	    this.space();
-	    this.print(node.test, node);
-	    this.token(":");
-	  } else {
-	    this.word("default");
-	    this.token(":");
-	  }
-
-	  if (node.consequent.length) {
-	    this.newline();
-	    this.printSequence(node.consequent, node, { indent: true });
-	  }
-	}
+function SwitchCase(test, consequent) {
+	        this.type = syntax_1.Syntax.SwitchCase;
+	        this.test = test;
+	        this.consequent = consequent;
+	    }

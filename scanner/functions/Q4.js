@@ -1,0 +1,1 @@
+function Q4(n,t){for(let e in t){let i=n[e],r=t[e];!("value"in r)&&i&&"value"in i?n[e]=Object.assign({value:i.value},r):n[e]=r}}

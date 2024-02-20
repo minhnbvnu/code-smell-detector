@@ -1,0 +1,1 @@
+function setPressed(pos){var pos=rebound(pos);x2=x1=pos[0];y2=y1=pos[1]}

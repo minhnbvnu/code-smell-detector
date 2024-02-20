@@ -1,4 +1,4 @@
-function flip_vertical() {
+function flip_vertical(){
 	apply_image_transformation({
 		name: localize("Flip vertical"),
 		icon: get_help_folder_icon("p_flipv.png"),

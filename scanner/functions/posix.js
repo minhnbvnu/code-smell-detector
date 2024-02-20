@@ -1,3 +1,3 @@
 function posix(path) {
-		return path.charAt(0) === '/';
-	}
+	return path.charAt(0) === '/';
+}

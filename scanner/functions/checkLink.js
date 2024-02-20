@@ -1,32 +1,24 @@
-function checkLink (pagePath, url) {
-  var absPath;
-  var content;
-  var hash;
-  var headingMatch;
-  var headingRegex;
-  var headingIds;
-  var urlPath;
-
-  // Relative path.
-  if (url.indexOf('.') === 0) {
-    // Check page exists.
-    urlPath = url.split('#')[0];
-    absPath = path.resolve(pagePath, `../${urlPath}`);
-    if (!fs.existsSync(absPath)) { return false; }
-    if (url.indexOf('#') === -1) { return true; }
-
-    // Check hash / anchor heading.
-    headingIds = [];
-    hash = url.split('#')[1];
-    headingRegex = /#+\s+(.*?)\n/g;
-    content = fs.readFileSync(absPath, 'utf-8');
-    headingMatch = headingRegex.exec(content);
-    while (headingMatch !== null) {
-      headingIds.push(convertHeading(headingMatch[1]));
-      headingMatch = headingRegex.exec(content);
+function checkLink(resolvedPath, target) {
+    if (dereference) {
+      resolvedPath = path.resolve(basePath, resolvedPath);
     }
-    return headingIds.indexOf(hash) !== -1;
+    isWritable(target, function (writable) {
+      if (writable) {
+        return makeLink(resolvedPath, target);
+      }
+      fs.readlink(target, function (err, targetDest) {
+        if (err) {
+          return onError(err);
+        }
+        if (dereference) {
+          targetDest = path.resolve(basePath, targetDest);
+        }
+        if (targetDest === resolvedPath) {
+          return cb();
+        }
+        return rmFile(target, function () {
+          makeLink(resolvedPath, target);
+        });
+      });
+    });
   }
-
-  return true;
-}

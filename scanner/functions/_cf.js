@@ -1,0 +1,1 @@
+function _cf(_d0){_98.prototype=_d0.prototype;var t=new _98;_98.prototype=null;return t;}

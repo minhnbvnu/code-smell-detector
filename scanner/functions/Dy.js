@@ -1,1 +1,1 @@
-function dy(a,b){a=a|0;b=S(b);var c=0;c=fa-16|0;fa=c;L[c+12>>2]=a;P[c+8>>2]=b;a=Aj(L[c+12>>2],c+8|0);fa=c+16|0;return a|0}
+function Dy(t,n){return cy(t.getHours(),n,2)}

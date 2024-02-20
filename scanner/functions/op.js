@@ -1,0 +1,1 @@
+function op(a){a=a|0;f[a>>2]=0;f[a+4>>2]=0;f[a+8>>2]=0;return}

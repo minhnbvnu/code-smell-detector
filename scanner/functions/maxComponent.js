@@ -1,0 +1,1 @@
+function maxComponent(e){if("number"==typeof e)return e;var t,n=-1/0;for(t in e)n=Math.max(n,e[t]);return n}

@@ -1,0 +1,1 @@
+function _setMinDims2(){var t=this.div.style;if(_classPrivateFieldGet(this,d)>=1){t.minHeight="".concat(u,"px");t.minWidth="".concat(Math.round(_classPrivateFieldGet(this,d)*u),"px")}else{t.minWidth="".concat(u,"px");t.minHeight="".concat(Math.round(u/_classPrivateFieldGet(this,d)),"px")}}

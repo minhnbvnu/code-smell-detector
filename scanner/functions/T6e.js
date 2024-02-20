@@ -1,0 +1,1 @@
+function T6e(e,...t){let r=fU.dirname(e);if(Um.existsSync(r))return Um.writeFileSync(e,...t);dU.mkdirsSync(r),Um.writeFileSync(e,...t)}

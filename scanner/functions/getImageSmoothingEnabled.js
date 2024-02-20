@@ -1,0 +1,1 @@
+function getImageSmoothingEnabled(t,r){var a=i.Util.singularValueDecompose2dScale(t);a[0]=Math.fround(a[0]);a[1]=Math.fround(a[1]);var l=Math.fround((globalThis.devicePixelRatio||1)*o.PixelsPerInch.PDF_TO_CSS_UNITS);return void 0!==r?r:a[0]<=l||a[1]<=l}

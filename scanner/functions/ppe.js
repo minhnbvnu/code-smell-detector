@@ -1,0 +1,1 @@
+function ppe(e){e.target===window||e.target===document||(!gu&&!h2&&(bo="virtual",I1("virtual",e)),gu=!1,h2=!1)}

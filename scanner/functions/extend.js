@@ -1,15 +1,16 @@
-function extend(extent1, extent2) {
-  if (extent2[0] < extent1[0]) {
-    extent1[0] = extent2[0];
-  }
-  if (extent2[2] > extent1[2]) {
-    extent1[2] = extent2[2];
-  }
-  if (extent2[1] < extent1[1]) {
-    extent1[1] = extent2[1];
-  }
-  if (extent2[3] > extent1[3]) {
-    extent1[3] = extent2[3];
-  }
-  return extent1;
+function extend( a, b ) {
+	for ( var prop in b ) {
+		if ( hasOwn.call( b, prop ) ) {
+			// Avoid "Member not found" error in IE8 caused by messing with window.constructor
+			if ( !( prop === "constructor" && a === window ) ) {
+				if ( b[ prop ] === undefined ) {
+					delete a[ prop ];
+				} else {
+					a[ prop ] = b[ prop ];
+				}
+			}
+		}
+	}
+
+	return a;
 }

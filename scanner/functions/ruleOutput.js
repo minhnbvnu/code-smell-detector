@@ -1,0 +1,1 @@
+function ruleOutput(i){return function(o,s,u){return i[o.type].react(o,s,u)}}

@@ -1,0 +1,1 @@
+function parseTable(i,o,s){s.inline=!0;var u=parseTableRow(i[1],o,s),C=parseTableAlign(i[2]),_=parseTableCells(i[3],o,s);return s.inline=!1,{align:C,cells:_,header:u,type:"table"}}

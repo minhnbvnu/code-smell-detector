@@ -1,0 +1,1 @@
+function m0e(e){let{heading:t,"aria-label":r}=e,n=nr();return{itemProps:{role:"presentation"},headingProps:t?{id:n,role:"presentation"}:{},groupProps:{role:"group","aria-label":r,"aria-labelledby":t?n:void 0}}}

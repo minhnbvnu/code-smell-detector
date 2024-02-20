@@ -1,0 +1,1 @@
+function buildUnicodeData(i){var o=_a[i]={binary:wordsRegexp(ya[i]+" "+va),nonBinary:{General_Category:wordsRegexp(va),Script:wordsRegexp(xa[i])}};o.nonBinary.Script_Extensions=o.nonBinary.Script,o.nonBinary.gc=o.nonBinary.General_Category,o.nonBinary.sc=o.nonBinary.Script,o.nonBinary.scx=o.nonBinary.Script_Extensions}

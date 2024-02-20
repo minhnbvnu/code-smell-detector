@@ -1,0 +1,1 @@
+function setObjectPropVal(obj,path,val){for(var splits=path.split(_strDot),splitsLength=splits.length,i=0,extendObj={},extendObjRoot=extendObj;i<splitsLength;i++)extendObj=extendObj[splits[i]]=i+1<splitsLength?{}:val;FRAMEWORK.extend(obj,extendObjRoot,!0)}

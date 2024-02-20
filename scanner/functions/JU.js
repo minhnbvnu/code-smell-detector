@@ -1,0 +1,1 @@
+function JU(n){return new Cr(n)}

@@ -1,1 +1,1 @@
-function Zb(a,b){var c=0;c=pa(b);H[a+4>>2]=b;H[a>>2]=c}
+function zB(){if(typeof window>"u")return;let e=r=>{let n=Ku.get(r.target);n||(n=new Set,Ku.set(r.target,n),r.target.addEventListener("transitioncancel",t)),n.add(r.propertyName)},t=r=>{let n=Ku.get(r.target);if(n&&(n.delete(r.propertyName),n.size===0&&(r.target.removeEventListener("transitioncancel",t),Ku.delete(r.target)),Ku.size===0)){for(let i of l2)i();l2.clear()}};document.body.addEventListener("transitionrun",e),document.body.addEventListener("transitionend",t)}

@@ -1,0 +1,1 @@
+function txt(str) { return function(cm) { eq(cm.getValue(), str); }; }

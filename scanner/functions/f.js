@@ -1,0 +1,2 @@
+function f(e,n){e=t(e);var i,r,a,o=y.rtl?-1:1;i=e.attr("data-swiper-parallax")||"0",
+r=e.attr("data-swiper-parallax-x"),a=e.attr("data-swiper-parallax-y"),r||a?(r=r||"0",a=a||"0"):s()?(r=i,a="0"):(a=i,r="0"),r=r.indexOf("%")>=0?parseInt(r,10)*n*o+"%":r*n*o+"px",a=a.indexOf("%")>=0?parseInt(a,10)*n+"%":a*n+"px",e.transform("translate3d("+r+", "+a+",0px)")}

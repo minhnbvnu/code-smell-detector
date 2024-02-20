@@ -1,0 +1,1 @@
+function showHandles(){if(seehandles){moveHandles(Coords.getFixed());$hdl_holder.show()}}

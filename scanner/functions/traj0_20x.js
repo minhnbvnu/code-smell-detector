@@ -1,0 +1,1 @@
+function traj0_20x(u){return trajRight_x(u,offset20Target-offsetMain);}

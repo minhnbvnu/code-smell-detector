@@ -1,0 +1,1 @@
+function tre(e){return e.toUTCString()}

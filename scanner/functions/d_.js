@@ -1,0 +1,1 @@
+function d_(){return this.each(h_)}

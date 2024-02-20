@@ -1,0 +1,1 @@
+function AsYouTypeFormatter_PatternMatcher_classCallCheck(i,o){if(!(i instanceof o))throw new TypeError("Cannot call a class as a function")}

@@ -1,5 +1,4 @@
 function _markRemoved() {
-	  this.shouldSkip = true;
-	  this.removed = true;
-	  this.node = null;
-	}
+  this._traverseFlags |= _index.SHOULD_SKIP | _index.REMOVED;
+  this.node = null;
+}

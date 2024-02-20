@@ -1,0 +1,1 @@
+function _hexdecode(e){for(var r=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],t=e.length-1,n=0;t>=0;t-=4)r[n]=_HEXCHARS.indexOf(e.charAt(t))|_HEXCHARS.indexOf(e.charAt(t-1))<<4|_HEXCHARS.indexOf(e.charAt(t-2))<<8|_HEXCHARS.indexOf(e.charAt(t-3))<<12,n++;return r}

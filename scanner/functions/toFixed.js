@@ -1,4 +1,3 @@
-function toFixed(n, decimals) {
-  const factor = Math.pow(10, decimals);
-  return Math.round(n * factor) / factor;
+function toFixed(num, precision) {
+  return (+(Math.round(+(num + 'e' + precision)) + 'e' + -precision)).toFixed(precision)
 }

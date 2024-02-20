@@ -1,7 +1,1 @@
-function acos_(x) {
-	  var $x = convertToTensor(x, 'x', 'acos');
-	  var inputs = {
-	    x: $x
-	  };
-	  return ENGINE.runKernel(Acos, inputs);
-	}
+function acos_(e){var t=convertToTensor(e,"x","acos");return ENV.engine.runKernel(function(e){return e.acos(t)},{$x:t},function(e){return {$x:function(){return e.divStrict(scalar(1).sub(t.toFloat().square()).sqrt()).neg()}}})}

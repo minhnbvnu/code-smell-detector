@@ -1,0 +1,1 @@
+function maybeCStringToJsString(cString){return cString>2?UTF8ToString(cString):cString}

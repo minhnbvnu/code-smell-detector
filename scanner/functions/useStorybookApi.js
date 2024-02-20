@@ -1,0 +1,1 @@
+function useStorybookApi(){return Object(react.useContext)(ManagerContext).api}

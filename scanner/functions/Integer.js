@@ -1,0 +1,1 @@
+function Integer(t){var o;_classCallCheck(this,Integer);(o=r.call(this,_,"integer")).id=t.id||"";o.name=t.name||"";o.use=t.use||"";o.usehref=t.usehref||"";return o}

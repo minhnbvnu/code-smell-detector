@@ -1,0 +1,1 @@
+function u$(n,t){return n.map(function(e){return e*t})}

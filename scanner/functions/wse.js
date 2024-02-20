@@ -1,0 +1,1 @@
+function wse(e,t,r){if(t.type==="element")return yFe(e,t,r);if(t.type==="mdxFlowExpression"||t.type==="mdxTextExpression")return $Fe(e,t);if(t.type==="mdxJsxFlowElement"||t.type==="mdxJsxTextElement")return xFe(e,t,r);if(t.type==="mdxjsEsm")return OFe(e,t);if(t.type==="root")return SFe(e,t,r);if(t.type==="text")return wFe(e,t)}

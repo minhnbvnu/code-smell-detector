@@ -1,5 +1,1 @@
-function DecodingContext(data, start, end) {
-    this.data = data;
-    this.start = start;
-    this.end = end;
-  }
+function DecodingContext(t,r,o){_classCallCheck(this,DecodingContext);this.data=t;this.start=r;this.end=o}

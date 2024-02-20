@@ -1,0 +1,1 @@
+function o9e(e){return e.readable&&e.path&&e.mode}

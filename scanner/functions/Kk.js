@@ -1,1 +1,1 @@
-function kk(a){a=a|0;L[a>>2]=21960;eg(a+12|0);return a|0}
+function Kk(a,b,c,d,e,g){a=a|0;b=b|0;c=c|0;d=d|0;e=e|0;g=g|0;var h=0,i=0,j=0;f[a>>2]=b;h=b+16|0;i=f[h+4>>2]|0;j=a+8|0;f[j>>2]=f[h>>2];f[j+4>>2]=i;i=b+24|0;b=f[i+4>>2]|0;j=a+16|0;f[j>>2]=f[i>>2];f[j+4>>2]=b;b=a+40|0;f[b>>2]=c;f[b+4>>2]=d;d=a+48|0;f[d>>2]=e;f[d+4>>2]=g;return}

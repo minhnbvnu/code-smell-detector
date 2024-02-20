@@ -1,0 +1,1 @@
+function Vat(n){return function(){this.removeAttribute(n)}}

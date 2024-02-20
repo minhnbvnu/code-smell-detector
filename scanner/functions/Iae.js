@@ -1,0 +1,1 @@
+function Iae(e,t){if(e.length!=t.length)return!1;for(let r=0;r<e.length;r++){let n=e[r],i=t[r];if(n.from!=i.from||n.to!=i.to||n.direction!=i.direction||!Iae(n.inner,i.inner))return!1}return!0}

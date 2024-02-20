@@ -1,0 +1,1 @@
+function assignNewVideoInputId(){for(var i=0;;++i){if(!videoInputDevices[i])return i}}

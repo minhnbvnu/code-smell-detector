@@ -1,3 +1,1 @@
-function loadWeights(_x2) {
-	      return _loadWeights.apply(this, arguments);
-	    }
+function loadWeights(e,t,n,r){return void 0===t&&(t=""),__awaiter(this,void 0,void 0,function(){return __generator(this,function(o){return [2,weightsLoaderFactory(function(e){return loadWeightsAsArrayBuffer(e,r)})(e,t,n)]})})}

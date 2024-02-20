@@ -1,0 +1,1 @@
+function gotoUp(e,o,t){for(var n;;){if(--e<0)return null;for(n=o=0;o<=t;)n=o,o+=getColspan(e,o);if(canCellBeActive(e,n))return{row:e,cell:n,posX:t}}}

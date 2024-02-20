@@ -1,0 +1,1 @@
+function jn(t){var e,i,n=a(t)&&!h(t),o=!1,r=["years","year","y","months","month","M","days","day","d","dates","date","D","hours","hour","h","minutes","minute","m","seconds","second","s","milliseconds","millisecond","ms"];for(e=0;e<r.length;e+=1)i=r[e],o=o||l(t,i);return n&&o}

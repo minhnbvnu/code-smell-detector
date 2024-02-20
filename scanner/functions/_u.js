@@ -1,1 +1,1 @@
-function _u(){var a=0;a=sa(196);th(a,0);return a|0}
+function _u(e){var r=-1,n=Array(e.size);return e.forEach(function(e,t){n[++r]=[t,e]}),n}

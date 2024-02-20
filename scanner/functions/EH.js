@@ -1,0 +1,1 @@
+function EH(){qf=qf||MH.bind(void 0);for(var n=0,t=Kf.length;n<t;n++)document.addEventListener(Kf[n],qf,{capture:!0,passive:!1})}

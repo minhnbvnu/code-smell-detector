@@ -1,1 +1,1 @@
-function Hk(a,b){Gk(a,b)}
+function hk(a){a=a|0;var b=0,c=0,d=0,e=0,g=0,h=0,i=0;b=a+36|0;c=a+40|0;d=f[b>>2]|0;if((f[c>>2]|0)==(d|0)){e=1;return e|0}g=a+60|0;a=0;h=d;while(1){d=f[h+(a<<2)>>2]|0;a=a+1|0;if(!(Ra[f[(f[d>>2]|0)+16>>2]&127](d,g)|0)){e=0;i=5;break}h=f[b>>2]|0;if(a>>>0>=(f[c>>2]|0)-h>>2>>>0){e=1;i=5;break}}if((i|0)==5)return e|0;return 0}

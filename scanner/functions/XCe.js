@@ -1,0 +1,1 @@
+function XCe(e){return this.compareTo(e)==0}

@@ -1,0 +1,1 @@
+function findCommentNode(i){for(var o=ya(),s=0;s<o.childNodes.length;s++){var u=o.childNodes[s];if(8===u.nodeType&&u.nodeValue.trim()===i)return u}return null}

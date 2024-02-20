@@ -1,0 +1,1 @@
+function checkComputationForNaN(e,t,n){if("float32"===t)for(var r=0;r<e.length;r++)if(isNaN(e[r]))throw Error("The result of the '"+n+"' has NaNs.")}

@@ -1,1 +1,2 @@
-function Jb(a,b){var c=0,d=0,e=0;a:{c=H[a>>2];b:{if(H[a+8>>2]-c>>2>>>0>=b>>>0){break b}if(b>>>0>=1073741824){break a}d=H[a+4>>2]-c|0;e=b<<2;b=va(pa(e),c,d);H[a+8>>2]=b+e;H[a+4>>2]=b+d;H[a>>2]=b;if(!c){break b}oa(c)}return}sa();v()}
+function jb(a,b,c,d){var e;if(y(b)){var f=b.match(k);b=b.substring(f[0].length);var g=f[1]||f[3],f="?"===f[2];"^^"===g?c=c.parent():e=(e=d&&d[b])&&e.instance;if(!e){var h="$"+b+"Controller";e=g?c.inheritedData(h):c.data(h)}if(!e&&!f)throw ga("ctreq",b,a);}else if(M(b))for(e=[],g=0,f=b.length;g<f;g++)e[g]=jb(a,b[g],c,d);else J(b)&&(e=
+{},q(b,function(b,f){e[f]=jb(a,b,c,d)}));return e||null}

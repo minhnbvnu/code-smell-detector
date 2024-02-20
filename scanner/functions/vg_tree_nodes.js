@@ -1,0 +1,1 @@
+function vg_tree_nodes(root,nodes){var c=root.values,n=c?c.length:0,i;nodes.push(root);for(i=0;i<n;++i){vg_tree_nodes(c[i],nodes)}return nodes}

@@ -1,7 +1,1 @@
-function asinh_(x) {
-	  var $x = convertToTensor(x, 'x', 'asinh');
-	  var inputs = {
-	    x: $x
-	  };
-	  return ENGINE.runKernel(Asinh, inputs);
-	}
+function asinh_(e){var t=convertToTensor(e,"x","asinh");return ENV.engine.runKernel(function(e){return e.asinh(t)},{$x:t},function(e){return {$x:function(){return e.divStrict(scalar(1).add(t.toFloat().square()).sqrt())}}})}

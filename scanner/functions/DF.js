@@ -1,0 +1,1 @@
+function DF(n,t){var e=vo(n);if(arguments.length<2){var i=this.node();return e.local?i.getAttributeNS(e.space,e.local):i.getAttribute(e)}return this.each((t==null?e.local?Ost:Fst:typeof t=="function"?e.local?$st:Hst:e.local?Vst:Bst)(e,t))}

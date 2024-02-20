@@ -1,0 +1,1 @@
+function mxPolyline(a,b,c){mxShape.call(this);this.points=a;this.stroke=b;this.strokewidth=null!=c?c:1}

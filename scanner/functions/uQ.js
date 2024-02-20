@@ -1,0 +1,1 @@
+function uQ(e,t){var n=tc.newInstance(),r=Se.newTypedArray(t.pointType,30),i=new Uint32Array(11);i[0]=10;for(var o=0;o<10;o++){var a=o%2==1?t.height:.4*t.height;r[3*o+0]=a*Math.cos((2*o-1)*Math.PI/10),r[3*o+1]=a*Math.sin((2*o-1)*Math.PI/10),r[3*o+2]=0,i[1+o]=o}return n.getPoints().setData(r,3),n.getPolys().setData(i,1),n}

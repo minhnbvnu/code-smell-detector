@@ -1,0 +1,1 @@
+function _emscripten_glLinkProgram(program){program=GL.programs[program];GLctx.linkProgram(program);program.uniformLocsById=0;program.uniformSizeAndIdsByName={}}

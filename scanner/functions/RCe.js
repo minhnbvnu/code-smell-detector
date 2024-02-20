@@ -1,0 +1,1 @@
+function RCe(e,t){var r;return e<256||t.isEven()?r=new Zc(t):r=new ef(t),this.exp(e,r)}

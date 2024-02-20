@@ -1,0 +1,1 @@
+function kat(n){return function(){return n}}

@@ -1,7 +1,7 @@
-function render_history_as_gif() {
+function render_history_as_gif(){
 	const $win = $DialogWindow();
 	$win.title("Rendering GIF");
-
+	
 	const $output = $win.$main;
 	const $progress = $(E("progress")).appendTo($output).addClass("inset-deep");
 	const $progress_percent = $(E("span")).appendTo($output).css({
@@ -9,7 +9,7 @@ function render_history_as_gif() {
 		display: "inline-block",
 		textAlign: "center",
 	});
-	$win.$main.css({ padding: 5 });
+	$win.$main.css({padding: 5});
 
 	const $cancel = $win.$Button('Cancel', () => {
 		$win.close();
@@ -17,7 +17,7 @@ function render_history_as_gif() {
 
 	$win.center();
 
-	try {
+	try{
 		const width = main_canvas.width;
 		const height = main_canvas.height;
 		const gif = new GIF({
@@ -30,10 +30,10 @@ function render_history_as_gif() {
 		$win.on('close', () => {
 			gif.abort();
 		});
-
+	
 		gif.on("progress", p => {
 			$progress.val(p);
-			$progress_percent.text(`${~~(p * 100)}%`);
+			$progress_percent.text(`${~~(p*100)}%`);
 		});
 
 		gif.on("finished", blob => {
@@ -54,7 +54,7 @@ function render_history_as_gif() {
 					maxWidth: "70vw",
 				})
 			);
-			$win.on("close", () => {
+			$win.on("close", ()=> {
 				// revoking on image load(+error) breaks right click > "Save image as" and "Open image in new tab"
 				URL.revokeObjectURL(blob_url);
 			});
@@ -70,7 +70,7 @@ function render_history_as_gif() {
 					const suggested_file_name = `${file_name.replace(/\.(bmp|dib|a?png|gif|jpe?g|jpe|jfif|tiff?|webp|raw)$/i, "")} history.gif`;
 					systemHooks.showSaveFileDialog({
 						dialogTitle: localize("Save As"), // localize("Save Animation As"),
-						getBlob: () => blob,
+						getBlob: ()=> blob,
 						defaultFileName: suggested_file_name,
 						defaultPath: typeof system_file_handle === "string" ? `${system_file_handle.replace(/[/\\][^/\\]*/, "")}/${suggested_file_name}` : null,
 						defaultFileFormatID: "image/gif",
@@ -90,18 +90,18 @@ function render_history_as_gif() {
 
 		const gif_canvas = make_canvas(width, height);
 		const frame_history_nodes = [...undos, current_history_node];
-		for (const frame_history_node of frame_history_nodes) {
+		for(const frame_history_node of frame_history_nodes){
 			gif_canvas.ctx.clearRect(0, 0, gif_canvas.width, gif_canvas.height);
 			gif_canvas.ctx.putImageData(frame_history_node.image_data, 0, 0);
 			if (frame_history_node.selection_image_data) {
 				const selection_canvas = make_canvas(frame_history_node.selection_image_data);
 				gif_canvas.ctx.drawImage(selection_canvas, frame_history_node.selection_x, frame_history_node.selection_y);
 			}
-			gif.addFrame(gif_canvas, { delay: 200, copy: true });
+			gif.addFrame(gif_canvas, {delay: 200, copy: true});
 		}
 		gif.render();
 
-	} catch (err) {
+	}catch(err){
 		$win.close();
 		show_error_message("Failed to render GIF.", err);
 	}

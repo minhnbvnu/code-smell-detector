@@ -1,0 +1,1 @@
+function OpenAction(t){var o;_classCallCheck(this,OpenAction);(o=r.call(this,d,"openAction",!0)).destination=null;return o}

@@ -1,7 +1,1 @@
-function ceil_(x) {
-	  var $x = convertToTensor(x, 'x', 'ceil');
-	  var inputs = {
-	    x: $x
-	  };
-	  return ENGINE.runKernel(Ceil, inputs);
-	}
+function ceil_(e){var t=convertToTensor(e,"x","ceil");return ENV.engine.runKernel(function(e){return e.ceil(t)},{$x:t},function(e){return {$x:function(){return zerosLike(e)}}})}

@@ -1,3 +1,3 @@
 function toPlainObject(value) {
-	  return copyObject(value, keysIn(value));
-	}
+      return copyObject(value, keysIn(value));
+    }

@@ -1,1 +1,1 @@
-function Td(a){a=a|0}
+function Td(a,b,c){na[a]?m("100",a):void 0;na[a]=b;Fb[a]=b.eventTypes[c].dependencies}

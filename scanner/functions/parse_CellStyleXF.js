@@ -1,0 +1,1 @@
+function parse_CellStyleXF(blob,length,style){var o={};var a=blob.read_shift(4),b=blob.read_shift(4);var c=blob.read_shift(4),d=blob.read_shift(2);o.patternType=XLSFillPattern[c>>26];o.icvFore=d&127;o.icvBack=d>>7&127;return o}

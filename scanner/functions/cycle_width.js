@@ -1,0 +1,1 @@
+function cycle_width(collw){return char2width(px2char(width2px(collw)))}

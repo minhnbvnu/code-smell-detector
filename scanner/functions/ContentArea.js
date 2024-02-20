@@ -1,0 +1,1 @@
+function ContentArea(t){var o;_classCallCheck(this,ContentArea);(o=r.call(this,_,"contentArea",!0)).h=(0,d.getMeasurement)(t.h);o.id=t.id||"";o.name=t.name||"";o.relevant=(0,d.getRelevant)(t.relevant);o.use=t.use||"";o.usehref=t.usehref||"";o.w=(0,d.getMeasurement)(t.w);o.x=(0,d.getMeasurement)(t.x,"0pt");o.y=(0,d.getMeasurement)(t.y,"0pt");o.desc=null;o.extras=null;return o}

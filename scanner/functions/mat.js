@@ -1,0 +1,1 @@
+function mat(n,t){return function(){return n8(this,n,t.apply(this,arguments))}}

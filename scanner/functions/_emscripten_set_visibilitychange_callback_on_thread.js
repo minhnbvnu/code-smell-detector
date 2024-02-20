@@ -1,0 +1,1 @@
+function _emscripten_set_visibilitychange_callback_on_thread(userData,useCapture,callbackfunc,targetThread){if(!specialHTMLTargets[1]){return-4}registerVisibilityChangeEventCallback(specialHTMLTargets[1],userData,useCapture,callbackfunc,21,"visibilitychange",targetThread);return 0}

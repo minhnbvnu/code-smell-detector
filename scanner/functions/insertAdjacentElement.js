@@ -1,0 +1,1 @@
+function insertAdjacentElement(el,strategy,child){if(COMPATIBILITY.isA(child))for(var i=0;i<child[LEXICON.l];i++)insertAdjacentElement(el,strategy,child[i]);else _type(child)==TYPES.s?el.insertAdjacentHTML(strategy,child):el.insertAdjacentElement(strategy,child.nodeType?child:child[0])}

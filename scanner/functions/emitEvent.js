@@ -1,4 +1,1 @@
-function emitEvent(eventName) {
-	var evt = new CustomEvent(eventName, {'bubbles': true, 'cancelable': true});
-	document.dispatchEvent(evt);
-}
+function emitEvent(eventName){var evt=new CustomEvent(eventName,{bubbles:!0,cancelable:!0});document.dispatchEvent(evt)}

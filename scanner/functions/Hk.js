@@ -1,0 +1,1 @@
+function Hk(a,c,d){a=a|0;c=c|0;d=d|0;var e=0,g=0,h=0;e=Rg(a,c)|0;if((e|0)==(a+4|0)){g=d;return g|0}d=e+28|0;if((b[d+11>>0]|0)<0)h=f[d>>2]|0;else h=d;g=Sj(h)|0;return g|0}

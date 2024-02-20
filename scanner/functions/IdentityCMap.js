@@ -1,0 +1,1 @@
+function IdentityCMap(t,o){var c;_classCallCheck(this,IdentityCMap);(c=r.call(this)).vertical=t;c.addCodespaceRange(o,0,65535);return c}

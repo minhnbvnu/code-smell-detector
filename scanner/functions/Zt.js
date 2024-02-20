@@ -1,0 +1,1 @@
+function Zt(t,e){return t.slice(e,7).concat(t.slice(0,e))}

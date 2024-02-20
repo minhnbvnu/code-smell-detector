@@ -1,0 +1,1 @@
+function applyAnimationClass(a,b,c,d){if(!f.disableAnimation){a.classList.add(b);a.getBoundingClientRect();a.classList.add("animating");a.classList.remove(b);a.classList.add(c);setTimeout(function(){a.classList.remove("animating");a.classList.remove(c);if(d)d()},f.animateDuration)}else if(d)d()}

@@ -1,0 +1,1 @@
+function pt(t,e){var i,n=e;for("string"==typeof t&&(t=[t]),h(e)&&(n=function(t,i){i[e]=D(t)}),i=0;i<t.length;i++)ft[t[i]]=n}

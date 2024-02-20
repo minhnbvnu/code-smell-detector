@@ -1,0 +1,1 @@
+function MJ(n){let{inputs:t,backend:e,attrs:i}=n,{dy:r,input:o}=t,s=o,{filterSize:a,strides:l,pad:c,dimRoundingMode:u}=i,h=[1,1,1],p=F.computePool3DInfo(s.shape,a,l,h,c,u),d=new Xo(p,"max",!0),f=e.runWebGLProgram(d,[s],s.dtype),m=new U0(p),x=e.runWebGLProgram(m,[r,f],s.dtype);return e.disposeIntermediateTensorInfo(f),x}

@@ -1,0 +1,1 @@
+function NI(t){t.registerCoordinateSystem("radar",RI),t.registerComponentModel(kI),t.registerComponentView(PI),t.registerVisual({seriesType:"radar",reset:function(t){var e=t.getData();e.each((function(t){e.setItemVisual(t,"legendIcon","roundRect")})),e.setVisual("legendIcon","roundRect")}})}

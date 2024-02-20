@@ -1,0 +1,1 @@
+function parse_themeElements(data,opts){themes.themeElements={};var t;[["clrScheme",clrsregex,parse_clrScheme],["fontScheme",fntsregex,parse_fontScheme],["fmtScheme",fmtsregex,parse_fmtScheme]].forEach(function(m){if(!(t=data.match(m[1])))throw m[0]+" not found in themeElements";m[2](t,opts)})}

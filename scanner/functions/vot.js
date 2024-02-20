@@ -1,0 +1,1 @@
+function vot(n,t){return(t.castShadow?1:0)-(n.castShadow?1:0)}

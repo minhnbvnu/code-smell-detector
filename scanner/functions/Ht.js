@@ -1,1 +1,1 @@
-function Ht(t){var e={TaskState:se,TaskEvent:ie,StringFormat:ne,Storage:Ae,Reference:ye};t.INTERNAL.registerService(Oe,Ft,e,void 0,!0)}
+function Ht(t,e){zt(t,(function(t,i,n,o){n._w=n._w||{},e(t,n._w,n,o)}))}

@@ -1,0 +1,1 @@
+function disallowed(code){return code>=1&&code<=8||11===code||code>=13&&code<=31||code>=127&&code<=159||code>=64976&&code<=65007||65535==(65535&code)||65534==(65535&code)}

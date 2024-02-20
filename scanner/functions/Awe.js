@@ -1,0 +1,1 @@
+function Awe(e,t){let r=null;for(let n of e){let i=n.style(t);i&&(r=r?r+" "+i:i)}return r}

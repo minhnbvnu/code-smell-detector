@@ -1,0 +1,1 @@
+function Sq(a){a=a|0;return}

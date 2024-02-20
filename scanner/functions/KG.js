@@ -1,1 +1,1 @@
-function kg(){return 5}
+function KG(t,e,n){if(!t||!e)return e;var i=n.done,r=n.during;return qG(t,e),e.__morphT=0,e.animateTo({__morphT:1},k({during:function(t){e.dirtyShape(),r&&r(t)},done:function(){ZG(e,"buildPath"),ZG(e,"updateTransform"),e.__morphT=-1,e.createPathProxy(),e.dirtyShape(),i&&i()}},n)),e}

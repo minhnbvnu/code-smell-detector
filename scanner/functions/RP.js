@@ -1,0 +1,1 @@
+function RP(t,e,n,i,r,o){return n>i?-1:n<i?1:o?0:e>0?t.get(r,e-1)<=i?1:-1:1}

@@ -1,0 +1,1 @@
+function vL(t,e,n,i,r,o){var a=n.__brushOption,s=t.toRectRange(a.range),l=xL(e,r,o);E(i,(function(t){var e=jk[t];s[e[0]][e[1]]+=l[e[0]]})),a.range=t.fromRectRange(gL(s[0][0],s[1][0],s[0][1],s[1][1])),iL(e,n),lL(e,{isEnd:!1})}

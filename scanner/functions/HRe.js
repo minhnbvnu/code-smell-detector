@@ -1,0 +1,1 @@
+function HRe(e){if(typeof e=="string")e=new URL(e);else if(!hT(e)){const t=new TypeError('The "path" argument must be of type string or an instance of URL. Received `'+e+"`");throw t.code="ERR_INVALID_ARG_TYPE",t}if(e.protocol!=="file:"){const t=new TypeError("The URL must be of scheme file");throw t.code="ERR_INVALID_URL_SCHEME",t}return KRe(e)}

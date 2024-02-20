@@ -1,0 +1,1 @@
+function setContent(i,o){tippy_esm_isElement(o.content)?(dangerouslySetInnerHTML(i,""),i.appendChild(o.content)):"function"!=typeof o.content&&(o.allowHTML?dangerouslySetInnerHTML(i,o.content):i.textContent=o.content)}

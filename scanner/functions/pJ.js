@@ -1,0 +1,1 @@
+function pJ(e){return typeof Ss.globalScope!="undefined"&&typeof Ss.globalScope.crypto=="object"&&typeof Ss.globalScope.crypto.subtle=="object"&&typeof Ss.globalScope.crypto.subtle[e]=="function"}

@@ -1,0 +1,1 @@
+function DeflateRaw(e){return this instanceof DeflateRaw?void Zlib.call(this,e,binding.DEFLATERAW):new DeflateRaw(e)}

@@ -1,0 +1,1 @@
+function traj1_21x(u){return trajLeftSecMain_x(u,offsetMain-offset21Target);}

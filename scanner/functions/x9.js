@@ -1,0 +1,1 @@
+function x9(t){var e=0,r=0;return function(){var n=_9(),i=b9-(n-r);if(r=n,i>0){if(++e>=m9)return arguments[0]}else e=0;return t.apply(void 0,arguments)}}

@@ -1,0 +1,1 @@
+function cancelEditAndSetFocus(){getEditorLock().cancelCurrentEdit()&&setFocus()}

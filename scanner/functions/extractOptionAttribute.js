@@ -1,0 +1,1 @@
+function extractOptionAttribute(a,b,c){var d=a.getAttribute(b),nextParent=a;while(!d&&(nextParent=nextParent.parentNode)&&nextParent.getAttribute)d=nextParent.getAttribute(b);return d||c}

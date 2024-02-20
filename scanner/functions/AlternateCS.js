@@ -1,0 +1,1 @@
+function AlternateCS(t,o,c){var l;_classCallCheck(this,AlternateCS);(l=r.call(this,"Alternate",t)).base=o;l.tintFn=c;l.tmpBuf=new Float32Array(o.numComps);return l}

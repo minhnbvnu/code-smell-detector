@@ -1,0 +1,1 @@
+function aW(t){var e=[];return E(t,(function(t){var n=t.data;if(!(n.count()>1e4))for(var i=n.getIndices(),r=function(t){for(var e=t.dimensions,n=0;n<e.length;n++){var i=t.getDimensionInfo(e[n]);if(i&&0===i.otherDims.itemGroupId)return e[n]}}(n),o=0;o<i.length;o++)e.push({dataGroupId:t.dataGroupId,data:n,dim:t.dim||r,divide:t.divide,dataIndex:o})})),e}

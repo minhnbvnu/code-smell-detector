@@ -1,6 +1,11 @@
-function getName(key) {
-	  if (t.isIdentifier(key)) {
-	    return key.name;
-	  }
-	  return key.value.toString();
-	}
+function getName(instance) {
+  var publicInstance = instance && instance.getPublicInstance();
+  if (!publicInstance) {
+    return undefined;
+  }
+  var constructor = publicInstance.constructor;
+  if (!constructor) {
+    return undefined;
+  }
+  return constructor.displayName || constructor.name || undefined;
+}

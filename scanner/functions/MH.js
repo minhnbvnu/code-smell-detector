@@ -1,0 +1,1 @@
+function MH(n){if(n.cancelable&&AH(n)&&n.preventDefault(),n.targetTouches){var t=n.targetTouches[0];Xf.pageX=t.pageX,Xf.pageY=t.pageY}}

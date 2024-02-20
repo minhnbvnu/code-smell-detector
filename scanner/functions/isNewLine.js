@@ -1,3 +1,1 @@
-function isNewLine(code) {
-	  return code === 10 || code === 13 || code === 0x2028 || code === 0x2029;
-	}
+function isNewLine(i,o){return 10===i||13===i||!o&&(8232===i||8233===i)}

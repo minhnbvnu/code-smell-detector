@@ -1,0 +1,1 @@
+function blockRegex(i){return function(o,s){return s.inline||s.simple?null:i.exec(o)}}

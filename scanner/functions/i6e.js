@@ -1,0 +1,1 @@
+function i6e(e){if(e.length>1)for(let t=e[0],r=1;r<e.length;r++){let n=e[r];if(hD(t,n)>0)return e.slice().sort(hD);t=n}return e}

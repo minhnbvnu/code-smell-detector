@@ -1,0 +1,1 @@
+function mxAbstractCanvas2D(){this.converter=this.createUrlConverter();this.reset()}

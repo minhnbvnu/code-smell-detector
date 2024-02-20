@@ -1,3 +1,1 @@
-function concat4d_(tensors, axis) {
-	  return concat(tensors, axis);
-	}
+function concat4d_(e,t){return concat(e,t)}

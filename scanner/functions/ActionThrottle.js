@@ -1,0 +1,1 @@
+function ActionThrottle(e,o){var t=!1,n=!1;function l(){n=!1}function r(){t=!0,setTimeout(i,o),e()}function i(){n?(l(),r()):t=!1}return{enqueue:function(){t?n=!0:r()},dequeue:l}}

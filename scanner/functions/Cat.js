@@ -1,0 +1,1 @@
+function Cat(){return p8(this).formatHsl()}

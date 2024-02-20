@@ -1,0 +1,1 @@
+function Z0(h,m){if(1&h&&t.YNc(0,T1,3,2,"div",14),2&h){const n=m.$implicit;t.Q6J("ngIf",(null==n?null:n.icon)&&n.isShared&&(!n.isSharedSnapshot||n.usersWithAccess&&n.usersWithAccess.length))}}

@@ -1,0 +1,1 @@
+function HX(n,t){return R.clamp(0,n,t-1)}

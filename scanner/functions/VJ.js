@@ -1,0 +1,1 @@
+function VJ(n){F.warn("tf.nonMaxSuppression() in webgl locks the UI thread. Call tf.nonMaxSuppressionAsync() instead");let{inputs:t,backend:e,attrs:i}=n,{boxes:r,scores:o}=t,{maxOutputSize:s,iouThreshold:a,scoreThreshold:l}=i,c=e.readSync(r.dataId),u=e.readSync(o.dataId),{selectedIndices:h}=BJ(c,u,s,a,l);return e.makeTensorInfo([h.length],"int32",new Int32Array(h))}

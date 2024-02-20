@@ -1,0 +1,1 @@
+function il(e){if(!Zs(e)||fc.call(e)!=Ge)return!1;var t=yc(e);if(null===t)return!0;var n=uc.call(t,"constructor")&&t.constructor;return"function"==typeof n&&n instanceof n&&lc.call(n)==dc}

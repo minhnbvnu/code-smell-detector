@@ -1,0 +1,3 @@
+function considerExistence() {
+            return undefined;
+        }

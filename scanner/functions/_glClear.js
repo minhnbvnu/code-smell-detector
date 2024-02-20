@@ -1,0 +1,1 @@
+function _glClear(mask){if(mask==16384&&GLctx.dontClearAlphaOnly){if(!colorMaskValue[0]&&!colorMaskValue[1]&&!colorMaskValue[2]&&colorMaskValue[3])return}GLctx.clear(mask)}

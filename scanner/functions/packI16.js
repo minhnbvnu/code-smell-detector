@@ -1,3 +1,1 @@
-function packI16(it) {
-  return [it & 0xff, it >> 8 & 0xff];
-}
+function packI16(t){return[255&t,t>>8&255]}

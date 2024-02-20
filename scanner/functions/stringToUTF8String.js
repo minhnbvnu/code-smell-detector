@@ -1,3 +1,1 @@
-function stringToUTF8String(str) {
-  return decodeURIComponent(escape(str));
-}
+function stringToUTF8String(t){return decodeURIComponent(escape(t))}

@@ -1,0 +1,1 @@
+function documentLoaded(){document.removeEventListener("DOMContentLoaded",documentLoaded,false);window.removeEventListener("load",documentLoaded,false);n.refresh()}

@@ -1,0 +1,1 @@
+function dangerouslySetInnerHTML(i,o){i.innerHTML=o}

@@ -1,0 +1,1 @@
+function zst(n,t){return n<t?-1:n>t?1:n>=t?0:NaN}

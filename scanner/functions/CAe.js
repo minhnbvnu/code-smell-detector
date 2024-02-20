@@ -1,0 +1,1 @@
+function CAe(e){const t=JSON.parse(JSON.stringify(e));for(let r in t)if(t.hasOwnProperty(r)){let n=t[r];for(let i in n)n.hasOwnProperty(i)&&(n[i]+=1)}return t}

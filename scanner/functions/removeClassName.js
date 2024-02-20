@@ -1,0 +1,1 @@
+function removeClassName(el,className){el.classList?el.classList.remove(className):el.className=el.className.replace(new RegExp("(?:^|\\s)".concat(className,"(?!\\S)"),"g"),"")}

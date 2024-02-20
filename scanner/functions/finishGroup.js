@@ -1,0 +1,1 @@
+function finishGroup(i,o){var s=parseDisjunction();s||bail("Expected disjunction"),skip(")");var u=createGroup(i,flattenBody(s),o,B);return"normal"==i&&w&&_++,u}

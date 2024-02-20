@@ -1,0 +1,1 @@
+function _emscripten_glGenerateMipmap(x0){GLctx["generateMipmap"](x0)}

@@ -1,0 +1,1 @@
+function checkConversionForNaN(e,t){if("float32"!==t)for(var n=0;n<e.length;n++)if(isNaN(e[n]))throw Error("NaN is not a valid value for dtype: '"+t+"'.")}

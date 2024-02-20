@@ -1,0 +1,1 @@
+function nme(e){let{children:t}=e,r=O.useContext(a$),[n,i]=O.useState(0),a=O.useMemo(()=>({parent:r,modalCount:n,addModal(){i(l=>l+1),r&&r.addModal()},removeModal(){i(l=>l-1),r&&r.removeModal()}}),[r,n]);return S.createElement(a$.Provider,{value:a},t)}

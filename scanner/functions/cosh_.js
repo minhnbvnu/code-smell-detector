@@ -1,7 +1,1 @@
-function cosh_(x) {
-	  var $x = convertToTensor(x, 'x', 'cosh');
-	  var inputs = {
-	    x: $x
-	  };
-	  return ENGINE.runKernel(Cosh, inputs);
-	}
+function cosh_(e){var t=convertToTensor(e,"x","cosh");return ENV.engine.runKernel(function(e){return e.cosh(t)},{$x:t},function(e){return {$x:function(){return t.toFloat().sinh().mulStrict(e)}}})}

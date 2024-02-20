@@ -1,3 +1,1 @@
-function rotr(x, n) {
-    return x >>> n | x << 32 - n;
-  }
+function rotr(t,r){return t>>>r|t<<32-r}

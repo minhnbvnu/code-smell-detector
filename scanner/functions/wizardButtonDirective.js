@@ -1,0 +1,1 @@
+function wizardButtonDirective(a){angular.module("mgo-angular-wizard").directive(a,function(){return{restrict:"A",replace:!1,require:"^wizard",link:function(b,c,d,e){c.on("click",function(c){c.preventDefault(),b.$apply(function(){b.$eval(d[a]),e[a.replace("wz","").toLowerCase()]()})})}}})}

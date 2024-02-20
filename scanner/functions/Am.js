@@ -1,0 +1,1 @@
+function Am(a){a=a|0;var b=0,c=0;if(pq(a)|0?(b=Mp(f[a>>2]|0)|0,a=b+8|0,c=f[a>>2]|0,f[a>>2]=c+-1,(c+-1|0)<0):0)Oq(b);return}

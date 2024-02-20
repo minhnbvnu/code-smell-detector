@@ -1,0 +1,1 @@
+function cMulTo(x,y,r){x.multiplyTo(y,r);this.reduce(r)}

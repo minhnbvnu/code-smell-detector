@@ -1,0 +1,1 @@
+function Calculate(t){var o;_classCallCheck(this,Calculate);(o=r.call(this,_,"calculate",!0)).id=t.id||"";o.override=(0,d.getStringOption)(t.override,["disabled","error","ignore","warning"]);o.use=t.use||"";o.usehref=t.usehref||"";o.extras=null;o.message=null;o.script=null;return o}

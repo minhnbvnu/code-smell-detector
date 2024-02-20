@@ -1,0 +1,1 @@
+function safe_format_xf(p,opts,date1904){if(!p.XF)return;try{var fmtid=p.XF.ifmt||0;if(p.t==="e"){p.w=p.w||BErr[p.v]}else if(fmtid===0){if(p.t==="n"){if((p.v|0)===p.v)p.w=SSF._general_int(p.v);else p.w=SSF._general_num(p.v)}else p.w=SSF._general(p.v)}else p.w=SSF.format(fmtid,p.v,{date1904:date1904||false});if(opts.cellNF)p.z=SSF._table[fmtid]}catch(e){if(opts.WTF)throw e}}

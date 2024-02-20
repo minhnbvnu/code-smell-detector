@@ -1,0 +1,1 @@
+function X4(){var a=0,b=0;b=l;l=l+16|0;a=Da(20,b|0)|0;l=b;return a|0}

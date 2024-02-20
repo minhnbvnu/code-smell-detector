@@ -1,0 +1,1 @@
+function PushButtonWidgetAnnotationElement(t){_classCallCheck(this,PushButtonWidgetAnnotationElement);return r.call(this,t,{ignoreBorder:t.data.hasAppearance})}

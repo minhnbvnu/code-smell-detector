@@ -1,0 +1,1 @@
+function decode_col(colstr){var c=unfix_col(colstr),d=0,i=0;for(;i!==c.length;++i)d=26*d+c.charCodeAt(i)-64;return d-1}

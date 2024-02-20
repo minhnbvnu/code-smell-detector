@@ -1,3 +1,3 @@
-function getFont(font) {
-  return font[0].replace('Noto Sans', 'serif').replace('Roboto', 'sans-serif');
+function getFont(fontWeight, request) {
+    return fontWeight + " " + request.fontSize * request.devicePixelRatio + "px " + request.fontFamily;
 }

@@ -1,1 +1,1 @@
-function gm(a){a=Jm(a);L[a>>2]=15460;return a}
+function Gm(a){a=a|0;var b=0,c=0;f[a>>2]=1196;b=f[a+8>>2]|0;if(!b)return;c=a+12|0;a=f[c>>2]|0;if((a|0)!=(b|0))f[c>>2]=a+(~((a+-4-b|0)>>>2)<<2);Oq(b);return}

@@ -1,0 +1,1 @@
+function getOriginalVisitorCookieTimeout(){var now=new Date,nowTs=Math.round(now.getTime()/1e3),visitorInfo=self.getVisitorInfo();var createTs=parseInt(visitorInfo[2]);var cookieTimeout=33696e3;var originalTimeout=createTs+cookieTimeout-nowTs;return originalTimeout}

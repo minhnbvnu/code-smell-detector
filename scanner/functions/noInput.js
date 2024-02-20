@@ -1,0 +1,1 @@
+function noInput() { new Input({}, www); }

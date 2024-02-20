@@ -1,13 +1,7 @@
-function generateOptions(options, defaults) {
-	  if (typeof options === 'function') {
-	    defaults.callback = options;
-	  } else if (options) {
-	    for (var name in options) {
-	      /* istanbul ignore else */
-	      if (options.hasOwnProperty(name)) {
-	        defaults[name] = options[name];
-	      }
-	    }
+function generateOptions(length) {
+	  var arr = [];
+	  for (var value = 0; value < length; value++) {
+	    arr.push(value);
 	  }
-	  return defaults;
+	  return arr;
 	}

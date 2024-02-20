@@ -1,0 +1,1 @@
+function baseIsSet$1(value){return isObjectLike(value)&&getTag$1(value)==setTag$1}

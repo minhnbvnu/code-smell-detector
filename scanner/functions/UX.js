@@ -1,0 +1,1 @@
+function UX(n,t,e,i,r,o,s,a,l,c,u){let h=Math.floor(a),p=Math.floor(l),d=h+1,f=p+1,m=(f-l)*dp(n,t,e,i,r,o,s,h,p,c,u)+(l-p)*dp(n,t,e,i,r,o,s,h,f,c,u),x=(f-l)*dp(n,t,e,i,r,o,s,d,p,c,u)+(l-p)*dp(n,t,e,i,r,o,s,d,f,c,u);return(d-a)*m+(a-h)*x}

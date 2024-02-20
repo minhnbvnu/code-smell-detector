@@ -1,0 +1,1 @@
+function ho(e,t){var n=e;return n instanceof b&&(n=n.value()),_(t,function(e,t){return t.func.apply(t.thisArg,v([e],t.args))},n)}

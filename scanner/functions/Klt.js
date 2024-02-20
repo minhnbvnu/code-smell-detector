@@ -1,0 +1,1 @@
+function Klt(n,t){eu(n.length===t.length,"Vectors a and b must be of same length");let e=0;for(let i=0;i<n.length;++i){let r=n[i]-t[i];e+=r*r}return e}

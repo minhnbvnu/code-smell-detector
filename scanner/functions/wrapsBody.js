@@ -1,0 +1,3 @@
+function wrapsBody() {
+  return true;
+}

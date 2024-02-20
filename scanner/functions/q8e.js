@@ -1,0 +1,1 @@
+function q8e(e,t,r){let n=zle(e.selectionsAfter.length?e.selectionsAfter.map(s=>s.map(t)):wa,r);if(!e.changes)return _i.selection(n);let i=e.changes.map(t),a=t.mapDesc(e.changes,!0),l=e.mapped?e.mapped.composeDesc(a):a;return new _i(i,Ar.mapEffects(e.effects,t),l,e.startSelection.map(a),n)}

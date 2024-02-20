@@ -1,10 +1,1 @@
-function reverse_(x, axis) {
-	  var $x = convertToTensor(x, 'x', 'reverse');
-	  var inputs = {
-	    x: $x
-	  };
-	  var attrs = {
-	    dims: axis
-	  };
-	  return ENGINE.runKernel(Reverse, inputs, attrs);
-	}
+function reverse_(e,t){var n=convertToTensor(e,"x","reverse");if(0===n.rank)return n.clone();var r=parseAxisParam(t,n.shape);return ENV.engine.runKernel(function(e){return e.reverse(n,r)},{$x:n},function(e){return {$x:function(){return e.reverse(r)}}}).reshapeAs(n)}

@@ -1,0 +1,1 @@
+function getInverseReplacer(inverse){var single=[],multiple=[];Object.keys(inverse).forEach(function(k){if(k.length===1){single.push("\\"+k)}else{multiple.push(k)}});multiple.unshift("["+single.join("")+"]");return new RegExp(multiple.join("|"),"g")}

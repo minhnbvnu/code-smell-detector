@@ -1,0 +1,1 @@
+function reFocus() { if (cm.state.focused) setTimeout(bind(focusInput, cm), 0); }

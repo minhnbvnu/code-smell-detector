@@ -1,8 +1,1 @@
-function JpxStream(stream, maybeLength, dict, params) {
-    this.stream = stream;
-    this.maybeLength = maybeLength;
-    this.dict = dict;
-    this.params = params;
-
-    _stream.DecodeStream.call(this, maybeLength);
-  }
+function JpxStream(t,o,c){var l;!function _classCallCheck(t,r){if(!(t instanceof r))throw new TypeError("Cannot call a class as a function")}(this,JpxStream);(l=r.call(this,o)).stream=t;l.dict=t.dict;l.maybeLength=o;l.params=c;return l}

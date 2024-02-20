@@ -1,0 +1,1 @@
+function getWsUrl(e){let t=getOption("wsUrl");if(!t){e=e?url_1.URLExt.normalize(e):getBaseUrl();if(e.indexOf("http")!==0){return""}t="ws"+e.slice(4)}return url_1.URLExt.normalize(t)}

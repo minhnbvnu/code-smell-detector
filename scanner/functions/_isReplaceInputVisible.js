@@ -1,0 +1,1 @@
+function _isReplaceInputVisible () { return Boolean(fnrDialog.find('input.sm-replace')) }

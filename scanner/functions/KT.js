@@ -1,0 +1,1 @@
+function KT(t){for(;(er=_s())&&er<33;)_n();return v1(t)>2||v1(er)>3?"":" "}

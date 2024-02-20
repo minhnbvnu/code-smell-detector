@@ -1,9 +1,1 @@
-function gatherND_(x, indices) {
-	  var $indices = convertToTensor(indices, 'indices', 'gatherND', 'int32');
-	  var $x = convertToTensor(x, 'x', 'gatherND');
-	  var inputs = {
-	    params: $x,
-	    indices: $indices
-	  };
-	  return ENGINE.runKernel(GatherNd, inputs);
-	}
+function gatherND_(e,t){var n=convertToTensor(t,"indices","gatherND","int32"),r=convertToTensor(e,"x","gatherND");return ENV.engine.runKernel(function(e){return e.gatherND(r,n)},{$x:r,$indices:n})}

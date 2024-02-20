@@ -1,0 +1,1 @@
+function PrintAnnotationStorage(t){var a;_classCallCheck(this,PrintAnnotationStorage);!function _classPrivateFieldInitSpec(t,r,a){_checkPrivateRedeclaration(t,r);r.set(t,a)}(_assertThisInitialized(a=r.call(this)),d,{writable:!0,value:null});_classPrivateFieldSet(_assertThisInitialized(a),d,structuredClone(t.serializable));return a}

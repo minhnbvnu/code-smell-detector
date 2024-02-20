@@ -1,0 +1,3 @@
+function gettid(){
+        return tid++;
+    }

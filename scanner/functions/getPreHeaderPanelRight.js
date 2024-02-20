@@ -1,0 +1,1 @@
+function getPreHeaderPanelRight(){return $preHeaderPanelR[0]}

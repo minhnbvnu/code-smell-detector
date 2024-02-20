@@ -1,0 +1,1 @@
+function Fse(e,t,r){return e!=null&&t!=null&&e!==t?(r(new Error(`checksum mismatch: expected ${t} but got ${e} (X-Checksum-Sha2 header)`)),!1):!0}

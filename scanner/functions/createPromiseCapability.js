@@ -1,22 +1,8 @@
 function createPromiseCapability() {
-  const capability = Object.create(null);
-  let isSettled = false;
-  Object.defineProperty(capability, "settled", {
-    get() {
-      return isSettled;
-    }
-
-  });
+  var capability = {};
   capability.promise = new Promise(function (resolve, reject) {
-    capability.resolve = function (data) {
-      isSettled = true;
-      resolve(data);
-    };
-
-    capability.reject = function (reason) {
-      isSettled = true;
-      reject(reason);
-    };
+    capability.resolve = resolve;
+    capability.reject = reject;
   });
   return capability;
 }

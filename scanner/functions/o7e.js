@@ -1,0 +1,1 @@
+function o7e(e,t,r){let n=!1,i=xd(e.selection,a=>{let l=El(e,a.head,-1)||El(e,a.head,1)||a.head>0&&El(e,a.head-1,1)||a.head<e.doc.length&&El(e,a.head+1,-1);if(!l||!l.end)return a;n=!0;let s=l.start.from==a.head?l.end.to:l.end.from;return r?ve.range(a.anchor,s):ve.cursor(s)});return n?(t(Ll(e,i)),!0):!1}

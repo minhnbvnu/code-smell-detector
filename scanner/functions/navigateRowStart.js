@@ -1,0 +1,1 @@
+function navigateRowStart(){return navigate("home")}

@@ -1,12 +1,1 @@
-function toMultiArray(arr) {
-        var inputLength = arr.length;
-        var out = [];
-        var index = 0;
-
-        for (var i = 0; i < inputLength; i += 2) {
-          out[index] = [arr[i], arr[i + 1]];
-          ++index;
-        }
-
-        return out;
-      }
+function toMultiArray(t){for(var r=t.length,o=[],c=0,l=0;l<r;l+=2)o[c++]=[t[l],t[l+1]];return o}

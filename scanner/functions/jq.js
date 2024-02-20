@@ -1,0 +1,1 @@
+function jq(a,b){a=a|0;b=b|0;return Wn(a,b)|0}

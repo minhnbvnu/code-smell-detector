@@ -1,0 +1,1 @@
+function datenum(v,date1904){if(date1904)v+=1462;var epoch=Date.parse(v);return(epoch+22091616e5)/(24*60*60*1e3)}

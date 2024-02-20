@@ -1,0 +1,1 @@
+function zU(n){return Array.isArray(n)||typeof n=="object"}

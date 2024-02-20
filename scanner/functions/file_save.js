@@ -1,16 +1,19 @@
-function file_save(maybe_saved_callback = () => { }, update_from_saved = true) {
-	deselect();
-	// store and use file handle at this point in time, to avoid race conditions
-	const save_file_handle = system_file_handle;
-	if (!save_file_handle || file_name.match(/\.(svg|pdf)$/i)) {
-		return file_save_as(maybe_saved_callback, update_from_saved);
+function file_save(saved_callback) {
+	if (!file_path) {
+		return file_save_as();
 	}
-	write_image_file(main_canvas, file_format, async (blob) => {
-		await systemHooks.writeBlobToHandle(save_file_handle, blob);
 
-		if (update_from_saved) {
-			update_from_saved_file(blob);
-		}
-		maybe_saved_callback();
+	var content = $textarea.val();
+
+	withFilesystem(function () {
+		var fs = BrowserFS.BFSRequire('fs');
+		fs.writeFile(file_path, content, "utf8", function (error) {
+			if (error) {
+				alert("Failed to save file: " + error);
+				throw error;
+			}
+			saved = true;
+			saved_callback?.();
+		});
 	});
 }

@@ -1,22 +1,12 @@
-function memoizeOne(fn) {
-  let called = false;
-
-  /** @type {ReturnType} */
-  let lastResult;
-
-  /** @type {Array<any>} */
-  let lastArgs;
-
-  let lastThis;
-
-  return function () {
-    const nextArgs = Array.prototype.slice.call(arguments);
-    if (!called || this !== lastThis || !arrayEquals(nextArgs, lastArgs)) {
-      called = true;
-      lastThis = this;
-      lastArgs = nextArgs;
-      lastResult = fn.apply(this, arguments);
-    }
-    return lastResult;
-  };
-}
+function memoizeOne(callback) {
+            const map2 = /* @__PURE__ */ new Map();
+            return (arg) => {
+                const key = `${typeof arg}:${arg}`;
+                let value = map2.get(key);
+                if (value === void 0 && !map2.has(key)) {
+                    value = callback(arg);
+                    map2.set(key, value);
+                }
+                return value;
+            };
+        }

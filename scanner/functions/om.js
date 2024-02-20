@@ -1,1 +1,1 @@
-function Om(a){a=a|0;var b=0,c=0;L[a>>2]=11644;a:{if(!M[a+8|0]){break a}b=L[a+12>>2];if(!b){break a}c=L[a+4>>2];ha[L[L[c>>2]+16>>2]](c,b)}return a|0}
+function om(){var a=0,b=0;a=sn()|0;if((a|0?(b=f[a>>2]|0,b|0):0)?(a=b+48|0,(f[a>>2]&-256|0)==1126902528?(f[a+4>>2]|0)==1129074247:0):0)Ho(f[b+12>>2]|0);Ho(Qp()|0)}

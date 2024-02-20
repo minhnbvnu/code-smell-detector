@@ -1,0 +1,1 @@
+function oP(n){return!!(ot().getBool("WEBGL_RENDER_FLOAT32_ENABLED")||n===0||ZX<Math.abs(n)&&Math.abs(n)<JX)}

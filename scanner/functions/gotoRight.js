@@ -1,0 +1,1 @@
+function gotoRight(e,o,t){if(o>=columns.length)return null;do{o+=getColspan(e,o)}while(o<columns.length&&!canCellBeActive(e,o));return o<columns.length?{row:e,cell:o,posX:o}:null}

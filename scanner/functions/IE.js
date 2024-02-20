@@ -1,0 +1,1 @@
+function IE(n){let t=1;for(let e=0;e<n.rows;e++)for(let i=0;i<n.columns;i++)t*=n.get(e,i);return t}

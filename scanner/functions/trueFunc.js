@@ -1,0 +1,3 @@
+function trueFunc() {
+        return true;
+      }

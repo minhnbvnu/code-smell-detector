@@ -1,0 +1,5 @@
+function defineModel() {
+    {
+      warnRuntimeUsage("defineModel");
+    }
+  }

@@ -1,10 +1,1 @@
-function outerProduct_(v1, v2) {
-	  var $v1 = convertToTensor(v1, 'v1', 'outerProduct');
-	  var $v2 = convertToTensor(v2, 'v2', 'outerProduct');
-	  assert($v1.rank === 1 && $v2.rank === 1, function () {
-	    return "Error in outerProduct: inputs must be rank 1, but got ranks " + ($v1.rank + " and " + $v2.rank + ".");
-	  });
-	  var v12D = reshape($v1, [-1, 1]);
-	  var v22D = reshape($v2, [1, -1]);
-	  return matMul(v12D, v22D);
-	}
+function outerProduct_(e,t){var n=convertToTensor(e,"v1","outerProduct"),r=convertToTensor(t,"v2","outerProduct");return assert(1===n.rank&&1===r.rank,"Error in outerProduct: inputs must be rank 1, but got ranks "+n.rank+" and "+r.rank+"."),n.as2D(-1,1).matMul(r.as2D(1,-1))}

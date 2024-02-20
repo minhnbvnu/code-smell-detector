@@ -1,0 +1,1 @@
+function wv(e,r,t,a,n){gv(e.slice(0,e.indexOf(">")),t,a,n)}

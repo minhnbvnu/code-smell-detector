@@ -1,0 +1,1 @@
+function unwrapArray(arg,defaultValue){return!(arg=Array.isArray(arg)?arg[0]:arg)&&defaultValue?defaultValue:arg}

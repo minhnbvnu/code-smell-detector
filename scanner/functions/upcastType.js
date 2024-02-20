@@ -1,11 +1,1 @@
-function upcastType(typeA, typeB) {
-	  if (typeA === 'string' || typeB === 'string') {
-	    if (typeA === 'string' && typeB === 'string') {
-	      return 'string';
-	    }
-
-	    throw new Error("Can not upcast " + typeA + " with " + typeB);
-	  }
-
-	  return upcastTypeMap[typeA][typeB];
-	}
+function upcastType(e,t){if("string"===e||"string"===t){if("string"===e&&"string"===t)return "string";throw new Error("Can not upcast "+e+" with "+t)}return upcastTypeMap[e][t]}

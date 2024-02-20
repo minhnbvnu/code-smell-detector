@@ -1,0 +1,1 @@
+function isControlLetter(i){return i>=65&&i<=90||i>=97&&i<=122}

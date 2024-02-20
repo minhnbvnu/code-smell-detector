@@ -1,7 +1,7 @@
 function tryIt(f) {
-    try {
-      return f();
-    } catch(e) {
+        try {
+            return f();
+        } catch(e) {
+        }
+        return null;
     }
-    return null;
-  }

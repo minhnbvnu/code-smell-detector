@@ -1,0 +1,1 @@
+function _blake2b_init0($0){$0=$0|0;var $1=0,dest=0,label=0,sp=0,src=0,stop=0;sp=STACKTOP;$1=$0+64|0;_memset($1|0,0,176)|0;dest=$0;src=16;stop=dest+64|0;do{HEAP32[dest>>2]=HEAP32[src>>2]|0;dest=dest+4|0;src=src+4|0}while((dest|0)<(stop|0));return}

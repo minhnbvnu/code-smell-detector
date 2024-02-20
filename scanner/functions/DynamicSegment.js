@@ -1,0 +1,1 @@
+function DynamicSegment(name) { this.name = name; }

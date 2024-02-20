@@ -1,0 +1,1 @@
+function baseIsNative$1(value){return!(!isObject$5(value)||isMasked(value))&&(isFunction$1(value)?reIsNative:reIsHostCtor).test(toSource$1(value))}

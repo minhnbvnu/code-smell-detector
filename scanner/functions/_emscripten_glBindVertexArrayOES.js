@@ -1,0 +1,1 @@
+function _emscripten_glBindVertexArrayOES(vao){GLctx["bindVertexArray"](GL.vaos[vao])}

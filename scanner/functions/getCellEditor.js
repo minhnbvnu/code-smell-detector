@@ -1,0 +1,1 @@
+function getCellEditor(){return currentEditor}

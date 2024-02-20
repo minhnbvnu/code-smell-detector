@@ -1,0 +1,1 @@
+function kO(t,e){var r=t.split("#")[0];return r+"#"+e}

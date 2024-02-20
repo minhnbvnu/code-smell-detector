@@ -1,0 +1,1 @@
+function section (parent, data) { this.initialize(parent, data); }

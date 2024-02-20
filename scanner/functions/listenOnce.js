@@ -1,3 +1,1 @@
-function listenOnce(target, type, listener, thisArg) {
-  return listen(target, type, listener, thisArg, true);
-}
+function listenOnce(object,event,func){object.addEventListener(event,func,{"once":true})}

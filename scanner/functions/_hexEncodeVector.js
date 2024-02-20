@@ -1,0 +1,1 @@
+function _hexEncodeVector(e){var r=utils.hexEncode(e);return r=new Array(65-r.length).join("0")+r,r.split(/(..)/).reverse().join("")}

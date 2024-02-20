@@ -1,3 +1,1 @@
-function reshapeTensor(x, shape) {
-	  return ENGINE.makeTensorFromDataId(x.dataId, shape, x.dtype);
-	}
+function reshapeTensor(e,t){return Tensor.make(t,{dataId:e.dataId},e.dtype)}

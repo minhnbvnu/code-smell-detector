@@ -1,0 +1,1 @@
+function upe({children:e}){let t=O.useMemo(()=>({register:()=>{}}),[]);return S.createElement(oh.Provider,{value:t},e)}

@@ -1,0 +1,1 @@
+function uL(t){var e=t.length-1;return e<0&&(e=0),[t[0],t[e]]}

@@ -1,0 +1,1 @@
+function getDataAttributeProps(i,o){return(o?Object.keys(getExtendedPassedProps(Object.assign({},er,{plugins:o}))):ar).reduce((function(o,s){var u=(i.getAttribute("data-tippy-"+s)||"").trim();if(!u)return o;if("content"===s)o[s]=u;else try{o[s]=JSON.parse(u)}catch(i){o[s]=u}return o}),{})}

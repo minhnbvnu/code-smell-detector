@@ -1,0 +1,1 @@
+function SimpleRule(i,o,s){this.type="simple",this.isProcessed=!1,this.key=i,this.value=o,this.options=s}

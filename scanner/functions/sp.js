@@ -1,1 +1,1 @@
-function Sp(a,b){a=a|0;b=b|0;var c=0;c=fa-16|0;fa=c;L[c+12>>2]=a;L[c+8>>2]=b;jg(L[c+12>>2],L[c+8>>2]);fa=c+16|0}
+function sp(a){a=a|0;return (a&255)<<24|(a>>8&255)<<16|(a>>16&255)<<8|a>>>24|0}

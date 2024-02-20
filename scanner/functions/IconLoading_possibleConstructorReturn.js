@@ -1,0 +1,1 @@
+function IconLoading_possibleConstructorReturn(self, call) { if (call && (IconLoading_typeof(call) === "object" || typeof call === "function")) { return call; } return IconLoading_assertThisInitialized(self); }

@@ -1,0 +1,1 @@
+function $ee(e){var t=Math.abs(e);return(e>=0?"-":"+")+el(Math.floor(t/60))+":"+el(t%60)}

@@ -1,0 +1,1 @@
+function rhe(e){let t=O.useContext(DZ);t===Mg&&!ehe&&console.warn("When server rendering, you must wrap your application in an <SSRProvider> to ensure consistent ids are generated between the client and server.");let r=the(!!e),n=`react-aria${t.prefix}`;return e||`${n}-${r}`}

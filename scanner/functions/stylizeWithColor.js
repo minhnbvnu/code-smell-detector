@@ -1,10 +1,1 @@
-function stylizeWithColor(str, styleType) {
-  var style = inspect.styles[styleType];
-
-  if (style) {
-    return '\u001b[' + inspect.colors[style][0] + 'm' + str +
-           '\u001b[' + inspect.colors[style][1] + 'm';
-  } else {
-    return str;
-  }
-}
+function stylizeWithColor(i,o){var s=inspect.styles[o];return s?"["+inspect.colors[s][0]+"m"+i+"["+inspect.colors[s][1]+"m":i}

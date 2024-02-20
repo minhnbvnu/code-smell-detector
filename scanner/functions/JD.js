@@ -1,0 +1,1 @@
+function JD(t){var e=t.findComponents({mainType:"legend"});e&&e.length&&t.eachSeriesByType("graph",(function(t){var n=t.getCategoriesData(),i=t.getGraph().data,r=n.mapArray(n.getName);i.filterSelf((function(t){var n=i.getItemModel(t).getShallow("category");if(null!=n){j(n)&&(n=r[n]);for(var o=0;o<e.length;o++)if(!e[o].isSelected(n))return!1}return!0}))}))}

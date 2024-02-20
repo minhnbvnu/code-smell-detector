@@ -1,0 +1,1 @@
+function filterSectionsByName(i,o){var s=getFilterRegExp(o);return i.map((function(i){return Object.assign({},i,{sections:i.sections?filterSectionsByName(i.sections,o):[],components:i.components?filterComponentsByName(i.components,o):[]})})).filter((function(i){return i.components.length>0||i.sections.length>0||s.test(i.name||"-")}))}

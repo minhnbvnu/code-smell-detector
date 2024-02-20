@@ -1,0 +1,1 @@
+function tagForPENN(T){if(!T||!T.length)return EA;var E=is(T,S)?RiTa.tokenize(T):T;return PosTagger.tag(E)}

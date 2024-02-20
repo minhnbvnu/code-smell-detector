@@ -1,0 +1,1 @@
+function AV(t){t.eachComponent({mainType:"brush"},(function(e){(e.brushTargetManager=new Pz(e.option,t)).setInputRanges(e.areas,t)}))}

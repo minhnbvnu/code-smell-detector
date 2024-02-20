@@ -1,0 +1,1 @@
+function _compareElementPositions(t,r){var a=t.getBoundingClientRect(),i=r.getBoundingClientRect();return a.y+a.height<=i.y?-1:i.y+i.height<=a.y?1:a.x+a.width/2-(i.x+i.width/2)}

@@ -1,0 +1,1 @@
+function __Emitter_27(e){if(e)return function(e){for(var t in __Emitter_27.prototype)e[t]=__Emitter_27.prototype[t];return e}(e)}

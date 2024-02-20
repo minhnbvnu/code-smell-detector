@@ -1,0 +1,1 @@
+function OT(t){let e="";const r="0123456789abcdef",n=r.length;for(let i=0;i<t;i++)e+=r.charAt(Math.floor(Math.random()*n));return e}

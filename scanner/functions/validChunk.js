@@ -1,17 +1,16 @@
 function validChunk(stream, state, chunk, cb) {
-  var er;
+  var valid = true;
+  var er = false;
 
   if (chunk === null) {
-    er = new ERR_STREAM_NULL_VALUES();
-  } else if (typeof chunk !== 'string' && !state.objectMode) {
-    er = new ERR_INVALID_ARG_TYPE('chunk', ['string', 'Buffer'], chunk);
+    er = new TypeError('May not write null values to stream');
+  } else if (typeof chunk !== 'string' && chunk !== undefined && !state.objectMode) {
+    er = new TypeError('Invalid non-string/buffer chunk');
   }
-
   if (er) {
-    errorOrDestroy(stream, er);
-    process.nextTick(cb, er);
-    return false;
+    stream.emit('error', er);
+    pna.nextTick(cb, er);
+    valid = false;
   }
-
-  return true;
+  return valid;
 }

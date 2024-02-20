@@ -1,0 +1,1 @@
+function Maj(t,i,h){return t&i|h&(t|i)}

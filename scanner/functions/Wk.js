@@ -1,0 +1,1 @@
+function Wk(a){a=a|0;if(!(f[a+44>>2]|0))return 0;if(!(f[a+48>>2]|0))return 0;if(!(f[a+24>>2]|0))return 0;if(!(f[a+28>>2]|0))return 0;if(!(f[a+32>>2]|0))return 0;else return (f[a+36>>2]|0)!=0|0;return 0}

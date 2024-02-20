@@ -1,7 +1,1 @@
-function square_(x) {
-	  var $x = convertToTensor(x, 'x', 'square');
-	  var attrs = {};
-	  return ENGINE.runKernel('Square', {
-	    x: $x
-	  }, attrs);
-	}
+function square_(e){var t=convertToTensor(e,"x","square");return ENV.engine.runKernel(function(e){return e.square(t)},{$x:t},function(e){return {$x:function(){return e.mul(t.toFloat().mul(2))}}})}

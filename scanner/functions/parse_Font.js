@@ -1,0 +1,1 @@
+function parse_Font(blob,length,opts){blob.l+=14;var name=parse_ShortXLUnicodeString(blob,0,opts);return name}

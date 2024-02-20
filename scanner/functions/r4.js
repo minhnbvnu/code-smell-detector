@@ -1,0 +1,1 @@
+function r4(n){n&&n.shimcssproperties?vf=!1:vf=Rs||Boolean(!navigator.userAgent.match(/AppleWebKit\/601|Edge\/15/)&&window.CSS&&CSS.supports&&CSS.supports("box-shadow","0 0 0 var(--foo)"))}

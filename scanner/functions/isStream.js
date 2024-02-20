@@ -1,3 +1,3 @@
-function isStream(v) {
-  return typeof v === "object" && v !== null && v.getBytes !== undefined;
+function isStream(val) {
+  return isObject(val) && isFunction(val.pipe);
 }

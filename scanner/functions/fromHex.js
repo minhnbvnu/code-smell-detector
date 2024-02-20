@@ -1,0 +1,1 @@
+function fromHex(s) { return new BigInteger(s, 16); }

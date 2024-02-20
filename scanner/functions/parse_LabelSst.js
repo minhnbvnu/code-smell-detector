@@ -1,0 +1,1 @@
+function parse_LabelSst(blob,length){var cell=parse_XLSCell(blob);cell.isst=blob.read_shift(4);return cell}

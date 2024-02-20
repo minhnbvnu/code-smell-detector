@@ -1,0 +1,1 @@
+function getWindowDPR(){var dDPI=window.screen.deviceXDPI||0,sDPI=window.screen.logicalXDPI||1;return window.devicePixelRatio||dDPI/sDPI}

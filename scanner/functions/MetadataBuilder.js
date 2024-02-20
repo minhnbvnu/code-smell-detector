@@ -1,0 +1,1 @@
+function MetadataBuilder(){this.ptr=_emscripten_bind_MetadataBuilder_MetadataBuilder_0();getCache(MetadataBuilder)[this.ptr]=this}

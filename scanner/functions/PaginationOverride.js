@@ -1,0 +1,1 @@
+function PaginationOverride(t){_classCallCheck(this,PaginationOverride);return r.call(this,d,"paginationOverride",["none","forceDuplex","forceDuplexLongEdge","forceDuplexShortEdge","forceSimplex"])}

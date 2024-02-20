@@ -1,15 +1,1 @@
-function computeOutAndReduceShapes(aShape, axes) {
-	  var outShape = [];
-	  var rank = aShape.length;
-
-	  for (var dim = 0; dim < rank; dim++) {
-	    if (axes.indexOf(dim) === -1) {
-	      outShape.push(aShape[dim]);
-	    }
-	  }
-
-	  var reduceShape = axes.map(function (dim) {
-	    return aShape[dim];
-	  });
-	  return [outShape, reduceShape];
-	}
+function computeOutAndReduceShapes(e,t){for(var n=[],r=e.length,o=0;o<r;o++)-1===t.indexOf(o)&&n.push(e[o]);return [n,t.map(function(t){return e[t]})]}

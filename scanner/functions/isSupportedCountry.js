@@ -1,0 +1,1 @@
+function isSupportedCountry(i,o){return void 0!==o.countries[i]}

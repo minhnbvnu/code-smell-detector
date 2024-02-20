@@ -1,0 +1,1 @@
+function getViewportRect(i,o){var s=getWindow(i),u=getDocumentElement(i),C=s.visualViewport,_=u.clientWidth,w=u.clientHeight,P=0,B=0;if(C){_=C.width,w=C.height;var z=isLayoutViewport();(z||!z&&"fixed"===o)&&(P=C.offsetLeft,B=C.offsetTop)}return{width:_,height:w,x:P+getWindowScrollBarX(i),y:B}}

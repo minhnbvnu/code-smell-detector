@@ -1,0 +1,1 @@
+function minPos(a, b) { return cmp(a, b) < 0 ? a : b }

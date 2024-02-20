@@ -1,0 +1,1 @@
+function AudioFileRequest(a,b){this.url=a;if(typeof b=="undefined"||b==null){b=true}this.async=b;var c=a.split(".");this.extension=c[c.length-1].toLowerCase()}

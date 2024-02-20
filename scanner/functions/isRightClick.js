@@ -1,0 +1,1 @@
+function isRightClick(event)  { return _isButton(event, 2) }

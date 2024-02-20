@@ -1,0 +1,1 @@
+function IH(n){for(var t=[],e=n.indexOf(H2),i=0;i<=e;i++)if(n[i].nodeType===Node.ELEMENT_NODE){var r=n[i],o=r.style;o.overflow!=="scroll"&&o.overflow!=="auto"&&(o=window.getComputedStyle(r)),(o.overflow==="scroll"||o.overflow==="auto")&&t.push(r)}return t}

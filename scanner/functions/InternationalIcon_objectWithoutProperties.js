@@ -1,0 +1,1 @@
+function InternationalIcon_objectWithoutProperties(i,o){if(null==i)return{};var s,u,C=InternationalIcon_objectWithoutPropertiesLoose(i,o);if(Object.getOwnPropertySymbols){var _=Object.getOwnPropertySymbols(i);for(u=0;u<_.length;u++)s=_[u],o.indexOf(s)>=0||Object.prototype.propertyIsEnumerable.call(i,s)&&(C[s]=i[s])}return C}

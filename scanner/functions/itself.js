@@ -1,0 +1,3 @@
+function itself() {
+  return this
+}

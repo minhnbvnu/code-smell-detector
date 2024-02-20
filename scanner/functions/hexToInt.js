@@ -1,9 +1,1 @@
-function hexToInt(a, size) {
-    var n = 0;
-
-    for (var i = 0; i <= size; i++) {
-      n = n << 8 | a[i];
-    }
-
-    return n >>> 0;
-  }
+function hexToInt(i){return i>=65&&i<=70?i-65+10:i>=97&&i<=102?i-97+10:i-48}

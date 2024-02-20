@@ -1,0 +1,1 @@
+function _emscripten_glVertexAttribDivisorANGLE(index,divisor){GLctx["vertexAttribDivisor"](index,divisor)}

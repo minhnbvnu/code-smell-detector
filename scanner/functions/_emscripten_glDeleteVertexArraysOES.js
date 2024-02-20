@@ -1,0 +1,1 @@
+function _emscripten_glDeleteVertexArraysOES(n,vaos){for(var i=0;i<n;i++){var id=HEAP32[vaos+i*4>>2];GLctx["deleteVertexArray"](GL.vaos[id]);GL.vaos[id]=null}}

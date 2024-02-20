@@ -1,0 +1,1 @@
+function khe(e){if(e===null)return!1;try{var t="("+e+")",r=Pv.parse(t,{range:!0});return!(r.type!=="Program"||r.body.length!==1||r.body[0].type!=="ExpressionStatement"||r.body[0].expression.type!=="ArrowFunctionExpression"&&r.body[0].expression.type!=="FunctionExpression")}catch{return!1}}

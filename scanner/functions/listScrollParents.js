@@ -1,0 +1,1 @@
+function listScrollParents(i,o){var s;void 0===o&&(o=[]);var u=getScrollParent(i),C=u===(null==(s=i.ownerDocument)?void 0:s.body),_=getWindow(u),w=C?[_].concat(_.visualViewport||[],isScrollParent(u)?u:[]):u,P=o.concat(w);return C?P:P.concat(listScrollParents(getParentNode(w)))}

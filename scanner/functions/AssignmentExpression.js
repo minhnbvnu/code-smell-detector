@@ -1,3 +1,1 @@
-function AssignmentExpression() {
-	  return this.get("right").getTypeAnnotation();
-	}
+function AssignmentExpression(){i.apply(this,arguments)}

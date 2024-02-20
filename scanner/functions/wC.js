@@ -1,0 +1,1 @@
+function wC(t){var e=t.children;return e.length&&t.isExpand?e[e.length-1]:t.hierNode.thread}

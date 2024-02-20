@@ -1,0 +1,1 @@
+function getHeaderColumnWidthDiff(){return headerColumnWidthDiff}

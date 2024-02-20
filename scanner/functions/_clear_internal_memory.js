@@ -1,0 +1,1 @@
+function _clear_internal_memory($0,$1){$0=$0|0;$1=$1|0;var $2=0,$3=0,$or$cond=0,label=0,sp=0;sp=STACKTOP;$2=1!=0;$3=($0|0)!=(0|0);$or$cond=$3&$2;if(!$or$cond){return}_secure_wipe_memory($0,$1);return}

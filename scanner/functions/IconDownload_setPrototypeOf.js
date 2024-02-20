@@ -1,0 +1,1 @@
+function IconDownload_setPrototypeOf(o, p) { IconDownload_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return IconDownload_setPrototypeOf(o, p); }

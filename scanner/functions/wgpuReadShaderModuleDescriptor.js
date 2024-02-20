@@ -1,0 +1,1 @@
+function wgpuReadShaderModuleDescriptor(descriptor){descriptor=descriptor>>2;return{"code":UTF8ToString(HEAPU32[descriptor]),"hints":wgpuReadShaderModuleCompilationHints(descriptor+1)}}

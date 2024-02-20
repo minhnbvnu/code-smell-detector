@@ -1,0 +1,1 @@
+function VN(t){vt(t.nodes(),function(e){if(t.children(e).length){var r=t.node(e),n=t.node(r.borderTop),i=t.node(r.borderBottom),s=t.node(su(r.borderLeft)),a=t.node(su(r.borderRight));r.width=Math.abs(a.x-s.x),r.height=Math.abs(i.y-n.y),r.x=s.x+r.width/2,r.y=n.y+r.height/2}}),vt(t.nodes(),function(e){t.node(e).dummy==="border"&&t.removeNode(e)})}

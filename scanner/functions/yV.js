@@ -1,0 +1,1 @@
+function yV(t){return"center"===t||"middle"===t}

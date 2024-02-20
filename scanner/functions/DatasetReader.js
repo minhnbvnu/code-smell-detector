@@ -1,0 +1,1 @@
+function DatasetReader(t){_classCallCheck(this,DatasetReader);if(t.datasets)this.node=new u.SimpleXMLParser({hasAttributes:!0}).parseFromString(t.datasets).documentElement;else{var r=new h({hasAttributes:!0});try{r.parseFromString(t["xdp:xdp"])}catch(t){}this.node=r.node}}

@@ -1,0 +1,1 @@
+function Q$(n,t,e){return t+bT(n)*e}

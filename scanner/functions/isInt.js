@@ -1,3 +1,1 @@
-function isInt(a) {
-	  return a % 1 === 0;
-	}
+function isInt(e){return e%1==0}

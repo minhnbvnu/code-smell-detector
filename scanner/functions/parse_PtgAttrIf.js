@@ -1,0 +1,1 @@
+function parse_PtgAttrIf(blob,length){var bitIf=blob[blob.l+1]&255?1:0;blob.l+=2;return[bitIf,blob.read_shift(2)]}

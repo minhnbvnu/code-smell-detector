@@ -1,3 +1,1 @@
-function copyModel(_x5, _x6) {
-	  return _copyModel.apply(this, arguments);
-	}
+function copyModel(e,t){return __awaiter(this,void 0,void 0,function(){return __generator(this,function(n){switch(n.label){case 0:return [4,cloneModelInternal(e,t,!1)];case 1:return [2,n.sent()]}})})}

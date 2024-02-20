@@ -1,0 +1,3 @@
+function RasaConfigController($scope, $rootScope) {
+  
+}

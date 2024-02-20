@@ -1,1 +1,1 @@
-function Pn(t,n){function e(n){for(;i<t.length;){var e=t.charAt(i++),r=Oc[e];if(null!=r)return r;if(!/^[\s\xa0]*$/.test(e))throw Error("Unknown base64 encoding at char: "+e)}return n}Cn();for(var i=0;;){var r=e(-1),o=e(0),a=e(64),s=e(64);if(64===s&&-1===r)break;n(r<<2|o>>4),64!=a&&(n(o<<4&240|a>>2),64!=s&&n(a<<6&192|s))}}
+function Pn(t,e){var i;return t.isValid()&&e.isValid()?(e=pn(e,t),t.isBefore(e)?i=En(t,e):((i=En(e,t)).milliseconds=-i.milliseconds,i.months=-i.months),i):{milliseconds:0,months:0}}

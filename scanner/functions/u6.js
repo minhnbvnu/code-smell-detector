@@ -1,0 +1,1 @@
+function u6(t){return function(){this.textContent=t}}

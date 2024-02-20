@@ -1,0 +1,1 @@
+function checkPluralNoLex(T){for(var E=[categoryUM_A,categoryON_A,categoryO_I,categoryUS_I,categoryIX_ICES],S=0;S<E.length;S++)if(E[S].indexOf(T)>-1)return!0;var A=categoryIRR.indexOf(T);return A%2===0?!0:!1}

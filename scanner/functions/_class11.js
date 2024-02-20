@@ -1,0 +1,1 @@
+function _class11(){var _ref109=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{},e=_ref109.moduleUrl,t=_ref109.styles,n=_ref109.styleUrls;_classCallCheck(this,_class11),this.moduleUrl=e||null,this.styles=a(t),this.styleUrls=a(n)}

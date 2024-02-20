@@ -1,0 +1,1 @@
+function AstMin(t,o){var c;_classCallCheck(this,AstMin);(c=r.call(this,"max")).arg=t;c.min=t.min;c.max=o;return c}

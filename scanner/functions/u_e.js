@@ -1,0 +1,1 @@
+function u_e(e,t){return typeof t=="string"&&(t=new RegExp(t)),this._formats[e]=t,this}

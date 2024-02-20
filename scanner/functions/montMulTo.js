@@ -1,0 +1,1 @@
+function montMulTo(x,y,r){x.multiplyTo(y,r);this.reduce(r)}

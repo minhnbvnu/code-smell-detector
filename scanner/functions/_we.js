@@ -1,0 +1,1 @@
+function _we(e){let t=e.type.prop(gb);if(t)return t;let r=e.firstChild,n;if(r&&(n=r.type.prop(kt.closedBy))){let i=e.lastChild,a=i&&n.indexOf(i.name)>-1;return l=>Cle(l,!0,1,void 0,a&&!Bwe(l)?i.from:void 0)}return e.parent==null?Nwe:null}

@@ -1,0 +1,1 @@
+function qW(n,t,e=0){let i=pe(n,"x","pad");if(i.rank===0)throw new Error("pad(scalar) is not defined. Pass non-scalar to pad");let r={paddings:t,constantValue:e},o={x:i};return Kt.runKernel(Rl,o,r)}

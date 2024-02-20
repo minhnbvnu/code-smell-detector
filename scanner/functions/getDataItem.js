@@ -1,0 +1,1 @@
+function getDataItem(e){return data.getItem?data.getItem(e):data[e]}

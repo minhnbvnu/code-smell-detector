@@ -1,0 +1,1 @@
+function Aoe(e,t){return d8(e,t|128)}

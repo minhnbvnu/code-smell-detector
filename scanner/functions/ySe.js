@@ -1,0 +1,1 @@
+function ySe(e,t){let r=e.getBoundingClientRect();return{left:0,right:r.right-r.left,top:t,bottom:r.bottom-(r.top+t)}}

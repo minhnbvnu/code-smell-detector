@@ -1,0 +1,1 @@
+function isHTMLElement(i){return i instanceof getWindow(i).HTMLElement||i instanceof HTMLElement}

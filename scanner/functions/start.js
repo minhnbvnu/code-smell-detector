@@ -1,3 +1,7 @@
 function start() {
-	      return _start.apply(this, arguments);
-	    }
+    self.emit('start');
+    self.runSuite(rootSuite, function(){
+      debug('finished running');
+      self.emit('end');
+    });
+  }

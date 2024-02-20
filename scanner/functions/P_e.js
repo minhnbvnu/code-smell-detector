@@ -1,0 +1,1 @@
+function P_e(e){Object.keys(e).forEach(t=>{t==="argv"?g1.__defineGetter__(t,e.__lookupGetter__(t)):typeof e[t]=="function"?g1[t]=e[t].bind(e):(g1.__defineGetter__("$0",()=>e.$0),g1.__defineGetter__("parsed",()=>e.parsed))})}

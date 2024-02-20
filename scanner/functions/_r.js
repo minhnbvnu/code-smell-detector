@@ -1,1 +1,1 @@
-function _r(t){var n=null;if(t.needConfirmation?(t.code="account-exists-with-different-credential",n=pr(t)):"FEDERATED_USER_ID_ALREADY_LINKED"==t.errorMessage?(t.code="credential-already-in-use",n=pr(t)):"EMAIL_EXISTS"==t.errorMessage?(t.code="email-already-in-use",n=pr(t)):t.errorMessage&&(n=Mr(t.errorMessage)),n)throw n;if(!t[Ph])throw new Pi("internal-error")}
+function _r(t){return Jo(t)?Ko(t).call(t,(function(t){return _r(t)})):"object"===er(t)&&null!==t?br({},t):t}

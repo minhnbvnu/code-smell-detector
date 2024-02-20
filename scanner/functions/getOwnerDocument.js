@@ -1,0 +1,1 @@
+function getOwnerDocument(i){var o,s=normalizeToArray(i)[0];return null!=s&&null!=(o=s.ownerDocument)&&o.body?s.ownerDocument:document}

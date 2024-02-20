@@ -1,0 +1,1 @@
+function _emscripten_glFrontFace(x0){GLctx["frontFace"](x0)}

@@ -1,23 +1,23 @@
 function toBlock(node, parent) {
-	  if (t.isBlockStatement(node)) {
-	    return node;
-	  }
+  if ((0, _generated.isBlockStatement)(node)) {
+    return node;
+  }
 
-	  if (t.isEmptyStatement(node)) {
-	    node = [];
-	  }
+  let blockNodes = [];
 
-	  if (!Array.isArray(node)) {
-	    if (!t.isStatement(node)) {
-	      if (t.isFunction(parent)) {
-	        node = t.returnStatement(node);
-	      } else {
-	        node = t.expressionStatement(node);
-	      }
-	    }
+  if ((0, _generated.isEmptyStatement)(node)) {
+    blockNodes = [];
+  } else {
+    if (!(0, _generated.isStatement)(node)) {
+      if ((0, _generated.isFunction)(parent)) {
+        node = (0, _generated2.returnStatement)(node);
+      } else {
+        node = (0, _generated2.expressionStatement)(node);
+      }
+    }
 
-	    node = [node];
-	  }
+    blockNodes = [node];
+  }
 
-	  return t.blockStatement(node);
-	}
+  return (0, _generated2.blockStatement)(blockNodes);
+}

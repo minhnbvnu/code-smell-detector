@@ -1,0 +1,1 @@
+function parse_RC4Header(blob,length){var o={};var vers=o.EncryptionVersionInfo=parse_Version(blob,4);length-=4;if(vers.Major!=1||vers.Minor!=1)throw"unrecognized version code "+vers.Major+" : "+vers.Minor;o.Salt=blob.read_shift(16);o.EncryptedVerifier=blob.read_shift(16);o.EncryptedVerifierHash=blob.read_shift(16);return o}

@@ -1,0 +1,1 @@
+function isO(value) { return value instanceof Object }

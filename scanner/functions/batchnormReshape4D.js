@@ -1,0 +1,1 @@
+function batchnormReshape4D(e){return null==e?null:0===e.rank?e.as1D():1===e.rank?e:2===e.rank?e.as4D(1,1,e.shape[0],e.shape[1]):3===e.rank?e.as4D(1,e.shape[0],e.shape[1],e.shape[2]):e}

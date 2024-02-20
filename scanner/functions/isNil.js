@@ -1,3 +1,3 @@
-function isNil(obj) {
-    return obj == null;
-}
+function isNil(value) {
+      return value == null;
+    }

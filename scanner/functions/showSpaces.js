@@ -1,0 +1,1 @@
+function showSpaces(i){return i&&i.replace(/^\s|\s$/g,"␣")}

@@ -1,0 +1,1 @@
+function hxe(e,t){if(Zr.buffer(e),e[0]===0&&e[1]===4)return t?e:e.slice(1);if(e[0]===4){if(!t)return e}else{for(;e[0]===0;)e=e.slice(1);if(e[0]===2||e[0]===3)throw new Error("Compressed elliptic curve points are not supported");if(e[0]!==4)throw new Error("Not a valid elliptic curve point");if(!t)return e}var r=Bn.alloc(e.length+1);return r[0]=0,e.copy(r,1),r}

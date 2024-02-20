@@ -1,0 +1,1 @@
+function _xpt_double(t){var n=t[0],e=t[1],i=t[2],r=n.times(n),_=e.times(e),s=_TWO.times(i).times(i),u=_Q.minus(r),o=n.plus(e),f=o.times(o).minus(r).minus(_),c=u.plus(_),a=c.minus(s),b=u.minus(_);return[f.times(a),c.times(b),a.times(c),f.times(b)]}

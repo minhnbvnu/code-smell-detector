@@ -1,0 +1,1 @@
+function ide(e,t){switch(e){case"compositionend":return bj(t);case"keypress":return t.which!==32?null:(VM=!0,QM);case"textInput":return e=t.data,e===QM&&VM?null:e;default:return null}}

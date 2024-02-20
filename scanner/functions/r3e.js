@@ -1,0 +1,1 @@
+function r3e(e){var t=tr(Re({type:"text"},e)),r=t.informed,n=t.render,i=t.userProps,a=t.ref;return n(S.createElement("input",Zn({},r,i,{ref:a,type:"hidden"})))}

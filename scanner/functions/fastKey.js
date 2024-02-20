@@ -1,0 +1,1 @@
+function fastKey(it,create){if(!isObject(it))return(typeof it=="string"?"S":"P")+it;if(isFrozen(it))return"F";if(!has(it,ID)){if(!create)return"E";hide(it,ID,++id)}return"O"+it[ID]}

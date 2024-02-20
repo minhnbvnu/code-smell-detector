@@ -1,0 +1,1 @@
+function browserDownloads(e){return void 0===e&&(e="model"),new BrowserDownloads(e)}

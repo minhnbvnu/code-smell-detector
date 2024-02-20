@@ -1,8 +1,1 @@
-function createCharacterClass(classRanges, negative, from, to) {
-	      return addRaw({
-	        type: 'characterClass',
-	        body: classRanges,
-	        negative: negative,
-	        range: [from, to]
-	      });
-	    }
+function createCharacterClass(i,o,s,u){return addRaw({type:"characterClass",body:i,negative:o,range:[s,u]})}

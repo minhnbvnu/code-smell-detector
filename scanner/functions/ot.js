@@ -1,0 +1,1 @@
+function ot(t){return"string"==typeof t?it[t]||it[t.toLowerCase()]:void 0}

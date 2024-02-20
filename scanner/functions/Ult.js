@@ -1,0 +1,1 @@
+function Ult(n,t){return t[+(t.left===n.site)]}

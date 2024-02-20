@@ -1,0 +1,1 @@
+function PostScriptCompiler(){_classCallCheck(this,PostScriptCompiler)}

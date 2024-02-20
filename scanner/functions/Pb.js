@@ -1,0 +1,1 @@
+function Pb(a){return!(!a||!(a.nodeName||a.prop&&a.attr&&a.find))}

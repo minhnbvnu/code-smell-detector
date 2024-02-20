@@ -1,0 +1,1 @@
+function Rwa(e,t,n){if(n){var a=!1,r=t.lastIndexOf(".");0<=r&&(a=t.substr(r+1).toLowerCase()===n.toLowerCase()),a||(t+="."+n)}UI.setStatus("Downloading ..."),Qwa=!1,setTimeout(function(){UI.setStatus("")},3e3),document.location.href=Pwa+"storage/"+e+"?dl=1&name="+t}

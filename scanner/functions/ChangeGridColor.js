@@ -1,0 +1,1 @@
+function ChangeGridColor(b,c){this.ui=b;this.color=c}

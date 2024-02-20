@@ -1,0 +1,1 @@
+function PV(t,e,n,i){for(var r=0,o=e.length;r<o;r++){var a=e[r];if(t.brushSelector(i,n,a.selectors,a))return!0}}

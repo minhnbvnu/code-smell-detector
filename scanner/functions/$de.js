@@ -1,0 +1,1 @@
+function $de(e,t){Fr.ok(typeof e=="object"&&e!==null,"obj argument must be a non-null object"),Fr.ok(Array.isArray(t),"allowed argument must be an array of strings");for(var r=0;r<t.length;r++)Fr.ok(typeof t[r]=="string","allowed argument must be an array of strings");return Object.keys(e).filter(function(i){return t.indexOf(i)===-1})}

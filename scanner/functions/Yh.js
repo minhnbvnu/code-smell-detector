@@ -1,0 +1,1 @@
+function Yh(a,b){a=a|0;b=b|0;var c=0,d=Oa,e=0,g=0;if((b|0)!=1)if(!(b+-1&b))c=b;else c=cb(b)|0;else c=2;b=f[a+4>>2]|0;if(c>>>0>b>>>0){Jd(a,c);return}if(c>>>0>=b>>>0)return;d=$((f[a+12>>2]|0)>>>0);e=~~$(W($(d/$(n[a+16>>2]))))>>>0;if(b>>>0>2&(b+-1&b|0)==0)g=1<<32-(_(e+-1|0)|0);else g=cb(e)|0;e=c>>>0<g>>>0?g:c;if(e>>>0>=b>>>0)return;Jd(a,e);return}

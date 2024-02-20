@@ -1,1 +1,1 @@
-function Qj(a){if(a){return 31-Q(a-1^a)|0}return 32}
+function qj(a,c,d,e,g){a=a|0;c=c|0;d=d|0;e=e|0;g=g|0;var h=0,i=0;b[c+53>>0]=1;do if((f[c+4>>2]|0)==(e|0)){b[c+52>>0]=1;a=c+16|0;h=f[a>>2]|0;if(!h){f[a>>2]=d;f[c+24>>2]=g;f[c+36>>2]=1;if(!((g|0)==1?(f[c+48>>2]|0)==1:0))break;b[c+54>>0]=1;break}if((h|0)!=(d|0)){h=c+36|0;f[h>>2]=(f[h>>2]|0)+1;b[c+54>>0]=1;break}h=c+24|0;a=f[h>>2]|0;if((a|0)==2){f[h>>2]=g;i=g}else i=a;if((i|0)==1?(f[c+48>>2]|0)==1:0)b[c+54>>0]=1}while(0);return}

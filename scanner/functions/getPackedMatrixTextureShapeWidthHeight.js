@@ -1,3 +1,1 @@
-function getPackedMatrixTextureShapeWidthHeight(rows, columns) {
-	  return [Math.max(1, Math.ceil(columns / 2)), Math.max(1, Math.ceil(rows / 2))];
-	}
+function getPackedMatrixTextureShapeWidthHeight(e,t){return [Math.max(1,Math.ceil(t/2)),Math.max(1,Math.ceil(e/2))]}

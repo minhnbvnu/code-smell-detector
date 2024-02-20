@@ -1,1 +1,1 @@
-function Nj(a){a=a|0;return I[H[a+8>>2]+24|0]}
+function Nj(a,c){a=a|0;c=c|0;var d=0,e=0,g=0,i=0,j=0,k=0,l=0,m=0,n=0;d=u;u=u+16|0;e=d;g=c&255;b[e>>0]=g;i=a+16|0;j=f[i>>2]|0;if(!j)if(!(vl(a)|0)){k=f[i>>2]|0;l=4}else m=-1;else{k=j;l=4}do if((l|0)==4){j=a+20|0;i=f[j>>2]|0;if(i>>>0<k>>>0?(n=c&255,(n|0)!=(b[a+75>>0]|0)):0){f[j>>2]=i+1;b[i>>0]=g;m=n;break}if((Sa[f[a+36>>2]&31](a,e,1)|0)==1)m=h[e>>0]|0;else m=-1}while(0);u=d;return m|0}

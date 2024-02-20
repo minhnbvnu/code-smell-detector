@@ -1,0 +1,1 @@
+function requestPointerLock(target){if(target.requestPointerLock){target.requestPointerLock()}else if(target.msRequestPointerLock){target.msRequestPointerLock()}else{if(document.body.requestPointerLock||document.body.msRequestPointerLock){return-3}else{return-1}}return 0}

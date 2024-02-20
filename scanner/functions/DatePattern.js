@@ -1,0 +1,1 @@
+function DatePattern(t){var o;_classCallCheck(this,DatePattern);(o=r.call(this,h,"datePattern")).name=(0,u.getStringOption)(t.name,["full","long","med","short"]);return o}

@@ -1,0 +1,1 @@
+function TDe(e,t,r){var i=Math.min(this.t+e.t,t);for(r.s=0,r.t=i;i>0;)r.data[--i]=0;var a;for(a=r.t-this.t;i<a;++i)r.data[i+this.t]=this.am(0,e.data[i],r,i,0,this.t);for(a=Math.min(e.t,t);i<a;++i)this.am(0,e.data[i],r,i,0,t-i);r.clamp()}

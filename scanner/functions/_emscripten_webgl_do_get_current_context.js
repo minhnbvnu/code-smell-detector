@@ -1,0 +1,1 @@
+function _emscripten_webgl_do_get_current_context(){return GL.currentContext?GL.currentContext.handle:0}

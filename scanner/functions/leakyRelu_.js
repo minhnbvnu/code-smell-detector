@@ -1,14 +1,1 @@
-function leakyRelu_(x, alpha) {
-	  if (alpha === void 0) {
-	    alpha = 0.2;
-	  }
-
-	  var $x = convertToTensor(x, 'x', 'leakyRelu');
-	  var inputs = {
-	    x: $x
-	  };
-	  var attrs = {
-	    alpha: alpha
-	  };
-	  return ENGINE.runKernel(LeakyRelu, inputs, attrs);
-	}
+function leakyRelu_(e,t){void 0===t&&(t=.2);var n=convertToTensor(e,"x","leakyRelu");return maximum(scalar(t).mul(n),n)}

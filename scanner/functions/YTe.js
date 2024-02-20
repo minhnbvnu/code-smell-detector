@@ -1,0 +1,1 @@
+function YTe(e,t){const r={type:"text",value:t.value.replace(/\r?\n|\r/g," ")};e.patch(t,r);const n={type:"element",tagName:"code",properties:{},children:[r]};return e.patch(t,n),e.applyData(t,n)}

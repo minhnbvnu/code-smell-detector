@@ -1,17 +1,1 @@
-function getArrayFromDType(dtype, size) {
-	  var values = null;
-
-	  if (dtype == null || dtype === 'float32') {
-	    values = new Float32Array(size);
-	  } else if (dtype === 'int32') {
-	    values = new Int32Array(size);
-	  } else if (dtype === 'bool') {
-	    values = new Uint8Array(size);
-	  } else if (dtype === 'string') {
-	    values = new Array(size);
-	  } else {
-	    throw new Error("Unknown data type " + dtype);
-	  }
-
-	  return values;
-	}
+function getArrayFromDType(e,t){var n=null;if(null==e||"float32"===e)n=new Float32Array(t);else if("int32"===e)n=new Int32Array(t);else if("bool"===e)n=new Uint8Array(t);else{if("string"!==e)throw new Error("Unknown data type "+e);n=new Array(t);}return n}

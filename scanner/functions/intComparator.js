@@ -1,0 +1,1 @@
+function intComparator(a, b){ return a - b; }

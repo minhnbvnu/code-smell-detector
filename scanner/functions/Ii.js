@@ -1,0 +1,1 @@
+function Ii(t){return 146097*t/4800}

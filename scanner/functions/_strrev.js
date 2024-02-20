@@ -1,0 +1,1 @@
+function _strrev(x){var o="",i=x.length-1;while(i>=0)o+=x.charAt(i--);return o}

@@ -1,0 +1,1 @@
+function _InitXRSharedArray(byteOffset){Module.XRSharedArrayOffset=byteOffset/4;Module.WebXR.onUnityLoaded({detail:{state:"Ready",module:Module}})}

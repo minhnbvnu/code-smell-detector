@@ -1,8 +1,13 @@
-function AssertionError(message) {
-	    var _this5;
+function AssertionError (options) {
+      options = options || {};
+      this.message = options.message;
+      this.actual = options.actual;
+      this.expected = options.expected;
+      this.operator = options.operator;
+      this.showDiff = options.showDiff;
 
-	    _this5 = _Error5.call(this, message) || this; // Set the prototype explicitly.
-
-	    Object.setPrototypeOf(_assertThisInitialized(_this5), AssertionError.prototype);
-	    return _this5;
-	  }
+      if (options.stackStartFunction && Error.captureStackTrace) {
+        var stackStartFunction = options.stackStartFunction;
+        Error.captureStackTrace(this, stackStartFunction);
+      }
+    }

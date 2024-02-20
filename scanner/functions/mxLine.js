@@ -1,0 +1,1 @@
+function mxLine(a,b,c,d){mxShape.call(this);this.bounds=a;this.stroke=b;this.strokewidth=null!=c?c:1;this.vertical=null!=d?d:this.vertical}

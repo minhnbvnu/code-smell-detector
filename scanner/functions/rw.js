@@ -1,1 +1,1 @@
-function Rw(){var a=0;a=oa(112);We(a,0,0);return a|0}
+function rw(e,r){var t;var a=Lg(r.data);var n=-1;if((t=a==null?void 0:a[7])==null?void 0:t[0]){if(Pg(a[7][0].data)>>>0)n=1;else n=0}var i=Ug(a[5],function(e){return ew(e,n)});return{nrows:Pg(a[4][0].data)>>>0,data:i.reduce(function(e,r){if(!e[r.R])e[r.R]=[];r.cells.forEach(function(t,a){if(e[r.R][a])throw new Error("Duplicate cell r=".concat(r.R," c=").concat(a));e[r.R][a]=t});return e},[])}}

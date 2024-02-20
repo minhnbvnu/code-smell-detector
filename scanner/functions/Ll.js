@@ -1,0 +1,1 @@
+function Ll(t,e,i){for(var n=0,r=0,o=e.start,s=0;s<t.length;s++){var a=t[s].start,h=t[s].end;if(a>=e.start&&h<e.end){if(r+=a-o,o=h,r>=i)break;n+=h-a}}return n}

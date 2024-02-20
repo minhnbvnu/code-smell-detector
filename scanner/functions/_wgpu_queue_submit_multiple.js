@@ -1,0 +1,1 @@
+function _wgpu_queue_submit_multiple(queue,commandBuffers,numCommandBuffers){wgpu[queue]["submit"](wgpuReadArrayOfWgpuObjects(commandBuffers,numCommandBuffers))}

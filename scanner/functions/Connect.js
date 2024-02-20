@@ -1,0 +1,1 @@
+function Connect(t){var o;_classCallCheck(this,Connect);(o=r.call(this,_,"connect",!0)).connection=t.connection||"";o.id=t.id||"";o.ref=t.ref||"";o.usage=(0,d.getStringOption)(t.usage,["exportAndImport","exportOnly","importOnly"]);o.use=t.use||"";o.usehref=t.usehref||"";o.picture=null;return o}

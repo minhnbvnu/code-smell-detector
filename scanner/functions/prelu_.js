@@ -1,9 +1,1 @@
-function prelu_(x, alpha) {
-	  var $x = convertToTensor(x, 'x', 'prelu');
-	  var $alpha = convertToTensor(alpha, 'alpha', 'prelu');
-	  var inputs = {
-	    x: $x,
-	    alpha: $alpha
-	  };
-	  return ENGINE.runKernel(Prelu, inputs);
-	}
+function prelu_(e,t){var n=convertToTensor(e,"x","prelu"),r=convertToTensor(t,"alpha","prelu"),o=scalar(0);return maximum(o,n).add(r.mul(minimum(o,n)))}

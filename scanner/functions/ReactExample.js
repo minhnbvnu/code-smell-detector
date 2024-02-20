@@ -1,0 +1,1 @@
+function ReactExample(){return i.apply(this,arguments)||this}

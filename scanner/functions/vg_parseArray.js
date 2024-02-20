@@ -1,0 +1,1 @@
+function vg_parseArray(data,cols,p,tree){var d,i,j,len,clen;for(i=0,len=data.length;i<len;++i){d=data[i];for(j=0,clen=cols.length;j<clen;++j){d[cols[j]]=p[j](d[cols[j]])}if(tree&&d.values)parseValues(d,cols,p,true)}}

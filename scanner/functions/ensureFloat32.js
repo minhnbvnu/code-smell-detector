@@ -1,0 +1,1 @@
+function ensureFloat32(value){if(typeof value==="object"){var offset=ensureCache.alloc(value,HEAPF32);ensureCache.copy(value,HEAPF32,offset);return offset}return value}

@@ -1,0 +1,1 @@
+function BaseCanvasFactory(){_classCallCheck(this,BaseCanvasFactory);this.constructor===BaseCanvasFactory&&(0,i.unreachable)("Cannot initialize BaseCanvasFactory.")}

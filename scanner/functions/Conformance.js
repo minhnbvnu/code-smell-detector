@@ -1,0 +1,1 @@
+function Conformance(t){_classCallCheck(this,Conformance);return r.call(this,d,"conformance",["A","B"])}

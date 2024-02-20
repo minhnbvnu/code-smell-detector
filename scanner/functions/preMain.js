@@ -1,0 +1,1 @@
+function preMain(){callRuntimeCallbacks(__ATMAIN__)}

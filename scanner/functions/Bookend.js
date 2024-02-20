@@ -1,0 +1,1 @@
+function Bookend(t){var o;_classCallCheck(this,Bookend);(o=r.call(this,_,"bookend")).id=t.id||"";o.leader=t.leader||"";o.trailer=t.trailer||"";o.use=t.use||"";o.usehref=t.usehref||"";return o}

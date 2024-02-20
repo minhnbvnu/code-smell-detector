@@ -1,0 +1,1 @@
+function Iv(e,r){if(!r.Views)r.Views=[{}];(e.match(Nv)||[]).forEach(function(e,t){var a=Jr(e);if(!r.Views[t])r.Views[t]={};if(+a.zoomScale)r.Views[t].zoom=+a.zoomScale;if(a.rightToLeft&&ut(a.rightToLeft))r.Views[t].RTL=true})}

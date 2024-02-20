@@ -1,0 +1,1 @@
+function Tue(e,t){this.key=e,this.val=t,this.prev=null,this.next=null}

@@ -1,0 +1,1 @@
+function uOe(e){if(e){let t=`nmcli connection show "${e}" 2>/dev/null | grep ipv4.dns-search;`;try{let a=Mi(t).toString().replace(/\s+/g," ").trim().split(" ").slice(1).toString();return a=="--"?"Not defined":a}catch{return"Unknown"}}else return"Unknown"}

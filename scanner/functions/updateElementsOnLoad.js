@@ -1,0 +1,1 @@
+function updateElementsOnLoad(){_isTextarea||eachUpdateOnLoad((function(i,updateOnLoadSelector){_contentElement.find(updateOnLoadSelector).each((function(i,el){COMPATIBILITY.inA(el,_updateOnLoadElms)<0&&(_updateOnLoadElms.push(el),FRAMEWORK(el).off(_updateOnLoadEventName,updateOnLoadCallback).on(_updateOnLoadEventName,updateOnLoadCallback))}))}))}

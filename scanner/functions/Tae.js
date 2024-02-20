@@ -1,0 +1,1 @@
+function Tae(e){let t=[];for(let r=0;r<e.length;r++)t.push(1<<+e[r]);return t}

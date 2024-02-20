@@ -1,19 +1,21 @@
 function createTypeAnnotationBasedOnTypeof(type) {
-	  if (type === "string") {
-	    return t.stringTypeAnnotation();
-	  } else if (type === "number") {
-	    return t.numberTypeAnnotation();
-	  } else if (type === "undefined") {
-	    return t.voidTypeAnnotation();
-	  } else if (type === "boolean") {
-	    return t.booleanTypeAnnotation();
-	  } else if (type === "function") {
-	    return t.genericTypeAnnotation(t.identifier("Function"));
-	  } else if (type === "object") {
-	    return t.genericTypeAnnotation(t.identifier("Object"));
-	  } else if (type === "symbol") {
-	    return t.genericTypeAnnotation(t.identifier("Symbol"));
-	  } else {
-	    throw new Error("Invalid typeof value");
-	  }
-	}
+  if (type === "string") {
+    return (0, _generated.stringTypeAnnotation)();
+  } else if (type === "number") {
+    return (0, _generated.numberTypeAnnotation)();
+  } else if (type === "undefined") {
+    return (0, _generated.voidTypeAnnotation)();
+  } else if (type === "boolean") {
+    return (0, _generated.booleanTypeAnnotation)();
+  } else if (type === "function") {
+    return (0, _generated.genericTypeAnnotation)((0, _generated.identifier)("Function"));
+  } else if (type === "object") {
+    return (0, _generated.genericTypeAnnotation)((0, _generated.identifier)("Object"));
+  } else if (type === "symbol") {
+    return (0, _generated.genericTypeAnnotation)((0, _generated.identifier)("Symbol"));
+  } else if (type === "bigint") {
+    return (0, _generated.anyTypeAnnotation)();
+  } else {
+    throw new Error("Invalid typeof value: " + type);
+  }
+}

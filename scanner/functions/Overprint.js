@@ -1,0 +1,1 @@
+function Overprint(t){_classCallCheck(this,Overprint);return r.call(this,d,"overprint",["none","both","draw","field"])}

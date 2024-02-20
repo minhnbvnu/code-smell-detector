@@ -1,3 +1,4 @@
-function NullableTypeAnnotation(node, parent) {
-	  return t.isArrayTypeAnnotation(parent);
-	}
+function NullableTypeAnnotation(node) {
+  this.token("?");
+  this.print(node.typeAnnotation, node);
+}

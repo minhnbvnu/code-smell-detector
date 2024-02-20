@@ -1,0 +1,1 @@
+function parse_FontFlags(data,length){var d=data.read_shift(1);data.l++;var out={fItalic:d&2,fStrikeout:d&8,fOutline:d&16,fShadow:d&32,fCondense:d&64,fExtend:d&128};return out}

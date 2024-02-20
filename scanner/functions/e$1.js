@@ -1,0 +1,1 @@
+function e$1(t,e){return(!e||"hidden"!==t)&&"visible"!==t&&"clip"!==t}

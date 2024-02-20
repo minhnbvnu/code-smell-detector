@@ -1,0 +1,1 @@
+function Issuers(t){var o;_classCallCheck(this,Issuers);(o=r.call(this,_,"issuers",!0)).id=t.id||"";o.type=(0,d.getStringOption)(t.type,["optional","required"]);o.use=t.use||"";o.usehref=t.usehref||"";o.certificate=new c.XFAObjectArray;return o}

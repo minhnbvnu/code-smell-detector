@@ -1,0 +1,1 @@
+function yDe(e){return Tse(e),e}

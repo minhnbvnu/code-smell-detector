@@ -1,0 +1,1 @@
+function parse_Note(blob,length,opts){return parse_NoteSh(blob,length,opts)}

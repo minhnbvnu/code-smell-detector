@@ -1,0 +1,1 @@
+function Ws(e){return 1<e&&e<5&&1!=~~(e/10)}

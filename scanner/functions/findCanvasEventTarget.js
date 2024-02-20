@@ -1,0 +1,1 @@
+function findCanvasEventTarget(target){return findEventTarget(target)}

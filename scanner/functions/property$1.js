@@ -1,0 +1,1 @@
+function property$1(path){return isKey(path)?baseProperty(toKey$1(path)):basePropertyDeep(path)}

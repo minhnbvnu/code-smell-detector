@@ -1,0 +1,1 @@
+function t5(t,e){for(var r=0,n=t.length,i;r<n;++r)if((i=t[r]).name===e)return i.value}

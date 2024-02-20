@@ -1,0 +1,1 @@
+function zwe(e,t,r){e.signatures.openssh===void 0&&(e.signatures.openssh={});try{var i=n4(e,!0)}catch(n){delete e.signatures.openssh,r(n);return}var a=e.signatures.openssh;t(i,function(n,s){if(n){r(n);return}try{s.toBuffer("ssh")}catch(o){r(o);return}a.signature=s,r()})}

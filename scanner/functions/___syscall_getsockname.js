@@ -1,0 +1,1 @@
+function ___syscall_getsockname(fd,addr,addrlen){try{err("__syscall_getsockname "+fd);var sock=getSocketFromFD(fd);var errno=writeSockaddr(addr,sock.family,DNS.lookup_name(sock.saddr||"0.0.0.0"),sock.sport,addrlen);return 0}catch(e){if(typeof FS=="undefined"||!(e instanceof FS.ErrnoError))throw e;return-e.errno}}

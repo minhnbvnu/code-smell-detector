@@ -1,0 +1,1 @@
+function mS(t,e){if(t.length===e.length){for(var n=0;n<t.length;n++)if(t[n]!==e[n])return;return!0}}

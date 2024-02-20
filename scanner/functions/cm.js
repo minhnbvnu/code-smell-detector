@@ -1,1 +1,1 @@
-function Cm(a){a=a|0;return 84}
+function cm(a,b){a=a|0;b=b|0;var c=0,d=0,e=0;c=Gj(b)|0;d=ln(c+13|0)|0;f[d>>2]=c;f[d+4>>2]=c;f[d+8>>2]=0;e=Fp(d)|0;kh(e|0,b|0,c+1|0)|0;f[a>>2]=e;return}

@@ -1,3 +1,3 @@
-function defined(value, defaultValue) {
-        return void 0 !== value ? value : defaultValue;
-    }
+function defined(a, b) {
+  return (a == null || !(a >= a)) - (b == null || !(b >= b));
+}

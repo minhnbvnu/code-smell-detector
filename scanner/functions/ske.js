@@ -1,0 +1,1 @@
+function ske(){var e=this;return{statusCode:e.statusCode,body:e.body,headers:e.headers,request:nJ.call(e.request)}}

@@ -1,0 +1,1 @@
+function Ele(e){let t=e.firstChild,r=e.lastChild;return t&&t.to<r.from?{from:t.to,to:r.type.isError?e.to:r.from}:null}

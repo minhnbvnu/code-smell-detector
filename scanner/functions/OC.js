@@ -1,1 +1,1 @@
-function Oc(a,b){if(b){Oc(a,H[b>>2]);Oc(a,H[b+4>>2]);Kb(b+20|0,H[b+24>>2]);oa(b)}}
+function OC(e,t){e.className!==void 0&&(e.scope=e.className,delete e.className)}

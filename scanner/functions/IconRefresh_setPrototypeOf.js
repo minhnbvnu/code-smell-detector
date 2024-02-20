@@ -1,0 +1,1 @@
+function IconRefresh_setPrototypeOf(o, p) { IconRefresh_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return IconRefresh_setPrototypeOf(o, p); }

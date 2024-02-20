@@ -1,0 +1,1 @@
+function replaceGetterValues(replacer){return replacer=void 0!==replacer?replacer:function(k,v){return v},function(key,val){if(replacerStack.length>0)for(var i=0;i<replacerStack.length;i++){var part=replacerStack[i];if(part[1]===key&&part[0]===val){val=part[2],replacerStack.splice(i,1);break}}return replacer.call(this,key,val)}}

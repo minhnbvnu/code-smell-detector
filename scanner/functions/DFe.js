@@ -1,0 +1,1 @@
+function DFe(e){const t={};let r;for(r in e)GI.call(e,r)&&(t[TFe(r)]=e[r]);return t}

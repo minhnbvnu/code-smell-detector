@@ -1,0 +1,1 @@
+function vg_legendSymbolExtend(mark,size,shape,fill,stroke){var e=mark.properties.enter,u=mark.properties.update;if(size)e.size=u.size={scale:size.scaleName,field:"data"};if(shape)e.shape=u.shape={scale:shape.scaleName,field:"data"};if(fill)e.fill=u.fill={scale:fill.scaleName,field:"data"};if(stroke)e.stroke=u.stroke={scale:stroke.scaleName,field:"data"}}

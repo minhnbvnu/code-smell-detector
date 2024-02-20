@@ -1,0 +1,1 @@
+function c(){y.autoplayTimeoutId=setTimeout(function(){y.params.loop?(y.fixLoop(),y._slideNext()):y.isEnd?r.autoplayStopOnLast?y.stopAutoplay():y._slideTo(0):y._slideNext()},y.params.autoplay)}

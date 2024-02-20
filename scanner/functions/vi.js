@@ -1,0 +1,1 @@
+function vi(t,e){if(null!=e){var i,n,o=ai;null!=li[t]&&null!=li[t].parentLocale?li[t].set(L(li[t]._config,e)):(null!=(n=pi(t))&&(o=n._config),e=L(o,e),null==n&&(e.abbr=t),(i=new I(e)).parentLocale=li[t],li[t]=i),fi(t)}else null!=li[t]&&(null!=li[t].parentLocale?(li[t]=li[t].parentLocale,t===fi()&&fi(t)):null!=li[t]&&delete li[t]);return li[t]}

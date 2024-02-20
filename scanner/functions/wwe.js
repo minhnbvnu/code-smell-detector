@@ -1,0 +1,1 @@
+function wwe(e,t,r,n){let i=0,a=0,l=!1,s=!1,u=-1e9,c=[];for(;;){let d=i==e.length?1e9:l?e[i].to:e[i].from,f=a==t.length?1e9:s?t[a].to:t[a].from;if(l!=s){let h=Math.max(u,r),p=Math.min(d,f,n);h<p&&c.push(new Sa(h,p))}if(u=Math.min(d,f),u==1e9)break;d==u&&(l?(l=!1,i++):l=!0),f==u&&(s?(s=!1,a++):s=!0)}return c}

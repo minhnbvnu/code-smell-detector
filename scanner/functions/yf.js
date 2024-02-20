@@ -1,0 +1,1 @@
+function yf(){this.$get=["$cacheFactory",function(a){return a("templates")}]}

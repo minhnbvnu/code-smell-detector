@@ -1,6 +1,6 @@
 function get_all_url_params() {
 	const params = {};
-	location.hash.replace(/^#/, "").split(/,/).forEach((param_decl) => {
+	location.hash.replace(/^#/, "").split(/,/).forEach((param_decl)=> {
 		// colon is used in param value for URLs so split(":") isn't good enough
 		const colon_index = param_decl.indexOf(":");
 		if (colon_index === -1) {

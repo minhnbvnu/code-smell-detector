@@ -1,0 +1,1 @@
+function listCacheSet$1(key,value){var data=this.__data__,index=assocIndexOf(data,key);return index<0?(++this.size,data.push([key,value])):data[index][1]=value,this}

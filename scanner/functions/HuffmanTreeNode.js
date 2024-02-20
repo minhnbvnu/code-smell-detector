@@ -1,13 +1,1 @@
-function HuffmanTreeNode(line) {
-    this.children = [];
-
-    if (line) {
-      this.isLeaf = true;
-      this.rangeLength = line.rangeLength;
-      this.rangeLow = line.rangeLow;
-      this.isLowerRange = line.isLowerRange;
-      this.isOOB = line.isOOB;
-    } else {
-      this.isLeaf = false;
-    }
-  }
+function HuffmanTreeNode(t){_classCallCheck(this,HuffmanTreeNode);this.children=[];if(t){this.isLeaf=!0;this.rangeLength=t.rangeLength;this.rangeLow=t.rangeLow;this.isLowerRange=t.isLowerRange;this.isOOB=t.isOOB}else this.isLeaf=!1}

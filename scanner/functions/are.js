@@ -1,0 +1,1 @@
+function are(e){let t;try{t=JSON.parse(e)}catch(r){return r}return t}

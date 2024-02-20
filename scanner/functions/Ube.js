@@ -1,0 +1,1 @@
+function Ube(e,t){let{key:r}=e;const{checkboxProps:n}=b1e(e,t);return{checkboxProps:{...n,"aria-labelledby":`${n.id} ${jne(t,r)}`}}}

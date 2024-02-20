@@ -1,0 +1,1 @@
+function _mul(e,t){return"object"===_typeof(e)&&null!==e?_objectMul(e,t):"object"===_typeof(t)&&null!==t?_objectMul(t,e):e*t}

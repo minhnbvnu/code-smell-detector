@@ -1,0 +1,1 @@
+function Browser_typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { Browser_typeof = function _typeof(obj) { return typeof obj; }; } else { Browser_typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return Browser_typeof(obj); }

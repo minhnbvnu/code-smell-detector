@@ -1,0 +1,1 @@
+function Placeholder$1(_ref){var className=_ref.className,style=_ref.style,phProps={};return className||style?(className&&(phProps.className=className),style&&(phProps.style=style)):phProps.style={width:"100%",height:"100%"},React__default.default.createElement("div",phProps)}

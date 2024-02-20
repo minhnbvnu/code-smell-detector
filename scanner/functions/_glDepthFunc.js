@@ -1,0 +1,1 @@
+function _glDepthFunc(x0){GLctx["depthFunc"](x0)}

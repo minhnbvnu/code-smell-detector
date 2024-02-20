@@ -1,0 +1,1 @@
+function SE(t){return t.isHorizontal()?0:1}

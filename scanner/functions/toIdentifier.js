@@ -1,17 +1,19 @@
-function toIdentifier(name) {
-	  name = name + "";
+function toIdentifier(input) {
+  input = input + "";
+  let name = "";
 
-	  name = name.replace(/[^a-zA-Z0-9$_]/g, "-");
+  for (const c of input) {
+    name += (0, _helperValidatorIdentifier.isIdentifierChar)(c.codePointAt(0)) ? c : "-";
+  }
 
-	  name = name.replace(/^[-0-9]+/, "");
+  name = name.replace(/^[-0-9]+/, "");
+  name = name.replace(/[-\s]+(.)?/g, function (match, c) {
+    return c ? c.toUpperCase() : "";
+  });
 
-	  name = name.replace(/[-\s]+(.)?/g, function (match, c) {
-	    return c ? c.toUpperCase() : "";
-	  });
+  if (!(0, _isValidIdentifier.default)(name)) {
+    name = `_${name}`;
+  }
 
-	  if (!t.isValidIdentifier(name)) {
-	    name = "_" + name;
-	  }
-
-	  return name || "_";
-	}
+  return name || "_";
+}

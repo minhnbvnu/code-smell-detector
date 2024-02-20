@@ -1,0 +1,1 @@
+function stackSet$1(key,value){var data=this.__data__;if(data instanceof ListCache$1){var pairs=data.__data__;if(!Map$2||pairs.length<LARGE_ARRAY_SIZE$1-1)return pairs.push([key,value]),this.size=++data.size,this;data=this.__data__=new MapCache$2(pairs)}return data.set(key,value),this.size=data.size,this}

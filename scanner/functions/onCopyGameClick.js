@@ -1,0 +1,3 @@
+function onCopyGameClick() {
+    makeGame(gameURL);
+}

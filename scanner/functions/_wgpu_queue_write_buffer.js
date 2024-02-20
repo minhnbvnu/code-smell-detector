@@ -1,0 +1,1 @@
+function _wgpu_queue_write_buffer(queue,buffer,bufferOffset,data,size){wgpu[queue]["writeBuffer"](wgpu[buffer],bufferOffset,HEAPU8,data,size)}

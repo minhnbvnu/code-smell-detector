@@ -1,0 +1,1 @@
+function InternationalIcon_InternationalIcon(i){var o=i.aspectRatio,s=InternationalIcon_objectWithoutProperties(i,ka);return 1===o?u.createElement(InternationalIcon1x1,s):u.createElement(InternationalIcon3x2,s)}

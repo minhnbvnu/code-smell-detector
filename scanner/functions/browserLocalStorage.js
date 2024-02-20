@@ -1,0 +1,1 @@
+function browserLocalStorage(e){return new BrowserLocalStorage(e)}

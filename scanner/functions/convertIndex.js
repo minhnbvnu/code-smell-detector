@@ -1,0 +1,1 @@
+function convertIndex(i){return z===U?i:convertUnwrappedCommentIndex(U,i)}

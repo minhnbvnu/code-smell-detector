@@ -1,0 +1,1 @@
+function _emscripten_glVertexAttrib1fv(index,v){GLctx.vertexAttrib1f(index,HEAPF32[v>>2])}

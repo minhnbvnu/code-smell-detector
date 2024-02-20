@@ -1,0 +1,1 @@
+function scrollColumnIntoView(e){internalScrollColumnIntoView(columnPosLeft[e],columnPosRight[e])}

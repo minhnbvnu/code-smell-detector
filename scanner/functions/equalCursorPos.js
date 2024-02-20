@@ -1,0 +1,1 @@
+function equalCursorPos(a, b) { return a.sticky == b.sticky && cmp(a, b) == 0 }

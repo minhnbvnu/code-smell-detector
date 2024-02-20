@@ -1,0 +1,1 @@
+function Rd(t){return t===Su?"down":t===Du?"up":t===wu?"left":t===ku?"right":""}

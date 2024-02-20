@@ -1,5 +1,5 @@
-function file_load_from_url() {
-	if ($file_load_from_url_window) {
+function file_load_from_url(){
+	if($file_load_from_url_window){
 		$file_load_from_url_window.close();
 	}
 	const $w = new $DialogWindow().addClass("horizontal-buttons");
@@ -26,7 +26,7 @@ function file_load_from_url() {
 		} else {
 			show_error_message("Invalid URL. It must include a protocol (https:// or http://)");
 		}
-	}, { type: "submit" });
+	});
 	$w.$Button(localize("Cancel"), () => {
 		$w.close();
 	});

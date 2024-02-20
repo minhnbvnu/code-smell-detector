@@ -1,1 +1,1 @@
-function Zg(a,b){a=a|0;b=b|0;return F[H[a>>2]+b|0]}
+function zg(a){var b=a.findFiberByHostInstance;return vh(G({},a,{findHostInstanceByFiber:function(a){a=Ve(a);return null===a?null:a.stateNode},findFiberByHostInstance:function(a){return b?b(a):null}}))}

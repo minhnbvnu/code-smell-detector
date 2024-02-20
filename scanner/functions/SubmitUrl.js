@@ -1,0 +1,1 @@
+function SubmitUrl(t){_classCallCheck(this,SubmitUrl);return r.call(this,d,"submitUrl")}

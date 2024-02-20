@@ -1,0 +1,1 @@
+function StructElementNode(t,r){_classCallCheck(this,StructElementNode);this.tree=t;this.dict=r;this.kids=[];this.parseKids()}

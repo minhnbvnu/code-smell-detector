@@ -1,0 +1,1 @@
+function _inthash_lo(t){return _bi255(_bytehash(t).slice(32,64))}

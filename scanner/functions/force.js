@@ -1,0 +1,1 @@
+function force(data,db,group){layout.size(vg.data.size(size,group)).nodes(data);if(links&&db[links]){layout.links(db[links])}layout.start();for(var i=0;i<iterations;++i){layout.tick()}layout.stop();return data}

@@ -1,0 +1,1 @@
+function getInt16(t,r){return(t[r]<<24|t[r+1]<<16)>>16}

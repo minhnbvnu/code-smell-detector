@@ -1,0 +1,1 @@
+function _dispatchUpdateStates2(t){var r=this;Object.entries(t).some((function(t){var a=_slicedToArray(t,2),i=a[0],o=a[1];return _classPrivateFieldGet(r,j)[i]!==o}))&&_classPrivateFieldGet(this,T).dispatch("annotationeditorstateschanged",{source:this,details:Object.assign(_classPrivateFieldGet(this,j),t)})}

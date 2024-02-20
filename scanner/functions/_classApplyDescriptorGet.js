@@ -1,0 +1,1 @@
+function _classApplyDescriptorGet(t,r){return r.get?r.get.call(t):r.value}

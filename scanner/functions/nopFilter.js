@@ -1,0 +1,3 @@
+function nopFilter() {
+    return true;
+}

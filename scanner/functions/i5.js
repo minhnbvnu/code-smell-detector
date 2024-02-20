@@ -1,0 +1,1 @@
+function i5(t){typeof t!="function"&&(t=lh(t));for(var e=this._groups,r=e.length,n=new Array(r),i=0;i<r;++i)for(var s=e[i],a=s.length,o=n[i]=new Array(a),l,u,d=0;d<a;++d)(l=s[d])&&(u=t.call(l,l.__data__,d,s))&&("__data__"in l&&(u.__data__=l.__data__),o[d]=u);return new Ar(n,this._parents)}

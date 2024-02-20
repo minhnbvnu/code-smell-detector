@@ -1,45 +1,69 @@
-function lookAt(te, eye, target, up) {
-    const x = [0, 0, 0];
-    const y = [0, 0, 0];
-    const z = [0, 0, 0];
-    subtract(z, eye, target);
-
-    if (length(z) === 0) {
-
-        // eye and target are in the same position
-
-        z[2] = 1;
-
-    }
-
-    normalize(z, z);
-    cross(x, up, z);
-
-    if (length(z) === 0) {
-
-        // up and z are parallel
-
-        if (Math.abs(up[2]) === 1) {
-
-            z[0] += 0.0001;
-
-        } else {
-
-            z[2] += 0.0001;
-
+function lookAt(out, eye, center, up) {
+        var x0, x1, x2, y0, y1, y2, z0, z1, z2, len;
+        var eyex = eye[0];
+        var eyey = eye[1];
+        var eyez = eye[2];
+        var upx = up[0];
+        var upy = up[1];
+        var upz = up[2];
+        var centerx = center[0];
+        var centery = center[1];
+        var centerz = center[2];
+        if (Math.abs(eyex - centerx) < glMatrix.EPSILON && Math.abs(eyey - centery) < glMatrix.EPSILON && Math.abs(eyez - centerz) < glMatrix.EPSILON) {
+            return identity(out);
         }
-
-        normalize(z, z);
-        cross(x, up, z);
-
+        z0 = eyex - centerx;
+        z1 = eyey - centery;
+        z2 = eyez - centerz;
+        len = 1 / Math.hypot(z0, z1, z2);
+        z0 *= len;
+        z1 *= len;
+        z2 *= len;
+        x0 = upy * z2 - upz * z1;
+        x1 = upz * z0 - upx * z2;
+        x2 = upx * z1 - upy * z0;
+        len = Math.hypot(x0, x1, x2);
+        if (!len) {
+            x0 = 0;
+            x1 = 0;
+            x2 = 0;
+        }
+        else {
+            len = 1 / len;
+            x0 *= len;
+            x1 *= len;
+            x2 *= len;
+        }
+        y0 = z1 * x2 - z2 * x1;
+        y1 = z2 * x0 - z0 * x2;
+        y2 = z0 * x1 - z1 * x0;
+        len = Math.hypot(y0, y1, y2);
+        if (!len) {
+            y0 = 0;
+            y1 = 0;
+            y2 = 0;
+        }
+        else {
+            len = 1 / len;
+            y0 *= len;
+            y1 *= len;
+            y2 *= len;
+        }
+        out[0] = x0;
+        out[1] = y0;
+        out[2] = z0;
+        out[3] = 0;
+        out[4] = x1;
+        out[5] = y1;
+        out[6] = z1;
+        out[7] = 0;
+        out[8] = x2;
+        out[9] = y2;
+        out[10] = z2;
+        out[11] = 0;
+        out[12] = -(x0 * eyex + x1 * eyey + x2 * eyez);
+        out[13] = -(y0 * eyex + y1 * eyey + y2 * eyez);
+        out[14] = -(z0 * eyex + z1 * eyey + z2 * eyez);
+        out[15] = 1;
+        return out;
     }
-
-    normalize(x, x);
-    cross(y, z, x);
-
-    te[ 0 ] = x[0]; te[ 4 ] = y[0]; te[ 8 ] = z[0];
-    te[ 1 ] = x[1]; te[ 5 ] = y[1]; te[ 9 ] = z[1];
-    te[ 2 ] = x[2]; te[ 6 ] = y[2]; te[ 10 ] = z[2];
-
-    return te;
-}

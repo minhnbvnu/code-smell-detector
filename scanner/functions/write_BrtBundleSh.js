@@ -1,0 +1,1 @@
+function write_BrtBundleSh(data,o){if(!o)o=new_buf(127);o.write_shift(4,data.hsState);o.write_shift(4,data.iTabID);write_RelID(data.strRelID,o);write_XLWideString(data.name.substr(0,31),o);return o}

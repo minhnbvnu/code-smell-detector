@@ -1,0 +1,1 @@
+function AOe(e){return e.host===null||e.host===""||e.cannotBeABaseURL||e.scheme==="file"}

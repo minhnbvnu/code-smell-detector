@@ -1,0 +1,3 @@
+function TxSegmentNormalizer() {
+  this.terms = []
+}

@@ -1,0 +1,1 @@
+function autosizeColumn(e,o){var t=e;if("number"==typeof e)t=columns[e];else if("string"==typeof e)for(var n=0;n<columns.length;n++)columns[n].Id===e&&(t=columns[n]);getColAutosizeWidth(t,$(getCanvasNode(0,0)),o)}

@@ -1,1 +1,1 @@
-function Yb(a,b,c){var d=0,e=0,f=0;e=ca-16|0;ca=e;d=H[a+8>>2]&2147483647;a:{if(d>>>0>c>>>0){d=H[a>>2];H[a+4>>2]=c;yb(d,b,c);F[e+15|0]=0;F[c+d|0]=I[e+15|0];break a}f=a;a=H[a+4>>2];Gd(f,d-1|0,(c-d|0)+1|0,a,a,c,b)}ca=e+16|0}
+function yB(n,t){if(t.isCompound){let e=n.__dataCompoundStorage||(n.__dataCompoundStorage={}),i=t.parts,r=new Array(i.length);for(let s=0;s<i.length;s++)r[s]=i[s].literal;let o=t.target;e[o]=r,t.literal&&t.kind=="property"&&(o==="className"&&(n=Ft(n)),n[o]=t.literal)}}

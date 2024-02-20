@@ -1,0 +1,1 @@
+function p8(n){if(n instanceof Fr)return new Fr(n.h,n.s,n.l,n.opacity);if(n instanceof Sd||(n=rr(n)),!n)return new Fr;if(n instanceof Fr)return n;n=n.rgb();var t=n.r/255,e=n.g/255,i=n.b/255,r=Math.min(t,e,i),o=Math.max(t,e,i),s=NaN,a=o-r,l=(o+r)/2;return a?(t===o?s=(e-i)/a+(e<i)*6:e===o?s=(i-t)/a+2:s=(t-e)/a+4,a/=l<.5?o+r:2-o-r,s*=60):a=l>0&&l<1?0:s,new Fr(s,a,l,n.opacity)}

@@ -1,0 +1,1 @@
+function write_BUNDLESHS(ba,wb,opts){write_record(ba,"BrtBeginBundleShs");for(var idx=0;idx!=wb.SheetNames.length;++idx){var d={hsState:0,iTabID:idx+1,strRelID:"rId"+(idx+1),name:wb.SheetNames[idx]};write_record(ba,"BrtBundleSh",write_BrtBundleSh(d))}write_record(ba,"BrtEndBundleShs")}

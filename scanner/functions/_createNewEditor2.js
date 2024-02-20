@@ -1,0 +1,1 @@
+function _createNewEditor2(t){switch(_classPrivateFieldGet(this,m).getMode()){case i.AnnotationEditorType.FREETEXT:return new c.FreeTextEditor(t);case i.AnnotationEditorType.INK:return new u.InkEditor(t)}return null}

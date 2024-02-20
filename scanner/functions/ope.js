@@ -1,0 +1,1 @@
+function ope(e,t){return!(e.left>t.right||t.left>e.right||e.top>t.bottom||t.top>e.bottom)}

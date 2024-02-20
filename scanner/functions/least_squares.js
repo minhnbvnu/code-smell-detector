@@ -1,0 +1,2 @@
+function least_squares(x_,y_){var x,y,xi,yi,_x=0,_y=0,_xy=0,_xx=0;var n=x_.length;if(x_[0]instanceof Date){x=x_.map(function(d){return d.getTime();});}else{x=x_;};if(y_[0]instanceof Date){y=y_.map(function(d){return d.getTime();});}else{y=y_;};var xhat=d3.mean(x);var yhat=d3.mean(y);var numerator=0,denominator=0;var xi,yi;for(var i=0;i<x.length;i++){xi=x[i];yi=y[i];numerator+=(xi-xhat)*(yi-yhat);denominator+=(xi-xhat)*(xi-xhat)}
+var beta=numerator/denominator;var x0=yhat-beta*xhat;return{x0:x0,beta:beta,fit:function(x){return x0+x*beta;}}}

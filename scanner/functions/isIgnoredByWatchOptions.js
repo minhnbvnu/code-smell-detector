@@ -1,0 +1,3 @@
+function isIgnoredByWatchOptions(pathToCheck, options, useCaseSensitiveFileNames, getCurrentDirectory) {
+            return ((options == null ? void 0 : options.excludeDirectories) || (options == null ? void 0 : options.excludeFiles)) && (matchesExclude(pathToCheck, options == null ? void 0 : options.excludeFiles, useCaseSensitiveFileNames, getCurrentDirectory()) || matchesExclude(pathToCheck, options == null ? void 0 : options.excludeDirectories, useCaseSensitiveFileNames, getCurrentDirectory()));
+        }

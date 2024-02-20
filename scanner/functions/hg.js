@@ -1,0 +1,1 @@
+function hg(a){return a+""}

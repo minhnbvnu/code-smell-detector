@@ -1,0 +1,1 @@
+function _JS_GravitySensor_IsRunning(){return typeof GravitySensor!=="undefined"?JS_GravitySensor&&JS_GravitySensor.activated:JS_GravitySensor_callback!=0}

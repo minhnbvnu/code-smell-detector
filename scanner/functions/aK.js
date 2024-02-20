@@ -1,0 +1,1 @@
+function aK(n){let t=0;for(;t<n.length&&n[t]();++t);return t-1}

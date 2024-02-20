@@ -1,15 +1,1 @@
-function getCharCodes(charCodeToGlyphId, glyphId) {
-        var charCodes = null;
-
-        for (var charCode in charCodeToGlyphId) {
-          if (glyphId === charCodeToGlyphId[charCode]) {
-            if (!charCodes) {
-              charCodes = [];
-            }
-
-            charCodes.push(charCode | 0);
-          }
-        }
-
-        return charCodes;
-      }
+function getCharCodes(t,r){var o=null;for(var c in t)if(r===t[c]){o||(o=[]);o.push(0|c)}return o}

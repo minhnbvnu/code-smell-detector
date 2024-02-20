@@ -1,0 +1,3 @@
+function createUnderscoreEscapedMultiMap() {
+            return createMultiMap();
+        }

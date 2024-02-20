@@ -1,0 +1,3 @@
+function closeDrawer() {
+    setIsDrawerOpen(false);
+  }

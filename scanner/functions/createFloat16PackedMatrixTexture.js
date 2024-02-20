@@ -1,7 +1,1 @@
-function createFloat16PackedMatrixTexture(gl, rows, columns, textureConfig) {
-	  var _tex_util$getPackedMa2 = getPackedMatrixTextureShapeWidthHeight(rows, columns),
-	      width = _tex_util$getPackedMa2[0],
-	      height = _tex_util$getPackedMa2[1];
-
-	  return createAndConfigureTexture(gl, width, height, getInternalFormatForFloat16PackedMatrixTexture(textureConfig), gl.RGBA, textureConfig.textureTypeHalfFloat);
-	}
+function createFloat16PackedMatrixTexture(e,t,n,r){var o=getPackedMatrixTextureShapeWidthHeight(t,n);return createAndConfigureTexture(e,o[0],o[1],r.internalFormatHalfFloat,e.RGBA,r.textureTypeHalfFloat)}

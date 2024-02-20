@@ -1,0 +1,1 @@
+function t2(n){let e={};return n.forEach(function(u){let t=u.names[0].toUpperCase();u.names.forEach(function(o){let s=o.toUpperCase();e[s]=[t]}),u.tags.forEach(function(o){let s=o.toUpperCase(),l=e[s]||[];l.push(t),e[s]=l})}),e}

@@ -1,0 +1,1 @@
+function gP(n,t,e){return n.getUniformLocation(t,e)}

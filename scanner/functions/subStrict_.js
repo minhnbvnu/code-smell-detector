@@ -1,7 +1,1 @@
-function subStrict_(a, b) {
-	  deprecationWarn('strict variants of ops have been deprecated ' + 'and will be removed in future');
-	  var $a = convertToTensor(a, 'a', 'subStrict');
-	  var $b = convertToTensor(b, 'b', 'subStrict');
-	  assertShapesMatch($a.shape, $b.shape, 'Error in subStrict: ');
-	  return sub($a, $b);
-	}
+function subStrict_(e,t){var n=convertToTensor(e,"a","subStrict"),r=convertToTensor(t,"b","subStrict");return assertShapesMatch(n.shape,r.shape,"Error in subStrict: "),n.sub(r)}

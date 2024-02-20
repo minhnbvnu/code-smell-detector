@@ -1,1 +1,1 @@
-function At(t){function e(e,r){var o=n(e,r);return 404===e.getStatus()&&(o=i(t.path)),o.setServerResponseProp(r.serverResponseProp()),o}var n=Tt(t);return e}
+function at(t,e){st[t]=e}

@@ -1,0 +1,1 @@
+function onScrollbarMouseTouchDown(event){COMPATIBILITY.stpP(event)}

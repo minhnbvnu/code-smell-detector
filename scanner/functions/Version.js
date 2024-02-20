@@ -1,0 +1,1 @@
+function Version(t){_classCallCheck(this,Version);return r.call(this,d,"version",["1.7","1.6","1.5","1.4","1.3","1.2"])}

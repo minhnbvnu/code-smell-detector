@@ -1,0 +1,1 @@
+function X0(o,r){if(1&o&&e.YNc(0,sx,1,0,"td",7),2&o){const i=e.oxw(3);e.Q6J("ngForOf",i.groups)}}

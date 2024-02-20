@@ -1,0 +1,1 @@
+function convertCase(i){var o={};for(var s in i){o[0===s.indexOf("--")?s:ln(s)]=i[s]}return i.fallbacks&&(Array.isArray(i.fallbacks)?o.fallbacks=i.fallbacks.map(convertCase):o.fallbacks=convertCase(i.fallbacks)),o}

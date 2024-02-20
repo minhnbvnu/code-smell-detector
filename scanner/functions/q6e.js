@@ -1,0 +1,1 @@
+function q6e(e,t,r){let n=e.state.charCategorizer(t),i=n(r);return a=>{let l=n(a);return i==xa.Space&&(i=l),i==l}}

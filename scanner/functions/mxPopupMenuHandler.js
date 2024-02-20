@@ -1,0 +1,1 @@
+function mxPopupMenuHandler(a,b){null!=a&&(this.graph=a,this.factoryMethod=b,this.graph.addMouseListener(this),this.gestureHandler=mxUtils.bind(this,function(a,b){this.inTolerance=!1}),this.graph.addListener(mxEvent.GESTURE,this.gestureHandler),this.init())}

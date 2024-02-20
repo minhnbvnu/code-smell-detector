@@ -1,0 +1,1 @@
+function jF(){return this.each(oat)}

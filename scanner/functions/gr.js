@@ -1,1 +1,1 @@
-function Gr(t,n,e,i,r){this.m=t,this.u=n,this.c=e,this.l=i,this.i=this.g=this.h=null,this.a=r,this.f=null}
+function gr(t){for(var e,i=arguments.length,n=new Array(i>1?i-1:0),o=1;o<i;o++)n[o-1]=arguments[o];return yr.apply(void 0,ur(e=[{},t]).call(e,n))}

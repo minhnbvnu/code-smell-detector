@@ -1,0 +1,1 @@
+function NH(e){let t=e.elementValueOrEmpty("content");return t==="No content."?"":t}

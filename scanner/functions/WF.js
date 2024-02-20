@@ -1,1 +1,1 @@
-function wf(a,b,c){a=a|0;b=b|0;c=c|0;var d=0,e=0;d=H[a+8>>2];a:{if(!I[d+24|0]){break a}if(!mb(d,H[b+4>>2]-H[b>>2]>>2)){break a}e=ea[H[H[a>>2]+32>>2]](a,b,c)|0}return e|0}
+function WF(t){var e=t.get("hoverLinkOnHandle");return!!(null==e?t.get("realtime"):e)}

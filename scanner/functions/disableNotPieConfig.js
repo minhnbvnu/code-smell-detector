@@ -1,0 +1,5 @@
+function disableNotPieConfig() {
+
+    updateConfigItem( 'disable' );
+
+}

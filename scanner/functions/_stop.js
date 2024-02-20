@@ -1,0 +1,1 @@
+function _stop(el,clearQ,jumpToEnd){for(var animObj,qObj,key,i=0;i<_animations[LEXICON.l];i++)if((animObj=_animations[i]).el===el){if(animObj.q[LEXICON.l]>0){if((qObj=animObj.q[0]).stop=!0,COMPATIBILITY.cAF()(qObj.frame),animObj.q.splice(0,1),jumpToEnd)for(key in qObj.props)setAnimationValue(el,key,qObj.props[key]);clearQ?animObj.q=[]:startNextAnimationInQ(animObj,!1)}break}}

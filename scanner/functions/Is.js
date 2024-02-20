@@ -1,0 +1,1 @@
+function Is(e,t){return In(e,!0,!0,t)}

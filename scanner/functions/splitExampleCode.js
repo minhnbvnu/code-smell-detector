@@ -1,0 +1,1 @@
+function splitExampleCode(i){var o=getAst(i);if(!o)return{head:"",example:i};var s=us()(o.body.reverse(),{type:"ExpressionStatement"});if(!s)return{head:"",example:i};var u=s.start,C=s.end,_=ls(i.substring(0,u));return{head:_,example:_+";\nreturn ("+ls(i.substring(u,C))+");"}}

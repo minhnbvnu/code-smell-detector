@@ -1,0 +1,1 @@
+function char2width(chr){return((chr*MDW+5)/MDW*256|0)/256}

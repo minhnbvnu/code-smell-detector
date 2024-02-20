@@ -1,0 +1,1 @@
+function PluginsRegistry(){this.plugins={internal:[],external:[]},this.registry={}}

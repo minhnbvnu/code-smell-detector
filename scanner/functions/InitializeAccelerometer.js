@@ -1,0 +1,1 @@
+function InitializeAccelerometer(frequency){JS_Accelerometer=new Accelerometer({frequency:frequency,referenceFrame:"device"});JS_Accelerometer.addEventListener("reading",JS_Accelerometer_eventHandler);JS_Accelerometer.addEventListener("error",function(e){warnOnce(e.error?e.error:e)});JS_Accelerometer.start();JS_Accelerometer_frequency=frequency}

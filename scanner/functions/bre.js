@@ -1,0 +1,1 @@
+function bre(e){return parseFloat(e)/2-100}

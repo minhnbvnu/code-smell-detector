@@ -1,0 +1,1 @@
+function dJ(e,t){var n=arguments.length>2&&void 0!==arguments[2]?arguments[2]:{};vq.extend(e,t,cJ(n)),Se.setGet(e,t,["circleProps","fontProperties","name","textProps"]),uJ(e,t)}

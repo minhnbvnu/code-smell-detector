@@ -1,0 +1,1 @@
+function handleActiveCellPositionChange(){if(activeCellNode&&(trigger(self.onActiveCellPositionChanged,{}),currentEditor)){var e=getActiveCellPosition();currentEditor.show&&currentEditor.hide&&(e.visible?currentEditor.show():currentEditor.hide()),currentEditor.position&&currentEditor.position(e)}}

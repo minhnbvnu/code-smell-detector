@@ -1,0 +1,1 @@
+function ED(t){return Eo(t,Ts(t))}

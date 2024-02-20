@@ -1,0 +1,1 @@
+function que(e){var t={"=":"=0",":":"=2"};return"$"+e.replace(/[=:]/g,function(r){return t[r]})}

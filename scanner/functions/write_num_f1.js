@@ -1,0 +1,1 @@
+function write_num_f1(r,aval,sign){var den=parseInt(r[4]),rr=Math.round(aval*den),base=Math.floor(rr/den);var myn=rr-base*den,myd=den;return sign+(base===0?"":""+base)+" "+(myn===0?fill(" ",r[1].length+1+r[4].length):pad_(myn,r[1].length)+r[2]+"/"+r[3]+pad0(myd,r[4].length))}

@@ -1,0 +1,1 @@
+function _emscripten_glDepthRangef(x0,x1){GLctx["depthRange"](x0,x1)}

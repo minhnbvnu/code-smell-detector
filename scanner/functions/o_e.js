@@ -1,0 +1,1 @@
+function o_e(e){if(e.$id&&e.id&&e.$id!=e.id)throw new Error("schema $id is different from id");return e.$id||e.id}

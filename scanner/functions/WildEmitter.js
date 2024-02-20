@@ -1,0 +1,3 @@
+function WildEmitter() {
+                    this.callbacks = {};
+                }

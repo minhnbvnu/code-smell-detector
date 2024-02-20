@@ -1,3 +1,3 @@
 function isSimpleProperty(node) {
-	  return node && node.type === "Property" && node.kind === "init" && node.method === false;
-	}
+  return node != null && node.type === "Property" && node.kind === "init" && node.method === false;
+}

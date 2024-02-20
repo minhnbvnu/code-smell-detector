@@ -1,4 +1,6 @@
-function parseColor(colorString) {
-  const color = parseInt(colorString, 10);
-  return isNaN(color) ? 0 : Math.min(Math.max(color, 0), 255);
+function parseColor(value) {
+  try {
+    return new Color(value);
+  } catch (e) {}
+  return null;
 }

@@ -1,0 +1,1 @@
+function fc(a){return D(a.valueOf)?a.valueOf():jg.call(a)}

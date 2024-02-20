@@ -1,0 +1,1 @@
+function vI(e){if(e.sourceInt64!==void 0)return e.sourceInt64;var t=Math.round(e.getTime()/1e3),r=Math.floor(t/4294967296),i=Math.floor(t%4294967296),a=O2.alloc(8);return a.writeUInt32BE(r,0),a.writeUInt32BE(i,4),a}

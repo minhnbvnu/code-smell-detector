@@ -1,0 +1,1 @@
+function weightFn(g){return function(e){return g.edge(e).weight}}

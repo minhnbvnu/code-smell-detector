@@ -1,0 +1,1 @@
+function sOe(e,t,r){let i=!1;if(t){let a=`nmcli connection show "${t}" 2>/dev/null | grep ipv4.method;`;try{switch(Mi(a).toString().replace(/\s+/g," ").trim().split(" ").slice(1).toString()){case"auto":i=!0;break;default:i=!1;break}return i}catch{return r.indexOf(e)>=0}}else return r.indexOf(e)>=0}

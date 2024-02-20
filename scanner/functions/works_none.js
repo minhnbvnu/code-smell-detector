@@ -1,0 +1,1 @@
+function works_none()      { return 2 }

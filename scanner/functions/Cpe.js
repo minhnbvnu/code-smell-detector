@@ -1,0 +1,1 @@
+function Cpe(e){return Object.prototype.toString.call(e)==="[object RegExp]"}

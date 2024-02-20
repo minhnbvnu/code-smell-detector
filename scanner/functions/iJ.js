@@ -1,0 +1,1 @@
+function iJ(t,e){return!e?t:!t?e:!(0,g.Kn)(t)?{value:t,offset:e}:Object.assign({},t,{offset:iJ(t.offset,e)})}

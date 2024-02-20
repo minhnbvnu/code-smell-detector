@@ -1,0 +1,1 @@
+function BindItems(t){var o;_classCallCheck(this,BindItems);(o=r.call(this,_,"bindItems")).connection=t.connection||"";o.labelRef=t.labelRef||"";o.ref=t.ref||"";o.valueRef=t.valueRef||"";return o}

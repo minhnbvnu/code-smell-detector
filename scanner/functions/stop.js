@@ -1,4 +1,6 @@
 function stop() {
-	  this.shouldStop = true;
-	  this.shouldSkip = true;
-	}
+
+      delay = options.auto || 0;
+      clearTimeout(interval);
+
+    }

@@ -1,0 +1,3 @@
+function handleDropdownMenuClick() {
+    setIsDropdownMenuOpen(!isDropdownMenuOpen)
+  }

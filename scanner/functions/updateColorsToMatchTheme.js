@@ -1,0 +1,66 @@
+function updateColorsToMatchTheme(element) {
+  const computedStyle = getComputedStyle(element); // Check to see if styles have been initialized...
+
+  if (computedStyle.getPropertyValue('--color-background') == null) {
+    return false;
+  }
+
+  COLORS = {
+    BACKGROUND: computedStyle.getPropertyValue('--color-background'),
+    INTERNAL_MODULE_FRAME: computedStyle.getPropertyValue('--color-timeline-internal-module'),
+    INTERNAL_MODULE_FRAME_HOVER: computedStyle.getPropertyValue('--color-timeline-internal-module-hover'),
+    INTERNAL_MODULE_FRAME_TEXT: computedStyle.getPropertyValue('--color-timeline-internal-module-text'),
+    NATIVE_EVENT: computedStyle.getPropertyValue('--color-timeline-native-event'),
+    NATIVE_EVENT_HOVER: computedStyle.getPropertyValue('--color-timeline-native-event-hover'),
+    NETWORK_PRIMARY: computedStyle.getPropertyValue('--color-timeline-network-primary'),
+    NETWORK_PRIMARY_HOVER: computedStyle.getPropertyValue('--color-timeline-network-primary-hover'),
+    NETWORK_SECONDARY: computedStyle.getPropertyValue('--color-timeline-network-secondary'),
+    NETWORK_SECONDARY_HOVER: computedStyle.getPropertyValue('--color-timeline-network-secondary-hover'),
+    PRIORITY_BACKGROUND: computedStyle.getPropertyValue('--color-timeline-priority-background'),
+    PRIORITY_BORDER: computedStyle.getPropertyValue('--color-timeline-priority-border'),
+    PRIORITY_LABEL: computedStyle.getPropertyValue('--color-text'),
+    USER_TIMING: computedStyle.getPropertyValue('--color-timeline-user-timing'),
+    USER_TIMING_HOVER: computedStyle.getPropertyValue('--color-timeline-user-timing-hover'),
+    REACT_IDLE: computedStyle.getPropertyValue('--color-timeline-react-idle'),
+    REACT_IDLE_HOVER: computedStyle.getPropertyValue('--color-timeline-react-idle-hover'),
+    REACT_RENDER: computedStyle.getPropertyValue('--color-timeline-react-render'),
+    REACT_RENDER_HOVER: computedStyle.getPropertyValue('--color-timeline-react-render-hover'),
+    REACT_RENDER_TEXT: computedStyle.getPropertyValue('--color-timeline-react-render-text'),
+    REACT_COMMIT: computedStyle.getPropertyValue('--color-timeline-react-commit'),
+    REACT_COMMIT_HOVER: computedStyle.getPropertyValue('--color-timeline-react-commit-hover'),
+    REACT_COMMIT_TEXT: computedStyle.getPropertyValue('--color-timeline-react-commit-text'),
+    REACT_LAYOUT_EFFECTS: computedStyle.getPropertyValue('--color-timeline-react-layout-effects'),
+    REACT_LAYOUT_EFFECTS_HOVER: computedStyle.getPropertyValue('--color-timeline-react-layout-effects-hover'),
+    REACT_LAYOUT_EFFECTS_TEXT: computedStyle.getPropertyValue('--color-timeline-react-layout-effects-text'),
+    REACT_PASSIVE_EFFECTS: computedStyle.getPropertyValue('--color-timeline-react-passive-effects'),
+    REACT_PASSIVE_EFFECTS_HOVER: computedStyle.getPropertyValue('--color-timeline-react-passive-effects-hover'),
+    REACT_PASSIVE_EFFECTS_TEXT: computedStyle.getPropertyValue('--color-timeline-react-passive-effects-text'),
+    REACT_RESIZE_BAR: computedStyle.getPropertyValue('--color-resize-bar'),
+    REACT_RESIZE_BAR_ACTIVE: computedStyle.getPropertyValue('--color-resize-bar-active'),
+    REACT_RESIZE_BAR_BORDER: computedStyle.getPropertyValue('--color-resize-bar-border'),
+    REACT_RESIZE_BAR_DOT: computedStyle.getPropertyValue('--color-resize-bar-dot'),
+    REACT_SCHEDULE: computedStyle.getPropertyValue('--color-timeline-react-schedule'),
+    REACT_SCHEDULE_HOVER: computedStyle.getPropertyValue('--color-timeline-react-schedule-hover'),
+    REACT_SUSPENSE_REJECTED_EVENT: computedStyle.getPropertyValue('--color-timeline-react-suspense-rejected'),
+    REACT_SUSPENSE_REJECTED_EVENT_HOVER: computedStyle.getPropertyValue('--color-timeline-react-suspense-rejected-hover'),
+    REACT_SUSPENSE_RESOLVED_EVENT: computedStyle.getPropertyValue('--color-timeline-react-suspense-resolved'),
+    REACT_SUSPENSE_RESOLVED_EVENT_HOVER: computedStyle.getPropertyValue('--color-timeline-react-suspense-resolved-hover'),
+    REACT_SUSPENSE_UNRESOLVED_EVENT: computedStyle.getPropertyValue('--color-timeline-react-suspense-unresolved'),
+    REACT_SUSPENSE_UNRESOLVED_EVENT_HOVER: computedStyle.getPropertyValue('--color-timeline-react-suspense-unresolved-hover'),
+    REACT_THROWN_ERROR: computedStyle.getPropertyValue('--color-timeline-thrown-error'),
+    REACT_THROWN_ERROR_HOVER: computedStyle.getPropertyValue('--color-timeline-thrown-error-hover'),
+    REACT_WORK_BORDER: computedStyle.getPropertyValue('--color-timeline-react-work-border'),
+    SCROLL_CARET: computedStyle.getPropertyValue('--color-scroll-caret'),
+    SCRUBBER_BACKGROUND: computedStyle.getPropertyValue('--color-timeline-react-suspense-rejected'),
+    SEARCH_RESULT_FILL: computedStyle.getPropertyValue('--color-timeline-react-suspense-rejected'),
+    SCRUBBER_BORDER: computedStyle.getPropertyValue('--color-timeline-text-color'),
+    TEXT_COLOR: computedStyle.getPropertyValue('--color-timeline-text-color'),
+    TEXT_DIM_COLOR: computedStyle.getPropertyValue('--color-timeline-text-dim-color'),
+    TIME_MARKER_LABEL: computedStyle.getPropertyValue('--color-text'),
+    WARNING_BACKGROUND: computedStyle.getPropertyValue('--color-warning-background'),
+    WARNING_BACKGROUND_HOVER: computedStyle.getPropertyValue('--color-warning-background-hover'),
+    WARNING_TEXT: computedStyle.getPropertyValue('--color-warning-text-color'),
+    WARNING_TEXT_INVERED: computedStyle.getPropertyValue('--color-warning-text-color-inverted')
+  };
+  return true;
+}

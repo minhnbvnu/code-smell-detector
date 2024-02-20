@@ -1,0 +1,1 @@
+function parse_Formula(blob,length,opts){var cell=parse_XLSCell(blob,6);var val=parse_FormulaValue(blob,8);var flags=blob.read_shift(1);blob.read_shift(1);var chn=blob.read_shift(4);var cbf="";if(opts.biff===5)blob.l+=length-20;else cbf=parse_XLSCellParsedFormula(blob,length-20,opts);return{cell:cell,val:val[0],formula:cbf,shared:flags>>3&1,tt:val[1]}}

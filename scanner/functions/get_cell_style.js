@@ -1,0 +1,1 @@
+function get_cell_style(styles,cell,opts){var z=opts.revssf[cell.z!=null?cell.z:"General"];for(var i=0,len=styles.length;i!=len;++i)if(styles[i].numFmtId===z)return i;styles[len]={numFmtId:z,fontId:0,fillId:0,borderId:0,xfId:0,applyNumberFormat:1};return len}

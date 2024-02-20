@@ -1,0 +1,1 @@
+function Wle(e,t){return nl(e,r=>r.empty?e.moveByChar(r,t):$b(r,t))}

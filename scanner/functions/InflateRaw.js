@@ -1,0 +1,1 @@
+function InflateRaw(e){return this instanceof InflateRaw?void Zlib.call(this,e,binding.INFLATERAW):new InflateRaw(e)}

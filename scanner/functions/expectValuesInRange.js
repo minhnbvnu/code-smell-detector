@@ -1,7 +1,1 @@
-function expectValuesInRange(actual, low, high) {
-	  for (var i = 0; i < actual.length; i++) {
-	    if (actual[i] < low || actual[i] > high) {
-	      throw new Error("Value out of range:" + actual[i] + " low: " + low + ", high: " + high);
-	    }
-	  }
-	}
+function expectValuesInRange(e,t,n){var r;r=e instanceof Tensor?e.dataSync():e;for(var o=0;o<r.length;o++)if(r[o]<t||r[o]>n)throw new Error("Value out of range:"+r[o]+" low: "+t+", high: "+n)}

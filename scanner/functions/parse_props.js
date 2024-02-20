@@ -1,0 +1,1 @@
+function parse_props(cfb){var DSI=cfb.find("!DocumentSummaryInformation");if(DSI)try{cfb.DocSummary=parse_PropertySetStream(DSI,DocSummaryPIDDSI)}catch(e){}var SI=cfb.find("!SummaryInformation");if(SI)try{cfb.Summary=parse_PropertySetStream(SI,SummaryPIDSI)}catch(e){}}

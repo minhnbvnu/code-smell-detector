@@ -1,0 +1,1 @@
+function T6(t){if(!t.ok)throw new Error(t.status+" "+t.statusText);return t.text()}

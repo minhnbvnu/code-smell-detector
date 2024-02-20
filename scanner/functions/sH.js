@@ -1,1 +1,1 @@
-function sh(a){a=a|0;return H[a+88>>2]}
+function sH(t,e){let n;if(t.type===nH){n=e.event(nH,t.throttle);t={between:t.between,filter:t.filter}}else{n=e.event(rH(t.source),t.type)}const i=uH({stream:n},t,e);return Object.keys(i).length===1?n:e.addStream(i).id}

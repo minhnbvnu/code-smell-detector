@@ -1,0 +1,1 @@
+function eTe(e,t){return r;function r(n){return e.enter("lineEnding"),e.consume(n),e.exit("lineEnding"),Or(e,t,"linePrefix")}}

@@ -1,0 +1,3 @@
+function getIsOffline() {
+    return isOffline;
+}

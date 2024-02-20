@@ -1,1 +1,1 @@
-function Wn(n){if(n.P&&"function"==typeof n.P)return n.P();if(t(n))return n.split("");if(s(n)){for(var e=[],i=n.length,r=0;r<i;r++)e.push(n[r]);return e}return R(n)}
+function Wn(){return new x(this)}

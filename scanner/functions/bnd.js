@@ -1,0 +1,1 @@
+function bnd(f) {return function(){f.apply(null, args);};}

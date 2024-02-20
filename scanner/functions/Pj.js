@@ -1,1 +1,1 @@
-function Pj(a,b){a=a|0;b=b|0;var c=0;b=H[b+88>>2];if(!(!b|H[b>>2]!=2)){c=a;a=H[b+8>>2];H[c+4>>2]=I[a|0]|I[a+1|0]<<8|(I[a+2|0]<<16|I[a+3|0]<<24);c=1}return c|0}
+function Pj(a,c,d){a=a|0;c=c|0;d=d|0;var e=0,g=0,h=0,i=0,j=0,k=0;e=u;u=u+16|0;g=e;h=e+4|0;f[g>>2]=c;c=ln(32)|0;f[h>>2]=c;f[h+8>>2]=-2147483616;f[h+4>>2]=17;i=c;j=14495;k=i+17|0;do{b[i>>0]=b[j>>0]|0;i=i+1|0;j=j+1|0}while((i|0)<(k|0));b[c+17>>0]=0;Xj(Hd(a,g)|0,h,d);if((b[h+11>>0]|0)>=0){u=e;return}Oq(f[h>>2]|0);u=e;return}

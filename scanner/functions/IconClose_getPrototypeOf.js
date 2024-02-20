@@ -1,0 +1,1 @@
+function IconClose_getPrototypeOf(o) { IconClose_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return IconClose_getPrototypeOf(o); }

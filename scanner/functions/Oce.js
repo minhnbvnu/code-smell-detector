@@ -1,0 +1,1 @@
+function Oce(e){for(var t=0;t<e.length&&(e[t]===32||e[t]===10||e[t]===9);)++t;return t+22<=e.length&&e.slice(t,t+22).toString("ascii").toLowerCase()==="putty-user-key-file-2:"}

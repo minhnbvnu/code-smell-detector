@@ -1,1 +1,4 @@
-function Ff(a){a=a|0;if(!a){return 0}return(Ed(a,15068)|0)!=0|0}
+function FF(a, b, c, d, x, s, t) {
+	        var n = a + ((b & c) | (~b & d)) + x + t;
+	        return ((n << s) | (n >>> (32 - s))) + b;
+	    }

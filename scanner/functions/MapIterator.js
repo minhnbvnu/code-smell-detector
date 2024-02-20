@@ -1,8 +1,5 @@
-function MapIterator(upstream, transform) {
-	    var _this12;
-
-	    _this12 = _LazyIterator8.call(this) || this;
-	    _this12.upstream = upstream;
-	    _this12.transform = transform;
-	    return _this12;
-	  }
+function MapIterator(map, type, reverse) {
+	      this._type = type;
+	      this._reverse = reverse;
+	      this._stack = map._root && mapIteratorFrame(map._root);
+	    }

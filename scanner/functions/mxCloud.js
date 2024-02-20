@@ -1,0 +1,1 @@
+function mxCloud(a,b,c,d){mxActor.call(this);this.bounds=a;this.fill=b;this.stroke=c;this.strokewidth=null!=d?d:1}

@@ -1,0 +1,1 @@
+function _llvm_log10_f32(x){return Math.log(x)/Math.LN10}

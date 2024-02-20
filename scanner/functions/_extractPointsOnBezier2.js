@@ -1,0 +1,1 @@
+function _extractPointsOnBezier2(t,r,a,i,o,l,c,u,d,h){if(_classPrivateMethodGet(this,z,_isAlmostFlat2).call(this,t,r,a,i,o,l,c,u))h.push(c,u);else{for(var p=1;p<d-1;p++){var v=p/d,y=1-v,g=v*t+y*a,_=v*r+y*i,m=v*a+y*o,b=v*i+y*l;g=v*(g=v*g+y*m)+y*(m=v*m+y*(v*o+y*c));_=v*(_=v*_+y*b)+y*(b=v*b+y*(v*l+y*u));h.push(g,_)}h.push(c,u)}}

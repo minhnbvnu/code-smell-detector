@@ -1,0 +1,1 @@
+function mxStencil(a){this.desc=a;this.parseDescription();this.parseConstraints()}

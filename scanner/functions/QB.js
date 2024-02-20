@@ -1,1 +1,1 @@
-function Qb(){return 0}
+function QB(n){let t=n.localName==="template"?n.content.firstChild:n.firstChild;t.parentNode.removeChild(t)}

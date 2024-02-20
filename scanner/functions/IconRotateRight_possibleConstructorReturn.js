@@ -1,0 +1,1 @@
+function IconRotateRight_possibleConstructorReturn(self, call) { if (call && (IconRotateRight_typeof(call) === "object" || typeof call === "function")) { return call; } return IconRotateRight_assertThisInitialized(self); }

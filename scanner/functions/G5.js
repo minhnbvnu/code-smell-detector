@@ -1,0 +1,1 @@
+function G5(t,e,r){return function(){var n=e.apply(this,arguments);n==null?this.style.removeProperty(t):this.style.setProperty(t,n,r)}}

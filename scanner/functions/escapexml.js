@@ -1,0 +1,1 @@
+function escapexml(text){var s=text+"";return s.replace(decregex,function(y){return rencoding[y]}).replace(charegex,function(s){return"_x"+("000"+s.charCodeAt(0).toString(16)).substr(-4)+"_"})}

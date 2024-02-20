@@ -1,0 +1,1 @@
+function $Se(e,t){return e.trim().split(/\s+/).map(function(r){return HSe(r,t)}).join(" ")}

@@ -1,0 +1,1 @@
+function L5(t,e){return t<e?-1:t>e?1:t>=e?0:NaN}

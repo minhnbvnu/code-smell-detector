@@ -1,0 +1,1 @@
+function getVariation(i){return i.split("-")[1]}

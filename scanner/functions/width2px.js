@@ -1,0 +1,1 @@
+function width2px(width){return(width+(128/MDW|0)/256)*MDW|0}

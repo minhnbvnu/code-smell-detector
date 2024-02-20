@@ -1,0 +1,1 @@
+function xee(e){return e.byteLength===e.buffer.byteLength?e.buffer:e.buffer.slice(e.byteOffset,e.byteOffset+e.byteLength)}

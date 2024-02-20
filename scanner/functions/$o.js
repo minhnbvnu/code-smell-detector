@@ -1,1 +1,1 @@
-function $o(t,n,e,i,r,o){return t.a.vb(n,e,i,function(){t.f||(t.f=!0,t.a.ua(t.i))},function(){t.reset()},r,o)}
+function $o(){var t=this.localeData()._week;return De(this.weekYear(),t.dow,t.doy)}

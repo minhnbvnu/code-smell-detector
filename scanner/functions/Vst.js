@@ -1,0 +1,1 @@
+function Vst(n,t){return function(){this.setAttributeNS(n.space,n.local,t)}}

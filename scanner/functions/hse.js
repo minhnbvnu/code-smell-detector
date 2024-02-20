@@ -1,0 +1,1 @@
+function hse(){let e;try{e=zn.storage.getItem("debug")}catch{}return!e&&typeof process!="undefined"&&"env"in process&&(e=process.env.DEBUG),e}

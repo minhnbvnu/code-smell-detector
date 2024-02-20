@@ -1,0 +1,1 @@
+function getHeadersWidthR(){return headersWidthR=0,columns.forEach((function(e,o){options.frozenColumn>-1&&o>options.frozenColumn&&(headersWidthR+=e.width)})),hasFrozenColumns()&&(headersWidthR=Math.max(headersWidthR,viewportW)+getHeadersWidthL(),headersWidthR+=scrollbarDimensions.width),headersWidthR}

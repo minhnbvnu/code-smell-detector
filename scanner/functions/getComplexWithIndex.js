@@ -1,8 +1,1 @@
-function getComplexWithIndex(complex, index) {
-	  var real = complex[index * 2];
-	  var imag = complex[index * 2 + 1];
-	  return {
-	    real: real,
-	    imag: imag
-	  };
-	}
+function getComplexWithIndex(e,t){return {real:e[2*t],imag:e[2*t+1]}}

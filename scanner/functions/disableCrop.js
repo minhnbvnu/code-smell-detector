@@ -1,0 +1,1 @@
+function disableCrop(){options.disabled=true;Selection.disableHandles();Selection.setCursor("default");Tracker.setCursor("default")}

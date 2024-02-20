@@ -1,0 +1,1 @@
+function GS(t){Wo.call(this,null,t)}

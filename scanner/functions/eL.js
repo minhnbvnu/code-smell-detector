@@ -1,0 +1,1 @@
+function eL(t,e){var n=e.__brushOption;rL(e).updateCoverShape(t,e,n.range,n)}

@@ -1,0 +1,1 @@
+function r5(t){return function(){return this.ownerDocument.createElementNS(t.space,t.local)}}

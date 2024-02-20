@@ -1,0 +1,1 @@
+function PDFNetworkStream(t){_classCallCheck(this,PDFNetworkStream);this._source=t;this._manager=new l(t.url,{httpHeaders:t.httpHeaders,withCredentials:t.withCredentials});this._rangeChunkSize=t.rangeChunkSize;this._fullRequestReader=null;this._rangeRequestReaders=[]}

@@ -1,1 +1,1 @@
-function kv(){var a=0;a=sa(24);og(a);return a|0}
+function Kv(e,r,t){if(t==null)t=wa(4);return ln(r,t)}

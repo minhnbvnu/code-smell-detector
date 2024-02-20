@@ -1,0 +1,1 @@
+function h6e(e){let t=e.ownerDocument;for(let r=e.parentNode;r&&r!=t.body;)if(r.nodeType==1){if(r.scrollHeight>r.clientHeight||r.scrollWidth>r.clientWidth)return r;r=r.assignedSlot||r.parentNode}else if(r.nodeType==11)r=r.host;else break;return null}

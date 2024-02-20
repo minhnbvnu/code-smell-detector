@@ -1,0 +1,1 @@
+function ArithmeticDecoder(t,r,o){!function _classCallCheck(t,r){if(!(t instanceof r))throw new TypeError("Cannot call a class as a function")}(this,ArithmeticDecoder);this.data=t;this.bp=r;this.dataEnd=o;this.chigh=t[r];this.clow=0;this.byteIn();this.chigh=this.chigh<<7&65535|this.clow>>9&127;this.clow=this.clow<<7&65535;this.ct-=7;this.a=32768}

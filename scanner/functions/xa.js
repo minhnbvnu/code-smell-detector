@@ -1,1 +1,2 @@
-function xa(a,b){if(a.e){var c=a.b,d=++c.a;2*d>c.f&&(c.f*=2,c.c=Ja(c.c,c.f+1));var e;0===c.b?e=d:(e=c.b,c.b=c.c[c.b]);c.e[e]=b;c.c[e]=d;c.d[d]=e;c.h&&va(c,d);return e}c=a.a++;a.c[c]=b;return-(c+1)}
+function xa(a,c){a.from&&a.to?(b(a.from.element).setHost(c),
+b(a.to.element).setHost(c)):b(a.element).setHost(c)}

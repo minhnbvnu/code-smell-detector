@@ -1,0 +1,1 @@
+function firstbyte(f,o){switch((o||{}).type||"base64"){case"buffer":return f[0];case"base64":return Base64.decode(f.substr(0,12)).charCodeAt(0);case"binary":return f.charCodeAt(0);case"array":return f[0];default:throw new Error("Unrecognized type "+o.type)}}

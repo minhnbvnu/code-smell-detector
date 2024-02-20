@@ -1,0 +1,1 @@
+function Zce(e,t){e.signatures.openssh===void 0&&(e.signatures.openssh={});try{var r=F2(e,!0)}catch{return delete e.signatures.openssh,!1}var i=e.signatures.openssh,a=void 0;(t.type==="rsa"||t.type==="dsa")&&(a="sha1");var n=t.createSign(a);return n.write(r),i.signature=n.sign(),!0}

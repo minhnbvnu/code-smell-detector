@@ -1,3 +1,1 @@
-function loadWeightsAsArrayBuffer(_x, _x2) {
-	  return _loadWeightsAsArrayBuffer.apply(this, arguments);
-	}
+function loadWeightsAsArrayBuffer(e,t,n){return __awaiter(this,void 0,void 0,function(){var r,o;return __generator(this,function(a){switch(a.label){case 0:return null==n&&(n=fetch),r=e.map(function(e){return n(e,t)}),[4,Promise.all(r)];case 1:return o=a.sent(),[4,Promise.all(o.map(function(e){return e.arrayBuffer()}))];case 2:return [2,a.sent()]}})})}

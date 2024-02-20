@@ -1,0 +1,1 @@
+function _emscripten_asm_const_int_sync_on_main_thread(code,sigPtr,argbuf){return mainThreadEM_ASM(code,sigPtr,argbuf,1)}

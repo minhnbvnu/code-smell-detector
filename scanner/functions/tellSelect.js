@@ -1,0 +1,1 @@
+function tellSelect(){return unscale(Coords.getFixed())}

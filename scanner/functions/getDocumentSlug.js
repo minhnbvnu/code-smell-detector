@@ -1,0 +1,3 @@
+function getDocumentSlug() {
+  return docSlug;
+}

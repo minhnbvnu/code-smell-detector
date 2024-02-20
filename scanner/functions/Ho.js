@@ -1,1 +1,1 @@
-function Ho(t){return Eo(t.b,Tf,t.a)}
+function Ho(t,e){return e.erasNarrowRegex(t)}

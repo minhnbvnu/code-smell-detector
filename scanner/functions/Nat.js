@@ -1,0 +1,1 @@
+function Nat(){var n=kd.now(),t=n-$v;t>A8&&(Uv-=t,$v=n)}

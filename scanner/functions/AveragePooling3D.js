@@ -1,3 +1,3 @@
-function averagePooling3d(args) {
-	  return new AveragePooling3D(args);
-	}
+function AveragePooling3D(args) {
+	    return _Pooling3D2.call(this, args) || this;
+	  }

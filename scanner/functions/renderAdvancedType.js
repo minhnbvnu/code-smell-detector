@@ -1,0 +1,1 @@
+function renderAdvancedType(i){switch(i.name){case"enum":return s.createElement(Yn,null,i.name);case"literal":return s.createElement(Yn,null,i.value);case"signature":return s.createElement(gr,{name:i.type,raw:i.raw});case"union":case"tuple":return s.createElement(gr,{name:i.name,raw:i.raw});default:return s.createElement(Yn,null,i.raw||i.name)}}

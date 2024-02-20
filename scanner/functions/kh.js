@@ -1,1 +1,1 @@
-function kh(a,b){a=a|0;b=b|0;return O(L[H[a+8>>2]+(b<<2)>>2])}
+function kh(t){for(var e in t)if(t.hasOwnProperty(e)&&t[e].redundant){for(var i=0;i<t[e].redundant.length;i++)t[e].redundant[i].parentNode.removeChild(t[e].redundant[i]);t[e].redundant=[]}}

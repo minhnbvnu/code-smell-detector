@@ -1,1 +1,1 @@
-function Wo(t){return t.b.get(Tf,t.a).then(function(t){return"pending"==t})}
+function Wo(){var t,e,i=[],n=[],o=[],r=[],s=this.eras();for(t=0,e=s.length;t<e;++t)n.push(jt(s[t].name)),i.push(jt(s[t].abbr)),o.push(jt(s[t].narrow)),r.push(jt(s[t].name)),r.push(jt(s[t].abbr)),r.push(jt(s[t].narrow));this._erasRegex=new RegExp("^("+r.join("|")+")","i"),this._erasNameRegex=new RegExp("^("+n.join("|")+")","i"),this._erasAbbrRegex=new RegExp("^("+i.join("|")+")","i"),this._erasNarrowRegex=new RegExp("^("+o.join("|")+")","i")}

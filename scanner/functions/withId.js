@@ -1,0 +1,1 @@
+function withId(source,flags){return RegExp(source.replace(/<ID>/g,(function(){return/(?!\s)[_$a-zA-Z\xA0-\uFFFF](?:(?!\s)[$\w\xA0-\uFFFF])*/.source})),flags)}

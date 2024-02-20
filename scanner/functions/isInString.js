@@ -1,0 +1,1 @@
+function isInString(state) { return isIn(state, "string"); }

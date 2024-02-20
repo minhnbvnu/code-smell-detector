@@ -1,0 +1,1 @@
+function side(e,t){void 0!=e&&(console.log(),$.single(".sidebar").innerHTML='\n\t\t<center>\n\t\t\t<img src="'+e+'" alt="Logo" class="img">\n\t\t</center>\n\t\t'+$.single(".sidebar").innerHTML,$.single(".sidebar").innerHTML+='\n\t\t<center>\n\t\t\t<div class="copyright-side">© Copyright '+t+" "+(new Date).getFullYear()+"</div>\n\t\t</center>\n\t\t"),listener()}

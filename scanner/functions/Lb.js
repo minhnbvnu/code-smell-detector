@@ -1,0 +1,1 @@
+function Lb(a){return n.isWindow(a)?a:9===a.nodeType&&a.defaultView}

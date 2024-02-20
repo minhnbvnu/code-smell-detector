@@ -1,0 +1,1 @@
+function Info$2(property,attribute){this.property=property,this.attribute=attribute}

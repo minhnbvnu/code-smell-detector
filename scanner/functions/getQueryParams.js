@@ -1,12 +1,1 @@
-function getQueryParams(queryString) {
-	  var params = {};
-	  queryString.replace(/[?&]([^=?&]+)(?:=([^&]*))?/g, function (s) {
-	    for (var _len = arguments.length, t = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
-	      t[_key - 1] = arguments[_key];
-	    }
-
-	    decodeParam(params, t[0], t[1]);
-	    return t.join('=');
-	  });
-	  return params;
-	}
+function getQueryParams(e){var t={};return e.replace(/[?&]([^=?&]+)(?:=([^&]*))?/g,function(e){for(var n=[],r=1;r<arguments.length;r++)n[r-1]=arguments[r];return decodeParam(t,n[0],n[1]),n.join("=")}),t}

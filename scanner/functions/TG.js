@@ -1,0 +1,1 @@
+function TG(t,e){return Math.abs(t-e)<1e-5}

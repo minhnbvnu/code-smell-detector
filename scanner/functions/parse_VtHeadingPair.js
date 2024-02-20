@@ -1,0 +1,1 @@
+function parse_VtHeadingPair(blob){var headingString=parse_TypedPropertyValue(blob,VT_USTR);var headerParts=parse_TypedPropertyValue(blob,VT_I4);return[headingString,headerParts]}

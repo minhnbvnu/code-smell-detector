@@ -1,14 +1,1 @@
-function mergeRealAndImagArrays(real, imag) {
-	  if (real.length !== imag.length) {
-	    throw new Error("Cannot merge real and imag arrays of different lengths. real:" + (real.length + ", imag: " + imag.length + "."));
-	  }
-
-	  var result = new Float32Array(real.length * 2);
-
-	  for (var i = 0; i < result.length; i += 2) {
-	    result[i] = real[i / 2];
-	    result[i + 1] = imag[i / 2];
-	  }
-
-	  return result;
-	}
+function mergeRealAndImagArrays(e,t){if(e.length!==t.length)throw new Error("Cannot merge real and imag arrays of different lengths. real:"+e.length+", imag: "+t.length+".");for(var n=new Float32Array(2*e.length),r=0;r<n.length;r+=2)n[r]=e[r/2],n[r+1]=t[r/2];return n}

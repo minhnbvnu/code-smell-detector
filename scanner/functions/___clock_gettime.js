@@ -1,0 +1,1 @@
+function ___clock_gettime(){return _clock_gettime.apply(null,arguments)}

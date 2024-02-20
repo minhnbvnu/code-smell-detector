@@ -1,0 +1,1 @@
+function M8(t){return Array.isArray(t)?t:lp(t)?[]:[t]}

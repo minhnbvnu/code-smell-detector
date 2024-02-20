@@ -1,0 +1,1 @@
+function gotoRowEnd(e,o,t){var n=findLastFocusableCell(e);return null===n?null:{row:e,cell:n,posX:n}}

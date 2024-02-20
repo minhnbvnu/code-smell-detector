@@ -1,0 +1,1 @@
+function hrt(n,t){let e=this.cache;e[0]!==t&&(n.uniform1i(this.addr,t),e[0]=t)}

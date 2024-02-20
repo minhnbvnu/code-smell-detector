@@ -1,0 +1,1 @@
+function rx(t){return function(){return t}}

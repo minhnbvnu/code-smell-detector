@@ -1,0 +1,1 @@
+function _objectAdd(e,t){var n=e.constructor();if("object"===_typeof(t))for(var r in e)n[r]=e[r]+t[r];else for(var i in e)n[i]=e[i]+t;return Object.isFrozen(e)?Object.freeze(n):n}

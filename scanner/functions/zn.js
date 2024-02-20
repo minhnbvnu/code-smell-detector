@@ -1,1 +1,1 @@
-function Zn(t,n){if(n){if(n=+n,isNaN(n)||0>n)throw Error("Bad port number "+n);t.i=n}else t.i=null}
+function zn(t){var e,i,n=a(t)&&!h(t),o=!1,r=["sameDay","nextDay","lastDay","nextWeek","lastWeek","sameElse"];for(e=0;e<r.length;e+=1)i=r[e],o=o||l(t,i);return n&&o}

@@ -1,0 +1,1 @@
+function _encodepoint(t){var n=_encodeint(t[1]);return t[0].isOdd()&&(n[31]|=128),n}

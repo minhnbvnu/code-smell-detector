@@ -1,0 +1,1 @@
+function nextWhitespace(str,i){while(!isWhitespace(str,i))++i;return i}

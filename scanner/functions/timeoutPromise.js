@@ -1,5 +1,5 @@
-function timeoutPromise(timeout) {
-  return new Promise(function(resolve) {
-    global.setTimeout(resolve, timeout);
-  });
+function timeoutPromise (timeout) {
+  return new Promise(function (resolve) {
+    setTimeout(resolve, timeout)
+  })
 }

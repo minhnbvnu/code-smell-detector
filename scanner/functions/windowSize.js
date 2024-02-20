@@ -1,0 +1,1 @@
+function windowSize(x){return x?window.innerWidth||document.documentElement[LEXICON.cW]||document.body[LEXICON.cW]:window.innerHeight||document.documentElement[LEXICON.cH]||document.body[LEXICON.cH]}

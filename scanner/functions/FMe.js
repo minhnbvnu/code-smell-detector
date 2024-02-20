@@ -1,0 +1,1 @@
+function FMe(e,t){return"var pattern"+e+" = new RegExp("+n1.toQuotedString(t[e])+");"}

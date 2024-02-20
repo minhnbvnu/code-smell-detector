@@ -1,0 +1,1 @@
+function up(a,c){a=a|0;c=c|0;b[a>>0]=b[c>>0]|0;return}

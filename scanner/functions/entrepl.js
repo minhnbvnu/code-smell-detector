@@ -1,0 +1,1 @@
+function entrepl($$,$1){return String.fromCharCode(parseInt($1,10))}

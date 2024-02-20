@@ -1,0 +1,1 @@
+function U4e(e){return e.toISOString()}

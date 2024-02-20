@@ -1,17 +1,1 @@
-function decodeHuffman(tree) {
-      var node = tree;
-
-      while (true) {
-        node = node[readBit()];
-
-        switch (typeof node) {
-          case "number":
-            return node;
-
-          case "object":
-            continue;
-        }
-
-        throw new JpegError("invalid huffman sequence");
-      }
-    }
+function decodeHuffman(t){for(var r=t;;){switch(_typeof(r=r[readBit()])){case"number":return r;case"object":continue}throw new u("invalid huffman sequence")}}

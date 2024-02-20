@@ -1,0 +1,1 @@
+function Gfe(e){return e.hasChildItems!=null?e.hasChildItems:!!(e.childItems||e.title&&S.Children.count(e.children)>0)}

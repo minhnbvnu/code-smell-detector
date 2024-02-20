@@ -1,8 +1,7 @@
-function setStyle(dom, strCss) {
-    let cssText = dom.style.cssText;
-    if (!endsWith(cssText, ';')) {
-        cssText += ';';
-    }
-    dom.style.cssText = cssText + strCss;
-    return this;
+function setStyle(el, style, preserveWhitespace) {
+  if (preserveWhitespace) {
+    style.whiteSpace = 'pre-wrap'
+  }
+  let cssString = CSSPropertyOperations.createMarkupForStyles(style)
+  el.setAttribute('style', cssString)
 }

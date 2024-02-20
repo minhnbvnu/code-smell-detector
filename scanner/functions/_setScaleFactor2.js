@@ -1,0 +1,1 @@
+function _setScaleFactor2(t,r){var a=_classPrivateMethodGet(this,X,_getPadding2).call(this),i=(t-a)/_classPrivateFieldGet(this,p),o=(r-a)/_classPrivateFieldGet(this,h);this.scaleFactor=Math.min(i,o)}

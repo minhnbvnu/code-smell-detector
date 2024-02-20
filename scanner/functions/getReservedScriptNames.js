@@ -1,3 +1,0 @@
-function getReservedScriptNames() {
-    return reservedScriptNames;
-}

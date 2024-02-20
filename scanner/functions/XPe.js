@@ -1,0 +1,3 @@
+function XPe(e,t){let r=[];for(let i in e)if({}.hasOwnProperty.call(e,i)&&e[i].trim()!==""){let a=e[i].trim().split(`\r
+`),n=t[i].trim().split(`\r
+`),s=Rt.getValue(a,"NetEnabled","=");if(s!==""){let o=parseInt(Rt.getValue(a,"speed","=").trim(),10)/1e6;r.push({mac:Rt.getValue(a,"MACAddress","=").toLowerCase(),dhcp:Rt.getValue(n,"dhcpEnabled","=").toLowerCase(),name:Rt.getValue(a,"Name","=").replace(/\]/g,")").replace(/\[/g,"("),netEnabled:s==="TRUE",speed:isNaN(o)?-1:o,operstate:Rt.getValue(a,"NetConnectionStatus","=")==="2"?"up":"down",type:Rt.getValue(a,"AdapterTypeID","=")==="9"?"wireless":"wired"})}}return r}

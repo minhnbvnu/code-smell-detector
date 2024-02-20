@@ -1,0 +1,1 @@
+function zAe(e){return function(r,i){return e!==T_.browser?r:["color:"+HAe(i.level),"color:unset"].concat(r)}}

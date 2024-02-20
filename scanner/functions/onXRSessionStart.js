@@ -1,0 +1,5 @@
+function onXRSessionStart() {
+
+    		animation.stop();
+
+    	}

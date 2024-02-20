@@ -1,6 +1,1 @@
-function operatorListChanged() {
-      if (intentState.operatorList.lastChunk) {
-        intentState.opListReadCapability.resolve(intentState.operatorList);
-        intentState.renderTasks.delete(opListTask);
-      }
-    }
+function operatorListChanged(){if(h.operatorList.lastChunk){h.opListReadCapability.resolve(h.operatorList);h.renderTasks.delete(u)}}

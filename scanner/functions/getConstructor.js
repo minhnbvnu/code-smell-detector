@@ -1,0 +1,1 @@
+function getConstructor(C){var S=assertObject(C)[SPECIES];return S!=undefined?S:C}

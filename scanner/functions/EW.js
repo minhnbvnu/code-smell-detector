@@ -1,0 +1,1 @@
+function EW(n,t,e,i,r,o,s="channelsLast"){let[a,l]=h1(t),c;if(s==="channelsLast")c=[a,l,n[3],n[3]];else if(s==="channelsFirst")c=[a,l,n[1],n[1]];else throw new Error(`Unknown dataFormat ${s}`);return Qb(n,c,e,i,r,o,!1,s)}

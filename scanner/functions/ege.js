@@ -1,0 +1,1 @@
+function ege(e){return e.length===1||!/^[A-Z]/i.test(e)?e:""}

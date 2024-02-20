@@ -1,0 +1,1 @@
+function Y8e(e){return function(){if(!this.store.synchronous)throw new Error("CookieJar store is not synchronous; use async API instead.");var t=Array.prototype.slice.call(arguments),r,i;if(t.push(function(n,s){r=n,i=s}),this[e].apply(this,t),r)throw r;return i}}

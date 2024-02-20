@@ -1,6 +1,3 @@
-function warn(...args) {
-  if (level > levels.warn) {
-    return;
+function warn(oldMethod, newMethod) {
+    $log.warn('$ionicViewService' + oldMethod + ' is deprecated, please use $ionicHistory' + newMethod + ' instead: http://ionicframework.com/docs/nightly/api/service/$ionicHistory/');
   }
-  console.warn(...args); // eslint-disable-line no-console
-}

@@ -1,0 +1,1 @@
+function GAe(){return m3(require.main&&require.main.filename)||m3(process.resourcesPath,"app.asar")||m3(process.cwd())||{name:null,version:null}}

@@ -1,0 +1,1 @@
+function WK(e){var t={};return e.listPropertyNames().forEach((function(n){t[n]=e.getPropertyByName(n).value})),t}

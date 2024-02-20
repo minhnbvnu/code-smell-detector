@@ -1,3 +1,1 @@
-function isOctalDigit(ch) {
-	        return ch >= 0x30 && ch <= 0x37; // 0..7
-	    }
+function isOctalDigit(i){return i>=48&&i<=55}

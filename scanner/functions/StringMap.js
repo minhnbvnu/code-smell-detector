@@ -1,0 +1,3 @@
+function StringMap() {
+        this.$data = {};
+    }

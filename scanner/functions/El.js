@@ -1,3 +1,1 @@
-function el(id) {
-  return document.getElementById(id);
-}
+function El(t,e,i){if(0==t.body.hiddenDates.length){var n=t.range.conversion(i);return new Date(e/n.scale+n.offset)}var r=Yl(t.body.hiddenDates,t.range.start,t.range.end),o=(t.range.end-t.range.start-r)*e/i,s=Ll(t.body.hiddenDates,t.range,o);return new Date(s+o+t.range.start)}

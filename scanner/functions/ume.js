@@ -1,0 +1,1 @@
+function ume(e,t){var r="",i;for(i=0;i<t;i+=1)r+=e;return r}

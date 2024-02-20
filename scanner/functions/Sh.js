@@ -1,0 +1,1 @@
+function Sh(t,e,i){var n;return e.hasOwnProperty(t)?e[t].redundant.length>0?(n=e[t].redundant[0],e[t].redundant.shift()):(n=document.createElementNS("http://www.w3.org/2000/svg",t),i.appendChild(n)):(n=document.createElementNS("http://www.w3.org/2000/svg",t),e[t]={used:[],redundant:[]},i.appendChild(n)),e[t].used.push(n),n}

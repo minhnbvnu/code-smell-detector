@@ -1,10 +1,14 @@
-function getArrayBuffer(xhr) {
-  const data = xhr.response;
+function getArrayBuffer( json, uuid ) {
 
-  if (typeof data !== "string") {
-    return data;
-  }
+			if ( arrayBufferMap[ uuid ] !== undefined ) return arrayBufferMap[ uuid ];
 
-  const array = (0, _util.stringToBytes)(data);
-  return array.buffer;
-}
+			const arrayBuffers = json.arrayBuffers;
+			const arrayBuffer = arrayBuffers[ uuid ];
+
+			const ab = new Uint32Array( arrayBuffer ).buffer;
+
+			arrayBufferMap[ uuid ] = ab;
+
+			return ab;
+
+		}

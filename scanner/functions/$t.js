@@ -1,1 +1,1 @@
-function $t(t,n,e,i){for(var r=0;r<t.length;++r){var o=t[r];if(!o.ma&&o.listener==n&&o.capture==!!e&&o.La==i)return r}return-1}
+function $t(e){return(0<e)-(e<0)||+e}

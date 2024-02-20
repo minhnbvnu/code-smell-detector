@@ -1,19 +1,18 @@
-function getImport(symbol, member) {
-  const defaultExport = symbol.name.split('~');
-  if (symbol.isDefaultExport) {
-    const from = defaultExport[0].replace(/^module\:/, './');
-    const importName = from.replace(/[.\/]+/g, '$');
-    return `import ${importName} from '${from}.js';`;
-  }
-  const namedExport = symbol.name.split('.');
-  if (
-    member &&
-    namedExport.length > 1 &&
-    (defaultExport.length <= 1 || defaultExport[0].includes('.'))
-  ) {
-    const from = namedExport[0].replace(/^module\:/, './');
-    const importName = from.replace(/[.\/]+/g, '_');
-    return `import {${member} as ${importName}$${member}} from '${from}.js';`;
-  }
-  return '';
-}
+function getImport() {
+                const isImport3 = isNodeImport(node);
+                if (!isImport3)
+                    return void 0;
+                let importedSymbol = checker.getImmediateAliasedSymbol(symbol);
+                if (!importedSymbol)
+                    return void 0;
+                importedSymbol = skipExportSpecifierSymbol(importedSymbol, checker);
+                if (importedSymbol.escapedName === "export=") {
+                    importedSymbol = getExportEqualsLocalSymbol(importedSymbol, checker);
+                    if (importedSymbol === void 0)
+                        return void 0;
+                }
+                const importedName = symbolEscapedNameNoDefault(importedSymbol);
+                if (importedName === void 0 || importedName === "default" /* Default */ || importedName === symbol.escapedName) {
+                    return { kind: 0 /* Import */, symbol: importedSymbol };
+                }
+            }

@@ -1,0 +1,1 @@
+function evert(obj){var o=[],K=keys(obj);for(var i=0;i!==K.length;++i)o[obj[K[i]]]=K[i];return o}

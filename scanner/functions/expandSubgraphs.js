@@ -1,0 +1,1 @@
+function expandSubgraphs(entries,subgraphs){_.forEach(entries,function(entry){entry.vs=_.flatten(entry.vs.map(function(v){if(subgraphs[v]){return subgraphs[v].vs}return v}),true)})}

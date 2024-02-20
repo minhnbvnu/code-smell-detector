@@ -1,0 +1,1 @@
+function cJ(e){return sJ(sJ({},e),{},{circleProps:sJ({r:5,stroke:"red",fill:"red"},e.circleProps),textProps:sJ({fill:"white"},e.textProps)})}

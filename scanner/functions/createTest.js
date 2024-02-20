@@ -1,12 +1,25 @@
-function createTest(attr, value) {
-    if (attr instanceof Function) {
-        return attr;
-    }
-    return (node) => {
-        let x = node[attr];
-        if (x instanceof Function) {
-            x = x();
-        }
-        return x === value;
+function createTest(property, setUp, tearDown) {
+    return function () {
+      if (setUp) {
+        setUp.apply(this, arguments);
+      }
+
+      var exception, result;
+
+      try {
+        result = property.apply(this, arguments);
+      } catch (e) {
+        exception = e;
+      }
+
+      if (tearDown) {
+        tearDown.apply(this, arguments);
+      }
+
+      if (exception) {
+        throw exception;
+      }
+
+      return result;
     };
-}
+  }

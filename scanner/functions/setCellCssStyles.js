@@ -1,0 +1,1 @@
+function setCellCssStyles(e,o){var t=cellCssClasses[e];cellCssClasses[e]=o,updateCellCssStylesOnRenderedRows(o,t),trigger(self.onCellCssStylesChanged,{key:e,hash:o,grid:self})}

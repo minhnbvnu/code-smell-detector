@@ -1,7 +1,5 @@
-function createAnchor(kind, rawLength) {
-	      return addRaw({
-	        type: 'anchor',
-	        kind: kind,
-	        range: [pos - rawLength, pos]
-	      });
-	    }
+function createAnchor(content, persist) {
+    var anchor = config.debug ? document.createComment(content) : document.createTextNode(persist ? ' ' : '');
+    anchor.__v_anchor = true;
+    return anchor;
+  }

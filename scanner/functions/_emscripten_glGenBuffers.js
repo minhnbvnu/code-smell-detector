@@ -1,0 +1,1 @@
+function _emscripten_glGenBuffers(n,buffers){__glGenObject(n,buffers,"createBuffer",GL.buffers)}

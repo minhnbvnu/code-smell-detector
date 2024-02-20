@@ -1,0 +1,1 @@
+function regexpMatches(val) { /*jshint validthis:true */ return this.pattern.test(val); }

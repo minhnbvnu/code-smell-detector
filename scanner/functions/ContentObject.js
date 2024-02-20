@@ -1,0 +1,1 @@
+function ContentObject(t,o){var c;_classCallCheck(this,ContentObject);(c=r.call(this,t,o))[x]="";return c}

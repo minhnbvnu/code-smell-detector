@@ -1,0 +1,1 @@
+function b1(p0) { p0 = p0|0; abort(1); }

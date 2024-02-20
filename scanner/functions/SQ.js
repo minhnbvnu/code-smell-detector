@@ -1,0 +1,1 @@
+function SQ(e){const{root:t,...r}=e,n=JSON.stringify(r);let i=xQ.get(t);return i||(i={},xQ.set(t,i)),i[n]?i[n]:i[n]=W7e(e)}

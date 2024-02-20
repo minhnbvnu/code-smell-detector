@@ -1,0 +1,1 @@
+function V2(t,e){var r=t._x1-t._x0;return r?(3*(t._y1-t._y0)/r-e)/2:e}

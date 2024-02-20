@@ -1,0 +1,3 @@
+function getLocales() {
+      return locales;
+    }

@@ -1,12 +1,1 @@
-function rfc5987decode(extvalue) {
-    const encodingend = extvalue.indexOf("'");
-
-    if (encodingend === -1) {
-      return extvalue;
-    }
-
-    const encoding = extvalue.slice(0, encodingend);
-    const langvalue = extvalue.slice(encodingend + 1);
-    const value = langvalue.replace(/^[^']*'/, "");
-    return textdecode(encoding, value);
-  }
+function rfc5987decode(t){var r=t.indexOf("'");return-1===r?t:textdecode(t.slice(0,r),t.slice(r+1).replace(/^[^']*'/,""))}

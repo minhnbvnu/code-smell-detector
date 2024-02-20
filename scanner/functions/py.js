@@ -1,1 +1,1 @@
-function Py(a){a=a|0;return Yf(a)|0}
+function py(){return[]}

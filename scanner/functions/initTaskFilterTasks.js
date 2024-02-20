@@ -1,0 +1,1 @@
+function initTaskFilterTasks(container){var tasks=container.find("[data-role=task]");return tasks}

@@ -1,0 +1,1 @@
+function _isFindInputVisible () { return Boolean(fnrDialog.find('input.sm-find')) }

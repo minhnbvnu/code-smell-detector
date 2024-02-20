@@ -1,0 +1,1 @@
+function vAe(){var e=lg();return e?!e.isPackaged||process.env.ELECTRON_IS_DEV==="1":!1}

@@ -1,0 +1,1 @@
+function invoke_d(index){try{return Module["dynCall_d"](index)}catch(e){if(typeof e!=="number"&&e!=="longjmp")throw e;Module["setThrew"](1,0)}}

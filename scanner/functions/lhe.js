@@ -1,0 +1,1 @@
+function lhe(){return!0}

@@ -1,0 +1,1 @@
+function Encrypt(t){_classCallCheck(this,Encrypt);return r.call(this,d,"encrypt")}

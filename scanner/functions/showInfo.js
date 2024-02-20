@@ -1,11 +1,16 @@
-function showInfo(event) {
-  const features = map.getFeaturesAtPixel(event.pixel);
-  if (features.length == 0) {
-    info.innerText = '';
-    info.style.opacity = 0;
-    return;
-  }
-  const properties = features[0].getProperties();
-  info.innerText = JSON.stringify(properties, null, 2);
-  info.style.opacity = 1;
+function showInfo(){ 
+    var scenarioFile="info/info_"+scenarioString+".html";
+    console.log("showInfo (control_gui): scenarioFile=",scenarioFile);
+
+
+   // scenarioFile is dynamically determined 
+   // e.g., "info/info_"+scenarioString+".html"
+
+    if(infoLevel===0){$("#infotext").load("info/info_gui.html");}
+    else if(infoLevel===1){$("#infotext").load(scenarioFile);}
+    else if(infoLevel===2){$("#infotext").load("info/info_IDM.html");}
+    else if(infoLevel===3){$("#infotext").load("info/info_MOBIL.html");}
+    else if(infoLevel===4){$("#infotext").load("info/info_BC.html");}
+    else if(infoLevel===5){$("#infotext").load("info/info_Numerics.html");}
+    infoLevel++; infoLevel=(infoLevel%nLevels);
 }

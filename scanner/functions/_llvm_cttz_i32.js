@@ -1,0 +1,1 @@
+function _llvm_cttz_i32(x){x=x|0;return(x?31-(Math_clz32(x^x-1)|0)|0:32)|0}

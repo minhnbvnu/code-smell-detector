@@ -1,6 +1,1 @@
-function isReference(node, scope, state) {
-	  var declared = state.letReferences[node.name];
-	  if (!declared) return false;
-
-	  return scope.getBindingIdentifier(node.name) === declared;
-	}
+function isReference(i,o){return"MemberExpression"===i.type?!i.computed&&isReference(i.object,i):"Identifier"===i.type?!o||!/(Function|Class)Expression/.test(o.type)&&("VariableDeclarator"===o.type?i===o.init:"MemberExpression"===o.type||"MethodDefinition"===o.type?o.computed||i===o.object:"ArrayPattern"!==o.type&&("Property"===o.type?"ObjectPattern"!==o.parent.type&&(o.computed||i===o.value):"MethodDefinition"!==o.type&&("ExportSpecifier"!==o.type||i===o.local))):void 0}

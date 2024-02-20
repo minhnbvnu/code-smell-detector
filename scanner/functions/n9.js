@@ -1,0 +1,1 @@
+function n9(){let e=require("electron");return n9=function(){return e},e}

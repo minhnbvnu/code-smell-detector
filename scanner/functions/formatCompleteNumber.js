@@ -1,0 +1,1 @@
+function formatCompleteNumber(i,o,s){var u=s.metadata,C=s.shouldTryNationalPrefixFormattingRule,_=s.getSeparatorAfterNationalPrefix;if(new RegExp("^(?:".concat(o.pattern(),")$")).test(i.nationalSignificantNumber))return formatNationalNumberWithAndWithoutNationalPrefixFormattingRule(i,o,{metadata:u,shouldTryNationalPrefixFormattingRule:C,getSeparatorAfterNationalPrefix:_})}

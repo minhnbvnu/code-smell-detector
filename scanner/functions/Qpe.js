@@ -1,0 +1,1 @@
+function Qpe(e,t){e=Ta(e,"text");let{children:r,...n}=e,{styleProps:i}=_t(n),a=Yr(t);return S.createElement("span",{...Kt(n),...i,ref:a},r)}

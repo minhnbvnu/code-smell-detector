@@ -1,0 +1,1 @@
+function pw(t){return!(t===null||!fw.test(t)||t[t.length-1]==="_")}

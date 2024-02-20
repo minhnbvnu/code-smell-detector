@@ -1,0 +1,1 @@
+function l8(n){return new Ci(n>>16&255,n>>8&255,n&255,1)}

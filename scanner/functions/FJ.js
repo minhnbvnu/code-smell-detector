@@ -1,0 +1,1 @@
+function FJ(n){let{inputs:t,backend:e,attrs:i}=n,{logits:r}=t,{numSamples:o,seed:s,normalized:a}=i,l=a?r:Cw({inputs:{logits:r},backend:e,attrs:{dim:r.shape.length-1}}),c=l.shape[0],u=l.shape[1],h=new j0(c,u,o),p=h.getCustomSetupFunc(s),d=e.runWebGLProgram(h,[l],"int32",p);return a||e.disposeIntermediateTensorInfo(l),d}

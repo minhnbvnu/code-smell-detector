@@ -1,0 +1,3 @@
+function yes () {
+      return value;
+    }

@@ -1,0 +1,1 @@
+function wG(n,t,e){let i=n.slice(0,1);for(let r=0;r<e;++r)i.push(n[r+1]-t[r][0]-t[r][1]);return i}

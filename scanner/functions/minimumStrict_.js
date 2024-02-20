@@ -1,7 +1,1 @@
-function minimumStrict_(a, b) {
-	  deprecationWarn('strict variants of ops have been deprecated ' + 'and will be removed in future');
-	  var $a = convertToTensor(a, 'a', 'minimumStrict');
-	  var $b = convertToTensor(b, 'b', 'minimumStrict');
-	  assertShapesMatch($a.shape, $b.shape, 'Error in minimumStrict: ');
-	  return minimum($a, $b);
-	}
+function minimumStrict_(e,t){var n=convertToTensor(e,"a","minimumStrict"),r=convertToTensor(t,"b","minimumStrict");return assertShapesMatch(n.shape,r.shape,"Error in minimumStrict: "),n.minimum(r)}

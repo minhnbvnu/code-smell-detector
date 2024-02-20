@@ -1,3 +1,3 @@
 function BooleanLiteral() {
-	  return t.booleanTypeAnnotation();
-	}
+  return t.booleanTypeAnnotation();
+}

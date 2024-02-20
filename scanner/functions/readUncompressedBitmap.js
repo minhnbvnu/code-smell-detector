@@ -1,16 +1,1 @@
-function readUncompressedBitmap(reader, width, height) {
-    const bitmap = [];
-
-    for (let y = 0; y < height; y++) {
-      const row = new Uint8Array(width);
-      bitmap.push(row);
-
-      for (let x = 0; x < width; x++) {
-        row[x] = reader.readBit();
-      }
-
-      reader.byteAlign();
-    }
-
-    return bitmap;
-  }
+function readUncompressedBitmap(t,r,o){for(var c=[],l=0;l<o;l++){var u=new Uint8Array(r);c.push(u);for(var h=0;h<r;h++)u[h]=t.readBit();t.byteAlign()}return c}

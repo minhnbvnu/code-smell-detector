@@ -1,0 +1,1 @@
+function dye(){let{dragButtonProps:e,dragButtonRef:t,isFocusVisibleWithin:r}=fye(),{visuallyHiddenProps:n}=Du();return S.createElement(Br,{focusRingClass:z(Ne(wt),"focus-ring")},S.createElement("div",{...e,className:z(Ne(wt),"react-spectrum-Table-dragButton"),style:r?{}:{...n.style},ref:t,draggable:"true"},S.createElement(D1e,{UNSAFE_className:z(Ne(wt))})))}

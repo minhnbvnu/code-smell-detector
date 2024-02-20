@@ -1,0 +1,1 @@
+function Aot(){let n=Up("canvas");return n.style.display="block",n}

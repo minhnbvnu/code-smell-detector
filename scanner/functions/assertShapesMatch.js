@@ -1,9 +1,1 @@
-function assertShapesMatch(shapeA, shapeB, errorMessagePrefix) {
-	  if (errorMessagePrefix === void 0) {
-	    errorMessagePrefix = '';
-	  }
-
-	  assert(arraysEqual(shapeA, shapeB), function () {
-	    return errorMessagePrefix + (" Shapes " + shapeA + " and " + shapeB + " must match");
-	  });
-	}
+function assertShapesMatch(e,t,n){void 0===n&&(n=""),assert(arraysEqual(e,t),n+" Shapes "+e+" and "+t+" must match");}

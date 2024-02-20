@@ -1,0 +1,1 @@
+function filterOutLinks(k,v){if(k!=="_next"&&k!=="_prev"){return v}}

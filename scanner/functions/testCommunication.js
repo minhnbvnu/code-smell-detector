@@ -1,0 +1,1 @@
+function testCommunication (results) { this.initialize(results); }

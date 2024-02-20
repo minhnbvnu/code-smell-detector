@@ -1,0 +1,1 @@
+function Fn(t){var e=s(t),i=!1;return e&&(i=0===t.filter((function(e){return!d(e)&&Yn(t)})).length),e&&i}

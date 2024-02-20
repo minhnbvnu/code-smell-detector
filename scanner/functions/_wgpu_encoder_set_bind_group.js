@@ -1,0 +1,1 @@
+function _wgpu_encoder_set_bind_group(encoder,index,bindGroup,dynamicOffsets,numDynamicOffsets){wgpu[encoder]["setBindGroup"](index,wgpu[bindGroup],HEAPU32,dynamicOffsets>>2,numDynamicOffsets)}

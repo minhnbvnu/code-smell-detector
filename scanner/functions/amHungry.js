@@ -1,0 +1,2 @@
+function amHungry(/**Boolean*/enoughToEatAHorse) {
+}

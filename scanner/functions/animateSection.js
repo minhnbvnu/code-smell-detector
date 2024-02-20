@@ -1,0 +1,1 @@
+function animateSection(sectionName,offset){$("html,body").animate({scrollTop:$(sectionName).offset().top+offset},750)}

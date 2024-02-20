@@ -1,0 +1,1 @@
+function parseCaptureInline(i,o,s){return{content:parseInline(o,i[1],s)}}

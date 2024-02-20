@@ -1,0 +1,1 @@
+function longestPath(g){var visited={};function dfs(v){var label=g.node(v);if(_.has(visited,v)){return label.rank}visited[v]=true;var rank=_.min(_.map(g.outEdges(v),function(e){return dfs(e.w)-g.edge(e).minlen}));if(rank===Number.POSITIVE_INFINITY||rank===undefined||rank===null){rank=0}return label.rank=rank}_.forEach(g.sources(),dfs)}

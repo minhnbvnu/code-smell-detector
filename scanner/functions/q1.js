@@ -1,0 +1,1 @@
+function q1(t,e){for(var r=-1,n=e.length,i=t.length;++r<n;)t[i+r]=e[r];return t}

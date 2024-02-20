@@ -1,0 +1,1 @@
+function getColspan(e,o){var t=data.getItemMetadata&&data.getItemMetadata(e);if(!t||!t.columns)return 1;var n=t.columns[columns[o].id]||t.columns[o],l=n&&n.colspan;return l="*"===l?columns.length-o:l||1}

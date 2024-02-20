@@ -1,0 +1,1 @@
+function _JS_WebGPU_Setup(adapter,device){Module["WebGPU"]={};Module["WebGPU"].aadapter=wgpu[adapter];Module["WebGPU"].device=wgpu[device]}

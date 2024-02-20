@@ -1,0 +1,1 @@
+function vg_load_xhr(url,callback){vg.log("LOAD: "+url);d3.xhr(url,function(err,resp){if(resp)resp=resp.responseText;callback(err,resp)})}

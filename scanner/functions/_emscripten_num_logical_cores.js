@@ -1,0 +1,1 @@
+function _emscripten_num_logical_cores(){return 1}

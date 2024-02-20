@@ -1,0 +1,1 @@
+function R8e(e,t){e.head=new Dc(t,null,e.head,e),e.tail||(e.tail=e.head),e.length++}

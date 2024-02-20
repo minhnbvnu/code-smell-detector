@@ -1,1 +1,1 @@
-function Ow(a,b){a=a|0;b=b|0;var c=0;c=fa-16|0;fa=c;L[c+12>>2]=a;L[c+8>>2]=b;tm(L[c+12>>2],L[c+8>>2],1);fa=c+16|0}
+function ow(e,r){if(!r.last)r.last=927262;for(var t=r.last;t<2e6;++t)if(!r[t]){r[r.last=t]=e;return t}throw new Error("Too many messages")}

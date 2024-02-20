@@ -1,0 +1,3 @@
+function rangeHasNoErrors() {
+                return false;
+            }

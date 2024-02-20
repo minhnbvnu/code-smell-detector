@@ -1,0 +1,1 @@
+function readW(){return readBits('reg_w', 8);}

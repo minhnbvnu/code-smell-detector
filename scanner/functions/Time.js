@@ -1,0 +1,1 @@
+function Time(t){var o;_classCallCheck(this,Time);(o=r.call(this,_,"time")).id=t.id||"";o.name=t.name||"";o.use=t.use||"";o.usehref=t.usehref||"";return o}

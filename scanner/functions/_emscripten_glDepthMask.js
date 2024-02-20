@@ -1,0 +1,1 @@
+function _emscripten_glDepthMask(flag){GLctx.depthMask(!!flag)}

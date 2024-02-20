@@ -1,0 +1,1 @@
+function _emscripten_set_mouseleave_callback_on_thread(target,userData,useCapture,callbackfunc,targetThread){registerMouseEventCallback(target,userData,useCapture,callbackfunc,34,"mouseleave",targetThread);return 0}

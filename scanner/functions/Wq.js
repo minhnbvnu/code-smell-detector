@@ -1,0 +1,1 @@
+function Wq(){return u|0}

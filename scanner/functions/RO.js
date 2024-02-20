@@ -1,0 +1,1 @@
+function RO(t,e,r){var n=Math.max(e.width,e.height)/2,i=t.insert("circle",":first-child").attr("x",-e.width/2).attr("y",-e.height/2).attr("r",n);return r.intersect=function(s){return MO(r,n,s)},i}

@@ -1,0 +1,1 @@
+function AFe(e,t,r){const n=WAe(e.schema,t);if(!(r==null||typeof r=="number"&&Number.isNaN(r))){if(Array.isArray(r)&&(r=n.commaSeparated?TAe(r):KAe(r)),n.property==="style"){let i=typeof r=="object"?r:FFe(e,String(r));return e.stylePropertyNameCase==="css"&&(i=DFe(i)),["style",i]}return[e.elementAttributeNameCase==="react"&&n.space?qAe[n.property]||n.property:n.attribute,r]}}

@@ -1,6 +1,6 @@
 function doneResult() {
-	      return {
-	        value: undefined$1,
-	        done: true
-	      };
-	    }
+    return {
+      value: undefined,
+      done: !0
+    };
+  }

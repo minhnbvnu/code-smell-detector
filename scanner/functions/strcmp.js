@@ -1,11 +1,5 @@
 function strcmp(aStr1, aStr2) {
-	  if (aStr1 === aStr2) {
-	    return 0;
-	  }
-
-	  if (aStr1 > aStr2) {
-	    return 1;
-	  }
-
-	  return -1;
-	}
+    var s1 = aStr1 || "";
+    var s2 = aStr2 || "";
+    return (s1 > s2) - (s1 < s2);
+  }

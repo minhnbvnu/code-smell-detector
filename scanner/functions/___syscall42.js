@@ -1,0 +1,1 @@
+function ___syscall42(which,varargs){SYSCALLS.varargs=varargs;try{var fdPtr=SYSCALLS.get();if(fdPtr==0){throw new FS.ErrnoError(ERRNO_CODES.EFAULT)}var res=PIPEFS.createPipe();HEAP32[fdPtr>>2]=res.readable_fd;HEAP32[fdPtr+4>>2]=res.writable_fd;return 0}catch(e){if(typeof FS==="undefined"||!(e instanceof FS.ErrnoError))abort(e);return-e.errno}}

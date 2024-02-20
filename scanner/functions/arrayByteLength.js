@@ -1,8 +1,1 @@
-function arrayByteLength(arr) {
-  if (arr.length !== undefined) {
-    return arr.length;
-  }
-
-  assert(arr.byteLength !== undefined, "arrayByteLength - invalid argument.");
-  return arr.byteLength;
-}
+function arrayByteLength(t){if(void 0!==t.length)return t.length;if(void 0!==t.byteLength)return t.byteLength;unreachable("Invalid argument for arrayByteLength")}

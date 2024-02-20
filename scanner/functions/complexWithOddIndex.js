@@ -1,15 +1,1 @@
-function complexWithOddIndex(complex) {
-	  var len = Math.floor(complex.length / 4);
-	  var real = new Float32Array(len);
-	  var imag = new Float32Array(len);
-
-	  for (var i = 2; i < complex.length; i += 4) {
-	    real[Math.floor(i / 4)] = complex[i];
-	    imag[Math.floor(i / 4)] = complex[i + 1];
-	  }
-
-	  return {
-	    real: real,
-	    imag: imag
-	  };
-	}
+function complexWithOddIndex(e){for(var t=Math.floor(e.length/4),n=new Float32Array(t),r=new Float32Array(t),o=2;o<e.length;o+=4)n[Math.floor(o/4)]=e[o],r[Math.floor(o/4)]=e[o+1];return {real:n,imag:r}}

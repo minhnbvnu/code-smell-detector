@@ -1,0 +1,1 @@
+function u6e(e){var t=o6e&&e.metaKey&&e.shiftKey&&!e.ctrlKey&&!e.altKey||s6e&&e.shiftKey&&e.key&&e.key.length==1||e.key=="Unidentified",r=!t&&e.key||(e.shiftKey?vh:ks)[e.keyCode]||e.key||"Unidentified";return r=="Esc"&&(r="Escape"),r=="Del"&&(r="Delete"),r=="Left"&&(r="ArrowLeft"),r=="Up"&&(r="ArrowUp"),r=="Right"&&(r="ArrowRight"),r=="Down"&&(r="ArrowDown"),r}

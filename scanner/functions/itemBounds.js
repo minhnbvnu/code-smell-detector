@@ -1,0 +1,1 @@
+function itemBounds(item,func,opt){func=func||methods[item.mark.marktype];if(!item.bounds_prev)item["bounds:prev"]=new vg.Bounds;var b=item.bounds,pb=item["bounds:prev"];if(b)pb.clear().union(b);item.bounds=func(item,b?b.clear():new vg.Bounds,opt);if(!b)pb.clear().union(item.bounds);return item.bounds}

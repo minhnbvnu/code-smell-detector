@@ -1,0 +1,1 @@
+function Rat(n){return function(t){return n(t)+""}}

@@ -1,1 +1,1 @@
-function Je(t){return new Z(function(n){function e(){gn(2e3).then(function(){if(t&&!t.closed)return e();n()})}return e()})}
+function Je(t,e){var i=t&&parseFloat(t.replace(",","."));return(isNaN(i)?0:i)*e}

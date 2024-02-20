@@ -1,1 +1,3 @@
-function receiveInstantiationResult(result){receiveInstance(result["instance"])}
+function receiveInstantiationResult(result) {
+            receiveInstance(result["instance"]);
+          }

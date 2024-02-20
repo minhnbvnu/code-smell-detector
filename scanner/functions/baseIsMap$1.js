@@ -1,0 +1,1 @@
+function baseIsMap$1(value){return isObjectLike$1(value)&&getTag$2(value)==mapTag$1}

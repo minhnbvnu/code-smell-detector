@@ -1,0 +1,1 @@
+function vue(e){return fue.createHash("md5").update(e).digest("hex")}

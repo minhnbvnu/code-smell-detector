@@ -1,0 +1,1 @@
+function wc(a){try{return decodeURIComponent(a)}catch(b){}}

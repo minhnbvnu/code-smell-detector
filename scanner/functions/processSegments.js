@@ -1,5 +1,1 @@
-function processSegments(segments, visitor) {
-    for (var i = 0, ii = segments.length; i < ii; i++) {
-      processSegment(segments[i], visitor);
-    }
-  }
+function processSegments(t,r){for(var o=0,c=t.length;o<c;o++)processSegment(t[o],r)}

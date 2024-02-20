@@ -1,0 +1,1 @@
+function Vse(e){const t=e.spread;return t??e.children.length>1}

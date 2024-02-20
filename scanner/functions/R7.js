@@ -1,0 +1,1 @@
+function R7(n){n.querySelector("style")&&console.warn("dom-module %s has style outside template",n.id)}

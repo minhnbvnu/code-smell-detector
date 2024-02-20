@@ -1,0 +1,2 @@
+function Ote(){if(_3.type()==="Windows_NT"&&!vf&&(vf=process.env.WINDIR+"\\system32\\wbem\\wmic.exe",!G1.existsSync(vf)))try{let e=G_("WHERE WMIC").toString().split(`\r
+`);e&&e.length?vf=e[0]:vf="wmic"}catch{vf="wmic"}return vf}

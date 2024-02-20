@@ -1,13 +1,13 @@
-function isArrayEqual(arr1, arr2) {
-  if (arr1.length !== arr2.length) {
-    return false;
-  }
+function isArrayEqual(a, b) {
 
-  for (let i = 0, ii = arr1.length; i < ii; i++) {
-    if (arr1[i] !== arr2[i]) {
-      return false;
-    }
+  if (a.length !== b.length) return false;
+
+  for (var i = 0, il = a.length; i < il; i++) {
+
+    if (a[i] !== b[i]) return false;
+
   }
 
   return true;
+
 }

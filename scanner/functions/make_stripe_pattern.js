@@ -1,4 +1,4 @@
-function make_stripe_pattern(reverse, colors, stripe_size = 4) {
+function make_stripe_pattern(reverse, colors, stripe_size=4){
 	const rgba_colors = colors.map(get_rgba_from_color);
 
 	const pattern_canvas = document.createElement("canvas");
@@ -9,8 +9,8 @@ function make_stripe_pattern(reverse, colors, stripe_size = 4) {
 
 	const pattern_image_data = main_ctx.createImageData(pattern_canvas.width, pattern_canvas.height);
 
-	for (let x = 0; x < pattern_canvas.width; x += 1) {
-		for (let y = 0; y < pattern_canvas.height; y += 1) {
+	for(let x = 0; x < pattern_canvas.width; x += 1){
+		for(let y = 0; y < pattern_canvas.height; y += 1){
 			const pixel_index = ((y * pattern_image_data.width) + x) * 4;
 			// +1000 to avoid remainder on negative numbers
 			const pos = reverse ? (x - y) : (x + y);

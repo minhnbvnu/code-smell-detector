@@ -1,0 +1,3 @@
+function ParseTreeWalker() {
+	return this;
+}

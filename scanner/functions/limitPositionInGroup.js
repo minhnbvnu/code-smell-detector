@@ -1,0 +1,1 @@
+function limitPositionInGroup(e){var o,t=0,n=0;return treeColumns.getColumnsInDepth($groupHeadersL.length-1).some((function(l){return t=n,n+=l.columns.length,l.columns.some((function(t){return t.id===e&&(o=l),o})),o})),n--,{start:t,end:n,group:o}}

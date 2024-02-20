@@ -1,0 +1,1 @@
+function eY(e,t){e.updateManipulator=function(){if(t.manipulator){var e=t.origin,n=t.normal,r=t.direction,i=t.manipulator,o=i.setOrigin,a=i.setCenter,s=i.setNormal,l=i.setDirection;e&&o?o(e):e&&a&&a(e),r&&l?l(r):r&&!n&&s?s(r):n&&l&&l(n)}}}

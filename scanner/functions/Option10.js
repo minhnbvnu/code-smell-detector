@@ -1,0 +1,1 @@
+function Option10(t,o){_classCallCheck(this,Option10);return r.call(this,t,o,1,(function(t){return 0===t}))}

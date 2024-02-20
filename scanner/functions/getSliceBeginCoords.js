@@ -1,9 +1,1 @@
-function getSliceBeginCoords(crops, blockShape) {
-	  var sliceBeginCoords = [0];
-
-	  for (var i = 0; i < blockShape; ++i) {
-	    sliceBeginCoords.push(crops[i][0]);
-	  }
-
-	  return sliceBeginCoords;
-	}
+function getSliceBeginCoords(e,t){for(var n=[0],r=0;r<t;++r)n.push(e[r][0]);return n}

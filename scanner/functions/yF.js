@@ -1,0 +1,1 @@
+function yF(n){typeof n!="function"&&(n=yd(n));for(var t=this._groups,e=t.length,i=new Array(e),r=0;r<e;++r)for(var o=t[r],s=o.length,a=i[r]=[],l,c=0;c<s;++c)(l=o[c])&&n.call(l,l.__data__,c,o)&&a.push(l);return new wn(i,this._parents)}

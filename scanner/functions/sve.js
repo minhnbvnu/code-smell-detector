@@ -1,0 +1,1 @@
+function sve(e,t){let r=Kt(e,{labelable:!0}),{hoverProps:n}=wr({onHoverStart:()=>t==null?void 0:t.open(!0),onHoverEnd:()=>t==null?void 0:t.close()});return{tooltipProps:$e(r,n,{role:"tooltip"})}}

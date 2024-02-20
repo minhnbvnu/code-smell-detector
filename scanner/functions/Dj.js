@@ -1,0 +1,1 @@
+function Dj(a,b,c){a=a|0;b=b|0;c=c|0;var d=0,e=0,g=0,h=0;if(!c){d=0;return d|0}e=c+40|0;g=c+44|0;ci((f[g>>2]|0)-(f[e>>2]|0)>>2,b)|0;h=f[e>>2]|0;e=f[g>>2]|0;if((h|0)!=(e|0)){g=h;do{h=f[g>>2]|0;if(h|0){ci(f[h+40>>2]|0,b)|0;lg(a,b,h)|0}g=g+4|0}while((g|0)!=(e|0))}lg(a,b,c)|0;d=1;return d|0}

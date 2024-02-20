@@ -1,0 +1,1 @@
+function bhe(e){let{children:t,navigate:r}=e,n=O.useMemo(()=>({isNative:!1,open:(i,a)=>{QZ(i,l=>{LZ(l,a)?r(l.pathname+l.search+l.hash):ps(l,a)})}}),[r]);return S.createElement(NZ.Provider,{value:n},t)}

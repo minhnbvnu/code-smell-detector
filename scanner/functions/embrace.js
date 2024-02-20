@@ -1,3 +1,3 @@
 function embrace(str) {
-	  return '{' + str + '}';
-	}
+  return '{' + str + '}';
+}

@@ -1,0 +1,1 @@
+function invalidateAllRows(){for(var e in currentEditor&&makeActiveCellNormal(),rowsCache)removeRowFromCache(e);options.enableAsyncPostRenderCleanup&&startPostProcessingCleanup()}

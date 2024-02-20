@@ -1,3 +1,3 @@
 function isBool(v) {
-  return typeof v === "boolean";
+  return typeof v === 'boolean';
 }

@@ -1,0 +1,1 @@
+function getCurrentTextTransform(){var t=N.font,r=[N.fontSize*N.textHScale,0,0,N.fontSize,0,N.textRise];if(t.isType3Font&&(N.fontSize<=1||t.isCharBBox)&&!(0,c.isArrayEqual)(N.fontMatrix,c.FONT_IDENTITY_MATRIX)){var o=t.bbox[3]-t.bbox[1];o>0&&(r[3]*=o*N.fontMatrix[3])}return c.Util.transform(N.ctm,c.Util.transform(N.textMatrix,r))}

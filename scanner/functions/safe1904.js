@@ -1,0 +1,1 @@
+function safe1904(wb){try{return parsexmlbool(wb.Workbook.WBProps.date1904)?"true":"false"}catch(e){return"false"}}

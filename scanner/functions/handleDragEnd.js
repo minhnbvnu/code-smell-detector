@@ -1,0 +1,1 @@
+function handleDragEnd(e,o){trigger(self.onDragEnd,o,e)}

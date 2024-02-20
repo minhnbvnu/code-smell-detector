@@ -1,0 +1,1 @@
+function nat(n){return function(){this.innerHTML=n}}

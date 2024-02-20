@@ -1,0 +1,1 @@
+function parse_ClipboardData(blob){var o={};o.Size=blob.read_shift(4);blob.l+=o.Size;return o}

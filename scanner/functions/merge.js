@@ -1,7 +1,10 @@
-function Merge(args) {
-	    var _this;
-
-	    _this = _Layer.call(this, args || {}) || this;
-	    _this.supportsMasking = true;
-	    return _this;
-	  }
+function merge(dst) {
+  forEach(arguments, function(obj) {
+    if (obj !== dst) {
+      forEach(obj, function(value, key) {
+        if (!dst.hasOwnProperty(key)) dst[key] = value;
+      });
+    }
+  });
+  return dst;
+}

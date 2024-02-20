@@ -1,0 +1,1 @@
+function parse_WriteAccess(blob,length,opts){if(opts.enc){blob.l+=length;return""}var l=blob.l;var UserName=parse_XLUnicodeString(blob,0,opts);blob.read_shift(length+l-blob.l);return UserName}

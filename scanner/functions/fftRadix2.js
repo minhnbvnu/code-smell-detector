@@ -1,164 +1,87 @@
-function fftRadix2(realVals, imagVals, size, inverse, cpuBackend) {
-	  if (size === 1) {
-	    return {
-	      real: realVals,
-	      imag: imagVals
-	    };
-	  }
+function fftRadix2(dir, nrows, ncols, buffer, x_ptr, y_ptr) {
+      dir |= 0
+      nrows |= 0
+      ncols |= 0
+      x_ptr |= 0
+      y_ptr |= 0
+      var nn,m,i,i1,j,k,i2,l,l1,l2
+      var c1,c2,t,t1,t2,u1,u2,z,row,a,b,c,d,k1,k2,k3
 
-	  var data = mergeRealAndImagArrays(realVals, imagVals);
-	  var half = size / 2;
-	  var evenComplex = complexWithEvenIndex(data);
-	  var evenRealVals = evenComplex.real;
-	  var evenImagVals = evenComplex.imag;
-	  var evenShape = [evenRealVals.length];
-	  var evenRealInfo = cpuBackend.makeTensorInfo(evenShape, 'float32', evenRealVals);
-	  var evenImagInfo = cpuBackend.makeTensorInfo(evenShape, 'float32', evenImagVals);
-	  var evenTensorInfo = complex$1({
-	    inputs: {
-	      real: evenRealInfo,
-	      imag: evenImagInfo
-	    },
-	    backend: cpuBackend
-	  });
-	  var oddComplex = complexWithOddIndex(data);
-	  var oddRealVals = oddComplex.real;
-	  var oddImagVals = oddComplex.imag;
-	  var oddShape = [oddRealVals.length];
-	  var oddRealInfo = cpuBackend.makeTensorInfo(oddShape, 'float32', oddRealVals);
-	  var oddImagInfo = cpuBackend.makeTensorInfo(oddShape, 'float32', oddImagVals);
-	  var oddTensorInfo = complex$1({
-	    inputs: {
-	      real: oddRealInfo,
-	      imag: oddImagInfo
-	    },
-	    backend: cpuBackend
-	  }); // Recursive call for half part of original input.
+      // Calculate the number of points
+      nn = ncols
+      m = bits.log2(nn)
 
-	  var $evenComplex = fftRadix2(evenRealVals, evenImagVals, half, inverse, cpuBackend);
-	  var $evenRealVals = $evenComplex.real;
-	  var $evenImagVals = $evenComplex.imag;
-	  var $evenShape = [$evenRealVals.length];
-	  var $evenRealInfo = cpuBackend.makeTensorInfo($evenShape, 'float32', $evenRealVals);
-	  var $evenImagInfo = cpuBackend.makeTensorInfo($evenShape, 'float32', $evenImagVals);
-	  var $evenTensorInfo = complex$1({
-	    inputs: {
-	      real: $evenRealInfo,
-	      imag: $evenImagInfo
-	    },
-	    backend: cpuBackend
-	  });
-	  var $oddComplex = fftRadix2(oddRealVals, oddImagVals, half, inverse, cpuBackend);
-	  var $oddRealVals = $oddComplex.real;
-	  var $oddImagVals = $oddComplex.imag;
-	  var $oddShape = [$oddRealVals.length];
-	  var $oddRealInfo = cpuBackend.makeTensorInfo($oddShape, 'float32', $oddRealVals);
-	  var $oddImagInfo = cpuBackend.makeTensorInfo($oddShape, 'float32', $oddImagVals);
-	  var $oddTensorInfo = complex$1({
-	    inputs: {
-	      real: $oddRealInfo,
-	      imag: $oddImagInfo
-	    },
-	    backend: cpuBackend
-	  });
-	  var e = exponents(size, inverse);
-	  var eShape = [e.real.length];
-	  var eRealInfo = cpuBackend.makeTensorInfo(eShape, 'float32', e.real);
-	  var eImagInfo = cpuBackend.makeTensorInfo(eShape, 'float32', e.imag);
-	  var complexInfo = complex$1({
-	    inputs: {
-	      real: eRealInfo,
-	      imag: eImagInfo
-	    },
-	    backend: cpuBackend
-	  });
-	  var exponentInfo = multiply$2({
-	    inputs: {
-	      a: complexInfo,
-	      b: $oddTensorInfo
-	    },
-	    backend: cpuBackend
-	  });
-	  var addPart = add$4({
-	    inputs: {
-	      a: $evenTensorInfo,
-	      b: exponentInfo
-	    },
-	    backend: cpuBackend
-	  });
-	  var subPart = sub$1({
-	    inputs: {
-	      a: $evenTensorInfo,
-	      b: exponentInfo
-	    },
-	    backend: cpuBackend
-	  });
-	  var addPartReal = real$1({
-	    inputs: {
-	      input: addPart
-	    },
-	    backend: cpuBackend
-	  });
-	  var subPartReal = real$1({
-	    inputs: {
-	      input: subPart
-	    },
-	    backend: cpuBackend
-	  });
-	  var addPartImag = imag$1({
-	    inputs: {
-	      input: addPart
-	    },
-	    backend: cpuBackend
-	  });
-	  var subPartImag = imag$1({
-	    inputs: {
-	      input: subPart
-	    },
-	    backend: cpuBackend
-	  });
-	  var $real = concat$1({
-	    inputs: [addPartReal, subPartReal],
-	    backend: cpuBackend,
-	    attrs: {
-	      axis: 0
-	    }
-	  });
-	  var $imag = concat$1({
-	    inputs: [addPartImag, subPartImag],
-	    backend: cpuBackend,
-	    attrs: {
-	      axis: 0
-	    }
-	  });
-	  var $realVals = cpuBackend.data.get($real.dataId).values;
-	  var $imagVals = cpuBackend.data.get($imag.dataId).values;
-	  cpuBackend.disposeIntermediateTensorInfo(evenRealInfo);
-	  cpuBackend.disposeIntermediateTensorInfo(evenImagInfo);
-	  cpuBackend.disposeIntermediateTensorInfo(evenTensorInfo);
-	  cpuBackend.disposeIntermediateTensorInfo(oddRealInfo);
-	  cpuBackend.disposeIntermediateTensorInfo(oddImagInfo);
-	  cpuBackend.disposeIntermediateTensorInfo(oddTensorInfo);
-	  cpuBackend.disposeIntermediateTensorInfo($evenRealInfo);
-	  cpuBackend.disposeIntermediateTensorInfo($evenImagInfo);
-	  cpuBackend.disposeIntermediateTensorInfo($evenTensorInfo);
-	  cpuBackend.disposeIntermediateTensorInfo($oddRealInfo);
-	  cpuBackend.disposeIntermediateTensorInfo($oddImagInfo);
-	  cpuBackend.disposeIntermediateTensorInfo($oddTensorInfo);
-	  cpuBackend.disposeIntermediateTensorInfo(eRealInfo);
-	  cpuBackend.disposeIntermediateTensorInfo(eImagInfo);
-	  cpuBackend.disposeIntermediateTensorInfo(complexInfo);
-	  cpuBackend.disposeIntermediateTensorInfo(exponentInfo);
-	  cpuBackend.disposeIntermediateTensorInfo(addPart);
-	  cpuBackend.disposeIntermediateTensorInfo(subPart);
-	  cpuBackend.disposeIntermediateTensorInfo(addPartReal);
-	  cpuBackend.disposeIntermediateTensorInfo(addPartImag);
-	  cpuBackend.disposeIntermediateTensorInfo(subPartReal);
-	  cpuBackend.disposeIntermediateTensorInfo(subPartImag);
-	  cpuBackend.disposeIntermediateTensorInfo($real);
-	  cpuBackend.disposeIntermediateTensorInfo($imag);
-	  return {
-	    real: $realVals,
-	    imag: $imagVals
-	  };
-	}
+      for(row=0; row<nrows; ++row) {
+        // Do the bit reversal
+        i2 = nn >> 1;
+        j = 0;
+        for(i=0;i<nn-1;i++) {
+          if(i < j) {
+            t = buffer[x_ptr+i]
+            buffer[x_ptr+i] = buffer[x_ptr+j]
+            buffer[x_ptr+j] = t
+            t = buffer[y_ptr+i]
+            buffer[y_ptr+i] = buffer[y_ptr+j]
+            buffer[y_ptr+j] = t
+          }
+          k = i2
+          while(k <= j) {
+            j -= k
+            k >>= 1
+          }
+          j += k
+        }
+
+        // Compute the FFT
+        c1 = -1.0
+        c2 = 0.0
+        l2 = 1
+        for(l=0;l<m;l++) {
+          l1 = l2
+          l2 <<= 1
+          u1 = 1.0
+          u2 = 0.0
+          for(j=0;j<l1;j++) {
+            for(i=j;i<nn;i+=l2) {
+              i1 = i + l1
+              a = buffer[x_ptr+i1]
+              b = buffer[y_ptr+i1]
+              c = buffer[x_ptr+i]
+              d = buffer[y_ptr+i]
+              k1 = u1 * (a + b)
+              k2 = a * (u2 - u1)
+              k3 = b * (u1 + u2)
+              t1 = k1 - k3
+              t2 = k1 + k2
+              buffer[x_ptr+i1] = c - t1
+              buffer[y_ptr+i1] = d - t2
+              buffer[x_ptr+i] += t1
+              buffer[y_ptr+i] += t2
+            }
+            k1 = c1 * (u1 + u2)
+            k2 = u1 * (c2 - c1)
+            k3 = u2 * (c1 + c2)
+            u1 = k1 - k3
+            u2 = k1 + k2
+          }
+          c2 = Math.sqrt((1.0 - c1) / 2.0)
+          if(dir < 0) {
+            c2 = -c2
+          }
+          c1 = Math.sqrt((1.0 + c1) / 2.0)
+        }
+
+        // Scaling for inverse transform
+        if(dir < 0) {
+          var scale_f = 1.0 / nn
+          for(i=0;i<nn;i++) {
+            buffer[x_ptr+i] *= scale_f
+            buffer[y_ptr+i] *= scale_f
+          }
+        }
+
+        // Advance pointers
+        x_ptr += ncols
+        y_ptr += ncols
+      }
+    }

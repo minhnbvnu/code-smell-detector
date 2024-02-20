@@ -1,0 +1,1 @@
+function Xwe(e={}){return[Dle.of(e),Gwe]}

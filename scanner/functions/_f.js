@@ -1,0 +1,1 @@
+function _f(e){return(bf(e)?function(e){var t=I.lastIndex=0;for(;I.test(e);)++t;return t}:j)(e)}

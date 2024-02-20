@@ -1,0 +1,1 @@
+function _glBindTexture(target,texture){GLctx.bindTexture(target,GL.textures[texture])}

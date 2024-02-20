@@ -1,0 +1,1 @@
+function parse_PtgRefErr(blob,length){var type=blob.read_shift(1)>>>5&3;blob.l+=4;return[type]}

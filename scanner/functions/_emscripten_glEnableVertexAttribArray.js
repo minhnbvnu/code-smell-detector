@@ -1,0 +1,1 @@
+function _emscripten_glEnableVertexAttribArray(index){GLctx.enableVertexAttribArray(index)}

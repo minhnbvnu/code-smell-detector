@@ -1,0 +1,1 @@
+function _emscripten_glGetFloatv(name_,p){emscriptenWebGLGet(name_,p,2)}

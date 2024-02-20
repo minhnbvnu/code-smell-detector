@@ -1,0 +1,1 @@
+function WDe(e){let t=-1;for(;++t<e.length;){const r=e[t][1];(r.type==="labelImage"||r.type==="labelLink"||r.type==="labelEnd")&&(e.splice(t+1,r.type==="labelImage"?4:2),r.type="data",t++)}return e}

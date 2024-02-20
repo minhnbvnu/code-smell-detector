@@ -1,7 +1,12 @@
-function normalize(color) {
-  color[0] = clamp((color[0] + 0.5) | 0, 0, 255);
-  color[1] = clamp((color[1] + 0.5) | 0, 0, 255);
-  color[2] = clamp((color[2] + 0.5) | 0, 0, 255);
-  color[3] = clamp(color[3], 0, 1);
-  return color;
+function normalize(path) {
+  // /a/b/./c/./d/. ==> /a/b/c/d
+  path = path.replace(RE_IDLE_DOT, '/'); // a///b/////c ==> a/b/c
+
+  path = path.replace(RE_MULTI_SLASH, '$1/'); // a/b/c/../../d  ==>  a/b/../d  ==>  a/d
+
+  while (RE_DOUBLE_DOT.test(path)) {
+    path = path.replace(RE_DOUBLE_DOT, '/');
+  }
+
+  return path;
 }

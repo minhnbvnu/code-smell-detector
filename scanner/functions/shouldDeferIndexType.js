@@ -1,0 +1,3 @@
+function shouldDeferIndexType(type) {
+                return !!(type.flags & 58982400 /* InstantiableNonPrimitive */ || isGenericTupleType(type) || isGenericMappedType(type) && !hasDistributiveNameType(type) || type.flags & 1048576 /* Union */ && some(type.types, isPossiblyReducibleByInstantiation) || type.flags & 2097152 /* Intersection */ && maybeTypeOfKind(type, 465829888 /* Instantiable */) && some(type.types, isEmptyAnonymousObjectType));
+            }

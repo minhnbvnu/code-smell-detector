@@ -1,0 +1,1 @@
+function _wgpuDispatchWebGpuErrorEvent(device,callback,error,userData){_wgpuReportErrorCodeAndMessage(device,callback,error?error instanceof GPUInternalError?3:error instanceof GPUValidationError?2:error instanceof GPUOutOfMemoryError?1:3:0,error&&error["message"],userData)}

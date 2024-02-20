@@ -1,0 +1,1 @@
+function aat(){var n=this.parentNode;n&&n.removeChild(this)}

@@ -1,0 +1,3 @@
+function visitEachChildOfForStatement2(node) {
+                return factory2.updateForStatement(node, visitNode(node.initializer, visitorWithUnusedExpressionResult, isForInitializer), visitNode(node.condition, visitor, isExpression), visitNode(node.incrementor, visitorWithUnusedExpressionResult, isExpression), Debug.checkDefined(visitNode(node.statement, visitor, isStatement, factory2.liftToBlock)));
+            }

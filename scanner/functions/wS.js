@@ -1,0 +1,1 @@
+function wS(t,e,n){var i=t.getArea(),r=Zr(i.r0,1),o=Zr(i.r,1),a=new zu({shape:{cx:Zr(t.cx,1),cy:Zr(t.cy,1),r0:r,r:o,startAngle:i.startAngle,endAngle:i.endAngle,clockwise:i.clockwise}});e&&("angle"===t.getBaseAxis().dim?a.shape.endAngle=i.startAngle:a.shape.r=r,gh(a,{shape:{endAngle:i.endAngle,r:o}},n));return a}

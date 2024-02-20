@@ -1,0 +1,1 @@
+function dU(n){let t=new Uint32Array(n);for(let e=0;e<n;++e)t[e]=e;return wT(t),t}

@@ -1,0 +1,1 @@
+function exe(){return this.infinity}

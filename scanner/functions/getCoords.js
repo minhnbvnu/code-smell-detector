@@ -1,11 +1,1 @@
-function getCoords(rank) {
-	  if (rank === 1) {
-	    return 'sourceLoc';
-	  } else if (rank <= 6) {
-	    return coords.slice(0, rank).map(function (x) {
-	      return 'sourceLoc.' + x;
-	    }).join(',');
-	  } else {
-	    throw Error("Slicing for rank " + rank + " is not yet supported");
-	  }
-	}
+function getCoords(e,t){if(1===e)return ""+t;if(2===e)return t+".x, "+t+".y";if(3===e)return t+".x, "+t+".y, "+t+".z";if(4===e)return t+".x, "+t+".y, "+t+".z, "+t+".w";throw Error("Cumulative sum for rank "+e+" is not yet supported")}

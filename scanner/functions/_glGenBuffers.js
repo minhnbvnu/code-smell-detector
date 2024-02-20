@@ -1,0 +1,1 @@
+function _glGenBuffers(n,buffers){__glGenObject(n,buffers,"createBuffer",GL.buffers)}

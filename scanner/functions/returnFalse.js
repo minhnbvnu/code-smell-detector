@@ -1,3 +1,3 @@
-function returnFalse(){
-  return false;
+function returnFalse() {
+	return false;
 }

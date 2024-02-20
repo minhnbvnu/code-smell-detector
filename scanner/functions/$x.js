@@ -1,1 +1,1 @@
-function $x(){var a=0;a=sa(64);Pb(a);return a|0}
+function $x(t,e,r){var n,i,s=jx(e)?Sh:Pn;return function(){var a=s(this,t),o=a.on;o!==n&&(i=(n=o).copy()).on(e,r),a.on=i}}

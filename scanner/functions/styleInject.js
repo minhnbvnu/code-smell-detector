@@ -1,0 +1,1 @@
+function styleInject(a,b){void 0===b&&(b={});var c=b.insertAt;if(a&&'undefined'!=typeof document){var d=document.head||document.getElementsByTagName('head')[0],e=document.createElement('style');e.type='text/css', 'top'===c?d.firstChild?d.insertBefore(e,d.firstChild):d.appendChild(e):d.appendChild(e), e.styleSheet?e.styleSheet.cssText=a:e.appendChild(document.createTextNode(a));}}

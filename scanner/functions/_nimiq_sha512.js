@@ -1,0 +1,1 @@
+function _nimiq_sha512($0,$1,$2){$0=$0|0;$1=$1|0;$2=$2|0;var $3=0,label=0,sp=0;sp=STACKTOP;STACKTOP=STACKTOP+208|0;$3=sp;_sha512_init($3)|0;_sha512_update($3,$1,$2)|0;_sha512_final($3,$0)|0;STACKTOP=sp;return}

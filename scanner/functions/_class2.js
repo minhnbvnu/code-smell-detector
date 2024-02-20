@@ -1,0 +1,1 @@
+function _class2(){_classCallCheck(this,_class2)}

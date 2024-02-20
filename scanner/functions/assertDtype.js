@@ -1,13 +1,1 @@
-function assertDtype(expectedDtype, actualDType, argName, functionName) {
-	  if (expectedDtype === 'string_or_numeric') {
-	    return;
-	  }
-
-	  if (expectedDtype == null) {
-	    throw new Error("Expected dtype cannot be null.");
-	  }
-
-	  if (expectedDtype !== 'numeric' && expectedDtype !== actualDType || expectedDtype === 'numeric' && actualDType === 'string') {
-	    throw new Error("Argument '" + argName + "' passed to '" + functionName + "' must " + ("be " + expectedDtype + " tensor, but got " + actualDType + " tensor"));
-	  }
-	}
+function assertDtype(e,t,n,r){if(null!=e&&("numeric"!==e&&e!==t||"numeric"===e&&"string"===t))throw new Error("Argument '"+n+"' passed to '"+r+"' must be "+e+" tensor, but got "+t+" tensor")}

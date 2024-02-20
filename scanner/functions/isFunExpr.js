@@ -1,0 +1,1 @@
+function isFunExpr(node) { return node.type == "FunctionExpression" || node.type == "ArrowFunctionExpression" }

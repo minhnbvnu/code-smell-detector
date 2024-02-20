@@ -1,0 +1,1 @@
+function WebClient(t){var o;_classCallCheck(this,WebClient);(o=r.call(this,d,"webClient",!0)).name=t.name?t.name.trim():"";o.fontInfo=null;o.xdc=null;return o}

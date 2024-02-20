@@ -1,0 +1,1 @@
+function nRe(e,t){const r={type:"root",children:e.wrap(e.all(t))};return e.patch(t,r),e.applyData(t,r)}

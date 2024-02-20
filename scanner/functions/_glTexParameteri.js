@@ -1,0 +1,1 @@
+function _glTexParameteri(x0,x1,x2){GLctx["texParameteri"](x0,x1,x2)}

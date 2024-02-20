@@ -1,0 +1,1 @@
+function CompositeGlyph(t){var r=t.flags,o=t.glyphIndex,c=t.argument1,l=t.argument2,u=t.transf,h=t.instructions;_classCallCheck(this,CompositeGlyph);this.flags=r;this.glyphIndex=o;this.argument1=c;this.argument2=l;this.transf=u;this.instructions=h}

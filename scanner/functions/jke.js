@@ -1,0 +1,2 @@
+function jke(){let e=["BCM2708","BCM2709","BCM2710","BCM2835","BCM2837B0"],t=[];try{t=U1.readFileSync("/proc/cpuinfo",{encoding:"utf8"}).split(`
+`)}catch{return!1}let r=WE(t,"hardware");return r&&e.indexOf(r)>-1}

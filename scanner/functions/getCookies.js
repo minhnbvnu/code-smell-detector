@@ -1,5 +1,4 @@
-function getCookies(res) {
-  return res.headers['set-cookie'].map(function (val) {
-    return val.split(';')[0]
-  }).join('; ');
+function getCookies() {
+    return document.cookie === '' ? [] : document.cookie.split(';').map(x => x.trim());
+
 }

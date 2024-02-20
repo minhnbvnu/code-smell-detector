@@ -1,0 +1,1 @@
+function FunctionDeclaration(){i.apply(this,arguments)}

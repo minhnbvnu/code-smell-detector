@@ -1,0 +1,1 @@
+function tsdp_header_Dummy(s_name, s_value){ tsdp_header_Str.call(this, tsdp_header_type_e.DUMMY, s_value); this.s_name = s_name; }

@@ -1,0 +1,1 @@
+function parse_xlml(data,opts){fix_read_opts(opts=opts||{});switch(opts.type||"base64"){case"base64":return parse_xlml_xml(Base64.decode(data),opts);case"binary":case"buffer":case"file":return parse_xlml_xml(data,opts);case"array":return parse_xlml_xml(data.map(_chr).join(""),opts)}}

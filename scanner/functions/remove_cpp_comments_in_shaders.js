@@ -1,0 +1,1 @@
+function remove_cpp_comments_in_shaders(code){var i=0,out="",ch,next,len=code.length;for(;i<len;++i){ch=code[i];if(ch=="/"){next=code[i+1];if(next=="/"){while(i<len&&code[i+1]!="\n")++i}else if(next=="*"){while(i<len&&(code[i-1]!="*"||code[i]!="/"))++i}else{out+=ch}}else{out+=ch}}return out}

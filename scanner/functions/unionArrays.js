@@ -1,0 +1,1 @@
+function unionArrays(arrs){var map={};for(var i=arrs.length;--i>=0;){var arr=arrs[i];for(var j=arr.length;--j>=0;){map[arr[j]]=ALLOWED_LITERAL}}return map}

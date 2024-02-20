@@ -1,0 +1,1 @@
+function updateTextarea(doClearInterval){textareaUpdate(),_base.update(_strAuto),doClearInterval&&_autoUpdateRecommended&&clearInterval(textareaUpdateIntervalID)}

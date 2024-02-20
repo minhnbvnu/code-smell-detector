@@ -1,1 +1,0 @@
-function getVRDisplay () { return vrDisplay; }

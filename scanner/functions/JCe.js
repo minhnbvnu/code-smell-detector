@@ -1,0 +1,1 @@
+function JCe(e,t,r){var i,a,n=Math.min(e.t,this.t);for(i=0;i<n;++i)r.data[i]=t(this.data[i],e.data[i]);if(e.t<this.t){for(a=e.s&this.DM,i=n;i<this.t;++i)r.data[i]=t(this.data[i],a);r.t=this.t}else{for(a=this.s&this.DM,i=n;i<e.t;++i)r.data[i]=t(a,e.data[i]);r.t=e.t}r.s=t(this.s,e.s),r.clamp()}

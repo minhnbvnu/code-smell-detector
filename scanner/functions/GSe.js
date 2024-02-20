@@ -1,0 +1,1 @@
+function GSe(e,t){return jr("replaceStars",e,t),e.trim().replace(Ar[tX],"")}

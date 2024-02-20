@@ -1,0 +1,1 @@
+function grn( str ) { return `\x1b[32m${str}\x1b[0m`; }

@@ -1,0 +1,1 @@
+function pse(e,t){const r={},n={};let i=-1;for(;++i<e.length;)Object.assign(r,e[i].property),Object.assign(n,e[i].normal);return new sp(r,n,t)}

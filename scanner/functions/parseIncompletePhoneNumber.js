@@ -1,0 +1,1 @@
+function parseIncompletePhoneNumber(i){for(var o,s="",u=parseIncompletePhoneNumber_createForOfIteratorHelperLoose(i.split(""));!(o=u()).done;){s+=parsePhoneNumberCharacter(o.value,s)||""}return s}

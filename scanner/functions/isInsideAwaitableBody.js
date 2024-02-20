@@ -1,0 +1,3 @@
+function isInsideAwaitableBody(node) {
+            return node.kind & 32768 /* AwaitContext */ || !!findAncestor(node, (ancestor) => ancestor.parent && isArrowFunction(ancestor.parent) && ancestor.parent.body === ancestor || isBlock(ancestor) && (ancestor.parent.kind === 259 /* FunctionDeclaration */ || ancestor.parent.kind === 215 /* FunctionExpression */ || ancestor.parent.kind === 216 /* ArrowFunction */ || ancestor.parent.kind === 171 /* MethodDeclaration */));
+        }

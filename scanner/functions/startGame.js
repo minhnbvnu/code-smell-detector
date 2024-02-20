@@ -1,0 +1,3 @@
+function startGame() {
+    game.start();
+  }

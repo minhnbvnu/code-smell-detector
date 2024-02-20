@@ -1,0 +1,1 @@
+function T9(t){return t!==t}

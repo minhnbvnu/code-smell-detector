@@ -1,13 +1,14 @@
-function conv3D$1(args) {
-	  var inputs = args.inputs,
-	      backend = args.backend,
-	      attrs = args.attrs;
-	  var x = inputs.x,
-	      filter = inputs.filter;
-	  var strides = attrs.strides,
-	      pad = attrs.pad,
-	      dilations = attrs.dilations;
-	  var convInfo = computeConv3DInfo(x.shape, filter.shape, strides, dilations, pad);
-	  var program = new Conv3DProgram(convInfo);
-	  return backend.runWebGLProgram(program, [x, filter], 'float32');
+function conv3d$1(x, kernel, strides, padding, dataFormat, dilationRate) {
+	  if (strides === void 0) {
+	    strides = [1, 1, 1];
+	  }
+
+	  if (padding === void 0) {
+	    padding = 'valid';
+	  }
+
+	  return tidy(function () {
+	    checkDataFormat(dataFormat);
+	    return conv3dWithBias(x, kernel, null, strides, padding, dataFormat, dilationRate);
+	  });
 	}

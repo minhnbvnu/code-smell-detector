@@ -1,0 +1,1 @@
+function works_morning()   { return 3 }

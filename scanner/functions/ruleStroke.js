@@ -1,0 +1,1 @@
+function ruleStroke(g,o){var x1=o.x||0,y1=o.y||0,x2=o.x2!=null?o.x2:x1,y2=o.y2!=null?o.y2:y1,lw=o.strokeWidth,lc=o.strokeCap;g.lineWidth=lw!=null?lw:vg.config.render.lineWidth;g.lineCap=lc!=null?lc:vg.config.render.lineCap;g.beginPath();g.moveTo(x1,y1);g.lineTo(x2,y2)}

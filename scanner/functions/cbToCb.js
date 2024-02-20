@@ -1,0 +1,1 @@
+function cbToCb(cb){return"function"==typeof cb?cb:noop}

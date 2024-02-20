@@ -1,0 +1,3 @@
+function onRouteChangeComplete() {
+      Fathom.trackPageview();
+    }

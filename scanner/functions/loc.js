@@ -1,3 +1,6 @@
-function loc() {
-	  return t.numericLiteral(-1);
-	}
+function loc(startLine, startColumn, endLine, endColumn) {
+  return {
+    start: pos(startLine, startColumn),
+    end: pos(endLine, endColumn)
+  };
+}

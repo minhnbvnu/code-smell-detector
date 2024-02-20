@@ -1,0 +1,1 @@
+function Equate(t){var o;_classCallCheck(this,Equate);(o=r.call(this,d,"equate")).force=(0,u.getInteger)({data:t.force,defaultValue:1,validate:function validate(t){return 0===t}});o.from=t.from||"";o.to=t.to||"";return o}

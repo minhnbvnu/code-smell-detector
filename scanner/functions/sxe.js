@@ -1,0 +1,1 @@
+function sxe(e,t){return e.has(t)}

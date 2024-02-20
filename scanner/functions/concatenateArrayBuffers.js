@@ -1,17 +1,1 @@
-function concatenateArrayBuffers(buffers) {
-	  if (buffers.length === 1) {
-	    return buffers[0];
-	  }
-
-	  var totalByteLength = 0;
-	  buffers.forEach(function (buffer) {
-	    totalByteLength += buffer.byteLength;
-	  });
-	  var temp = new Uint8Array(totalByteLength);
-	  var offset = 0;
-	  buffers.forEach(function (buffer) {
-	    temp.set(new Uint8Array(buffer), offset);
-	    offset += buffer.byteLength;
-	  });
-	  return temp.buffer;
-	}
+function concatenateArrayBuffers(e){var t=0;e.forEach(function(e){t+=e.byteLength;});var n=new Uint8Array(t),r=0;return e.forEach(function(e){n.set(new Uint8Array(e),r),r+=e.byteLength;}),n.buffer}

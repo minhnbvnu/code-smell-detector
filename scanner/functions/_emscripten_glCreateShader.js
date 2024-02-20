@@ -1,0 +1,1 @@
+function _emscripten_glCreateShader(shaderType){var id=GL.getNewId(GL.shaders);GL.shaders[id]=GLctx.createShader(shaderType);return id}

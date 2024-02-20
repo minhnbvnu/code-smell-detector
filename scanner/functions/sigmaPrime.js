@@ -1,10 +1,1 @@
-function sigmaPrime(result, x, tmp) {
-    result.assign(x);
-    result.rotateRight(14);
-    tmp.assign(x);
-    tmp.rotateRight(18);
-    result.xor(tmp);
-    tmp.assign(x);
-    tmp.rotateRight(41);
-    result.xor(tmp);
-  }
+function sigmaPrime(t,r,o){t.assign(r);t.rotateRight(14);o.assign(r);o.rotateRight(18);t.xor(o);o.assign(r);o.rotateRight(41);t.xor(o)}

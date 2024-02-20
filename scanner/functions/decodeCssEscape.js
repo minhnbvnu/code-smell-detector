@@ -1,0 +1,1 @@
+function decodeCssEscape(s){var i=parseInt(s.substring(1),16);if(i>65535){return i-=65536,String.fromCharCode(55296+(i>>10),56320+(i&1023))}else if(i==i){return String.fromCharCode(i)}else if(s[1]<" "){return""}else{return s[1]}}

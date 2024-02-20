@@ -1,1 +1,1 @@
-function Xm(a){a=a|0;var b=0,c=0;L[a>>2]=10252;a:{if(!M[a+8|0]){break a}b=L[a+12>>2];if(!b){break a}c=L[a+4>>2];ha[L[L[c>>2]+16>>2]](c,b)}return a|0}
+function xm(a,b,c){a=a|0;b=b|0;c=c|0;var d=0,e=0;if((b|0)>0)d=0;else return;do{e=f[a+(d<<2)>>2]|0;f[c+(d<<2)>>2]=e<<1^e>>31;d=d+1|0}while((d|0)!=(b|0));return}

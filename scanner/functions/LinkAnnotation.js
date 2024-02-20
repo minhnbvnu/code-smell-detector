@@ -1,0 +1,1 @@
+function LinkAnnotation(t){var o;_classCallCheck(this,LinkAnnotation);(o=r.call(this,t)).data.annotationType=c.AnnotationType.LINK;var l=getQuadPoints(t.dict,o.rectangle);l&&(o.data.quadPoints=l);o.data.borderColor=o.data.borderColor||o.data.color;m.Catalog.parseDestDictionary({destDict:t.dict,resultObj:o.data,docBaseUrl:t.pdfManager.docBaseUrl});return o}

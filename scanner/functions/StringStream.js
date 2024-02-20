@@ -1,4 +1,5 @@
-function StringStream(str) {
-    const bytes = (0, _util.stringToBytes)(str);
-    Stream.call(this, bytes);
+function StringStream(string, tabSize) {
+    this.pos = this.start = 0;
+    this.string = string;
+    this.tabSize = tabSize || 8;
   }

@@ -1,0 +1,1 @@
+function CFFParser(t,r,o){_classCallCheck(this,CFFParser);this.bytes=t.getBytes();this.properties=r;this.seacAnalysisEnabled=!!o}

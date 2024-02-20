@@ -1,0 +1,1 @@
+function parse_BrtFmt(data,length){var ifmt=data.read_shift(2);var stFmtCode=parse_XLWideString(data,length-2);return[ifmt,stFmtCode]}

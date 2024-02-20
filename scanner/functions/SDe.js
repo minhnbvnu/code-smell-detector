@@ -1,0 +1,1 @@
+function SDe(e){var t=Cr(),r=Cr();return this.divRemTo(e,t,r),new Array(t,r)}

@@ -1,0 +1,1 @@
+function cue(e,t,r){if(xl.isAbsolute(e))return k0.lstat(e,i=>i?(i.message=i.message.replace("lstat","ensureSymlink"),r(i)):r(null,{toCwd:e,toDst:e}));{let i=xl.dirname(t),a=xl.join(i,e);return pue(a,(n,s)=>n?r(n):s?r(null,{toCwd:a,toDst:e}):k0.lstat(e,o=>o?(o.message=o.message.replace("lstat","ensureSymlink"),r(o)):r(null,{toCwd:e,toDst:xl.relative(i,e)})))}}

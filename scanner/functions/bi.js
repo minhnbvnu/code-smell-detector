@@ -1,0 +1,1 @@
+function bi(t,e){e[kt]=k(1e3*("0."+t))}

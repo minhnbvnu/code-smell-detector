@@ -1,0 +1,1 @@
+function ioe(e){if(e===null||typeof e!="object")return e;if(e instanceof Object)var t={__proto__:roe(e)};else var t=Object.create(null);return Object.getOwnPropertyNames(e).forEach(function(r){Object.defineProperty(t,r,Object.getOwnPropertyDescriptor(e,r))}),t}

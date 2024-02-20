@@ -1,0 +1,1 @@
+function stackHas$1(key){return this.__data__.has(key)}

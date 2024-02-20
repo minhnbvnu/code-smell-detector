@@ -1,0 +1,1 @@
+function _gethostbyname(name){return getHostByName(UTF8ToString(name))}

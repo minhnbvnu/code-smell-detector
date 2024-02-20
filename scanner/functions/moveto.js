@@ -1,0 +1,1 @@
+function moveto(x,y){$img2.css({top:px(-y),left:px(-x)});$sel.css({top:px(y),left:px(x)})}

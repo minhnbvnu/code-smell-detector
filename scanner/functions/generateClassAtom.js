@@ -1,5 +1,1 @@
-function generateClassAtom(node) {
-	    assertType(node.type, 'anchor|characterClassEscape|characterClassRange|dot|value');
-
-	    return generate(node);
-	  }
+function generateClassAtom(i){return assertType(i.type,"anchor|characterClassEscape|characterClassRange|dot|value"),generate(i)}

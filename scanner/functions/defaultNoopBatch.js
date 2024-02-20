@@ -1,0 +1,3 @@
+function defaultNoopBatch(callback) {
+  callback();
+}

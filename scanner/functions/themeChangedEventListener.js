@@ -1,0 +1,4 @@
+function themeChangedEventListener(event)
+{  
+	changeThemeColor();
+}

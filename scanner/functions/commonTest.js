@@ -1,0 +1,84 @@
+async function commonTest (region, stackMiddlefix) {
+    const unixTimestamp = Math.floor(new Date() / 1000)
+    const stackName = `cfn-integ-${stackMiddlefix}-${unixTimestamp}`
+    const s3Params = {
+      // CFN, when reading the template from S3, requires the S3 bucket to be in the same region as the CFN stack...
+      Bucket: `dev-portal-integ-${region}`,
+      Body: fs.readFileSync(`./cloudformation/packaged-${region}.yaml`),
+      Key: stackName
+    }
+    const cfnParams = {
+      StackName: stackName,
+      Capabilities: ['CAPABILITY_NAMED_IAM', 'CAPABILITY_AUTO_EXPAND'],
+      Parameters: [
+        {
+          ParameterKey: 'DevPortalSiteS3BucketName',
+          ParameterValue: `integ-${stackMiddlefix}-${unixTimestamp}-dev-portal-test`
+        },
+        {
+          ParameterKey: 'ArtifactsS3BucketName',
+          ParameterValue: `integ-${stackMiddlefix}-${unixTimestamp}-artifact-bucket`
+        },
+        {
+          ParameterKey: 'DevPortalCustomersTableName',
+          ParameterValue: `Customers${unixTimestamp}`
+        },
+        {
+          ParameterKey: 'CognitoDomainNameOrPrefix',
+          ParameterValue: `integ-${stackMiddlefix}-${unixTimestamp}`
+        }
+      ],
+      // RoleARN: 'STRING_VALUE',
+      TimeoutInMinutes: cfnTimeout
+    }
+
+    console.log('commonTest', region)
+
+    const AWS = require('aws-sdk')
+    AWS.config.update({ region: region })
+
+    // pin versions of SDKs
+    const cfn = new AWS.CloudFormation({ region: region })
+    const s3 = new AWS.S3({ region: region })
+    const logger = function (input) {
+      _console(`${region}:${stackName}:${input}`)
+    }
+
+    // Upload the packaged template to S3, then use the resulting URL in the CFN createStack call
+    // This is necessary because the file is too large to deliver in-line to CFN
+    cfnParams.TemplateURL = (await s3.upload(s3Params).promise()).Location
+
+    logger('createStack call starting.')
+    await cfn.createStack(cfnParams).promise()
+    logger('createStack call succeeded.')
+
+    logger('stackExists waiter starting.')
+    await cfn.waitFor('stackExists', { StackName: stackName }).promise()
+    logger('stackExists waiter succeeded.')
+
+    logger('stackCreateComplete waiter starting.')
+    const devPortalUrl =
+            (await cfn.waitFor('stackCreateComplete', { StackName: stackName }).promise()).Stacks[0].Outputs
+              .find((output) => output.OutputKey === 'WebsiteURL').OutputValue
+    logger('stackCreateComplete waiter succeeded.')
+
+    logger(`verifying that stack is available at ${devPortalUrl} .`)
+    const staticIndex = await rp(devPortalUrl)
+
+    expect(staticIndex.includes('<title>Developer Portal</title>')).toBeTruthy()
+    logger(`verified that stack is available at ${devPortalUrl} .`)
+
+    // add RoleArn: ... later
+    logger('deleteStack call starting.')
+    await cfn.deleteStack({ StackName: stackName }).promise()
+    logger('deleteStack call succeeded.')
+
+    logger('stackDeleteComplete waiter starting.')
+    await cfn.waitFor('stackDeleteComplete', { StackName: stackName }).promise()
+    logger('stackDeleteComplete waiter succeeded.')
+
+    // pass the test; we successfully stood the stack up and tore it down
+    expect(true).toBe(true)
+
+    return true
+  }

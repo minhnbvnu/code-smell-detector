@@ -1,0 +1,1 @@
+function uW(t){t.stopAnimation(),t.isGroup&&t.traverse((function(t){t.stopAnimation()}))}

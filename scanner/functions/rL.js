@@ -1,0 +1,1 @@
+function rL(t){return CL[t.__brushOption.brushType]}

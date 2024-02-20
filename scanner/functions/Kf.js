@@ -1,1 +1,2 @@
-function Kf(a,b,c,d){a=a|0;b=b|0;c=c|0;d=d|0;if(Ya(a,H[b+8>>2],0)){Dd(b,c,d);return}a=H[a+8>>2];ea[H[H[a>>2]+28>>2]](a,b,c,d)}
+function Kf(a,b,c,d){null!==b.firstCapturedUpdate&&(null!==b.lastUpdate&&(b.lastUpdate.next=b.firstCapturedUpdate,b.lastUpdate=b.lastCapturedUpdate),b.firstCapturedUpdate=b.lastCapturedUpdate=null);a=b.firstEffect;for(b.firstEffect=b.lastEffect=null;null!==a;)d=a.callback,null!==d&&(a.callback=null,Jf(d,c)),a=a.nextEffect;a=b.firstCapturedEffect;for(b.firstCapturedEffect=b.lastCapturedEffect=
+null;null!==a;)b=a.callback,null!==b&&(a.callback=null,Jf(b,c)),a=a.nextEffect}

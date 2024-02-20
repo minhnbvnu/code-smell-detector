@@ -1,0 +1,1 @@
+function kwe(e){return Object.prototype.toString.call(e)==="[object Number]"&&e%1==0&&!bwe.isNegativeZero(e)}

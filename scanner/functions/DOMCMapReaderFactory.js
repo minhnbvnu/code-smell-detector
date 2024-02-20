@@ -1,0 +1,1 @@
+function DOMCMapReaderFactory(){_classCallCheck(this,DOMCMapReaderFactory);return r.apply(this,arguments)}

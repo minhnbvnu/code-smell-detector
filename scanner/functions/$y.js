@@ -1,1 +1,1 @@
-function $y(a){a=a|0;dk(a);ra(a)}
+function $y(t,e){var r=-1,n=Hi(t)?Array(t.length):[];return iu(t,function(i,s,a){n[++r]=e(i,s,a)}),n}

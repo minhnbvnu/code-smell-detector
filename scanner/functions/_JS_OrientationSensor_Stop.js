@@ -1,0 +1,1 @@
+function _JS_OrientationSensor_Stop(){if(JS_OrientationSensor){JS_OrientationSensor.stop();JS_OrientationSensor.removeEventListener("reading",JS_OrientationSensor_eventHandler);JS_OrientationSensor=null}else if(JS_OrientationSensor_callback!=0){window.removeEventListener("deviceorientation",JS_DeviceOrientation_eventHandler)}JS_OrientationSensor_callback=0}

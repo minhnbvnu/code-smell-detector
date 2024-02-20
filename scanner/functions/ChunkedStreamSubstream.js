@@ -1,1 +1,1 @@
-function ChunkedStreamSubstream() {}
+function ChunkedStreamSubstream(){}

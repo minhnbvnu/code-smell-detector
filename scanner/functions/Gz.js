@@ -1,0 +1,1 @@
+function Gz(t,e,n,i){return[e[0]-i[t]*n[0],e[1]-i[t]*n[1]]}

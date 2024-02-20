@@ -1,0 +1,1 @@
+function $G(t,e,n,i,r,o){t=r===n?0:Math.round(32767*(t-n)/(r-n)),e=o===i?0:Math.round(32767*(e-i)/(o-i));for(var a,s=0,l=32768;l>0;l/=2){var u=0,h=0;(t&l)>0&&(u=1),(e&l)>0&&(h=1),s+=l*l*(3*u^h),0===h&&(1===u&&(t=l-1-t,e=l-1-e),a=t,t=e,e=a)}return s}

@@ -1,3 +1,3 @@
 function Dummy() {
-    this.type = "Pattern";
-  }
+    events.EventEmitter.call(this);
+}

@@ -1,0 +1,1 @@
+function nte(e,t){return e==="darwin"?_p.join(g3(),"Library/Logs",t):_p.join(F_(e,t),"logs")}

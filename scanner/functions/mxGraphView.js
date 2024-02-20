@@ -1,0 +1,1 @@
+function mxGraphView(a){this.graph=a;this.translate=new mxPoint;this.graphBounds=new mxRectangle;this.states=new mxDictionary}

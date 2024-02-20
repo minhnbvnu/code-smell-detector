@@ -1,0 +1,1 @@
+function isRequired(t){return t.validate&&"error"===t.validate.nullTest}

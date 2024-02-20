@@ -1,0 +1,1 @@
+function vg_axisDomain(){return{type:"path",interactive:false,properties:{enter:{x:{value:.5},y:{value:.5},stroke:{value:vg.config.axis.axisColor},strokeWidth:{value:vg.config.axis.axisWidth}},update:{}}}}

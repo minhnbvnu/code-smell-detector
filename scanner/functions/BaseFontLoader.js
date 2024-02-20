@@ -1,0 +1,1 @@
+function BaseFontLoader(t){var r=t.docId,a=t.onUnsupportedFeature,o=t.ownerDocument,l=void 0===o?globalThis.document:o;t.styleElement;_classCallCheck(this,BaseFontLoader);this.constructor===BaseFontLoader&&(0,i.unreachable)("Cannot initialize BaseFontLoader.");this.docId=r;this._onUnsupportedFeature=a;this._document=l;this.nativeFontFaces=[];this.styleElement=null}

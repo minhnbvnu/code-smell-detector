@@ -1,0 +1,1 @@
+function acc_0(d) { return d[0] }

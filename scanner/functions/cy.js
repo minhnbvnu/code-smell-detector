@@ -1,1 +1,1 @@
-function Cy(a,b,c,d,e,f){a=a|0;b=b|0;c=c|0;d=d|0;e=e|0;f=f|0;if(Wa(a,L[b+8>>2],f)){Wf(b,c,d,e);return}a=L[a+8>>2];ha[L[L[a>>2]+20>>2]](a,b,c,d,e,f)}
+function cy(a){return function(b,c){typeof b!="string"&&(c=b,b="*");var d,e,f,g=b.toLowerCase().split(s),h=0,i=g.length;if(p.isFunction(c))for(;h<i;h++)d=g[h],f=/^\+/.test(d),f&&(d=d.substr(1)||"*"),e=a[d]=a[d]||[],e[f?"unshift":"push"](c)}}

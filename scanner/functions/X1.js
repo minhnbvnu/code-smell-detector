@@ -1,0 +1,1 @@
+function X1(t){return my(t,jr,$1)}

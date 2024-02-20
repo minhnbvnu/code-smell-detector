@@ -34,8 +34,4 @@ function PDFPageViewBuffer(size) {
       data.shift().destroy();
     }
   };
-
-  this.has = function (view) {
-    return data.includes(view);
-  };
 }

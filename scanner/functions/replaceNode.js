@@ -1,6 +1,7 @@
-function replaceNode(newNode, oldNode) {
-  const parent = oldNode.parentNode;
-  if (parent) {
-    parent.replaceChild(newNode, oldNode);
-  }
-}
+function replaceNode(original) {
+                if (original.kind === 208 /* PropertyAccessExpression */) {
+                    const replacement = useSitesToUnqualify.get(original);
+                    useSitesToUnqualify.delete(original);
+                    return replacement;
+                }
+            }

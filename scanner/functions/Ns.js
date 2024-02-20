@@ -1,0 +1,1 @@
+function Ns(e){return In(e,!1,!0)}

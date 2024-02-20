@@ -1,0 +1,1 @@
+function baseUnary$3(func){return function(value){return func(value)}}

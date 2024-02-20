@@ -1,0 +1,1 @@
+function TC(t,e){return t.parentNode===e.parentNode?1:2}

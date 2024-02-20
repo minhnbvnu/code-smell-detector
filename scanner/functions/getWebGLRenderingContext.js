@@ -1,17 +1,1 @@
-function getWebGLRenderingContext(webGLVersion) {
-	  if (webGLVersion !== 1 && webGLVersion !== 2) {
-	    throw new Error('Cannot get WebGL rendering context, WebGL is disabled.');
-	  }
-
-	  var canvas = createCanvas(webGLVersion);
-	  canvas.addEventListener('webglcontextlost', function (ev) {
-	    ev.preventDefault();
-	    delete contexts[webGLVersion];
-	  }, false);
-
-	  if (webGLVersion === 1) {
-	    return canvas.getContext('webgl', WEBGL_ATTRIBUTES) || canvas.getContext('experimental-webgl', WEBGL_ATTRIBUTES);
-	  }
-
-	  return canvas.getContext('webgl2', WEBGL_ATTRIBUTES);
-	}
+function getWebGLRenderingContext(e){if(1!==e&&2!==e)throw new Error("Cannot get WebGL rendering context, WebGL is disabled.");var t=document.createElement("canvas");return 1===e?t.getContext("webgl",WEBGL_ATTRIBUTES)||t.getContext("experimental-webgl",WEBGL_ATTRIBUTES):t.getContext("webgl2",WEBGL_ATTRIBUTES)}

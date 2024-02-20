@@ -1,0 +1,1 @@
+function mxGraphModel(a){this.currentEdit=this.createUndoableEdit();null!=a?this.setRoot(a):this.clear()}

@@ -1,4 +1,1 @@
-function addRaw(node) {
-	      node.raw = str.substring(node.range[0], node.range[1]);
-	      return node;
-	    }
+function addRaw(o){return o.raw=i.substring(o.range[0],o.range[1]),o}

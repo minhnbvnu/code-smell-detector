@@ -1,0 +1,1 @@
+function tat(n){return function(){var t=n.apply(this,arguments);this.textContent=t==null?"":t}}

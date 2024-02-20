@@ -1,9 +1,1 @@
-function arrayToHash(array) {
-  var hash = {};
-
-  array.forEach(function(val, idx) {
-    hash[val] = true;
-  });
-
-  return hash;
-}
+function arrayToHash(i){var o={};return i.forEach((function(i,s){o[i]=!0})),o}

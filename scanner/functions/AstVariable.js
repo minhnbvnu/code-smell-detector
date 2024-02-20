@@ -1,0 +1,1 @@
+function AstVariable(t,o,c){var l;_classCallCheck(this,AstVariable);(l=r.call(this,"var")).index=t;l.min=o;l.max=c;return l}

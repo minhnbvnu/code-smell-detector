@@ -1,0 +1,1 @@
+function TL(t,e){if(t._dragging){bL(e);var n=e.offsetX,i=e.offsetY,r=t.group.transformCoordToLocal(n,i),o=SL(t,e,r,!0);t._dragging=!1,t._track=[],t._creatingCover=null,o&&lL(t,o)}}

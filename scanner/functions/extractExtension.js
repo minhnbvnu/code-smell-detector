@@ -1,0 +1,1 @@
+function extractExtension(i){var o=i.search(Ha);if(o<0)return{};for(var s=i.slice(0,o),u=i.match(Ha),C=1;C<u.length;){if(u[C])return{number:s,ext:u[C]};C++}}
