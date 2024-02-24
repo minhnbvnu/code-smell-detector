@@ -1,1 +1,1 @@
-function noop() {}
+function Noop() {}

@@ -1,5 +1,5 @@
 import { Injectable } from "@nestjs/common";
-import { execSync } from "child_process";
+import { execSync, spawnSync } from "child_process";
 import { FileService } from "src/file/file.service";
 import * as fs from "fs";
 import { EslintService } from "src/eslint/eslint.service";
@@ -12,32 +12,87 @@ export class TokenizerService {
     private readonly fileService: FileService,
     private readonly eslintService: EslintService
   ) {}
-  async tokenize(type: "1d" | "2d") {
-    const detectionResult = await this.eslintService.findComplexMethod();
+  async tokenize(type: "1d" | "2d", tokenizer: "bert" | "normal") {
+    let positiveFileCounter = 1;
+    let negativeFileCounter = 1;
+    // const detectionResult = await this.eslintService.findComplexMethod();
+    let detectionResult = {
+      positive: [],
+      negative: [],
+    };
+
+    const eslintLogNegative = fs.readFileSync(
+      "eslint-log-negative.txt",
+      "utf8"
+    );
+    const negativeLines = eslintLogNegative.split("\n");
+    const processedNegativeFiles = [];
+
+    negativeLines.forEach((line) => {
+      const elements = line.split(" ");
+      if (elements.length >= 2) {
+        processedNegativeFiles.push(elements[1]);
+      }
+    });
+
+    const eslintLogPositive = fs.readFileSync(
+      "eslint-log-positive.txt",
+      "utf8"
+    );
+    const positiveLines = eslintLogPositive.split("\n");
+    const processedPositiveFiles = [];
+
+    positiveLines.forEach((line) => {
+      const elements = line.split(" ");
+      if (elements.length >= 2) {
+        processedPositiveFiles.push(elements[1]);
+      }
+    });
+
+    detectionResult.negative = processedNegativeFiles;
+    detectionResult.positive = processedPositiveFiles;
+
     const positiveTokenizedFiles = [];
-    for (const file of detectionResult.positive) {
-      console.log({ file });
-      const tokenizeRes = this.runSingleTokenization(file, type);
+    for (const [index, file] of detectionResult.positive.entries()) {
+      fs.writeFileSync(
+        `tokenizer-positive-log-${tokenizer}-${type}.txt`,
+        `${file} ${index}\n`,
+        {
+          flag: "a",
+        }
+      );
+      const tokenizeRes =
+        tokenizer === "bert"
+          ? this.runSingleBertTokenization(file, type)
+          : this.runSingleTokenization(file, type);
       positiveTokenizedFiles.push(tokenizeRes);
+      const writeFile = `data/${tokenizer}/${type}/Positive/tokenized${positiveFileCounter}.tok.cld`;
+      fs.writeFileSync(writeFile, tokenizeRes, {
+        flag: "a",
+      });
+      if (fs.statSync(writeFile).size > 52428800) {
+        ++positiveFileCounter;
+      }
     }
 
-    const negativeTokenizedFiles = [];
-    const positiveFileContent = positiveTokenizedFiles.join("");
-    fs.writeFileSync(
-      `data/${type}/Positive/tokenized1.tok.cld`,
-      positiveFileContent
-    );
-
-    for (const file of detectionResult.negative) {
+    for (const [index, file] of detectionResult.negative.entries()) {
+      fs.writeFileSync(
+        `tokenizer-negative-log-${tokenizer}-${type}.txt`,
+        `${file} ${index}\n`,
+        {
+          flag: "a",
+        }
+      );
       const tokenizeRes = this.runSingleTokenization(file, type);
-      negativeTokenizedFiles.push(tokenizeRes);
+      const writeFile = `data/${tokenizer}/${type}/Negative/tokenized${negativeFileCounter}.tok.cld`;
+      fs.writeFileSync(writeFile, tokenizeRes, {
+        flag: "a",
+      });
+      if (fs.statSync(writeFile).size > 52428800) {
+        ++negativeFileCounter;
+      }
     }
 
-    const negativeFileContent = negativeTokenizedFiles.join("");
-    fs.writeFileSync(
-      `data/${type}/Negative/tokenized1.tok.cld`,
-      negativeFileContent
-    );
     return true;
   }
   runSingleTokenization(fileName: string, type: "1d" | "2d" = "1d") {
@@ -50,14 +105,30 @@ export class TokenizerService {
             fileName
           )}`;
     let exeRes = execSync(cmd, {
-      encoding: "utf8",
+      encoding: "utf-8",
+      maxBuffer: 1024 * 1024 * 10,
     }).toString();
+    console.log({ exeRes });
 
     if (type === "1d") {
-      console.log("replaced");
       exeRes = exeRes.replace(/\n{2,}/g, "\n");
     }
-    console.log({ exeRes });
+    return exeRes;
+  }
+
+  runSingleBertTokenization(fileName: string, type: "1d" | "2d" = "1d") {
+    const cmd = `python3 src/tokenizer/tokenizer.py ${type} scanner/functions/${this.fileService.escapeSpecialCharacter(
+      fileName
+    )}`;
+
+    let exeRes = execSync(cmd, {
+      encoding: "utf-8",
+      maxBuffer: 1024 * 1024 * 10,
+    }).toString();
+    if (type === "2d") {
+      exeRes += "\n";
+    }
+
     return exeRes;
   }
 }

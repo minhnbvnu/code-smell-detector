@@ -1,3 +1,1 @@
-function memory() {
-	  return ENGINE.memory();
-	}
+function Memory(){}

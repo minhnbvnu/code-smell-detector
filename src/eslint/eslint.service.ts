@@ -30,13 +30,31 @@ export class EslintService {
     // const detectionResult = {};
     const positive = [];
     const negative = [];
+    let positiveCount = 1;
+    let negativeCount = 1;
     lintResult.forEach((res, index) => {
       const fileName = this.extractAfterLastSlash(res.filePath);
-      fs.writeFileSync('eslint-log.txt',`${index} ${fileName}\n`, {flag: 'a'})
+
       const hasError = res.errorCount > 0;
       if (hasError) {
+        fs.writeFileSync(
+          "eslint-log-positive.txt",
+          `${positiveCount} ${fileName}\n`,
+          {
+            flag: "a",
+          }
+        );
+        positiveCount++;
         positive.push(fileName);
       } else {
+        fs.writeFileSync(
+          "eslint-log-negative.txt",
+          `${negativeCount} ${fileName}\n`,
+          {
+            flag: "a",
+          }
+        );
+        negativeCount++;
         negative.push(fileName);
       }
       // detectionResult[fileName] = res.errorCount > 0;

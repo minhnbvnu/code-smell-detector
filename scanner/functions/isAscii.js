@@ -1,3 +1,3 @@
-function isAscii(charCode) {
-  return (charCode & 0xff80) === 0;
-}
+function isASCII(value) {
+        return /^[\u0020-\u007f]*$/u.test(value);
+    }

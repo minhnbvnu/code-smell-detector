@@ -1,3 +1,3 @@
-function profile(f) {
-	  return ENGINE.profile(f);
-	}
+function Profile() {
+    return <h2>Profile page</h2>;
+}

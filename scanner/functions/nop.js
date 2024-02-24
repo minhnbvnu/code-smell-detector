@@ -1,1 +1,3 @@
-function nop() {}
+function Nop() {
+  return false;
+}

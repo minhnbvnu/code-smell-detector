@@ -1,1 +1,1 @@
-function object() {}
+function Object() {}
