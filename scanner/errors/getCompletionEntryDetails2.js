@@ -1,0 +1,1 @@
+function getCompletionEntryDetails2(fileName, position, name, formattingOptions, source, preferences = emptyOptions, data) {

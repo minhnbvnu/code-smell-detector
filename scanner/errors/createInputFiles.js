@@ -1,0 +1,1 @@
+function createInputFiles(javascriptTextOrReadFileText, declarationTextOrJavascriptPath, javascriptMapPath, javascriptMapTextOrDeclarationPath, declarationMapPath, declarationMapTextOrBuildInfoPath) {

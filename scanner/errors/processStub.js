@@ -1,0 +1,1 @@
+async function processStub(userDockerFile, definitionId, repo, release, registry, registryPath) {

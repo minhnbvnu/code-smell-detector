@@ -1,0 +1,1 @@
+function createMappedTypeNode(readonlyToken, typeParameter, nameType, questionToken, type, members) {

@@ -1,0 +1,1 @@
+function replace_placeholders(content, data_source, i, formatters, special_vars = {}, encode) {

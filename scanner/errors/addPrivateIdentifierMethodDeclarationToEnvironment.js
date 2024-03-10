@@ -1,0 +1,1 @@
+function addPrivateIdentifierMethodDeclarationToEnvironment(_node, name, lex, privateEnv, isStatic2, isValid, _previousInfo) {

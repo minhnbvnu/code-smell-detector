@@ -1,0 +1,1 @@
+function getReferenceEntriesForNode(position, node, program, sourceFiles, cancellationToken, options = {}, sourceFilesSet = new Set(sourceFiles.map((f) => f.fileName))) {

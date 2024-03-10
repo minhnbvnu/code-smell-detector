@@ -1,0 +1,1 @@
+function _vorbis_book_decodevv_add($book,$a,$offset,$ch,$b,$n) {

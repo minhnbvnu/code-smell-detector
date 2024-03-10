@@ -1,0 +1,1 @@
+function codeActionForFixWorker(changes, sourceFile, symbolName2, fix, includeSymbolNameInDescription, compilerOptions, preferences) {

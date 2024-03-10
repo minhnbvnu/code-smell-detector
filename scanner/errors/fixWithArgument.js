@@ -1,0 +1,1 @@
+function* fixWithArgument(fixer, node, callNode, calleeNode, kind, negative, isOptional) {

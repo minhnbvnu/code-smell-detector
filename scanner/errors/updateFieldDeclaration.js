@@ -1,0 +1,1 @@
+function updateFieldDeclaration(changeTracker, file, declaration, type, fieldName, modifiers) {

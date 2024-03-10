@@ -1,0 +1,1 @@
+async function parseComposite3DTile(tile, arrayBuffer, byteOffset, options, context, parse3DTile2) {

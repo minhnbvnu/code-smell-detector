@@ -1,0 +1,1 @@
+function calcSplices(current, currentStart, currentEnd,

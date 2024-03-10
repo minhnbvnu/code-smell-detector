@@ -1,0 +1,1 @@
+function draw_fill_without_pattern_support(ctx, start_x, start_y, fill_r, fill_g, fill_b, fill_a){

@@ -1,0 +1,1 @@
+function displayColormap(xCenterPix, yCenterPix, widthPix, heightPix,

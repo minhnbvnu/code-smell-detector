@@ -1,0 +1,1 @@
+function calc_xi_sum_dev(xi_sum_d, a_d, b_d, alpha_d,

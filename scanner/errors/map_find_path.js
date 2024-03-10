@@ -1,0 +1,1 @@
+function map_find_path(map, start, goal, edgeCost, costLayer, use_sprite_id) {

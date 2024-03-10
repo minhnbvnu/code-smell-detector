@@ -1,0 +1,1 @@
+function convertSingleImport(name, moduleSpecifier, checker, identifiers, target, quotePreference) {

@@ -1,0 +1,1 @@
+function SocialCallbackResponse(res, navigateUrl, token = null, message, code = 200, status = 'success') {

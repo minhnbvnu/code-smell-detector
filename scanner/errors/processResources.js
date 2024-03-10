@@ -1,0 +1,1 @@
+function processResources(error, resources, source, options, module, callback) {

@@ -1,0 +1,1 @@
+function HTML5FSFile(fs, entry, path$$1, flag, stat, contents) {

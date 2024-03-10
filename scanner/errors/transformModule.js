@@ -1,0 +1,1 @@
+            function appendExportStatement(statements, exportName, expression, location, allowComments, liveBinding) {

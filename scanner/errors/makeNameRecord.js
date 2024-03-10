@@ -1,0 +1,1 @@
+function makeNameRecord(platformID, encodingID, languageID, nameID, length, offset) {

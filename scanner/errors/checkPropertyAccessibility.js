@@ -1,0 +1,1 @@
+function checkPropertyAccessibility(node, isSuper, writing, type, prop, reportError = true) {

@@ -1,0 +1,1 @@
+function mapHasEqualEntry(set, map, key1, item1, opts, channel) {

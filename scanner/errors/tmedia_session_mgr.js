@@ -1,0 +1,1 @@
+function tmedia_session_mgr(e_type, s_addr, b_ipv6, b_offerer, fn_callback, o_usr_data) {

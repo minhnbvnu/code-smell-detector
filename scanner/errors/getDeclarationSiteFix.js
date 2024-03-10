@@ -1,0 +1,1 @@
+function getDeclarationSiteFix(context, expression, errorCode, checker, trackChanges, fixedDeclarations) {

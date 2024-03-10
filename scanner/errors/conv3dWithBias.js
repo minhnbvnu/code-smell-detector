@@ -1,0 +1,1 @@
+function conv3dWithBias(x, kernel, bias, strides, padding, dataFormat, dilationRate) {

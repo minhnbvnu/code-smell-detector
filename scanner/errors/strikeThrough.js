@@ -1,0 +1,1 @@
+function strikeThrough(config, gc, text, x, y, thickness) {

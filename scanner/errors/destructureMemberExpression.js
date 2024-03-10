@@ -1,0 +1,1 @@
+function destructureMemberExpression(i,o,s,u,C,_,w){w.push((function(o,s,w){i.prependRight(u.start,_?s:s+"var "),i.appendLeft(u.end," = "+C+w),i.move(u.start,u.end,o)}))}

@@ -1,5 +1,5 @@
 import { Injectable } from "@nestjs/common";
-import { ESLint } from "eslint";
+import { ESLint, Linter } from "eslint";
 import * as fs from "fs";
 
 @Injectable()
@@ -12,6 +12,27 @@ export class EslintService {
     }
 
     return inputString.substring(lastSlashIndex + 1);
+  }
+
+  extractErrorLines(fileName: string, errorMessages: Linter.LintMessage[]) {
+    const fileContent = fs
+      .readFileSync(`scanner/functions/${fileName}`, "utf-8")
+      .split("\n");
+    const errorLines = new Set<number>();
+
+    for (const errorMessage of errorMessages) {
+      const { line, endLine } = errorMessage;
+      for (let currentLine = line; currentLine <= endLine; currentLine++) {
+        errorLines.add(currentLine);
+      }
+    }
+
+    const extractedCode = (Array.from(errorLines) as number[])
+      .map((lineNumber) => fileContent[lineNumber - 1])
+      .join("\n");
+
+    fs.writeFileSync(`scanner/errors/${fileName}`, extractedCode);
+    console.log("Error code extracted and written to error_code.js");
   }
 
   extractComplexity(message: string) {
@@ -36,7 +57,10 @@ export class EslintService {
       const fileName = this.extractAfterLastSlash(res.filePath);
 
       const hasError = res.errorCount > 0;
-      let errorPositionString = "e ";
+      const isParsingError = res.messages
+        .map((error) => error.message)
+        .some((message) => message.includes("Parsing error"));
+      let errorPositionString = "e";
       res.messages
         .map((message) => {
           return {
@@ -50,20 +74,21 @@ export class EslintService {
           errorPositionString += ` ${position.startLine},${position.startColumn} ${position.endLine},${position.endColumn} e`;
         });
 
-      if (hasError) {
+      if (hasError && !isParsingError) {
         fs.writeFileSync(
           "eslint-log-positive.txt",
-          `${positiveCount} ${fileName}\n`,
+          `${positiveCount} ${fileName} ${errorPositionString}\n`,
           {
             flag: "a",
           }
         );
         positiveCount++;
         positive.push(fileName);
+        this.extractErrorLines(fileName, res.messages);
       } else {
         fs.writeFileSync(
           "eslint-log-negative.txt",
-          `${negativeCount} ${fileName} errorPositionString\n`,
+          `${negativeCount} ${fileName}\n`,
           {
             flag: "a",
           }

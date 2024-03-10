@@ -1,0 +1,1 @@
+function buildWorker(state, project, cancellationToken, writeFile2, getCustomTransformers, onlyReferences) {

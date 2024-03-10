@@ -1,0 +1,1 @@
+            cb('failure'); // eslint-disable-line n/no-callback-literal

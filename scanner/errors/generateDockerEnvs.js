@@ -1,0 +1,1 @@
+async function generateDockerEnvs(baseDir, serviceName, serviceProps, functionName, functionProps, debugPort, httpParams, nasConfig, ishttpTrigger, debugIde, debugArgs) {

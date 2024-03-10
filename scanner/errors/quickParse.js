@@ -1,0 +1,1 @@
+function quickParse(logger, scopeStartAST, sourceText, minChar, limChar, errorCapture) {

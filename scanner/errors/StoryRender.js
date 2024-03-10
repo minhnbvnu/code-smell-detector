@@ -1,0 +1,1 @@
+function StoryRender(channel, store, renderToScreen, callbacks, id, viewMode, story) {

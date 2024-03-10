@@ -1,0 +1,1 @@
+		return require("pnpapi"); // eslint-disable-line node/no-missing-require

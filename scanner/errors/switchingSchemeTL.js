@@ -1,0 +1,1 @@
+function switchingSchemeTL(TL,qRoad,time,cycleTime,greenTime,isFixed){

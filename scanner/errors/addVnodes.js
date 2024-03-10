@@ -1,0 +1,1 @@
+function addVnodes (parentElm, refElm, vnodes, startIdx, endIdx, insertedVnodeQueue) {

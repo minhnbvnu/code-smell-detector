@@ -1,0 +1,1 @@
+function writeTrimmedCurrentLine(text, commentEnd, writer, newLine, pos, nextLineStart) {

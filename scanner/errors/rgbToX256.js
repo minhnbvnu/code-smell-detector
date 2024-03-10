@@ -1,0 +1,1 @@
+  const distSquare = (A, B, C, a, b, c) => {

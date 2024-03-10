@@ -1,0 +1,1 @@
+function _touchAndList(view, target, pageX, pageY, screenX, screenY, clientX, clientY) {

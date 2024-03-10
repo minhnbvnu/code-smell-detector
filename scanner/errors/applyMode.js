@@ -1,0 +1,1 @@
+function applyMode(c1, f, ar, ag, ab, br, bg, bb, cr, cg, cb) {

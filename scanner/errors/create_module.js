@@ -1,0 +1,1 @@
+function create_module(program, format, name2, banner, sveltePath = "svelte", helpers, globals2, imports, module_exports, exports_from) {

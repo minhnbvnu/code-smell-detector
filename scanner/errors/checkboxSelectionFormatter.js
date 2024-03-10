@@ -1,0 +1,1 @@
+function checkboxSelectionFormatter(row, cell, value, columnDef, dataContext, grid) {

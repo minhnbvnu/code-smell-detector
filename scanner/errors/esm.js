@@ -1,0 +1,1 @@
+function esm(program, name2, banner, sveltePath, internal_path, helpers, globals2, imports, module_exports, exports_from) {

@@ -1,0 +1,1 @@
+function BasePoly(x, y, width, height, edges, color, borderWidth, borderColor, round) {

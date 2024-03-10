@@ -1,0 +1,1 @@
+function buildAttributes(el, dataList, ruleList, optionsList, methodList, propsList, uploadVarList) {

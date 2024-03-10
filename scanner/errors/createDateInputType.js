@@ -1,0 +1,1 @@
+  return function dynamicDateInputType(scope, element, attr, ctrl, $sniffer, $browser, $filter) {

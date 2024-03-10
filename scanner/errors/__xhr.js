@@ -1,0 +1,34 @@
+            const callback = e => {
+                const name = e.data.name;
+                const response = e.data.response;
+                // ensure callback is responding to the proper message
+                if (
+                    e.data.id !== _uuid
+                    || e.data.xhrId !== xhrId
+                    || !name
+                    || !name.startsWith("RESP_API_XHR_TO_CREATE")
+                ) return;
+                console.log("XHR==response=", response);
+                if (name === "RESP_API_XHR_TO_CREATE") {
+                    console.log("RESP_API_XHR_TO_CREATE----");
+                    // ignore
+                } else if (name.includes("ABORT") && details.onabort) {
+                    details.onabort(response);
+                } else if (name.includes("ERROR") && details.onerror) {
+                    details.onerror(response);
+                } else if (name === "RESP_API_XHR_TO_CREATE_LOAD" && details.onload) {
+                    details.onload(response);
+                } else if (name.includes("LOADEND") && details.onloadend) {
+                    details.onloadend(response);
+                    // remove event listener when xhr is complete
+                    window.removeEventListener("message", callback);
+                } else if (name.includes("LOADSTART") && details.onloadstart) {
+                    details.onloadtstart(response);
+                } else if (name.includes("PROGRESS") && details.onprogress) {
+                    details.onprogress(response);
+                } else if (name.includes("READYSTATECHANGE") && details.onreadystatechange) {
+                    details.onreadystatechange(response);
+                } else if (name.includes("TIMEOUT") && details.ontimeout) {
+                    details.ontimeout(response);
+                }
+            };

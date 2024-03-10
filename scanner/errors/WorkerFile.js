@@ -1,0 +1,1 @@
+function WorkerFile(_fs, _path, _flag, _stat, remoteFdId, contents) {

@@ -1,0 +1,1 @@
+function wrapProgram(container, i, fn, data, declaredBlockParams, blockParams, depths) {

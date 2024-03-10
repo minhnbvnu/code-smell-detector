@@ -1,0 +1,1 @@
+function classicNameResolver(moduleName, containingFile, compilerOptions, host, cache, redirectedReference) {

@@ -1,0 +1,1 @@
+function createElementBlock(type, props, children, patchFlag, dynamicProps, shapeFlag) {

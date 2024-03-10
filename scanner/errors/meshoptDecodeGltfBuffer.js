@@ -1,0 +1,1 @@
+async function meshoptDecodeGltfBuffer(target, count, size, source, mode, filter = "NONE") {

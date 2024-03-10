@@ -1,0 +1,1 @@
+      var AdError = function AdError(type, code, vast, message, adsRequest, userRequestContext) {

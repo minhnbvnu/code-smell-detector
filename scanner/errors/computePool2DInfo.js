@@ -1,0 +1,1 @@
+function computePool2DInfo(e,t,n,r,o,a,i){void 0===i&&(i="channelsLast");var s,u=parseTupleParam(t),l=u[0],c=u[1];if("channelsLast"===i)s=[l,c,e[3],e[3]];else{if("channelsFirst"!==i)throw new Error("Unknown dataFormat "+i);s=[l,c,e[1],e[1]];}return computeConv2DInfo(e,s,n,r,o,a,!1,i)}

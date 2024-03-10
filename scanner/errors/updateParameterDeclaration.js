@@ -1,0 +1,1 @@
+function updateParameterDeclaration(node, modifiers, dotDotDotToken, name, questionToken, type, initializer) {

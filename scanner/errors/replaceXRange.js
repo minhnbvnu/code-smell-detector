@@ -1,0 +1,1 @@
+  return comp.replace(r, function(ret, gtlt, M, m, p, pr) {

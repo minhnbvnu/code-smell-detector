@@ -1,0 +1,1 @@
+function showModal(component, hide, titleText, buttonText, icon, titleColor, hideButton){

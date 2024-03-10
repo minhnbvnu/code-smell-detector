@@ -1,0 +1,1 @@
+function Face3(a, b, c, normal, color, materialIndex) {

@@ -1,0 +1,1 @@
+function addMissingDeclarations(context, implementedTypeNode, sourceFile, classDeclaration, changeTracker, preferences) {

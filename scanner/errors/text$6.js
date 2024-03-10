@@ -1,0 +1,1 @@
+function text$6(str, x, y, width, height, z) {

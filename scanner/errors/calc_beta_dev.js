@@ -1,0 +1,1 @@
+function calc_beta_dev(beta_d, b_d, scale_t, nstates, obs_t, t){

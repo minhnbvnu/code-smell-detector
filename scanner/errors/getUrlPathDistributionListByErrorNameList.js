@@ -1,0 +1,1 @@
+async function getUrlPathDistributionListByErrorNameList (projectId, startAt, endAt, errorNameList, countType, max = 10) {

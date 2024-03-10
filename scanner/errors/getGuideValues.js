@@ -1,0 +1,1 @@
+function getGuideValues(total, count, width, gutter, margin, margin1, margin2, center) {

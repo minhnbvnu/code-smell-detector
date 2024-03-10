@@ -1,0 +1,1 @@
+function getCompletionEntriesForRelativeModules(literalValue, scriptDirectory, compilerOptions, host, scriptPath, extensionOptions) {

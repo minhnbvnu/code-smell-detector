@@ -1,0 +1,1 @@
+function resizeRgbImage(src, dest, w1, h1, w2, h2, alpha01) {

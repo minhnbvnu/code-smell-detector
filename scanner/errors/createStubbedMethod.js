@@ -1,0 +1,1 @@
+function createStubbedMethod(modifiers, name, optional, typeParameters, parameters, returnType, quotePreference, body) {

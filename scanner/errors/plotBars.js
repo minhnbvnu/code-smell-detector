@@ -1,0 +1,1 @@
+function plotBars(datapoints, barLeft, barRight, offset, fillStyleCallback, axisx, axisy) {

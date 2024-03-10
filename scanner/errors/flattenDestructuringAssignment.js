@@ -1,0 +1,1 @@
+function flattenDestructuringAssignment(node, visitor, context, level, needsValue, createAssignmentCallback) {

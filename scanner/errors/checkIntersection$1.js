@@ -1,0 +1,1 @@
+function checkIntersection$1( object, material, raycaster, ray, pA, pB, pC, point ) {

@@ -1,0 +1,1 @@
+function handle_row(row, x, y, width, height, parent_path, level, SVG_ROOT) {

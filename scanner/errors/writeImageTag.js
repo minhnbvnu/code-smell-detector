@@ -1,0 +1,1 @@
+function writeImageTag (wholeMatch, altText, linkId, url, width, height, m5, title) {

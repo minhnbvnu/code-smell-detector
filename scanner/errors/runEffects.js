@@ -1,0 +1,1 @@
+function runEffects(inst, effects, props, oldProps, hasPaths, extraArgs) {

@@ -1,0 +1,1 @@
+function Definition(name1, type1, spec1, param1, value1, inout1, meta1) {

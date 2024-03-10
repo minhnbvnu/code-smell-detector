@@ -1,0 +1,1 @@
+      var result = code.replace(cstrsRegex, function(all, attr, name, params, throws_, body) {

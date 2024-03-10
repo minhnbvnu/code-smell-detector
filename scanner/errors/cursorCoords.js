@@ -1,0 +1,1 @@
+function cursorCoords(cm, pos, context, lineObj, preparedMeasure, varHeight) {

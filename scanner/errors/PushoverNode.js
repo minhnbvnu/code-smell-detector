@@ -1,0 +1,100 @@
+        this.on("input",function(msg) {
+            var title = node.title || msg.topic || "Node-RED";
+            var pri = node.priority || msg.priority || 0;
+            var dev = node.device || msg.device;
+            var sound = node.sound || msg.sound || null;
+            var url = node.url || msg.url || null;
+            var url_title = node.url_title || msg.url_title || null;
+            var html = node.html || msg.html || false;
+            var attachment = msg.attachment || null;
+            var retry = msg.retry || 30;
+            var expire = msg.expire || 600;
+            var ttl = msg.ttl || null;
+            var callback = msg.callback || null;
+            var tags = msg.tags || null;
+            if (isNaN(pri)) {pri=0;}
+            if (pri > 2) {pri = 2;}
+            if (pri < -2) {pri = -2;}
+			if (isNaN(retry)) {
+                retry = 30;
+                node.warn("No valid number for retry found, using default 30s retry interval");
+            }
+            if (isNaN(expire)) {
+                expire = 600;
+                node.warn("No valid number for expire time found, using default 600s retry duration");
+            }
+            if (retry < 30) {
+                retry = 30;
+                node.warn("Retry interval too low, using minimal 30s retry interval");
+            }
+            if (expire > 10800) {
+                expire = 10800;
+                node.warn("Expire time too high, using maximum setting of 10800s (3 hours) retry duration");
+            }
+            if (ttl !== null) {
+                if(typeof ttl === "string") {
+                    ttl = parseInt(ttl);
+                }
+                if(isNaN(ttl) || !Number.isInteger(ttl) || ttl <= 0) {
+                    ttl = null;
+                    node.warn("No valid number for TTL found, not set");
+                }
+            }
+            if (typeof msg.payload === 'undefined') { msg.payload = "(undefined msg.payload)"; }
+            if (typeof(msg.payload) === 'object') {
+                msg.payload = JSON.stringify(msg.payload);
+            }
+            else { msg.payload = msg.payload.toString(); }
+            if (pusher) {
+                var pushmsg = {
+                    message: msg.payload,
+                    title: title,
+                    priority: pri,
+                    retry: retry,
+                    expire: expire,
+                    ttl: ttl,
+                    html: html
+                };
+                if (dev) { pushmsg.device = dev; }
+                if (typeof(sound) === 'string') { pushmsg.sound = sound; }
+                if (typeof(url) === 'string') { pushmsg.url = url; }
+                if (typeof(url_title) === 'string') { pushmsg.url_title = url_title; }
+                if (typeof(callback) === 'string') { pushmsg.callback = callback; }
+                if (typeof(tags) === 'string') { pushmsg.tags = tags; }
+                if (html) { pushmsg.html = 1; }
+                if (typeof(attachment) === 'string') {
+                    // Treat attachment as a path
+                    fs.readFile(attachment,function(err, data) {
+                        if (err) {
+                            node.error("[57-pushover.js] Error: File Read Error: "+err);
+                            return;
+                        }
+                        pushmsg.file = { data: data };
+                        pushMessage(pushmsg);
+                    });
+                    return;
+                }
+                else if (attachment instanceof Buffer) {
+                    // Is it base64 encoded or binary?
+                    var attachmentString = attachment.toString();
+                    var attachmentBuffer = Buffer.from(attachmentString,'base64');
+                    if (attachmentString === attachmentBuffer.toString('base64')) {
+                        // If converts back to same, then it was base64 so set to binary
+                        // https://stackoverflow.com/a/48770228
+                        attachment = attachmentBuffer;
+                    }
+                    // Unset these temporary values
+                    attachmentBuffer = attachmentString = undefined;
+                    // attach the buffer
+                    pushmsg.file = { data: attachment };
+                }
+                else if (attachment) {
+                    node.error("[57-pushover.js] Error: attachment property must be a path to a local file or a Buffer containing an image");
+                    return;
+                }
+                pushMessage(pushmsg,msg);
+            }
+            else {
+                node.warn("Pushover credentials not set.");
+            }
+        });

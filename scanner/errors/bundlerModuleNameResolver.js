@@ -1,0 +1,1 @@
+function bundlerModuleNameResolver(moduleName, containingFile, compilerOptions, host, cache, redirectedReference) {

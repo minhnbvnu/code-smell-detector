@@ -1,0 +1,1 @@
+function fnH (a, b, c, d, m, k, s) {

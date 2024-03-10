@@ -1,0 +1,1 @@
+function undelegateListener(object, givenPath, name, callback, context, info = {}) {

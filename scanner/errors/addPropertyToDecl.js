@@ -1,0 +1,1 @@
+function addPropertyToDecl(aSelf, aDecl, property, w, s, c) {

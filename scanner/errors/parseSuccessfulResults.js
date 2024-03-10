@@ -1,0 +1,1 @@
+function parseSuccessfulResults(result, table, progress, isShowIcons, linkData, messages) {

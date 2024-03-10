@@ -1,0 +1,1 @@
+function fetchSimilarAlerts(alert_id,

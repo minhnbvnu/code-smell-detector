@@ -1,0 +1,1 @@
+function doWrite(stream, state, writev, len, chunk, encoding, cb) {

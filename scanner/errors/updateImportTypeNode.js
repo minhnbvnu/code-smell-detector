@@ -1,0 +1,1 @@
+function updateImportTypeNode(node, argument, assertions, qualifier, typeArguments, isTypeOf = node.isTypeOf) {

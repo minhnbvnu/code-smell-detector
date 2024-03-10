@@ -1,0 +1,1 @@
+function externalPost(modelName, pubName, type, smrdata, args, postCallback){

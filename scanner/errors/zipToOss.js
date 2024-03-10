@@ -1,0 +1,1 @@
+async function zipToOss(ossClient, srcPath, ignore, zipName = 'code.zip', prefix = '', tplPath, zlibOptions = {}) {

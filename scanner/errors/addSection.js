@@ -1,0 +1,1 @@
+function addSection(section, mapUrl, mappings, sources, sourcesContent, names, stopLine, stopColumn) {

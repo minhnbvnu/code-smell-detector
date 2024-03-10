@@ -1,0 +1,1 @@
+function updateMappedTypeNode(node, readonlyToken, typeParameter, nameType, questionToken, type, members) {

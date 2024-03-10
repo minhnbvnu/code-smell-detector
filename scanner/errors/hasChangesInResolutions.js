@@ -1,0 +1,1 @@
+function hasChangesInResolutions(names, newSourceFile, newResolutions, oldResolutions, comparer, nameAndModeGetter) {

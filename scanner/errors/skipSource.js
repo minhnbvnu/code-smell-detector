@@ -1,0 +1,1 @@
+function skipSource(line, index, sourcesIndex, sourceLine, sourceColumn, namesIndex) {

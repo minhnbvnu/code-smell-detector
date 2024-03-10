@@ -1,0 +1,1 @@
+function createSignatureDeclarationFromSignature(kind, context, quotePreference, signature, body, name, modifiers, optional, enclosingDeclaration, importAdder) {

@@ -1,0 +1,1 @@
+function processPair(currentItem, currentStartLine, currentParent, previousItem, previousStartLine, previousParent2, contextNode, dynamicIndentation) {

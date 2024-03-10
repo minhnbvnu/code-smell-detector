@@ -1,0 +1,1 @@
+function count_gallery(nextprev, max, is_counting, origel, el, cb) {

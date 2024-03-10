@@ -1,0 +1,1 @@
+function internalSoundSourcePlay(handle, sound, startPositionMs, loop, volume, pitch, pan, rate, stopped) {

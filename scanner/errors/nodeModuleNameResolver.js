@@ -1,0 +1,1 @@
+function nodeModuleNameResolver(moduleName, containingFile, compilerOptions, host, cache, redirectedReference, isConfigLookup) {

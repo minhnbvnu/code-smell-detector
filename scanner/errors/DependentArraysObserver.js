@@ -1,0 +1,1 @@
+function DependentArraysObserver(callbacks, cp, instanceMeta, context, propertyName, sugarMeta) {

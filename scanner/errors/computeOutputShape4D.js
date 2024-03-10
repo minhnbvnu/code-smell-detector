@@ -1,0 +1,1 @@
+function computeOutputShape4D(inShape, fieldSize, outChannels, stride, zeroPad, roundingMode) {

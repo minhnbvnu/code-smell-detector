@@ -1,0 +1,1 @@
+async function generateContainerBuildOpts(runtime, containerName, mounts, cmd, envs, preferredImage) {

@@ -1,0 +1,1 @@
+function annotateThis(changes, sourceFile, containingFunction, program, host, cancellationToken) {

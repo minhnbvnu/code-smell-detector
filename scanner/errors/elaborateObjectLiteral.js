@@ -1,0 +1,1 @@
+function elaborateObjectLiteral(node, source, target, relation, containingMessageChain, errorOutputContainer) {

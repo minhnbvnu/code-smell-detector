@@ -1,0 +1,1 @@
+function addPropertyDeclaration(changeTracker, sourceFile, node, tokenName, typeNode, modifierFlags) {

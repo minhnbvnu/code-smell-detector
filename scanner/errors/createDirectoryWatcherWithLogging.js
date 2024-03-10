@@ -1,0 +1,1 @@
+function createDirectoryWatcherWithLogging(file, cb, flags, options, detailInfo1, detailInfo2) {

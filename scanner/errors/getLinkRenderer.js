@@ -1,0 +1,1 @@
+    return function(instance, td, row, col, prop, value, cellProperties) {

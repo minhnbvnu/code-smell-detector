@@ -1,0 +1,1 @@
+function getEntryForObjectLiteralMethodCompletion(symbol, name, enclosingDeclaration, program, host, options, preferences, formatContext) {

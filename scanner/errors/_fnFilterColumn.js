@@ -1,0 +1,1 @@
+function _fnFilterColumn ( settings, searchStr, colIdx, regex, smart, caseInsensitive )

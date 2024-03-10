@@ -1,0 +1,1 @@
+function updateInterfaceDeclaration(node, modifiers, name, typeParameters, heritageClauses, members) {

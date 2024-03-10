@@ -1,0 +1,1 @@
+function crypto_stream_xor(c,cpos,m,mpos,d,n,k) {

@@ -1,0 +1,1 @@
+function neutralStroke(palette, reference, restDelta, hoverDelta, activeDelta, focusDelta) {

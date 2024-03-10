@@ -1,0 +1,1 @@
+function defineGetterSetter(obj, prop, getter, setter, dontDelete, dontEnum) {

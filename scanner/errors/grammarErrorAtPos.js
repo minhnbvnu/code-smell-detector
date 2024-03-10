@@ -1,0 +1,1 @@
+function grammarErrorAtPos(nodeForSourceFile, start, length2, message, arg0, arg1, arg2) {

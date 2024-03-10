@@ -1,0 +1,1 @@
+function bpnn_hidden_error(delta_h, nh, delta_o, no, who, hidden) {

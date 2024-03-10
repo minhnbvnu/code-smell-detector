@@ -1,0 +1,1 @@
+function AddShadowToImage(i, w, h, scale, sc, sb, so) {

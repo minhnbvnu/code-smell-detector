@@ -1,0 +1,1 @@
+	const $RowInput = ($table, img_src, label_with_hotkey, default_value, label_unit, min, max) => {

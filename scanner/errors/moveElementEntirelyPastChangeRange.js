@@ -1,0 +1,1 @@
+function moveElementEntirelyPastChangeRange(element, isArray2, delta, oldText, newText, aggressiveChecks) {

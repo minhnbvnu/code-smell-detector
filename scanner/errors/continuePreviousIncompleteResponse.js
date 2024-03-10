@@ -1,0 +1,1 @@
+function continuePreviousIncompleteResponse(cache, file, location, program, host, preferences, cancellationToken, position) {

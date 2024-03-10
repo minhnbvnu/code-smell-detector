@@ -1,0 +1,1 @@
+function enumerateInsertsAndDeletes(newItems, oldItems, comparer, inserted, deleted, unchanged) {

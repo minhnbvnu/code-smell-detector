@@ -1,0 +1,1 @@
+function applySegment(func, segment, full, context, args, inContextCB) {

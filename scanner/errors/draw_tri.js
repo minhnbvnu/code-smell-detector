@@ -1,0 +1,1 @@
+function draw_tri(A, B, C, color, outline, pos, angle, scale, z) {

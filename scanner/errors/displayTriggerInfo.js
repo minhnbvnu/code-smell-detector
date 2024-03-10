@@ -1,0 +1,1 @@
+async function displayTriggerInfo(serviceName, functionName, triggerName, triggerType, triggerProperties, wrap, tpl) {

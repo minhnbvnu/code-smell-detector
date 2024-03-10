@@ -1,0 +1,1 @@
+function renderBackgroundRepeatY (ctx, image, bgp, x, y, w, h){

@@ -1,0 +1,1 @@
+function parseResults(result, table, progress, errors, isValidateOnly, offset, isShowIcons, linkData) {

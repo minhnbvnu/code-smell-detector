@@ -1,0 +1,1 @@
+function convertAcornCommentToEsprimaComment(block, text, start, end, startLoc, endLoc, code) {

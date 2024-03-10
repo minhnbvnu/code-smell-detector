@@ -1,0 +1,1 @@
+function createDiagnosticForOptionPathKeyValue(key, valueIndex, message, arg0, arg1, arg2) {

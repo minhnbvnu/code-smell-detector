@@ -1,0 +1,1 @@
+function getStringLiteralCompletionsFromModuleNames(sourceFile, node, compilerOptions, host, typeChecker, preferences) {

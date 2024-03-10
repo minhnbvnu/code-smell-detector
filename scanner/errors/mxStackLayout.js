@@ -1,0 +1,1 @@
+function mxStackLayout(a,b,c,d,e,f){mxGraphLayout.call(this,a);this.horizontal=null!=b?b:!0;this.spacing=null!=c?c:0;this.x0=null!=d?d:0;this.y0=null!=e?e:0;this.border=null!=f?f:0}

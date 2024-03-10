@@ -1,0 +1,1 @@
+function TorusKnotGeometry(radius, tube, tubularSegments, radialSegments, p, q, heightScale) {

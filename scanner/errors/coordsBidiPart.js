@@ -1,0 +1,1 @@
+function coordsBidiPart(cm, lineObj, lineNo, preparedMeasure, order, x, y) {

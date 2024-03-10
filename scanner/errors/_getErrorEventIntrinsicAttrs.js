@@ -1,0 +1,1 @@
+function _getErrorEventIntrinsicAttrs(transaction, errorClass, message, expected, timestamp, conf) {

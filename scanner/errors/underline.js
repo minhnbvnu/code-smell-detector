@@ -1,0 +1,1 @@
+function underline(config, gc, text, x, y, thickness) {

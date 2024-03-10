@@ -1,0 +1,1 @@
+async function buildInProcess(serviceName, functionName, codeUri, runtime, funcArtifactDir, verbose, stages) {

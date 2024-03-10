@@ -1,0 +1,1 @@
+function check_splice(expected_arr, expected_res, arr, start, end, item1, item2, item3)

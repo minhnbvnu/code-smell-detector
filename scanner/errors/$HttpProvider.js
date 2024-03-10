@@ -1,0 +1,1 @@
+      function($httpBackend, $$cookieReader, $cacheFactory, $rootScope, $q, $injector) {

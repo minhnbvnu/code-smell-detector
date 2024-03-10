@@ -1,0 +1,1 @@
+function annotateVariableDeclaration(changes, importAdder, sourceFile, declaration, program, host, cancellationToken) {

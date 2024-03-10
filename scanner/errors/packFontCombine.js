@@ -1,0 +1,1 @@
+function packFontCombine(dst, srcA, srcB, srcMask, bounds, yAlignA, yAlignB, xAlignB, operation = bitOr) {

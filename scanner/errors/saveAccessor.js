@@ -1,0 +1,1 @@
+function saveAccessor(accessorType, props, name, tkn, isClass, isStatic) {

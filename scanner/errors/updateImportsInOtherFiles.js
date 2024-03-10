@@ -1,0 +1,1 @@
+function updateImportsInOtherFiles(changes, program, host, oldFile, movedSymbols, newFilename) {

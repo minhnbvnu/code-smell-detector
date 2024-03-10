@@ -1,0 +1,1 @@
+function createDefinitionInfo(declaration, checker, symbol, node, unverified, failedAliasResolution) {

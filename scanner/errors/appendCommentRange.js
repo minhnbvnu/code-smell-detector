@@ -1,0 +1,1 @@
+function appendCommentRange(pos, end, kind, hasTrailingNewLine, _state, comments = []) {

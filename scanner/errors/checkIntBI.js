@@ -1,0 +1,1 @@
+function checkIntBI(value, min, max, buf, offset, byteLength) {

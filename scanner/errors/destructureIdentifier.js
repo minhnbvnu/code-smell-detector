@@ -1,0 +1,1 @@
+function destructureIdentifier(i,o,s,u,C,_,w){w.push((function(o,w,P){i.overwrite(u.start,u.end,(_?w:w+"var ")+s(u)+" = "+C+P),i.move(u.start,u.end,o)}))}

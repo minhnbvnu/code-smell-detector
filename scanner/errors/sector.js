@@ -1,0 +1,1 @@
+function sector(cx, cy, r, paper, startAngle, endAngle, params) {

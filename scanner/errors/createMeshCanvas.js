@@ -1,0 +1,1 @@
+function createMeshCanvas(bounds, combinesScale, coords, colors, figures,

@@ -1,0 +1,1 @@
+function createSourceFile2(fileName2, languageVersion2, scriptKind2, isDeclarationFile, statements, endOfFileToken, flags, setExternalModuleIndicator2) {

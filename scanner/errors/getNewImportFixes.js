@@ -1,0 +1,1 @@
+function getNewImportFixes(program, sourceFile, usagePosition, isValidTypeOnlyUseSite, useRequire, exportInfo, host, preferences, fromCacheOnly) {

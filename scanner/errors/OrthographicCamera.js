@@ -1,0 +1,1 @@
+function OrthographicCamera(left, right, top, bottom, near, far) {

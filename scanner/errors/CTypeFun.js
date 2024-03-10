@@ -1,0 +1,1 @@
+        return function(name, base_type, size, load_fun, store_fun, wrapper_fun)

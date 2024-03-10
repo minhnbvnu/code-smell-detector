@@ -1,0 +1,1 @@
+function jsonify(table, respData, mediaType, headers, xformers, respCb, errorCb) {

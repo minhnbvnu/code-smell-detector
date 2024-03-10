@@ -1,0 +1,1 @@
+function _dradf4($ido,$l1,$cc,$ch,$wa1,$wa2,$wa3) {

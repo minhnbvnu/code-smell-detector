@@ -1,0 +1,1 @@
+function _pushColoredChunk(chunk, fg, bg, bold, underline, inverse, out) {

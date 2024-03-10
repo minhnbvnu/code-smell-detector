@@ -1,0 +1,1 @@
+function convertStatement(sourceFile, statement, checker, changes, identifiers, target, exports, useSitesToUnqualify, quotePreference) {

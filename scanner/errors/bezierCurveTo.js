@@ -1,0 +1,1 @@
+function bezierCurveTo(t,o,c,l,u,h){r.push({cmd:"bezierCurveTo",args:[t,o,c,l,u,h]})}

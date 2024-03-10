@@ -1,0 +1,1 @@
+  return function(method, url, post, callback, headers, timeout, withCredentials, responseType) {

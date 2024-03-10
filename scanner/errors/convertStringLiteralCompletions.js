@@ -1,0 +1,1 @@
+function convertStringLiteralCompletions(completion, contextToken, sourceFile, host, program, log, options, preferences, position, includeSymbol) {

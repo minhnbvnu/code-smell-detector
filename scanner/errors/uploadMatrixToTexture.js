@@ -1,0 +1,1 @@
+function uploadMatrixToTexture(e,t,n,r,o,a,i){var s,u=getUnpackedMatrixTextureShapeWidthHeight(n,r),l=u[0],c=u[1];1===i.defaultNumChannels?s=o:encodeMatrixToUnpackedArray(o,s=new Float32Array(getUnpackedArraySizeFromMatrixSize(o.length,a)),a),uploadDataToTexture(e,t,l,c,s,i.textureFormatFloat);}

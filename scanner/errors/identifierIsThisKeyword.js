@@ -1,0 +1,1 @@
+        // eslint-disable-next-line deprecation/deprecation -- intentional for older TS versions

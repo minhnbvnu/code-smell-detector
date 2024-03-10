@@ -1,0 +1,1 @@
+function getItemsFromNamedDeclaration(patternMatcher, name, declarations, checker, fileName, rawItems) {

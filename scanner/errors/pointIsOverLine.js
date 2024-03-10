@@ -1,0 +1,1 @@
+function pointIsOverLine(point, linePoints, epsilon, offset, count, size) {

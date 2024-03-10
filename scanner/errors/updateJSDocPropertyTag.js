@@ -1,0 +1,1 @@
+function updateJSDocPropertyTag(node, tagName = getDefaultTagName(node), name, isBracketed, typeExpression, isNameFirst, comment) {

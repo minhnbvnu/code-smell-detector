@@ -1,0 +1,1 @@
+function showConfirmDialog(title, html, callback = noop, cancelCallback = noop, okLabel = 'OK', cancelLabel = 'Cancel') {

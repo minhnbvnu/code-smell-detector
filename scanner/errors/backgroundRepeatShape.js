@@ -1,0 +1,1 @@
+function backgroundRepeatShape(ctx, image, backgroundPosition, bounds, left, top, width, height) {

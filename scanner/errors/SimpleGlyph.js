@@ -1,0 +1,1 @@
+function SimpleGlyph(raw, numberOfContours, xMin, yMin, xMax, yMax) {

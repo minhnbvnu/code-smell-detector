@@ -1,0 +1,1 @@
+function watchFilePath(path, file, callback, pollingInterval, options, watchType) {

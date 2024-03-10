@@ -1,0 +1,1 @@
+function createDiagnosticForOption(onKey, option1, option2, message, arg0, arg1, arg2, arg3) {

@@ -1,0 +1,1 @@
+function getStringLiteralCompletionDetails(name, sourceFile, position, contextToken, checker, options, host, cancellationToken, preferences) {

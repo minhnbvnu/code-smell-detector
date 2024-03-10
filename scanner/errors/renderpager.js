@@ -1,0 +1,1 @@
+function renderpager(pagenumber, pagecount, pageSize, recordCount, customerText, buttonClickCallback) {

@@ -1,0 +1,1 @@
+function pool2d(x, poolSize, strides, padding, dataFormat, poolMode) {

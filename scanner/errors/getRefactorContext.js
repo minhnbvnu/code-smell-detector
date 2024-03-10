@@ -1,0 +1,1 @@
+function getRefactorContext(file, positionOrRange, preferences, formatOptions, triggerReason, kind) {

@@ -1,0 +1,1 @@
+function onConstantEditorVectorValueChange(gameLayer, environment, controlName, key, fields, event) {

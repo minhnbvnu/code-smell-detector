@@ -1,0 +1,1 @@
+function MouseZone(x1, x2, y, clickCallback, hoverCallback, tooltipCallback, leaveCallback, willLinkActivate) {

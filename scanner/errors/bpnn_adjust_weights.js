@@ -1,0 +1,1 @@
+function bpnn_adjust_weights(delta, ndelta, ly, nly, w, oldw) {

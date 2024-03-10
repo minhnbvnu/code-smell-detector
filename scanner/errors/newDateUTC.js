@@ -1,0 +1,1 @@
+function newDateUTC(fullYear, month, day, hour, minute, second, millisecond) {

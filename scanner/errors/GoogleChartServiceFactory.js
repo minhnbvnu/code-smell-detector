@@ -1,0 +1,1 @@
+            function setup(element, chartType, data, view, options, formatters, customFormatters) {

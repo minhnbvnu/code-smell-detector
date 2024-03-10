@@ -1,0 +1,1 @@
+async function generateDockerfileForBuildkit(dockerfilePath, serviceName, serviceRes, functionName, functionRes, baseDir, codeUri, funcArtifactDir, verbose, stages, targetBuildStage) {

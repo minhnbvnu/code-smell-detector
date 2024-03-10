@@ -1,0 +1,1 @@
+function getStringLiteralCompletions(sourceFile, position, contextToken, options, host, program, log, preferences, includeSymbol) {

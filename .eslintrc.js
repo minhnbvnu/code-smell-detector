@@ -3,7 +3,8 @@ module.exports = {
     complexity: ["error", { max: 20 }],
     "max-nested-callbacks": ["error", {max: 5}],
     "max-depth": ["error", {max: 10}],
-    "max-params": ["error", {max: 5}]
+    "max-params": ["error", {max: 5}],
+    "parser": "off"
   },
   parser: "@babel/eslint-parser",
   parserOptions: {
@@ -11,7 +12,7 @@ module.exports = {
     babelOptions: {
       babelrc: false,
       configFile: false,
-      presets: ["@babel/preset-env"],
+      presets: ["@babel/preset-env", "@babel/preset-react"],
     },
   },
 };

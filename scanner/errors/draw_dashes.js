@@ -1,0 +1,1 @@
+function draw_dashes(ctx, x, y, go_x, go_y, scale, translate_x, translate_y) {

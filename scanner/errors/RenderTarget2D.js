@@ -1,0 +1,1 @@
+function RenderTarget2D(width, height, surfaceFormat, surfaceType, depthStencilFormat, mipMap, repeat, minFifter, magFifter) {

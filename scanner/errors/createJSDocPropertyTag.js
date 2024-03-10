@@ -1,0 +1,1 @@
+function createJSDocPropertyTag(tagName, name, isBracketed, typeExpression, isNameFirst, comment) {

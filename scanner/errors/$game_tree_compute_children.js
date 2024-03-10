@@ -1,0 +1,1 @@
+function $game_tree_compute_children(sgn, game_state, generate_moves, make_move, unpredictability, static_evaluate) {

@@ -1,0 +1,1 @@
+function BotsController($scope, $rootScope, Bot,$http,appConfig,$window) {

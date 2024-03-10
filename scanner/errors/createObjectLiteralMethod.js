@@ -1,0 +1,1 @@
+function createObjectLiteralMethod(symbol, enclosingDeclaration, sourceFile, program, host, preferences) {

@@ -1,0 +1,1 @@
+function transposeData(image, array, strideX, strideY, strideC, offset) {

@@ -1,0 +1,1 @@
+function _wgpu_render_commands_mixin_draw_indexed(passEncoder,indexCount,instanceCount,firstVertex,baseVertex,firstInstance){wgpu[passEncoder]["drawIndexed"](indexCount,instanceCount,firstVertex,baseVertex,firstInstance)}

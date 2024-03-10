@@ -1,0 +1,1 @@
+                    // eslint-disable-next-line deprecation/deprecation -- TODO - switch once our min ESLint version is 6.7.0

@@ -1,0 +1,1 @@
+function make_binary(orig, op, left, right, start, end) {

@@ -1,0 +1,1 @@
+function ObxProperty(name, scope, getter, setter, value, extraGetterParams) {

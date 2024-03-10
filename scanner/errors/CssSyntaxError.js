@@ -1,0 +1,1 @@
+function CssSyntaxError(message, line, column, source, file, plugin) {

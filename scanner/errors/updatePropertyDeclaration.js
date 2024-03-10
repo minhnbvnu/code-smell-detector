@@ -1,0 +1,1 @@
+function updatePropertyDeclaration(changeTracker, file, declaration, type, fieldName, modifiers) {

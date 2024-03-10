@@ -1,0 +1,1 @@
+function destructure(i,o,s,u,C,_,w){Kd[u.type](i,o,s,u,C,_,w)}

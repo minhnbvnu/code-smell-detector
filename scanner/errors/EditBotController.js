@@ -1,0 +1,1 @@
+function EditBotController($scope, Bot, Intents, BotEntities, Actions, BotSynonyms, BotRegex, $rootScope) {

@@ -1,0 +1,1 @@
+function scaleTranslateRotate(k, dx, dy, sx, sy, alpha) {

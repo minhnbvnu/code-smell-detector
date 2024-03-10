@@ -1,0 +1,1 @@
+            return compareBooleans(name1 === void 0, name2 === void 0) || compareBooleans(isExternalModuleNameRelative(name1), isExternalModuleNameRelative(name2)) || // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion

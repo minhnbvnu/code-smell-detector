@@ -1,0 +1,1 @@
+function __vorbis_apply_window($d,$winno,$blocksizes,$lW,$W,$nW) {

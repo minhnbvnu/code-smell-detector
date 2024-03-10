@@ -1,0 +1,1 @@
+function getObjectData(node, state, source, scopeChain,

@@ -1,0 +1,1 @@
+function vertexAttribPointer( index, size, type, normalized, stride, offset ) {

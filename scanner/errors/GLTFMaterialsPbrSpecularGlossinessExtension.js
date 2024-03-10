@@ -1,0 +1,1 @@
+    refreshUniforms: function(renderer, scene, camera, geometry, material, group) {

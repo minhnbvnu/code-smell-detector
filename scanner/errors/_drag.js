@@ -1,0 +1,1 @@
+function _drag(amount,dur,easing,dir,overwrite,drag){

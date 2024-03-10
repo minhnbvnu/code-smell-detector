@@ -1,0 +1,1 @@
+function writeOrBuffer(stream, state, isBuf, chunk, encoding, cb) {

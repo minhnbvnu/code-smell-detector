@@ -1,0 +1,1 @@
+function transfromSyncDep (fpath, dep, regexp, line, needDelete, opts) {

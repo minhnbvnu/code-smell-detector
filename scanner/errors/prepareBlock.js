@@ -1,0 +1,1 @@
+function prepareBlock(openBlock, program, inverseAndProgram, close, inverted, locInfo) {

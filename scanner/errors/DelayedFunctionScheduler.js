@@ -1,0 +1,1 @@
+    self.scheduleFunction = function(funcToCall, millis, params, recurring, timeoutKey, runAtMillis) {

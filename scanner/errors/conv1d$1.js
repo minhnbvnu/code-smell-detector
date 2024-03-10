@@ -1,0 +1,1 @@
+function conv1d$1(x, kernel, strides, padding, dataFormat, dilationRate) {

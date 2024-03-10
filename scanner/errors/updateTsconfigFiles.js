@@ -1,0 +1,1 @@
+function updateTsconfigFiles(program, changeTracker, oldToNew, oldFileOrDirPath, newFileOrDirPath, currentDirectory, useCaseSensitiveFileNames) {

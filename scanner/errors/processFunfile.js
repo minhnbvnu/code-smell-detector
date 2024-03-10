@@ -1,0 +1,1 @@
+async function processFunfile(serviceName, serviceRes, codeUri, funfilePath, baseDir, funcArtifactDir, runtime, functionName) {

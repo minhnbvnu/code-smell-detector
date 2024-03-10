@@ -1,0 +1,1 @@
+function watchFile(state, file, callback, pollingInterval, options, watchType, project) {

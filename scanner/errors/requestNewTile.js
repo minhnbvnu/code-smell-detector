@@ -1,0 +1,1 @@
+function requestNewTile(view, scheduler, geometryLayer, metadata, parent, redraw) {

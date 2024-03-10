@@ -1,0 +1,1 @@
+function calculateBoundingBox(mode, x1, y1, cx1, cy1, cx2, cy2, x2, y2) {

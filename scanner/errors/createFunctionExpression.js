@@ -1,0 +1,1 @@
+function createFunctionExpression(modifiers, asteriskToken, name, typeParameters, parameters, type, body) {

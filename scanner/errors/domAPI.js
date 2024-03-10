@@ -1,0 +1,1 @@
+    function insert(vm, target, cb, withTransition, op1, op2) {

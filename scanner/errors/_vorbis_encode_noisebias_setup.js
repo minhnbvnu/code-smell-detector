@@ -1,0 +1,1 @@
+function _vorbis_encode_noisebias_setup($vi,$s,$block,$suppress,$in,$guard,$userbias) {

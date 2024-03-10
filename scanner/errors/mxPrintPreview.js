@@ -1,0 +1,1 @@
+function mxPrintPreview(a,b,c,d,e,f,g,k,l){this.graph=a;this.scale=null!=b?b:1/a.pageScale;this.border=null!=d?d:0;this.pageFormat=mxRectangle.fromRectangle(null!=c?c:a.pageFormat);this.title=null!=k?k:"Printer-friendly version";this.x0=null!=e?e:0;this.y0=null!=f?f:0;this.borderColor=g;this.pageSelector=null!=l?l:!0}

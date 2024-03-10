@@ -1,0 +1,2 @@
+      const linkTags = []; // eslint-disable-next-line no-for-of-loops/no-for-of-loops
+          const newLinkTag = document.createElement('link'); // eslint-disable-next-line no-for-of-loops/no-for-of-loops

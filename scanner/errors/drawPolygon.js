@@ -1,0 +1,1 @@
+function drawPolygon(sides,x,y,r,angle,lineWidth,f) {

@@ -1,0 +1,1 @@
+function ttfGlyphLoader(font, index, parseGlyph, data, position, buildPath) {

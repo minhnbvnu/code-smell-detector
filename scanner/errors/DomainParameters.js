@@ -1,0 +1,1 @@
+function DomainParameters(maxChannelIds, maxUserIds, maxTokenIds, 

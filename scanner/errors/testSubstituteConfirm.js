@@ -1,0 +1,1 @@
+function testSubstituteConfirm(name, command, initialValue, expectedValue, keys, finalPos) {

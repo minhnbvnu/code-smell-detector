@@ -1,0 +1,1 @@
+function updateImports(program, changeTracker, oldToNew, newToOld, host, getCanonicalFileName) {

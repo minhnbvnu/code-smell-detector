@@ -1,0 +1,1 @@
+function getDepthMaterial( object, geometry, material, light, shadowCameraNear, shadowCameraFar, type ) {

@@ -1,0 +1,1 @@
+function XMLDTDAttList(parent, elementName, attributeName, attributeType, defaultValueType, defaultValue) {

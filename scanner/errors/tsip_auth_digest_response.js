@@ -1,0 +1,1 @@
+function tsip_auth_digest_response(s_ha1, s_nonce, s_noncecount, s_cnonce, s_qop, s_ha2){

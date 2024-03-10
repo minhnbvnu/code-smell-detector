@@ -1,0 +1,1 @@
+function prepareMustache(path, params, hash, open, strip, locInfo) {

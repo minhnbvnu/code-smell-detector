@@ -1,0 +1,1 @@
+function getPromoteTypeOnlyCompletionAction(sourceFile, symbolToken, program, host, formatContext, preferences) {

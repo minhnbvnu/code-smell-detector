@@ -1,0 +1,1 @@
+function _wgpu_command_encoder_copy_texture_to_texture(commandEncoder,source,destination,copyWidth,copyHeight,copyDepthOrArrayLayers){wgpu[commandEncoder]["copyTextureToTexture"](wgpuReadGpuImageCopyTexture(source),wgpuReadGpuImageCopyTexture(destination),[copyWidth,copyHeight,copyDepthOrArrayLayers])}

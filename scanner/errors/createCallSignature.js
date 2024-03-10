@@ -1,0 +1,1 @@
+function createCallSignature(typeParameters, thisParameter, parameters, returnType, typePredicate, minArgumentCount = parameters.length, flags = 0 /* None */) {

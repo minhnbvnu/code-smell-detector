@@ -1,0 +1,1 @@
+function _m(a,b,c,d,e,f){a=a|0;b=b|0;c=c|0;d=d|0;e=e|0;f=$(f);Km(a,b,c,d,e,f);return}

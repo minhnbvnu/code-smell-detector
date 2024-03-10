@@ -1,0 +1,1 @@
+function _fnFilter( settings, input, force, regex, smart, caseInsensitive )

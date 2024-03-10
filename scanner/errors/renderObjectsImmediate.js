@@ -1,0 +1,1 @@
+function renderObjectsImmediate ( renderList, materialType, camera, lights, fog, overrideMaterial ) {

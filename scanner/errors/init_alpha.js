@@ -1,0 +1,1 @@
+function init_alpha(b_d, pi_d, nstates, alpha_d, ones_n_d, obs_t){

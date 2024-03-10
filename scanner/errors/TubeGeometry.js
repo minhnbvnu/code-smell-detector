@@ -1,0 +1,1 @@
+function TubeGeometry(path, tubularSegments, radius, radialSegments, closed, taper) {

@@ -1,0 +1,1 @@
+function defaultFormatter(e,o,t,n,l,r){return null==t?"":(t+"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;")}

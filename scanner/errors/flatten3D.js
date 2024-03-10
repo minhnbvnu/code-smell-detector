@@ -1,0 +1,1 @@
+function flatten3D(array, nx, ny, nz, out, ptr_) {

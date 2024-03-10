@@ -1,0 +1,1 @@
+function delegateListener(object, givenPath, name, callback, context, info = {}) {

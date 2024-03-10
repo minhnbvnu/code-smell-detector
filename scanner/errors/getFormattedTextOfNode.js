@@ -1,0 +1,1 @@
+function getFormattedTextOfNode(nodeIn, sourceFile, pos, { indentation, prefix, delta }, newLineCharacter, formatContext, validate) {

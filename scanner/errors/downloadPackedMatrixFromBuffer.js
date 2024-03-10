@@ -1,0 +1,1 @@
+function downloadPackedMatrixFromBuffer(e,t,n,r,o,a,i,s){var u=e,l=new Float32Array(getPackedRGBAArraySizeFromMatrixShape(a,i));u.bindBuffer(e.ARRAY_BUFFER,t),u.getBufferSubData(e.ARRAY_BUFFER,0,l),u.bindBuffer(e.ARRAY_BUFFER,null);var c=new Float32Array(sizeFromShape([n,r,o]));return decodeMatrixFromPackedRGBA(l,n,r,o,c),c}

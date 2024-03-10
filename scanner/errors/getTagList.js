@@ -1,0 +1,1 @@
+function getTagList(definitionId, release, versionPartHandling, registry, registryPath, variant) {

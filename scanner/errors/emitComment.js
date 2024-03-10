@@ -1,0 +1,1 @@
+function emitComment(text, lineMap, writer2, commentPos, commentEnd, newLine2) {

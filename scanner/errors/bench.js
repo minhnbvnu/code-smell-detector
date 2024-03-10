@@ -1,0 +1,1 @@
+function bench(prefix, n, loop, modulo, asyncFn, _) {

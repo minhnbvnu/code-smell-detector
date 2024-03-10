@@ -1,0 +1,1 @@
+function createMethodSignature(modifiers, name, questionToken, typeParameters, parameters, type) {

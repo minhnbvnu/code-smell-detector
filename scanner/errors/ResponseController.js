@@ -1,0 +1,1 @@
+function ResponseController($rootScope, $scope, $sce, Bot, Response, Actions ) {

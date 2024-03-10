@@ -1,0 +1,1 @@
+function ArcCurve(aX, aY, aRadius, aStartAngle, aEndAngle, aClockwise) {

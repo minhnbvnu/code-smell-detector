@@ -1,0 +1,1 @@
+function _touch(view, target, pageX, pageY, screenX, screenY, clientX, clientY) {

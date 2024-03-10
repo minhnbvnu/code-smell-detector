@@ -1,0 +1,1 @@
+function stackBlurContextRGB( context, top_x, top_y, width, height, radius )

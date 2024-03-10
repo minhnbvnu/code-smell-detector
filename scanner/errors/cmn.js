@@ -1,0 +1,1 @@
+function cmn(q, a, b, x, s, t) {

@@ -1,0 +1,1 @@
+function getSpreadArgumentType(args, index, argCount, restType, context, checkMode) {

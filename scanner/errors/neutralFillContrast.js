@@ -1,0 +1,1 @@
+function neutralFillContrast(palette, reference, restDelta, hoverDelta, activeDelta, focusDelta) {

@@ -1,0 +1,1 @@
+function createCursorWithSkip(factory, tokens, comments, indexMap, startLoc, endLoc, opts) {

@@ -1,0 +1,1 @@
+function createBinaryExpressionTrampoline(onEnter, onLeft, onOperator, onRight, onExit, foldState) {

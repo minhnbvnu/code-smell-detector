@@ -1,0 +1,1 @@
+function smear(c, n, x, y, w, h) {

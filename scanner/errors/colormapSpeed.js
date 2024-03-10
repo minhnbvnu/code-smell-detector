@@ -1,0 +1,1 @@
+function colormapSpeed(v, vmin_col, vmax_col, vehType, isEgo, time, isOpaque){

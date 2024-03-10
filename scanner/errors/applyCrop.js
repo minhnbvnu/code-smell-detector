@@ -1,0 +1,1 @@
+function applyCrop(image, type, x, y, w, h) {

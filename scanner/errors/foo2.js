@@ -1,0 +1,1 @@
+function foo2(a0, a1, a2, a4, a5, a6)

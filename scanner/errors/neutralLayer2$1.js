@@ -1,0 +1,1 @@
+function neutralLayer2$1(palette, luminance, layerDelta, fillRestDelta, fillHoverDelta, fillActiveDelta) {

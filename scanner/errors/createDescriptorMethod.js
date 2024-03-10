@@ -1,0 +1,1 @@
+function createDescriptorMethod(original, name, modifiers, asteriskToken, kind, parameters, body) {

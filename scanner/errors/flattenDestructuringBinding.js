@@ -1,0 +1,1 @@
+function flattenDestructuringBinding(node, visitor, context, level, rval, hoistTempVariables = false, skipInitializer) {

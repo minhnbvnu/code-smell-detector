@@ -1,0 +1,1 @@
+function runBindingEffect(inst, path, props, oldProps, info, hasPaths, nodeList) {

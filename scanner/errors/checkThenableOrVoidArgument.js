@@ -1,0 +1,1 @@
+function checkThenableOrVoidArgument(checker, node, type, index, thenableReturnIndices, voidReturnIndices) {

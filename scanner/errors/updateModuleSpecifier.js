@@ -1,0 +1,1 @@
+function updateModuleSpecifier(compilerOptions, importingSourceFile, importingSourceFileName, toFileName2, host, oldImportSpecifier, options = {}) {

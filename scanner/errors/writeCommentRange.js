@@ -1,0 +1,1 @@
+function writeCommentRange(text, lineMap, writer, commentPos, commentEnd, newLine) {

@@ -1,0 +1,1 @@
+function textInputType(scope, element, attr, ctrl, $sniffer, $browser) {

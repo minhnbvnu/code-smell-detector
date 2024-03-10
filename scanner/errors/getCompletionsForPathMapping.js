@@ -1,0 +1,1 @@
+function getCompletionsForPathMapping(path, patterns, fragment, packageDirectory, extensionOptions, host) {

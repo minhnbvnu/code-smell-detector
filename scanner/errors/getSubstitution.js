@@ -1,0 +1,1 @@
+function getSubstitution(matched, str, position, captures, namedCaptures, replacement) {

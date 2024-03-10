@@ -1,0 +1,1 @@
+function ray_intersect_map(ray, map, layer, sprite_callback, pixel_callback, replacement_array, run_callback_on_empty_sprites) {

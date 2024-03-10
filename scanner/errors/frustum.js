@@ -1,0 +1,1 @@
+function frustum(out, left, right, bottom, top, near, far) {

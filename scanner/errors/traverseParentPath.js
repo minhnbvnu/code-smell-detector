@@ -1,0 +1,1 @@
+function traverseParentPath(start, stop, cb, arg, skipFirst, skipLast) {

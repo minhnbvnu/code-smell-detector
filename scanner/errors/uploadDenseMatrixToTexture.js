@@ -1,0 +1,1 @@
+function uploadDenseMatrixToTexture(gl, texture, width, height, data, textureConfig) {

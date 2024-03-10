@@ -1,0 +1,1 @@
+function tsip_request(s_method, o_uri_request, o_uri_from, o_uri_to, s_call_id, i_cseq){

@@ -1,0 +1,1 @@
+function createImageBitmap(src, x, y, w, h, options) {

@@ -1,0 +1,1 @@
+function buildErrors(state, resolvedPath, program, config, diagnostics, buildResult, errorType) {

@@ -1,0 +1,1 @@
+function splitEarcut( start, triangles, dim, minX, minY, invSize ) {

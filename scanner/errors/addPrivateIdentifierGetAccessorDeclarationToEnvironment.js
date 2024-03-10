@@ -1,0 +1,1 @@
+function addPrivateIdentifierGetAccessorDeclarationToEnvironment(_node, name, lex, privateEnv, isStatic2, isValid, previousInfo) {

@@ -1,0 +1,1 @@
+function TagInfo(env, taggable, defaultTags, tag, tagId, tagFormat, noTag, labelId) {

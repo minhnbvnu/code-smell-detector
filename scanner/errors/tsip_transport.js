@@ -1,0 +1,1 @@
+function tsip_transport(e_type, o_stack, s_host, i_port, s_description, fn_callback) {

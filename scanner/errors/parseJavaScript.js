@@ -1,0 +1,1 @@
+      onComment(block, text, start, end, startLoc, endLoc) {

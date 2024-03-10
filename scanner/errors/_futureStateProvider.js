@@ -1,0 +1,1 @@
+      function futureStateProvider_get($injector, $state, $q, $rootScope, $urlRouter, $timeout, $log) {

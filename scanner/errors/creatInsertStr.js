@@ -1,0 +1,1 @@
+function creatInsertStr(url,width,height,align,cssfloat,toEmbed){

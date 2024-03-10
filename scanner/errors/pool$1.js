@@ -1,0 +1,1 @@
+function pool$1(xValues, xShape, dtype, strides, convInfo, poolType) {

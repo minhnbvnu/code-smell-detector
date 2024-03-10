@@ -1,0 +1,1 @@
+function check_push(expected_arr, expected_res, arr, item1, item2, item3)

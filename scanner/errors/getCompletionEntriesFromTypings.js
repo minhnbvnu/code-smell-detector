@@ -1,0 +1,1 @@
+function getCompletionEntriesFromTypings(host, options, scriptPath, fragmentDirectory, extensionOptions, result = createNameAndKindSet()) {

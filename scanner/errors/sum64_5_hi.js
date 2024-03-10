@@ -1,0 +1,1 @@
+function sum64_5_hi(ah, al, bh, bl, ch, cl, dh, dl, eh, el) {

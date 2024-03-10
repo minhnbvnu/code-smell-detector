@@ -1,0 +1,1 @@
+function createWindowClone(ownerDocument, containerDocument, width, height, options, x ,y) {

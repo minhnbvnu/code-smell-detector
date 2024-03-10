@@ -1,0 +1,1 @@
+function addSymbol(moduleSymbol, toFile, exportedSymbol, exportKind, program2, isFromPackageJson) {

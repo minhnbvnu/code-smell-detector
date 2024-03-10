@@ -1,0 +1,1 @@
+function checkboxInputType(scope, element, attr, ctrl, $sniffer, $browser, $filter, $parse) {

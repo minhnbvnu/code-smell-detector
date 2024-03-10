@@ -1,0 +1,1 @@
+function stringLiteralCompletionDetails(name, location, completion, sourceFile, checker, cancellationToken) {

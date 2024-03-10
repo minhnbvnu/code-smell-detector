@@ -1,0 +1,1 @@
+function createSignatureHelpItems(candidates, resolvedSignature, { isTypeParameterList, argumentCount, argumentsSpan: applicableSpan, invocation, argumentIndex }, sourceFile, typeChecker, useFullPrefix) {

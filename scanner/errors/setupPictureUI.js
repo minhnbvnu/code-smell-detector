@@ -1,0 +1,1 @@
+function setupPictureUI(menu, pictureInfos, plane, updateDistanceCallback, view, min, max) {

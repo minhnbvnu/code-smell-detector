@@ -1,0 +1,1 @@
+function safe_parse_ws(zip,path,relsPath,sheet,sheetRels,sheets,opts){try{sheetRels[sheet]=parse_rels(getzipdata(zip,relsPath,true),path);sheets[sheet]=parse_ws(getzipdata(zip,path),path,opts,sheetRels[sheet])}catch(e){if(opts.WTF)throw e}}

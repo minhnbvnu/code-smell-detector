@@ -1,0 +1,1 @@
+function getActualIndentationForNode(current, parent2, currentLineAndChar, parentAndChildShareLine, sourceFile, options) {

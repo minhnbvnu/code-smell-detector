@@ -1,0 +1,1 @@
+function StoriesController($rootScope, $scope, $sce, Bot, Stories, Intents ) {

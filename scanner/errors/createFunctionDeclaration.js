@@ -1,0 +1,1 @@
+function createFunctionDeclaration(modifiers, asteriskToken, name, typeParameters, parameters, type, body) {

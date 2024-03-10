@@ -1,0 +1,1 @@
+function createChangeMeta(dependentArray, item, index, propertyName, property, previousValues) {

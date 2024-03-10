@@ -1,0 +1,1 @@
+function generateShtml ($, fileName, config, appConf, resType, dom, tag, uriType,opts) {

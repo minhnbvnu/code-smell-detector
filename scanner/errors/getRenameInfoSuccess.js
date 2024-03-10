@@ -1,0 +1,1 @@
+function getRenameInfoSuccess(displayName, fullDisplayName, kind, kindModifiers, node, sourceFile) {

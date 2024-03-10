@@ -1,0 +1,1 @@
+function _shadowSpanned (matrix, row, col, rowspan, colspan, masterCell) {

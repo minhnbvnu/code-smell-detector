@@ -1,0 +1,1 @@
+function vehicle(length, width, u, lane, speed, type){

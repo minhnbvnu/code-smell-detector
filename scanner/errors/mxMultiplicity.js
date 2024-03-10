@@ -1,0 +1,1 @@
+function mxMultiplicity(a,b,c,d,e,f,g,k,l,m){this.source=a;this.type=b;this.attr=c;this.value=d;this.min=null!=e?e:0;this.max=null!=f?f:"n";this.validNeighbors=g;this.countError=mxResources.get(k)||k;this.typeError=mxResources.get(l)||l;this.validNeighborsAllowed=null!=m?m:!0}

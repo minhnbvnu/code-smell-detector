@@ -1,0 +1,1 @@
+function transformThen(node, onFulfilled, onRejected, transformer, hasContinuation, continuationArgName) {

@@ -1,0 +1,1 @@
+                // eslint-disable-next-line unicorn/prefer-code-point -- Switch to `codePointAt`?

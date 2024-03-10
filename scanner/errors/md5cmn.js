@@ -1,0 +1,1 @@
+function md5cmn(q, a, b, x, s, t) {

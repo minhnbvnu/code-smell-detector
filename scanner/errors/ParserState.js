@@ -1,0 +1,1 @@
+    addFace: function(a, b, c, ua, ub, uc, na, nb, nc) {

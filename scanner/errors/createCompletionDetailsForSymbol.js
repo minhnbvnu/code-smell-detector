@@ -1,0 +1,1 @@
+function createCompletionDetailsForSymbol(symbol, name, checker, sourceFile, location, cancellationToken, codeActions, sourceDisplay) {

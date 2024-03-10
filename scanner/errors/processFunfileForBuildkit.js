@@ -1,0 +1,1 @@
+async function processFunfileForBuildkit(serviceName, serviceRes, codeUri, funfilePath, baseDir, funcArtifactDir, runtime, functionName) {

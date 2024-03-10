@@ -1,0 +1,1 @@
+function baseInputType(scope, element, attr, ctrl, $sniffer, $browser) {

@@ -1,0 +1,1 @@
+function genericComposeSMask(maskCtx, layerCtx, width, height,

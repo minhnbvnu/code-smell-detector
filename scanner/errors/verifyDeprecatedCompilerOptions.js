@@ -1,0 +1,1 @@
+                function createDiagnostic(name, value, useInstead, message, arg0, arg1, arg2, arg3) {

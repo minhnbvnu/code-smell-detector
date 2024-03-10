@@ -1,0 +1,1 @@
+function AddBackgroundToImage(i, w, h, scale, colour, othickness, ocolour,

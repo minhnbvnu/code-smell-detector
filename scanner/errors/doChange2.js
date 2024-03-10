@@ -1,0 +1,1 @@
+function doChange2(changes, sourceFile, position, checker, preferences, compilerOptions) {

@@ -1,0 +1,1 @@
+function recordWPPostInfo(postid, answers, type, mediaurl, excerpt, callback) {

@@ -1,0 +1,1 @@
+function hermite(out, a, b, c, d, t) {

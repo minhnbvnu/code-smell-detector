@@ -1,0 +1,1 @@
+async function registerSingleHttpTrigger(app, router, serverPort, httpTrigger, debugPort, debugIde, baseDir, eager = false, debuggerPath, debugArgs, nasBaseDir, tplPath) {

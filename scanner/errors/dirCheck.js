@@ -1,0 +1,1 @@
+function dirCheck( dir, cur, doneName, checkSet, nodeCheck, isXML ) {

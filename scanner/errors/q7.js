@@ -1,0 +1,1 @@
+function q7(a,b,c,d,e,f){a=a|0;b=b|0;c=c|0;d=d|0;e=e|0;f=f|0;yb[a&15](b|0,c|0,d|0,e|0,f|0)}

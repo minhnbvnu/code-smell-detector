@@ -1,0 +1,1 @@
+function getAddAsTypeOnly(isValidTypeOnlyUseSite, isForNewImportDeclaration, symbol, targetFlags, checker, compilerOptions) {

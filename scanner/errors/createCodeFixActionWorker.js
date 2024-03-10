@@ -1,0 +1,1 @@
+function createCodeFixActionWorker(fixName8, description2, changes, fixId51, fixAllDescription, command) {

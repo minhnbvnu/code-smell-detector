@@ -1,0 +1,1 @@
+      function($rootScope, $location, $routeParams, $q, $injector, $templateRequest, $sce) {

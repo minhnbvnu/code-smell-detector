@@ -1,0 +1,1 @@
+  inject(function (_$rootScope_, _$q_, _$timeout_, _$httpBackend_, _DS_, _$log_, _DSUtils_, _DSHttpAdapter_) {

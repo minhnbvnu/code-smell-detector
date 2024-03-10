@@ -1,0 +1,1 @@
+async function generateImageInformationFiles(repo, release, registry, registryPath, 

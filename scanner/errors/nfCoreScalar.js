@@ -1,0 +1,1 @@
+function nfCoreScalar(value, plus, minus, leftDigits, rightDigits, group) {

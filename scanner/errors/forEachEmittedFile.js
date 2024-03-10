@@ -1,0 +1,1 @@
+function forEachEmittedFile(host, action, sourceFilesOrTargetSourceFile, forceDtsEmit = false, onlyBuildInfo, includeBuildInfo) {

@@ -1,0 +1,1 @@
+function resizeImageMask(t,r,o,c,l,u){var h,d=l*u;h=r<=8?new Uint8Array(d):r<=16?new Uint16Array(d):new Uint32Array(d);var g,y,m,v,w=o/l,_=c/u,k=0,S=new Uint16Array(l),C=o;for(g=0;g<l;g++)S[g]=Math.floor(g*w);for(g=0;g<u;g++){m=Math.floor(g*_)*C;for(y=0;y<l;y++){v=m+S[y];h[k++]=t[v]}}return h}

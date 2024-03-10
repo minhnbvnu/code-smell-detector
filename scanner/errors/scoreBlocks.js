@@ -1,0 +1,1 @@
+function scoreBlocks(possibles, blocks, x, y, filled, width, height) {

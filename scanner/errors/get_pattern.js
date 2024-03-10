@@ -1,0 +1,1 @@
+function get_pattern(layer, pattern, color, alpha, scale, weight) {

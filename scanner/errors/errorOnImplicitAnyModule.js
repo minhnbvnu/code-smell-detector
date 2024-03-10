@@ -1,0 +1,1 @@
+function errorOnImplicitAnyModule(isError, errorNode, sourceFile, mode, { packageId, resolvedFileName }, moduleReference) {

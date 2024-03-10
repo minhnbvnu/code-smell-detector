@@ -1,0 +1,1 @@
+async function registerApis(tpl, app, serverPort, debugPort, debugIde, baseDir, debuggerPath, debugArgs, nasBaseDir, tplPath) {

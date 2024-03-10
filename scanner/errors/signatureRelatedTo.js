@@ -1,0 +1,1 @@
+function signatureRelatedTo(source2, target2, erase, reportErrors2, intersectionState, incompatibleReporter) {

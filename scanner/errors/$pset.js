@@ -1,0 +1,1 @@
+function $pset(x, y, color, clipX1, clipY1, clipX2, clipY2) {

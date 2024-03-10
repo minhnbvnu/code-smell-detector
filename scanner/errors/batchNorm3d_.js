@@ -1,0 +1,1 @@
+function batchNorm3d_(x, mean, variance, offset, scale, varianceEpsilon) {

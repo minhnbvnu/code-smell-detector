@@ -1,0 +1,1 @@
+function createParameterDeclaration(modifiers, dotDotDotToken, name, questionToken, type, initializer) {

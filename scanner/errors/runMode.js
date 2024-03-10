@@ -1,0 +1,1 @@
+function runMode(cm, text, mode, state, f, lineClasses, forceToEnd) {

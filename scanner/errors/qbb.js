@@ -1,0 +1,1 @@
+function qbb(x0, y0, cx, cy, x1, y1) {

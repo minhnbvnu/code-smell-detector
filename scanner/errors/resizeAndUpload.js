@@ -1,0 +1,1 @@
+function resizeAndUpload(a, size, max, fileName, localFilePath, callback) {

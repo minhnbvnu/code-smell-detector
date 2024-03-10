@@ -1,0 +1,1 @@
+function parseMethodDeclaration(pos, hasJSDoc, modifiers, asteriskToken, name, questionToken, exclamationToken, diagnosticMessage) {

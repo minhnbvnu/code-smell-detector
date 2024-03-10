@@ -1,0 +1,1 @@
+function _fillSpanned ($$, newRows, row, col, rowspan, colspan) {

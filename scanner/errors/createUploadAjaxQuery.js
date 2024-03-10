@@ -1,0 +1,1 @@
+function createUploadAjaxQuery(table, url, isValidateOnly, data, offset, progress, errors, isShowIcons, linkData) {

@@ -1,0 +1,1 @@
+function generateCollageItems(layerImages, count, angle, length, rangeA, rangeL, scaleStart, scaleEnd, rotationStart, rotationEnd) {

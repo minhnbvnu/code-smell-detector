@@ -1,0 +1,1 @@
+function backgroundBoundsFactory( prop, el, bounds, image, imageIndex, backgroundSize ) {

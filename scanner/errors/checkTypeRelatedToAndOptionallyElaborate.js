@@ -1,0 +1,1 @@
+function checkTypeRelatedToAndOptionallyElaborate(source, target, relation, errorNode, expr, headMessage, containingMessageChain, errorOutputContainer) {

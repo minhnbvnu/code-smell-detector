@@ -1,0 +1,1 @@
+function getNavigateToItems(sourceFiles, checker, cancellationToken, searchValue, maxResultCount, excludeDtsFiles) {

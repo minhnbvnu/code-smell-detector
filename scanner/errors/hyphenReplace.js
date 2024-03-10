@@ -1,0 +1,1 @@
+function hyphenReplace($0,

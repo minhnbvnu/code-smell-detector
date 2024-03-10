@@ -1,0 +1,1 @@
+function sanitizeGlyphLocations(loca, glyf, numGlyphs,

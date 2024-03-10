@@ -1,0 +1,1 @@
+function line_interpolation(renderer, geometry, x2, y2, x3, y3) {

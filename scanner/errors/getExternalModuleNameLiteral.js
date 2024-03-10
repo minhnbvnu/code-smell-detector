@@ -1,0 +1,1 @@
+function getExternalModuleNameLiteral(factory2, importNode, sourceFile, host, resolver, compilerOptions) {

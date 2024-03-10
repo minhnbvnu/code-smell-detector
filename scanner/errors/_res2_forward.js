@@ -1,0 +1,1 @@
+function _res2_forward($opb,$vb,$vl,$in,$nonzero,$ch,$partword,$submap) {

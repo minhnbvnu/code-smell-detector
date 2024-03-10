@@ -1,0 +1,1 @@
+function printLocalResource (filename, value, resourcePrefix, config, includeJson, fpath, content) {

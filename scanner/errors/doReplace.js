@@ -1,0 +1,1 @@
+function doReplace(cm, confirm, global, lineStart, lineEnd, searchCursor, query,

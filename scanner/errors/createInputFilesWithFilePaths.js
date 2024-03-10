@@ -1,0 +1,1 @@
+function createInputFilesWithFilePaths(readFileText, javascriptPath, javascriptMapPath, declarationPath, declarationMapPath, buildInfoPath, host, options) {

@@ -1,0 +1,1 @@
+function invokeLinkFn(linkFn, scope, $element, attrs, controllers, transcludeFn) {

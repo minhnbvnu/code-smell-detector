@@ -1,0 +1,1 @@
+function crypto_onetimeauth_verify(h, hpos, m, mpos, n, k) {

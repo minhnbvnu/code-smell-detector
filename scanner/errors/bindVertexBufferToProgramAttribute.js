@@ -1,0 +1,1 @@
+function bindVertexBufferToProgramAttribute(e,t,n,r,o,a,i){var s=e.getAttribLocation(t,n);return -1!==s&&(callAndCheck(e,function(){return e.bindBuffer(e.ARRAY_BUFFER,r)}),callAndCheck(e,function(){return e.vertexAttribPointer(s,o,e.FLOAT,!1,a,i)}),callAndCheck(e,function(){return e.enableVertexAttribArray(s)}),!0)}

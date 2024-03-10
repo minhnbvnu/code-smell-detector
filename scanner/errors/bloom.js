@@ -1,0 +1,1 @@
+function bloom(threshold, horizontal, vertical, boost, samplerNum, taps, reps) {

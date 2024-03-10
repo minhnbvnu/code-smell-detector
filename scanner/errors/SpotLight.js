@@ -1,0 +1,1 @@
+function SpotLight(color, intensity, distance, angle, penumbra, decay) {

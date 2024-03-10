@@ -1,0 +1,1 @@
+function batchNorm2d_(x, mean, variance, offset, scale, varianceEpsilon) {

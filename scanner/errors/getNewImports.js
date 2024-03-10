@@ -1,0 +1,1 @@
+function getNewImports(moduleSpecifier, quotePreference, defaultImport, namedImports, namespaceLikeImport, compilerOptions) {

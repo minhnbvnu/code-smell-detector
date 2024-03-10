@@ -1,0 +1,1 @@
+function checkIEEE754 (buf, value, offset, ext, max, min) {

@@ -18,9 +18,9 @@ function Connection(manager, options, req, socket, upgradeHead) {
   if (connection._options.debug) {
     debug = function() {
       util.error(
-          '\033[90mWS: ' +
+          '\x1b[90mWS: ' +
           Array.prototype.join.call(arguments, ' ') +
-          '\033[39m'
+          '\x1b[39m'
       );
       process.stdout.flush();
     };

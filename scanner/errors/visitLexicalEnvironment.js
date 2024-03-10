@@ -1,0 +1,1 @@
+function visitLexicalEnvironment(statements, visitor, context, start, ensureUseStrict, nodesVisitor = visitNodes2) {

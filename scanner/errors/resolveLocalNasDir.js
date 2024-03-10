@@ -1,0 +1,1 @@
+function resolveLocalNasDir(runtime, baseDir, codeUri, localDirInNasMappings, serviceName, functionName) {

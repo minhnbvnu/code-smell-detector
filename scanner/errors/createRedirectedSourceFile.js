@@ -1,0 +1,1 @@
+function createRedirectedSourceFile(redirectTarget, unredirected, fileName, path, resolvedPath, originalFileName, sourceFileOptions) {

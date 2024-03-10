@@ -1,0 +1,1 @@
+function check_concat(expected_arr, expected_res, arr, arg1, arg2, arg3)

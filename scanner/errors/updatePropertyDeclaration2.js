@@ -1,0 +1,1 @@
+function updatePropertyDeclaration2(node, modifiers, name, questionOrExclamationToken, type, initializer) {

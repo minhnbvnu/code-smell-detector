@@ -1,0 +1,1 @@
+function getCompletionEntrySymbol(program, log, sourceFile, position, entryId, host, preferences) {

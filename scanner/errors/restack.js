@@ -1,0 +1,1 @@
+function restack(node, hasContext, ignoreHorizontal, ignoreVertical, leftPoint, rightPoint) {

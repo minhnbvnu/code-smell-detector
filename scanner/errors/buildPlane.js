@@ -1,0 +1,1 @@
+function buildPlane( u, v, w, udir, vdir, width, height, depth, gridX, gridY, materialIndex ) {

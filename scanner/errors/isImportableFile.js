@@ -1,0 +1,1 @@
+function isImportableFile(program, from, to, preferences, packageJsonFilter, moduleSpecifierResolutionHost, moduleSpecifierCache) {

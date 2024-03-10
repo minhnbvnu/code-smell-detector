@@ -1,0 +1,1 @@
+function conv2dWithBiasActivation(x, kernel, bias, strides, padding, dataFormat, dilationRate, activation) {

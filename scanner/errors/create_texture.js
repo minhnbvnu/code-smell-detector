@@ -1,0 +1,1 @@
+function create_texture( where, name, sourceFile, repeat, offset, wrap, anisotropy ) {

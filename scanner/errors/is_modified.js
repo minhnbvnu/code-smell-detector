@@ -1,0 +1,1 @@
+function is_modified(compressor, tw, node, value, level, immutable) {

@@ -1,0 +1,1 @@
+function RoundedExtrudedPolygonGeometry(radius, length, sides, steps = 1, bevelThickness = .01, bevelSize = .01, bevelSteps = 1) {

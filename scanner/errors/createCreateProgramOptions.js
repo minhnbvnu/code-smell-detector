@@ -1,0 +1,1 @@
+function createCreateProgramOptions(rootNames, options, host, oldProgram, configFileParsingDiagnostics, typeScriptVersion3) {

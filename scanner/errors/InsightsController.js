@@ -1,0 +1,1 @@
+function InsightsController($scope, $http, $sce, NLU_log_stats, Bot, appConfig) {

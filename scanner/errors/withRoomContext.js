@@ -1,0 +1,1 @@
+	return (props) => ( // eslint-disable-line react/display-name

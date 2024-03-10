@@ -1,0 +1,1 @@
+function sendComment(user, repo, number, sha, filename, lineMap, message) {

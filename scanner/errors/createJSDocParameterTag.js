@@ -1,0 +1,1 @@
+function createJSDocParameterTag(tagName, name, isBracketed, typeExpression, isNameFirst, comment) {

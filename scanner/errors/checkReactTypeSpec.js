@@ -1,0 +1,1 @@
+function checkReactTypeSpec(typeSpecs, values, location, componentName, element, debugID) {

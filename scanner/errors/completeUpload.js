@@ -1,0 +1,1 @@
+function completeUpload(table, tableName, progress, totalRows, isValidateOnly, linkData) {

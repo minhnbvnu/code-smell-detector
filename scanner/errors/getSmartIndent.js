@@ -1,0 +1,1 @@
+function getSmartIndent(sourceFile, position, precedingToken, lineAtPosition, assumeNewLineBeforeCloseBrace, options) {

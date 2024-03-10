@@ -1,0 +1,1 @@
+function updateGetAccessorDeclaration(node, modifiers, name, parameters, type, body) {

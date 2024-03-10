@@ -1,0 +1,1 @@
+function renderRect (ctx, x, y, w, h, bgcolor) {

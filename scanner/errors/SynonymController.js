@@ -1,0 +1,1 @@
+function SynonymController($scope, Synonym, EntitySynonymVariants, Bot, SynonymVariant, $location) {

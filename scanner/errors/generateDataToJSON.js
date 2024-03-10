@@ -1,0 +1,1 @@
+function generateDataToJSON(regex, intents, expressions, params, synonyms, variants) {

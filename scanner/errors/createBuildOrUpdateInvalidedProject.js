@@ -1,0 +1,3 @@
+function createBuildOrUpdateInvalidedProject(kind, state, project, projectPath, projectIndex, config, buildOrder) {
+                void 0, (name, text, writeByteOrderMark, _onError, _sourceFiles, data) => outputFiles.push({ name, text, writeByteOrderMark, data }), cancellationToken, 
+                const emitResult = program.emitBuildInfo((name, text, writeByteOrderMark, onError, sourceFiles, data) => {

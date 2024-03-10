@@ -1,0 +1,1 @@
+function q2c(x1, y1, ax, ay, x2, y2) {

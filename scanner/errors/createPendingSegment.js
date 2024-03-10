@@ -1,0 +1,1 @@
+function createPendingSegment(request, index, boundary, formatContext, lastPushedText, textEmbedded) {

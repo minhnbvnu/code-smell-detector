@@ -1,0 +1,1 @@
+function addCurve( curve, orbitAngle, orbitRadius, angle, length, cylinderRadius, scale, rotation ) {

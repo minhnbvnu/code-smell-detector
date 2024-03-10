@@ -1,0 +1,1 @@
+function getCompletionEntriesForDirectoryFragmentWithRootDirs(rootDirs, fragment, scriptDirectory, extensionOptions, compilerOptions, host, exclude) {

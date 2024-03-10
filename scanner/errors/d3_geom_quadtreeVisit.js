@@ -1,0 +1,1 @@
+function d3_geom_quadtreeVisit(f, node, x1, y1, x2, y2) {

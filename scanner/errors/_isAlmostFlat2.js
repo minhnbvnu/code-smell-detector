@@ -1,0 +1,1 @@
+function _isAlmostFlat2(t,r,a,i,o,l,c,u){var d=Math.pow(3*a-2*t-c,2),h=Math.pow(3*i-2*r-u,2),p=Math.pow(3*o-t-2*c,2),v=Math.pow(3*l-r-2*u,2);return Math.max(d,p)+Math.max(h,v)<=10}

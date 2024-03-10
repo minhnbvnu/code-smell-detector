@@ -1,0 +1,1 @@
+function uploadDataToTexture(e,t,n,r,o,a){validateTextureSize(n,r),callAndCheck(e,function(){return e.bindTexture(e.TEXTURE_2D,t)}),callAndCheck(e,function(){return e.texSubImage2D(e.TEXTURE_2D,0,0,0,n,r,a,e.FLOAT,o)}),callAndCheck(e,function(){return e.bindTexture(e.TEXTURE_2D,null)});}

@@ -1,0 +1,1 @@
+function write$1(buffer, value, offset, isLE, mLen, nBytes) {

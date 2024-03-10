@@ -1,0 +1,1 @@
+function check_2_segments_intersect(l0_x0, l0_y0, l0_x1, l0_y1, l1_x0, l1_y0, l1_x1, l1_y1) {

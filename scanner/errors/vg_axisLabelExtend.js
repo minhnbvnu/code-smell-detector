@@ -1,0 +1,1 @@
+function vg_axisLabelExtend(orient,labels,oldScale,newScale,size,pad){size=Math.max(size,0)+pad;if(orient==="left"||orient==="top"){size*=-1}if(orient==="top"||orient==="bottom"){vg.extend(labels.properties.enter,{x:oldScale,y:{value:size}});

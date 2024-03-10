@@ -1,0 +1,1 @@
+function fromRotationTranslationValues(x1, y1, z1, w1, x2, y2, z2) {

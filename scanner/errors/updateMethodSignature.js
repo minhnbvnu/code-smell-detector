@@ -1,0 +1,1 @@
+function updateMethodSignature(node, modifiers, name, questionToken, typeParameters, parameters, type) {

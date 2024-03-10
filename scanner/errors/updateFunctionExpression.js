@@ -1,0 +1,1 @@
+function updateFunctionExpression(node, modifiers, asteriskToken, name, typeParameters, parameters, type, body) {

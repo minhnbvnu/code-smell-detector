@@ -1,0 +1,1 @@
+function createImportAdderWorker(sourceFile, program, useAutoImportProvider, preferences, host, cancellationToken) {

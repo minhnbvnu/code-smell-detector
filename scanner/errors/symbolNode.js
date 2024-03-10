@@ -1,0 +1,1 @@
+function symbolNode(value, height, depth, italic, skew, classes, style) {

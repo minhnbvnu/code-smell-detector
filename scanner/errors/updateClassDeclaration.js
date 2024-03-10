@@ -1,0 +1,1 @@
+function updateClassDeclaration(node, modifiers, name, typeParameters, heritageClauses, members) {

@@ -1,0 +1,1 @@
+function transmitResource(filename, value, moduleName, config, includeJson, needMd5) {

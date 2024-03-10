@@ -1,0 +1,1 @@
+function getNewStatementsAndRemoveFromOldFile(oldFile, usage, changes, toMove, program, host, newFilename, preferences) {

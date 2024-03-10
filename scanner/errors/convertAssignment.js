@@ -1,0 +1,1 @@
+function convertAssignment(sourceFile, checker, assignment, changes, exports, useSitesToUnqualify) {

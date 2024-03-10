@@ -1,0 +1,1 @@
+function addNormalizedProperty(base, key, value, meta, descs, values, concats, mergings) {

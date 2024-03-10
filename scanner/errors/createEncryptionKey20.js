@@ -1,0 +1,1 @@
+function createEncryptionKey20(revision, password, ownerPassword,

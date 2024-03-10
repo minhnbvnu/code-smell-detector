@@ -1,0 +1,1 @@
+function kae(e,t,r,n,i,a){let l=e.childCursor(),{i:s,off:u}=l.findPos(r,1),{i:c,off:d}=l.findPos(t,-1),f=t-r;for(let h of n)f+=h.length;e.length+=f,wae(e,c,d,s,u,n,0,i,a)}

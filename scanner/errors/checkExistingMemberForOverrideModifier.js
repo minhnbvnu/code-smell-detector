@@ -1,0 +1,1 @@
+function checkExistingMemberForOverrideModifier(node, staticType, baseStaticType, baseWithThis, type, typeWithThis, member, memberIsParameterProperty, reportErrors2 = true) {

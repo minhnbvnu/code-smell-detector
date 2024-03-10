@@ -1,0 +1,1 @@
+function convertVariableStatement(sourceFile, statement, changes, checker, identifiers, target, quotePreference) {

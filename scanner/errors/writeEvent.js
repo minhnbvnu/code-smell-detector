@@ -1,0 +1,1 @@
+function writeEvent(eventType, phase, name, args, extras, time = 1e3 * timestamp()) {

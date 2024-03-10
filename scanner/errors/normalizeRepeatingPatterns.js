@@ -1,0 +1,1 @@
+function normalizeRepeatingPatterns(rightText, expressionCount, previousLeftText, optionallyChainedCode, previous, current) {

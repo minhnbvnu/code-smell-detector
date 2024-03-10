@@ -1,0 +1,1 @@
+function $httpBackend(method, url, data, callback, headers, timeout, withCredentials) {

@@ -1,0 +1,1 @@
+function getFixesForAddImport(exportInfos, existingImports, program, sourceFile, usagePosition, isValidTypeOnlyUseSite, useRequire, host, preferences, fromCacheOnly) {

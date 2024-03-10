@@ -1,0 +1,1 @@
+function getDataForPartition(topicName, consumer, format, partition, offset, position) {

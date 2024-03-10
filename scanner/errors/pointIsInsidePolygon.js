@@ -1,0 +1,1 @@
+function pointIsInsidePolygon(point, polygonPoints, epsilon, offset, count, size) {

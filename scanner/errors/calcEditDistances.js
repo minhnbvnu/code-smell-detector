@@ -1,0 +1,1 @@
+function calcEditDistances(current, currentStart, currentEnd,

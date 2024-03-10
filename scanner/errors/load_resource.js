@@ -1,0 +1,1 @@
+function load_resource(method, path, data, on_success, on_error, on_progress) {

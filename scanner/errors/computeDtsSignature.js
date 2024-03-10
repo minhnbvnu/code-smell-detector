@@ -1,0 +1,1 @@
+                        programOfThisState.emit(sourceFile, (fileName, text, _writeByteOrderMark, _onError, sourceFiles, data) => {

@@ -1,0 +1,1 @@
+function quantize_lines_xrpow(l, istep, xr, xrPos, ix, ixPos) {

@@ -1,0 +1,1 @@
+function makeUniqueName2(baseName, checkFn = isUniqueName, optimistic, scoped, privateName, prefix, suffix) {

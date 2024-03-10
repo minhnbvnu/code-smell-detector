@@ -1,0 +1,1 @@
+function emitWorker(program2, sourceFile, writeFileCallback, cancellationToken, emitOnly, customTransformers, forceDtsEmit) {

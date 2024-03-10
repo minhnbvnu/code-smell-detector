@@ -1,0 +1,1 @@
+function resolveName(location, name, meaning, nameNotFoundMessage, nameArg, isUse, excludeGlobals = false, getSpellingSuggestions = true) {

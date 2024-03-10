@@ -1,0 +1,1 @@
+function localResponseNormalizationBackprop_(x, y, dy, depthRadius, bias, alpha, beta) {

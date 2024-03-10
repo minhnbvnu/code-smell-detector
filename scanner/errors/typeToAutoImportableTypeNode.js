@@ -1,0 +1,1 @@
+function typeToAutoImportableTypeNode(checker, importAdder, type, contextNode, scriptTarget, flags, tracker) {

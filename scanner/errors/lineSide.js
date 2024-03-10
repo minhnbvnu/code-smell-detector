@@ -1,0 +1,1 @@
+function lineSide(ax, ay, bx, by, cx, cy) {

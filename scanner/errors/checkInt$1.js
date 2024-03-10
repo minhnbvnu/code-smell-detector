@@ -1,0 +1,1 @@
+function checkInt$1(buf, value, offset, ext, max, min) {

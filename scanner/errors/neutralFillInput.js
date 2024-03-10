@@ -1,0 +1,1 @@
+function neutralFillInput(palette, reference, restDelta, hoverDelta, activeDelta, focusDelta) {

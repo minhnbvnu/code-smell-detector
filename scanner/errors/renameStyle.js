@@ -1,0 +1,1 @@
+function renameStyle(agent, id, rendererID, oldName, newName, value) {

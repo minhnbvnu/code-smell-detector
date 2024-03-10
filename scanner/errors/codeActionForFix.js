@@ -1,0 +1,1 @@
+function codeActionForFix(context, sourceFile, symbolName2, fix, includeSymbolNameInDescription, compilerOptions, preferences) {

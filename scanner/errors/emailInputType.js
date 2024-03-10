@@ -1,0 +1,1 @@
+function emailInputType(scope, element, attr, ctrl, $sniffer, $browser) {

@@ -1,0 +1,1 @@
+function fenced(configuration, open, mml, close, big, color) {

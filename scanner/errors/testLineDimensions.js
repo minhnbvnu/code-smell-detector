@@ -1,0 +1,1 @@
+function testLineDimensions($line, maxWidth, property, size, interval, units, previousWidth)

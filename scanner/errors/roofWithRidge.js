@@ -1,0 +1,1 @@
+function roofWithRidge(triangles, properties, polygon, offset, dim, roofColor, wallColor) {

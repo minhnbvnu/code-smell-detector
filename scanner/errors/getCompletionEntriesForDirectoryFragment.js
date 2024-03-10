@@ -1,0 +1,1 @@
+function getCompletionEntriesForDirectoryFragment(fragment, scriptDirectory, extensionOptions, host, moduleSpecifierIsRelative, exclude, result = createNameAndKindSet()) {

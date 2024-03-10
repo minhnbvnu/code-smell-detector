@@ -1,0 +1,1 @@
+function tryReplaceImportTypeNodeWithAutoImport(typeNode, declaration, sourceFile, changes, importAdder, scriptTarget) {

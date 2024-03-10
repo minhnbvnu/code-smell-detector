@@ -1,0 +1,1 @@
+function atom(ll, cl, lr, cr, li, ri) {

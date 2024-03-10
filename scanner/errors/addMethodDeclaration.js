@@ -1,0 +1,1 @@
+function addMethodDeclaration(context, changes, callExpression, name, modifierFlags, parentDeclaration, sourceFile) {

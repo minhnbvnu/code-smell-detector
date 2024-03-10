@@ -1,0 +1,1 @@
+function urlInputType(scope, element, attr, ctrl, $sniffer, $browser) {

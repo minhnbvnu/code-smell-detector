@@ -1,0 +1,1 @@
+function definePromise(declare, extended, array, is, fn, args) {

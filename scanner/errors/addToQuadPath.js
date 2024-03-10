@@ -1,0 +1,1 @@
+function addToQuadPath(x, y, ctrlX, ctrlY, toX, toY) {

@@ -1,0 +1,1 @@
+function generateImageHtml(imgFile, imgId, imgClass, imgStyle, ab, settings) {

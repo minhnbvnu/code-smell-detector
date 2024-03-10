@@ -1,0 +1,1 @@
+function getNewFileImportsAndAddExportInOldFile(oldFile, importsToCopy, newFileImportsFromOldFile, changes, checker, program, host, useEsModuleSyntax, quotePreference) {

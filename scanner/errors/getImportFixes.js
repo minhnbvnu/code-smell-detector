@@ -1,0 +1,1 @@
+function getImportFixes(exportInfos, usagePosition, isValidTypeOnlyUseSite, useRequire, program, sourceFile, host, preferences, importMap = createExistingImportMap(program.getTypeChecker(), sourceFile, program.getCompilerOptions()), fromCacheOnly) {

@@ -1,0 +1,1 @@
+  return function (builder, text, style, startStyle, endStyle, title, css) {

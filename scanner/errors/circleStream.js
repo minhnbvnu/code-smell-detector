@@ -1,0 +1,1 @@
+function circleStream(stream, radius, delta, direction, t0, t1) {

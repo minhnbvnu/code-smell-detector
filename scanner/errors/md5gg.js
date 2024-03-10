@@ -1,0 +1,1 @@
+function md5gg(a, b, c, d, x, s, t) {

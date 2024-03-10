@@ -1,0 +1,1 @@
+function updateConditionalExpression(node, condition, questionToken, whenTrue, colonToken, whenFalse) {

@@ -1,0 +1,1 @@
+function intersectTris( geo, side, ray, offset, count, intersections ) {

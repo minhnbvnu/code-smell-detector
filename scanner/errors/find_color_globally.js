@@ -1,0 +1,1 @@
+function find_color_globally(source_image_data, dest_image_data, find_r, find_g, find_b, find_a) {

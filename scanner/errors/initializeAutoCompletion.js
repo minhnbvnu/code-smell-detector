@@ -1,0 +1,1 @@
+      // eslint-disable-next-line mozilla/no-compare-against-boolean-literals

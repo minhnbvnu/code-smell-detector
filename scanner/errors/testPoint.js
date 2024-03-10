@@ -1,0 +1,1 @@
+function testPoint( point, index, localThresholdSq, matrixWorld, raycaster, intersects, object ) {

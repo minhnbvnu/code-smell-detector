@@ -1,0 +1,1 @@
+function ClockDate(year, month, date, hour, minute, second, ms) {

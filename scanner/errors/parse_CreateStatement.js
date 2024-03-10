@@ -1,0 +1,1 @@
+                    result0 = (function(offset, line, column, s, connector, v) {

@@ -1,0 +1,1 @@
+function wrapReadPixels(gl, framebufferState, reglPoll, context, glAttributes, extensions, limits) {

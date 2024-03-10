@@ -1,0 +1,1 @@
+function addCompletionEntriesFromPaths(result, fragment, baseDirectory, extensionOptions, host, paths) {

@@ -1,0 +1,1 @@
+function crypto_onetimeauth(out, outpos, m, mpos, n, k) {

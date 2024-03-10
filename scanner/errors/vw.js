@@ -1,0 +1,1 @@
+function vw(e,r,t,a,n,i){if(n>=1)return console.error("The Numbers writer currently writes only the first table");var s=[];hw(e,r,i,function(e){var r=Lg(e.messages[0].data);{r[1]=[{type:2,data:_g(a)}];s=Ug(r[2],Jg)}e.messages[0].data=Mg(r)});var f=dw(e,r,s[0]);var l=Jg(Lg(f.messages[0].data)[2][0].data);hw(e,r,l,function(a,n){return mw(e,r,t,a,n,l)})}

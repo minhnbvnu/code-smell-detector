@@ -1,0 +1,1 @@
+function count_bit_ESC(ix, ixPos, end, t1, t2, s) {

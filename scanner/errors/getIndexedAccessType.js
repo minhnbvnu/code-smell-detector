@@ -1,0 +1,1 @@
+function getIndexedAccessType(objectType, indexType, accessFlags = 0 /* None */, accessNode, aliasSymbol, aliasTypeArguments) {

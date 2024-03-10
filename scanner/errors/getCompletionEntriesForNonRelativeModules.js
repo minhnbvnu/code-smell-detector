@@ -1,0 +1,1 @@
+function getCompletionEntriesForNonRelativeModules(fragment, scriptPath, mode, compilerOptions, host, extensionOptions, typeChecker) {

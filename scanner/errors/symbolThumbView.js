@@ -1,0 +1,1 @@
+function symbolThumbView(context, symbol, x, y, imageWidth, imageHeight, label) {

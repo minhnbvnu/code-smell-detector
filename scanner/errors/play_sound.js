@@ -1,0 +1,1 @@
+function play_sound(sound, loop, volume, pan, pitch, time, rate, stopped) {

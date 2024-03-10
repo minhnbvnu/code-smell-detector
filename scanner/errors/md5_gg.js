@@ -1,0 +1,1 @@
+function md5_gg(a, b, c, d, x, s, t)

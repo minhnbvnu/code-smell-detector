@@ -1,0 +1,1 @@
+function LocalPdfManager(t,r,c,l,u,g,y){var m;_classCallCheck(this,LocalPdfManager);(m=o.call(this))._docId=t;m._password=c;m._docBaseUrl=parseDocBaseUrl(y);m.msgHandler=l;m.evaluatorOptions=u;m.enableXfa=g;var v=new d.Stream(r);m.pdfDocument=new h.PDFDocument(_assertThisInitialized(m),v);m._loadedStreamPromise=Promise.resolve(v);return m}

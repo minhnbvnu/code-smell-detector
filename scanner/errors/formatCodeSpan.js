@@ -1,0 +1,1 @@
+function formatCodeSpan(file, start, length2, indent2, squiggleColor, host) {

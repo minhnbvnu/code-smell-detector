@@ -1,0 +1,1 @@
+function ChatController($scope, $rootScope, $interval, $http, Rasa_Version, Settings, Rasa_Status, appConfig, Rasa_Parse, $timeout, Conversations, Bot, Rasa_Story) {

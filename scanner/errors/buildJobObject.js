@@ -1,0 +1,1 @@
+function buildJobObject(operation, status, jobDocument, inProgress, failed, succeeded) {

@@ -1,0 +1,1 @@
+function infernoTemplateHelper (root, rootElement, templateValues, templateParams, valueCounter, propRefs, name, val) {

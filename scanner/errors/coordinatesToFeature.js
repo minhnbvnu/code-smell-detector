@@ -1,0 +1,1 @@
+function coordinatesToFeature(type, feature, crsIn, coordinates, collection, properties) {

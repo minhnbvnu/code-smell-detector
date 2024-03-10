@@ -1,0 +1,1 @@
+function addCompletionEntriesFromPathsOrExports(result, fragment, baseDirectory, extensionOptions, host, keys, getPatternsForKey, comparePaths2) {

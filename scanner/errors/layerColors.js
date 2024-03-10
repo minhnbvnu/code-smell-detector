@@ -1,0 +1,1 @@
+function layerColors(gc, colors, x, y, width, height, foundationColor) {

@@ -1,0 +1,1 @@
+function init_s3_values(s3ind, npart, bval, bval_width, norm, use_old_s3) {

@@ -1,0 +1,1 @@
+function draw_ellipse(ctx, x, y, w, h, stroke, fill){

@@ -1,0 +1,1 @@
+function elaborateArrayLiteral(node, source, target, relation, containingMessageChain, errorOutputContainer) {

@@ -1,0 +1,1 @@
+function draw_line_without_pattern_support(ctx, x1, y1, x2, y2, stroke_size = 1) {

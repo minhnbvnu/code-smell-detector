@@ -1,0 +1,1 @@
+function loadModuleFromSelfNameReference(extensions, moduleName, directory, state, cache, redirectedReference) {

@@ -1,0 +1,1 @@
+function conv2dTranspose_(e,t,n,r,o,a){return conv2dDerInput_(n,convertToTensor(e,"x","conv2dTranspose"),convertToTensor(t,"filter","conv2dTranspose"),r,o,a)}

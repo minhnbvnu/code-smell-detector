@@ -1,0 +1,1 @@
+function computeModuleSpecifiers(modulePaths, compilerOptions, importingSourceFile, host, userPreferences, options = {}) {

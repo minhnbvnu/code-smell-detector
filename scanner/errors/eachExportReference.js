@@ -1,0 +1,1 @@
+function eachExportReference(sourceFiles, checker, cancellationToken, exportSymbol, exportingModuleSymbol, exportName, isDefaultExport, cb) {

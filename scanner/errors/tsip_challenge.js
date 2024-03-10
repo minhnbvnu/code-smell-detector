@@ -1,0 +1,1 @@
+function tsip_challenge(o_stack, b_isproxy, s_scheme, s_realm, s_nonce, s_opaque, s_algorithm, s_qop) {

@@ -1,0 +1,1 @@
+function loadModuleFromExports(scope, extensions, subpath, state, cache, redirectedReference) {

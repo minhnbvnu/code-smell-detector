@@ -1,0 +1,1 @@
+function testImageDimensions(remote, url, expectedPageTitle, idx, isExternalImage, width, height, delta) {

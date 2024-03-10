@@ -1,0 +1,1 @@
+function DonutSegment(cx, cy, inner, outer, p0, p1, color, backgroundColor, index, raphael) {

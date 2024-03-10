@@ -1,0 +1,1 @@
+function scale_range(x_scales, y_scales, x_range, y_range, factor, x_axis = true, y_axis = true, center) {

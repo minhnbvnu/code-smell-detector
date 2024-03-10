@@ -1,0 +1,1 @@
+async function updateStub(dotDevContainerPath, definitionId, repo, release, registry, registryPath) {

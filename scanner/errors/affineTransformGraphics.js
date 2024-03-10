@@ -1,0 +1,1 @@
+function affineTransformGraphics(dr, e1, e2,  scale, nShoot, rotation, f, 

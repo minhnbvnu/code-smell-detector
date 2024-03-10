@@ -1,0 +1,1 @@
+function fnG (a, b, c, d, m, k, s) {

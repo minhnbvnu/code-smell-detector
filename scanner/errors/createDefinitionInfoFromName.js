@@ -1,0 +1,1 @@
+function createDefinitionInfoFromName(checker, declaration, symbolKind, symbolName2, containerName, unverified, failedAliasResolution, textSpan) {

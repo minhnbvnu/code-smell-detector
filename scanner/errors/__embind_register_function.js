@@ -1,0 +1,1 @@
+function __embind_register_function(name, argCount, rawArgTypesAddr, signature, rawInvoker, fn) {

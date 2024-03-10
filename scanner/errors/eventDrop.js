@@ -1,0 +1,1 @@
+function eventDrop(e, event, dayDelta, minuteDelta, allDay, ev, ui) {

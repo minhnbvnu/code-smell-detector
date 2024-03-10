@@ -1,0 +1,1 @@
+function batchNorm_(x, mean, variance, offset, scale, varianceEpsilon) {

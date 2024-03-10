@@ -1,0 +1,1 @@
+function batchNorm4d_(x, mean, variance, offset, scale, varianceEpsilon) {

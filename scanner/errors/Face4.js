@@ -1,0 +1,1 @@
+function Face4(a, b, c, d, normal, color, materialIndex) {

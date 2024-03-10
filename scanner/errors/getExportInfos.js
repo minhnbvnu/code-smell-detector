@@ -1,0 +1,2 @@
+function getExportInfos(symbolName2, isJsxTagName, currentTokenMeaning, cancellationToken, fromFile, program, useAutoImportProvider, host, preferences) {
+            function addSymbol(moduleSymbol, toFile, exportedSymbol, exportKind, program2, isFromPackageJson) {

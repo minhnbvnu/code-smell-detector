@@ -1,0 +1,1 @@
+function getEntryForMemberCompletion(host, program, options, preferences, name, symbol, location, position, contextToken, formatContext) {

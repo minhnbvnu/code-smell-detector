@@ -1,0 +1,1 @@
+function tryDeleteDeclarationWorker(token, changes, sourceFile, checker, sourceFiles, program, cancellationToken, isFixAll) {

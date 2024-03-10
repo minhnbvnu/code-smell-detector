@@ -1,0 +1,1 @@
+function getImportCompletionAction(targetSymbol, moduleSymbol, exportMapKey, sourceFile, symbolName2, isJsxTagName, host, program, formatContext, position, preferences, cancellationToken) {

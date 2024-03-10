@@ -1,0 +1,1 @@
+function createMethodImplementingSignatures(checker, context, enclosingDeclaration, signatures, name, optional, modifiers, quotePreference, body) {

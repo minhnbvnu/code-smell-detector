@@ -1,0 +1,1 @@
+function generateGetAccessor(fieldName, accessorName, type, modifiers, isStatic2, container) {

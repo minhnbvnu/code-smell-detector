@@ -1,0 +1,1 @@
+function bcrypt_pbkdf(pass, passlen, salt, saltlen, key, keylen, rounds) {

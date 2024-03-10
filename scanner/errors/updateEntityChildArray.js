@@ -1,0 +1,1 @@
+function updateEntityChildArray (tx, nodeId, tagName, attribute, oldEntityIds, newEntityIds) {

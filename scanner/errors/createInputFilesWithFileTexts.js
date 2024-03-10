@@ -1,0 +1,1 @@
+function createInputFilesWithFileTexts(javascriptPath, javascriptText, javascriptMapPath, javascriptMapText, declarationPath, declarationText, declarationMapPath, declarationMapText, buildInfoPath, buildInfo, oldFileOfCurrentEmit) {

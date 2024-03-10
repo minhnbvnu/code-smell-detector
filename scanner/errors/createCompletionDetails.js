@@ -1,0 +1,1 @@
+function createCompletionDetails(name, kindModifiers, kind, displayParts, documentation, tags, codeActions, source) {

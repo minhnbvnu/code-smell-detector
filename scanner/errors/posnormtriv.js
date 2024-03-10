@@ -1,0 +1,1 @@
+function posnormtriv( pos, norm, o1, o2, o3, renderCallback ) {

@@ -1,0 +1,1 @@
+function draw_rect(pos, size, fill, border, angle, z) {

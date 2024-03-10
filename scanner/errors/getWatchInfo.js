@@ -1,0 +1,1 @@
+function getWatchInfo(file, flags, options, detailInfo1, detailInfo2, getDetailWatchInfo2) {

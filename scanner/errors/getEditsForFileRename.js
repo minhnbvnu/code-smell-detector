@@ -1,0 +1,1 @@
+function getEditsForFileRename(program, oldFileOrDirPath, newFileOrDirPath, host, formatContext, preferences, sourceMapper) {

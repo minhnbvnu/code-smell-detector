@@ -1,0 +1,1 @@
+function createCursorWithCount(factory, tokens, comments, indexMap, startLoc, endLoc, opts) {

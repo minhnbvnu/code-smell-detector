@@ -1,0 +1,1 @@
+function getSourceFileToImport(importedModuleSymbol, importLiteral, importingSourceFile, program, host, oldToNew) {

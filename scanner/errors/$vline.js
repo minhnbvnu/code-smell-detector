@@ -1,0 +1,1 @@
+function $vline(x, y1, y2, color, clipX1, clipY1, clipX2, clipY2) {

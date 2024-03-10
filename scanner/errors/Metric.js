@@ -1,0 +1,1 @@
+function Metric(name, value, count, min, max, properties) {

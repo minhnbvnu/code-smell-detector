@@ -1,0 +1,1 @@
+function generateAccessorFromProperty(file, program, start, end, context, _actionName) {

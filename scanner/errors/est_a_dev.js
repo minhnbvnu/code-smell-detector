@@ -1,0 +1,1 @@
+function est_a_dev(a_d, alpha_d, beta_d,

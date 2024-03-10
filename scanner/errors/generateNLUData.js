@@ -1,0 +1,1 @@
+function generateNLUData(regex, intents, expressions, params, synonyms, variants) {

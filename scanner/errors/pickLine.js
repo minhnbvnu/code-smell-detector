@@ -1,0 +1,1 @@
+function pickLine(g,scene,x,y,gx,gy){if(!scene.items.length)return false;var items=scene.items,o,b,i,di,dd,od,dx,dy;b=items[0].bounds;if(b&&!b.contains(gx,gy))return false;if(g._ratio!==1){x*=g._ratio;y*=g._ratio}if(!hitTests.line(g,items,x,y))return false;return items[0]}

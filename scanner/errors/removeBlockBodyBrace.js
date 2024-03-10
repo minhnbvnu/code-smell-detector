@@ -1,0 +1,1 @@
+function removeBlockBodyBrace(changes, sourceFile, declaration, expression, commentSource, withParen) {

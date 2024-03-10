@@ -1,0 +1,1 @@
+function right(machine, stackIndex, stateStack, nodeStack, userStateStack, _resultHolder, _outerState) {

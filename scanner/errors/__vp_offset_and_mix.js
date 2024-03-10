@@ -1,0 +1,1 @@
+function __vp_offset_and_mix($p,$noise,$tone,$offset_select,$logmask,$mdct,$logmdct) {

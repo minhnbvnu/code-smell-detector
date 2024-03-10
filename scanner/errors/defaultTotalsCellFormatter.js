@@ -1,0 +1,1 @@
+function defaultTotalsCellFormatter(row, cell, value, columnDef, item, grid) {

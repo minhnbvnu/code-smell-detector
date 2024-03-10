@@ -1,0 +1,1 @@
+function createOptionDiagnosticInObjectLiteralSyntax(objectLiteral, onKey, key1, key2, message, arg0, arg1, arg2, arg3) {

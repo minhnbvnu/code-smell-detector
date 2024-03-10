@@ -1,0 +1,1 @@
+    /* eslint-disable-next-line local-rules/no-prototype-methods */

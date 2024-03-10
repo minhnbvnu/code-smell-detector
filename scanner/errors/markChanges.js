@@ -1,0 +1,1 @@
+function markChanges(editor, diff, type, marks, from, to, classes) {

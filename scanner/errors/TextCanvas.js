@@ -1,0 +1,1 @@
+function TextCanvas(strings, font, w, h, maxWidth, stringWidths, align, valign,

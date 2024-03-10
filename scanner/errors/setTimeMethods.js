@@ -1,0 +1,1 @@
+	makeTime = useUTC ? Date.UTC : function (year, month, date, hours, minutes, seconds) {

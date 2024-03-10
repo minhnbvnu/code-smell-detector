@@ -1,0 +1,1 @@
+function createOldFileImportsFromNewFile(sourceFile, newFileNeedExport, newFileNameWithExtension, program, host, useEs6Imports, quotePreference) {

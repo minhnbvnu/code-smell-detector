@@ -1,0 +1,1 @@
+function safeHtmlRenderer(instance, td, row, col, prop, value, cellProperties) {

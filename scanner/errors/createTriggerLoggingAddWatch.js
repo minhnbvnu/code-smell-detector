@@ -1,0 +1,1 @@
+                return (file, cb, flags, options, detailInfo1, detailInfo2) => plainInvokeFactory[key].call(

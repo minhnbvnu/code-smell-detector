@@ -1,0 +1,1 @@
+function createSignatureDeclarationFromCallExpression(kind, context, importAdder, call, name, modifierFlags, contextNode) {

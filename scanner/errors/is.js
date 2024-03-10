@@ -1,0 +1,1 @@
+function is(t,e,i,n,o,r,s,a){if(0!=n){n<0&&(e-=n*=-1);var l=Qr("rect",r,s);l.setAttributeNS(null,"x",t-.5*i),l.setAttributeNS(null,"y",e),l.setAttributeNS(null,"width",i),l.setAttributeNS(null,"height",n),l.setAttributeNS(null,"class",o),a&&l.setAttributeNS(null,"style",a)}}

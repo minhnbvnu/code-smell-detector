@@ -1,0 +1,1 @@
+function nfCore(value, plus, minus, leftDigits, rightDigits, group) {

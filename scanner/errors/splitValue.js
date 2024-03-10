@@ -1,0 +1,1 @@
+function splitValue(filename, value, resourcePrefix, config, includeJson, needMd5) {

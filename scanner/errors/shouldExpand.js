@@ -1,0 +1,1 @@
+function shouldExpand(a, b, num, isNum, padding, opts) {

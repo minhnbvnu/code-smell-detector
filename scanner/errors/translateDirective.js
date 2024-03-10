@@ -1,0 +1,2 @@
+function translateDirective($translate, $q, $interpolate, $compile, $parse, $rootScope) {
+        var updateTranslation = function(translateAttr, translationId, scope, interpolateParams, defaultTranslationText, translateNamespace) {

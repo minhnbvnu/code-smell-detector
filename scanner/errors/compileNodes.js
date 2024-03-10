@@ -1,0 +1,1 @@
+function compileNodes(nodeList, transcludeFn, $rootElement, maxPriority, ignoreDirective,

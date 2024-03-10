@@ -1,0 +1,1 @@
+function addDirective(tDirectives, name, location, maxPriority, ignoreDirective, startAttrName,

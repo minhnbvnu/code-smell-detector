@@ -1,0 +1,1 @@
+async function getStackAreaDistribution (projectId, startAt, endAt, countType, errorNameList = [], url = '') {

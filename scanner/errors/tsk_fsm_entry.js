@@ -1,0 +1,1 @@
+function tsk_fsm_entry(i_state_from, i_action, fn_condition, i_state_to, fn_execute, s_description) {

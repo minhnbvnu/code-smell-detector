@@ -1,0 +1,1 @@
+function ModelController($scope, $rootScope, appConfig, Model, Bot, Rasa_Status, $http) {

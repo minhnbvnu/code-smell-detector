@@ -1,0 +1,1 @@
+function acc_b_dev(b_d, alpha_d, beta_d, sum_ab, nstates, nsymbols, obs_t, t){

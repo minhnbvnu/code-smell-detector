@@ -1,0 +1,1 @@
+function sum64_4_hi(ah, al, bh, bl, ch, cl, dh, dl) {

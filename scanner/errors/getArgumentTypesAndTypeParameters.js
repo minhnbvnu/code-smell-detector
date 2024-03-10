@@ -1,0 +1,1 @@
+function getArgumentTypesAndTypeParameters(checker, importAdder, instanceTypes, contextNode, scriptTarget, flags, tracker) {

@@ -1,0 +1,1 @@
+function getAnchorPoint(untransformedBounds, matrix, hAlign, vAlign, sx, sy) {

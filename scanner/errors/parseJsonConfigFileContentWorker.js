@@ -1,0 +1,1 @@
+function parseJsonConfigFileContentWorker(json, sourceFile, host, basePath, existingOptions = {}, existingWatchOptions, configFileName, resolutionStack = [], extraFileExtensions = [], extendedConfigCache) {

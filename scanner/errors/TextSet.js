@@ -1,0 +1,1 @@
+function TextSet(ctxt, font, colour, strings, padx, pady, shadowColour,

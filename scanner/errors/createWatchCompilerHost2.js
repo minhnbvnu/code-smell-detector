@@ -1,0 +1,1 @@
+function createWatchCompilerHost2(rootFilesOrConfigFileName, options, system, createProgram2, reportDiagnostic, reportWatchStatus2, projectReferencesOrWatchOptionsToExtend, watchOptionsOrExtraFileExtensions) {

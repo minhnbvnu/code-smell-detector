@@ -1,0 +1,1 @@
+function $hline(x1, y, x2, color, clipX1, clipY1, clipX2, clipY2) {

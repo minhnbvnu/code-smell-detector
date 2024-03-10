@@ -1,0 +1,1 @@
+function md5_hh(a, b, c, d, x, s, t)

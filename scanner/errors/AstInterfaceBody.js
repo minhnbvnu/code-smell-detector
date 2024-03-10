@@ -1,0 +1,1 @@
+function AstInterfaceBody(name, interfacesNames, methodsNames, fields, innerClasses, misc) {

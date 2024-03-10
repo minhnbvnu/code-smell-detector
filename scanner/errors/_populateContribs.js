@@ -1,0 +1,1 @@
+function _populateContribs (doc, jats, importer, contribsPath, contribEls, groupId) {

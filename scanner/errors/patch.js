@@ -1,0 +1,1 @@
+  fs.read = (function (fs$read) { return function (fd, buffer, offset, length, position, callback_) {

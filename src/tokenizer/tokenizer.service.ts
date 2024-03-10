@@ -65,7 +65,7 @@ export class TokenizerService {
       );
       const tokenizeRes =
         tokenizer === "bert"
-          ? this.runSingleBertTokenization(file, type)
+          ? this.runSingleBertTokenization(file, type, true)
           : this.runSingleTokenization(file, type);
       positiveTokenizedFiles.push(tokenizeRes);
       const writeFile = `data/${tokenizer}/${type}/Positive/tokenized${positiveFileCounter}.tok.cld`;
@@ -123,10 +123,14 @@ export class TokenizerService {
     return exeRes;
   }
 
-  runSingleBertTokenization(fileName: string, type: "1d" | "2d" = "1d") {
-    const cmd = `python3 src/tokenizer/tokenizer.py ${type} scanner/functions/${this.fileService.escapeSpecialCharacter(
-      fileName
-    )}`;
+  runSingleBertTokenization(
+    fileName: string,
+    type: "1d" | "2d" = "1d",
+    isPositive?: boolean
+  ) {
+    const cmd = `python3 src/tokenizer/tokenizer.py ${type} scanner/${
+      isPositive ? "errors" : "functions"
+    }/${this.fileService.escapeSpecialCharacter(fileName)}`;
 
     let exeRes = execSync(cmd, {
       encoding: "utf-8",

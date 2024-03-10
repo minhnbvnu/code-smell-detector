@@ -1,0 +1,1 @@
+function transformVertex( vertexPosition, mvPosition, center, scale, sin, cos ) {

@@ -1,0 +1,1 @@
+function tearOff(a,b,c,d,e,f){var u=null

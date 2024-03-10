@@ -1,0 +1,1 @@
+function drawSide(borderData, radius1, radius2, outer1, inner1, outer2, inner2) {

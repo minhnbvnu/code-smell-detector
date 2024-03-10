@@ -1,0 +1,1 @@
+function drawEnlarged(data, xoff, yoff, r, g, b) {

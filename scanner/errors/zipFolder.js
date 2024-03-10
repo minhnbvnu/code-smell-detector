@@ -1,0 +1,1 @@
+async function zipFolder(zipArchiver, folder, folders, funignore, codeUri, prefix = '') {

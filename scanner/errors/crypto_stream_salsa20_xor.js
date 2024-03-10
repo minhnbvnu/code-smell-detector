@@ -1,0 +1,1 @@
+function crypto_stream_salsa20_xor(c,cpos,m,mpos,b,n,k) {

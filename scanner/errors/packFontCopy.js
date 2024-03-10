@@ -1,0 +1,1 @@
+function packFontCopy(dst, srcA, srcMask, bounds, xSign = 1, ySign = 1) {

@@ -1,0 +1,1 @@
+function deflateInit2(strm, level, method, windowBits, memLevel, strategy) {

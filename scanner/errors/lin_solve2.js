@@ -1,0 +1,1 @@
+function lin_solve2(x, x0, y, y0, a, c)

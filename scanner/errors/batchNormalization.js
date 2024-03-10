@@ -1,0 +1,1 @@
+function batchNormalization(x, mean, variance, beta, gamma, epsilon) {

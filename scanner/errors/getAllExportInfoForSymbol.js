@@ -1,0 +1,1 @@
+function getAllExportInfoForSymbol(importingFile, symbol, symbolName2, moduleSymbol, preferCapitalized, program, host, preferences, cancellationToken) {

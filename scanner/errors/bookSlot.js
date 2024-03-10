@@ -1,0 +1,1 @@
+async function bookSlot(config, slot, displayName, email, description, timeZone) {

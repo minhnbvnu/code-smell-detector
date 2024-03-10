@@ -1,0 +1,1 @@
+  let maxIndentationSize = indentationSizeRef.current; // eslint-disable-next-line no-for-of-loops/no-for-of-loops

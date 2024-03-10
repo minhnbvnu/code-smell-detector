@@ -1,0 +1,1 @@
+function _vorbis_encode_tonemask_setup($vi,$s,$block,$att,$max,$in) {

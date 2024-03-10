@@ -1,0 +1,1 @@
+function adjustRangeAfterSplit(range, container, offset, setProp, splitNode, newNodeBeforeSplit) {

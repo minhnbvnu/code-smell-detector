@@ -1,0 +1,1 @@
+function signUrl(method, scheme, hostname, path, queryParams, accessId, secretKey,

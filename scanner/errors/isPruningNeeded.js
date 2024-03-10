@@ -1,0 +1,1 @@
+function isPruningNeeded(source, root, prunePaths, requiredPaths, stack, nativeObjects) {

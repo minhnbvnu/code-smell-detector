@@ -1,0 +1,1 @@
+function doChange36(sourceFile, program, host, changes, functionDeclaration, groupedReferences) {

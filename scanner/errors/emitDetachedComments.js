@@ -1,0 +1,1 @@
+function emitDetachedComments(text, lineMap, writer, writeComment, node, newLine, removeComments) {

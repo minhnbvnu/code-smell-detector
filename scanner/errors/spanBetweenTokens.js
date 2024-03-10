@@ -1,0 +1,1 @@
+function spanBetweenTokens(openToken, closeToken, hintSpanNode, sourceFile, autoCollapse = false, useFullStart = true) {

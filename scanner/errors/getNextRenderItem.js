@@ -1,0 +1,1 @@
+function getNextRenderItem( object, geometry, material, groupOrder, z, group ) {

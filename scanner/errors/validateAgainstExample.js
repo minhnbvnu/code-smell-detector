@@ -1,0 +1,1 @@
+function validateAgainstExample(t, validator, protoType, protoEnumTypes, examplePath, jsonExample) {

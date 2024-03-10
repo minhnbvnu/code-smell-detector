@@ -1,0 +1,1 @@
+function updateNamespaceLikeImport(changes, sourceFile, checker, movedSymbols, newModuleSpecifier, oldImportId, oldImportNode) {

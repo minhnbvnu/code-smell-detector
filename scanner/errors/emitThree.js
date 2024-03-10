@@ -1,0 +1,1 @@
+function emitThree(handler, isFn, self, arg1, arg2, arg3) {

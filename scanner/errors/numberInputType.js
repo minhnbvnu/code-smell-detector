@@ -1,0 +1,1 @@
+function numberInputType(scope, element, attr, ctrl, $sniffer, $browser) {

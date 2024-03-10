@@ -1,0 +1,1 @@
+function setPoint( point, pointMap, geometry, camera, x, y, z ) {

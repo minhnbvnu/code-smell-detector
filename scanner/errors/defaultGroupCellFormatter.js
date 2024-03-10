@@ -1,0 +1,1 @@
+function defaultGroupCellFormatter(row, cell, value, columnDef, item, grid) {

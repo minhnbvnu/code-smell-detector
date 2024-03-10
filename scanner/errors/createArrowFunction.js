@@ -1,0 +1,1 @@
+function createArrowFunction(modifiers, typeParameters, parameters, type, equalsGreaterThanToken, body) {
