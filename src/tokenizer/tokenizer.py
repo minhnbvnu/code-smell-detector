@@ -42,6 +42,7 @@ if __name__ == "__main__":
     type = sys.argv[1]
     file_path = sys.argv[2]
     tokenizer = AutoTokenizer.from_pretrained("microsoft/codebert-base")
+    tokenizer.model_max_length = 512
     if type == "1d":
         file_content = read_file_content(file_path)
         if file_content is not None:

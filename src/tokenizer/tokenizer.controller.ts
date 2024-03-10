@@ -7,7 +7,7 @@ export class TokenizerController {
 
   @Post()
   async tokenize() {
-    for (const type of ["1d", "2d"]) {
+    for (const type of ["2d"]) {
       await this.tokenizerService.tokenize(type as "1d" | "2d", "bert");
     }
     return true;

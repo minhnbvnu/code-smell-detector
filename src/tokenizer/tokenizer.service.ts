@@ -1,5 +1,5 @@
 import { Injectable } from "@nestjs/common";
-import { execSync, spawnSync } from "child_process";
+import { execSync } from "child_process";
 import { FileService } from "src/file/file.service";
 import * as fs from "fs";
 import { EslintService } from "src/eslint/eslint.service";
@@ -53,7 +53,9 @@ export class TokenizerService {
     detectionResult.positive = processedPositiveFiles;
 
     const positiveTokenizedFiles = [];
-    for (const [index, file] of detectionResult.positive.entries()) {
+    for (const [index, file] of detectionResult.positive
+      .slice(0, 1000)
+      .entries()) {
       fs.writeFileSync(
         `tokenizer-positive-log-${tokenizer}-${type}.txt`,
         `${file} ${index}\n`,
@@ -75,7 +77,9 @@ export class TokenizerService {
       }
     }
 
-    for (const [index, file] of detectionResult.negative.entries()) {
+    for (const [index, file] of detectionResult.negative
+      .slice(0, 2000)
+      .entries()) {
       fs.writeFileSync(
         `tokenizer-negative-log-${tokenizer}-${type}.txt`,
         `${file} ${index}\n`,
@@ -83,7 +87,10 @@ export class TokenizerService {
           flag: "a",
         }
       );
-      const tokenizeRes = this.runSingleTokenization(file, type);
+      const tokenizeRes =
+        tokenizer === "bert"
+          ? this.runSingleBertTokenization(file, type)
+          : this.runSingleTokenization(file, type);
       const writeFile = `data/${tokenizer}/${type}/Negative/tokenized${negativeFileCounter}.tok.cld`;
       fs.writeFileSync(writeFile, tokenizeRes, {
         flag: "a",
